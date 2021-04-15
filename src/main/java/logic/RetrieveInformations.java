@@ -32,9 +32,8 @@ public class RetrieveInformations {
             //Only gets a max of 1000 at a time, so must do this multiple times if bugs >1000
             j = i + 1000;
             String url = "https://issues.apache.org/jira/rest/api/2/search?jql=project=%22"
-                    + this.projectName + "%22&fields=key,resolutiondate,versions,created&startAt="
-                    + i.toString() + "&maxResults=" + j.toString();
-            
+                    + this.projectName + "%22&fields=key,status,issueType,resolutiondate,versions,created,fixVersione"+
+                    "&startAt=" + i.toString() + "&maxResults=" + j.toString();
             JSONObject json = readJsonFromUrl(url);
 
             this.jsonArray = concatenate(this.jsonArray, json.getJSONArray("issues"));
