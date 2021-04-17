@@ -20,7 +20,7 @@ public class JgitManager {
     private List<Ref> tagList;
     public ArrayList<RevCommit> commitList;
 
-    public JgitManager() throws IOException, GitAPIException {
+    public JgitManager() throws IOException{
         String path = ConfigurationManager.getConfigEntry("repositoryPath") + "/.git";
         FileRepositoryBuilder builder = new FileRepositoryBuilder();
         this.repository = builder.setGitDir(new File(path)).readEnvironment().findGitDir().build();
@@ -33,12 +33,11 @@ public class JgitManager {
         return t.getAuthorIdent().getWhen();
     }
 
-    private void initializeReleaseList(){
+    private void initializeReleaseList() {
         try (RevWalk walk = new RevWalk(this.repository)) {
             this.tagList = new Git(repository).tagList().call();
 
-            Collections.sort(this.tagList, new Comparator<Ref>() {
-                public int compare(Ref o1, Ref o2) {
+            Collections.sort(this.tagList, (Ref o1, Ref o2) ->{
                     Date d1 = null;
                     Date d2 = null;
                     try {
@@ -49,8 +48,7 @@ public class JgitManager {
                         logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
                     }
                     return d1.compareTo(d2);
-                }
-            });
+                });
         }catch (GitAPIException e){
             Logger logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));

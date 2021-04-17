@@ -1,107 +1,68 @@
 
-Slogic.RetrieveInformations#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaF F(,"7*á
-2p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(,"è
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(,
-
-%9org.json.JSONObject*≈
-3p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I(*≥
-∞
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I(*
-jsonTextjava.lang.String"__id*
-
-%8java.lang.String•¢
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(!
-%9org.json.JSONObject"org.json.JSONObjectÍ
-Á
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(+
-%10"/org.json.JSONObject#<init>(Ljava/lang/String;)V*
-
-%9org.json.JSONObject*
-
-jsonTextjava.lang.String*
-2*Œ
-4p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H(fπ
-∂
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H(f
-rdjava.io.BufferedReader"__id*
-
-%6java.io.BufferedReaderï
-í
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I()
-%8java.lang.String"Flogic.RetrieveInformations#readAll(Ljava/io/Reader;)Ljava/lang/String;*"
-logic.RetrieveInformations*
-
-rdjava.io.BufferedReader*
-3*õ
-5p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH! H(f´®
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH% H(3
-%6java.io.BufferedReader"java.io.BufferedReader
-Ì
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH! H(f
-%7"0java.io.BufferedReader#<init>(Ljava/io/Reader;)V*
-
-%6java.io.BufferedReader*!
-
-%4java.io.InputStreamReader*
-4*à
-6p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaHJ H(L£
-†
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaHN H(d
-%3java.nio.charset.Charset"__id*
-""±Æ
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH8 H(I
-%4java.io.InputStreamReader"java.io.InputStreamReader±
-Æ
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH4 H(e
-%5"Rjava.io.InputStreamReader#<init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V*!
-
-%4java.io.InputStreamReader*
-
-isjava.io.InputStream* 
+blogic.dataset_manager.JgitManager$1#compare(Lorg/eclipse/jgit/lib/Ref;Lorg/eclipse/jgit/lib/Ref;)Iw
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java) )(""10*¥
+2w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java. .(.∞
+≠
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java. .(.
+d2java.util.Date"__id*
+
+%1java.util.Date*
+1*ì
+8w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java- -(.∞
+≠
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java- -(.
+d1java.util.Date"__id*
+
+%0java.util.Date‹
+Ÿ
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java. .(.
+%1java.util.Date"wlogic.dataset_manager.JgitManager#tagDate(Lorg/eclipse/jgit/lib/Ref;Lorg/eclipse/jgit/revwalk/RevWalk;)Ljava/util/Date;*%"#
+!logic.dataset_manager.JgitManager* 
 
-%3java.nio.charset.Charset*
-5*ä
-7p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG! G($óî
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G( 
-%0java.net.URL"java.net.URL÷
-”
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G(%
-%1"(java.net.URL#<init>(Ljava/lang/String;)V*
-
-%0java.net.URL*
-
-urljava.lang.String‰·
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G(2
-%2java.io.InputStream".java.net.URL#openStream()Ljava/io/InputStream;*
-
-%0java.net.URL2openStream()≥
-∞
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G(3
-isjava.io.InputStream"__id*
-
-%2java.io.InputStream*
-6:
-urljava.lang.StringB"
-logic.RetrieveInformations
+o2org.eclipse.jgit.lib.Ref*
+""*
+2*‡
+9w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java- -($‹
+Ÿ
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java- -(.
+%0java.util.Date"wlogic.dataset_manager.JgitManager#tagDate(Lorg/eclipse/jgit/lib/Ref;Lorg/eclipse/jgit/revwalk/RevWalk;)Ljava/util/Date;*%"#
+!logic.dataset_manager.JgitManager* 
+
+o1org.eclipse.jgit.lib.Ref*
+""*
+8*»
+10w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java* *("†
+ù
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java* *(#
+d1java.util.Date"__id*
+""†
+ù
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java+ +(#
+d2java.util.Date"__id*
+""*
+9*Ñ
+1w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java3 3(Å˛
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java3 3(+	
+%8int"+java.util.Date#compareTo(Ljava/util/Date;)I*
+
+d1java.util.Date*
+
+d2java.util.Date2compareTo(Ljava/util/Date;)"Å
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java3 3(,
+"":
+o1org.eclipse.jgit.lib.Ref:
+o2org.eclipse.jgit.lib.RefB'%
+#logic.dataset_manager.JgitManager$1

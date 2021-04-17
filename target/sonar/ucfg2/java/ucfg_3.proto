@@ -1,53 +1,48 @@
 
-Flogic.RetrieveInformations#readAll(Ljava/io/Reader;)Ljava/lang/String;p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java= =(!"4*
-2p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaA A(„
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaA A( 
-%3java.lang.StringBuilder":java.lang.StringBuilder#append(C)Ljava/lang/StringBuilder;*
-
-sbjava.lang.StringBuilder*
-""2	append(C)*
-3*¸
-3p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java@ @(¸µ
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java@ @(	
-%2int"java.io.Reader#read()I*
+wlogic.dataset_manager.JgitManager#tagDate(Lorg/eclipse/jgit/lib/Ref;Lorg/eclipse/jgit/revwalk/RevWalk;)Ljava/util/Date;w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java ("1*Ë
+1w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java (š—
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java$ (5#
+%0org.eclipse.jgit.lib.ObjectId"Eorg.eclipse.jgit.lib.Ref#getObjectId()Lorg/eclipse/jgit/lib/ObjectId;*!
+
+tagorg.eclipse.jgit.lib.Ref2getObjectId()š
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java (6(
+%1"org.eclipse.jgit.revwalk.RevCommit"torg.eclipse.jgit.revwalk.RevWalk#parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/revwalk/RevCommit;*'
+%
+w org.eclipse.jgit.revwalk.RevWalk*%
+#
+%0org.eclipse.jgit.lib.ObjectId2/parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)×
+Ô
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java (7'
+t"org.eclipse.jgit.revwalk.RevCommit"__id**
+(
+%1"org.eclipse.jgit.revwalk.RevCommitàÝ
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java   (
+
+%2void"Qorg.eclipse.jgit.revwalk.RevWalk#parseBody(Lorg/eclipse/jgit/revwalk/RevObject;)V*'
+%
+w org.eclipse.jgit.revwalk.RevWalk*)
+'
+t"org.eclipse.jgit.revwalk.RevCommit2/parseBody(Lorg/eclipse/jgit/revwalk/RevObject;)¸µ
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java! !(!&
+%3 org.eclipse.jgit.lib.PersonIdent"Uorg.eclipse.jgit.revwalk.RevCommit#getAuthorIdent()Lorg/eclipse/jgit/lib/PersonIdent;*)
+'
+t"org.eclipse.jgit.revwalk.RevCommit2getAuthorIdent()ƒ€
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java! !(+
+%4java.util.Date":org.eclipse.jgit.lib.PersonIdent#getWhen()Ljava/util/Date;*(
+&
+%3 org.eclipse.jgit.lib.PersonIdent2	getWhen()"‘
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java! !(,
 
-rdjava.io.Reader2read()*
-2
-1*ª
-4p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(.­ª
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(,
-%0java.lang.StringBuilder"java.lang.StringBuilder¿
-¼
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(.
-%1"!java.lang.StringBuilder#<init>()V*
-
-%0java.lang.StringBuilder»
-¸
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(/
-sbjava.lang.StringBuilder"__id*
-
-%0java.lang.StringBuilder*
-3*÷
-1p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaC C(ðí
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaC C(
-%4java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
-
-sbjava.lang.StringBuilder2
-toString()"Œ
-p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaC C(
-
-%4java.lang.String:
-rdjava.io.ReaderB"
-logic.RetrieveInformations
+%4java.util.Date:
+tagorg.eclipse.jgit.lib.Ref:%
+w org.eclipse.jgit.revwalk.RevWalkB%"#
+!logic.dataset_manager.JgitManager
