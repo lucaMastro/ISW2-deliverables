@@ -1,8 +1,10 @@
-package logic;
+package logic.dataset_manager;
 
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+
+import logic.config_manager.ConfigurationManager;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -79,7 +81,9 @@ public class RetrieveInformations {
 
 
     public static void main(String[] args) throws IOException {
-        RetrieveInformations ri = new RetrieveInformations("BOOKKEEPER");
+        RetrieveInformations ri = new RetrieveInformations(ConfigurationManager.getConfigEntry("projectName"));
+        System.out.println(ri.total);
+
     }
 
 

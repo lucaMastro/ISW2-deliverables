@@ -1,16 +1,16 @@
 
 dlogic.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java2 2(!"9*à
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java1 1(!"9*à
 3p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java9 9(Ê„
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java8 8(Ê„
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java9 9( 
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java8 8( 
 %6java.lang.Object"+org.json.JSONArray#get(I)Ljava/lang/Object;*
 
 a2org.json.JSONArray*
 ""2get(I)¢ü
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java9 9(!
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java8 8(!
 %7org.json.JSONArray">org.json.JSONArray#put(Ljava/lang/Object;)Lorg/json/JSONArray;*
 
 resultorg.json.JSONArray*
@@ -18,24 +18,24 @@ f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/Re
 %6java.lang.Object2put(Ljava/lang/Object;)*
 4*ƒ
 4p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java8 8(ƒ¡
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java7 7(ƒ¡
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java8 8(#	
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java7 7(#	
 %5int"org.json.JSONArray#length()I*
 
 a2org.json.JSONArray2length()*
 3
 1*à
 7p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java6 6(Ê„
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java5 5(Ê„
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java6 6( 
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java5 5( 
 %3java.lang.Object"+org.json.JSONArray#get(I)Ljava/lang/Object;*
 
 a1org.json.JSONArray*
 ""2get(I)¢ü
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java6 6(!
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java5 5(!
 %4org.json.JSONArray">org.json.JSONArray#put(Ljava/lang/Object;)Lorg/json/JSONArray;*
 
 resultorg.json.JSONArray*
@@ -43,36 +43,36 @@ f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/Re
 %3java.lang.Object2put(Ljava/lang/Object;)*
 8*ƒ
 8p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java5 5(ƒ¡
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java4 4(ƒ¡
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java5 5(#	
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java4 4(#	
 %2int"org.json.JSONArray#length()I*
 
 a1org.json.JSONArray2length()*
 4
 7*ê
 9p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java3 3(£†
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java2 2(£†
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java4 4((
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java3 3((
 %0org.json.JSONArray"org.json.JSONArrayµ
 ≤
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java4 4(*
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java3 3(*
 %1"org.json.JSONArray#<init>()V*
 
 %0org.json.JSONArrayµ
 ≤
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java4 4(+
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java3 3(+
 resultorg.json.JSONArray"__id*
 
 %0org.json.JSONArray*
 8*ä
 1p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java; ;("í
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java: :("í
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java; ;(
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java: :(
 
 resultorg.json.JSONArray:
 a1org.json.JSONArray:

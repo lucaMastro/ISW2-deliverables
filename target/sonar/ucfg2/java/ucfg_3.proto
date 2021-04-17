@@ -1,52 +1,52 @@
 
 Flogic.RetrieveInformations#readAll(Ljava/io/Reader;)Ljava/lang/String;p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(!"4*
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java= =(!"4*
 2p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaB B(„
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaA A(„
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaB B( 
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaA A( 
 %3java.lang.StringBuilder":java.lang.StringBuilder#append(C)Ljava/lang/StringBuilder;*
 
 sbjava.lang.StringBuilder*
 ""2	append(C)*
 3*¸
 3p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaA A(¸µ
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java@ @(¸µ
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaA A(	
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java@ @(	
 %2int"java.io.Reader#read()I*
 
 rdjava.io.Reader2read()*
 2
 1*ª
 4p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java? ?(.­ª
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(.­ª
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java? ?(,
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(,
 %0java.lang.StringBuilder"java.lang.StringBuilder¿
 ¼
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java? ?(.
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(.
 %1"!java.lang.StringBuilder#<init>()V*
 
 %0java.lang.StringBuilder»
 ¸
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java? ?(/
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.java> >(/
 sbjava.lang.StringBuilder"__id*
 
 %0java.lang.StringBuilder*
 3*÷
 1p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaD D(ðí
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaC C(ðí
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaD D(
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaC C(
 %4java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
 
 sbjava.lang.StringBuilder2
 toString()"Œ
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaD D(
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaC C(
 
 %4java.lang.String:
 rdjava.io.ReaderB"

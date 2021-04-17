@@ -1,26 +1,26 @@
 
 Slogic.RetrieveInformations#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G(,"7*á
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaF F(,"7*á
 2p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaK K(,"è
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(,"è
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaK K(,
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(,
 
 %9org.json.JSONObject*≈
 3p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(*≥
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I(*≥
 ∞
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(*
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I(*
 jsonTextjava.lang.String"__id*
 
 %8java.lang.String•¢
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaK K(!
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(!
 %9org.json.JSONObject"org.json.JSONObjectÍ
 Á
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaK K(+
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J(+
 %10"/org.json.JSONObject#<init>(Ljava/lang/String;)V*
 
 %9org.json.JSONObject*
@@ -28,29 +28,29 @@ f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/Re
 jsonTextjava.lang.String*
 2*Œ
 4p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I(fπ
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H(fπ
 ∂
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I(f
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H(f
 rdjava.io.BufferedReader"__id*
 
 %6java.io.BufferedReaderï
 í
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaJ J()
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI I()
 %8java.lang.String"Flogic.RetrieveInformations#readAll(Ljava/io/Reader;)Ljava/lang/String;*"
 logic.RetrieveInformations*
 
 rdjava.io.BufferedReader*
 3*õ
 5p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI! I(f´®
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH! H(f´®
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI% I(3
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH% H(3
 %6java.io.BufferedReader"java.io.BufferedReader
 Ì
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI! I(f
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH! H(f
 %7"0java.io.BufferedReader#<init>(Ljava/io/Reader;)V*
 
 %6java.io.BufferedReader*!
@@ -58,18 +58,18 @@ f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/Re
 %4java.io.InputStreamReader*
 4*à
 6p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaIJ I(L£
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaHJ H(L£
 †
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaIN I(d
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaHN H(d
 %3java.nio.charset.Charset"__id*
 ""±Æ
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI8 I(I
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH8 H(I
 %4java.io.InputStreamReader"java.io.InputStreamReader±
 Æ
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaI4 I(e
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH4 H(e
 %5"Rjava.io.InputStreamReader#<init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V*!
 
 %4java.io.InputStreamReader*
@@ -79,26 +79,26 @@ f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/Re
 %3java.nio.charset.Charset*
 5*ä
 7p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH! H($óî
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG! G($óî
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H( 
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G( 
 %0java.net.URL"java.net.URL÷
 ”
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H(%
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G(%
 %1"(java.net.URL#<init>(Ljava/lang/String;)V*
 
 %0java.net.URL*
 
 urljava.lang.String‰·
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H(2
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G(2
 %2java.io.InputStream".java.net.URL#openStream()Ljava/io/InputStream;*
 
 %0java.net.URL2openStream()≥
 ∞
 p
-f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaH H(3
+f/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/RetrieveInformations.javaG G(3
 isjava.io.InputStream"__id*
 
 %2java.io.InputStream*
