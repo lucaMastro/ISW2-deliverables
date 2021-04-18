@@ -1,13 +1,14 @@
 package logic.dataset_manager;
 import logic.config_manager.ConfigurationManager;
+import logic.exception.InvalidRangeException;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.*;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 import java.util.logging.Level;
@@ -17,56 +18,115 @@ import java.util.logging.Logger;
 public class JgitManager {
 
     public Repository repository;
-    private List<Ref> tagList;
-    public ArrayList<RevCommit> commitList;
+    private ArrayList<RevCommit> commits;
+    private ArrayList<RevCommit> tags;
 
     public JgitManager() throws IOException{
         String path = ConfigurationManager.getConfigEntry("repositoryPath") + "/.git";
         FileRepositoryBuilder builder = new FileRepositoryBuilder();
         this.repository = builder.setGitDir(new File(path)).readEnvironment().findGitDir().build();
         this.initializeReleaseList();
-    }
+        this.initializeCommitList();
 
-    public static Date tagDate(Ref tag, RevWalk w) throws IOException {
-        RevCommit t = w.parseCommit(tag.getObjectId());
-        w.parseBody(t);
-        return t.getAuthorIdent().getWhen();
     }
 
     private void initializeReleaseList() {
         try (RevWalk walk = new RevWalk(this.repository)) {
-            this.tagList = new Git(repository).tagList().call();
+            List<Ref> tagList = new Git(repository).tagList().call();
 
-            Collections.sort(this.tagList, (Ref o1, Ref o2) ->{
-                    Date d1 = null;
-                    Date d2 = null;
-                    try {
-                        d1 = tagDate(o1, walk);
-                        d2 = tagDate(o2, walk);
-                    } catch (IOException e) {
-                        Logger logger = Logger.getLogger(JgitManager.class.getName());
-                        logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
-                    }
-                    return d1.compareTo(d2);
-                });
-        }catch (GitAPIException e){
+            this.tags = new ArrayList<RevCommit>();
+            Integer i;
+            for (i = 0; i < tagList.size(); i++){
+                RevCommit cur = walk.parseCommit(tagList.get(i).getObjectId());
+                this.tags.add(cur);
+            }
+
+            Collections.sort(this.tags, (RevCommit o1, RevCommit o2) ->{
+                Date  d1 = o1.getAuthorIdent().getWhen();
+                Date d2 = o2.getAuthorIdent().getWhen();
+                return d1.compareTo(d2);
+            });
+
+        }catch (Exception e){
             Logger logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }
 
+    private void initializeCommitList() {
+        this.commits = new ArrayList<RevCommit>();
 
-    public ArrayList<ObjectId> retrieveCommits(Integer releaseIndex){
-        /* this.retrieveCommits(1) should return a list of all commits performed between release1 and release 2 */
+        try (RevWalk walk = new RevWalk(this.repository)) {
+            walk.sort(RevSort.REVERSE);
+            Iterable<RevCommit> l = new Git(this.repository).log().call();
+            l.forEach(this.commits::add);
+            Collections.sort(this.commits, (RevCommit o1, RevCommit o2) -> {
+                Date d1 = o1.getAuthorIdent().getWhen();
+                Date d2 = o2.getAuthorIdent().getWhen();
+                return d1.compareTo(d2);
+            });
+        } catch (GitAPIException e) {
+            Logger logger = Logger.getLogger(JgitManager.class.getName());
+            logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
+        }
+    }
 
-        ArrayList<ObjectId> commits = new ArrayList<>();
-        return commits;
+    private RevCommit getTag(Integer index){
+        return this.tags.get(index);
+    }
+
+    private RevCommit getCommit(Integer index){
+        return this.commits.get(index);
+    }
+
+    public ArrayList<RevCommit> retrieveCommitsBeetwenReleases(Integer endIndexRelease)
+            throws InvalidRangeException {
+
+        /* this.retrieveCommits(2) should return a list of all commits performed between release1 and release 2
+        * That's why, if startIndexRelease is less than 1 an exception is thrown */
+
+        if (endIndexRelease < 1)
+            throw new InvalidRangeException("endIndexRelease should be greater than 0");
+
+        ArrayList<RevCommit> comList = new ArrayList<>();
+        // The release 1 is stored in ArrayList.get(0)
+        endIndexRelease--;
+        Integer startIndexRelease = endIndexRelease - 1;
+        Date startDate;
+        if (startIndexRelease >= 0)
+            startDate = this.getTag(startIndexRelease).getAuthorIdent().getWhen();
+        else // looking for commits of first release
+            startDate = this.getCommit(0).getAuthorIdent().getWhen();
+        Date endDate = this.getTag(endIndexRelease).getAuthorIdent().getWhen();
+
+        for (RevCommit currCommit : this.commits){
+           Date currDate = currCommit.getAuthorIdent().getWhen();
+           // checking if currDate is in a correct interval:
+           if (startDate.compareTo(currDate) <= 0
+                   && currDate.compareTo(endDate) < 0)
+               comList.add(currCommit);
+        }
+        return comList;
     }
 
 
-    public static void main(String[] args) throws IOException, GitAPIException {
+    public static void main(String[] args) throws IOException, InvalidRangeException {
         JgitManager manager = new JgitManager();
-        Repository repository = manager.repository;
+        Date d1 = manager.getTag(0).getAuthorIdent().getWhen();
+        Date d2 = manager.getTag(1).getAuthorIdent().getWhen();
+        Date d3 = manager.getCommit(0).getAuthorIdent().getWhen();
+        Date d4 = manager.getCommit(1).getAuthorIdent().getWhen();
+        ArrayList<RevCommit> list = manager.retrieveCommitsBeetwenReleases(1);
+        Collections.reverse(list);
+        File f = new File("/home/luca/Scrivania/ISW2/deliverables/deliverable2/output.txt");
+        FileWriter fw = new FileWriter(f);
+        for (RevCommit rc : list){
+            String id = rc.getId().toString();
+            id += "\n";
+            fw.append(id);
+            fw.flush();
+        }
+        fw.close();
     }
 
 
