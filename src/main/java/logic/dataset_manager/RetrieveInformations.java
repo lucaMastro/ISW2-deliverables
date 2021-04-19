@@ -13,20 +13,27 @@ public class RetrieveInformations {
 
     private String projectName;
 
-    public JSONArray getJsonArray() {
-        return jsonArray;
+    public JSONArray getFixedBugs() {
+        return fixedBugs;
     }
 
-    private JSONArray jsonArray;
-    private Integer total;
+    private JSONArray fixedBugs;
+    private Integer fixedBugTicketsNumber;
+
+    private JSONArray allTickets;
+    private Integer allTicketsNumber;
 
 
     public RetrieveInformations(String projName) throws IOException {
 
         this.projectName = projName;
-        this.jsonArray = new JSONArray();
+        this.fixedBugs = new JSONArray();
 
+        this.allTickets = new JSONArray();
+        this.retrieveAllTickets();
+    }
 
+    public void retrieveAllTickets()throws IOException {
         Integer j = 0;
         Integer i = 0;
         //Get JSON API for closed bugs w/ AV in the project
@@ -34,17 +41,41 @@ public class RetrieveInformations {
             //Only gets a max of 1000 at a time, so must do this multiple times if bugs >1000
             j = i + 1000;
             String url = "https://issues.apache.org/jira/rest/api/2/search?jql=project=%22"
-                    + this.projectName + "%22&fields=key,status,issueType,resolutiondate,versions,created,fixVersione"+
+                    + this.projectName + "%22&fields=key,status,issueType,resolutiondate,versions,created,fixVersion"+
                     "&startAt=" + i.toString() + "&maxResults=" + j.toString();
             JSONObject json = readJsonFromUrl(url);
 
-            this.jsonArray = concatenate(this.jsonArray, json.getJSONArray("issues"));
+            this.fixedBugs = concatenate(this.fixedBugs, json.getJSONArray("issues"));
 
-            this.total = json.getInt("total");
+            this.allTicketsNumber = json.getInt("total");
             //if total is >= jsonArrayLength * 1000, i need another iteration. just increment of 1000
             i += 1000;
 
-        } while (i < this.total);
+        } while (i < this.allTicketsNumber);
+
+    }
+
+    public void retrieveFixedBugTickets()throws IOException {
+        Integer j = 0;
+        Integer i = 0;
+        //Get JSON API for closed bugs w/ AV in the project
+        do {
+            //Only gets a max of 1000 at a time, so must do this multiple times if bugs >1000
+            j = i + 1000;
+            String url = "https://issues.apache.org/jira/rest/api/2/search?jql=project=%22"
+                    + this.projectName + "%22AND%22issueType%22=%22Bug%22AND(%22status%22=%22closed%22OR"
+                    + "%22status%22=%22resolved%22)AND%22resolution%22=%22fixed%22&fields=key,resolutiondate,versions,created&startAt="
+                    + i.toString() + "&maxResults=" + j.toString();
+
+            JSONObject json = readJsonFromUrl(url);
+
+            this.fixedBugs = concatenate(this.fixedBugs, json.getJSONArray("issues"));
+
+            this.fixedBugTicketsNumber = json.getInt("total");
+            //if total is >= jsonArrayLength * 1000, i need another iteration. just increment of 1000
+            i += 1000;
+
+        } while (i < this.fixedBugTicketsNumber);
 
     }
 
@@ -82,7 +113,8 @@ public class RetrieveInformations {
 
     public static void main(String[] args) throws IOException {
         RetrieveInformations ri = new RetrieveInformations(ConfigurationManager.getConfigEntry("projectName"));
-        System.out.println(ri.total);
+        ri.retrieveFixedBugTickets();
+        System.out.println(ri.fixedBugTicketsNumber);
 
     }
 

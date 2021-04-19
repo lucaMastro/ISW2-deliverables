@@ -1,26 +1,26 @@
 
-[logic.dataset_manager.JgitManager#retrieveCommits(Ljava/lang/Integer;)Ljava/util/ArrayList;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java; ;(."1*Ì
+alogic.dataset_manager.JgitManager#getTag(Ljava/lang/Integer;)Lorg/eclipse/jgit/revwalk/RevCommit;w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaJ J("1*å
 1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>& >(7¬©
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaK K(Î
+Ë
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>* >(5
-%0java.util.ArrayList"java.util.ArrayList¾
-»
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaK K(
+%0java.util.ArrayList"__id*/*-#
+!logic.dataset_manager.JgitManager"
+tagsí
+ê
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>& >(7
-%1"java.util.ArrayList#<init>()V*
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaK K(#(
+%1"org.eclipse.jgit.revwalk.RevCommit"
+__arrayGet*
 
-%0java.util.ArrayList¿
-¼
+%0java.util.ArrayList*
+
+indexjava.lang.Integer"¥
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java> >(8
-commitsjava.util.ArrayList"__id*
-
-%0java.util.ArrayList"›
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java? ?( 
-
-commitsjava.util.ArrayList:!
-releaseIndexjava.lang.IntegerB%#
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaK K($*
+(
+%1"org.eclipse.jgit.revwalk.RevCommit:
+indexjava.lang.IntegerB%#
 !logic.dataset_manager.JgitManager

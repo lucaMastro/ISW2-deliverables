@@ -7,6 +7,8 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.*;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
+import org.eclipse.jgit.treewalk.TreeWalk;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,11 +19,19 @@ import java.util.logging.Logger;
 /* This class may be develop as a singleton */
 public class JgitManager {
 
-    public Repository repository;
+    private static JgitManager instance = null;
+    private Repository repository;
     private ArrayList<RevCommit> commits;
     private ArrayList<RevCommit> tags;
 
-    public JgitManager() throws IOException{
+    public static JgitManager getInstance() throws IOException {
+        if (JgitManager.instance == null){
+            JgitManager.instance = new JgitManager();
+        }
+        return JgitManager.instance;
+    }
+
+    private JgitManager() throws IOException{
         String path = ConfigurationManager.getConfigEntry("repositoryPath") + "/.git";
         FileRepositoryBuilder builder = new FileRepositoryBuilder();
         this.repository = builder.setGitDir(new File(path)).readEnvironment().findGitDir().build();
@@ -109,6 +119,17 @@ public class JgitManager {
         return comList;
     }
 
+    public Repository getRepository() {
+        return repository;
+    }
+
+    public ArrayList<RevCommit> getCommits() {
+        return commits;
+    }
+
+    public ArrayList<RevCommit> getTags() {
+        return tags;
+    }
 
     public static void main(String[] args) throws IOException, InvalidRangeException {
         JgitManager manager = new JgitManager();
@@ -117,16 +138,27 @@ public class JgitManager {
         Date d3 = manager.getCommit(0).getAuthorIdent().getWhen();
         Date d4 = manager.getCommit(1).getAuthorIdent().getWhen();
         ArrayList<RevCommit> list = manager.retrieveCommitsBeetwenReleases(1);
-        Collections.reverse(list);
-        File f = new File("/home/luca/Scrivania/ISW2/deliverables/deliverable2/output.txt");
-        FileWriter fw = new FileWriter(f);
-        for (RevCommit rc : list){
-            String id = rc.getId().toString();
-            id += "\n";
-            fw.append(id);
-            fw.flush();
+        System.out.println(manager.commits.get(0).getName());
+        Git g = new Git(manager.repository);
+        try (TreeWalk tw = new TreeWalk(manager.repository) ){
+            tw.setRecursive(Boolean.TRUE);
+            RevCommit c = manager.commits.get(1);
+            System.out.println(c.getName() + "\n");
+            tw.reset(c.getTree().getId());
+            while (tw.next()){
+                System.out.println(tw.getPathString());
+            }
+            System.out.println("\nsecond\n");
+            c = manager.commits.get(2);
+            System.out.println(c.getName() + "\n");
+            tw.reset(c.getTree().getId());
+            while (tw.next()){
+                System.out.println(tw.getPathString());
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        fw.close();
     }
 
 
