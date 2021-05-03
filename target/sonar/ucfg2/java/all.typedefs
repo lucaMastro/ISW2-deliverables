@@ -485,14 +485,18 @@ getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
 <init>()java.io.IOException#<init>()VM
 <init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
 /<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
-<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)V•
-!logic.dataset_manager.JgitManagerjava.lang.ObjectÄ
+<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vï	
+!logic.dataset_manager.JgitManagerjava.lang.ObjectM
+	getTags()@logic.dataset_manager.JgitManager#getTags()Ljava/util/ArrayList;Ä
 getTag(Ljava/lang/Integer;)alogic.dataset_manager.JgitManager#getTag(Ljava/lang/Integer;)Lorg/eclipse/jgit/revwalk/RevCommit;7
 <init>()+logic.dataset_manager.JgitManager#<init>()VU
 initializeReleaseList():logic.dataset_manager.JgitManager#initializeReleaseList()VS
 initializeCommitList()9logic.dataset_manager.JgitManager#initializeCommitList()VY
-main([Ljava/lang/String;)<logic.dataset_manager.JgitManager#main([Ljava/lang/String;)V°
-3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)jlogic.dataset_manager.JgitManager#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/ArrayList;Ü
+main([Ljava/lang/String;)<logic.dataset_manager.JgitManager#main([Ljava/lang/String;)Vc
+getInstance()Rlogic.dataset_manager.JgitManager#getInstance()Llogic/dataset_manager/JgitManager;°
+3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)jlogic.dataset_manager.JgitManager#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/ArrayList;S
+getCommits()Clogic.dataset_manager.JgitManager#getCommits()Ljava/util/ArrayList;e
+getRepository()Rlogic.dataset_manager.JgitManager#getRepository()Lorg/eclipse/jgit/lib/Repository;Ü
 getCommit(Ljava/lang/Integer;)dlogic.dataset_manager.JgitManager#getCommit(Ljava/lang/Integer;)Lorg/eclipse/jgit/revwalk/RevCommit;˜'
 *org.eclipse.jgit.lib.BaseRepositoryBuilderjava.lang.Objectß
 &addCeilingDirectories([Ljava/io/File;)}org.eclipse.jgit.lib.BaseRepositoryBuilder#addCeilingDirectories([Ljava/io/File;)Lorg/eclipse/jgit/lib/BaseRepositoryBuilder;ç
@@ -1427,49 +1431,156 @@ setDate(I)java.util.Date#setDate(I)V3
 
 getHours()java.util.Date#getHours()I(
 java.lang.Appendablejava.lang.Object%
-java.io.Flushablejava.lang.ObjectÚ
-java.io.Writerjava.lang.Appendablejava.io.Closeablejava.lang.Objectjava.io.Flushable&
-	write([C)java.io.Writer#write([C)Vc
- append(Ljava/lang/CharSequence;)?java.io.Writer#append(Ljava/lang/CharSequence;)Ljava/io/Writer;$
-<init>()java.io.Writer#<init>()V5
-	append(C)(java.io.Writer#append(C)Ljava/io/Writer;g
-"append(Ljava/lang/CharSequence;II)Ajava.io.Writer#append(Ljava/lang/CharSequence;II)Ljava/io/Writer;J
-write(Ljava/lang/String;II)+java.io.Writer#write(Ljava/lang/String;II)V$
-write(I)java.io.Writer#write(I)V;
-nullWriter()+java.io.Writer#nullWriter()Ljava/io/Writer;F
-write(Ljava/lang/String;))java.io.Writer#write(Ljava/lang/String;)VH
-<init>(Ljava/lang/Object;)*java.io.Writer#<init>(Ljava/lang/Object;)V“	
-java.io.OutputStreamWriterjava.io.Writerû
-?<init>(Ljava/io/OutputStream;Ljava/nio/charset/CharsetEncoder;)[java.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/nio/charset/CharsetEncoder;)Vo
- append(Ljava/lang/CharSequence;)Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;K
-getEncoding():java.io.OutputStreamWriter#getEncoding()Ljava/lang/String;s
-"append(Ljava/lang/CharSequence;II)Mjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;II)Ljava/io/Writer;Ä
-0<init>(Ljava/io/OutputStream;Ljava/lang/String;)Ljava.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/lang/String;)V\
-<init>(Ljava/io/OutputStream;):java.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;)VV
-write(Ljava/lang/String;II)7java.io.OutputStreamWriter#write(Ljava/lang/String;II)V.
-flush()#java.io.OutputStreamWriter#flush()V0
-write(I)$java.io.OutputStreamWriter#write(I)V:
-flushBuffer())java.io.OutputStreamWriter#flushBuffer()V6
-write([CII)'java.io.OutputStreamWriter#write([CII)V.
-close()#java.io.OutputStreamWriter#close()Vê
-8<init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)Tjava.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V¥
-java.io.FileWriterjava.io.OutputStreamWriterz
-1<init>(Ljava/io/File;Ljava/nio/charset/Charset;Z)Ejava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;Z)VF
-<init>(Ljava/io/File;Z)+java.io.FileWriter#<init>(Ljava/io/File;Z)VÇ
-5<init>(Ljava/lang/String;Ljava/nio/charset/Charset;Z)Ijava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;Z)VN
-<init>(Ljava/lang/String;Z)/java.io.FileWriter#<init>(Ljava/lang/String;Z)VD
-<init>(Ljava/io/File;)*java.io.FileWriter#<init>(Ljava/io/File;)VL
-<init>(Ljava/lang/String;).java.io.FileWriter#<init>(Ljava/lang/String;)Vx
-0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Djava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)VÄ
-4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Hjava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)VX
- <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)Võ
-*logic.dataset_manager.RetrieveInformationsjava.lang.Object≠
+java.io.Flushablejava.lang.ObjectÉ
+java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.FlushableS
+nullOutputStream()=java.io.OutputStream#nullOutputStream()Ljava/io/OutputStream;,
+	write([B)java.io.OutputStream#write([B)V*
+<init>()java.io.OutputStream#<init>()V(
+flush()java.io.OutputStream#flush()V0
+write([BII)!java.io.OutputStream#write([BII)V(
+close()java.io.OutputStream#close()Vé
+java.io.FilterOutputStreamjava.io.OutputStream2
+	write([B)%java.io.FilterOutputStream#write([B)V\
+<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
+flush()#java.io.FilterOutputStream#flush()V0
+write(I)$java.io.FilterOutputStream#write(I)V6
+write([BII)'java.io.FilterOutputStream#write([BII)V.
+close()#java.io.FilterOutputStream#close()VÖ 
+java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
+	write([C)java.io.PrintStream#write([C)V)
+print(J)java.io.PrintStream#print(J)V-
+
+println(J)java.io.PrintStream#println(J)V)
+print(F)java.io.PrintStream#print(F)V-
+
+println(F)java.io.PrintStream#println(F)V/
+write([BII) java.io.PrintStream#write([BII)VÅ
+4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Ijava.io.PrintStream#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V)
+print(Z)java.io.PrintStream#print(Z)V1
+clearError()!java.io.PrintStream#clearError()V-
+
+println(Z)java.io.PrintStream#println(Z)Vi
+(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V)
+write(I)java.io.PrintStream#write(I)VO
+println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)VK
+print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)Ví
+4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
+print(I)java.io.PrintStream#print(I)V-
+
+println(I)java.io.PrintStream#println(I)V'
+flush()java.io.PrintStream#flush()V´
+?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;m
+ append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
+toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
+<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
+	print([C)java.io.PrintStream#print([C)Vq
+"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;)
+print(D)java.io.PrintStream#print(D)Vq
+,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V-
+
+println(D)java.io.PrintStream#println(D)VO
+println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
+<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
+<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)Vy
+0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Ejava.io.PrintStream#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V1
+ensureOpen()!java.io.PrintStream#ensureOpen()Vã
+9<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)Njava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)V´
+?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;-
+
+setError()java.io.PrintStream#setError()Vá
+-printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;?
+	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
+<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)Vá
+-format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
+	newLine()java.io.PrintStream#newLine()V)
+print(C)java.io.PrintStream#print(C)V1
+checkError()!java.io.PrintStream#checkError()Z+
+	println()java.io.PrintStream#println()V'
+close()java.io.PrintStream#close()V-
+
+println(C)java.io.PrintStream#println(C)VK
+write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)VK
+print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
+1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)VU
+<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)V/
+println([C) java.io.PrintStream#println([C)Vã
+9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)VB
+.org.eclipse.jgit.attributes.AttributesProviderjava.lang.Objectë8
+"org.eclipse.jgit.treewalk.TreeWalk.org.eclipse.jgit.attributes.AttributesProviderjava.lang.Objectjava.lang.AutoCloseableê
+4getObjectId(Lorg/eclipse/jgit/lib/MutableObjectId;I)Xorg.eclipse.jgit.treewalk.TreeWalk#getObjectId(Lorg/eclipse/jgit/lib/MutableObjectId;I)V∆
+OsetAttributesNodeProvider(Lorg/eclipse/jgit/attributes/AttributesNodeProvider;)sorg.eclipse.jgit.treewalk.TreeWalk#setAttributesNodeProvider(Lorg/eclipse/jgit/attributes/AttributesNodeProvider;)Vã
+getTree(Ljava/lang/Class;)morg.eclipse.jgit.treewalk.TreeWalk#getTree(Ljava/lang/Class;)Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;Q
+pathOf([BII)Aorg.eclipse.jgit.treewalk.TreeWalk#pathOf([BII)Ljava/lang/String;ä
+_forPath(Lorg/eclipse/jgit/lib/Repository;Ljava/lang/String;[Lorg/eclipse/jgit/lib/AnyObjectId;)¶org.eclipse.jgit.treewalk.TreeWalk#forPath(Lorg/eclipse/jgit/lib/Repository;Ljava/lang/String;[Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/treewalk/TreeWalk;π
+@getFilterCommandDefinition(Ljava/lang/String;Ljava/lang/String;)uorg.eclipse.jgit.treewalk.TreeWalk#getFilterCommandDefinition(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;J
+popEntriesEqual()5org.eclipse.jgit.treewalk.TreeWalk#popEntriesEqual()VF
+setRecursive(Z)3org.eclipse.jgit.treewalk.TreeWalk#setRecursive(Z)VF
+getPathLength()3org.eclipse.jgit.treewalk.TreeWalk#getPathLength()Ib
+getObjectId(I)Porg.eclipse.jgit.treewalk.TreeWalk#getObjectId(I)Lorg/eclipse/jgit/lib/ObjectId;l
+getObjectReader()Worg.eclipse.jgit.treewalk.TreeWalk#getObjectReader()Lorg/eclipse/jgit/lib/ObjectReader;∞
+DsetOperationType(Lorg/eclipse/jgit/treewalk/TreeWalk$OperationType;)horg.eclipse.jgit.treewalk.TreeWalk#setOperationType(Lorg/eclipse/jgit/treewalk/TreeWalk$OperationType;)Vﬂ
+DgetEolStreamType(Lorg/eclipse/jgit/treewalk/TreeWalk$OperationType;)ñorg.eclipse.jgit.treewalk.TreeWalk#getEolStreamType(Lorg/eclipse/jgit/treewalk/TreeWalk$OperationType;)Lorg/eclipse/jgit/lib/CoreConfig$EolStreamType;J
+isPathSuffix([BI)5org.eclipse.jgit.treewalk.TreeWalk#isPathSuffix([BI)Zö
+9addTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)]org.eclipse.jgit.treewalk.TreeWalk#addTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)IT
+isPostOrderTraversal():org.eclipse.jgit.treewalk.TreeWalk#isPostOrderTraversal()Z>
+idEqual(II)/org.eclipse.jgit.treewalk.TreeWalk#idEqual(II)ZJ
+isPathPrefix([BI)5org.eclipse.jgit.treewalk.TreeWalk#isPathPrefix([BI)IX
+setPostOrderTraversal(Z)<org.eclipse.jgit.treewalk.TreeWalk#setPostOrderTraversal(Z)V~
++addTree(Lorg/eclipse/jgit/lib/AnyObjectId;)Oorg.eclipse.jgit.treewalk.TreeWalk#addTree(Lorg/eclipse/jgit/lib/AnyObjectId;)Ij
+getFilter()[org.eclipse.jgit.treewalk.TreeWalk#getFilter()Lorg/eclipse/jgit/treewalk/filter/TreeFilter;~
++<init>(Lorg/eclipse/jgit/lib/ObjectReader;)Oorg.eclipse.jgit.treewalk.TreeWalk#<init>(Lorg/eclipse/jgit/lib/ObjectReader;)VW
+getPathString()Dorg.eclipse.jgit.treewalk.TreeWalk#getPathString()Ljava/lang/String;z
+)<init>(Lorg/eclipse/jgit/lib/Repository;)Morg.eclipse.jgit.treewalk.TreeWalk#<init>(Lorg/eclipse/jgit/lib/Repository;)VA
+getRawPath()1org.eclipse.jgit.treewalk.TreeWalk#getRawPath()[B<
+
+getDepth().org.eclipse.jgit.treewalk.TreeWalk#getDepth()ID
+enterSubtree()2org.eclipse.jgit.treewalk.TreeWalk#enterSubtree()V>
+isSubtree()/org.eclipse.jgit.treewalk.TreeWalk#isSubtree()ZB
+getRawMode(I)1org.eclipse.jgit.treewalk.TreeWalk#getRawMode(I)Ië
+getAttributesNodeProvider()rorg.eclipse.jgit.treewalk.TreeWalk#getAttributesNodeProvider()Lorg/eclipse/jgit/attributes/AttributesNodeProvider;B
+isRecursive()1org.eclipse.jgit.treewalk.TreeWalk#isRecursive()ZH
+isPostChildren()4org.eclipse.jgit.treewalk.TreeWalk#isPostChildren()Z4
+next()*org.eclipse.jgit.treewalk.TreeWalk#next()ZD
+getTreeCount()2org.eclipse.jgit.treewalk.TreeWalk#getTreeCount()Ié
+aforPath(Lorg/eclipse/jgit/lib/ObjectReader;Ljava/lang/String;[Lorg/eclipse/jgit/lib/AnyObjectId;)®org.eclipse.jgit.treewalk.TreeWalk#forPath(Lorg/eclipse/jgit/lib/ObjectReader;Ljava/lang/String;[Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/treewalk/TreeWalk;B
+exitSubtree()1org.eclipse.jgit.treewalk.TreeWalk#exitSubtree()VÅ
+$getFilterCommand(Ljava/lang/String;)Yorg.eclipse.jgit.treewalk.TreeWalk#getFilterCommand(Ljava/lang/String;)Ljava/lang/String;}
+getOperationType()gorg.eclipse.jgit.treewalk.TreeWalk#getOperationType()Lorg/eclipse/jgit/treewalk/TreeWalk$OperationType;—
+ÇforPath(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/ObjectReader;Ljava/lang/String;[Lorg/eclipse/jgit/lib/AnyObjectId;)…org.eclipse.jgit.treewalk.TreeWalk#forPath(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/ObjectReader;Ljava/lang/String;[Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/treewalk/TreeWalk;m
+getAttributes()Zorg.eclipse.jgit.treewalk.TreeWalk#getAttributes()Lorg/eclipse/jgit/attributes/Attributes;©
+8pathOf(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)morg.eclipse.jgit.treewalk.TreeWalk#pathOf(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)Ljava/lang/String;¬
+M<init>(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/ObjectReader;Z)qorg.eclipse.jgit.treewalk.TreeWalk#<init>(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/ObjectReader;Z)Vò
+8setFilter(Lorg/eclipse/jgit/treewalk/filter/TreeFilter;)\org.eclipse.jgit.treewalk.TreeWalk#setFilter(Lorg/eclipse/jgit/treewalk/filter/TreeFilter;)V6
+close()+org.eclipse.jgit.treewalk.TreeWalk#close()V¿
+L<init>(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/ObjectReader;)porg.eclipse.jgit.treewalk.TreeWalk#<init>(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/ObjectReader;)Va
+min()Xorg.eclipse.jgit.treewalk.TreeWalk#min()Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;ç
+getTree(ILjava/lang/Class;)norg.eclipse.jgit.treewalk.TreeWalk#getTree(ILjava/lang/Class;)Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;L
+skipEntriesEqual()6org.eclipse.jgit.treewalk.TreeWalk#skipEntriesEqual()V`
+getFileMode()Oorg.eclipse.jgit.treewalk.TreeWalk#getFileMode()Lorg/eclipse/jgit/lib/FileMode;b
+getFileMode(I)Porg.eclipse.jgit.treewalk.TreeWalk#getFileMode(I)Lorg/eclipse/jgit/lib/FileMode;à
+^forPath(Lorg/eclipse/jgit/lib/Repository;Ljava/lang/String;Lorg/eclipse/jgit/revwalk/RevTree;)•org.eclipse.jgit.treewalk.TreeWalk#forPath(Lorg/eclipse/jgit/lib/Repository;Ljava/lang/String;Lorg/eclipse/jgit/revwalk/RevTree;)Lorg/eclipse/jgit/treewalk/TreeWalk;|
+*reset([Lorg/eclipse/jgit/lib/AnyObjectId;)Norg.eclipse.jgit.treewalk.TreeWalk#reset([Lorg/eclipse/jgit/lib/AnyObjectId;)V6
+reset()+org.eclipse.jgit.treewalk.TreeWalk#reset()VH
+isPathMatch([BI)4org.eclipse.jgit.treewalk.TreeWalk#isPathMatch([BI)I<
+
+stopWalk().org.eclipse.jgit.treewalk.TreeWalk#stopWalk()Vz
+)reset(Lorg/eclipse/jgit/lib/AnyObjectId;)Morg.eclipse.jgit.treewalk.TreeWalk#reset(Lorg/eclipse/jgit/lib/AnyObjectId;)V∞
+-parserFor(Lorg/eclipse/jgit/lib/AnyObjectId;)org.eclipse.jgit.treewalk.TreeWalk#parserFor(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/treewalk/CanonicalTreeParser;W
+getNameString()Dorg.eclipse.jgit.treewalk.TreeWalk#getNameString()Ljava/lang/String;à
+ org.eclipse.jgit.revwalk.RevTree"org.eclipse.jgit.revwalk.RevObjectÜ
+0parseHeaders(Lorg/eclipse/jgit/revwalk/RevWalk;)Rorg.eclipse.jgit.revwalk.RevTree#parseHeaders(Lorg/eclipse/jgit/revwalk/RevWalk;)Vz
+*<init>(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg.eclipse.jgit.revwalk.RevTree#<init>(Lorg/eclipse/jgit/lib/AnyObjectId;)VÄ
+-parseBody(Lorg/eclipse/jgit/revwalk/RevWalk;)Oorg.eclipse.jgit.revwalk.RevTree#parseBody(Lorg/eclipse/jgit/revwalk/RevWalk;)V8
+	getType()+org.eclipse.jgit.revwalk.RevTree#getType()IŸ
+*logic.dataset_manager.RetrieveInformationsjava.lang.Object_
+getFixedBugs()Mlogic.dataset_manager.RetrieveInformations#getFixedBugs()Lorg/json/JSONArray;X
+retrieveAllTickets()@logic.dataset_manager.RetrieveInformations#retrieveAllTickets()V≠
 5concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)tlogic.dataset_manager.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;s
 readAll(Ljava/io/Reader;)Vlogic.dataset_manager.RetrieveInformations#readAll(Ljava/io/Reader;)Ljava/lang/String;ä
 #readJsonFromUrl(Ljava/lang/String;)clogic.dataset_manager.RetrieveInformations#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;b
 main([Ljava/lang/String;)Elogic.dataset_manager.RetrieveInformations#main([Ljava/lang/String;)Vd
-<init>(Ljava/lang/String;)Flogic.dataset_manager.RetrieveInformations#<init>(Ljava/lang/String;)V_
-getJsonArray()Mlogic.dataset_manager.RetrieveInformations#getJsonArray()Lorg/json/JSONArray;ˆ2
+<init>(Ljava/lang/String;)Flogic.dataset_manager.RetrieveInformations#<init>(Ljava/lang/String;)Vb
+retrieveFixedBugTickets()Elogic.dataset_manager.RetrieveInformations#retrieveFixedBugTickets()Vˆ2
 org.json.JSONArrayjava.lang.Objectjava.lang.IterableA
 optString(I)1org.json.JSONArray#optString(I)Ljava/lang/String;[
 query(Ljava/lang/String;)>org.json.JSONArray#query(Ljava/lang/String;)Ljava/lang/Object;9
@@ -1971,79 +2082,11 @@ read([CII)"java.io.BufferedReader#read([CII)IC
 readLine(Z)4java.io.BufferedReader#readLine(Z)Ljava/lang/String;2
 read1([CII)#java.io.BufferedReader#read1([CII)I*
 mark(I)java.io.BufferedReader#mark(I)V*
-close()java.io.BufferedReader#close()VÉ
-java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.FlushableS
-nullOutputStream()=java.io.OutputStream#nullOutputStream()Ljava/io/OutputStream;,
-	write([B)java.io.OutputStream#write([B)V*
-<init>()java.io.OutputStream#<init>()V(
-flush()java.io.OutputStream#flush()V0
-write([BII)!java.io.OutputStream#write([BII)V(
-close()java.io.OutputStream#close()Vé
-java.io.FilterOutputStreamjava.io.OutputStream2
-	write([B)%java.io.FilterOutputStream#write([B)V\
-<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
-flush()#java.io.FilterOutputStream#flush()V0
-write(I)$java.io.FilterOutputStream#write(I)V6
-write([BII)'java.io.FilterOutputStream#write([BII)V.
-close()#java.io.FilterOutputStream#close()VÖ 
-java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
-	write([C)java.io.PrintStream#write([C)V)
-print(J)java.io.PrintStream#print(J)V-
-
-println(J)java.io.PrintStream#println(J)V)
-print(F)java.io.PrintStream#print(F)V-
-
-println(F)java.io.PrintStream#println(F)V/
-write([BII) java.io.PrintStream#write([BII)VÅ
-4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Ijava.io.PrintStream#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V)
-print(Z)java.io.PrintStream#print(Z)V1
-clearError()!java.io.PrintStream#clearError()V-
-
-println(Z)java.io.PrintStream#println(Z)Vi
-(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V)
-write(I)java.io.PrintStream#write(I)VO
-println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)VK
-print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)Ví
-4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
-print(I)java.io.PrintStream#print(I)V-
-
-println(I)java.io.PrintStream#println(I)V'
-flush()java.io.PrintStream#flush()V´
-?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;m
- append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
-toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
-<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
-	print([C)java.io.PrintStream#print([C)Vq
-"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;)
-print(D)java.io.PrintStream#print(D)Vq
-,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V-
-
-println(D)java.io.PrintStream#println(D)VO
-println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
-<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
-<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)Vy
-0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Ejava.io.PrintStream#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V1
-ensureOpen()!java.io.PrintStream#ensureOpen()Vã
-9<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)Njava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)V´
-?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;-
-
-setError()java.io.PrintStream#setError()Vá
--printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;?
-	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
-<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)Vá
--format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
-	newLine()java.io.PrintStream#newLine()V)
-print(C)java.io.PrintStream#print(C)V1
-checkError()!java.io.PrintStream#checkError()Z+
-	println()java.io.PrintStream#println()V'
-close()java.io.PrintStream#close()V-
-
-println(C)java.io.PrintStream#println(C)VK
-write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)VK
-print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
-1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)VU
-<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)V/
-println([C) java.io.PrintStream#println([C)Vã
-9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Vå
-logic.dataset_manager.Releasejava.lang.ObjectY
-<init>(Ljava/lang/Integer;):logic.dataset_manager.Release#<init>(Ljava/lang/Integer;)V
+close()java.io.BufferedReader#close()V¨
+logic.dataset_manager.Commitjava.lang.Objectz
+,<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)Jlogic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)V·
+logic.dataset_manager.Releaselogic.dataset_manager.Commit°
+?<init>(Lorg/eclipse/jgit/revwalk/RevCommit;Ljava/lang/Integer;)^logic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/revwalk/RevCommit;Ljava/lang/Integer;)Vﬁ
+(logic.dataset_manager.DatasetConstructorjava.lang.Object>
+<init>()2logic.dataset_manager.DatasetConstructor#<init>()V`
+main([Ljava/lang/String;)Clogic.dataset_manager.DatasetConstructor#main([Ljava/lang/String;)V
