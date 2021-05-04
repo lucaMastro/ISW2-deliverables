@@ -45,4 +45,7 @@ public class ReleaseFile extends File {
         super(ConfigurationManager.getConfigEntry("repositoryPath") + name);
     }
 
+    public boolean equals(ReleaseFile obj) {
+        return this.getPath().equals(obj.getPath());
+    }
 }

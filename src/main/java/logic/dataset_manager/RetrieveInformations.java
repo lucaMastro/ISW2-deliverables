@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.List;
 
 import logic.jira_informations.JiraBeanInformations;
 import org.json.JSONException;
@@ -84,7 +85,7 @@ public class RetrieveInformations {
         }
     }
 
-    public ArrayList<JiraBeanInformations> getInformations(){
+    public List<JiraBeanInformations> getInformations(){
         Integer i;
         ArrayList<JiraBeanInformations> list = new ArrayList<>();
 

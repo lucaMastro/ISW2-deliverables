@@ -5,6 +5,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class JiraBeanInformations {
 
@@ -45,11 +46,11 @@ public class JiraBeanInformations {
         return openingVersionDate;
     }
 
-    public ArrayList<String> getAffectedVersions() {
+    public List<String> getAffectedVersions() {
         return affectedVersions;
     }
 
-    public ArrayList<String> getFixedVersions() {
+    public List<String> getFixedVersions() {
         return fixedVersions;
     }
 

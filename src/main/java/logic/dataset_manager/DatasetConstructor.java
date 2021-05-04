@@ -11,9 +11,7 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevSort;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-import java.io.File;
 import java.io.IOException;
-import java.math.RoundingMode;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -42,7 +40,7 @@ public class DatasetConstructor {
         for (i = 0; i < tagList.size(); i++){
             Release cur = new Release(tagList.get(i));
             this.releases.add(cur);
-            cur.commits = this.retrieveCommitsBeetwenReleases(i + 1);
+            cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
         }
         Collections.sort(this.releases, (Commit o1, Commit o2) ->{
             Date d1 = o1.date;
@@ -80,7 +78,7 @@ public class DatasetConstructor {
         return this.commits.get(index);
     }
 
-    public ArrayList<Commit> retrieveCommitsBeetwenReleases(Integer endIndexRelease)
+    public List<Commit> retrieveCommitsBeetwenReleases(Integer endIndexRelease)
             throws InvalidRangeException {
 
         /* this.retrieveCommits(2) should return a list of all commits performed between release1 and release 2
@@ -111,7 +109,7 @@ public class DatasetConstructor {
     }
 
 
-    public ArrayList<Commit> findCommitsFromTicketId(String ticketId){
+    public List<Commit> findCommitsFromTicketId(String ticketId){
         /*  This method returns the Commit list which are relative to a given TicketId  */
         ArrayList<Commit> relativeCommits = new ArrayList<>();
         for (Commit c : this.commits)
@@ -144,7 +142,7 @@ public class DatasetConstructor {
         return ret;
     }
 
-    public Commit findFixedVersion(ArrayList<String> fixedVersionNames) {
+    public Commit findFixedVersion(List<String> fixedVersionNames) {
         /*  Jira ticket may return a list of fixedVersions. Assuming the truly fixed version is the last (in time)
          *  of this list, this method find that release's commit.
          *  Note that Jira returns a list of String, that are the numerical versioning of release.  */
@@ -165,7 +163,7 @@ public class DatasetConstructor {
 
         RetrieveInformations retrieveInformations = new RetrieveInformations(
                 ConfigurationManager.getConfigEntry("projectName"));
-        ArrayList<JiraBeanInformations> informations = retrieveInformations.getInformations();
+        ArrayList<JiraBeanInformations> informations = (ArrayList<JiraBeanInformations>) retrieveInformations.getInformations();
 
         this.fixedBugs = new ArrayList<>();
 

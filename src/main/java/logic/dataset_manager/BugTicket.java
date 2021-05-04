@@ -16,7 +16,7 @@ public class BugTicket  {
     public BugTicket(JiraBeanInformations info){
         this.ticketId = info.getKey();
 
-        this.affectedVersions = info.getAffectedVersions();
+        this.affectedVersions = (ArrayList<String>) info.getAffectedVersions();
 
         DateFormat pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
         this.openingDate = pattern.parse(info.getOpeningVersionDate(), new ParsePosition(0));

@@ -11,12 +11,12 @@ import java.util.logging.Logger;
 
 
 public class Commit {
-    RevCommit commit;
+    RevCommit revCommit;
     Date date;
     String message;
 
     public Commit(RevCommit c) {
-        this.commit = c;
+        this.revCommit = c;
         this.date = c.getAuthorIdent().getWhen();
         this.message = c.getFullMessage();
     }
@@ -24,7 +24,7 @@ public class Commit {
     public Commit(Ref r) {
         try (RevWalk walk = new RevWalk(JgitManager.getInstance().getRepository())) {
             RevCommit c = walk.parseCommit(r.getObjectId());
-            this.commit = c;
+            this.revCommit = c;
             this.date = c.getAuthorIdent().getWhen();
             this.message = c.getFullMessage();
         } catch (Exception e) {

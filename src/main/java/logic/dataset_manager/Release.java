@@ -19,7 +19,6 @@ public class Release extends Commit {
     ArrayList<Commit> commits;
 
     /*  List of all files in this release commit    */
-    //ArrayList<String> files;
     ArrayList<ReleaseFile> files;
 
     //--------------------------------------------------------------------------------
@@ -31,7 +30,7 @@ public class Release extends Commit {
         this.files = new ArrayList<>();
         try (TreeWalk tw = new TreeWalk(JgitManager.getInstance().getRepository()) ){
             tw.setRecursive(Boolean.TRUE);
-            tw.reset(this.commit.getTree().getId());
+            tw.reset(this.revCommit.getTree().getId());
             while (tw.next()){
                 String fileName = tw.getPathString();
                 if (fileName.endsWith(".java"))
