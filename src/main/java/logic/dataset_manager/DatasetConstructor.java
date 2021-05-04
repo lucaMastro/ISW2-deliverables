@@ -11,7 +11,9 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevSort;
 import org.eclipse.jgit.revwalk.RevWalk;
 
+import java.io.File;
 import java.io.IOException;
+import java.math.RoundingMode;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,7 +22,7 @@ public class DatasetConstructor {
 
     private ArrayList<Commit> commits;
     private ArrayList<Release> releases;
-    private ArrayList<BugTicket> fixedbugs;
+    private ArrayList<BugTicket> fixedBugs;
 
     public DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
         this.initializeCommitList();
@@ -160,24 +162,37 @@ public class DatasetConstructor {
     }
 
     private void initializeBugsList() throws IOException {
+
         RetrieveInformations retrieveInformations = new RetrieveInformations(
                 ConfigurationManager.getConfigEntry("projectName"));
         ArrayList<JiraBeanInformations> informations = retrieveInformations.getInformations();
 
-        this.fixedbugs = new ArrayList<>();
+        this.fixedBugs = new ArrayList<>();
 
         for (JiraBeanInformations info : informations) {
 
             info.setTrulyFixedVersion(this.findFixedVersion(info.getFixedVersions()));
             BugTicket bug = new BugTicket(info);
-            this.fixedbugs.add(bug);
+            this.fixedBugs.add(bug);
         }
     }
 
 
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor manager = new DatasetConstructor();
-        int a = 3;
+        Date d1 = new Date(2021, 04, 1);
+        Date d2 = new Date(2021, 04, 7);
+        long a = d2.getTime() - d1.getTime();
+        System.out.println("d2: " + d2.getTime());
+        System.out.println("d1: " + d1.getTime());
+        System.out.println("diff: " + a);
+        long mInWeek = 7 * 24 * 60 * 60 * 1000;
+        System.out.println("millisec in week: " + mInWeek);
+        long weeks = a / mInWeek;
+        System.out.println("weeks: " + weeks);
+
+        System.out.println();
+
 
     }
 

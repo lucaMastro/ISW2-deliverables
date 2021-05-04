@@ -1,0 +1,80 @@
+
+vlogic.dataset_manager.DatasetConstructor#findLastCommitsFromTicketId(Ljava/lang/String;)Llogic/dataset_manager/Commit;~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaz z(-"7*Ÿ
+2~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java~ ~(´
+±
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java~ ~(!
+clogic.dataset_manager.Commit"__id*
+""×
+Ô
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java~ ~(!
+clogic.dataset_manager.Commit"
+__arrayGet*
+
+%0java.util.ArrayList*
+""*	
+3
+4
+1*å
+3€
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java€ €(×
+Ô
+€
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java€ €($
+lastlogic.dataset_manager.Commit"__id*#
+!
+clogic.dataset_manager.Commit*
+2*»
+4~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java  ($Ñ
+Î
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java  ()
+%1java.util.Date"__id*0*.
+$
+lastlogic.dataset_manager.Commit"
+dateÎ
+Ë
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java4 (:
+%2java.util.Date"__id*-*+
+!
+clogic.dataset_manager.Commit"
+dateˆ…
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java  (;	
+%3int"+java.util.Date#compareTo(Ljava/util/Date;)I*
+
+%1java.util.Date*
+
+%2java.util.Date2compareTo(Ljava/util/Date;)*
+2
+3*
+6~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java~ ~(„
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java~ ~(>
+%0java.util.ArrayList"ilogic.dataset_manager.DatasetConstructor#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/ArrayList;*,*
+(logic.dataset_manager.DatasetConstructor*
+
+ticketIdjava.lang.String2+findCommitsFromTicketId(Ljava/lang/String;)*
+2*Â
+7~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java} }(·
+´
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java} }($
+lastlogic.dataset_manager.Commit"__id*
+""*
+6*´
+1€
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java‚ ‚("«
+€
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java‚ ‚(&
+$
+lastlogic.dataset_manager.Commit:
+ticketIdjava.lang.StringB,*
+(logic.dataset_manager.DatasetConstructor

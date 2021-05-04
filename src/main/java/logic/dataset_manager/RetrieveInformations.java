@@ -5,9 +5,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
-import logic.config_manager.ConfigurationManager;
 import logic.jira_informations.JiraBeanInformations;
-import org.eclipse.jgit.api.errors.GitAPIException;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -30,28 +28,6 @@ public class RetrieveInformations {
     public JSONArray getFixedBugs() {
         return fixedBugs;
     }
-
-
-    /*public void retrieveAllTickets()throws IOException {
-        Integer j = 0;
-        Integer i = 0;
-        //Get JSON API for closed bugs w/ AV in the project
-        do {
-            //Only gets a max of 1000 at a time, so must do this multiple times if bugs >1000
-            j = i + 1000;
-            String url = "https://issues.apache.org/jira/rest/api/2/search?jql=project=%22"
-                    + this.projectName + "%22&fields=key,status,issueType,resolutiondate,versions,created,fixVersions"+
-                    "&startAt=" + i.toString() + "&maxResults=" + j.toString();
-            JSONObject json = readJsonFromUrl(url);
-
-            this.allTickets = concatenate(this.allTickets, json.getJSONArray("issues"));
-
-            this.allTicketsNumber = json.getInt("total");
-            //if total is >= jsonArrayLength * 1000, i need another iteration. just increment of 1000
-            i += 1000;
-        } while (i < this.allTicketsNumber);
-
-    }*/
 
     private void retrieveFixedBugTickets()throws IOException {
         Integer j = 0;

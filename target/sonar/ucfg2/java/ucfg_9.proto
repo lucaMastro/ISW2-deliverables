@@ -1,17 +1,80 @@
 
-Rlogic.dataset_manager.JgitManager#getRepository()Lorg/eclipse/jgit/lib/Repository;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaz z(#"1*„
-1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java{ {(à
-Ý
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java{ {(%
-%0org.eclipse.jgit.lib.Repository"__id*5*3#
-!logic.dataset_manager.JgitManager"
-
-repository"¢
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java{ {('
-%
-%0org.eclipse.jgit.lib.RepositoryB%#
-!logic.dataset_manager.JgitManager
+tlogic.dataset_manager.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaP P(!"9*»
+3€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaW W(÷ô
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaW W( 
+%6java.lang.Object"+org.json.JSONArray#get(I)Ljava/lang/Object;*
+
+a2org.json.JSONArray*
+""2get(I)³°
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaW W(!
+%7org.json.JSONArray">org.json.JSONArray#put(Ljava/lang/Object;)Lorg/json/JSONArray;*
+
+resultorg.json.JSONArray*
+
+%6java.lang.Object2put(Ljava/lang/Object;)*
+4*æ
+4€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaV V(ÕÒ
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaV V(#	
+%5int"org.json.JSONArray#length()I*
+
+a2org.json.JSONArray2length()*
+3
+1*»
+7€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaT T(÷ô
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaT T( 
+%3java.lang.Object"+org.json.JSONArray#get(I)Ljava/lang/Object;*
+
+a1org.json.JSONArray*
+""2get(I)³°
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaT T(!
+%4org.json.JSONArray">org.json.JSONArray#put(Ljava/lang/Object;)Lorg/json/JSONArray;*
+
+resultorg.json.JSONArray*
+
+%3java.lang.Object2put(Ljava/lang/Object;)*
+8*æ
+8€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaS S(ÕÒ
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaS S(#	
+%2int"org.json.JSONArray#length()I*
+
+a1org.json.JSONArray2length()*
+4
+7*Ô
+9€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaQ Q(´±
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaR R((
+%0org.json.JSONArray"org.json.JSONArrayÆ
+Ã
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaR R(*
+%1"org.json.JSONArray#<init>()V*
+
+%0org.json.JSONArrayÆ
+Ã
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaR R(+
+resultorg.json.JSONArray"__id*
+
+%0org.json.JSONArray*
+8*¬
+1€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaY Y("£
+€
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaY Y(
+
+resultorg.json.JSONArray:
+a1org.json.JSONArray:
+a2org.json.JSONArrayB.,
+*logic.dataset_manager.RetrieveInformations
