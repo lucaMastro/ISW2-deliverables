@@ -602,13 +602,13 @@ canWrite()java.io.File#canWrite()Z2
 isInvalid()java.io.File#isInvalid()Z4
 setExecutable(ZZ)java.io.File#setExecutable(ZZ)Z0
 createNewFile()java.io.File#createNewFile()Zd
-)writeObject(Ljava/io/ObjectOutputStream;)7java.io.File#writeObject(Ljava/io/ObjectOutputStream;)V˚
+)writeObject(Ljava/io/ObjectOutputStream;)7java.io.File#writeObject(Ljava/io/ObjectOutputStream;)Vˆ
 *logic.dataset_manager.RetrieveInformationsjava.lang.Object_
 getFixedBugs()Mlogic.dataset_manager.RetrieveInformations#getFixedBugs()Lorg/json/JSONArray;≠
 5concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)tlogic.dataset_manager.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;s
 readAll(Ljava/io/Reader;)Vlogic.dataset_manager.RetrieveInformations#readAll(Ljava/io/Reader;)Ljava/lang/String;ä
-#readJsonFromUrl(Ljava/lang/String;)clogic.dataset_manager.RetrieveInformations#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;f
-getInformations()Qlogic.dataset_manager.RetrieveInformations#getInformations()Ljava/util/ArrayList;d
+#readJsonFromUrl(Ljava/lang/String;)clogic.dataset_manager.RetrieveInformations#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;a
+getInformations()Llogic.dataset_manager.RetrieveInformations#getInformations()Ljava/util/List;d
 <init>(Ljava/lang/String;)Flogic.dataset_manager.RetrieveInformations#<init>(Ljava/lang/String;)Vv
 getFixedBugTicketsNumber()Xlogic.dataset_manager.RetrieveInformations#getFixedBugTicketsNumber()Ljava/lang/Integer;b
 retrieveFixedBugTickets()Elogic.dataset_manager.RetrieveInformations#retrieveFixedBugTickets()V÷
@@ -1247,15 +1247,15 @@ iterator()2java.util.ArrayList#iterator()Ljava/util/Iterator;I
 spliterator()8java.util.ArrayList#spliterator()Ljava/util/Spliterator;1
 isClear([JI)!java.util.ArrayList#isClear([JI)Zk
 )writeObject(Ljava/io/ObjectOutputStream;)>java.util.ArrayList#writeObject(Ljava/io/ObjectOutputStream;)V%
-size()java.util.ArrayList#size()IÓ
+size()java.util.ArrayList#size()I‰
 ,logic.jira_informations.JiraBeanInformationsjava.lang.Objectl
 <init>(Lorg/json/JSONObject;)Klogic.jira_informations.JiraBeanInformations#<init>(Lorg/json/JSONObject;)V{
-getTrulyFixedVersion()alogic.jira_informations.JiraBeanInformations#getTrulyFixedVersion()Llogic/dataset_manager/Commit;j
-getFixedVersions()Tlogic.jira_informations.JiraBeanInformations#getFixedVersions()Ljava/util/ArrayList;q
+getTrulyFixedVersion()alogic.jira_informations.JiraBeanInformations#getTrulyFixedVersion()Llogic/dataset_manager/Commit;e
+getFixedVersions()Ologic.jira_informations.JiraBeanInformations#getFixedVersions()Ljava/util/List;q
 getOpeningVersionDate()Vlogic.jira_informations.JiraBeanInformations#getOpeningVersionDate()Ljava/lang/String;S
 getKey()Glogic.jira_informations.JiraBeanInformations#getKey()Ljava/lang/String;ö
-4setTrulyFixedVersion(Llogic/dataset_manager/Commit;)blogic.jira_informations.JiraBeanInformations#setTrulyFixedVersion(Llogic/dataset_manager/Commit;)Vp
-getAffectedVersions()Wlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/ArrayList;î
+4setTrulyFixedVersion(Llogic/dataset_manager/Commit;)blogic.jira_informations.JiraBeanInformations#setTrulyFixedVersion(Llogic/dataset_manager/Commit;)Vk
+getAffectedVersions()Rlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/List;î
 logic.dataset_manager.Commitjava.lang.Objectf
 "<init>(Lorg/eclipse/jgit/lib/Ref;)@logic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/lib/Ref;)Vz
 ,<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)Jlogic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)Væ
@@ -2000,9 +2000,10 @@ valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
 checkIndex(II) java.lang.String#checkIndex(II)VX
 !<init>(Ljava/lang/StringBuilder;)3java.lang.String#<init>(Ljava/lang/StringBuilder;)V%
 value()java.lang.String#value()[B`
-%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Zé
-!logic.dataset_manager.ReleaseFilejava.io.File[
-<init>(Ljava/lang/String;)=logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;)V™
+%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Zç
+!logic.dataset_manager.ReleaseFilejava.io.File}
++equals(Llogic/dataset_manager/ReleaseFile;)Nlogic.dataset_manager.ReleaseFile#equals(Llogic/dataset_manager/ReleaseFile;)Z[
+<init>(Ljava/lang/String;)=logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;)Vñ
 (logic.dataset_manager.DatasetConstructorjava.lang.ObjectÇ
 getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;©
 /findLastCommitsFromTicketId(Ljava/lang/String;)vlogic.dataset_manager.DatasetConstructor#findLastCommitsFromTicketId(Ljava/lang/String;)Llogic/dataset_manager/Commit;>
@@ -2010,12 +2011,12 @@ valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
 initializeReleaseList()Alogic.dataset_manager.DatasetConstructor#initializeReleaseList()VZ
 initializeCommitList()@logic.dataset_manager.DatasetConstructor#initializeCommitList()VV
 initializeBugsList()>logic.dataset_manager.DatasetConstructor#initializeBugsList()V`
-main([Ljava/lang/String;)Clogic.dataset_manager.DatasetConstructor#main([Ljava/lang/String;)Vò
-+findCommitsFromTicketId(Ljava/lang/String;)ilogic.dataset_manager.DatasetConstructor#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/ArrayList;®
-3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)qlogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/ArrayList;ö
+main([Ljava/lang/String;)Clogic.dataset_manager.DatasetConstructor#main([Ljava/lang/String;)Vì
++findCommitsFromTicketId(Ljava/lang/String;)dlogic.dataset_manager.DatasetConstructor#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;£
+3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)llogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;è
+"findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Commit;ö
 'findReleaseFromName(Ljava/lang/String;)ologic.dataset_manager.DatasetConstructor#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;á
-getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;ô
-'findFixedVersion(Ljava/util/ArrayList;)nlogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/ArrayList;)Llogic/dataset_manager/Commit;‹,
+getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;‹,
 org.eclipse.jgit.api.Gitjava.lang.Objectjava.lang.AutoCloseablef
 submoduleSync()Sorg.eclipse.jgit.api.Git#submoduleSync()Lorg/eclipse/jgit/api/SubmoduleSyncCommand;N
 blame()Corg.eclipse.jgit.api.Git#blame()Lorg/eclipse/jgit/api/BlameCommand;c
