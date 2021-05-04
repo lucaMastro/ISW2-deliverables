@@ -25,7 +25,9 @@ import logic.config_manager.ConfigurationManager;
 
 import java.io.File;
 
-public class ReleaseFile extends File {
+public class ReleaseFile {
+
+    File file;
 
     //metrics
     private long loc; //lines of code
@@ -42,11 +44,7 @@ public class ReleaseFile extends File {
     private long weightedAge; //age of Release weighted by LOC touched
 
     public ReleaseFile(String name){
-        super(ConfigurationManager.getConfigEntry("repositoryPath") + name);
+        this.file = new File(ConfigurationManager.getConfigEntry("repositoryPath") + name);
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return this.getPath().equals(((ReleaseFile) obj).getPath());
-    }
 }

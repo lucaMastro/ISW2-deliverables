@@ -1,26 +1,43 @@
 
-Nlogic.dataset_manager.ReleaseFile#equals(Llogic/dataset_manager/ReleaseFile;)Zw
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java0 0("1*˜
+=logic.dataset_manager.ReleaseFile#equals(Ljava/lang/Object;)Zw
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1 1("startingBlock*ˇ
+startingBlockw
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1 1(%¡
+æ
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java0 0(
+%3"
+__annotate*
+java.lang.Override*
+
+objjava.lang.Object´
+®
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1! 1($
+objjava.lang.Object"__annotation*
+
+%3*
+1*Ê
 1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1 1(Ì
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java2 2(Ì
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1 1(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java2 2(
 %0java.lang.String"(java.io.File#getPath()Ljava/lang/String;*%#
-!logic.dataset_manager.ReleaseFile2	getPath()ıÚ
+!logic.dataset_manager.ReleaseFile2	getPath()‰·
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1% 1(2
-%1java.lang.String"(java.io.File#getPath()Ljava/lang/String;**
-(
-obj!logic.dataset_manager.ReleaseFile2	getPath()âÜ
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java2% 2(B
+%1java.lang.String"(java.io.File#getPath()Ljava/lang/String;*
+
+objjava.lang.Object2	getPath()âÜ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1 1(3
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java2 2(C
 %2boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
 
 %0java.lang.String*
 
 %1java.lang.String2equals(Ljava/lang/Object;)"Å
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java1 1(4
-"":(
-obj!logic.dataset_manager.ReleaseFileB%#
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java2 2(D
+"":
+objjava.lang.ObjectB%#
 !logic.dataset_manager.ReleaseFile
