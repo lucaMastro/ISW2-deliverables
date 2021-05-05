@@ -2000,9 +2000,8 @@ valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
 checkIndex(II) java.lang.String#checkIndex(II)VX
 !<init>(Ljava/lang/StringBuilder;)3java.lang.String#<init>(Ljava/lang/StringBuilder;)V%
 value()java.lang.String#value()[B`
-%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Zë
-!logic.dataset_manager.ReleaseFilejava.io.File[
-equals(Ljava/lang/Object;)=logic.dataset_manager.ReleaseFile#equals(Ljava/lang/Object;)Z[
+%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Z’
+!logic.dataset_manager.ReleaseFilejava.lang.Object[
 <init>(Ljava/lang/String;)=logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;)V–
 (logic.dataset_manager.DatasetConstructorjava.lang.Object‚
 getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;©

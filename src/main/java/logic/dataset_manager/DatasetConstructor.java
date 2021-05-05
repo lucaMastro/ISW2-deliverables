@@ -5,11 +5,19 @@ import logic.exception.InvalidRangeException;
 import logic.jira_informations.JiraBeanInformations;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.Edit;
+import org.eclipse.jgit.diff.RawTextComparator;
+import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevSort;
 import org.eclipse.jgit.revwalk.RevWalk;
+import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import org.eclipse.jgit.util.io.DisabledOutputStream;
 
 import java.io.IOException;
 import java.util.*;
@@ -176,22 +184,67 @@ public class DatasetConstructor {
     }
 
 
+
+
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor manager = new DatasetConstructor();
-        Date d1 = new Date(2021, 04, 1);
-        Date d2 = new Date(2021, 04, 7);
-        long a = d2.getTime() - d1.getTime();
-        System.out.println("d2: " + d2.getTime());
-        System.out.println("d1: " + d1.getTime());
-        System.out.println("diff: " + a);
-        long mInWeek = 7 * 24 * 60 * 60 * 1000;
-        System.out.println("millisec in week: " + mInWeek);
-        long weeks = a / mInWeek;
-        System.out.println("weeks: " + weeks);
+        Commit c1 = manager.releases.get(1).commits.get(0);
+        Commit c2 = manager.releases.get(1).commits.get(1);
 
-        System.out.println();
+        List<DiffEntry> diffs = JgitManager.getInstance().listDifferencesBetweenTwoCommits(c1.revCommit, c2.revCommit);
+        for (DiffEntry entry : diffs) {
+            System.out.println("old: " + entry.getOldPath() +
+                    ", new: " + entry.getNewPath() +
+                    ", entry: " + entry);
+        }
+
+        for (DiffEntry entry : diffs) {
+            Integer[] lines = JgitManager.getInstance().countLinesAddedAndDeleted(entry);
+            System.out.println("added: "+ lines[0]+", deleted: "+ lines[1]);
+        }
 
 
+        /*Repository repository = JgitManager.getInstance().getRepository();
+
+        ObjectId id1 = c1.revCommit.getTree().getId();
+        ObjectId id2 = c2.revCommit.getTree().getId();
+
+        System.out.println("Printing diff between tree: " + id1 + " and " + id2);
+        List<DiffEntry> diffs;
+        // prepare the two iterators to compute the diff between
+        try (ObjectReader reader = repository.newObjectReader()) {
+            CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
+            oldTreeIter.reset(reader, id1);
+            CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
+            newTreeIter.reset(reader, id2);
+
+            // finally get the list of changed files
+            try (Git git = new Git(repository)) {
+                diffs= git.diff()
+                        .setNewTree(newTreeIter)
+                        .setOldTree(oldTreeIter)
+                        .call();
+                for (DiffEntry entry : diffs) {
+                    System.out.println("old: " + entry.getOldPath() +
+                            ", new: " + entry.getNewPath() +
+                            ", entry: " + entry);
+                }
+            }
+        }
+
+        int linesDeleted = 0;
+        int linesAdded = 0;
+        DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
+        df.setRepository(repository);
+        df.setDiffComparator(RawTextComparator.DEFAULT);
+        df.setDetectRenames(true);
+        for (DiffEntry diff : diffs) {
+            for (Edit edit : df.toFileHeader(diff).toEditList()) {
+                linesDeleted += edit.getEndA() - edit.getBeginA();
+                linesAdded += edit.getEndB() - edit.getBeginB();
+            }
+        }
+        System.out.println("added: "+ linesAdded+", deleted: "+ linesDeleted);*/
     }
 
 }

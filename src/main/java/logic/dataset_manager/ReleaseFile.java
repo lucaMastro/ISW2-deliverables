@@ -1,7 +1,7 @@
 /*
  *
  *   Size                  Lines of code(LOC)
- *   LOC                   Touched Sum over revisions of LOC added + deleted + modified
+ *   LOC                   Touched Sum over revisions of LOC added + deleted
  *   NR                    Number of revisions
  *   Nfix                  Number of bug fixes
  *   Nauth                 Number of authors who committed the file
