@@ -46,7 +46,7 @@ public class JgitManager {
 
 
     public List<DiffEntry> listDifferencesBetweenTwoCommits(RevCommit c1, RevCommit c2) throws IOException {
-        
+
         ObjectId id1 = c1.getTree().getId();
         ObjectId id2 = c2.getTree().getId();
         List<DiffEntry> diffs = null;
