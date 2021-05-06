@@ -1,6 +1,5 @@
 package logic.dataset_manager;
 
-import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -50,7 +49,7 @@ public class Release extends Commit {
         this.index = index;
     }
 
-    public void setEachFileLoc() throws IOException, GitAPIException {
+    public void setEachFileLoc() throws IOException {
         for (ReleaseFile f : this.files)
             f.computeLoc(this.revCommit);
     }
