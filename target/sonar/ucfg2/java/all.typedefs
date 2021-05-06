@@ -605,102 +605,7 @@ canWrite()java.io.File#canWrite()Z2
 isInvalid()java.io.File#isInvalid()Z4
 setExecutable(ZZ)java.io.File#setExecutable(ZZ)Z0
 createNewFile()java.io.File#createNewFile()Zd
-)writeObject(Ljava/io/ObjectOutputStream;)7java.io.File#writeObject(Ljava/io/ObjectOutputStream;)V‹,
-org.eclipse.jgit.api.Gitjava.lang.Objectjava.lang.AutoCloseablef
-submoduleSync()Sorg.eclipse.jgit.api.Git#submoduleSync()Lorg/eclipse/jgit/api/SubmoduleSyncCommand;N
-blame()Corg.eclipse.jgit.api.Git#blame()Lorg/eclipse/jgit/api/BlameCommand;c
-submoduleAdd()Qorg.eclipse.jgit.api.Git#submoduleAdd()Lorg/eclipse/jgit/api/SubmoduleAddCommand;H
-tag()?org.eclipse.jgit.api.Git#tag()Lorg/eclipse/jgit/api/TagCommand;c
-branchDelete()Qorg.eclipse.jgit.api.Git#branchDelete()Lorg/eclipse/jgit/api/DeleteBranchCommand;_
-notesRemove()Norg.eclipse.jgit.api.Git#notesRemove()Lorg/eclipse/jgit/api/RemoveNoteCommand;l
-verifySignature()Worg.eclipse.jgit.api.Git#verifySignature()Lorg/eclipse/jgit/api/VerifySignatureCommand;Z
-tagDelete()Korg.eclipse.jgit.api.Git#tagDelete()Lorg/eclipse/jgit/api/DeleteTagCommand;N
-clean()Corg.eclipse.jgit.api.Git#clean()Lorg/eclipse/jgit/api/CleanCommand;Ö
-'wrap(Lorg/eclipse/jgit/lib/Repository;)Zorg.eclipse.jgit.api.Git#wrap(Lorg/eclipse/jgit/lib/Repository;)Lorg/eclipse/jgit/api/Git;l
-submoduleUpdate()Worg.eclipse.jgit.api.Git#submoduleUpdate()Lorg/eclipse/jgit/api/SubmoduleUpdateCommand;N
-fetch()Corg.eclipse.jgit.api.Git#fetch()Lorg/eclipse/jgit/api/FetchCommand;Z
-stashDrop()Korg.eclipse.jgit.api.Git#stashDrop()Lorg/eclipse/jgit/api/StashDropCommand;f
-submoduleInit()Sorg.eclipse.jgit.api.Git#submoduleInit()Lorg/eclipse/jgit/api/SubmoduleInitCommand;_
-open(Ljava/io/File;)Gorg.eclipse.jgit.api.Git#open(Ljava/io/File;)Lorg/eclipse/jgit/api/Git;C
-
-toString()5org.eclipse.jgit.api.Git#toString()Ljava/lang/String;2
-
-shutdown()$org.eclipse.jgit.api.Git#shutdown()Vr
-*<init>(Lorg/eclipse/jgit/lib/Repository;Z)Dorg.eclipse.jgit.api.Git#<init>(Lorg/eclipse/jgit/lib/Repository;Z)VY
-notesShow()Jorg.eclipse.jgit.api.Git#notesShow()Lorg/eclipse/jgit/api/ShowNoteCommand;\
-getRepository()Iorg.eclipse.jgit.api.Git#getRepository()Lorg/eclipse/jgit/lib/Repository;l
-submoduleStatus()Worg.eclipse.jgit.api.Git#submoduleStatus()Lorg/eclipse/jgit/api/SubmoduleStatusCommand;l
-submoduleDeinit()Worg.eclipse.jgit.api.Git#submoduleDeinit()Lorg/eclipse/jgit/api/SubmoduleDeinitCommand;p
-)<init>(Lorg/eclipse/jgit/lib/Repository;)Corg.eclipse.jgit.api.Git#<init>(Lorg/eclipse/jgit/lib/Repository;)Vc
-remoteRemove()Qorg.eclipse.jgit.api.Git#remoteRemove()Lorg/eclipse/jgit/api/RemoteRemoveCommand;V
-
-notesAdd()Horg.eclipse.jgit.api.Git#notesAdd()Lorg/eclipse/jgit/api/AddNoteCommand;Z
-stashList()Korg.eclipse.jgit.api.Git#stashList()Lorg/eclipse/jgit/api/StashListCommand;Z
-remoteAdd()Korg.eclipse.jgit.api.Git#remoteAdd()Lorg/eclipse/jgit/api/RemoteAddCommand;W
-
-checkout()Iorg.eclipse.jgit.api.Git#checkout()Lorg/eclipse/jgit/api/CheckoutCommand;`
-stashCreate()Oorg.eclipse.jgit.api.Git#stashCreate()Lorg/eclipse/jgit/api/StashCreateCommand;c
-branchRename()Qorg.eclipse.jgit.api.Git#branchRename()Lorg/eclipse/jgit/api/RenameBranchCommand;]
-branchList()Morg.eclipse.jgit.api.Git#branchList()Lorg/eclipse/jgit/api/ListBranchCommand;K
-pull()Aorg.eclipse.jgit.api.Git#pull()Lorg/eclipse/jgit/api/PullCommand;ì
-.open(Ljava/io/File;Lorg/eclipse/jgit/util/FS;)aorg.eclipse.jgit.api.Git#open(Ljava/io/File;Lorg/eclipse/jgit/util/FS;)Lorg/eclipse/jgit/api/Git;E
-rm()=org.eclipse.jgit.api.Git#rm()Lorg/eclipse/jgit/api/RmCommand;Z
-notesList()Korg.eclipse.jgit.api.Git#notesList()Lorg/eclipse/jgit/api/ListNotesCommand;]
-stashApply()Morg.eclipse.jgit.api.Git#stashApply()Lorg/eclipse/jgit/api/StashApplyCommand;W
-
-describe()Iorg.eclipse.jgit.api.Git#describe()Lorg/eclipse/jgit/api/DescribeCommand;T
-	nameRev()Gorg.eclipse.jgit.api.Git#nameRev()Lorg/eclipse/jgit/api/NameRevCommand;]
-remoteList()Morg.eclipse.jgit.api.Git#remoteList()Lorg/eclipse/jgit/api/RemoteListCommand;N
-apply()Corg.eclipse.jgit.api.Git#apply()Lorg/eclipse/jgit/api/ApplyCommand;Q
-revert()Eorg.eclipse.jgit.api.Git#revert()Lorg/eclipse/jgit/api/RevertCommand;K
-diff()Aorg.eclipse.jgit.api.Git#diff()Lorg/eclipse/jgit/api/DiffCommand;c
-branchCreate()Qorg.eclipse.jgit.api.Git#branchCreate()Lorg/eclipse/jgit/api/CreateBranchCommand;Q
-reflog()Eorg.eclipse.jgit.api.Git#reflog()Lorg/eclipse/jgit/api/ReflogCommand;K
-push()Aorg.eclipse.jgit.api.Git#push()Lorg/eclipse/jgit/api/PushCommand;k
-lsRemoteRepository()Sorg.eclipse.jgit.api.Git#lsRemoteRepository()Lorg/eclipse/jgit/api/LsRemoteCommand;,
-close()!org.eclipse.jgit.api.Git#close()VH
-log()?org.eclipse.jgit.api.Git#log()Lorg/eclipse/jgit/api/LogCommand;c
-remoteSetUrl()Qorg.eclipse.jgit.api.Git#remoteSetUrl()Lorg/eclipse/jgit/api/RemoteSetUrlCommand;Q
-commit()Eorg.eclipse.jgit.api.Git#commit()Lorg/eclipse/jgit/api/CommitCommand;Q
-rebase()Eorg.eclipse.jgit.api.Git#rebase()Lorg/eclipse/jgit/api/RebaseCommand;H
-add()?org.eclipse.jgit.api.Git#add()Lorg/eclipse/jgit/api/AddCommand;Q
-status()Eorg.eclipse.jgit.api.Git#status()Lorg/eclipse/jgit/api/StatusCommand;b
-cloneRepository()Morg.eclipse.jgit.api.Git#cloneRepository()Lorg/eclipse/jgit/api/CloneCommand;Q
-gc()Iorg.eclipse.jgit.api.Git#gc()Lorg/eclipse/jgit/api/GarbageCollectCommand;N
-merge()Corg.eclipse.jgit.api.Git#merge()Lorg/eclipse/jgit/api/MergeCommand;W
-
-lsRemote()Iorg.eclipse.jgit.api.Git#lsRemote()Lorg/eclipse/jgit/api/LsRemoteCommand;T
-	archive()Gorg.eclipse.jgit.api.Git#archive()Lorg/eclipse/jgit/api/ArchiveCommand;N
-reset()Corg.eclipse.jgit.api.Git#reset()Lorg/eclipse/jgit/api/ResetCommand;]
-cherryPick()Morg.eclipse.jgit.api.Git#cherryPick()Lorg/eclipse/jgit/api/CherryPickCommand;T
-	tagList()Gorg.eclipse.jgit.api.Git#tagList()Lorg/eclipse/jgit/api/ListTagCommand;K
-init()Aorg.eclipse.jgit.api.Git#init()Lorg/eclipse/jgit/api/InitCommand;1
-java.util.concurrent.Callablejava.lang.Object∏
-org.eclipse.jgit.api.GitCommandjava.util.concurrent.Callablejava.lang.ObjectC
-checkCallable()0org.eclipse.jgit.api.GitCommand#checkCallable()Vw
-)<init>(Lorg/eclipse/jgit/lib/Repository;)Jorg.eclipse.jgit.api.GitCommand#<init>(Lorg/eclipse/jgit/lib/Repository;)VA
-setCallable(Z)/org.eclipse.jgit.api.GitCommand#setCallable(Z)Vc
-getRepository()Porg.eclipse.jgit.api.GitCommand#getRepository()Lorg/eclipse/jgit/lib/Repository;ˆ
-org.eclipse.jgit.api.LogCommandorg.eclipse.jgit.api.GitCommandï
-(add(ZLorg/eclipse/jgit/lib/AnyObjectId;)iorg.eclipse.jgit.api.LogCommand#add(ZLorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;w
-)<init>(Lorg/eclipse/jgit/lib/Repository;)Jorg.eclipse.jgit.api.LogCommand#<init>(Lorg/eclipse/jgit/lib/Repository;)V{
-addPath(Ljava/lang/String;)\org.eclipse.jgit.api.LogCommand#addPath(Ljava/lang/String;)Lorg/eclipse/jgit/api/LogCommand;ì
-'add(Lorg/eclipse/jgit/lib/AnyObjectId;)horg.eclipse.jgit.api.LogCommand#add(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;D
-call():org.eclipse.jgit.api.LogCommand#call()Ljava/lang/Iterable;ì
-'not(Lorg/eclipse/jgit/lib/AnyObjectId;)horg.eclipse.jgit.api.LogCommand#not(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;‚
-NaddRange(Lorg/eclipse/jgit/lib/AnyObjectId;Lorg/eclipse/jgit/lib/AnyObjectId;)èorg.eclipse.jgit.api.LogCommand#addRange(Lorg/eclipse/jgit/lib/AnyObjectId;Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;Y
-
-setSkip(I)Korg.eclipse.jgit.api.LogCommand#setSkip(I)Lorg/eclipse/jgit/api/LogCommand;a
-setMaxCount(I)Oorg.eclipse.jgit.api.LogCommand#setMaxCount(I)Lorg/eclipse/jgit/api/LogCommand;O
-all()Forg.eclipse.jgit.api.LogCommand#all()Lorg/eclipse/jgit/api/LogCommand;É
-excludePath(Ljava/lang/String;)`org.eclipse.jgit.api.LogCommand#excludePath(Ljava/lang/String;)Lorg/eclipse/jgit/api/LogCommand;∑
-9setRevFilter(Lorg/eclipse/jgit/revwalk/filter/RevFilter;)zorg.eclipse.jgit.api.LogCommand#setRevFilter(Lorg/eclipse/jgit/revwalk/filter/RevFilter;)Lorg/eclipse/jgit/api/LogCommand;÷
-java.lang.Iterablejava.lang.Objectd
-&forEach(Ljava/util/function/Consumer;):java.lang.Iterable#forEach(Ljava/util/function/Consumer;)VH
-spliterator()7java.lang.Iterable#spliterator()Ljava/util/Spliterator;»
-java.util.Iteratorjava.lang.Objectv
-/forEachRemaining(Ljava/util/function/Consumer;)Cjava.util.Iterator#forEachRemaining(Ljava/util/function/Consumer;)V(
-remove()java.util.Iterator#remove()Væ
+)writeObject(Ljava/io/ObjectOutputStream;)7java.io.File#writeObject(Ljava/io/ObjectOutputStream;)Væ
  org.eclipse.jgit.lib.AnyObjectIdjava.lang.Comparablejava.lang.ObjectZ
 equals(Ljava/lang/Object;)<org.eclipse.jgit.lib.AnyObjectId#equals(Ljava/lang/Object;)Z`
 copyTo(Ljava/nio/ByteBuffer;)?org.eclipse.jgit.lib.AnyObjectId#copyTo(Ljava/nio/ByteBuffer;)Vn
@@ -890,7 +795,76 @@ AparseSimple(Lorg/eclipse/jgit/revwalk/RevWalk;Ljava/lang/String;)Öorg.eclipse
 isAllHex(Ljava/lang/String;I)>org.eclipse.jgit.lib.Repository#isAllHex(Ljava/lang/String;I)Z5
 create())org.eclipse.jgit.lib.Repository#create()VÅ
 .autoGC(Lorg/eclipse/jgit/lib/ProgressMonitor;)Oorg.eclipse.jgit.lib.Repository#autoGC(Lorg/eclipse/jgit/lib/ProgressMonitor;)Vv
-(readGitDirectoryFile(Ljava/lang/String;)Jorg.eclipse.jgit.lib.Repository#readGitDirectoryFile(Ljava/lang/String;)[B© 
+(readGitDirectoryFile(Ljava/lang/String;)Jorg.eclipse.jgit.lib.Repository#readGitDirectoryFile(Ljava/lang/String;)[B‹,
+org.eclipse.jgit.api.Gitjava.lang.Objectjava.lang.AutoCloseablef
+submoduleSync()Sorg.eclipse.jgit.api.Git#submoduleSync()Lorg/eclipse/jgit/api/SubmoduleSyncCommand;N
+blame()Corg.eclipse.jgit.api.Git#blame()Lorg/eclipse/jgit/api/BlameCommand;c
+submoduleAdd()Qorg.eclipse.jgit.api.Git#submoduleAdd()Lorg/eclipse/jgit/api/SubmoduleAddCommand;H
+tag()?org.eclipse.jgit.api.Git#tag()Lorg/eclipse/jgit/api/TagCommand;c
+branchDelete()Qorg.eclipse.jgit.api.Git#branchDelete()Lorg/eclipse/jgit/api/DeleteBranchCommand;_
+notesRemove()Norg.eclipse.jgit.api.Git#notesRemove()Lorg/eclipse/jgit/api/RemoveNoteCommand;l
+verifySignature()Worg.eclipse.jgit.api.Git#verifySignature()Lorg/eclipse/jgit/api/VerifySignatureCommand;Z
+tagDelete()Korg.eclipse.jgit.api.Git#tagDelete()Lorg/eclipse/jgit/api/DeleteTagCommand;N
+clean()Corg.eclipse.jgit.api.Git#clean()Lorg/eclipse/jgit/api/CleanCommand;Ö
+'wrap(Lorg/eclipse/jgit/lib/Repository;)Zorg.eclipse.jgit.api.Git#wrap(Lorg/eclipse/jgit/lib/Repository;)Lorg/eclipse/jgit/api/Git;l
+submoduleUpdate()Worg.eclipse.jgit.api.Git#submoduleUpdate()Lorg/eclipse/jgit/api/SubmoduleUpdateCommand;N
+fetch()Corg.eclipse.jgit.api.Git#fetch()Lorg/eclipse/jgit/api/FetchCommand;Z
+stashDrop()Korg.eclipse.jgit.api.Git#stashDrop()Lorg/eclipse/jgit/api/StashDropCommand;f
+submoduleInit()Sorg.eclipse.jgit.api.Git#submoduleInit()Lorg/eclipse/jgit/api/SubmoduleInitCommand;_
+open(Ljava/io/File;)Gorg.eclipse.jgit.api.Git#open(Ljava/io/File;)Lorg/eclipse/jgit/api/Git;C
+
+toString()5org.eclipse.jgit.api.Git#toString()Ljava/lang/String;2
+
+shutdown()$org.eclipse.jgit.api.Git#shutdown()Vr
+*<init>(Lorg/eclipse/jgit/lib/Repository;Z)Dorg.eclipse.jgit.api.Git#<init>(Lorg/eclipse/jgit/lib/Repository;Z)VY
+notesShow()Jorg.eclipse.jgit.api.Git#notesShow()Lorg/eclipse/jgit/api/ShowNoteCommand;\
+getRepository()Iorg.eclipse.jgit.api.Git#getRepository()Lorg/eclipse/jgit/lib/Repository;l
+submoduleStatus()Worg.eclipse.jgit.api.Git#submoduleStatus()Lorg/eclipse/jgit/api/SubmoduleStatusCommand;l
+submoduleDeinit()Worg.eclipse.jgit.api.Git#submoduleDeinit()Lorg/eclipse/jgit/api/SubmoduleDeinitCommand;p
+)<init>(Lorg/eclipse/jgit/lib/Repository;)Corg.eclipse.jgit.api.Git#<init>(Lorg/eclipse/jgit/lib/Repository;)Vc
+remoteRemove()Qorg.eclipse.jgit.api.Git#remoteRemove()Lorg/eclipse/jgit/api/RemoteRemoveCommand;V
+
+notesAdd()Horg.eclipse.jgit.api.Git#notesAdd()Lorg/eclipse/jgit/api/AddNoteCommand;Z
+stashList()Korg.eclipse.jgit.api.Git#stashList()Lorg/eclipse/jgit/api/StashListCommand;Z
+remoteAdd()Korg.eclipse.jgit.api.Git#remoteAdd()Lorg/eclipse/jgit/api/RemoteAddCommand;W
+
+checkout()Iorg.eclipse.jgit.api.Git#checkout()Lorg/eclipse/jgit/api/CheckoutCommand;`
+stashCreate()Oorg.eclipse.jgit.api.Git#stashCreate()Lorg/eclipse/jgit/api/StashCreateCommand;c
+branchRename()Qorg.eclipse.jgit.api.Git#branchRename()Lorg/eclipse/jgit/api/RenameBranchCommand;]
+branchList()Morg.eclipse.jgit.api.Git#branchList()Lorg/eclipse/jgit/api/ListBranchCommand;K
+pull()Aorg.eclipse.jgit.api.Git#pull()Lorg/eclipse/jgit/api/PullCommand;ì
+.open(Ljava/io/File;Lorg/eclipse/jgit/util/FS;)aorg.eclipse.jgit.api.Git#open(Ljava/io/File;Lorg/eclipse/jgit/util/FS;)Lorg/eclipse/jgit/api/Git;E
+rm()=org.eclipse.jgit.api.Git#rm()Lorg/eclipse/jgit/api/RmCommand;Z
+notesList()Korg.eclipse.jgit.api.Git#notesList()Lorg/eclipse/jgit/api/ListNotesCommand;]
+stashApply()Morg.eclipse.jgit.api.Git#stashApply()Lorg/eclipse/jgit/api/StashApplyCommand;W
+
+describe()Iorg.eclipse.jgit.api.Git#describe()Lorg/eclipse/jgit/api/DescribeCommand;T
+	nameRev()Gorg.eclipse.jgit.api.Git#nameRev()Lorg/eclipse/jgit/api/NameRevCommand;]
+remoteList()Morg.eclipse.jgit.api.Git#remoteList()Lorg/eclipse/jgit/api/RemoteListCommand;N
+apply()Corg.eclipse.jgit.api.Git#apply()Lorg/eclipse/jgit/api/ApplyCommand;Q
+revert()Eorg.eclipse.jgit.api.Git#revert()Lorg/eclipse/jgit/api/RevertCommand;K
+diff()Aorg.eclipse.jgit.api.Git#diff()Lorg/eclipse/jgit/api/DiffCommand;c
+branchCreate()Qorg.eclipse.jgit.api.Git#branchCreate()Lorg/eclipse/jgit/api/CreateBranchCommand;Q
+reflog()Eorg.eclipse.jgit.api.Git#reflog()Lorg/eclipse/jgit/api/ReflogCommand;K
+push()Aorg.eclipse.jgit.api.Git#push()Lorg/eclipse/jgit/api/PushCommand;k
+lsRemoteRepository()Sorg.eclipse.jgit.api.Git#lsRemoteRepository()Lorg/eclipse/jgit/api/LsRemoteCommand;,
+close()!org.eclipse.jgit.api.Git#close()VH
+log()?org.eclipse.jgit.api.Git#log()Lorg/eclipse/jgit/api/LogCommand;c
+remoteSetUrl()Qorg.eclipse.jgit.api.Git#remoteSetUrl()Lorg/eclipse/jgit/api/RemoteSetUrlCommand;Q
+commit()Eorg.eclipse.jgit.api.Git#commit()Lorg/eclipse/jgit/api/CommitCommand;Q
+rebase()Eorg.eclipse.jgit.api.Git#rebase()Lorg/eclipse/jgit/api/RebaseCommand;H
+add()?org.eclipse.jgit.api.Git#add()Lorg/eclipse/jgit/api/AddCommand;Q
+status()Eorg.eclipse.jgit.api.Git#status()Lorg/eclipse/jgit/api/StatusCommand;b
+cloneRepository()Morg.eclipse.jgit.api.Git#cloneRepository()Lorg/eclipse/jgit/api/CloneCommand;Q
+gc()Iorg.eclipse.jgit.api.Git#gc()Lorg/eclipse/jgit/api/GarbageCollectCommand;N
+merge()Corg.eclipse.jgit.api.Git#merge()Lorg/eclipse/jgit/api/MergeCommand;W
+
+lsRemote()Iorg.eclipse.jgit.api.Git#lsRemote()Lorg/eclipse/jgit/api/LsRemoteCommand;T
+	archive()Gorg.eclipse.jgit.api.Git#archive()Lorg/eclipse/jgit/api/ArchiveCommand;N
+reset()Corg.eclipse.jgit.api.Git#reset()Lorg/eclipse/jgit/api/ResetCommand;]
+cherryPick()Morg.eclipse.jgit.api.Git#cherryPick()Lorg/eclipse/jgit/api/CherryPickCommand;T
+	tagList()Gorg.eclipse.jgit.api.Git#tagList()Lorg/eclipse/jgit/api/ListTagCommand;K
+init()Aorg.eclipse.jgit.api.Git#init()Lorg/eclipse/jgit/api/InitCommand;© 
 .org.eclipse.jgit.treewalk.AbstractTreeIteratorjava.lang.Object\
 getEntryPathLength()Dorg.eclipse.jgit.treewalk.AbstractTreeIterator#getEntryPathLength()I]
 getEntryPathBuffer()Eorg.eclipse.jgit.treewalk.AbstractTreeIterator#getEntryPathBuffer()[B`
@@ -956,7 +930,13 @@ PresetRoot(Lorg/eclipse/jgit/lib/ObjectReader;Lorg/eclipse/jgit/lib/AnyObjectId;
 `createSubtreeIterator(Lorg/eclipse/jgit/lib/ObjectReader;Lorg/eclipse/jgit/lib/MutableObjectId;)Ωorg.eclipse.jgit.treewalk.CanonicalTreeParser#createSubtreeIterator(Lorg/eclipse/jgit/lib/ObjectReader;Lorg/eclipse/jgit/lib/MutableObjectId;)Lorg/eclipse/jgit/treewalk/CanonicalTreeParser;°
 7<init>(Lorg/eclipse/jgit/treewalk/CanonicalTreeParser;)forg.eclipse.jgit.treewalk.CanonicalTreeParser#<init>(Lorg/eclipse/jgit/treewalk/CanonicalTreeParser;)V’
 ;getEntryAttributesNode(Lorg/eclipse/jgit/lib/ObjectReader;)ïorg.eclipse.jgit.treewalk.CanonicalTreeParser#getEntryAttributesNode(Lorg/eclipse/jgit/lib/ObjectReader;)Lorg/eclipse/jgit/attributes/AttributesNode;=
-eof()4org.eclipse.jgit.treewalk.CanonicalTreeParser#eof()ZÉ
+eof()4org.eclipse.jgit.treewalk.CanonicalTreeParser#eof()Z1
+java.util.concurrent.Callablejava.lang.Object∏
+org.eclipse.jgit.api.GitCommandjava.util.concurrent.Callablejava.lang.ObjectC
+checkCallable()0org.eclipse.jgit.api.GitCommand#checkCallable()Vw
+)<init>(Lorg/eclipse/jgit/lib/Repository;)Jorg.eclipse.jgit.api.GitCommand#<init>(Lorg/eclipse/jgit/lib/Repository;)VA
+setCallable(Z)/org.eclipse.jgit.api.GitCommand#setCallable(Z)Vc
+getRepository()Porg.eclipse.jgit.api.GitCommand#getRepository()Lorg/eclipse/jgit/lib/Repository;É
  org.eclipse.jgit.api.DiffCommandorg.eclipse.jgit.api.GitCommandó
 (setDestinationPrefix(Ljava/lang/String;)korg.eclipse.jgit.api.DiffCommand#setDestinationPrefix(Ljava/lang/String;)Lorg/eclipse/jgit/api/DiffCommand;ø
 <setOldTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)org.eclipse.jgit.api.DiffCommand#setOldTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)Lorg/eclipse/jgit/api/DiffCommand;}
@@ -970,7 +950,10 @@ PresetRoot(Lorg/eclipse/jgit/lib/ObjectReader;Lorg/eclipse/jgit/lib/AnyObjectId;
 'setOutputStream(Ljava/io/OutputStream;)jorg.eclipse.jgit.api.DiffCommand#setOutputStream(Ljava/io/OutputStream;)Lorg/eclipse/jgit/api/DiffCommand;ø
 <setNewTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)org.eclipse.jgit.api.DiffCommand#setNewTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)Lorg/eclipse/jgit/api/DiffCommand;ç
 #setSourcePrefix(Ljava/lang/String;)forg.eclipse.jgit.api.DiffCommand#setSourcePrefix(Ljava/lang/String;)Lorg/eclipse/jgit/api/DiffCommand;_
-setCached(Z)Oorg.eclipse.jgit.api.DiffCommand#setCached(Z)Lorg/eclipse/jgit/api/DiffCommand;å
+setCached(Z)Oorg.eclipse.jgit.api.DiffCommand#setCached(Z)Lorg/eclipse/jgit/api/DiffCommand;÷
+java.lang.Iterablejava.lang.Objectd
+&forEach(Ljava/util/function/Consumer;):java.lang.Iterable#forEach(Ljava/util/function/Consumer;)VH
+spliterator()7java.lang.Iterable#spliterator()Ljava/util/Spliterator;å
 java.util.Collectionjava.lang.Objectjava.lang.IterableJ
 spliterator()9java.util.Collection#spliterator()Ljava/util/Spliterator;j
 (removeIf(Ljava/util/function/Predicate;)>java.util.Collection#removeIf(Ljava/util/function/Predicate;)ZR
@@ -2429,16 +2412,19 @@ toString()4java.text.ParsePosition#toString()Ljava/lang/String;=
 getIndex()#java.text.ParsePosition#getIndex()I3
 setIndex(I)$java.text.ParsePosition#setIndex(I)V1
 
-hashCode()#java.text.ParsePosition#hashCode()I 
+hashCode()#java.text.ParsePosition#hashCode()Iï
 logic.dataset_manager.Releaselogic.dataset_manager.Commit]
-setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)Vg
+setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)VÖ
+ findFromName(Ljava/lang/String;)alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;A
+setEachFileNr().logic.dataset_manager.Release#setEachFileNr()Vg
 "<init>(Lorg/eclipse/jgit/lib/Ref;)Alogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;)VC
-setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()V∂
+setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()Vè
 !logic.dataset_manager.ReleaseFilejava.lang.Objectá
 0computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)Slogic.dataset_manager.ReleaseFile#computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)VL
 
 toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;[
-<init>(Ljava/lang/String;)=logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;)VJ
+<init>(Ljava/lang/String;)=logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;)VW
+updateNumberOfRevision();logic.dataset_manager.ReleaseFile#updateNumberOfRevision()VJ
 	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;ñ
 (logic.dataset_manager.DatasetConstructorjava.lang.ObjectÇ
 getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;©
@@ -2540,7 +2526,21 @@ NiteratorBinarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)
 "synchronizedList(Ljava/util/List;)Hjava.util.Collections#synchronizedList(Ljava/util/List;)Ljava/util/List;á
 6disjoint(Ljava/util/Collection;Ljava/util/Collection;)Mjava.util.Collections#disjoint(Ljava/util/Collection;Ljava/util/Collection;)Zk
 (fill(Ljava/util/List;Ljava/lang/Object;)?java.util.Collections#fill(Ljava/util/List;Ljava/lang/Object;)Vü
-8checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)cjava.util.Collections#checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;Ö
+8checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)cjava.util.Collections#checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;ˆ
+org.eclipse.jgit.api.LogCommandorg.eclipse.jgit.api.GitCommandï
+(add(ZLorg/eclipse/jgit/lib/AnyObjectId;)iorg.eclipse.jgit.api.LogCommand#add(ZLorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;w
+)<init>(Lorg/eclipse/jgit/lib/Repository;)Jorg.eclipse.jgit.api.LogCommand#<init>(Lorg/eclipse/jgit/lib/Repository;)V{
+addPath(Ljava/lang/String;)\org.eclipse.jgit.api.LogCommand#addPath(Ljava/lang/String;)Lorg/eclipse/jgit/api/LogCommand;ì
+'add(Lorg/eclipse/jgit/lib/AnyObjectId;)horg.eclipse.jgit.api.LogCommand#add(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;D
+call():org.eclipse.jgit.api.LogCommand#call()Ljava/lang/Iterable;ì
+'not(Lorg/eclipse/jgit/lib/AnyObjectId;)horg.eclipse.jgit.api.LogCommand#not(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;‚
+NaddRange(Lorg/eclipse/jgit/lib/AnyObjectId;Lorg/eclipse/jgit/lib/AnyObjectId;)èorg.eclipse.jgit.api.LogCommand#addRange(Lorg/eclipse/jgit/lib/AnyObjectId;Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/api/LogCommand;Y
+
+setSkip(I)Korg.eclipse.jgit.api.LogCommand#setSkip(I)Lorg/eclipse/jgit/api/LogCommand;a
+setMaxCount(I)Oorg.eclipse.jgit.api.LogCommand#setMaxCount(I)Lorg/eclipse/jgit/api/LogCommand;O
+all()Forg.eclipse.jgit.api.LogCommand#all()Lorg/eclipse/jgit/api/LogCommand;É
+excludePath(Ljava/lang/String;)`org.eclipse.jgit.api.LogCommand#excludePath(Ljava/lang/String;)Lorg/eclipse/jgit/api/LogCommand;∑
+9setRevFilter(Lorg/eclipse/jgit/revwalk/filter/RevFilter;)zorg.eclipse.jgit.api.LogCommand#setRevFilter(Lorg/eclipse/jgit/revwalk/filter/RevFilter;)Lorg/eclipse/jgit/api/LogCommand;Ö
 java.util.Datejava.lang.Cloneablejava.lang.Comparablejava.lang.Objectjava.io.Serializable<
 toInstant()-java.util.Date#toInstant()Ljava/time/Instant;H
 equals(Ljava/lang/Object;)*java.util.Date#equals(Ljava/lang/Object;)ZY

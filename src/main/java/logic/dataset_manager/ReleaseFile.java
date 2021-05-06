@@ -51,9 +51,8 @@ public class ReleaseFile {
         return this.name;
     }
 
-    public void computeLoc(RevCommit release) throws IOException, GitAPIException {
-        Integer loc =  JgitManager.getInstance().getLocFileInGivenRelease(this.name, release);
-        this.loc = loc;
+    public void computeLoc(RevCommit release) throws IOException {
+        this.loc = JgitManager.getInstance().getLocFileInGivenRelease(this.name, release);
     }
 
     @Override

@@ -176,8 +176,9 @@ public class DatasetConstructor {
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();
         Release r = ds.releases.get(1);
-        r.setEachFileLoc();
+
         r.setEachFileNr();
+        r.setEachFileLoc();
     }
 
 }

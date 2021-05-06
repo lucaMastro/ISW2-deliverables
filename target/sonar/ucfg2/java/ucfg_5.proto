@@ -1,28 +1,28 @@
 
 œlogic.dataset_manager.JgitManager#listDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java5 5(;"18*Þ
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java3 3(;"18*Þ
 13w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java@. @(GáÞ
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>. >(GáÞ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java@2 @(E4
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>2 >(E4
 %12-org.eclipse.jgit.treewalk.CanonicalTreeParser"-org.eclipse.jgit.treewalk.CanonicalTreeParserô
 ñ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java@. @(G
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>. >(G
 %13"7org.eclipse.jgit.treewalk.CanonicalTreeParser#<init>()V*6
 4
 %12-org.eclipse.jgit.treewalk.CanonicalTreeParser*
 12*ï
 14w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java> >(H÷
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java< <(H÷
 ô
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java> >(H<
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java< <(H<
 oldTreeIter-org.eclipse.jgit.treewalk.CanonicalTreeParser"__id*5
 3
 %9-org.eclipse.jgit.treewalk.CanonicalTreeParserïì
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java? ?(.
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java= =(.
 %11void"{org.eclipse.jgit.treewalk.CanonicalTreeParser#reset(Lorg/eclipse/jgit/lib/ObjectReader;Lorg/eclipse/jgit/lib/AnyObjectId;)V*>
 <
 oldTreeIter-org.eclipse.jgit.treewalk.CanonicalTreeParser*-
@@ -32,44 +32,44 @@ m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/da
 olderIdorg.eclipse.jgit.lib.ObjectId2Lreset(Lorg/eclipse/jgit/lib/ObjectReader;Lorg/eclipse/jgit/lib/AnyObjectId;)*
 13*¤
 15w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java< <(*Å
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java: :(*Å
 Â
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java< <(*
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java: :(*
 gitorg.eclipse.jgit.api.Git"__id* 
 
 %7org.eclipse.jgit.api.GitàÝ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>2 >(E3
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java<2 <(E3
 %9-org.eclipse.jgit.treewalk.CanonicalTreeParser"-org.eclipse.jgit.treewalk.CanonicalTreeParseró
 ð
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java>. >(G
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java<. <(G
 %10"7org.eclipse.jgit.treewalk.CanonicalTreeParser#<init>()V*5
 3
 %9-org.eclipse.jgit.treewalk.CanonicalTreeParser*
 14*‘
 16w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java; ;(?Ú
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java9 9(?Ú
 ×
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java; ;(?+
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java9 9(?+
 reader!org.eclipse.jgit.lib.ObjectReader"__id*)
 '
 %5!org.eclipse.jgit.lib.ObjectReaderà
 Ý
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java< <()%
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java: :()%
 %6org.eclipse.jgit.lib.Repository"__id*5*3#
 !logic.dataset_manager.JgitManager"
 
 repository¶³
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java< <(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java: :(
 %7org.eclipse.jgit.api.Git"org.eclipse.jgit.api.Git’
 
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java< <(*
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java: :(*
 %8"Corg.eclipse.jgit.api.Git#<init>(Lorg/eclipse/jgit/lib/Repository;)V* 
 
 %7org.eclipse.jgit.api.Git*'
@@ -77,93 +77,93 @@ m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/da
 %6org.eclipse.jgit.lib.Repository*
 15* 
 17w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java;# ;(-à
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java9# 9(-à
 Ý
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java;# ;(-%
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java9# 9(-%
 %4org.eclipse.jgit.lib.Repository"__id*5*3#
 !logic.dataset_manager.JgitManager"
 
 repository·´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java;# ;(?'
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java9# 9(?'
 %5!org.eclipse.jgit.lib.ObjectReader"Torg.eclipse.jgit.lib.Repository#newObjectReader()Lorg/eclipse/jgit/lib/ObjectReader;*'
 %
 %4org.eclipse.jgit.lib.Repository2newObjectReader()*
 16*û
 18w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java7 7( ®«
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java5 5( ®«
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java7 7(*&
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java5 5(*&
 %0 org.eclipse.jgit.revwalk.RevTree"Norg.eclipse.jgit.revwalk.RevCommit#getTree()Lorg/eclipse/jgit/revwalk/RevTree;*-
 +
 older"org.eclipse.jgit.revwalk.RevCommit2	getTree()Ÿœ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java7 7(2#
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java5 5(2#
 %1org.eclipse.jgit.lib.ObjectId"Iorg.eclipse.jgit.revwalk.RevObject#getId()Lorg/eclipse/jgit/lib/ObjectId;*(
 &
 %0 org.eclipse.jgit.revwalk.RevTree2getId()Ó
 Ð
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java7 7(3(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java5 5(3(
 olderIdorg.eclipse.jgit.lib.ObjectId"__id*%
 #
 %1org.eclipse.jgit.lib.ObjectId®«
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java8 8(*&
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java6 6(*&
 %2 org.eclipse.jgit.revwalk.RevTree"Norg.eclipse.jgit.revwalk.RevCommit#getTree()Lorg/eclipse/jgit/revwalk/RevTree;*-
 +
 newer"org.eclipse.jgit.revwalk.RevCommit2	getTree()Ÿœ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java8 8(2#
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java6 6(2#
 %3org.eclipse.jgit.lib.ObjectId"Iorg.eclipse.jgit.revwalk.RevObject#getId()Lorg/eclipse/jgit/lib/ObjectId;*(
 &
 %2 org.eclipse.jgit.revwalk.RevTree2getId()Ó
 Ð
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java8 8(3(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java6 6(3(
 newerIdorg.eclipse.jgit.lib.ObjectId"__id*%
 #
 %3org.eclipse.jgit.lib.ObjectId£
  
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java9 9(%
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java7 7(%
 diffsjava.util.List"__id*
 ""*
 17*“
 1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaN N("”
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaL L("”
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaN N(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaL L(
 
 diffsjava.util.List*Ô
 7w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC F(´
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA D(´
 ±
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC F(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA D(
 diffsjava.util.List"__id*
 
 %18java.util.List™–
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaH H(T
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaF F(T
 %19boolean">java.util.Collection#removeIf(Ljava/util/function/Predicate;)Z*
 
 diffsjava.util.List*
 ""2(removeIf(Ljava/util/function/Predicate;)*
 1*ƒ
 8w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC F(ÿü
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA D(ÿü
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC F(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA D(
 %18java.util.List"7org.eclipse.jgit.api.DiffCommand#call()Ljava/util/List;*)
 '
 %17 org.eclipse.jgit.api.DiffCommand2call()*
 7*Ó
 9w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaE  E(+ÏÌ
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC  C(+ÏÌ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC E(,'
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA C(,'
 %17 org.eclipse.jgit.api.DiffCommand"org.eclipse.jgit.api.DiffCommand#setOldTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)Lorg/eclipse/jgit/api/DiffCommand;*)
 '
 %16 org.eclipse.jgit.api.DiffCommand*>
@@ -171,9 +171,9 @@ m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/da
 oldTreeIter-org.eclipse.jgit.treewalk.CanonicalTreeParser2<setOldTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)*
 8*Ô
 10w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaD  D(+ÏÌ
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaB  B(+ÏÌ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC D(,'
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA B(,'
 %16 org.eclipse.jgit.api.DiffCommand"org.eclipse.jgit.api.DiffCommand#setNewTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)Lorg/eclipse/jgit/api/DiffCommand;*)
 '
 %15 org.eclipse.jgit.api.DiffCommand*>
@@ -181,23 +181,23 @@ m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/da
 newTreeIter-org.eclipse.jgit.treewalk.CanonicalTreeParser2<setNewTree(Lorg/eclipse/jgit/treewalk/AbstractTreeIterator;)*
 9*™
 11w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC C(“
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA A(“
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaC C('
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA A('
 %15 org.eclipse.jgit.api.DiffCommand"Aorg.eclipse.jgit.api.Git#diff()Lorg/eclipse/jgit/api/DiffCommand;*!
 
 gitorg.eclipse.jgit.api.Git2diff()*
 10*ð
 12w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java@ @(Hø
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java> >(Hø
 õ
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java@ @(H<
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java> >(H<
 newTreeIter-org.eclipse.jgit.treewalk.CanonicalTreeParser"__id*6
 4
 %12-org.eclipse.jgit.treewalk.CanonicalTreeParserïì
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.javaA A(.
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java? ?(.
 %14void"{org.eclipse.jgit.treewalk.CanonicalTreeParser#reset(Lorg/eclipse/jgit/lib/ObjectReader;Lorg/eclipse/jgit/lib/AnyObjectId;)V*>
 <
 newTreeIter-org.eclipse.jgit.treewalk.CanonicalTreeParser*-
