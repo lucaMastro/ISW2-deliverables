@@ -177,7 +177,7 @@ public class DatasetConstructor {
         DatasetConstructor ds = new DatasetConstructor();
         Release r = ds.releases.get(1);
         r.setEachFileLoc();
-        int a =3;
+        r.setEachFileNr();
     }
 
 }

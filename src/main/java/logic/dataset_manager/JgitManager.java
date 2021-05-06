@@ -28,20 +28,18 @@ public class JgitManager {
 
     private static JgitManager instance = null;
     private Repository repository;
-    private RevCommit head;
 
-    public static JgitManager getInstance() throws IOException, GitAPIException {
+    public static JgitManager getInstance() throws IOException {
         if (JgitManager.instance == null){
             JgitManager.instance = new JgitManager();
         }
         return JgitManager.instance;
     }
 
-    public JgitManager() throws IOException, GitAPIException {
+    public JgitManager() throws IOException{
         String path = ConfigurationManager.getConfigEntry("repositoryPath") + ".git";
         FileRepositoryBuilder builder = new FileRepositoryBuilder();
         this.repository = builder.setGitDir(new File(path)).readEnvironment().findGitDir().build();
-        this.head = new Git(repository).log().setMaxCount(1).call().iterator().next();
     }
 
     public Repository getRepository() {

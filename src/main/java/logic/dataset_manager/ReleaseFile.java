@@ -44,6 +44,7 @@ public class ReleaseFile {
 
     public ReleaseFile(String name){
         this.name = name;
+        this.nr = 0;
     }
 
     public String getPath(){
@@ -72,5 +73,9 @@ public class ReleaseFile {
                 .append(this.age).append(",")
                 .append(this.weightedAge);
         return sb.toString();
+    }
+
+    public void updateNumberOfRevision(){
+        this.nr++;
     }
 }

@@ -1,9 +1,12 @@
 package logic.dataset_manager;
 
 import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.Ref;
+import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.IOException;
@@ -37,7 +40,7 @@ public class Release extends Commit {
                 if (fileName.endsWith(".java"))
                     this.files.add( new ReleaseFile(fileName) );
             }
-        } catch (IOException | GitAPIException e) {
+        } catch (IOException e) {
             Logger logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
@@ -50,5 +53,36 @@ public class Release extends Commit {
     public void setEachFileLoc() throws IOException, GitAPIException {
         for (ReleaseFile f : this.files)
             f.computeLoc(this.revCommit);
+    }
+
+
+    private ReleaseFile findFromName(String name){
+        ReleaseFile releaseFile = null;
+        for (ReleaseFile r : this.files){
+            if (r.getPath().equals(name))
+                releaseFile = r;
+        }
+        return releaseFile;
+    }
+
+    public void setEachFileNr() throws IOException {
+        Integer i;
+        for (i = 0; i < this.commits.size() - 1; i++){
+            /*  excluding last element because i need the couple
+            *   commit_i commit_i+1 to found differences    */
+            RevCommit older = this.commits.get(i).revCommit;
+            RevCommit newer = this.commits.get(i + 1).revCommit;
+            List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older, newer);
+            for (DiffEntry diffEntry : differences){
+                String name = diffEntry.getNewPath();
+
+                ReleaseFile r = this.findFromName(name);
+                if (r != null)
+                    /*  it can be null if a file is added in a revision commit and deleted in another
+                    *   revision commit before release commit. That's why this kind of file is not stored
+                    *   in the list of files    */
+                    r.updateNumberOfRevision();
+                }
+        }
     }
 }
