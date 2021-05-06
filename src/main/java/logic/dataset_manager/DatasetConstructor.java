@@ -5,12 +5,10 @@ import logic.exception.InvalidRangeException;
 import logic.jira_informations.JiraBeanInformations;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.lib.Ref;
-import org.eclipse.jgit.lib.Repository;
+import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevSort;
 import org.eclipse.jgit.revwalk.RevWalk;
-
 import java.io.IOException;
 import java.util.*;
 import java.util.logging.Level;
@@ -174,4 +172,12 @@ public class DatasetConstructor {
             this.fixedBugs.add(bug);
         }
     }
+
+    public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
+        DatasetConstructor ds = new DatasetConstructor();
+        Release r = ds.releases.get(1);
+        r.setEachFileLoc();
+        int a =3;
+    }
+
 }

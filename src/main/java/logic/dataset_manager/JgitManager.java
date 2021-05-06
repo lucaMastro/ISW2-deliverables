@@ -7,15 +7,18 @@ import org.eclipse.jgit.diff.DiffFormatter;
 import org.eclipse.jgit.diff.Edit;
 import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.util.io.DisabledOutputStream;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
@@ -25,18 +28,20 @@ public class JgitManager {
 
     private static JgitManager instance = null;
     private Repository repository;
+    private RevCommit head;
 
-    public static JgitManager getInstance() throws IOException{
+    public static JgitManager getInstance() throws IOException, GitAPIException {
         if (JgitManager.instance == null){
             JgitManager.instance = new JgitManager();
         }
         return JgitManager.instance;
     }
 
-    public JgitManager() throws IOException{
+    public JgitManager() throws IOException, GitAPIException {
         String path = ConfigurationManager.getConfigEntry("repositoryPath") + ".git";
         FileRepositoryBuilder builder = new FileRepositoryBuilder();
         this.repository = builder.setGitDir(new File(path)).readEnvironment().findGitDir().build();
+        this.head = new Git(repository).log().setMaxCount(1).call().iterator().next();
     }
 
     public Repository getRepository() {
@@ -45,19 +50,19 @@ public class JgitManager {
 
 
 
-    public List<DiffEntry> listDifferencesBetweenTwoCommits(RevCommit c1, RevCommit c2) throws IOException {
+    public List<DiffEntry> listDifferencesBetweenTwoCommits(RevCommit older, RevCommit newer) throws IOException {
 
-        ObjectId id1 = c1.getTree().getId();
-        ObjectId id2 = c2.getTree().getId();
+        ObjectId olderId = older.getTree().getId();
+        ObjectId newerId = newer.getTree().getId();
         List<DiffEntry> diffs = null;
 
         try (ObjectReader reader = repository.newObjectReader();
              Git git = new Git(repository)) {
 
             CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
-            oldTreeIter.reset(reader, id1);
+            oldTreeIter.reset(reader, olderId);
             CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
-            newTreeIter.reset(reader, id2);
+            newTreeIter.reset(reader, newerId);
 
             diffs = git.diff()
                     .setNewTree(newTreeIter)
@@ -90,6 +95,24 @@ public class JgitManager {
             linesAdded += edit.getEndB() - edit.getBeginB();
         }
         return new Integer[]{linesAdded, linesDeleted};
+    }
+
+    public Integer getLocFileInGivenRelease(String fileName, RevCommit release) throws IOException {
+        /*  This function may not count commits line */
+
+        String fileContent;
+        try (TreeWalk treeWalk = TreeWalk.forPath(this.getRepository(), fileName,
+                release.getTree())) {
+            ObjectId blobId = treeWalk.getObjectId(0);
+            try (ObjectReader objectReader = this.getRepository().newObjectReader()) {
+                ObjectLoader objectLoader = objectReader.open(blobId);
+                byte[] bytes = objectLoader.getBytes();
+                fileContent = new String(bytes, StandardCharsets.UTF_8);
+                String[] lines = fileContent.split("\n");
+                return lines.length;
+            }
+        }
+
     }
 
 }

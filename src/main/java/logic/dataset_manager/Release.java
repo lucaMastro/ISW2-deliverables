@@ -1,5 +1,6 @@
 package logic.dataset_manager;
 
+import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import java.util.Arrays;
@@ -36,7 +37,7 @@ public class Release extends Commit {
                 if (fileName.endsWith(".java"))
                     this.files.add( new ReleaseFile(fileName) );
             }
-        } catch (IOException e) {
+        } catch (IOException | GitAPIException e) {
             Logger logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
@@ -44,5 +45,10 @@ public class Release extends Commit {
 
     public void setIndex(Integer index) {
         this.index = index;
+    }
+
+    public void setEachFileLoc() throws IOException, GitAPIException {
+        for (ReleaseFile f : this.files)
+            f.computeLoc(this.revCommit);
     }
 }
