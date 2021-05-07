@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class DatasetConstructor {
 
     private ArrayList<Commit> commits;
-    public ArrayList<Release> releases;
+    private ArrayList<Release> releases;
     private ArrayList<BugTicket> fixedBugs;
 
     public DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {

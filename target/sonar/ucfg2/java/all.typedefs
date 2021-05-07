@@ -1589,7 +1589,28 @@ valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
 checkIndex(II) java.lang.String#checkIndex(II)VX
 !<init>(Ljava/lang/StringBuilder;)3java.lang.String#<init>(Ljava/lang/StringBuilder;)V%
 value()java.lang.String#value()[B`
-%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Zö
+%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Z”	
+java.lang.Booleanjava.lang.Comparablejava.lang.Objectjava.io.Serializable_
+valueOf(Ljava/lang/String;)@java.lang.Boolean#valueOf(Ljava/lang/String;)Ljava/lang/Boolean;W
+ parseBoolean(Ljava/lang/String;)3java.lang.Boolean#parseBoolean(Ljava/lang/String;)ZK
+equals(Ljava/lang/Object;)-java.lang.Boolean#equals(Ljava/lang/Object;)Z3
+booleanValue()!java.lang.Boolean#booleanValue()Z<
+
+toString().java.lang.Boolean#toString()Ljava/lang/String;>
+toString(Z)/java.lang.Boolean#toString(Z)Ljava/lang/String;=
+
+valueOf(Z)/java.lang.Boolean#valueOf(Z)Ljava/lang/Boolean;1
+logicalOr(ZZ) java.lang.Boolean#logicalOr(ZZ)Z+
+
+hashCode()java.lang.Boolean#hashCode()I3
+logicalXor(ZZ)!java.lang.Boolean#logicalXor(ZZ)Z-
+compare(ZZ)java.lang.Boolean#compare(ZZ)I-
+hashCode(Z)java.lang.Boolean#hashCode(Z)I3
+logicalAnd(ZZ)!java.lang.Boolean#logicalAnd(ZZ)ZS
+compareTo(Ljava/lang/Boolean;)1java.lang.Boolean#compareTo(Ljava/lang/Boolean;)IK
+<init>(Ljava/lang/String;)-java.lang.Boolean#<init>(Ljava/lang/String;)V)
+	<init>(Z)java.lang.Boolean#<init>(Z)VS
+getBoolean(Ljava/lang/String;)1java.lang.Boolean#getBoolean(Ljava/lang/String;)Zö
 *logic.dataset_manager.RetrieveInformationsjava.lang.Object_
 getFixedBugs()Mlogic.dataset_manager.RetrieveInformations#getFixedBugs()Lorg/json/JSONArray;­
 5concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)tlogic.dataset_manager.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;s
