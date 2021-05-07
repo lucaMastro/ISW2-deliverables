@@ -150,20 +150,23 @@ public class JgitManager {
             if (current == '"' || current == '\'')
                 quoteFound = !quoteFound;
 
-            if (current == '/' && next == '*' && Boolean.FALSE.equals(quoteFound)) {
+            String s = "" + current + next;
+            if (s.equals("/*") && Boolean.FALSE.equals(quoteFound)){
+            //if (current == '/' && next == '*' && Boolean.FALSE.equals(quoteFound)) {
                 // found start delimiter
                 nowOpened = Boolean.TRUE;
                 i = i + 1;
             }
-
-            else if (current == '*' && next == '/' && Boolean.FALSE.equals(quoteFound)) {
+            else if (s.equals("*/") && Boolean.FALSE.equals(quoteFound)){
+            //else if (current == '*' && next == '/' && Boolean.FALSE.equals(quoteFound)) {
                 //found end delimiter
                 nowOpened = Boolean.FALSE;
                 i = i + 1;
             }
             /*  this is the case of a particular line:
              *   line = "/*comment* / //other comment   */
-            else if (current == '/' && next == '/')
+            else if (s.equals("//"))
+            //else if (current == '/' && next == '/')
                 break;
 
             else{
