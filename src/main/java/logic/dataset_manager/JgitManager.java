@@ -15,7 +15,6 @@ import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.util.io.DisabledOutputStream;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -96,8 +95,9 @@ public class JgitManager {
     }
 
     public Integer getLocFileInGivenRelease(String fileName, RevCommit release) throws IOException {
-        /*  This function may not count commits line */
 
+        /*  This function may not count commits line */
+        Integer count = 0;
         String fileContent;
         try (TreeWalk treeWalk = TreeWalk.forPath(this.getRepository(), fileName,
                 release.getTree())) {
@@ -107,10 +107,76 @@ public class JgitManager {
                 byte[] bytes = objectLoader.getBytes();
                 fileContent = new String(bytes, StandardCharsets.UTF_8);
                 String[] lines = fileContent.split("\n");
-                return lines.length;
+
+                /* The following code exclude commits line from count   */
+                Integer i;
+                Boolean openedComment = Boolean.FALSE;
+                for (i = 0; i < lines.length; i++) {
+
+                    String line = lines[i];
+                    // skipping single line comments
+                    if (!line.trim().startsWith("//") || !line.trim().isEmpty()) {
+                        //continue;
+                        //else{
+                        Boolean[] returned = this.isLineValid(line, openedComment);
+                        if (returned[0])
+                            count++;
+                        openedComment = returned[1];
+                    }
+                }
             }
         }
-
+        return count;
     }
 
+    private Boolean[] isLineValid(String line, Boolean previouslyOpened){
+        /*  looking for comments delimiter in the line  */
+        //  possible cases:
+        //      /* any comment */ String s = "this is a valid line";
+        //      startCommit = true, closeCommit = true, line.endsWith("*/") false, line.startsWith("/*") true
+        //      /* this is not a valid line */
+        //      /* this is not a valid line, but the comment is not closed here
+        //      /*      <-- line that only has a starting comment block
+        //      String s = "this is a valid line"; /* any comment here */
+        //      String s = "this is a valid line"; /* any comment here, but block is not closed
+        //      */ String s = "this is a valid line";
+
+        char[] chars = line.trim().toCharArray(); //no initial spaces
+        Integer i;
+        Integer len = chars.length;
+        // looking for /* not in quotes
+        Boolean quoteFound = Boolean.FALSE;
+
+        Boolean nowOpened = previouslyOpened;
+        char current;
+        char next;
+
+        /*  if line's leng is == 1, the following loop won't be executed. Just having a check if this is a valid line*/
+        Boolean isValidLine = (len == 1 && !nowOpened) ;
+
+        for (i = 0; i < len - 1; i++){
+            current = chars[i];
+            next = chars[i + 1];
+            if (current == '"' || current == '\'')
+                quoteFound = !quoteFound;
+
+            if (current == '/' && next == '*' && !quoteFound) {
+                // found start delimiter
+                nowOpened = Boolean.TRUE;
+                i = i + 1;
+            }
+
+            else if (current == '*' && next == '/' && !quoteFound) {
+                //found end delimiter
+                nowOpened = Boolean.FALSE;
+                i = i + 1;
+            }
+            else{
+                // chars[i] is a general char. if not commented opened, the line is valid!!
+                if (!nowOpened)
+                    isValidLine = Boolean.TRUE;
+            }
+        }
+        return new Boolean[]{isValidLine, nowOpened};
+    }
 }
