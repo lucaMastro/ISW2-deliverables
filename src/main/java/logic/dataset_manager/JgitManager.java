@@ -114,6 +114,7 @@ public class JgitManager {
                 for (i = 0; i < lines.length; i++) {
 
                     String line = lines[i];
+                    //line = "/*prova*/ //test";
                     // skipping single line comments
                     if (!line.trim().startsWith("//") || !line.trim().isEmpty()) {
                         Boolean[] returned = this.isLineValid(line, openedComment);
@@ -160,9 +161,17 @@ public class JgitManager {
                 nowOpened = Boolean.FALSE;
                 i = i + 1;
             }
+            /*  this is the case of a particular line:
+             *   line = "/*comment* / //other comment   */
+            else if (current == '/' && next == '/')
+                break;
+
             else{
-                // chars[i] is a general char. if not commented opened, the line is valid!!
-                if (Boolean.FALSE.equals(nowOpened))
+                /*  chars[i] is a general char. if not commented opened, the line is valid!!
+                *   current != ' ' is because of possibility of line such as the following:
+                *   line = "/*comment* / //other comment
+                *  */
+                if (Boolean.FALSE.equals(nowOpened) && current != ' ')
                     isValidLine = Boolean.TRUE;
             }
         }
