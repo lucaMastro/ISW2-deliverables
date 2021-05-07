@@ -150,25 +150,21 @@ public class JgitManager {
             if (current == '"' || current == '\'')
                 quoteFound = !quoteFound;
 
-            String s = "" + current + next;
-            if (s.equals("/*") && Boolean.FALSE.equals(quoteFound)){
-            //if (current == '/' && next == '*' && Boolean.FALSE.equals(quoteFound)) {
+            if (current == '/' && next == '*' && Boolean.FALSE.equals(quoteFound)) {
                 // found start delimiter
                 nowOpened = Boolean.TRUE;
                 i = i + 1;
             }
-            else if (s.equals("*/") && Boolean.FALSE.equals(quoteFound)){
-            //else if (current == '*' && next == '/' && Boolean.FALSE.equals(quoteFound)) {
+
+            else if (current == '*' && next == '/' && Boolean.FALSE.equals(quoteFound)) {
                 //found end delimiter
                 nowOpened = Boolean.FALSE;
                 i = i + 1;
             }
             /*  this is the case of a particular line:
              *   line = "/*comment* / //other comment   */
-            else if (s.equals("//"))
-            //else if (current == '/' && next == '/')
+            else if (current == '/' && next == '/')
                 break;
-
             else{
                 /*  chars[i] is a general char. if not commented opened, the line is valid!!
                 *   current != ' ' is because of possibility of line such as the following:
