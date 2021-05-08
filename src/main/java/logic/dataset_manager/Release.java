@@ -1,5 +1,7 @@
 package logic.dataset_manager;
 
+import logic.exception.InvalidRangeException;
+import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -83,5 +85,30 @@ public class Release extends Commit {
                     r.updateNumberOfRevision();
                 }
         }
+    }
+
+    public void setEachFileNfix(List<BugTicket> fixedBugs) throws InvalidRangeException, IOException, GitAPIException {
+        for (Commit c : this.commits) {
+            for (BugTicket bug : fixedBugs) {
+
+                if (bug.relativeCommits.contains(c)) {
+                    // c is a commit that fixes a bug. Find files changed
+                    Commit previous = DatasetConstructor.getInstance().findPreviously(c);
+                    List<DiffEntry> diffs = JgitManager.getInstance().
+                            listDifferencesBetweenTwoCommits(previous.revCommit, c.revCommit);
+
+                    for (DiffEntry diffEntry : diffs) {
+                        String name = diffEntry.getNewPath();
+                        ReleaseFile r = this.findFromName(name);
+                        if (r != null)
+                            /*  it can be null if a file is added in a revision commit and deleted in another
+                             *   revision commit before release commit. That's why this kind of file is not stored
+                             *   in the list of files    */
+                            r.updateNfix();
+                    }
+                }
+            }
+        }
+
     }
 }

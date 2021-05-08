@@ -76,4 +76,8 @@ public class ReleaseFile {
     public void updateNumberOfRevision(){
         this.nr++;
     }
+
+    public void updateNfix() {
+        this.nFix ++;
+    }
 }

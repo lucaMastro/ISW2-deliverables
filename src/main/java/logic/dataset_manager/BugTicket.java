@@ -6,12 +6,14 @@ import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class BugTicket  {
     String ticketId;
     ArrayList<String> affectedVersions;
     Date openingDate;
     Commit fixedVersion;
+    ArrayList<Commit> relativeCommits;
 
     public BugTicket(JiraBeanInformations info){
         this.ticketId = info.getKey();
@@ -24,4 +26,7 @@ public class BugTicket  {
         this.fixedVersion = info.getTrulyFixedVersion();
     }
 
+    public void setRelativeCommits(List<Commit> relativeCommits) {
+        this.relativeCommits = (ArrayList) relativeCommits;
+    }
 }

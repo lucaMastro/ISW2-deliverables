@@ -16,18 +16,60 @@ import java.util.logging.Logger;
 
 public class DatasetConstructor {
 
+    private static DatasetConstructor instance = null;
+
     private ArrayList<Commit> commits;
     private ArrayList<Release> releases;
     private ArrayList<BugTicket> fixedBugs;
 
-    public DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
+    public static DatasetConstructor getInstance() throws IOException, InvalidRangeException, GitAPIException {
+        if (instance == null)
+            instance = new DatasetConstructor();
+        return instance;
+    }
+
+    private DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
         this.initializeCommitList();
+        this.removeRevertCommits();
         this.initializeReleaseList();
         Integer i;
-        for (i = 0; i < this.releases.size(); i++)
-            this.releases.get(i).setIndex(i + 1);
 
         this.initializeBugsList();
+    }
+
+    private void removeRevertCommits() {
+        ArrayList<Commit> commitsToRemove = new ArrayList<>();
+        for (Commit c : this.commits){
+            if (c.message.contains("This reverts commit")){
+                // finding the id of commit reverted:
+                String[] lines = c.message.split("\n");
+                for (String line : lines){
+                    if (line.contains("This reverts commit")){
+                        String id = line.split(" ")[3];
+                        id = id.substring(0, 40);
+                        commitsToRemove.add(this.findCommitFromName(id));
+                        // removing the commit which reverses another one
+                        commitsToRemove.add(c);
+                    }
+                }
+            }
+        }
+
+        for (Commit c : commitsToRemove){
+            if (c != null) //may be null if findCommitFromName(id) returns null
+                this.commits.remove(c);
+        }
+    }
+
+    public Commit findCommitFromName(String id) {
+        Commit commit = null;
+        for (Commit c : this.commits) {
+            if (c.revCommit.getName().equals(id)) {
+                commit = c;
+                break;
+            }
+        }
+        return commit;
     }
 
     private void initializeReleaseList() throws GitAPIException, IOException, InvalidRangeException {
@@ -38,13 +80,17 @@ public class DatasetConstructor {
         for (i = 0; i < tagList.size(); i++){
             Release cur = new Release(tagList.get(i));
             this.releases.add(cur);
-            cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
         }
         Collections.sort(this.releases, (Commit o1, Commit o2) ->{
             Date d1 = o1.date;
             Date d2 = o2.date;
             return d1.compareTo(d2);
         });
+        for (i = 0; i < tagList.size(); i++) {
+            Release cur = this.releases.get(i);
+            cur.setIndex(i + 1);
+            cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
+        }
     }
 
 
@@ -117,16 +163,16 @@ public class DatasetConstructor {
     }
 
 
-    public Commit findLastCommitsFromTicketId(String ticketId){
+    /*public Commit findLastCommitsFromTicketId(String ticketId){
         /*  This method returns the Commit which is the last (in time)
-        *   relative to a given TicketId  */
+        *   relative to a given TicketId
         Commit last = null;
         for (Commit c : this.findCommitsFromTicketId(ticketId)){
             if (last == null || last.date.compareTo(c.date) < 0)
                 last = c;
         }
         return last;
-    }
+    }*/
 
     public Release findReleaseFromName(String s){
         /*  this method returns the release's Commit which has the version name in its message */
@@ -138,6 +184,18 @@ public class DatasetConstructor {
             }
         }
         return ret;
+    }
+
+    public Commit findPreviously(Commit c){
+        Integer i;
+        Commit toReturn = null;
+        for (i = 0; i < this.commits.size(); i++){
+           if (c == this.commits.get(i)) {
+               toReturn = this.commits.get(i - 1);
+               break;
+           }
+        }
+        return toReturn;
     }
 
     public Commit findFixedVersion(List<String> fixedVersionNames) {
@@ -164,21 +222,22 @@ public class DatasetConstructor {
         ArrayList<JiraBeanInformations> informations = (ArrayList<JiraBeanInformations>) retrieveInformations.getInformations();
 
         this.fixedBugs = new ArrayList<>();
-
         for (JiraBeanInformations info : informations) {
-
             info.setTrulyFixedVersion(this.findFixedVersion(info.getFixedVersions()));
             BugTicket bug = new BugTicket(info);
+            bug.setRelativeCommits(this.findCommitsFromTicketId(info.getKey()));
             this.fixedBugs.add(bug);
         }
     }
 
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
-        DatasetConstructor ds = new DatasetConstructor();
+        DatasetConstructor ds = DatasetConstructor.getInstance();
         Release r = ds.releases.get(1);
 
         r.setEachFileLoc();
         r.setEachFileNr();
+        r.setEachFileNfix(ds.fixedBugs);
+        int a =3;
 
     }
 

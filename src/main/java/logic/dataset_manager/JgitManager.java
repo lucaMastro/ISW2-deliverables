@@ -6,10 +6,7 @@ import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
 import org.eclipse.jgit.diff.Edit;
 import org.eclipse.jgit.diff.RawTextComparator;
-import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.lib.ObjectLoader;
-import org.eclipse.jgit.lib.ObjectReader;
-import org.eclipse.jgit.lib.Repository;
+import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
@@ -114,7 +111,6 @@ public class JgitManager {
                 for (i = 0; i < lines.length; i++) {
 
                     String line = lines[i];
-                    //line = "/*prova*/ //test";
                     // skipping single line comments
                     if (!line.trim().startsWith("//") || !line.trim().isEmpty()) {
                         Boolean[] returned = this.isLineValid(line, openedComment);
