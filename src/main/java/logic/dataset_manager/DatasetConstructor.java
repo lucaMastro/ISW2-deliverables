@@ -162,17 +162,6 @@ public class DatasetConstructor {
     }
 
 
-    /*public Commit findLastCommitsFromTicketId(String ticketId){
-        /*  This method returns the Commit which is the last (in time)
-        *   relative to a given TicketId
-        Commit last = null;
-        for (Commit c : this.findCommitsFromTicketId(ticketId)){
-            if (last == null || last.date.compareTo(c.date) < 0)
-                last = c;
-        }
-        return last;
-    }*/
-
     public Release findReleaseFromName(String s){
         /*  this method returns the release's Commit which has the version name in its message */
         Release ret = null;
@@ -238,8 +227,6 @@ public class DatasetConstructor {
         r.setEachFileNfix(ds.fixedBugs);
         r.setEachFileNauth();
         r.setEachFileLocAdded();
-        int a =3;
-
     }
 
 }

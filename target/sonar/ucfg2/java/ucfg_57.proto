@@ -1,0 +1,16 @@
+
+Rlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/List;‚
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java1 1(+"1*¡
+1‚
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java2 2(ñ
+î
+‚
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java2 2(
+%0java.util.ArrayList"__id*F*D.
+,logic.jira_informations.JiraBeanInformations"
+affectedVersions"¢
+‚
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java2 2( 
+
+%0java.util.ArrayListB0.
+,logic.jira_informations.JiraBeanInformations

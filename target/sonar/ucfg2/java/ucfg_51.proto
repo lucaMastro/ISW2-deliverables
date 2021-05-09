@@ -1,16 +1,87 @@
 
-Vlogic.jira_informations.JiraBeanInformations#getOpeningVersionDate()Ljava/lang/String;Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java- -('"1*ù
-1Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java. .(!
-Ì
-Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java. .(!
-%0java.lang.String"__id*H*F.
-,logic.jira_informations.JiraBeanInformations"
-openingVersionDate"ü
-Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java. .("
-
-%0java.lang.StringB0.
-,logic.jira_informations.JiraBeanInformations
+ilogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Commit;Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java» »(""9*ù
+2Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÕ Õ(Æ
+´
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÕ Õ(
+namejava.lang.String"__id*
+""€
+ÿ
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÕ Õ(
+namejava.lang.String"
+__arrayGet*%
+#
+fixedVersionNamesjava.util.List*
+""*
+7
+1*Â
+3Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java‘ ‘(◊
+‘
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java‘ ‘($
+lastlogic.dataset_manager.Commit"__id*#
+!
+clogic.dataset_manager.Commit*
+2*«
+4Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java”  ”($‘
+—
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java”  ”()
+%1java.util.Date"__id*0*.
+$
+lastlogic.dataset_manager.Commit"
+date—
+Œ
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java”4 ”(:
+%2java.util.Date"__id*-*+
+!
+clogic.dataset_manager.Commit"
+dateãà
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java”  ”(;	
+%3int"+java.util.Date#compareTo(Ljava/util/Date;)I*
+
+%1java.util.Date*
+
+%2java.util.Date2compareTo(Ljava/util/Date;)*
+2
+3*¸
+7Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaŒ Œ(èå
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaŒ Œ(5#
+%0logic.dataset_manager.Release"ologic.dataset_manager.DatasetConstructor#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;*,*
+(logic.dataset_manager.DatasetConstructor*
+
+namejava.lang.String2'findReleaseFromName(Ljava/lang/String;)÷
+”
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaŒ Œ(6!
+clogic.dataset_manager.Commit"__id*%
+#
+%0logic.dataset_manager.Release*	
+2
+3
+4*»
+9Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÃ Ã(∫
+∑
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÃ Ã($
+lastlogic.dataset_manager.Commit"__id*
+""*
+2*¥
+1Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java÷ ÷("´
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java÷ ÷(&
+$
+lastlogic.dataset_manager.Commit:#
+fixedVersionNamesjava.util.ListB,*
+(logic.dataset_manager.DatasetConstructor
