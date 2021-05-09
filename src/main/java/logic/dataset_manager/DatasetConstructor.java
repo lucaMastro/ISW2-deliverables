@@ -221,8 +221,14 @@ public class DatasetConstructor {
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = DatasetConstructor.getInstance();
         Release r = ds.releases.get(1);
+        Release r2 = ds.releases.get(2);
 
+        r.setEachFileChurn();
         r.setEachFileLoc();
+
+        r2.setEachFileChurn();
+        r2.setEachFileLoc();
+
         r.setEachFileNr();
         r.setEachFileNfix(ds.fixedBugs);
         r.setEachFileNauth();

@@ -52,6 +52,7 @@ public class ReleaseFile {
         this.nr = 0;
         this.nAuth = 0;
         this.locAdded = 0;
+        this.churn = 0;
     }
 
     public String getPath(){
@@ -100,5 +101,9 @@ public class ReleaseFile {
 
     public void updateLocAdded(Integer linesAdded) {
         this.locAdded += linesAdded;
+    }
+
+    public void updateChurn(int i) {
+        this.churn = i;
     }
 }

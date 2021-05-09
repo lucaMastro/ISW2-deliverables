@@ -149,4 +149,26 @@ public class Release extends Commit {
         }
     }
 
+    public void setEachFileChurn() throws IOException {
+        /*  should find a way to exclude comment lines */
+        Integer i;
+        Integer linesAdded;
+        Integer linesDeleted;
+        for (i = 0; i < this.commits.size() - 1; i++) {
+            /*  excluding last element because i need the couple
+             *   commit_i commit_i+1 to found differences    */
+            RevCommit older = this.commits.get(i).revCommit;
+            RevCommit newer = this.commits.get(i + 1).revCommit;
+            List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older, newer);
+            for (DiffEntry diff : differences) {
+                ReleaseFile f = this.findFromName(diff.getNewPath());
+                if (f != null) {
+                    Integer[] lines = JgitManager.getInstance().countLinesAddedAndDeleted(diff);
+                    linesAdded = lines[0];
+                    linesDeleted = lines[1];
+                    f.updateChurn(linesAdded - linesDeleted);
+                }
+            }
+        }
+    }
 }
