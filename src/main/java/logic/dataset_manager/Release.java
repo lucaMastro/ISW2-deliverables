@@ -109,6 +109,44 @@ public class Release extends Commit {
                 }
             }
         }
-
     }
+
+
+    public void setEachFileNauth() throws IOException {
+        Integer i;
+        for (i = 0; i < this.commits.size() - 1; i++) {
+            /*  excluding last element because i need the couple
+             *   commit_i commit_i+1 to found differences    */
+            RevCommit older = this.commits.get(i).revCommit;
+            RevCommit newer = this.commits.get(i + 1).revCommit;
+            List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older, newer);
+            for (DiffEntry diff : differences){
+                ReleaseFile f = this.findFromName(diff.getNewPath());
+                if (f != null) {
+                    f.addEditors(newer.getAuthorIdent());
+                    f.updateNauth();
+                }
+            }
+        }
+    }
+
+    public void setEachFileLocAdded() throws IOException {
+        Integer i;
+        Integer linesAdded;
+        for (i = 0; i < this.commits.size() - 1; i++) {
+            /*  excluding last element because i need the couple
+             *   commit_i commit_i+1 to found differences    */
+            RevCommit older = this.commits.get(i).revCommit;
+            RevCommit newer = this.commits.get(i + 1).revCommit;
+            List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older, newer);
+            for (DiffEntry diff : differences) {
+                ReleaseFile f = this.findFromName(diff.getNewPath());
+                if (f != null) {
+                    linesAdded = JgitManager.getInstance().countLinesAddedAndDeleted(diff)[0];
+                    f.updateLocAdded(linesAdded);
+                }
+            }
+        }
+    }
+
 }

@@ -2334,8 +2334,9 @@ iterator()?org.eclipse.jgit.revwalk.RevWalk#iterator()Ljava/util/Iterator;p
 org.eclipse.jgit.lib.Refjava.lang.Object>
 getUpdateIndex()*org.eclipse.jgit.lib.Ref#getUpdateIndex()Jù
 %logic.exception.InvalidRangeExceptionjava.lang.Exception_
-<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)V«
-logic.dataset_manager.BugTicketjava.lang.Objectë
+<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)V∂
+logic.dataset_manager.BugTicketjava.lang.Objectm
+$setRelativeCommits(Ljava/util/List;)Elogic.dataset_manager.BugTicket#setRelativeCommits(Ljava/util/List;)Vë
 6<init>(Llogic/jira_informations/JiraBeanInformations;)Wlogic.dataset_manager.BugTicket#<init>(Llogic/jira_informations/JiraBeanInformations;)Vï
 java.text.Formatjava.lang.Cloneablejava.lang.Objectjava.io.Serializable”
 KcreateAttributedCharacterIterator([Ljava/text/AttributedCharacterIterator;)Éjava.text.Format#createAttributedCharacterIterator([Ljava/text/AttributedCharacterIterator;)Ljava/text/AttributedCharacterIterator;¶
@@ -2434,33 +2435,38 @@ toString()4java.text.ParsePosition#toString()Ljava/lang/String;=
 getIndex()#java.text.ParsePosition#getIndex()I3
 setIndex(I)$java.text.ParsePosition#setIndex(I)V1
 
-hashCode()#java.text.ParsePosition#hashCode()Iï
+hashCode()#java.text.ParsePosition#hashCode()I¸
 logic.dataset_manager.Releaselogic.dataset_manager.Commit]
-setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)VÖ
+setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)Ve
+!setEachFileNfix(Ljava/util/List;)@logic.dataset_manager.Release#setEachFileNfix(Ljava/util/List;)VÖ
  findFromName(Ljava/lang/String;)alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;A
 setEachFileNr().logic.dataset_manager.Release#setEachFileNr()Vg
 "<init>(Lorg/eclipse/jgit/lib/Ref;)Alogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;)VC
-setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()Vè
-!logic.dataset_manager.ReleaseFilejava.lang.Objectá
+setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()V–
+!logic.dataset_manager.ReleaseFilejava.lang.Object?
+updateNfix()/logic.dataset_manager.ReleaseFile#updateNfix()Vá
 0computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)Slogic.dataset_manager.ReleaseFile#computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)VL
 
 toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;[
 <init>(Ljava/lang/String;)=logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;)VW
 updateNumberOfRevision();logic.dataset_manager.ReleaseFile#updateNumberOfRevision()VJ
-	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;ñ
+	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;˚
 (logic.dataset_manager.DatasetConstructorjava.lang.ObjectÇ
-getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;©
-/findLastCommitsFromTicketId(Ljava/lang/String;)vlogic.dataset_manager.DatasetConstructor#findLastCommitsFromTicketId(Ljava/lang/String;)Llogic/dataset_manager/Commit;>
-<init>()2logic.dataset_manager.DatasetConstructor#<init>()V\
-initializeReleaseList()Alogic.dataset_manager.DatasetConstructor#initializeReleaseList()VZ
+getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;X
+removeRevertCommits()?logic.dataset_manager.DatasetConstructor#removeRevertCommits()V\
+initializeReleaseList()Alogic.dataset_manager.DatasetConstructor#initializeReleaseList()Vq
+getInstance()`logic.dataset_manager.DatasetConstructor#getInstance()Llogic/dataset_manager/DatasetConstructor;£
+3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)llogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;á
+getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;>
+<init>()2logic.dataset_manager.DatasetConstructor#<init>()VZ
 initializeCommitList()@logic.dataset_manager.DatasetConstructor#initializeCommitList()VV
 initializeBugsList()>logic.dataset_manager.DatasetConstructor#initializeBugsList()V`
 main([Ljava/lang/String;)Clogic.dataset_manager.DatasetConstructor#main([Ljava/lang/String;)Vì
-+findCommitsFromTicketId(Ljava/lang/String;)dlogic.dataset_manager.DatasetConstructor#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;£
-3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)llogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;è
-"findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Commit;ö
-'findReleaseFromName(Ljava/lang/String;)ologic.dataset_manager.DatasetConstructor#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;á
-getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;â
++findCommitsFromTicketId(Ljava/lang/String;)dlogic.dataset_manager.DatasetConstructor#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;ó
+&findCommitFromName(Ljava/lang/String;)mlogic.dataset_manager.DatasetConstructor#findCommitFromName(Ljava/lang/String;)Llogic/dataset_manager/Commit;è
+"findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Commit;ß
+.findPreviously(Llogic/dataset_manager/Commit;)ulogic.dataset_manager.DatasetConstructor#findPreviously(Llogic/dataset_manager/Commit;)Llogic/dataset_manager/Commit;ö
+'findReleaseFromName(Ljava/lang/String;)ologic.dataset_manager.DatasetConstructor#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;â
 #org.eclipse.jgit.api.ListTagCommandorg.eclipse.jgit.api.GitCommand{
 )<init>(Lorg/eclipse/jgit/lib/Repository;)Norg.eclipse.jgit.api.ListTagCommand#<init>(Lorg/eclipse/jgit/lib/Repository;)VD
 call():org.eclipse.jgit.api.ListTagCommand#call()Ljava/util/List;◊M

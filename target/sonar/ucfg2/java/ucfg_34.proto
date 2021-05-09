@@ -1,27 +1,48 @@
 
-clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaG G("1*‚
-1~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaH H(à
-Ý
+`logic.dataset_manager.DatasetConstructor#getInstance()Llogic/dataset_manager/DatasetConstructor;~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java% (0"3*Ò
+2~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (/ÝÚ
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaH H(
-%0java.util.ArrayList"__id*:*8*
-(logic.dataset_manager.DatasetConstructor"
-
-releasesï
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (-.
+%1(logic.dataset_manager.DatasetConstructor"(logic.dataset_manager.DatasetConstructorï
 ì
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaH H('#
-%1logic.dataset_manager.Release"
-__arrayGet*
-
-%0java.util.ArrayList*
-
-indexjava.lang.Integer"§
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (/
+%2"2logic.dataset_manager.DatasetConstructor#<init>()V*0
+.
+%1(logic.dataset_manager.DatasetConstructorõ
+ò
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaH H((%
-#
-%1logic.dataset_manager.Release:
-indexjava.lang.IntegerB,*
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (/8*
+(logic.dataset_manager.DatasetConstructor"
+
+instance"__id*0
+.
+%1(logic.dataset_manager.DatasetConstructor*
+1*ƒ
+3~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (õ
+ò
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (.
+%0(logic.dataset_manager.DatasetConstructor"__id*:*8*
+(logic.dataset_manager.DatasetConstructor"
+
+instance*
+2
+1*°
+1~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (õ
+ò
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (.
+%3(logic.dataset_manager.DatasetConstructor"__id*:*8*
+(logic.dataset_manager.DatasetConstructor"
+
+instance"²
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java (0
+.
+%3(logic.dataset_manager.DatasetConstructorB,"*
 (logic.dataset_manager.DatasetConstructor

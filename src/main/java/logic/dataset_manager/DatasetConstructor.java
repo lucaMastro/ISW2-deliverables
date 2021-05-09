@@ -32,7 +32,6 @@ public class DatasetConstructor {
         this.initializeCommitList();
         this.removeRevertCommits();
         this.initializeReleaseList();
-        Integer i;
 
         this.initializeBugsList();
     }
@@ -237,6 +236,8 @@ public class DatasetConstructor {
         r.setEachFileLoc();
         r.setEachFileNr();
         r.setEachFileNfix(ds.fixedBugs);
+        r.setEachFileNauth();
+        r.setEachFileLocAdded();
         int a =3;
 
     }

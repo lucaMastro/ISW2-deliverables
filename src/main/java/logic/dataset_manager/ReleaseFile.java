@@ -21,12 +21,17 @@
 
 package logic.dataset_manager;
 
+import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.revwalk.RevCommit;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ReleaseFile {
 
-    String name;
+    private String name;
+    private List<PersonIdent> editors;
+
     //metrics
     private long loc; //lines of code
     private long nr; //number of revisions that modifies this file
@@ -42,8 +47,11 @@ public class ReleaseFile {
     private long weightedAge; //age of Release weighted by LOC touched
 
     public ReleaseFile(String name){
+        this.editors = new ArrayList<>();
         this.name = name;
         this.nr = 0;
+        this.nAuth = 0;
+        this.locAdded = 0;
     }
 
     public String getPath(){
@@ -79,5 +87,18 @@ public class ReleaseFile {
 
     public void updateNfix() {
         this.nFix ++;
+    }
+
+    public void addEditors(PersonIdent editor) {
+        if (!this.editors.contains(editor))
+            this.editors.add(editor);
+    }
+
+    public void updateNauth(){
+        this.nAuth = this.editors.size();
+    }
+
+    public void updateLocAdded(Integer linesAdded) {
+        this.locAdded += linesAdded;
     }
 }
