@@ -53,6 +53,8 @@ public class ReleaseFile {
         this.nAuth = 0;
         this.locAdded = 0;
         this.churn = 0;
+        this.maxChurn = 0;
+        this.maxLocAdded = 0;
     }
 
     public String getPath(){
@@ -101,9 +103,13 @@ public class ReleaseFile {
 
     public void updateLocAdded(Integer linesAdded) {
         this.locAdded += linesAdded;
+        if (this.maxLocAdded < linesAdded)
+            this.maxLocAdded = linesAdded;
     }
 
     public void updateChurn(int i) {
-        this.churn = i;
+        this.churn += i;
+        if (this.maxChurn < i)
+            this.maxChurn = i;
     }
 }

@@ -2435,16 +2435,17 @@ toString()4java.text.ParsePosition#toString()Ljava/lang/String;=
 getIndex()#java.text.ParsePosition#getIndex()I3
 setIndex(I)$java.text.ParsePosition#setIndex(I)V1
 
-hashCode()#java.text.ParsePosition#hashCode()I”
+hashCode()#java.text.ParsePosition#hashCode()IÝ
 logic.dataset_manager.Releaselogic.dataset_manager.Commit]
 setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)Ve
 !setEachFileNfix(Ljava/util/List;)@logic.dataset_manager.Release#setEachFileNfix(Ljava/util/List;)VG
 setEachFileNauth()1logic.dataset_manager.Release#setEachFileNauth()V…
  findFromName(Ljava/lang/String;)alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;M
-setEachFileLocAdded()4logic.dataset_manager.Release#setEachFileLocAdded()VA
+setEachFileLocAdded()4logic.dataset_manager.Release#setEachFileLocAdded()VG
+setEachFileChurn()1logic.dataset_manager.Release#setEachFileChurn()VA
 setEachFileNr().logic.dataset_manager.Release#setEachFileNr()Vg
 "<init>(Lorg/eclipse/jgit/lib/Ref;)Alogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;)VC
-setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()Vˆ
+setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()VÍ
 !logic.dataset_manager.ReleaseFilejava.lang.Object?
 updateNfix()/logic.dataset_manager.ReleaseFile#updateNfix()Vm
 #updateLocAdded(Ljava/lang/Integer;)Flogic.dataset_manager.ReleaseFile#updateLocAdded(Ljava/lang/Integer;)V‡
@@ -2454,7 +2455,8 @@ toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;[
 <init>(Ljava/lang/String;)=logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;)VW
 updateNumberOfRevision();logic.dataset_manager.ReleaseFile#updateNumberOfRevision()VA
 updateNauth()0logic.dataset_manager.ReleaseFile#updateNauth()Vƒ
-.addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)Qlogic.dataset_manager.ReleaseFile#addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)VJ
+.addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)Qlogic.dataset_manager.ReleaseFile#addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)VC
+updateChurn(I)1logic.dataset_manager.ReleaseFile#updateChurn(I)VJ
 	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;û
 (logic.dataset_manager.DatasetConstructorjava.lang.Object‚
 getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;X

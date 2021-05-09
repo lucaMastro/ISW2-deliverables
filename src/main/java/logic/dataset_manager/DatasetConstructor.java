@@ -229,10 +229,11 @@ public class DatasetConstructor {
         r2.setEachFileChurn();
         r2.setEachFileLoc();
 
+        r.setEachFileLocAdded();
         r.setEachFileNr();
         r.setEachFileNfix(ds.fixedBugs);
         r.setEachFileNauth();
-        r.setEachFileLocAdded();
+
     }
 
 }
