@@ -2436,11 +2436,12 @@ toString()4java.text.ParsePosition#toString()Ljava/lang/String;=
 getIndex()#java.text.ParsePosition#getIndex()I3
 setIndex(I)$java.text.ParsePosition#setIndex(I)V1
 
-hashCode()#java.text.ParsePosition#hashCode()I¢
+hashCode()#java.text.ParsePosition#hashCode()Iÿ
 logic.dataset_manager.Releaselogic.dataset_manager.Commit]
 setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)V…
  findFromName(Ljava/lang/String;)alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;Í
-NcomputeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Ljava/util/Map;){logic.dataset_manager.Release#computeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Ljava/util/Map;)Ljava/util/Map;g
+NcomputeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Ljava/util/Map;){logic.dataset_manager.Release#computeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Ljava/util/Map;)Ljava/util/Map;Ú
+LfindOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)‰logic.dataset_manager.Release#findOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)[Llogic/dataset_manager/Commit;g
 "<init>(Lorg/eclipse/jgit/lib/Ref;)Alogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;)VC
 setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()V™	
 !logic.dataset_manager.ReleaseFilejava.lang.Object?

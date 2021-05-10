@@ -63,19 +63,46 @@ public class Release extends Commit {
     }
 
 
-    private Commit[] findOlderAndNewerCommits(Release previousRelease, Integer index){
+    private List<Commit> findOlderAndNewerCommits(Release previousRelease, Integer index){
         Commit older;
         Commit newer;
+        List<Commit> olderAndNewer = new ArrayList<>();
 
         older = index < 0 ? previousRelease : this.commits.get(index);
         newer = index < this.commits.size() - 1 ? this.commits.get(index + 1) : this;
 
-        if (older == null)
-            return null;
-        else
-            return new Commit[]{older, newer};
+        if (older != null){
+            olderAndNewer.add(older);
+            olderAndNewer.add(newer);
+        }
+        return  olderAndNewer;
     }
 
+
+    private void updateFileMetrics(ReleaseFile rf, Commit newer, DiffEntry diff,
+                                   List<BugTicket> fixedBugs, Date additionDate) throws IOException {
+        if (rf != null) {
+            /*  it can be null if a file is added in a revision commit and deleted in another
+             *  revision commit before release commit. That's why this kind of file is not stored
+             *  in the list of files, which store the files tracked by git when the new release is out.  */
+            //nr
+            rf.updateNumberOfRevision();
+            //nauth
+            rf.addEditors(newer.revCommit.getAuthorIdent());
+            rf.updateNauth();
+            //locAdded
+            Integer[] lines = JgitManager.getInstance().countLinesAddedAndDeleted(diff);
+            rf.updateLocAdded(lines[0]);
+            //churn
+            rf.updateChurn(lines[0] - lines[1]);
+            //nfix
+            if (newer.isFixCommit(fixedBugs).equals(Boolean.TRUE))
+                rf.updateNfix();
+            //age
+            rf.setAdditionDate(additionDate);
+            rf.computeAge(this.date);
+        }
+    }
 
     public Map<String, Date> computeMetrics(Release previousRelease, List<BugTicket> fixedBugs,
                                Map<String, Date> nameToAdditionDate) throws IOException {
@@ -83,7 +110,6 @@ public class Release extends Commit {
         this.setEachFileLoc();
         Commit older;
         Commit newer;
-        Integer[] lines;
         Integer i;
         Date additionDate;
         for (i = -1; i < this.commits.size(); i++){
@@ -92,11 +118,12 @@ public class Release extends Commit {
             *   lose the changes between previousReleaseCommit and the first commit of the newer release.
             *   When index is -1, i can understand that the older commit i should use is the previous release */
 
-            Commit[] olderAndNewer = this.findOlderAndNewerCommits(previousRelease, i);
-            if (olderAndNewer == null)
+            List<Commit> olderAndNewer = this.findOlderAndNewerCommits(previousRelease, i);
+            if (olderAndNewer.size() == 0)
                 continue;
-            older = olderAndNewer[0];
-            newer = olderAndNewer[1];
+
+            older = olderAndNewer.get(0);
+            newer = olderAndNewer.get(1);
 
             List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older.revCommit,
                     newer.revCommit);
@@ -113,28 +140,7 @@ public class Release extends Commit {
                 else
                     additionDate = nameToAdditionDate.get(diff.getNewPath());
 
-                if (rf != null) {
-                    /*  it can be null if a file is added in a revision commit and deleted in another
-                     *  revision commit before release commit. That's why this kind of file is not stored
-                     *  in the list of files, which store the files tracked by git when the new release is out.  */
-                    //nr
-                    rf.updateNumberOfRevision();
-                    //nauth
-                    rf.addEditors(newer.revCommit.getAuthorIdent());
-                    rf.updateNauth();
-                    //locAdded
-                    lines = JgitManager.getInstance().countLinesAddedAndDeleted(diff);
-                    rf.updateLocAdded(lines[0]);
-                    //churn
-                    rf.updateChurn(lines[0] - lines[1]);
-                    //nfix
-                    if (newer.isFixCommit(fixedBugs).equals(Boolean.TRUE))
-                        rf.updateNfix();
-                    //age
-                    rf.setAdditionDate(additionDate);
-                    rf.computeAge(this.date);
-
-                }
+                this.updateFileMetrics(rf, newer, diff,fixedBugs, additionDate);
             }
         }
         return nameToAdditionDate;
