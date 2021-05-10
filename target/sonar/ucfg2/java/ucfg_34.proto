@@ -1,188 +1,188 @@
 
 >logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaC C("1*‚B
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE E("1*‚B
 1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaD D(.¥±
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaF F(.¥±
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaD D(,
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaF F(,
 %0java.lang.StringBuilder"java.lang.StringBuilder∆
 √
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaD D(.
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaF F(.
 %1"!java.lang.StringBuilder#<init>()V*
 
 %0java.lang.StringBuilder¬
 ø
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaD D(/
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaF F(/
 sbjava.lang.StringBuilder"__id*
 
 %0java.lang.StringBuilderÀ
 »
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE E(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG G(
 %2java.lang.String"__id*/*-#
 !logic.dataset_manager.ReleaseFile"
 nameøº
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE E(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG G(
 %3java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
 
 sbjava.lang.StringBuilder*
 
 %2java.lang.String2append(Ljava/lang/String;)¨©
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE E((
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG G((
 %4java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
 
 %3java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)ãà
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE F(!
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG H(!
 %5java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;*
 
 %4java.lang.StringBuilder*
 ""2	append(J)¨©
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE F(-
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG H(-
 %6java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
 
 %5java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)ãà
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE G( 
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG I( 
 %7java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;*
 
 %6java.lang.StringBuilder*
 ""2	append(J)¨©
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE G(,
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG I(,
 %8java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
 
 %7java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)ãà
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE H("
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG J("
 %9java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;*
 
 %8java.lang.StringBuilder*
 ""2	append(J)≠™
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE H(.
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG J(.
 %10java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
 
 %9java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE I(#
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG K(#
 %11java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %10java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE I(/
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG K(/
 %12java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %11java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE J(&
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG L(&
 %13java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %12java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE J(2
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG L(2
 %14java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %13java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE K()
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG M()
 %15java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %14java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE K(5
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG M(5
 %16java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %15java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE L()
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG N()
 %17java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %16java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE L(5
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG N(5
 %18java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %17java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE M(#
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG O(#
 %19java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %18java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE M(/
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG O(/
 %20java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %19java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE N(&
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG P(&
 %21java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %20java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE N(2
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG P(2
 %22java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %21java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE O(*
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG Q(*
 %23java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %22java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE O(6
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG Q(6
 %24java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %23java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE P(!
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG R(!
 %25java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %24java.lang.StringBuilder*
 ""2	append(J)Æ´
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE P(-
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG R(-
 %26java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %25java.lang.StringBuilder*
 ,2append(Ljava/lang/String;)çä
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaE Q()
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaG S()
 %27java.lang.StringBuilder":java.lang.StringBuilder#append(J)Ljava/lang/StringBuilder;* 
 
 %26java.lang.StringBuilder*
 ""2	append(J)¯ı
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaR R(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaT T(
 %28java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
 
 sbjava.lang.StringBuilder2
 toString()"î
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaR R(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaT T(
 
 %28java.lang.StringB%#
 !logic.dataset_manager.ReleaseFile

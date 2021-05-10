@@ -16,23 +16,14 @@ import java.util.logging.Logger;
 
 public class DatasetConstructor {
 
-    private static DatasetConstructor instance = null;
-
     private ArrayList<Commit> commits;
     private ArrayList<Release> releases;
     private ArrayList<BugTicket> fixedBugs;
 
-    public static DatasetConstructor getInstance() throws IOException, InvalidRangeException, GitAPIException {
-        if (instance == null)
-            instance = new DatasetConstructor();
-        return instance;
-    }
-
-    private DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
+    public DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
         this.initializeCommitList();
         this.removeRevertCommits();
         this.initializeReleaseList();
-
         this.initializeBugsList();
     }
 
@@ -219,21 +210,13 @@ public class DatasetConstructor {
     }
 
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
-        DatasetConstructor ds = DatasetConstructor.getInstance();
-        Release r = ds.releases.get(1);
-        Release r2 = ds.releases.get(2);
+        DatasetConstructor ds = new DatasetConstructor();
 
-        r.setEachFileChurn();
-        r.setEachFileLoc();
-
-        r2.setEachFileChurn();
-        r2.setEachFileLoc();
-
-        r.setEachFileLocAdded();
-        r.setEachFileNr();
-        r.setEachFileNfix(ds.fixedBugs);
-        r.setEachFileNauth();
-
+        Release prev = null;
+        for (Release r : ds.releases) {
+            r.computeMetrics(prev, ds.fixedBugs);
+            prev = r;
+        }
     }
 
 }

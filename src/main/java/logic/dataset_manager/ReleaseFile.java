@@ -25,26 +25,26 @@ import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.revwalk.RevCommit;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class ReleaseFile {
 
     private String name;
     private List<PersonIdent> editors;
+    private Date additionDate;
 
     //metrics
     private long loc; //lines of code
-    private long nr; //number of revisions that modifies this file
+    private long nr;    //number of revisions that modifies this file
     private long nFix; //number of bug fixes on this file
     private long nAuth; //number of authors which commits this file
     private long locAdded; //sum over revision of LOC added
     private long maxLocAdded; //maximum over revisions of LOC added
-    private long avgLocAdded; //average LOC added per revision
     private long churn; //sum over revisions of added - deleted LOC
     private long maxChurn; //maximum churn over revisions
-    private long averageChurn; //average churn over revisions
     private long age; //age of Release
-    private long weightedAge; //age of Release weighted by LOC touched
+
 
     public ReleaseFile(String name){
         this.editors = new ArrayList<>();
@@ -55,6 +55,7 @@ public class ReleaseFile {
         this.churn = 0;
         this.maxChurn = 0;
         this.maxLocAdded = 0;
+        this.age = 0;
     }
 
     public String getPath(){
@@ -75,12 +76,9 @@ public class ReleaseFile {
                 .append(this.nAuth).append(",")
                 .append(this.locAdded).append(",")
                 .append(this.maxLocAdded).append(",")
-                .append(this.avgLocAdded).append(",")
                 .append(this.churn).append(",")
                 .append(this.maxChurn).append(",")
-                .append(this.averageChurn).append(",")
-                .append(this.age).append(",")
-                .append(this.weightedAge);
+                .append(this.age).append(",");
         return sb.toString();
     }
 
@@ -111,5 +109,9 @@ public class ReleaseFile {
         this.churn += i;
         if (this.maxChurn < i)
             this.maxChurn = i;
+    }
+
+    public void setAdditionDate(Date date) {
+        this.additionDate = date;
     }
 }

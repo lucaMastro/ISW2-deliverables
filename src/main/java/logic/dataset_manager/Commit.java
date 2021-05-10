@@ -6,6 +6,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -31,5 +32,16 @@ public class Commit {
             Logger logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
+    }
+
+    public Boolean isFixCommit(List<BugTicket> fixedBugs){
+        Boolean isFix = Boolean.FALSE;
+        for (BugTicket bug : fixedBugs){
+            if (bug.relativeCommits.contains(this)){
+                isFix = Boolean.TRUE;
+                break;
+            }
+        }
+        return isFix;
     }
 }
