@@ -2233,10 +2233,11 @@ iterator()2java.util.ArrayList#iterator()Ljava/util/Iterator;I
 getOpeningVersionDate()Vlogic.jira_informations.JiraBeanInformations#getOpeningVersionDate()Ljava/lang/String;S
 getKey()Glogic.jira_informations.JiraBeanInformations#getKey()Ljava/lang/String;š
 4setTrulyFixedVersion(Llogic/dataset_manager/Commit;)blogic.jira_informations.JiraBeanInformations#setTrulyFixedVersion(Llogic/dataset_manager/Commit;)Vk
-getAffectedVersions()Rlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/List;”
+getAffectedVersions()Rlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/List;„
 logic.dataset_manager.Commitjava.lang.Objectf
 "<init>(Lorg/eclipse/jgit/lib/Ref;)@logic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/lib/Ref;)Vz
-,<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)Jlogic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)V’
+,<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)Jlogic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/revwalk/RevCommit;)Vn
+isFixCommit(Ljava/util/List;)Mlogic.dataset_manager.Commit#isFixCommit(Ljava/util/List;)Ljava/lang/Boolean;’
  org.eclipse.jgit.lib.PersonIdentjava.lang.Objectjava.io.SerializableZ
 equals(Ljava/lang/Object;)<org.eclipse.jgit.lib.PersonIdent#equals(Ljava/lang/Object;)Z‚
 .<init>(Ljava/lang/String;Ljava/lang/String;JI)Porg.eclipse.jgit.lib.PersonIdent#<init>(Ljava/lang/String;Ljava/lang/String;JI)VG
@@ -2435,19 +2436,16 @@ toString()4java.text.ParsePosition#toString()Ljava/lang/String;=
 getIndex()#java.text.ParsePosition#getIndex()I3
 setIndex(I)$java.text.ParsePosition#setIndex(I)V1
 
-hashCode()#java.text.ParsePosition#hashCode()IÝ
+hashCode()#java.text.ParsePosition#hashCode()Iö
 logic.dataset_manager.Releaselogic.dataset_manager.Commit]
-setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)Ve
-!setEachFileNfix(Ljava/util/List;)@logic.dataset_manager.Release#setEachFileNfix(Ljava/util/List;)VG
-setEachFileNauth()1logic.dataset_manager.Release#setEachFileNauth()V…
- findFromName(Ljava/lang/String;)alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;M
-setEachFileLocAdded()4logic.dataset_manager.Release#setEachFileLocAdded()VG
-setEachFileChurn()1logic.dataset_manager.Release#setEachFileChurn()VA
-setEachFileNr().logic.dataset_manager.Release#setEachFileNr()Vg
-"<init>(Lorg/eclipse/jgit/lib/Ref;)Alogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;)VC
-setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()VÍ
+setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)V…
+ findFromName(Ljava/lang/String;)alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;g
+"<init>(Lorg/eclipse/jgit/lib/Ref;)Alogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;)V¡
+?computeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;)^logic.dataset_manager.Release#computeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;)VC
+setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()V¸
 !logic.dataset_manager.ReleaseFilejava.lang.Object?
-updateNfix()/logic.dataset_manager.ReleaseFile#updateNfix()Vm
+updateNfix()/logic.dataset_manager.ReleaseFile#updateNfix()Vi
+!setAdditionDate(Ljava/util/Date;)Dlogic.dataset_manager.ReleaseFile#setAdditionDate(Ljava/util/Date;)Vm
 #updateLocAdded(Ljava/lang/Integer;)Flogic.dataset_manager.ReleaseFile#updateLocAdded(Ljava/lang/Integer;)V‡
 0computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)Slogic.dataset_manager.ReleaseFile#computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)VL
 
@@ -2457,12 +2455,11 @@ toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;[
 updateNauth()0logic.dataset_manager.ReleaseFile#updateNauth()Vƒ
 .addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)Qlogic.dataset_manager.ReleaseFile#addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)VC
 updateChurn(I)1logic.dataset_manager.ReleaseFile#updateChurn(I)VJ
-	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;û
+	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;ˆ
 (logic.dataset_manager.DatasetConstructorjava.lang.Object‚
 getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;X
 removeRevertCommits()?logic.dataset_manager.DatasetConstructor#removeRevertCommits()V\
-initializeReleaseList()Alogic.dataset_manager.DatasetConstructor#initializeReleaseList()Vq
-getInstance()`logic.dataset_manager.DatasetConstructor#getInstance()Llogic/dataset_manager/DatasetConstructor;£
+initializeReleaseList()Alogic.dataset_manager.DatasetConstructor#initializeReleaseList()V£
 3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)llogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;‡
 getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;>
 <init>()2logic.dataset_manager.DatasetConstructor#<init>()VZ

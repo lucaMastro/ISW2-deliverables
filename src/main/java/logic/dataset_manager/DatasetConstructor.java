@@ -19,12 +19,14 @@ public class DatasetConstructor {
     private ArrayList<Commit> commits;
     private ArrayList<Release> releases;
     private ArrayList<BugTicket> fixedBugs;
+    private Map<String, Date> nameToAdditionDate;
 
     public DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
         this.initializeCommitList();
         this.removeRevertCommits();
         this.initializeReleaseList();
         this.initializeBugsList();
+        this.nameToAdditionDate = new TreeMap<>();
     }
 
     private void removeRevertCommits() {
@@ -212,9 +214,10 @@ public class DatasetConstructor {
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();
 
+
         Release prev = null;
         for (Release r : ds.releases) {
-            r.computeMetrics(prev, ds.fixedBugs);
+            ds.nameToAdditionDate = r.computeMetrics(prev, ds.fixedBugs, ds.nameToAdditionDate);
             prev = r;
         }
     }

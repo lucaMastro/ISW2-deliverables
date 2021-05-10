@@ -114,4 +114,17 @@ public class ReleaseFile {
     public void setAdditionDate(Date date) {
         this.additionDate = date;
     }
+
+    public void computeAge(Date releaseDate) {
+        Long fileTime = this.additionDate.getTime();
+        Long releaseTime = releaseDate.getTime();
+        Long diffTime = releaseTime - fileTime; //milliseconds
+
+        /* milliseconds to weeks:
+        *  n [ms] = n / 1000 [s] = n / (1000 * 60) [m] =
+        *  n / (1000 * 60 * 60) [h] = n / (1000 * 60 * 60 * 24) [d] =
+        *  n / (1000 * 60 * 60 * 24 * 7) [w]
+        * */
+        this.age = diffTime / (1000 * 60 * 60 * 24 * 7);
+    }
 }

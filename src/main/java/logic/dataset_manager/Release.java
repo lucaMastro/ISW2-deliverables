@@ -3,12 +3,11 @@ package logic.dataset_manager;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.treewalk.TreeWalk;
-import java.util.Arrays;
-import java.util.List;
+
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Release extends Commit {
 
@@ -63,30 +62,53 @@ public class Release extends Commit {
             f.computeLoc(this.revCommit);
     }
 
-    public void computeMetrics(Release previousRelease, List<BugTicket> fixedBugs) throws IOException {
+
+
+    public Map<String, Date> computeMetrics(Release previousRelease, List<BugTicket> fixedBugs,
+                               Map<String, Date> nameToAdditionDate) throws IOException {
         // computing loc
         this.setEachFileLoc();
         Commit older;
         Commit newer;
         Integer[] lines;
-
         Integer i;
-        for (i = 0; i < this.commits.size() -1; i++){
-            /*  excluding last element because i need the couple
-             *   commit_i commit_i+1 to found differences    */
-            if ( i == 0 && previousRelease != null){
-                older = previousRelease;
-                newer = this.commits.get(i);
+        Date additionDate;
+        for (i = -1; i < this.commits.size(); i++){
+            /*  index starts from -1 because this.commits.get(i) is assigned to the olderCommit.
+            *   Starting from 0, i only can get the first commit of each new release as an older commit and i will
+            *   lose the changes between previousReleaseCommit and the first commit of the newer release.
+            *   When index is -1, i can understand that the older commit i should use is the previous release */
+
+            if (i < 0){
+                if (previousRelease != null)
+                    older = previousRelease;
+                else
+                    continue;
             }
-            else {
+            else
                 older = this.commits.get(i);
+
+            if ( i < this.commits.size() - 1)
                 newer = this.commits.get(i + 1);
-            }
+            else
+                newer = this;
+
 
             List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older.revCommit,
                     newer.revCommit);
             for (DiffEntry diff : differences) {
+
                 ReleaseFile rf = this.findFromName(diff.getNewPath());
+
+                if (diff.getChangeType().equals(DiffEntry.ChangeType.ADD) &&
+                        !nameToAdditionDate.containsKey(diff.getNewPath())) {
+                    //newer.date is the addition Date of this file
+                    nameToAdditionDate.put(diff.getNewPath(), newer.date);
+                    additionDate = newer.date;
+                }
+                else
+                    additionDate = nameToAdditionDate.get(diff.getNewPath());
+
                 if (rf != null) {
                     /*  it can be null if a file is added in a revision commit and deleted in another
                      *  revision commit before release commit. That's why this kind of file is not stored
@@ -102,11 +124,16 @@ public class Release extends Commit {
                     //churn
                     rf.updateChurn(lines[0] - lines[1]);
                     //nfix
-                    if (newer.isFixCommit(fixedBugs))
+                    if (newer.isFixCommit(fixedBugs).equals(Boolean.TRUE))
                         rf.updateNfix();
+                    //age
+                    rf.setAdditionDate(additionDate);
+                    rf.computeAge(this.date);
+
                 }
             }
         }
+        return nameToAdditionDate;
     }
 
 }
