@@ -119,7 +119,7 @@ public class Release extends Commit {
             *   When index is -1, i can understand that the older commit i should use is the previous release */
 
             List<Commit> olderAndNewer = this.findOlderAndNewerCommits(previousRelease, i);
-            if (olderAndNewer.size() == 0)
+            if (olderAndNewer.isEmpty())
                 continue;
 
             older = olderAndNewer.get(0);
