@@ -63,6 +63,19 @@ public class Release extends Commit {
     }
 
 
+    private Commit[] findOlderAndNewerCommits(Release previousRelease, Integer index){
+        Commit older;
+        Commit newer;
+
+        older = index < 0 ? previousRelease : this.commits.get(index);
+        newer = index < this.commits.size() - 1 ? this.commits.get(index + 1) : this;
+
+        if (older == null)
+            return null;
+        else
+            return new Commit[]{older, newer};
+    }
+
 
     public Map<String, Date> computeMetrics(Release previousRelease, List<BugTicket> fixedBugs,
                                Map<String, Date> nameToAdditionDate) throws IOException {
@@ -79,20 +92,11 @@ public class Release extends Commit {
             *   lose the changes between previousReleaseCommit and the first commit of the newer release.
             *   When index is -1, i can understand that the older commit i should use is the previous release */
 
-            if (i < 0){
-                if (previousRelease != null)
-                    older = previousRelease;
-                else
-                    continue;
-            }
-            else
-                older = this.commits.get(i);
-
-            if ( i < this.commits.size() - 1)
-                newer = this.commits.get(i + 1);
-            else
-                newer = this;
-
+            Commit[] olderAndNewer = this.findOlderAndNewerCommits(previousRelease, i);
+            if (olderAndNewer == null)
+                continue;
+            older = olderAndNewer[0];
+            newer = olderAndNewer[1];
 
             List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older.revCommit,
                     newer.revCommit);
