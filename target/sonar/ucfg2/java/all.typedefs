@@ -485,9 +485,10 @@ getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
 <init>()java.io.IOException#<init>()VM
 <init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
 /<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
-<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vû
+<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vø	
 !logic.dataset_manager.JgitManagerjava.lang.Object‹
-jlistDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)œlogic.dataset_manager.JgitManager#listDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;ž
+jlistDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)œlogic.dataset_manager.JgitManager#listDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;{
+!updateQuote(CLjava/lang/Boolean;)Vlogic.dataset_manager.JgitManager#updateQuote(CLjava/lang/Boolean;)Ljava/lang/Boolean;ž
 2isLineValid(Ljava/lang/String;Ljava/lang/Boolean;)hlogic.dataset_manager.JgitManager#isLineValid(Ljava/lang/String;Ljava/lang/Boolean;)[Ljava/lang/Boolean;7
 <init>()+logic.dataset_manager.JgitManager#<init>()Vc
 getInstance()Rlogic.dataset_manager.JgitManager#getInstance()Llogic/dataset_manager/JgitManager;Ú

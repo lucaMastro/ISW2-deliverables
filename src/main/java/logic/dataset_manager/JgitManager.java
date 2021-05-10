@@ -1,5 +1,4 @@
 package logic.dataset_manager;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import logic.config_manager.ConfigurationManager;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
@@ -132,7 +131,7 @@ public class JgitManager {
         else
             return quotesStillFound;
     }
-    
+
 
     private Boolean[] isLineValid(String line, Boolean previouslyOpened){
         /*  looking for comments delimiter in the line  */
@@ -154,8 +153,6 @@ public class JgitManager {
             current = chars[i];
             next = chars[i + 1];
             quoteFound = this.updateQuote(current, quoteFound);
-            /*if (current == '"' || current == '\'')
-                quoteFound = !quoteFound;*/
 
             if (current == '/' && next == '*' && Boolean.FALSE.equals(quoteFound)) {
                 // found start delimiter
