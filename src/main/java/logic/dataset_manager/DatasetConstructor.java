@@ -69,7 +69,8 @@ public class DatasetConstructor {
         List<Ref> tagList = new Git(repository).tagList().call();
         this.releases = new ArrayList<>();
         Integer i;
-        for (i = 0; i < tagList.size(); i++){
+        Integer half = tagList.size() / 2;
+        for (i = 0; i < half; i++){
             Release cur = new Release(tagList.get(i));
             this.releases.add(cur);
         }
@@ -78,7 +79,7 @@ public class DatasetConstructor {
             Date d2 = o2.date;
             return d1.compareTo(d2);
         });
-        for (i = 0; i < tagList.size(); i++) {
+        for (i = 0; i < half; i++) {
             Release cur = this.releases.get(i);
             cur.setIndex(i + 1);
             cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
@@ -167,18 +168,6 @@ public class DatasetConstructor {
         return ret;
     }
 
-    public Commit findPreviously(Commit c){
-        Integer i;
-        Commit toReturn = null;
-        for (i = 0; i < this.commits.size(); i++){
-           if (c == this.commits.get(i)) {
-               toReturn = this.commits.get(i - 1);
-               break;
-           }
-        }
-        return toReturn;
-    }
-
     public Commit findFixedVersion(List<String> fixedVersionNames) {
         /*  Jira ticket may return a list of fixedVersions. Assuming the truly fixed version is the last (in time)
          *  of this list, this method find that release's commit.
@@ -190,7 +179,7 @@ public class DatasetConstructor {
                 /*  this may happen when in jira ticket is listed a release which has not been tagged   */
                 continue;
 
-            if (last == null || last.date.compareTo(c.date) < 0)
+            if (last == null || last.date.before(c.date))
                 last = c;
         }
         return last;
