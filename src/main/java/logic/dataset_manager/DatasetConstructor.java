@@ -213,6 +213,8 @@ public class DatasetConstructor {
     private Commit findFixedVersion(List<Commit> relatives) {
         /*  this method take the list of commit that are relative to a given bug and find-out the
             last (in time) one's membership release     */
+        assert !relatives.isEmpty();
+        
         Integer i;
         //  finding the last one, assuming relavise len > 0
         Commit last = null;
