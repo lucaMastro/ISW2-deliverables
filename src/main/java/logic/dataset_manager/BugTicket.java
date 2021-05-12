@@ -1,9 +1,6 @@
 package logic.dataset_manager;
 
 import logic.jira_informations.JiraBeanInformations;
-import java.text.DateFormat;
-import java.text.ParsePosition;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,6 +10,7 @@ public class BugTicket  {
     ArrayList<String> affectedVersions;
     Date openingDate;
     Release fixedVersion;
+    Release openingVersion;
     ArrayList<Commit> relativeCommits;
 
     public BugTicket(JiraBeanInformations info){
@@ -20,10 +18,9 @@ public class BugTicket  {
 
         this.affectedVersions = (ArrayList<String>) info.getAffectedVersions();
 
-        DateFormat pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
-        this.openingDate = pattern.parse(info.getOpeningVersionDate(), new ParsePosition(0));
-
+        this.openingDate = info.getOpeningDate();
         this.fixedVersion = (Release) info.getTrulyFixedVersion();
+        this.openingVersion = info.getOpeningVersion();
     }
 
     public void setRelativeCommits(List<Commit> relativeCommits) {

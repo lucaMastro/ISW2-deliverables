@@ -45,6 +45,8 @@ public class ReleaseFile {
     private long maxChurn; //maximum churn over revisions
     private long age; //age of Release
 
+    private Boolean buggy;
+
 
     public ReleaseFile(String name){
         this.editors = new ArrayList<>();
@@ -56,6 +58,7 @@ public class ReleaseFile {
         this.maxChurn = 0;
         this.maxLocAdded = 0;
         this.age = 0;
+        this.buggy = Boolean.FALSE;
     }
 
     public String getPath(){
@@ -79,6 +82,8 @@ public class ReleaseFile {
                 .append(this.churn).append(",")
                 .append(this.maxChurn).append(",")
                 .append(this.age).append(",");
+        String buggy = this.buggy.equals(Boolean.TRUE) ? "Yes" : "No";
+        sb.append(buggy).append("\n");
         return sb.toString();
     }
 

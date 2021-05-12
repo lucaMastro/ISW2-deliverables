@@ -201,6 +201,7 @@ public class DatasetConstructor {
             relatives = this.findCommitsFromTicketId(info.getKey());
             if (!relatives.isEmpty()) {
                 info.setTrulyFixedVersion(this.findFixedVersion(relatives));
+                info.setOpeningVersion(this.findOpeningVersion(info.getOpeningDate()));
                 BugTicket bug = new BugTicket(info);
                 /*  excluding defect that don't have a git relative fix commit
                 *   and defect fixed after last release date   */
@@ -210,7 +211,22 @@ public class DatasetConstructor {
         }
     }
 
-    private Commit findFixedVersion(List<Commit> relatives) {
+    private Release findOpeningVersion(Date openingDate) {
+        Integer i;
+        Release curr = null;
+        Date previousReleaseDate = new Date(0);
+        for (i = 0; i < this.releases.size(); i++){
+            curr = this.releases.get(i);
+            if (i != 0)
+                previousReleaseDate = this.releases.get(i - 1).date;
+
+            if (previousReleaseDate.before(openingDate) && openingDate.before(curr.date))
+                break;
+        }
+        return curr;
+    }
+
+    private Release findFixedVersion(List<Commit> relatives) {
         /*  this method take the list of commit that are relative to a given bug and find-out the
             last (in time) one's membership release     */
 
@@ -241,16 +257,18 @@ public class DatasetConstructor {
         return membershipRelease;
     }
 
+    public void computeFeatures() throws IOException {
+        Release prev = null;
+        for (Release r : this.releases) {
+            this.nameToAdditionDate = r.computeMetrics(prev, this.fixedBugs, this.nameToAdditionDate);
+            prev = r;
+        }
+    }
+
 
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();
-
-
-        Release prev = null;
-        for (Release r : ds.releases) {
-            ds.nameToAdditionDate = r.computeMetrics(prev, ds.fixedBugs, ds.nameToAdditionDate);
-            prev = r;
-        }
+        ds.computeFeatures();
     }
 
 }

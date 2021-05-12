@@ -1,19 +1,26 @@
 package logic.jira_informations;
 
 import logic.dataset_manager.Commit;
+import logic.dataset_manager.Release;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.text.DateFormat;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class JiraBeanInformations {
 
     private String key;
-    private String openingVersionDate;
+    //private String openingVersionDate;
+    private Date openingDate;
     private ArrayList<String> affectedVersions;
-    private ArrayList<String> fixedVersions;
-    private Commit trulyFixedVersion;
+    //private ArrayList<String> fixedVersions;
+    private Release trulyFixedVersion;
+    private Release openingVersion;
 
     public JiraBeanInformations(JSONObject jo){
         Integer i;
@@ -21,7 +28,9 @@ public class JiraBeanInformations {
         this.key = (String) jo.get("key");
 
         JSONObject obj = jo.getJSONObject("fields");
-        this.openingVersionDate = (String) obj.get("created");
+        String openingVersionDate = (String) obj.get("created");
+        DateFormat pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+        this.openingDate = pattern.parse(openingVersionDate, new ParsePosition(0));
 
         this.affectedVersions = new ArrayList<>();
         JSONArray affected = obj.getJSONArray("versions");
@@ -29,36 +38,35 @@ public class JiraBeanInformations {
             String curr = (String) affected.getJSONObject(i).get("name");
             this.affectedVersions.add(curr);
         }
-
-        this.fixedVersions = new ArrayList<>();
-        JSONArray fixed = obj.getJSONArray("fixVersions");
-        for (i = 0; i < fixed.length(); i++){
-            String curr = (String) fixed.getJSONObject(i).get("name");
-            this.fixedVersions.add(curr);
-        }
     }
 
     public String getKey() {
         return key;
     }
 
-    public String getOpeningVersionDate() {
-        return openingVersionDate;
-    }
 
     public List<String> getAffectedVersions() {
         return affectedVersions;
     }
 
-    public List<String> getFixedVersions() {
-        return fixedVersions;
-    }
 
     public Commit getTrulyFixedVersion() {
         return trulyFixedVersion;
     }
 
-    public void setTrulyFixedVersion(Commit trulyFixedVersion) {
+    public void setTrulyFixedVersion(Release trulyFixedVersion) {
         this.trulyFixedVersion = trulyFixedVersion;
+    }
+
+    public Release getOpeningVersion() {
+        return openingVersion;
+    }
+
+    public void setOpeningVersion(Release openingVersion) {
+        this.openingVersion = openingVersion;
+    }
+
+    public Date getOpeningDate() {
+        return openingDate;
     }
 }
