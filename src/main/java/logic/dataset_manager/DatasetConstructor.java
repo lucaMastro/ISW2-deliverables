@@ -24,9 +24,28 @@ public class DatasetConstructor {
     public DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
         this.initializeCommitList();
         this.removeRevertCommits();
+
         this.initializeReleaseList();
+
         this.initializeBugsList();
+
+        this.reduceDataset();
         this.nameToAdditionDate = new TreeMap<>();
+    }
+
+    private void reduceDataset() {
+        /*  removing releases   */
+        Integer half = this.releases.size() / 2;
+        this.releases.removeIf(r -> r.index > half);
+        Date lastDate = this.releases.get(this.releases.size() - 1).date;
+
+        /*  removing commits done after the last release    */
+        this.commits.removeIf(c -> lastDate.before(c.date));
+
+        /*  removing defects    */
+        this.fixedBugs.removeIf(b -> lastDate.before(b.fixedVersion.date));
+
+
     }
 
     private void removeRevertCommits() {
@@ -69,8 +88,8 @@ public class DatasetConstructor {
         List<Ref> tagList = new Git(repository).tagList().call();
         this.releases = new ArrayList<>();
         Integer i;
-        Integer half = tagList.size() / 2;
-        for (i = 0; i < half; i++){
+
+        for (i = 0; i < tagList.size(); i++){
             Release cur = new Release(tagList.get(i));
             this.releases.add(cur);
         }
@@ -79,7 +98,7 @@ public class DatasetConstructor {
             Date d2 = o2.date;
             return d1.compareTo(d2);
         });
-        for (i = 0; i < half; i++) {
+        for (i = 0; i < tagList.size(); i++) {
             Release cur = this.releases.get(i);
             cur.setIndex(i + 1);
             cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
@@ -168,22 +187,22 @@ public class DatasetConstructor {
         return ret;
     }
 
-    public Commit findFixedVersion(List<String> fixedVersionNames) {
+    //public Commit findFixedVersion(List<String> fixedVersionNames) {
         /*  Jira ticket may return a list of fixedVersions. Assuming the truly fixed version is the last (in time)
          *  of this list, this method find that release's commit.
          *  Note that Jira returns a list of String, that are the numerical versioning of release.  */
-        Commit last = null;
+      /*  Commit last = null;
         for (String name : fixedVersionNames){
             Commit c = this.findReleaseFromName(name);
             if ( c == null)
-                /*  this may happen when in jira ticket is listed a release which has not been tagged   */
+                /*  this may happen when in jira ticket listed a release which has not been tagged
                 continue;
 
             if (last == null || last.date.before(c.date))
                 last = c;
         }
         return last;
-    }
+    }*/
 
     private void initializeBugsList() throws IOException {
 
@@ -191,14 +210,51 @@ public class DatasetConstructor {
                 ConfigurationManager.getConfigEntry("projectName"));
         ArrayList<JiraBeanInformations> informations = (ArrayList<JiraBeanInformations>) retrieveInformations.getInformations();
 
+        List<Commit> relatives;
+
         this.fixedBugs = new ArrayList<>();
         for (JiraBeanInformations info : informations) {
-            info.setTrulyFixedVersion(this.findFixedVersion(info.getFixedVersions()));
-            BugTicket bug = new BugTicket(info);
-            bug.setRelativeCommits(this.findCommitsFromTicketId(info.getKey()));
-            this.fixedBugs.add(bug);
+            relatives = this.findCommitsFromTicketId(info.getKey());
+            //info.setTrulyFixedVersion(this.findFixedVersion(info.getFixedVersions()));
+            if (relatives.size() > 0) {
+                info.setTrulyFixedVersion(this.findFixedVersion(relatives));
+                BugTicket bug = new BugTicket(info);
+                /*  excluding defect that don't have a git relative fix commit
+                *   and defect fixed after last release date   */
+                bug.setRelativeCommits(relatives);
+                this.fixedBugs.add(bug);
+            }
         }
     }
+
+    private Commit findFixedVersion(List<Commit> relatives) {
+        /*  this method take the list of commit that are relative to a given bug and find-out the
+            last (in time) one's membership release     */
+        Integer i;
+        //  finding the last one, assuming relavise len > 0
+        Commit last = null;
+        for (Commit c : relatives){
+            if (last == null || last.date.before(c.date))
+                last = c;
+        }
+        //  finding membership release:
+        /*  to check if membership release is the firstOne i need to check only if the
+        *   commit's date is before than the release.get(0) date    */
+        Date initialDate = new Date(0);
+        Date endingDate;
+        Release membershipRelease = null;
+        for (i = 0; i < this.releases.size(); i++){
+            membershipRelease =this.releases.get(i);
+            endingDate = membershipRelease.date;
+            if ( i != 0)
+                initialDate = this.releases.get(i - 1).date;
+
+            if (initialDate.before(last.date) && last.date.before(endingDate))
+                break;
+        }
+        return membershipRelease;
+    }
+
 
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();
@@ -209,6 +265,7 @@ public class DatasetConstructor {
             ds.nameToAdditionDate = r.computeMetrics(prev, ds.fixedBugs, ds.nameToAdditionDate);
             prev = r;
         }
+        int a = 3;
     }
 
 }

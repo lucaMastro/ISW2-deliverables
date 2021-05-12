@@ -12,7 +12,7 @@ public class BugTicket  {
     String ticketId;
     ArrayList<String> affectedVersions;
     Date openingDate;
-    Commit fixedVersion;
+    Release fixedVersion;
     ArrayList<Commit> relativeCommits;
 
     public BugTicket(JiraBeanInformations info){
@@ -23,7 +23,7 @@ public class BugTicket  {
         DateFormat pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
         this.openingDate = pattern.parse(info.getOpeningVersionDate(), new ParsePosition(0));
 
-        this.fixedVersion = info.getTrulyFixedVersion();
+        this.fixedVersion = (Release) info.getTrulyFixedVersion();
     }
 
     public void setRelativeCommits(List<Commit> relativeCommits) {

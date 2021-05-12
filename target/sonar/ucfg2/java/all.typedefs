@@ -2535,22 +2535,21 @@ setDate(I)java.util.Date#setDate(I)V3
 setSeconds(I)java.util.Date#setSeconds(I)Vf
 )writeObject(Ljava/io/ObjectOutputStream;)9java.util.Date#writeObject(Ljava/io/ObjectOutputStream;)V(
 
-getHours()java.util.Date#getHours()Ià
+getHours()java.util.Date#getHours()Iﬁ
 (logic.dataset_manager.DatasetConstructorjava.lang.ObjectÇ
-getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;X
+getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;>
+<init>()2logic.dataset_manager.DatasetConstructor#<init>()VX
 removeRevertCommits()?logic.dataset_manager.DatasetConstructor#removeRevertCommits()V\
-initializeReleaseList()Alogic.dataset_manager.DatasetConstructor#initializeReleaseList()V£
-3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)llogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;á
-getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;>
-<init>()2logic.dataset_manager.DatasetConstructor#<init>()VZ
+initializeReleaseList()Alogic.dataset_manager.DatasetConstructor#initializeReleaseList()VZ
 initializeCommitList()@logic.dataset_manager.DatasetConstructor#initializeCommitList()VV
 initializeBugsList()>logic.dataset_manager.DatasetConstructor#initializeBugsList()V`
 main([Ljava/lang/String;)Clogic.dataset_manager.DatasetConstructor#main([Ljava/lang/String;)Vì
 +findCommitsFromTicketId(Ljava/lang/String;)dlogic.dataset_manager.DatasetConstructor#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;ó
-&findCommitFromName(Ljava/lang/String;)mlogic.dataset_manager.DatasetConstructor#findCommitFromName(Ljava/lang/String;)Llogic/dataset_manager/Commit;è
-"findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Commit;ß
-.findPreviously(Llogic/dataset_manager/Commit;)ulogic.dataset_manager.DatasetConstructor#findPreviously(Llogic/dataset_manager/Commit;)Llogic/dataset_manager/Commit;ö
-'findReleaseFromName(Ljava/lang/String;)ologic.dataset_manager.DatasetConstructor#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;6
+&findCommitFromName(Ljava/lang/String;)mlogic.dataset_manager.DatasetConstructor#findCommitFromName(Ljava/lang/String;)Llogic/dataset_manager/Commit;£
+3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)llogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;è
+"findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Commit;ö
+'findReleaseFromName(Ljava/lang/String;)ologic.dataset_manager.DatasetConstructor#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;á
+getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;6
 java.util.SortedMapjava.util.Mapjava.lang.Object?
 java.util.NavigableMapjava.lang.Objectjava.util.SortedMapï
 
