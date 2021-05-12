@@ -15,10 +15,8 @@ import java.util.List;
 public class JiraBeanInformations {
 
     private String key;
-    //private String openingVersionDate;
     private Date openingDate;
     private ArrayList<String> affectedVersions;
-    //private ArrayList<String> fixedVersions;
     private Release trulyFixedVersion;
     private Release openingVersion;
 

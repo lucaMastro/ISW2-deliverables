@@ -82,8 +82,8 @@ public class ReleaseFile {
                 .append(this.churn).append(",")
                 .append(this.maxChurn).append(",")
                 .append(this.age).append(",");
-        String buggy = this.buggy.equals(Boolean.TRUE) ? "Yes" : "No";
-        sb.append(buggy).append("\n");
+        String isBuggy = this.buggy.equals(Boolean.TRUE) ? "Yes" : "No";
+        sb.append(isBuggy).append("\n");
         return sb.toString();
     }
 
