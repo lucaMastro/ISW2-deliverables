@@ -1,26 +1,27 @@
 
-elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javar r("1*ˇ
-1~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javas s(ﬂ
-‹
-~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javas s(
-%0java.util.ArrayList"__id*9*7*
-(logic.dataset_manager.DatasetConstructor"	
-commitsÓ
-Î
-~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javas s(&"
-%1logic.dataset_manager.Commit"
+clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÅ Å("1*é
+1Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÇ Ç(„
+‡
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÇ Ç(
+%0java.util.ArrayList"__id*:*8*
+(logic.dataset_manager.DatasetConstructor"
+
+releasesÚ
+Ô
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÇ Ç('#
+%1logic.dataset_manager.Release"
 __arrayGet*
 
 %0java.util.ArrayList*
 
-indexjava.lang.Integer"¶
-~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javas s('$
-"
-%1logic.dataset_manager.Commit:
+indexjava.lang.Integer"™
+Ä
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaÇ Ç((%
+#
+%1logic.dataset_manager.Release:
 indexjava.lang.IntegerB,*
 (logic.dataset_manager.DatasetConstructor

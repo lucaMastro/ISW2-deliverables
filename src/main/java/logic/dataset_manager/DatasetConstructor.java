@@ -187,22 +187,6 @@ public class DatasetConstructor {
         return ret;
     }
 
-    //public Commit findFixedVersion(List<String> fixedVersionNames) {
-        /*  Jira ticket may return a list of fixedVersions. Assuming the truly fixed version is the last (in time)
-         *  of this list, this method find that release's commit.
-         *  Note that Jira returns a list of String, that are the numerical versioning of release.  */
-      /*  Commit last = null;
-        for (String name : fixedVersionNames){
-            Commit c = this.findReleaseFromName(name);
-            if ( c == null)
-                /*  this may happen when in jira ticket listed a release which has not been tagged
-                continue;
-
-            if (last == null || last.date.before(c.date))
-                last = c;
-        }
-        return last;
-    }*/
 
     private void initializeBugsList() throws IOException {
 
@@ -215,8 +199,7 @@ public class DatasetConstructor {
         this.fixedBugs = new ArrayList<>();
         for (JiraBeanInformations info : informations) {
             relatives = this.findCommitsFromTicketId(info.getKey());
-            //info.setTrulyFixedVersion(this.findFixedVersion(info.getFixedVersions()));
-            if (relatives.size() > 0) {
+            if (!relatives.isEmpty()) {
                 info.setTrulyFixedVersion(this.findFixedVersion(relatives));
                 BugTicket bug = new BugTicket(info);
                 /*  excluding defect that don't have a git relative fix commit
@@ -265,7 +248,6 @@ public class DatasetConstructor {
             ds.nameToAdditionDate = r.computeMetrics(prev, ds.fixedBugs, ds.nameToAdditionDate);
             prev = r;
         }
-        int a = 3;
     }
 
 }
