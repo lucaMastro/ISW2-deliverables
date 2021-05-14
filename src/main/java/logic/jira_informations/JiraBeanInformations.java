@@ -16,9 +16,12 @@ public class JiraBeanInformations {
 
     private String key;
     private Date openingDate;
-    private ArrayList<String> affectedVersions;
-    private Release trulyFixedVersion;
     private Release openingVersion;
+
+    private ArrayList<String> affectedVersionsName;
+    private ArrayList<Release> affectedVersions;
+
+    private Release trulyFixedVersion;
 
     public JiraBeanInformations(JSONObject jo){
         Integer i;
@@ -30,11 +33,11 @@ public class JiraBeanInformations {
         DateFormat pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
         this.openingDate = pattern.parse(openingVersionDate, new ParsePosition(0));
 
-        this.affectedVersions = new ArrayList<>();
+        this.affectedVersionsName = new ArrayList<>();
         JSONArray affected = obj.getJSONArray("versions");
         for (i = 0; i < affected.length(); i++){
             String curr = (String) affected.getJSONObject(i).get("name");
-            this.affectedVersions.add(curr);
+            this.affectedVersionsName.add(curr);
         }
     }
 
@@ -43,8 +46,8 @@ public class JiraBeanInformations {
     }
 
 
-    public List<String> getAffectedVersions() {
-        return affectedVersions;
+    public List<String> getAffectedVersionsName() {
+        return affectedVersionsName;
     }
 
 
@@ -66,5 +69,13 @@ public class JiraBeanInformations {
 
     public Date getOpeningDate() {
         return openingDate;
+    }
+
+    public List<Release> getAffectedVersions(){
+        return this.affectedVersions;
+    }
+
+    public void setAffectedVersions(List<Release> affectedVersions) {
+        this.affectedVersions = (ArrayList) affectedVersions;
     }
 }

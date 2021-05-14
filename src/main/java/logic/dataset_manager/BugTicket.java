@@ -7,7 +7,8 @@ import java.util.List;
 
 public class BugTicket  {
     String ticketId;
-    ArrayList<String> affectedVersions;
+    //ArrayList<String> affectedVersions;
+    ArrayList<Release> affectedVersions;
     Date openingDate;
     Release fixedVersion;
     Release openingVersion;
@@ -16,8 +17,8 @@ public class BugTicket  {
     public BugTicket(JiraBeanInformations info){
         this.ticketId = info.getKey();
 
-        this.affectedVersions = (ArrayList<String>) info.getAffectedVersions();
-
+        //this.affectedVersions = (ArrayList<String>) info.getAffectedVersions();
+        this.affectedVersions = (ArrayList<Release>) info.getAffectedVersions();
         this.openingDate = info.getOpeningDate();
         this.fixedVersion = (Release) info.getTrulyFixedVersion();
         this.openingVersion = info.getOpeningVersion();

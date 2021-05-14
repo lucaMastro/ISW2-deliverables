@@ -202,6 +202,7 @@ public class DatasetConstructor {
             if (!relatives.isEmpty()) {
                 info.setTrulyFixedVersion(this.findFixedVersion(relatives));
                 info.setOpeningVersion(this.findOpeningVersion(info.getOpeningDate()));
+                info.setAffectedVersions(this.findAffectedVersions(info.getAffectedVersionsName()));
                 BugTicket bug = new BugTicket(info);
                 /*  excluding defect that don't have a git relative fix commit
                 *   and defect fixed after last release date   */
@@ -209,6 +210,14 @@ public class DatasetConstructor {
                 this.fixedBugs.add(bug);
             }
         }
+    }
+
+    private List<Release> findAffectedVersions(List<String> affectedVersionsName) {
+        List<Release> affectedVersions = new ArrayList<>();
+        for (String name : affectedVersionsName){
+            affectedVersions.add(this.findReleaseFromName(name));
+        }
+        return affectedVersions;
     }
 
     private Release findOpeningVersion(Date openingDate) {
@@ -269,6 +278,7 @@ public class DatasetConstructor {
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();
         ds.computeFeatures();
+        int a = 3;
     }
 
 }

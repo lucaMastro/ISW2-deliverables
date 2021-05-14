@@ -2,19 +2,19 @@
 >logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;w
 m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaI I("4*∫
 2w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaUA U(E∂
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaUC U(G∂
 ≥
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaUA U(E
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaUC U(G
 %26java.lang.String"__id*
 
 %28java.lang.String*
 1*∫
 3w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU9 U(>∂
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU; U(@∂
 ≥
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU9 U(>
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU; U(@
 %26java.lang.String"__id*
 
 %27java.lang.String*
@@ -165,42 +165,42 @@ m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/da
 ,2append(Ljava/lang/String;)Œ
 À
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(!
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(#
 %23java.lang.Boolean"__id*0*.#
 !logic.dataset_manager.ReleaseFile"
 buggy§
 °
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU) U(5
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU+ U(7
 %24java.lang.Boolean"__id*
 ""èå
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(6
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(8
 %25boolean"-java.lang.Boolean#equals(Ljava/lang/Object;)Z*
 
 %23java.lang.Boolean*
 
 %24java.lang.Boolean2equals(Ljava/lang/Object;)*
 2
-3*¡
+3*≈
 
 1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(F∏
-µ
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(H∫
+∑
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(F
-buggyjava.lang.String"__id*
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaU U(H
+isBuggyjava.lang.String"__id*
 
-%26java.lang.String√¿
+%26java.lang.String≈¬
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaV V(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaV V(
 %29java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
 
-sbjava.lang.StringBuilder*
-
-buggyjava.lang.String2append(Ljava/lang/String;)Ø¨
+sbjava.lang.StringBuilder*
+
+isBuggyjava.lang.String2append(Ljava/lang/String;)Ø¨
 w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaV V(%
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaV V('
 %30java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
 %29java.lang.StringBuilder*
