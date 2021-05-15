@@ -267,7 +267,7 @@ public class DatasetConstructor {
         return this.commits.get(index);
     }
 
-    public ArrayList<BugTicket> getFixedBugs() {
+    public List<BugTicket> getFixedBugs() {
         return fixedBugs;
     }
 

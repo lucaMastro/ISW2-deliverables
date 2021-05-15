@@ -1,16 +1,16 @@
 
-Ologic.dataset_manager.DatasetConstructor#getNameToAdditionDate()Ljava/util/Map;Ä
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.javaß ß(2"1*ç
-1Ä
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java® ®(!Á
-‰
-Ä
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java® ®(!
-%0java.util.Map"__id*D*B*
-(logic.dataset_manager.DatasetConstructor"
-nameToAdditionDate"ö
-Ä
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/DatasetConstructor.java® ®("
-
-%0java.util.MapB,*
-(logic.dataset_manager.DatasetConstructor
+Vlogic.jira_informations.JiraBeanInformations#getAffectedVersionsName()Ljava/util/List;Ç
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java1 1(/"1*•
+1Ç
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java2 2(#ı
+Ú
+Ç
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java2 2(#
+%0java.util.ArrayList"__id*J*H.
+,logic.jira_informations.JiraBeanInformations"
+affectedVersionsName"¢
+Ç
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java2 2($
+
+%0java.util.ArrayListB0.
+,logic.jira_informations.JiraBeanInformations
