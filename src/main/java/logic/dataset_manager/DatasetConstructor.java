@@ -47,7 +47,6 @@ public class DatasetConstructor {
 
         /*  removing defects whose fixedVersionDate is before than opening date and the fixedVersionIndex
         *   is bigger than the older release we want to track   */
-        Integer lastIndex = this.releases.get(this.releases.size() - 1).getIndex();
         this.fixedBugs.removeIf(b -> lastDate.before(b.fixedVersion.date) ||
                 b.fixedVersion.date.before(b.openingDate));
 
@@ -268,36 +267,8 @@ public class DatasetConstructor {
         return this.commits.get(index);
     }
 
-    public ArrayList<Commit> getCommits() {
-        return commits;
-    }
-
-    public void setCommits(ArrayList<Commit> commits) {
-        this.commits = commits;
-    }
-
-    public ArrayList<Release> getReleases() {
-        return releases;
-    }
-
-    public void setReleases(ArrayList<Release> releases) {
-        this.releases = releases;
-    }
-
     public ArrayList<BugTicket> getFixedBugs() {
         return fixedBugs;
-    }
-
-    public void setFixedBugs(ArrayList<BugTicket> fixedBugs) {
-        this.fixedBugs = fixedBugs;
-    }
-
-    public Map<String, Date> getNameToAdditionDate() {
-        return nameToAdditionDate;
-    }
-
-    public void setNameToAdditionDate(Map<String, Date> nameToAdditionDate) {
-        this.nameToAdditionDate = nameToAdditionDate;
     }
 
     //***********************************************************************************************************
@@ -339,7 +310,6 @@ public class DatasetConstructor {
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();
         ds.computeFeatures();
-        int a = 3;
     }
 
 }

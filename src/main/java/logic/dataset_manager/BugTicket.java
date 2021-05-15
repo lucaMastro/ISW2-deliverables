@@ -51,12 +51,12 @@ public class BugTicket  {
         return  this.fixedVersion;
     }
 
-    public ArrayList<Release> getAffectedVersions() {
+    public List<Release> getAffectedVersions() {
         return affectedVersions;
     }
 
-    public void setAffectedVersions(ArrayList<Release> affectedVersions) {
-        this.affectedVersions = affectedVersions;
+    public void setAffectedVersions(List<Release> affectedVersions) {
+        this.affectedVersions = (ArrayList<Release>) affectedVersions;
     }
 
     public Release getOpeningVersion() {

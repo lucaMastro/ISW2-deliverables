@@ -67,8 +67,7 @@ public class ProportionIncrement {
         int fixedVersionIndex;
         int openingVersionIndex;
         int i;
-        int a;
-        ArrayList<Release> affectedVersions;
+        List<Release> affectedVersions;
         for (BugTicket bug : bugs){
             if (bug.getAffectedVersions().isEmpty()){
                 fixedVersionIndex = bug.getFixedVersion().getIndex();
@@ -86,14 +85,6 @@ public class ProportionIncrement {
     public static void main(String[] args) throws InvalidRangeException, IOException, GitAPIException {
         ProportionIncrement p = new ProportionIncrement();
         int a;
-
-        for (a = 0; a < p.dataset.getFixedBugs().size(); a++){
-            BugTicket b = p.dataset.getFixedBugs().get(a);
-            if ( b.getOpeningVersion().getIndex() != b.getFixedVersion().getIndex() &&
-                    b.getAffectedVersions().isEmpty() )
-                System.out.println(a);
-        }
-
         for (a = 1; a < 21; a++) {
             p.computeProportion(a);
         }

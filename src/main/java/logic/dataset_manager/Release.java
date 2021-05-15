@@ -162,8 +162,4 @@ public class Release extends Commit {
         return index;
     }
 
-    public ArrayList<Commit> getCommits() {
-        return commits;
-    }
-
 }
