@@ -309,6 +309,14 @@ public class DatasetConstructor {
         return commit;
     }
 
+    public int getNumOfReleases(){
+        return this.releases.size();
+    }
+
+    public ArrayList<Release> getReleases() {
+        return releases;
+    }
+
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();
         ds.computeFeatures();

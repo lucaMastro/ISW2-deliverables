@@ -47,7 +47,6 @@ public class ReleaseFile {
 
     private Boolean buggy;
 
-
     public ReleaseFile(String name){
         this.editors = new ArrayList<>();
         this.name = name;
@@ -135,5 +134,9 @@ public class ReleaseFile {
 
     public void updateBugginess() {
         this.buggy = Boolean.TRUE;
+    }
+
+    public Boolean getBuggy() {
+        return buggy;
     }
 }

@@ -66,4 +66,10 @@ public class BugTicket  {
     public String getTicketId() {
         return ticketId;
     }
+
+    public ArrayList<String> getTouchedFiles() {
+        return touchedFiles;
+    }
+
+
 }

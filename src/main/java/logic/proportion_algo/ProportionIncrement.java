@@ -3,6 +3,7 @@ package logic.proportion_algo;
 import logic.dataset_manager.BugTicket;
 import logic.dataset_manager.DatasetConstructor;
 import logic.dataset_manager.Release;
+import logic.dataset_manager.ReleaseFile;
 import logic.exception.InvalidRangeException;
 import org.eclipse.jgit.api.errors.GitAPIException;
 
@@ -40,7 +41,7 @@ public class ProportionIncrement {
         this.proportionP = (int) Math.ceil(sum);
     }
 
-    public void computeProportion(Integer index){
+    private void computeProportion(Integer index){
         /*  this method compute the P value of the first index releases: as proportion increment wants,
         *   if i want to predict buggines of index-th release's classes, i should use a P value computed
         *   for fixed bugs in releases in [1, index].   */
@@ -82,12 +83,30 @@ public class ProportionIncrement {
         }
     }
 
+    public void computeProportionIncrement(){
+        int i;
+        for (i = 1; i <= this.dataset.getNumOfReleases(); i++){
+            /*  this method uses releases indexing number: that's why for loop is between [1, size] */
+            this.computeProportion(i);
+        }
+    }
+
+    public DatasetConstructor getDataset() {
+        return dataset;
+    }
+
+    public void setDatasetBugginess() {
+        for (BugTicket b : this.dataset.getFixedBugs()) {
+            for (Release r : b.getAffectedVersions())
+                r.setAllFileBuggines(b.getTouchedFiles());
+        }
+    }
+
+
     public static void main(String[] args) throws InvalidRangeException, IOException, GitAPIException {
         ProportionIncrement p = new ProportionIncrement();
-        int a;
-        for (a = 1; a < 21; a++) {
-            p.computeProportion(a);
-        }
+        p.computeProportionIncrement();
+        p.dataset.computeFeatures();
     }
 
 }
