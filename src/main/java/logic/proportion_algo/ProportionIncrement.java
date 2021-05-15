@@ -29,8 +29,8 @@ public class ProportionIncrement {
         double fract;
         double sum = 0;
         for (BugTicket b : bugs){
-            numerator = b.getFixedVersion().getIndex() - b.getInjectedVersion().getIndex();
-            denominator = b.getFixedVersion().getIndex() - b.getOpeningVersion().getIndex();
+            numerator = (double) b.getFixedVersion().getIndex() - b.getInjectedVersion().getIndex();
+            denominator = (double) b.getFixedVersion().getIndex() - b.getOpeningVersion().getIndex();
             assert denominator != 0;
             fract = numerator / denominator;
             sum += fract;
@@ -51,7 +51,7 @@ public class ProportionIncrement {
         List<BugTicket> onlyRelativeBugs = new ArrayList<>();
         for (BugTicket b : bugs){
             if (b.getFixedVersion().getIndex() <= index && !b.getAffectedVersions().isEmpty() &&
-                    b.getFixedVersion().getIndex() != b.getOpeningVersion().getIndex()) //because of proportion denominator
+                    !b.getFixedVersion().getIndex().equals(b.getOpeningVersion().getIndex())) //because of proportion denominator
                 onlyRelativeBugs.add(b);
         }
         /*  computing p */

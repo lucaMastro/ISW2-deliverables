@@ -168,6 +168,8 @@ public class DatasetConstructor {
                 Release fixV = this.findFixedVersion(relatives);
                 info.setTrulyFixedVersion(fixV);
                 info.setOpeningVersion(this.findOpeningVersion(info.getOpeningDate()));
+
+                assert fixV != null;
                 info.setAffectedVersions(this.findAffectedVersions(info.getAffectedVersionsName(), fixV));
                 BugTicket bug = new BugTicket(info);
                 bug.setRelativeCommits(relatives);

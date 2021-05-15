@@ -1617,7 +1617,7 @@ hashCode()java.lang.Boolean#hashCode()I3
 &computeProportion(Ljava/lang/Integer;)Qlogic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)Vm
 computePvalue(Ljava/util/List;)Jlogic.proportion_algo.ProportionIncrement#computePvalue(Ljava/util/List;)V?
 <init>()3logic.proportion_algo.ProportionIncrement#<init>()Va
-main([Ljava/lang/String;)Dlogic.proportion_algo.ProportionIncrement#main([Ljava/lang/String;)Vé
+main([Ljava/lang/String;)Dlogic.proportion_algo.ProportionIncrement#main([Ljava/lang/String;)Vä
 (logic.dataset_manager.DatasetConstructorjava.lang.ObjectŠ
 getRelease(Ljava/lang/Integer;)glogic.dataset_manager.DatasetConstructor#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;P
 computeFeatures();logic.dataset_manager.DatasetConstructor#computeFeatures()VX
@@ -1626,8 +1626,8 @@ hashCode()java.lang.Boolean#hashCode()I3
 3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)llogic.dataset_manager.DatasetConstructor#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;‡
 getCommit(Ljava/lang/Integer;)elogic.dataset_manager.DatasetConstructor#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;L
 reduceDataset()9logic.dataset_manager.DatasetConstructor#reduceDataset()V¢
-+getReleaseFromItsIndex(Ljava/lang/Integer;)slogic.dataset_manager.DatasetConstructor#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;^
-getFixedBugs()Llogic.dataset_manager.DatasetConstructor#getFixedBugs()Ljava/util/ArrayList;”
++getReleaseFromItsIndex(Ljava/lang/Integer;)slogic.dataset_manager.DatasetConstructor#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;Y
+getFixedBugs()Glogic.dataset_manager.DatasetConstructor#getFixedBugs()Ljava/util/List;”
 $findOpeningVersion(Ljava/util/Date;)llogic.dataset_manager.DatasetConstructor#findOpeningVersion(Ljava/util/Date;)Llogic/dataset_manager/Release;>
 <init>()2logic.dataset_manager.DatasetConstructor#<init>()VZ
 initializeCommitList()@logic.dataset_manager.DatasetConstructor#initializeCommitList()VV
