@@ -132,4 +132,8 @@ public class ReleaseFile {
         * */
         this.age = diffTime / (1000 * 60 * 60 * 24 * 7);
     }
+
+    public void updateBugginess() {
+        this.buggy = Boolean.TRUE;
+    }
 }

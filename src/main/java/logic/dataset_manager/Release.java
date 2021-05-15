@@ -96,8 +96,11 @@ public class Release extends Commit {
             //churn
             rf.updateChurn(lines[0] - lines[1]);
             //nfix
-            if (newer.isFixCommit(fixedBugs).equals(Boolean.TRUE))
+            BugTicket bug = newer.isFixCommit(fixedBugs);
+            if (bug != null) {
                 rf.updateNfix();
+                bug.addFileTouched(diff);
+            }
             //age
             rf.setAdditionDate(additionDate);
             rf.computeAge(this.date);
@@ -144,6 +147,23 @@ public class Release extends Commit {
             }
         }
         return nameToAdditionDate;
+    }
+
+
+    public void setAllFileBuggines(List<String> fileNames){
+        for (String s :fileNames){
+            ReleaseFile file = this.findFromName(s);
+            if (file != null)
+                file.updateBugginess();
+        }
+    }
+
+    public Integer getIndex() {
+        return index;
+    }
+
+    public ArrayList<Commit> getCommits() {
+        return commits;
     }
 
 }

@@ -2226,14 +2226,16 @@ iterator()2java.util.ArrayList#iterator()Ljava/util/Iterator;I
 spliterator()8java.util.ArrayList#spliterator()Ljava/util/Spliterator;1
 isClear([JI)!java.util.ArrayList#isClear([JI)Zk
 )writeObject(Ljava/io/ObjectOutputStream;)>java.util.ArrayList#writeObject(Ljava/io/ObjectOutputStream;)V%
-size()java.util.ArrayList#size()IÄ
+size()java.util.ArrayList#size()IÛ	
 ,logic.jira_informations.JiraBeanInformationsjava.lang.Objectl
 <init>(Lorg/json/JSONObject;)Klogic.jira_informations.JiraBeanInformations#<init>(Lorg/json/JSONObject;)V{
 getTrulyFixedVersion()alogic.jira_informations.JiraBeanInformations#getTrulyFixedVersion()Llogic/dataset_manager/Commit;v
 getOpeningVersion()_logic.jira_informations.JiraBeanInformations#getOpeningVersion()Llogic/dataset_manager/Release;ñ
 2setOpeningVersion(Llogic/dataset_manager/Release;)`logic.jira_informations.JiraBeanInformations#setOpeningVersion(Llogic/dataset_manager/Release;)Vú
-5setTrulyFixedVersion(Llogic/dataset_manager/Release;)clogic.jira_informations.JiraBeanInformations#setTrulyFixedVersion(Llogic/dataset_manager/Release;)VS
-getKey()Glogic.jira_informations.JiraBeanInformations#getKey()Ljava/lang/String;a
+5setTrulyFixedVersion(Llogic/dataset_manager/Release;)clogic.jira_informations.JiraBeanInformations#setTrulyFixedVersion(Llogic/dataset_manager/Release;)V|
+%setAffectedVersions(Ljava/util/List;)Slogic.jira_informations.JiraBeanInformations#setAffectedVersions(Ljava/util/List;)VS
+getKey()Glogic.jira_informations.JiraBeanInformations#getKey()Ljava/lang/String;s
+getAffectedVersionsName()Vlogic.jira_informations.JiraBeanInformations#getAffectedVersionsName()Ljava/util/List;a
 getOpeningDate()Mlogic.jira_informations.JiraBeanInformations#getOpeningDate()Ljava/util/Date;k
 getAffectedVersions()Rlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/List;Ñ
 logic.dataset_manager.Commitjava.lang.Objectf
@@ -2438,7 +2440,7 @@ setDate(I)java.util.Date#setDate(I)V3
 setSeconds(I)java.util.Date#setSeconds(I)Vf
 )writeObject(Ljava/io/ObjectOutputStream;)9java.util.Date#writeObject(Ljava/io/ObjectOutputStream;)V(
 
-getHours()java.util.Date#getHours()Iñ
+getHours()java.util.Date#getHours()I¢
 (logic.dataset_manager.DatasetConstructorjava.lang.ObjectÇ
 getTag(Ljava/lang/Integer;)clogic.dataset_manager.DatasetConstructor#getTag(Ljava/lang/Integer;)Llogic/dataset_manager/Release;P
 computeFeatures();logic.dataset_manager.DatasetConstructor#computeFeatures()VX
@@ -2454,7 +2456,8 @@ $findOpeningVersion(Ljava/util/Date;)llogic.dataset_manager.DatasetConstructor#
 main([Ljava/lang/String;)Clogic.dataset_manager.DatasetConstructor#main([Ljava/lang/String;)Vì
 +findCommitsFromTicketId(Ljava/lang/String;)dlogic.dataset_manager.DatasetConstructor#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;ó
 &findCommitFromName(Ljava/lang/String;)mlogic.dataset_manager.DatasetConstructor#findCommitFromName(Ljava/lang/String;)Llogic/dataset_manager/Commit;ê
-"findFixedVersion(Ljava/util/List;)jlogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Release;ö
+"findFixedVersion(Ljava/util/List;)jlogic.dataset_manager.DatasetConstructor#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Release;â
+&findAffectedVersions(Ljava/util/List;)_logic.dataset_manager.DatasetConstructor#findAffectedVersions(Ljava/util/List;)Ljava/util/List;ö
 'findReleaseFromName(Ljava/lang/String;)ologic.dataset_manager.DatasetConstructor#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;6
 java.util.SortedMapjava.util.Mapjava.lang.Object?
 java.util.NavigableMapjava.lang.Objectjava.util.SortedMapï

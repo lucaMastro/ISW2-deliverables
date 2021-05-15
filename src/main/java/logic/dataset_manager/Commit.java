@@ -34,14 +34,16 @@ public class Commit {
         }
     }
 
-    public Boolean isFixCommit(List<BugTicket> fixedBugs){
-        Boolean isFix = Boolean.FALSE;
+    public BugTicket isFixCommit(List<BugTicket> fixedBugs){
+        /*  this method return null if "this" is not a fix commit or the BugTicket which "this" is relative to
+        *   otherwise.   */
+        BugTicket b = null;
         for (BugTicket bug : fixedBugs){
             if (bug.relativeCommits.contains(this)){
-                isFix = Boolean.TRUE;
+                b = bug;
                 break;
             }
         }
-        return isFix;
+        return b;
     }
 }
