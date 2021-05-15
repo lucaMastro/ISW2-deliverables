@@ -1,7 +1,7 @@
 package logic.controller;
 
 import logic.config_manager.ConfigurationManager;
-import logic.dataset_manager.DatasetConstructor;
+import logic.dataset_manager.Dataset;
 import logic.dataset_manager.Release;
 import logic.dataset_manager.ReleaseFile;
 import logic.exception.InvalidRangeException;
@@ -18,7 +18,7 @@ public class ProportionIncrementController {
 
     public static void main(String[] args) throws InvalidRangeException, IOException, GitAPIException {
         ProportionIncrement proportionIncrement = new ProportionIncrement();
-        DatasetConstructor dataset = proportionIncrement.getDataset();
+        Dataset dataset = proportionIncrement.getDataset();
         dataset.computeFeatures();
         proportionIncrement.computeProportionIncrement();
         proportionIncrement.setDatasetBugginess();

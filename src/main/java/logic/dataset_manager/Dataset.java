@@ -14,7 +14,7 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class DatasetConstructor {
+public class Dataset {
 
     private ArrayList<Commit> commits;
     private ArrayList<Release> releases;
@@ -24,7 +24,7 @@ public class DatasetConstructor {
     //***********************************************************************************************************
     // Constructor and relative methods
 
-    public DatasetConstructor() throws GitAPIException, IOException, InvalidRangeException {
+    public Dataset() throws GitAPIException, IOException, InvalidRangeException {
         this.initializeCommitList();
         this.removeRevertCommits();
 
@@ -319,7 +319,7 @@ public class DatasetConstructor {
 
 
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
-        DatasetConstructor ds = new DatasetConstructor();
+        Dataset ds = new Dataset();
         ds.computeFeatures();
     }
 
