@@ -3,7 +3,6 @@ package logic.proportion_algo;
 import logic.dataset_manager.BugTicket;
 import logic.dataset_manager.DatasetConstructor;
 import logic.dataset_manager.Release;
-import logic.dataset_manager.ReleaseFile;
 import logic.exception.InvalidRangeException;
 import org.eclipse.jgit.api.errors.GitAPIException;
 

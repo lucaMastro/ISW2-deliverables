@@ -1,17 +1,48 @@
 
-?logic.dataset_manager.BugTicket#getTicketId()Ljava/lang/String;u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.javaB B("1*Ü
-1u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.javaC C(Ë
-È
-u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.javaC C(
-%0java.lang.String"__id*1*/!
-logic.dataset_manager.BugTicket"
+Rlogic.dataset_manager.JgitManager#getInstance()Llogic/dataset_manager/JgitManager;w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java ()"3*Œ
+2w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java (ÈÅ
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java' (2'
+%1!logic.dataset_manager.JgitManager"!logic.dataset_manager.JgitManagerÚ
+×
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java# (4
+%2"+logic.dataset_manager.JgitManager#<init>()V*)
+'
+%1!logic.dataset_manager.JgitManagerà
+Ý
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java (41#
+!logic.dataset_manager.JgitManager"
 
-ticketId"‘
-u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.javaC C(
-
-%0java.lang.StringB#!
-logic.dataset_manager.BugTicket
+instance"__id*)
+'
+%1!logic.dataset_manager.JgitManager*
+1*ç
+3w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java (à
+Ý
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java ( '
+%0!logic.dataset_manager.JgitManager"__id*3*1#
+!logic.dataset_manager.JgitManager"
+
+instance*
+2
+1*†
+1w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java! !(à
+Ý
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java! !(#'
+%3!logic.dataset_manager.JgitManager"__id*3*1#
+!logic.dataset_manager.JgitManager"
+
+instance"¤
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java! !($)
+'
+%3!logic.dataset_manager.JgitManagerB%"#
+!logic.dataset_manager.JgitManager

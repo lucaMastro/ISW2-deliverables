@@ -273,6 +273,10 @@ public class DatasetConstructor {
         return fixedBugs;
     }
 
+    public List<Release> getReleases() {
+        return releases;
+    }
+
     //***********************************************************************************************************
     // utility
 
@@ -313,9 +317,6 @@ public class DatasetConstructor {
         return this.releases.size();
     }
 
-    public ArrayList<Release> getReleases() {
-        return releases;
-    }
 
     public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
         DatasetConstructor ds = new DatasetConstructor();

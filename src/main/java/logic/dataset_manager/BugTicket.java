@@ -63,11 +63,7 @@ public class BugTicket  {
         return openingVersion;
     }
 
-    public String getTicketId() {
-        return ticketId;
-    }
-
-    public ArrayList<String> getTouchedFiles() {
+    public List<String> getTouchedFiles() {
         return touchedFiles;
     }
 

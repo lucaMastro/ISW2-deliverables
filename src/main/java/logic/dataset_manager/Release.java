@@ -162,7 +162,7 @@ public class Release extends Commit {
         return index;
     }
 
-    public ArrayList<ReleaseFile> getFiles() {
+    public List<ReleaseFile> getFiles() {
         return files;
     }
 
