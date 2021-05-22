@@ -55,7 +55,6 @@ public class Dataset {
 
     private void removeRevertCommits() {
         ArrayList<Commit> commitsToRemove = new ArrayList<>();
-        int i = 0;
         for (Commit c : this.commits){
             if (c.message.contains("This reverts commit")){
                 // finding the id of commit reverted:
@@ -70,7 +69,6 @@ public class Dataset {
                     }
                 }
             }
-            i++;
         }
 
         for (Commit c : commitsToRemove){
@@ -195,7 +193,7 @@ public class Dataset {
         for (String name : affectedVersionsName){
             Release r = this.findReleaseFromName(name);
             if (r != null)
-            affectedVersions.add(r);
+                affectedVersions.add(r);
         }
         if (!affectedVersions.isEmpty()){
             /*  should add all releases between the minimum and fixV  */

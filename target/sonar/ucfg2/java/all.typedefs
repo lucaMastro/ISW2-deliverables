@@ -494,8 +494,9 @@ getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
 <init>()3logic.proportion_algo.ProportionIncrement#<init>()Vg
 computeProportionIncrement()Glogic.proportion_algo.ProportionIncrement#computeProportionIncrement()Va
 main([Ljava/lang/String;)Dlogic.proportion_algo.ProportionIncrement#main([Ljava/lang/String;)VY
-setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()Vù
-logic.dataset_manager.Datasetjava.lang.Object
+setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()Vß
+logic.dataset_manager.Datasetjava.lang.ObjectÇ
+!findGitCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;
 getRelease(Ljava/lang/Integer;)\logic.dataset_manager.Dataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;E
 computeFeatures()0logic.dataset_manager.Dataset#computeFeatures()VM
 removeRevertCommits()4logic.dataset_manager.Dataset#removeRevertCommits()VQ
@@ -514,7 +515,8 @@ $findOpeningVersion(Ljava/util/Date;)alogic.dataset_manager.Dataset#findOpening
 $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitFromId(Ljava/lang/String;)Llogic/dataset_manager/Commit;U
 main([Ljava/lang/String;)8logic.dataset_manager.Dataset#main([Ljava/lang/String;)Và
 +findCommitsFromTicketId(Ljava/lang/String;)Ylogic.dataset_manager.Dataset#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;Ö
-"findFixedVersion(Ljava/util/List;)_logic.dataset_manager.Dataset#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Release;è
+"findFixedVersion(Ljava/util/List;)_logic.dataset_manager.Dataset#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Release;Ç
+!findSvnCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;è
 'findReleaseFromName(Ljava/lang/String;)dlogic.dataset_manager.Dataset#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;º
 EfindAffectedVersions(Ljava/util/List;Llogic/dataset_manager/Release;)slogic.dataset_manager.Dataset#findAffectedVersions(Ljava/util/List;Llogic/dataset_manager/Release;)Ljava/util/List;®
 logic.dataset_manager.BugTicketjava.lang.Objectá
@@ -1191,8 +1193,9 @@ insert(IF);java.lang.StringBuilder#insert(IF)Ljava/lang/StringBuilder;&
 nullReader()+java.io.Reader#nullReader()Ljava/io/Reader;L
 transferTo(Ljava/io/Writer;),java.io.Reader#transferTo(Ljava/io/Writer;)J"
 mark(I)java.io.Reader#mark(I)VH
-<init>(Ljava/lang/Object;)*java.io.Reader#<init>(Ljava/lang/Object;)Vë#
-java.net.URLjava.lang.Objectjava.io.SerializableF
+<init>(Ljava/lang/Object;)*java.io.Reader#<init>(Ljava/lang/Object;)V⁄#
+java.net.URLjava.lang.Objectjava.io.SerializableG
+getHostAddress()3java.net.URL#getHostAddress()Ljava/net/InetAddress;F
 equals(Ljava/lang/Object;)(java.net.URL#equals(Ljava/lang/Object;)Za
 toLowerCase(Ljava/lang/String;)>java.net.URL#toLowerCase(Ljava/lang/String;)Ljava/lang/String;*
 resetState()java.net.URL#resetState()Vv
@@ -2289,7 +2292,7 @@ $setInitialBranch(Ljava/lang/String;){org.eclipse.jgit.lib.BaseRepositoryBuilde
 3org.eclipse.jgit.storage.file.FileRepositoryBuilder*org.eclipse.jgit.lib.BaseRepositoryBuilderI
 <init>()=org.eclipse.jgit.storage.file.FileRepositoryBuilder#<init>()VÖ
 create(Ljava/io/File;)korg.eclipse.jgit.storage.file.FileRepositoryBuilder#create(Ljava/io/File;)Lorg/eclipse/jgit/lib/Repository;g
-build()\org.eclipse.jgit.storage.file.FileRepositoryBuilder#build()Lorg/eclipse/jgit/lib/Repository;´
+build()\org.eclipse.jgit.storage.file.FileRepositoryBuilder#build()Lorg/eclipse/jgit/lib/Repository;Ò
 java.io.Filejava.lang.Comparablejava.lang.Objectjava.io.Serializable&
 
 isHidden()java.io.File#isHidden()ZF
@@ -2320,7 +2323,8 @@ toString())java.io.File#toString()Ljava/lang/String;"
 exists()java.io.File#exists()Z4
 getPrefixLength()java.io.File#getPrefixLength()I5
 toPath())java.io.File#toPath()Ljava/nio/file/Path;6
-setLastModified(J) java.io.File#setLastModified(J)Z0
+setLastModified(J) java.io.File#setLastModified(J)ZD
+normalizedList()0java.io.File#normalizedList()[Ljava/lang/String;0
 setReadable(ZZ)java.io.File#setReadable(ZZ)ZG
 getCanonicalPath()1java.io.File#getCanonicalPath()Ljava/lang/String;=
 getParentFile()*java.io.File#getParentFile()Ljava/io/File;b
