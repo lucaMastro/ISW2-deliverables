@@ -1,16 +1,26 @@
 
-Rlogic.dataset_manager.BugTicket#getOpeningVersion()Llogic/dataset_manager/Release;u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java> >($"1*¸
+Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;u
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaå å("1*–
 1u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java? ?(ﬁ
-€
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaç ç(À
+»
 u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java? ?(#
-%0logic.dataset_manager.Release"__id*7*5!
-logic.dataset_manager.BugTicket"
-openingVersion"û
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaç ç(
+%0java.util.ArrayList"__id*.*,
+logic.dataset_manager.Dataset"	
+commitsÂ
+‚
 u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java? ?(%
-#
-%0logic.dataset_manager.ReleaseB#!
-logic.dataset_manager.BugTicket
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaç ç(&"
+%1logic.dataset_manager.Commit"
+__arrayGet*
+
+%0java.util.ArrayList*
+
+indexjava.lang.Integer"ù
+u
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaç ç('$
+"
+%1logic.dataset_manager.Commit:
+indexjava.lang.IntegerB!
+logic.dataset_manager.Dataset

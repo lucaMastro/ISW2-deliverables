@@ -1,16 +1,16 @@
 
-Rlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/List;‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaJ J(,"1*¡
+_logic.jira_informations.JiraBeanInformations#getOpeningVersion()Llogic/dataset_manager/Release;‚
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java> >($"1*³
 1‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaK K(ñ
-î
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java? ?(ù
+ö
 ‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaK K($
-%0java.util.ArrayList"__id*F*D.
-,logic.jira_informations.JiraBeanInformations"
-affectedVersions"¢
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java? ?(#
+%0logic.dataset_manager.Release"__id*D*B.
+,logic.jira_informations.JiraBeanInformations"
+openingVersion"¬
 ‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaK K(%
-
-%0java.util.ArrayListB0.
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java? ?(%
+#
+%0logic.dataset_manager.ReleaseB0.
 ,logic.jira_informations.JiraBeanInformations

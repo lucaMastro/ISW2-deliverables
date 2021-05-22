@@ -55,6 +55,7 @@ public class Dataset {
 
     private void removeRevertCommits() {
         ArrayList<Commit> commitsToRemove = new ArrayList<>();
+        int i = 0;
         for (Commit c : this.commits){
             if (c.message.contains("This reverts commit")){
                 // finding the id of commit reverted:
@@ -62,13 +63,14 @@ public class Dataset {
                 for (String line : lines){
                     if (line.contains("This reverts commit")){
                         String id = line.split(" ")[3];
-                        id = id.substring(0, 40);
+                        id = id.substring(0, id.length() - 1);
                         commitsToRemove.add(this.findCommitFromId(id));
                         // removing the commit which reverses another one
                         commitsToRemove.add(c);
                     }
                 }
             }
+            i++;
         }
 
         for (Commit c : commitsToRemove){
@@ -191,7 +193,9 @@ public class Dataset {
     private List<Release> findAffectedVersions(List<String> affectedVersionsName, Release fixV) {
         List<Release> affectedVersions = new ArrayList<>();
         for (String name : affectedVersionsName){
-            affectedVersions.add(this.findReleaseFromName(name));
+            Release r = this.findReleaseFromName(name);
+            if (r != null)
+            affectedVersions.add(r);
         }
         if (!affectedVersions.isEmpty()){
             /*  should add all releases between the minimum and fixV  */
@@ -301,8 +305,7 @@ public class Dataset {
         }
     }
 
-
-    public Commit findCommitFromId(String id) {
+    private Commit findGitCommit(String id){
         Commit commit = null;
         for (Commit c : this.commits) {
             if (c.revCommit.getName().equals(id)) {
@@ -311,6 +314,25 @@ public class Dataset {
             }
         }
         return commit;
+    }
+
+    private Commit findSvnCommit(String id){
+        Commit commit = null;
+        for (Commit c : this.commits) {
+            if (c.message.contains("trunk@" + id)) {
+                commit = c;
+                break;
+            }
+        }
+        return commit;
+    }
+
+    public Commit findCommitFromId(String id) {
+        if (id.length() == 40) //it's a Git commit hash
+            return this.findGitCommit(id);
+        else
+            return this.findSvnCommit(id);
+
     }
 
     public int getNumOfReleases(){

@@ -73,6 +73,8 @@ public class ProportionIncrement {
                 fixedVersionIndex = bug.getFixedVersion().getIndex();
                 openingVersionIndex = bug.getOpeningVersion().getIndex();
                 injectedVersionIndex = fixedVersionIndex - this.proportionP * (fixedVersionIndex - openingVersionIndex);
+                if (injectedVersionIndex <= 0) //proportion computation returns an older realease than the firstone: impossible
+                    injectedVersionIndex = 1;
                 for (i = injectedVersionIndex; i < fixedVersionIndex; i++) {
                     affectedVersions = bug.getAffectedVersions();
                     affectedVersions.add(this.dataset.getReleaseFromItsIndex(i));
