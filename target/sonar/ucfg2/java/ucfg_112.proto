@@ -1,16 +1,16 @@
 
-Mlogic.jira_informations.JiraBeanInformations#getOpeningDate()Ljava/util/Date;Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaF F("1*í
+Rlogic.jira_informations.JiraBeanInformations#getAffectedVersions()Ljava/util/List;Ç
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaJ J(,"1*°
 1Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaG G(Á
-‰
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaK K(Ò
+Ó
 Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaG G(
-%0java.util.Date"__id*A*?.
-,logic.jira_informations.JiraBeanInformations"
-openingDate"ù
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaK K($
+%0java.util.ArrayList"__id*F*D.
+,logic.jira_informations.JiraBeanInformations"
+affectedVersions"¢
 Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaG G(
-
-%0java.util.DateB0.
+x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaK K(%
+
+%0java.util.ArrayListB0.
 ,logic.jira_informations.JiraBeanInformations

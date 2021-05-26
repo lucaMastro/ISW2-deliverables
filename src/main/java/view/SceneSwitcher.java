@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
@@ -47,6 +48,22 @@ public class SceneSwitcher extends Application {
 		this.primaryStage.show();
 	}
 
+	public void setCloneRepositoryScene(ActionEvent event) throws IOException {
+		Parent cloneScene = FXMLLoader.load(getClass().getResource("clone_page.fxml"));
+		this.scene = new Scene(cloneScene);
+		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.primaryStage.setScene(scene);
+		this.primaryStage.show();
+	}
+
+	public void informationAlertShow(String informationString) {
+		Alert loginAlert = new Alert(Alert.AlertType.INFORMATION);
+		loginAlert.setTitle("Confirmation Alert");
+		loginAlert.setHeaderText(null);
+		loginAlert.setContentText(informationString);
+
+		loginAlert.showAndWait();
+	}
 
 	public static void main(String[] args) { launch(args); }
 

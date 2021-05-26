@@ -29,8 +29,8 @@ public class HomePageFxmlController extends Application {
     }
 
     @FXML
-    private void cloneRepositorySelected(ActionEvent event) {
-        System.out.println("clone repo selcted");
+    private void cloneRepositorySelected(ActionEvent event) throws IOException {
+        SceneSwitcher.getInstance().setCloneRepositoryScene(event);
     }
 
     @FXML
