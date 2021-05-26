@@ -12,6 +12,11 @@ public final class ConfigurationManager {
     /*  Class with the aim to parse the config file. That's why it has an only static method
     *   and no public constructors. */
 
+    private static ConfigurationManager instance = null;
+    private String projectName;
+    private String repositoryPath;
+    private String outputFile;
+
     private ConfigurationManager(){}
 
     public static String getConfigEntry(String key){
