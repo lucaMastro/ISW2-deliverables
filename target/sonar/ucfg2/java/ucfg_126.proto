@@ -1,16 +1,17 @@
 
-Mlogic.jira_informations.JiraBeanInformations#getOpeningDate()Ljava/util/Date;Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaF F("1*í
-1Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaG G(Á
-‰
-Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaG G(
-%0java.util.Date"__id*A*?.
-,logic.jira_informations.JiraBeanInformations"
-openingDate"ù
-Ç
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.javaG G(
-
-%0java.util.DateB0.
-,logic.jira_informations.JiraBeanInformations
+Blogic.abstracts.AbstractBoundary#getOutputFile()Ljava/lang/String;v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ("1*‚
+1v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (œ
+Ã
+v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+%0java.lang.String"__id*4*2"
+ logic.abstracts.AbstractBoundary"
+
+outputFile"í
+v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+
+%0java.lang.StringB$"
+ logic.abstracts.AbstractBoundary

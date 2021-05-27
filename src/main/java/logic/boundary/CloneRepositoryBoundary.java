@@ -12,8 +12,8 @@ public class CloneRepositoryBoundary {
     File outputDirectory;
 
     public CloneRepositoryBoundary(String u, String file) throws InvalidInputException {
-        if (u.isEmpty() || u == null
-                || file == null || file.isEmpty())
+        if (u == null || u.isEmpty() ||
+                file == null || file.isEmpty())
             throw new InvalidInputException("Empty field detected: all field are mandatory.");
         this.url = u;
         this.outputDirectory = new File(file);

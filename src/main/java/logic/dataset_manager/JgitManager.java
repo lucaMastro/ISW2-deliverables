@@ -1,5 +1,4 @@
 package logic.dataset_manager;
-//import logic.config_manager.ConfigurationManager;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;

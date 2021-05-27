@@ -40,6 +40,7 @@ public class ClassBugginessAndControlChartFxmlController extends BasicPageFxmlCo
     }
 
     @FXML
+    @Override
     protected void initialize() {
         super.initialize();
         assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
@@ -48,12 +49,17 @@ public class ClassBugginessAndControlChartFxmlController extends BasicPageFxmlCo
         assert projectName != null : "fx:id=\"projectNameLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
     }
 
-    public void submitButtonSelected(ActionEvent actionEvent) throws InvalidRangeException, GitAPIException, IOException {
-        var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
-                this.repositoryLabel.getText(),
-                this.projectName.getText());
-        boundary.runUseCase();
-        SceneSwitcher.getInstance().informationAlertShow("Done!!");
+    @Override
+    public void submitButtonSelected(ActionEvent actionEvent) {
+        try {
+            var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
+                    this.repositoryLabel.getText(),
+                    this.projectName.getText());
+            boundary.runUseCase();
+            SceneSwitcher.getInstance().informationAlertShow("Done!!");
+        }catch (InvalidRangeException |GitAPIException | IOException e){
+            SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
+        }
     }
 }
 

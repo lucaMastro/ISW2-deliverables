@@ -20,7 +20,7 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
     private TextField urlTextField;
 
     @FXML
-    protected void submitButtonSelected(ActionEvent event) throws GitAPIException {
+    protected void submitButtonSelected(ActionEvent event) {
         String outputDir = this.repositoryLabel.getText();
         String url = this.urlTextField.getText();
 
@@ -29,12 +29,13 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
             this.boundary.cloneRepository();
             SceneSwitcher.getInstance().informationAlertShow("Done!!");
         }
-        catch (InvalidInputException e){
+        catch (InvalidInputException | GitAPIException e){
             SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
         }
     }
 
     @FXML
+    @Override
     protected void initialize() {
         super.initialize();
         assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'clone_page.fxml'.";

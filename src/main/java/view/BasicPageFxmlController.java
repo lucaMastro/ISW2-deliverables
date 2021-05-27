@@ -46,7 +46,7 @@ public abstract class BasicPageFxmlController {
     }
 
     @FXML
-    protected abstract void submitButtonSelected(ActionEvent actionEvent) throws Exception;
+    protected abstract void submitButtonSelected(ActionEvent actionEvent);
 
     protected void initialize(){
         assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";

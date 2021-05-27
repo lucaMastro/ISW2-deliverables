@@ -1,26 +1,16 @@
 
-hlogic.dataset_manager.Dataset#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaŠ Š()"1*½
+Rlogic.dataset_manager.BugTicket#getOpeningVersion()Llogic/dataset_manager/Release;u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java> >($"1*ü
 1u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java‹ ‹(Ì
-É
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java? ?(Þ
+Û
 u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java‹ ‹(
-%0java.util.ArrayList"__id*/*-
-logic.dataset_manager.Dataset"
-
-releasesÐ
-Í
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java? ?(#
+%0logic.dataset_manager.Release"__id*7*5!
+logic.dataset_manager.BugTicket"
+openingVersion"ž
 u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java‹ ‹(2#
-%1logic.dataset_manager.Release"
-__arrayGet*
-
-%0java.util.ArrayList*
-"""ž
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java‹ ‹(3%
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java? ?(%
 #
-%1logic.dataset_manager.Release:!
-releaseIndexjava.lang.IntegerB!
-logic.dataset_manager.Dataset
+%0logic.dataset_manager.ReleaseB#!
+logic.dataset_manager.BugTicket

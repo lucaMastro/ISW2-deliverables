@@ -1,16 +1,16 @@
 
-_logic.jira_informations.JiraBeanInformations#getOpeningVersion()Llogic/dataset_manager/Release;‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java> >($"1*³
-1‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java? ?(ù
-ö
-‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java? ?(#
-%0logic.dataset_manager.Release"__id*D*B.
-,logic.jira_informations.JiraBeanInformations"
-openingVersion"¬
-‚
-x/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/jira_informations/JiraBeanInformations.java? ?(%
-#
-%0logic.dataset_manager.ReleaseB0.
-,logic.jira_informations.JiraBeanInformations
+Elogic.bean.BugginessAndProcessChartBean#getOutputFile()Ljava/io/File;}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java ("1*ò
+1}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (Õ
+Ò
+}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
+%0java.io.File"__id*7*5)
+'logic.bean.BugginessAndProcessChartBean"
+output"•
+}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
+
+%0java.io.FileB+)
+'logic.bean.BugginessAndProcessChartBean
