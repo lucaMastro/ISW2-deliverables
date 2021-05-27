@@ -1,16 +1,16 @@
 
-Mlogic.dataset_manager.RetrieveInformations#getFixedBugs()Lorg/json/JSONArray;Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java (!"1*ê
+Xlogic.dataset_manager.RetrieveInformations#getFixedBugTicketsNumber()Ljava/lang/Integer;Ä
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java (+"1*ö
 1Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java (Â
-‚
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java ($
+Ì
 Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java (
-%0org.json.JSONArray"__id*=*;,
-*logic.dataset_manager.RetrieveInformations"
-	fixedBugs"ü
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java ($
+%0java.lang.Integer"__id*I*G,
+*logic.dataset_manager.RetrieveInformations"
+fixedBugTicketsNumber"û
 Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java (
-
-%0org.json.JSONArrayB.,
+v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java (%
+
+%0java.lang.IntegerB.,
 *logic.dataset_manager.RetrieveInformations

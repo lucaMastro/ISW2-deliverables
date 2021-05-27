@@ -1,8 +1,8 @@
 package logic.dataset_manager;
 
-import logic.config_manager.ConfigurationManager;
+import logic.bean.BugginessAndProcessChartBean;
 import logic.exception.InvalidRangeException;
-import logic.jira_informations.JiraBeanInformations;
+import logic.bean.JiraBeanInformations;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.lib.*;
@@ -24,13 +24,15 @@ public class Dataset {
     //***********************************************************************************************************
     // Constructor and relative methods
 
-    public Dataset() throws GitAPIException, IOException, InvalidRangeException {
-        this.initializeCommitList();
+    public Dataset(BugginessAndProcessChartBean bean) throws GitAPIException, IOException, InvalidRangeException {
+        JgitManager jgitManager = new JgitManager(bean.getDirectory().getPath());
+
+        this.initializeCommitList(jgitManager);
         this.removeRevertCommits();
 
-        this.initializeReleaseList();
+        this.initializeReleaseList(jgitManager);
 
-        this.initializeBugsList();
+        this.initializeBugsList(bean.getProject());
 
         this.reduceDataset();
         this.nameToAdditionDate = new TreeMap<>();
@@ -78,14 +80,14 @@ public class Dataset {
     }
 
 
-    private void initializeReleaseList() throws GitAPIException, IOException, InvalidRangeException {
-        Repository repository = JgitManager.getInstance().getRepository();
-        List<Ref> tagList = new Git(repository).tagList().call();
+    private void initializeReleaseList(JgitManager manager)
+            throws GitAPIException, InvalidRangeException {
+        List<Ref> tagList = new Git(manager.getRepository()).tagList().call();
         this.releases = new ArrayList<>();
         Integer i;
 
         for (i = 0; i < tagList.size(); i++){
-            Release cur = new Release(tagList.get(i));
+            Release cur = new Release(tagList.get(i), manager);
             this.releases.add(cur);
         }
         Collections.sort(this.releases, (Commit o1, Commit o2) ->{
@@ -132,13 +134,13 @@ public class Dataset {
 
 
 
-    private void initializeCommitList() {
+    private void initializeCommitList(JgitManager manager) {
         this.commits = new ArrayList<>();
-        try (RevWalk walk = new RevWalk(JgitManager.getInstance().getRepository())) {
+        try (RevWalk walk = new RevWalk(manager.getRepository())) {
             walk.sort(RevSort.REVERSE);
-            Iterable<RevCommit> l = new Git(JgitManager.getInstance().getRepository()).log().call();
+            Iterable<RevCommit> l = new Git(manager.getRepository()).log().call();
             for (RevCommit r : l){
-                Commit curr = new Commit(r);
+                Commit curr = new Commit(r, manager);
                 this.commits.add(curr);
             }
             Collections.sort(this.commits, (Commit o1, Commit o2) ->{
@@ -146,16 +148,15 @@ public class Dataset {
                 Date d2 = o2.date;
                 return d1.compareTo(d2);
             });
-        } catch (GitAPIException | IOException e) {
+        } catch (GitAPIException e) {
             Logger logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }
 
-    private void initializeBugsList() throws IOException {
+    private void initializeBugsList(String projectName) throws IOException {
 
-        RetrieveInformations retrieveInformations = new RetrieveInformations(
-                ConfigurationManager.getConfigEntry("projectName"));
+        RetrieveInformations retrieveInformations = new RetrieveInformations(projectName);
         ArrayList<JiraBeanInformations> informations = (ArrayList<JiraBeanInformations>) retrieveInformations.getInformations();
 
         List<Commit> relatives;
@@ -336,11 +337,4 @@ public class Dataset {
     public int getNumOfReleases(){
         return this.releases.size();
     }
-
-
-    public static void main(String[] args) throws IOException, InvalidRangeException, GitAPIException {
-        Dataset ds = new Dataset();
-        ds.computeFeatures();
-    }
-
 }

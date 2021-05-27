@@ -5,10 +5,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import logic.boundary.CloneRepositoryBoundary;
+import logic.exception.InvalidInputException;
 import org.eclipse.jgit.api.errors.GitAPIException;
 
 
-public class CloneRepositoryFxmlController extends BasicPage{
+public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
     private CloneRepositoryBoundary boundary;
 
@@ -23,13 +24,15 @@ public class CloneRepositoryFxmlController extends BasicPage{
         String outputDir = this.repositoryLabel.getText();
         String url = this.urlTextField.getText();
 
-        this.boundary = new CloneRepositoryBoundary(url, outputDir);
-        this.boundary.cloneRepository();
-        SceneSwitcher.getInstance().informationAlertShow("Done!!");
+        try {
+            this.boundary = new CloneRepositoryBoundary(url, outputDir);
+            this.boundary.cloneRepository();
+            SceneSwitcher.getInstance().informationAlertShow("Done!!");
+        }
+        catch (InvalidInputException e){
+            SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
+        }
     }
-
-
-
 
     @FXML
     protected void initialize() {

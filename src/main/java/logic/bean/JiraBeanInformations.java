@@ -1,4 +1,4 @@
-package logic.jira_informations;
+package logic.bean;
 
 import logic.dataset_manager.Commit;
 import logic.dataset_manager.Release;

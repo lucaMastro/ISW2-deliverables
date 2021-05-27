@@ -1,5 +1,5 @@
 package logic.dataset_manager;
-import logic.config_manager.ConfigurationManager;
+//import logic.config_manager.ConfigurationManager;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
@@ -23,18 +23,10 @@ import java.util.logging.Logger;
 
 public class JgitManager {
 
-    private static JgitManager instance = null;
     private Repository repository;
 
-    public static JgitManager getInstance() throws IOException {
-        if (JgitManager.instance == null){
-            JgitManager.instance = new JgitManager();
-        }
-        return JgitManager.instance;
-    }
-
-    public JgitManager() throws IOException{
-        String path = ConfigurationManager.getConfigEntry("repositoryPath") + ".git";
+    public JgitManager(String path) throws IOException{
+        path += "/.git";
         FileRepositoryBuilder builder = new FileRepositoryBuilder();
         this.repository = builder.setGitDir(new File(path)).readEnvironment().findGitDir().build();
     }

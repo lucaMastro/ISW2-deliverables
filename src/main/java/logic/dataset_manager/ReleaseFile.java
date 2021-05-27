@@ -46,8 +46,10 @@ public class ReleaseFile {
     private long age; //age of Release
 
     private Boolean buggy;
+    private JgitManager jgitManager;
 
-    public ReleaseFile(String name){
+    public ReleaseFile(String name, JgitManager manager){
+        this.jgitManager = manager;
         this.editors = new ArrayList<>();
         this.name = name;
         this.nr = 0;
@@ -65,7 +67,7 @@ public class ReleaseFile {
     }
 
     public void computeLoc(RevCommit release) throws IOException {
-        this.loc = JgitManager.getInstance().getLocFileInGivenRelease(this.name, release);
+        this.loc = this.jgitManager.getLocFileInGivenRelease(this.name, release);
     }
 
     @Override

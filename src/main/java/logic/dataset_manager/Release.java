@@ -24,18 +24,18 @@ public class Release extends Commit {
 
     //--------------------------------------------------------------------------------
 
-    public Release(Ref ref){
-        super(ref);
+    public Release(Ref ref, JgitManager jgitManager){
+        super(ref, jgitManager);
         this.versionName = ref.getName();
         /* looking for files */
         this.files = new ArrayList<>();
-        try (TreeWalk tw = new TreeWalk(JgitManager.getInstance().getRepository()) ){
+        try (TreeWalk tw = new TreeWalk(this.jgitManager.getRepository())){
             tw.setRecursive(Boolean.TRUE);
             tw.reset(this.revCommit.getTree().getId());
             while (tw.next()){
                 String fileName = tw.getPathString();
                 if (fileName.endsWith(".java"))
-                    this.files.add( new ReleaseFile(fileName) );
+                    this.files.add( new ReleaseFile(fileName, jgitManager) );
             }
         } catch (IOException e) {
             Logger logger = Logger.getLogger(JgitManager.class.getName());
@@ -91,7 +91,7 @@ public class Release extends Commit {
             rf.addEditors(newer.revCommit.getAuthorIdent());
             rf.updateNauth();
             //locAdded
-            Integer[] lines = JgitManager.getInstance().countLinesAddedAndDeleted(diff);
+            Integer[] lines = this.jgitManager.countLinesAddedAndDeleted(diff);
             rf.updateLocAdded(lines[0]);
             //churn
             rf.updateChurn(lines[0] - lines[1]);
@@ -128,7 +128,7 @@ public class Release extends Commit {
             older = olderAndNewer.get(0);
             newer = olderAndNewer.get(1);
 
-            List<DiffEntry> differences = JgitManager.getInstance().listDifferencesBetweenTwoCommits(older.revCommit,
+            List<DiffEntry> differences = this.jgitManager.listDifferencesBetweenTwoCommits(older.revCommit,
                     newer.revCommit);
             for (DiffEntry diff : differences) {
 

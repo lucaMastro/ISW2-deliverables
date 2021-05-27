@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-import logic.jira_informations.JiraBeanInformations;
+import logic.bean.JiraBeanInformations;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -21,13 +21,6 @@ public class RetrieveInformations {
         this.projectName = projName;
         this.fixedBugs = new JSONArray();
         this.retrieveFixedBugTickets();
-    }
-
-    public Integer getFixedBugTicketsNumber() {
-        return fixedBugTicketsNumber;
-    }
-    public JSONArray getFixedBugs() {
-        return fixedBugs;
     }
 
     private void retrieveFixedBugTickets()throws IOException {

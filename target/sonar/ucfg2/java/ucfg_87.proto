@@ -1,16 +1,17 @@
 
-Plogic.dataset_manager.BugTicket#getFixedVersion()Llogic/dataset_manager/Release;u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java2 2(""1*ú
-1u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java3 3(Ü
-Ù
-u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java3 3(!#
-%0logic.dataset_manager.Release"__id*5*3!
-logic.dataset_manager.BugTicket"
-fixedVersion"ž
-u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java3 3("%
-#
-%0logic.dataset_manager.ReleaseB#!
-logic.dataset_manager.BugTicket
+Vlogic.dataset_manager.JgitManager#updateQuote(CLjava/lang/Boolean;)Ljava/lang/Boolean;y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java€ €("2"1*„
+2y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java‚ ‚($"ƒ
+y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java‚ ‚(%
+""*¥
+1y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java„ „(#"¤
+y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java„ „($'
+%
+quotesStillFoundjava.lang.Boolean:
+"":%
+quotesStillFoundjava.lang.BooleanB%#
+!logic.dataset_manager.JgitManager

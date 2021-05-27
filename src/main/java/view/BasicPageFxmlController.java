@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 
-public abstract class BasicPage {
+public abstract class BasicPageFxmlController {
 
     @FXML
     protected Button SubmitButton;
@@ -29,8 +29,15 @@ public abstract class BasicPage {
 
     @FXML
     protected void browseRepositoryPath(ActionEvent event) {
+        String s;
+        /* Different titles for each use case, based on the object type instantiated    */
+        if (this.getClass().getName().contains("Clone"))
+            s = "Select output directory";
+        else
+            s = "Select repository for bugginess analisys";
+
         DirectoryChooser repository = new DirectoryChooser();
-        repository.setTitle("Select repository for bugginess analisys");
+        repository.setTitle(s);
         File dir = repository.showDialog(new Stage());
         if (dir != null) {
             String path = dir.getPath();
@@ -42,9 +49,9 @@ public abstract class BasicPage {
     protected abstract void submitButtonSelected(ActionEvent actionEvent) throws Exception;
 
     protected void initialize(){
-        assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'class_bugginess.fxml'.";
-        assert SubmitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'class_bugginess.fxml'.";
-        assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'class_bugginess.fxml'.";
+        assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert SubmitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
     }
 
 }

@@ -1,6 +1,6 @@
 package logic.controller;
 
-import logic.config_manager.ConfigurationManager;
+import logic.bean.BugginessAndProcessChartBean;
 import logic.dataset_manager.Dataset;
 import logic.dataset_manager.Release;
 import logic.dataset_manager.ReleaseFile;
@@ -16,18 +16,18 @@ import java.util.logging.Logger;
 
 public class ProportionIncrementController {
 
-    public static void main(String[] args) throws InvalidRangeException, IOException, GitAPIException {
-        ProportionIncrement proportionIncrement = new ProportionIncrement();
+    public void run(BugginessAndProcessChartBean bean) throws IOException, GitAPIException, InvalidRangeException {
+        ProportionIncrement proportionIncrement = new ProportionIncrement(bean);
         Dataset dataset = proportionIncrement.getDataset();
         dataset.computeFeatures();
         proportionIncrement.computeProportionIncrement();
         proportionIncrement.setDatasetBugginess();
 
-        File file = new File(ConfigurationManager.getConfigEntry("outputBookkeeperCsv"));
-        try (FileWriter fw = new FileWriter(file)){
+        File file = bean.getOutputFile();
+        try (FileWriter fw = new FileWriter(file)) {
             String chosenFeatures = "Version,File Name,LOC,NR,NFix,NAuth,LOC_added,MAX_LOC_added,Churn,MAX_Churn,Age,Buggy\n";
             fw.append(chosenFeatures);
-            for (Release r : proportionIncrement.getDataset().getReleases()){
+            for (Release r : proportionIncrement.getDataset().getReleases()) {
                 String rIndex = r.getIndex().toString() + ",";
                 StringBuilder line = new StringBuilder();
                 for (ReleaseFile rf : r.getFiles())
@@ -35,9 +35,8 @@ public class ProportionIncrementController {
                 fw.append(line.toString());
             }
 
-        }
-        catch (Exception e){
-            Logger logger = Logger.getLogger(ConfigurationManager.class.getName());
+        } catch (Exception e) {
+            Logger logger = Logger.getLogger(ProportionIncrement.class.getName());
             logger.log(Level.OFF, e.toString());
         }
     }

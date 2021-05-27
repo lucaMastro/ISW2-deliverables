@@ -12,24 +12,28 @@ import java.util.logging.Logger;
 
 
 public class Commit {
-    RevCommit revCommit;
-    Date date;
-    String message;
+    protected RevCommit revCommit;
+    protected Date date;
+    protected String message;
+    protected JgitManager jgitManager;
 
-    public Commit(RevCommit c) {
+    public Commit(RevCommit c, JgitManager manager) {
         this.revCommit = c;
+        this.jgitManager = manager;
+
         this.date = c.getAuthorIdent().getWhen();
         this.message = c.getFullMessage();
     }
 
-    public Commit(Ref r) {
-        try (RevWalk walk = new RevWalk(JgitManager.getInstance().getRepository())) {
+    public Commit(Ref r, JgitManager manager) {
+        this.jgitManager = manager;
+        try (RevWalk walk = new RevWalk(this.jgitManager.getRepository())) {
             RevCommit c = walk.parseCommit(r.getObjectId());
             this.revCommit = c;
             this.date = c.getAuthorIdent().getWhen();
             this.message = c.getFullMessage();
         } catch (Exception e) {
-            Logger logger = Logger.getLogger(JgitManager.class.getName());
+            Logger logger = Logger.getLogger(Commit.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }

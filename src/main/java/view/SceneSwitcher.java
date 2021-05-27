@@ -41,7 +41,7 @@ public class SceneSwitcher extends Application {
 	}
 
 	public void setBugginessInputScene(ActionEvent event) throws IOException {
-		Parent bugginessScene = FXMLLoader.load(getClass().getResource("class_bugginess.fxml"));
+		Parent bugginessScene = FXMLLoader.load(getClass().getResource("class_bugginess_and_control_chart.fxml"));
 		this.scene = new Scene(bugginessScene);
 		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		this.primaryStage.setScene(scene);
@@ -63,6 +63,15 @@ public class SceneSwitcher extends Application {
 		loginAlert.setContentText(informationString);
 
 		loginAlert.showAndWait();
+	}
+
+	public void errorAlertShow(String alertString) {
+		Alert loginAlert = new Alert(Alert.AlertType.ERROR);
+		loginAlert.setTitle("Alert");
+		loginAlert.setHeaderText(null);
+		loginAlert.setContentText(alertString);
+
+		loginAlert.show();
 	}
 
 	public static void main(String[] args) { launch(args); }

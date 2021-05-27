@@ -1,6 +1,6 @@
 package logic.dataset_manager;
 
-import logic.jira_informations.JiraBeanInformations;
+import logic.bean.JiraBeanInformations;
 import org.eclipse.jgit.diff.DiffEntry;
 
 import java.util.ArrayList;

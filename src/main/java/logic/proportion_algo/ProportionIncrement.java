@@ -1,5 +1,6 @@
 package logic.proportion_algo;
 
+import logic.bean.BugginessAndProcessChartBean;
 import logic.dataset_manager.BugTicket;
 import logic.dataset_manager.Dataset;
 import logic.dataset_manager.Release;
@@ -15,8 +16,8 @@ public class ProportionIncrement {
     Integer proportionP;
     Dataset dataset;
 
-    public ProportionIncrement() throws IOException, InvalidRangeException, GitAPIException {
-        this.dataset = new Dataset();
+    public ProportionIncrement(BugginessAndProcessChartBean bean) throws IOException, InvalidRangeException, GitAPIException {
+        this.dataset = new Dataset(bean);
         this.proportionP = 0;
     }
 
@@ -102,12 +103,4 @@ public class ProportionIncrement {
                 r.setAllFileBuggines(b.getTouchedFiles());
         }
     }
-
-
-    public static void main(String[] args) throws InvalidRangeException, IOException, GitAPIException {
-        ProportionIncrement p = new ProportionIncrement();
-        p.computeProportionIncrement();
-        p.dataset.computeFeatures();
-    }
-
 }

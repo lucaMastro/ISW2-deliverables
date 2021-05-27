@@ -15,10 +15,4 @@ public class CloneRepositoryController {
                 .setDirectory(outputDir)
                 .call();
     }
-
-    public static void main(String[] args) throws GitAPIException {
-        String url = "https://github.com/lucaMastro/deliverable2.git";
-        File dir = new File("/home/luca/Scrivania/prova2");
-        Git.cloneRepository().setURI(url).setDirectory(dir).call();
-    }
 }

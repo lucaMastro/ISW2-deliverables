@@ -1,0 +1,59 @@
+package view;
+
+import javafx.event.ActionEvent;
+import java.io.File;
+import java.io.IOException;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+import logic.boundary.FindBugginessBoundary;
+import logic.exception.InvalidRangeException;
+import org.eclipse.jgit.api.errors.GitAPIException;
+
+public class ClassBugginessAndControlChartFxmlController extends BasicPageFxmlController {
+
+    @FXML
+    private Button browseRepoPathButton;
+
+    @FXML
+    private Label outputFileLabel;
+
+    @FXML
+    private Button browseOutputFileButton;
+
+    @FXML
+    private TextField projectName;
+
+    @FXML
+    void browseOutputFilePath(ActionEvent event) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select output file");
+        File f = fileChooser.showSaveDialog(new Stage());
+        if (f != null) {
+            String path = f.getPath();
+            this.outputFileLabel.setText(path);
+        }
+    }
+
+    @FXML
+    protected void initialize() {
+        super.initialize();
+        assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert outputFileLabel != null : "fx:id=\"outputFileLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert browseOutputFileButton != null : "fx:id=\"browseOutputFilehButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert projectName != null : "fx:id=\"projectNameLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+    }
+
+    public void submitButtonSelected(ActionEvent actionEvent) throws InvalidRangeException, GitAPIException, IOException {
+        var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
+                this.repositoryLabel.getText(),
+                this.projectName.getText());
+        boundary.runUseCase();
+        SceneSwitcher.getInstance().informationAlertShow("Done!!");
+    }
+}
+
