@@ -15,7 +15,6 @@ public class RetrieveInformations {
 
     private String projectName;
     private JSONArray fixedBugs;
-    private Integer fixedBugTicketsNumber;
 
     public RetrieveInformations(String projName) throws IOException {
         this.projectName = projName;
@@ -26,6 +25,7 @@ public class RetrieveInformations {
     private void retrieveFixedBugTickets()throws IOException {
         Integer j = 0;
         Integer i = 0;
+        Integer fixedBugTicketsNumber;
         //Get JSON API for closed bugs w/ AV in the project
         do {
             //Only gets a max of 1000 at a time, so must do this multiple times if bugs >1000
@@ -39,11 +39,11 @@ public class RetrieveInformations {
 
             this.fixedBugs = concatenate(this.fixedBugs, json.getJSONArray("issues"));
 
-            this.fixedBugTicketsNumber = json.getInt("total");
+            fixedBugTicketsNumber = json.getInt("total");
             //if total is >= jsonArrayLength * 1000, i need another iteration. just increment of 1000
             i += 1000;
 
-        } while (i < this.fixedBugTicketsNumber);
+        } while (i < fixedBugTicketsNumber);
 
     }
 

@@ -11,8 +11,6 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 
 public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
-    private CloneRepositoryBoundary boundary;
-
     @FXML
     private Button browseRepoPathButton;
 
@@ -25,8 +23,8 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
         String url = this.urlTextField.getText();
 
         try {
-            this.boundary = new CloneRepositoryBoundary(url, outputDir);
-            this.boundary.cloneRepository();
+            var boundary = new CloneRepositoryBoundary(url, outputDir);
+            boundary.cloneRepository();
             SceneSwitcher.getInstance().informationAlertShow("Done!!");
         }
         catch (InvalidInputException | GitAPIException e){

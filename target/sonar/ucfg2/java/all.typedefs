@@ -2341,14 +2341,7 @@ EnotifyPreloader(Ljavafx/application/Preloader$PreloaderNotification;)ejavafx.a
 0submitButtonSelected(Ljavafx/event/ActionEvent;)Tview.CloneRepositoryFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)Vë
 &logic.boundary.CloneRepositoryBoundaryjava.lang.ObjectÑ
 ,<init>(Ljava/lang/String;Ljava/lang/String;)Tlogic.boundary.CloneRepositoryBoundary#<init>(Ljava/lang/String;Ljava/lang/String;)VN
-cloneRepository()9logic.boundary.CloneRepositoryBoundary#cloneRepository()VÚ
-java.io.IOExceptionjava.lang.Exception)
-<init>()java.io.IOException#<init>()VM
-<init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
-<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vù
-%logic.exception.InvalidInputExceptionjava.io.IOException_
-<init>(Ljava/lang/String;)Alogic.exception.InvalidInputException#<init>(Ljava/lang/String;)VÒ
+cloneRepository()9logic.boundary.CloneRepositoryBoundary#cloneRepository()VÒ
 'logic.bean.BugginessAndProcessChartBeanjava.lang.ObjectV
 getDirectory()Dlogic.bean.BugginessAndProcessChartBean#getDirectory()Ljava/io/File;V
 getProject()Flogic.bean.BugginessAndProcessChartBean#getProject()Ljava/lang/String;X
@@ -2920,83 +2913,7 @@ KaddMergeConfig(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/Ref;)nor
 <init>()%view.HomePageFxmlController#<init>()V9
 initialize())view.HomePageFxmlController#initialize()VS
 main([Ljava/lang/String;)6view.HomePageFxmlController#main([Ljava/lang/String;)VW
-start(Ljavafx/stage/Stage;)8view.HomePageFxmlController#start(Ljavafx/stage/Stage;)V(
-java.lang.Appendablejava.lang.Object>
-java.io.Closeablejava.lang.Objectjava.lang.AutoCloseable%
-java.io.Flushablejava.lang.ObjectÉ
-java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.FlushableS
-nullOutputStream()=java.io.OutputStream#nullOutputStream()Ljava/io/OutputStream;,
-	write([B)java.io.OutputStream#write([B)V*
-<init>()java.io.OutputStream#<init>()V(
-flush()java.io.OutputStream#flush()V0
-write([BII)!java.io.OutputStream#write([BII)V(
-close()java.io.OutputStream#close()Vé
-java.io.FilterOutputStreamjava.io.OutputStream2
-	write([B)%java.io.FilterOutputStream#write([B)V\
-<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
-flush()#java.io.FilterOutputStream#flush()V0
-write(I)$java.io.FilterOutputStream#write(I)V6
-write([BII)'java.io.FilterOutputStream#write([BII)V.
-close()#java.io.FilterOutputStream#close()VÖ 
-java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
-	write([C)java.io.PrintStream#write([C)V)
-print(J)java.io.PrintStream#print(J)V-
-
-println(J)java.io.PrintStream#println(J)V)
-print(F)java.io.PrintStream#print(F)V-
-
-println(F)java.io.PrintStream#println(F)V/
-write([BII) java.io.PrintStream#write([BII)VÅ
-4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Ijava.io.PrintStream#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V)
-print(Z)java.io.PrintStream#print(Z)V1
-clearError()!java.io.PrintStream#clearError()V-
-
-println(Z)java.io.PrintStream#println(Z)Vi
-(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V)
-write(I)java.io.PrintStream#write(I)VO
-println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)VK
-print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)Ví
-4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
-print(I)java.io.PrintStream#print(I)V-
-
-println(I)java.io.PrintStream#println(I)V'
-flush()java.io.PrintStream#flush()V´
-?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;m
- append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
-toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
-<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
-	print([C)java.io.PrintStream#print([C)Vq
-"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;)
-print(D)java.io.PrintStream#print(D)Vq
-,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V-
-
-println(D)java.io.PrintStream#println(D)VO
-println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
-<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
-<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)Vy
-0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Ejava.io.PrintStream#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V1
-ensureOpen()!java.io.PrintStream#ensureOpen()Vã
-9<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)Njava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)V´
-?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;-
-
-setError()java.io.PrintStream#setError()Vá
--printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;?
-	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
-<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)Vá
--format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
-	newLine()java.io.PrintStream#newLine()V)
-print(C)java.io.PrintStream#print(C)V1
-checkError()!java.io.PrintStream#checkError()Z+
-	println()java.io.PrintStream#println()V'
-close()java.io.PrintStream#close()V-
-
-println(C)java.io.PrintStream#println(C)VK
-write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)VK
-print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
-1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)VU
-<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)V/
-println([C) java.io.PrintStream#println([C)Vã
-9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)V∫H
+start(Ljavafx/stage/Stage;)8view.HomePageFxmlController#start(Ljavafx/stage/Stage;)V∫H
 javafx.fxml.FXMLLoaderjava.lang.ObjectR
 setRoot(Ljava/lang/Object;)3javafx.fxml.FXMLLoader#setRoot(Ljava/lang/Object;)VP
 equals(Ljava/lang/Object;)2javafx.fxml.FXMLLoader#equals(Ljava/lang/Object;)Z`
@@ -4029,7 +3946,8 @@ TwrongValueFormatException(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwa
 <objectToBigInteger(Ljava/lang/Object;Ljava/math/BigInteger;)forg.json.JSONObject#objectToBigInteger(Ljava/lang/Object;Ljava/math/BigInteger;)Ljava/math/BigInteger;d
 getString(Ljava/lang/String;)Corg.json.JSONObject#getString(Ljava/lang/String;)Ljava/lang/String;p
 !getBigDecimal(Ljava/lang/String;)Korg.json.JSONObject#getBigDecimal(Ljava/lang/String;)Ljava/math/BigDecimal;M
-isNull(Ljava/lang/String;)/org.json.JSONObject#isNull(Ljava/lang/String;)Z¸3
+isNull(Ljava/lang/String;)/org.json.JSONObject#isNull(Ljava/lang/String;)Z(
+java.lang.Appendablejava.lang.Object¸3
 java.lang.AbstractStringBuilderjava.lang.CharSequencejava.lang.Appendablejava.lang.Object?
 setCharAt(IC).java.lang.AbstractStringBuilder#setCharAt(IC)VW
 ensureCapacityInternal(I):java.lang.AbstractStringBuilder#ensureCapacityInternal(I)V7
@@ -4168,7 +4086,8 @@ insert(ID);java.lang.StringBuilder#insert(ID)Ljava/lang/StringBuilder;o
 )writeObject(Ljava/io/ObjectOutputStream;)Bjava.lang.StringBuilder#writeObject(Ljava/io/ObjectOutputStream;)VI
 
 insert(IF);java.lang.StringBuilder#insert(IF)Ljava/lang/StringBuilder;&
-java.lang.Readablejava.lang.Objectú
+java.lang.Readablejava.lang.Object>
+java.io.Closeablejava.lang.Objectjava.lang.AutoCloseableú
 java.io.Readerjava.io.Closeablejava.lang.Readablejava.lang.Object"
 ready()java.io.Reader#ready()Z 
 read()java.io.Reader#read()I"
@@ -4505,7 +4424,15 @@ getTitle():javafx.stage.DirectoryChooser#getTitle()Ljava/lang/String;r
 <init>()'javafx.stage.DirectoryChooser#<init>()VZ
 getInitialDirectory()Ajavafx.stage.DirectoryChooser#getInitialDirectory()Ljava/io/File;[
 setTitle(Ljava/lang/String;);javafx.stage.DirectoryChooser#setTitle(Ljava/lang/String;)Vi
-#setInitialDirectory(Ljava/io/File;)Bjavafx.stage.DirectoryChooser#setInitialDirectory(Ljava/io/File;)VÚ
+#setInitialDirectory(Ljava/io/File;)Bjavafx.stage.DirectoryChooser#setInitialDirectory(Ljava/io/File;)VÚ
+java.io.IOExceptionjava.lang.Exception)
+<init>()java.io.IOException#<init>()VM
+<init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
+<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vù
+%logic.exception.InvalidInputExceptionjava.io.IOException_
+<init>(Ljava/lang/String;)Alogic.exception.InvalidInputException#<init>(Ljava/lang/String;)V%
+java.io.Flushablejava.lang.ObjectÚ
 java.io.Writerjava.lang.Appendablejava.io.Closeablejava.lang.Objectjava.io.Flushable&
 	write([C)java.io.Writer#write([C)Vc
  append(Ljava/lang/CharSequence;)?java.io.Writer#append(Ljava/lang/CharSequence;)Ljava/io/Writer;$

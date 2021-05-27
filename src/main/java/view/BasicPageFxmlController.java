@@ -14,7 +14,7 @@ import java.io.IOException;
 public abstract class BasicPageFxmlController {
 
     @FXML
-    protected Button SubmitButton;
+    protected Button submitButton;
 
     @FXML
     protected JFXButton backButton;
@@ -50,7 +50,7 @@ public abstract class BasicPageFxmlController {
 
     protected void initialize(){
         assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
-        assert SubmitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert submitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
         assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
     }
 
