@@ -51,12 +51,12 @@ public class HomePageFxmlController extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        URL url = getClass().getResource("/view/home.fxml");
+        var loader = new FXMLLoader();
+        var url = getClass().getResource("/view/home.fxml");
         loader.setLocation(url);
 
         Parent root = loader.load();
-        Scene scene = new Scene(root);
+        var scene = new Scene(root);
 
         stage.setScene(scene);
         stage.show();

@@ -49,7 +49,7 @@ public class RetrieveInformations {
 
     private JSONArray concatenate(JSONArray a1, JSONArray a2) {
         int i;
-        JSONArray result = new JSONArray();
+        var result = new JSONArray();
         for (i = 0; i < a1.length(); i++)
             result.put(a1.get(i));
 
@@ -60,7 +60,7 @@ public class RetrieveInformations {
     }
 
     private static String readAll(Reader rd) throws IOException {
-        StringBuilder sb = new StringBuilder();
+        var sb = new StringBuilder();
         int cp;
         while ((cp = rd.read()) != -1) {
             sb.append((char) cp);
@@ -70,7 +70,7 @@ public class RetrieveInformations {
 
     public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
         InputStream is = new URL(url).openStream();
-        try (BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))){
+        try (var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))){
             String jsonText = readAll(rd);
             return new JSONObject(jsonText);
         } finally {
@@ -83,8 +83,8 @@ public class RetrieveInformations {
         ArrayList<JiraBeanInformations> list = new ArrayList<>();
 
         for (i = 0; i < this.fixedBugs.length(); i++){
-            JSONObject obj = this.fixedBugs.getJSONObject(i);
-            JiraBeanInformations curr = new JiraBeanInformations(obj);
+            var obj = this.fixedBugs.getJSONObject(i);
+            var curr = new JiraBeanInformations(obj);
             list.add(curr);
         }
         return list;

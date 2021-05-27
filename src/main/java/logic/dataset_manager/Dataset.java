@@ -25,7 +25,7 @@ public class Dataset {
     // Constructor and relative methods
 
     public Dataset(BugginessAndProcessChartBean bean) throws GitAPIException, IOException, InvalidRangeException {
-        JgitManager jgitManager = new JgitManager(bean.getDirectory().getPath());
+        var jgitManager = new JgitManager(bean.getDirectory().getPath());
 
         this.initializeCommitList(jgitManager);
         this.removeRevertCommits();
@@ -42,7 +42,7 @@ public class Dataset {
         /*  removing releases   */
         Integer half = this.releases.size() / 2;
         this.releases.removeIf(r -> r.index > half);
-        Date lastDate = this.releases.get(this.releases.size() - 1).date;
+        var lastDate = this.releases.get(this.releases.size() - 1).date;
 
         /*  removing commits done after the last release    */
         this.commits.removeIf(c -> lastDate.before(c.date));
@@ -87,7 +87,7 @@ public class Dataset {
         Integer i;
 
         for (i = 0; i < tagList.size(); i++){
-            Release cur = new Release(tagList.get(i), manager);
+            var cur = new Release(tagList.get(i), manager);
             this.releases.add(cur);
         }
         Collections.sort(this.releases, (Commit o1, Commit o2) ->{
@@ -120,10 +120,10 @@ public class Dataset {
             startDate = this.getRelease(startIndexRelease).date;
         else // looking for commits of first release
             startDate = this.getCommit(0).date;
-        Date endDate = this.getRelease(endIndexRelease).date;
+        var endDate = this.getRelease(endIndexRelease).date;
 
         for (Commit currCommit : this.commits){
-            Date currDate = currCommit.date;
+            var currDate = currCommit.date;
             // checking if currDate is in a correct interval:
             if (startDate.compareTo(currDate) <= 0
                     && currDate.compareTo(endDate) < 0)
@@ -136,11 +136,11 @@ public class Dataset {
 
     private void initializeCommitList(JgitManager manager) {
         this.commits = new ArrayList<>();
-        try (RevWalk walk = new RevWalk(manager.getRepository())) {
+        try (var walk = new RevWalk(manager.getRepository())) {
             walk.sort(RevSort.REVERSE);
             Iterable<RevCommit> l = new Git(manager.getRepository()).log().call();
             for (RevCommit r : l){
-                Commit curr = new Commit(r, manager);
+                var curr = new Commit(r, manager);
                 this.commits.add(curr);
             }
             Collections.sort(this.commits, (Commit o1, Commit o2) ->{
@@ -149,14 +149,14 @@ public class Dataset {
                 return d1.compareTo(d2);
             });
         } catch (GitAPIException e) {
-            Logger logger = Logger.getLogger(JgitManager.class.getName());
+            var logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }
 
     private void initializeBugsList(String projectName) throws IOException {
 
-        RetrieveInformations retrieveInformations = new RetrieveInformations(projectName);
+        var retrieveInformations = new RetrieveInformations(projectName);
         ArrayList<JiraBeanInformations> informations = (ArrayList<JiraBeanInformations>) retrieveInformations.getInformations();
 
         List<Commit> relatives;
@@ -172,7 +172,7 @@ public class Dataset {
 
                 assert fixV != null;
                 info.setAffectedVersions(this.findAffectedVersions(info.getAffectedVersionsName(), fixV));
-                BugTicket bug = new BugTicket(info);
+                var bug = new BugTicket(info);
                 bug.setRelativeCommits(relatives);
                 this.fixedBugs.add(bug);
             }
@@ -192,7 +192,7 @@ public class Dataset {
     private List<Release> findAffectedVersions(List<String> affectedVersionsName, Release fixV) {
         List<Release> affectedVersions = new ArrayList<>();
         for (String name : affectedVersionsName){
-            Release r = this.findReleaseFromName(name);
+            var r = this.findReleaseFromName(name);
             if (r != null)
                 affectedVersions.add(r);
         }
@@ -201,7 +201,7 @@ public class Dataset {
             Integer startIndex = affectedVersions.get(0).getIndex();
             Integer i;
             for (i = startIndex; i < fixV.getIndex(); i++) {
-                Release toAdd = this.getRelease(i - 1);
+                var toAdd = this.getRelease(i - 1);
                 if (!affectedVersions.contains(toAdd))
                     affectedVersions.add(toAdd);
 
@@ -213,7 +213,7 @@ public class Dataset {
     private Release findOpeningVersion(Date openingDate) {
         Integer i;
         Release curr = null;
-        Date previousReleaseDate = new Date(0);
+        var previousReleaseDate = new Date(0);
         for (i = 0; i < this.releases.size(); i++){
             curr = this.releases.get(i);
             if (i != 0)
@@ -239,7 +239,7 @@ public class Dataset {
         //  finding membership release:
         /*  to check if membership release is the firstOne i need to check only if the
          *   commit's date is before than the release.get(0) date    */
-        Date initialDate = new Date(0);
+        var initialDate = new Date(0);
         Date endingDate;
         Release membershipRelease = null;
 

@@ -36,7 +36,7 @@ public abstract class BasicPageFxmlController {
         else
             s = "Select repository for bugginess analisys";
 
-        DirectoryChooser repository = new DirectoryChooser();
+        var repository = new DirectoryChooser();
         repository.setTitle(s);
         File dir = repository.showDialog(new Stage());
         if (dir != null) {

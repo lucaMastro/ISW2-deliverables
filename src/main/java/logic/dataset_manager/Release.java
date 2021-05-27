@@ -29,16 +29,16 @@ public class Release extends Commit {
         this.versionName = ref.getName();
         /* looking for files */
         this.files = new ArrayList<>();
-        try (TreeWalk tw = new TreeWalk(this.jgitManager.getRepository())){
+        try (var tw = new TreeWalk(this.jgitManager.getRepository())){
             tw.setRecursive(Boolean.TRUE);
             tw.reset(this.revCommit.getTree().getId());
             while (tw.next()){
-                String fileName = tw.getPathString();
+                var fileName = tw.getPathString();
                 if (fileName.endsWith(".java"))
                     this.files.add( new ReleaseFile(fileName, jgitManager) );
             }
         } catch (IOException e) {
-            Logger logger = Logger.getLogger(JgitManager.class.getName());
+            var logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }

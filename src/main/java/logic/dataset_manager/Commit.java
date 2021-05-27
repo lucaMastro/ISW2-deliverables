@@ -27,13 +27,13 @@ public class Commit {
 
     public Commit(Ref r, JgitManager manager) {
         this.jgitManager = manager;
-        try (RevWalk walk = new RevWalk(this.jgitManager.getRepository())) {
+        try (var walk = new RevWalk(this.jgitManager.getRepository())) {
             RevCommit c = walk.parseCommit(r.getObjectId());
             this.revCommit = c;
             this.date = c.getAuthorIdent().getWhen();
             this.message = c.getFullMessage();
         } catch (Exception e) {
-            Logger logger = Logger.getLogger(Commit.class.getName());
+            var logger = Logger.getLogger(Commit.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }

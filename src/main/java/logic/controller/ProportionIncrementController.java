@@ -17,26 +17,26 @@ import java.util.logging.Logger;
 public class ProportionIncrementController {
 
     public void run(BugginessAndProcessChartBean bean) throws IOException, GitAPIException, InvalidRangeException {
-        ProportionIncrement proportionIncrement = new ProportionIncrement(bean);
-        Dataset dataset = proportionIncrement.getDataset();
+        var proportionIncrement = new ProportionIncrement(bean);
+        var dataset = proportionIncrement.getDataset();
         dataset.computeFeatures();
         proportionIncrement.computeProportionIncrement();
         proportionIncrement.setDatasetBugginess();
 
-        File file = bean.getOutputFile();
-        try (FileWriter fw = new FileWriter(file)) {
-            String chosenFeatures = "Version,File Name,LOC,NR,NFix,NAuth,LOC_added,MAX_LOC_added,Churn,MAX_Churn,Age,Buggy\n";
+        var file = bean.getOutputFile();
+        try (var fw = new FileWriter(file)) {
+            var chosenFeatures = "Version,File Name,LOC,NR,NFix,NAuth,LOC_added,MAX_LOC_added,Churn,MAX_Churn,Age,Buggy\n";
             fw.append(chosenFeatures);
             for (Release r : proportionIncrement.getDataset().getReleases()) {
                 String rIndex = r.getIndex().toString() + ",";
-                StringBuilder line = new StringBuilder();
+                var line = new StringBuilder();
                 for (ReleaseFile rf : r.getFiles())
                     line.append(rIndex).append(rf.toString());
                 fw.append(line.toString());
             }
 
         } catch (Exception e) {
-            Logger logger = Logger.getLogger(ProportionIncrement.class.getName());
+            var logger = Logger.getLogger(ProportionIncrement.class.getName());
             logger.log(Level.OFF, e.toString());
         }
     }

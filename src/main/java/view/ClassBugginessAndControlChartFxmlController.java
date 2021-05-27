@@ -30,9 +30,9 @@ public class ClassBugginessAndControlChartFxmlController extends BasicPageFxmlCo
 
     @FXML
     void browseOutputFilePath(ActionEvent event) {
-        FileChooser fileChooser = new FileChooser();
+        var fileChooser = new FileChooser();
         fileChooser.setTitle("Select output file");
-        File f = fileChooser.showSaveDialog(new Stage());
+        var f = fileChooser.showSaveDialog(new Stage());
         if (f != null) {
             String path = f.getPath();
             this.outputFileLabel.setText(path);

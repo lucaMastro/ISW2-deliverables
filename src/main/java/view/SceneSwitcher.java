@@ -36,7 +36,7 @@ public class SceneSwitcher extends Application {
 	}
 
 	public void setHomeScene(ActionEvent event) throws IOException {
-		Stage stage = this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		var stage = this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		this.setHomeScene(stage);
 	}
 
@@ -57,7 +57,7 @@ public class SceneSwitcher extends Application {
 	}
 
 	public void informationAlertShow(String informationString) {
-		Alert loginAlert = new Alert(Alert.AlertType.INFORMATION);
+		var loginAlert = new Alert(Alert.AlertType.INFORMATION);
 		loginAlert.setTitle("Confirmation Alert");
 		loginAlert.setHeaderText(null);
 		loginAlert.setContentText(informationString);
@@ -66,7 +66,7 @@ public class SceneSwitcher extends Application {
 	}
 
 	public void errorAlertShow(String alertString) {
-		Alert loginAlert = new Alert(Alert.AlertType.ERROR);
+		var loginAlert = new Alert(Alert.AlertType.ERROR);
 		loginAlert.setTitle("Alert");
 		loginAlert.setHeaderText(null);
 		loginAlert.setContentText(alertString);

@@ -28,13 +28,13 @@ public class JiraBeanInformations {
 
         this.key = (String) jo.get("key");
 
-        JSONObject obj = jo.getJSONObject("fields");
+        var obj = jo.getJSONObject("fields");
         String openingVersionDate = (String) obj.get("created");
         DateFormat pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
         this.openingDate = pattern.parse(openingVersionDate, new ParsePosition(0));
 
         this.affectedVersionsName = new ArrayList<>();
-        JSONArray affected = obj.getJSONArray("versions");
+        var affected = obj.getJSONArray("versions");
         for (i = 0; i < affected.length(); i++){
             String curr = (String) affected.getJSONObject(i).get("name");
             this.affectedVersionsName.add(curr);
