@@ -1,9 +1,7 @@
 package view;
 
 import javafx.event.ActionEvent;
-import java.io.File;
 import java.io.IOException;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;

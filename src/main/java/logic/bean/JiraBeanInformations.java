@@ -2,7 +2,6 @@ package logic.bean;
 
 import logic.dataset_manager.Commit;
 import logic.dataset_manager.Release;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.text.DateFormat;

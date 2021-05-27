@@ -26,7 +26,7 @@ public class JgitManager {
 
     public JgitManager(String path) throws IOException{
         path += "/.git";
-        FileRepositoryBuilder builder = new FileRepositoryBuilder();
+        var builder = new FileRepositoryBuilder();
         this.repository = builder.setGitDir(new File(path)).readEnvironment().findGitDir().build();
     }
 
@@ -42,12 +42,12 @@ public class JgitManager {
         ObjectId newerId = newer.getTree().getId();
         List<DiffEntry> diffs = null;
 
-        try (ObjectReader reader = repository.newObjectReader();
-             Git git = new Git(repository)) {
+        try (var reader = repository.newObjectReader();
+             var git = new Git(repository)) {
 
-            CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
+            var oldTreeIter = new CanonicalTreeParser();
             oldTreeIter.reset(reader, olderId);
-            CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
+            var newTreeIter = new CanonicalTreeParser();
             newTreeIter.reset(reader, newerId);
 
             diffs = git.diff()
@@ -58,7 +58,7 @@ public class JgitManager {
             diffs.removeIf((DiffEntry diff) -> !diff.getNewPath().endsWith(".java"));
 
         } catch (GitAPIException e) {
-            Logger logger = Logger.getLogger(JgitManager.class.getName());
+            var logger = Logger.getLogger(JgitManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
         return diffs;
@@ -71,7 +71,7 @@ public class JgitManager {
         linesAdded = 0;
         linesDeleted = 0;
 
-        DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
+        var df = new DiffFormatter(DisabledOutputStream.INSTANCE);
         df.setRepository(repository);
         df.setDiffComparator(RawTextComparator.DEFAULT);
         df.setDetectRenames(true);
@@ -88,11 +88,11 @@ public class JgitManager {
         /*  This function may not count commits line */
         Integer count = 0;
         String fileContent;
-        try (TreeWalk treeWalk = TreeWalk.forPath(this.getRepository(), fileName,
+        try (var treeWalk = TreeWalk.forPath(this.getRepository(), fileName,
                 release.getTree())) {
-            ObjectId blobId = treeWalk.getObjectId(0);
-            try (ObjectReader objectReader = this.getRepository().newObjectReader()) {
-                ObjectLoader objectLoader = objectReader.open(blobId);
+            var blobId = treeWalk.getObjectId(0);
+            try (var objectReader = this.getRepository().newObjectReader()) {
+                var objectLoader = objectReader.open(blobId);
                 byte[] bytes = objectLoader.getBytes();
                 fileContent = new String(bytes, StandardCharsets.UTF_8);
                 String[] lines = fileContent.split("\n");
