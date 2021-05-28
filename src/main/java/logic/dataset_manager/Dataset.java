@@ -18,7 +18,7 @@ public abstract class Dataset {
 
     //***********************************************************************************************************
 
-    public Dataset(BugginessAndProcessChartBean bean) throws IOException {
+    protected Dataset(BugginessAndProcessChartBean bean) throws IOException {
         var jgitManager = new JgitManager(bean.getDirectory().getPath());
         this.initializeCommitList(jgitManager);
     }

@@ -13,14 +13,13 @@ import java.util.logging.Logger;
 
 public class ProcessControlChartController {
 
-    public void run(BugginessAndProcessChartBean bean) throws IOException, InvalidRangeException, GitAPIException {
+    public void run(BugginessAndProcessChartBean bean) throws IOException {
         var dataset = new ProcessControlChartDataset(bean);
         dataset.computeFeatures();
 
         var file = bean.getOutputFile();
         try (var fw = new FileWriter(file)) {
-            String s = dataset.toString();
-            fw.append(s);
+            fw.append(dataset.toString());
         } catch (Exception e) {
             var logger = Logger.getLogger(ProportionIncrement.class.getName());
             logger.log(Level.OFF, e.toString());

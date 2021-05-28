@@ -15,7 +15,7 @@ public class ProcessControlChartEntry {
 
     @Override
     public String toString(){
-        StringBuilder sb = new StringBuilder();
+        var sb = new StringBuilder();
         return sb.append(this.date).append(",")
                 .append(this.fixedBugs).append(",")
                 .append(this.totalCommits).toString();

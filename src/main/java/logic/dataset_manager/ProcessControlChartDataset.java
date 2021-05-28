@@ -121,7 +121,7 @@ public class ProcessControlChartDataset extends Dataset {
     }
 
     private void computeMean() {
-        int n = 0;
+        var n = 0;
         Double m = 0.0;
         for (ProcessControlChartEntry entry : this.months){
             if (entry.getCommitsNum() >= this.threshold) {
@@ -165,7 +165,7 @@ public class ProcessControlChartDataset extends Dataset {
 
     @Override
     public String toString(){
-        StringBuilder bld = new StringBuilder("date,fixedCommits,totalCommits,mean,upperControlLimit,lowerControlLimit\n");
+        var bld = new StringBuilder("date,fixedCommits,totalCommits,mean,upperControlLimit,lowerControlLimit\n");
         for (ProcessControlChartEntry entry : this.months){
             if (entry.getCommitsNum() >= this.threshold) {
                 DateFormat pattern = new SimpleDateFormat("yyyy-MM");
