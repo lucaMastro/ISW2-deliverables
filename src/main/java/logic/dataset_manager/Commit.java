@@ -50,4 +50,8 @@ public class Commit {
         }
         return b;
     }
+
+    public Date getDate() {
+        return date;
+    }
 }

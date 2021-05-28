@@ -24,7 +24,7 @@ public class HomePageFxmlController extends Application {
 
     @FXML
     private void classesBugginessSelected(ActionEvent event) throws IOException {
-        SceneSwitcher.getInstance().setBugginessInputScene(event);
+        SceneSwitcher.getInstance().setBugginessScene(event);
     }
 
     @FXML
@@ -33,8 +33,8 @@ public class HomePageFxmlController extends Application {
     }
 
     @FXML
-    private void processControlChartSelected(ActionEvent event) {
-        // TODO: 27/05/21
+    private void processControlChartSelected(ActionEvent event) throws IOException {
+        SceneSwitcher.getInstance().setControlChartScene(event);
     }
 
     @FXML

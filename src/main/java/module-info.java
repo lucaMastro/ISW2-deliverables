@@ -8,6 +8,8 @@ module view {
     requires org.json;
     requires org.eclipse.jgit;
     requires com.jfoenix;
+    requires org.apache.commons.lang3;
+    requires decimal4j;
 
     exports view;
 

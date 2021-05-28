@@ -40,8 +40,16 @@ public class SceneSwitcher extends Application {
 		this.setHomeScene(stage);
 	}
 
-	public void setBugginessInputScene(ActionEvent event) throws IOException {
-		Parent bugginessScene = FXMLLoader.load(getClass().getResource("class_bugginess_and_control_chart.fxml"));
+	public void setControlChartScene(ActionEvent event) throws IOException {
+		Parent bugginessScene = FXMLLoader.load(getClass().getResource("process_control_chart.fxml"));
+		this.scene = new Scene(bugginessScene);
+		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.primaryStage.setScene(scene);
+		this.primaryStage.show();
+	}
+
+	public void setBugginessScene(ActionEvent event) throws IOException {
+		Parent bugginessScene = FXMLLoader.load(getClass().getResource("class_bugginess.fxml"));
 		this.scene = new Scene(bugginessScene);
 		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		this.primaryStage.setScene(scene);

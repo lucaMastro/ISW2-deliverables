@@ -12,7 +12,7 @@ import logic.boundary.FindBugginessBoundary;
 import logic.exception.InvalidRangeException;
 import org.eclipse.jgit.api.errors.GitAPIException;
 
-public class ClassBugginessAndControlChartFxmlController extends BasicPageFxmlController {
+public class ClassBugginessFxmlController extends BasicPageFxmlController {
 
     @FXML
     private Button browseRepoPathButton;
@@ -41,10 +41,10 @@ public class ClassBugginessAndControlChartFxmlController extends BasicPageFxmlCo
     @Override
     protected void initialize() {
         super.initialize();
-        assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
-        assert outputFileLabel != null : "fx:id=\"outputFileLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
-        assert browseOutputFileButton != null : "fx:id=\"browseOutputFilehButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
-        assert projectName != null : "fx:id=\"projectNameLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
+        assert outputFileLabel != null : "fx:id=\"outputFileLabel\" was not injected: check your FXML file 'process_control_chart.fxml'.";
+        assert browseOutputFileButton != null : "fx:id=\"browseOutputFilehButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
+        assert projectName != null : "fx:id=\"projectNameLabel\" was not injected: check your FXML file 'process_control_chart.fxml'.";
     }
 
     @Override

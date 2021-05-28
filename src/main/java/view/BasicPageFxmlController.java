@@ -49,9 +49,9 @@ public abstract class BasicPageFxmlController {
     protected abstract void submitButtonSelected(ActionEvent actionEvent);
 
     protected void initialize(){
-        assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
-        assert submitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
-        assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'class_bugginess_and_control_chart.fxml'.";
+        assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'process_control_chart.fxml'.";
+        assert submitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
+        assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
     }
 
 }
