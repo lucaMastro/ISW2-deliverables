@@ -2,9 +2,7 @@ package logic.controller;
 
 import logic.bean.BugginessAndProcessChartBean;
 import logic.dataset_manager.ProcessControlChartDataset;
-import logic.exception.InvalidRangeException;
 import logic.proportion_algo.ProportionIncrement;
-import org.eclipse.jgit.api.errors.GitAPIException;
 
 import java.io.FileWriter;
 import java.io.IOException;
