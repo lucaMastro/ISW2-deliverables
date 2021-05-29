@@ -1,16 +1,17 @@
 
-Elogic.bean.BugginessAndProcessChartBean#getOutputFile()Ljava/io/File;}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java ("1*ò
-1}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (Õ
-Ò
-}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
-%0java.io.File"__id*7*5)
-'logic.bean.BugginessAndProcessChartBean"
-output"•
-}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
-
-%0java.io.FileB+)
-'logic.bean.BugginessAndProcessChartBean
+Blogic.abstracts.AbstractBoundary#getOutputFile()Ljava/lang/String;v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ("1*â
+1v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (Ï
+Ì
+v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+%0java.lang.String"__id*4*2"
+ logic.abstracts.AbstractBoundary"
+
+outputFile"’
+v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+
+%0java.lang.StringB$"
+ logic.abstracts.AbstractBoundary

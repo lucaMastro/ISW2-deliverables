@@ -1,16 +1,16 @@
 
-Dlogic.bean.BugginessAndProcessChartBean#getDirectory()Ljava/io/File;}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java ("1*õ
+Flogic.bean.BugginessAndProcessChartBean#getProject()Ljava/lang/String;}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java ("1*û
 1}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (Ø
-Õ
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (Ú
+×
 }
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
-%0java.io.File"__id*:*8)
-'logic.bean.BugginessAndProcessChartBean"
-	directory"•
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
+%0java.lang.String"__id*8*6)
+'logic.bean.BugginessAndProcessChartBean"	
+project"™
 }
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
-
-%0java.io.FileB+)
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
+
+%0java.lang.StringB+)
 'logic.bean.BugginessAndProcessChartBean

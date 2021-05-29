@@ -1,17 +1,16 @@
 
-Blogic.abstracts.AbstractBoundary#getOutputFile()Ljava/lang/String;v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ("1*â
+<logic.abstracts.AbstractBoundary#getPath()Ljava/lang/String;v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ("1*ß
 1v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (Ï
-Ì
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (Ì
+É
 v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
-%0java.lang.String"__id*4*2"
- logic.abstracts.AbstractBoundary"
-
-outputFile"’
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+%0java.lang.String"__id*1*/"
+ logic.abstracts.AbstractBoundary"	
+dirPath"’
 v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
 
 %0java.lang.StringB$"
  logic.abstracts.AbstractBoundary

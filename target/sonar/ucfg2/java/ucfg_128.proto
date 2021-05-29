@@ -1,304 +1,16 @@
 
-{logic.dataset_manager.Release#computeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Ljava/util/Map;)Ljava/util/Map;s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javan n(+"14*ñ
-13s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javav v(…
-∆
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javav v(%
-%1java.util.ArrayList"__id*.*,
-logic.dataset_manager.Release"	
-commits≈¬
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javav v(,	
-%2int"java.util.ArrayList#size()I*
-
-%1java.util.ArrayList2size()*
-1
-12*∑	
-14s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaq q(ÍÁ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaq q(
-
-%0void"/logic.dataset_manager.Release#setEachFileLoc()V*!
-logic.dataset_manager.Release2setEachFileLoc()≠
-™
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javar r(%
-olderlogic.dataset_manager.Commit"__id*
-""≠
-™
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javas s(%
-newerlogic.dataset_manager.Commit"__id*
-""û
-õ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javat t(
-ijava.lang.Integer"__id*
-""¶
-£
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javau u(
-additionDatejava.util.Date"__id*
-""û
-õ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javav v(
-ijava.lang.Integer"__id*
-""*
-13*í
-3u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÖ Ö(±
-Æ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÖ Ö('
-difforg.eclipse.jgit.diff.DiffEntry"__id*
-""ÿ
-’
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÖ Ö('
-difforg.eclipse.jgit.diff.DiffEntry"
-__arrayGet*
-
-differencesjava.util.List*
-""*
-13
-8*£
-4u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaí í(°
-û
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaí í(O
-%25void"¥logic.dataset_manager.Release#updateFileMetrics(Llogic/dataset_manager/ReleaseFile;Llogic/dataset_manager/Commit;Lorg/eclipse/jgit/diff/DiffEntry;Ljava/util/List;Ljava/util/Date;)V*!
-logic.dataset_manager.Release*)
-'
-rf!logic.dataset_manager.ReleaseFile*'
-%
-newerlogic.dataset_manager.Commit*)
-'
-difforg.eclipse.jgit.diff.DiffEntry*
-
-	fixedBugsjava.util.List* 
-
-additionDatejava.util.Date*
-3*™
-5u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaê# ê(5åâ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaê: ê(K
-%23java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*)
-'
-difforg.eclipse.jgit.diff.DiffEntry2getNewPath()›
-⁄
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaê# ê(L
-%24java.util.Date"__mapGet*%
-#
-nameToAdditionDatejava.util.Map*
-
-%23java.lang.Stringπ
-∂
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaê ê(L
-additionDatejava.util.Date"__id*
-
-%24java.util.Date*
-4*›	
-6u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaå å(&åâ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaå+ å(<
-%19java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*)
-'
-difforg.eclipse.jgit.diff.DiffEntry2getNewPath() 
-«
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaå> å(H
-%20java.util.Date"__id*1*/
-%
-newerlogic.dataset_manager.Commit"
-dateˆ
-Û
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaå å(I
-%21java.util.Date"__mapSet*%
-#
-nameToAdditionDatejava.util.Map*
-
-%19java.lang.String*
-
-%20java.util.Date 
-«
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaç# ç(-
-%22java.util.Date"__id*1*/
-%
-newerlogic.dataset_manager.Commit"
-dateπ
-∂
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaç ç(-
-additionDatejava.util.Date"__id*
-
-%22java.util.Date*
-4*±
-7u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaä ä(+åâ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaä8 ä(I
-%17java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*)
-'
-difforg.eclipse.jgit.diff.DiffEntry2getNewPath()ùö
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaä ä(J
-%18boolean".java.util.Map#containsKey(Ljava/lang/Object;)Z*%
-#
-nameToAdditionDatejava.util.Map*
-
-%17java.lang.String2containsKey(Ljava/lang/Object;)*
-5
-6*µ
-8u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaá! á(%åâ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaá3 á(D
-%11java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*)
-'
-difforg.eclipse.jgit.diff.DiffEntry2getNewPath()≈
-¬
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaá! á(E(
-%12!logic.dataset_manager.ReleaseFile"alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;*!
-logic.dataset_manager.Release*
-
-%11java.lang.String’
-“
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaá á(F'
-rf!logic.dataset_manager.ReleaseFile"__id**
-(
-%12!logic.dataset_manager.ReleaseFile∆√
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaâ â((1
-%13*org.eclipse.jgit.diff.DiffEntry$ChangeType"[org.eclipse.jgit.diff.DiffEntry#getChangeType()Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;*)
-'
-difforg.eclipse.jgit.diff.DiffEntry2getChangeType()ª
-∏
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaâ0 â(D1
-%14*org.eclipse.jgit.diff.DiffEntry$ChangeType"__id*
-""ª
-∏
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaâ0 â(H1
-%15*org.eclipse.jgit.diff.DiffEntry$ChangeType"__id*
-""ºπ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaâ â(I
-%16boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*3
-1
-%13*org.eclipse.jgit.diff.DiffEntry$ChangeType*3
-1
-%15*org.eclipse.jgit.diff.DiffEntry$ChangeType2equals(Ljava/lang/Object;)*
-5
-7*—
-10u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÄ Ä(!—
-Œ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÄ Ä(("
-%5logic.dataset_manager.Commit"
-__arrayGet*!
-
-olderAndNewerjava.util.List*2 Õ
- 
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÄ Ä((%
-olderlogic.dataset_manager.Commit"__id*$
-"
-%5logic.dataset_manager.Commit”
-–
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÅ Å(("
-%6logic.dataset_manager.Commit"
-__arrayGet*!
-
-olderAndNewerjava.util.List*2Õ
- 
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÅ Å((%
-newerlogic.dataset_manager.Commit"__id*$
-"
-%6logic.dataset_manager.Commit›
-⁄
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÉ* É(:'
-%7!logic.dataset_manager.JgitManager"__id*2*0
-logic.dataset_manager.Release"
-jgitManager‚
-ﬂ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÉ\ É(k(
-%8"org.eclipse.jgit.revwalk.RevCommit"__id*6*4
-%
-olderlogic.dataset_manager.Commit"
-	revCommit‚
-ﬂ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÑ Ñ(#(
-%9"org.eclipse.jgit.revwalk.RevCommit"__id*6*4
-%
-newerlogic.dataset_manager.Commit"
-	revCommitüú
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÉ* Ñ($
-%10java.util.List"úlogic.dataset_manager.JgitManager#listDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;*)
-'
-%7!logic.dataset_manager.JgitManager**
-(
-%8"org.eclipse.jgit.revwalk.RevCommit**
-(
-%9"org.eclipse.jgit.revwalk.RevCommit2jlistDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)∏
-µ
-u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaÉ Ñ(%
-differencesjava.util.List"__id*
-
-%10java.util.List*
-3*é
-12s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java|) |(-˚
-¯
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java|) |(Z
-%3java.util.List"zlogic.dataset_manager.Release#findOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)Ljava/util/List;*!
-logic.dataset_manager.Release*2
-0
-previousReleaselogic.dataset_manager.Release*
-
-ijava.lang.Integer∑
-¥
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java| |([
-olderAndNewerjava.util.List"__id*
-
-%3java.util.List–Õ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java} }('
-%4boolean"java.util.List#isEmpty()Z*!
-
-olderAndNewerjava.util.List2	isEmpty()*
-13
-10*õ
+;logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;u
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java° °("1*Ÿ
 1u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaï ï(!"û
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java¢ ¢(«
+ƒ
 u
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.javaï ï("%
-#
-nameToAdditionDatejava.util.Map:0
-previousReleaselogic.dataset_manager.Release:
-	fixedBugsjava.util.List:#
-nameToAdditionDatejava.util.MapB!
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java¢ ¢(
+%0java.lang.Integer"__id*,**
+logic.dataset_manager.Release"
+index"í
+u
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java¢ ¢(
+
+%0java.lang.IntegerB!
 logic.dataset_manager.Release
