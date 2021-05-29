@@ -23,6 +23,9 @@ public abstract class BasicPageFxmlController {
     protected Label repositoryLabel;
 
     @FXML
+    protected Button browseRepoPathButton;
+
+    @FXML
     protected void backButtonSelected(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.getInstance().setHomeScene(actionEvent);
     }
@@ -52,6 +55,7 @@ public abstract class BasicPageFxmlController {
         assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'process_control_chart.fxml'.";
         assert submitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
         assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
+        assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'clone_page.fxml'.";
     }
 
 }

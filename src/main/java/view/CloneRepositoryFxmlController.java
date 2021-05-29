@@ -12,9 +12,6 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
     @FXML
-    private Button browseRepoPathButton;
-
-    @FXML
     private TextField urlTextField;
 
     @FXML
@@ -36,6 +33,5 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
     @Override
     protected void initialize() {
         super.initialize();
-        assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'clone_page.fxml'.";
     }
 }
