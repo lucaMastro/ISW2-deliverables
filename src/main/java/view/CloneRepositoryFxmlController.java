@@ -15,6 +15,7 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
     @FXML
     protected void submitButtonSelected(ActionEvent event) {
+        this.progressBar.setVisible(Boolean.TRUE);
         String outputDir = this.repositoryLabel.getText();
         String url = this.urlTextField.getText();
 
@@ -25,6 +26,9 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
         }
         catch (InvalidInputException | GitAPIException e){
             SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
+        }
+        finally {
+            this.progressBar.setVisible(Boolean.FALSE);
         }
     }
 

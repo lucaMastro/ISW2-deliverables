@@ -1,7 +1,8 @@
 package logic.boundary;
 
 import logic.abstracts.AbstractBoundary;
-import logic.bean.BugginessAndProcessChartBean;
+import logic.bean.ProcessChartBean;
+import logic.bean.ProportionBean;
 import logic.controller.ProportionIncrementController;
 import logic.exception.InvalidRangeException;
 import org.eclipse.jgit.api.errors.GitAPIException;
@@ -18,7 +19,7 @@ public class FindBugginessBoundary extends AbstractBoundary {
 
     @Override
     public void runUseCase() throws GitAPIException, InvalidRangeException, IOException {
-        var bean = new BugginessAndProcessChartBean(this.outputFile, this.dirPath, this.projectName);
+        var bean = new ProportionBean(this.outputFile, this.dirPath, this.projectName);
         var controller = new ProportionIncrementController();
         controller.run(bean);
     }

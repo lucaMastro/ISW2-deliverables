@@ -1,6 +1,7 @@
 package logic.proportion_algo;
 
-import logic.bean.BugginessAndProcessChartBean;
+import logic.bean.ProcessChartBean;
+import logic.bean.ProportionBean;
 import logic.dataset_manager.BugTicket;
 import logic.dataset_manager.Dataset;
 import logic.dataset_manager.ProportionDataset;
@@ -17,7 +18,7 @@ public class ProportionIncrement {
     Integer proportionP;
     ProportionDataset dataset;
 
-    public ProportionIncrement(BugginessAndProcessChartBean bean) throws IOException, InvalidRangeException, GitAPIException {
+    public ProportionIncrement(ProportionBean bean) throws IOException, InvalidRangeException, GitAPIException {
         this.dataset = new ProportionDataset(bean);
         this.proportionP = 0;
     }

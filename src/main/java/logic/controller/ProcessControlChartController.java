@@ -1,6 +1,6 @@
 package logic.controller;
 
-import logic.bean.BugginessAndProcessChartBean;
+import logic.bean.ProcessChartBean;
 import logic.dataset_manager.ProcessControlChartDataset;
 import logic.proportion_algo.ProportionIncrement;
 
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class ProcessControlChartController {
 
-    public void run(BugginessAndProcessChartBean bean) throws IOException {
+    public void run(ProcessChartBean bean) throws IOException {
         var dataset = new ProcessControlChartDataset(bean);
         dataset.computeFeatures();
 

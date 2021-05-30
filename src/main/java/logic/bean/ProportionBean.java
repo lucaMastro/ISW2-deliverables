@@ -4,13 +4,13 @@ import logic.exception.InvalidInputException;
 
 import java.io.File;
 
-public class BugginessAndProcessChartBean {
+public class ProportionBean {
 
     File directory;
     File output;
     String project; //should be UPPERCASE
 
-    public BugginessAndProcessChartBean(String outputFile, String dirPath, String projectName) throws InvalidInputException {
+    public ProportionBean(String outputFile, String dirPath, String projectName) throws InvalidInputException {
         this.directory = new File(dirPath);
         if (!this.directory.exists()) {
             throw new InvalidInputException("Directory doesn't exist.");

@@ -1,6 +1,7 @@
 package logic.controller;
 
-import logic.bean.BugginessAndProcessChartBean;
+import logic.bean.ProcessChartBean;
+import logic.bean.ProportionBean;
 import logic.dataset_manager.ProportionDataset;
 import logic.dataset_manager.Release;
 import logic.dataset_manager.ReleaseFile;
@@ -14,7 +15,7 @@ import java.util.logging.Logger;
 
 public class ProportionIncrementController {
 
-    public void run(BugginessAndProcessChartBean bean) throws IOException, GitAPIException, InvalidRangeException {
+    public void run(ProportionBean bean) throws IOException, GitAPIException, InvalidRangeException {
         var proportionIncrement = new ProportionIncrement(bean);
         var dataset = (ProportionDataset) proportionIncrement.getDataset();
         dataset.computeFeatures();

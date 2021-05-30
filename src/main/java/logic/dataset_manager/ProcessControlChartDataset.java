@@ -1,6 +1,6 @@
 package logic.dataset_manager;
 
-import logic.bean.BugginessAndProcessChartBean;
+import logic.bean.ProcessChartBean;
 import logic.bean.JiraBeanInformations;
 
 import java.io.IOException;
@@ -20,10 +20,10 @@ public class ProcessControlChartDataset extends Dataset {
     private Double upperControlLimit;
     private Double lowerControlLimit;
 
-    public ProcessControlChartDataset(BugginessAndProcessChartBean bean) throws IOException {
+    public ProcessControlChartDataset(ProcessChartBean bean) throws IOException {
         super(bean);
         this.initializeBugsList(bean.getProject());
-        this.threshold = 0;
+        this.threshold = bean.getThreshold();
         this.mean = 0.0;
         this.upperControlLimit = 0.0;
         this.lowerControlLimit = 0.0;

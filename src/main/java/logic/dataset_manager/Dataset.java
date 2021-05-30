@@ -1,6 +1,7 @@
 package logic.dataset_manager;
 
-import logic.bean.BugginessAndProcessChartBean;
+import logic.bean.ProcessChartBean;
+import logic.bean.ProportionBean;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -18,7 +19,7 @@ public abstract class Dataset {
 
     //***********************************************************************************************************
 
-    protected Dataset(BugginessAndProcessChartBean bean) throws IOException {
+    protected Dataset(ProportionBean bean) throws IOException {
         var jgitManager = new JgitManager(bean.getDirectory().getPath());
         this.initializeCommitList(jgitManager);
     }

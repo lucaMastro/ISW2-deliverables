@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.ProgressIndicator?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CloneRepositoryFxmlController">
 <children>
     <Label layoutX="26.0" layoutY="150.0" prefHeight="30.0" text="Output folder:" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="150.0" />
@@ -26,6 +27,7 @@
         </graphic>
     </JFXButton>
     <TextField fx:id="urlTextField" layoutX="179.0" layoutY="210.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="250.0" />
+    <ProgressIndicator fx:id="progressBar" layoutX="471.0" layoutY="322.0" progress="0.0" visible="false" />
       <ImageView fitHeight="130.0" fitWidth="193.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../logo_github.png" />

@@ -1,7 +1,8 @@
 package logic.dataset_manager;
 
-import logic.bean.BugginessAndProcessChartBean;
+import logic.bean.ProcessChartBean;
 import logic.bean.JiraBeanInformations;
+import logic.bean.ProportionBean;
 import logic.exception.InvalidRangeException;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
@@ -15,7 +16,7 @@ public class ProportionDataset extends Dataset {
 
     //***********************************************************************************************************
     // Constructor and relative methods
-    public ProportionDataset(BugginessAndProcessChartBean bean) throws GitAPIException, IOException, InvalidRangeException {
+    public ProportionDataset(ProportionBean bean) throws GitAPIException, IOException, InvalidRangeException {
         super(bean);
         var jgitManager = new JgitManager(bean.getDirectory().getPath());
 

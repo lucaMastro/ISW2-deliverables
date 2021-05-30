@@ -13,6 +13,7 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
         try {
+            this.progressBar.setVisible(Boolean.TRUE);
             var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
                     this.repositoryLabel.getText(),
                     this.projectName.getText());
@@ -20,6 +21,9 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
             SceneSwitcher.getInstance().informationAlertShow("Done!!");
         }catch (InvalidRangeException |GitAPIException | IOException e){
             SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
+        }
+        finally {
+            this.progressBar.setVisible(Boolean.FALSE);
         }
     }
 }
