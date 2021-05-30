@@ -1153,9 +1153,10 @@ $logic.exception.NotAvaiableAlgorithmjava.lang.Exception^
 logic.bean.CloneRepositoryBeanjava.lang.Objectt
 (<init>(Ljava/lang/String;Ljava/io/File;)Hlogic.bean.CloneRepositoryBean#<init>(Ljava/lang/String;Ljava/io/File;)VM
 getOutputDir();logic.bean.CloneRepositoryBean#getOutputDir()Ljava/io/File;E
-getUrl()9logic.bean.CloneRepositoryBean#getUrl()Ljava/lang/String;•
+getUrl()9logic.bean.CloneRepositoryBean#getUrl()Ljava/lang/String;ã
 view.BasicPageFxmlControllerjava.lang.ObjectÇ
-0browseRepositoryPath(Ljavafx/event/ActionEvent;)Nview.BasicPageFxmlController#browseRepositoryPath(Ljavafx/event/ActionEvent;)V2
+0browseRepositoryPath(Ljavafx/event/ActionEvent;)Nview.BasicPageFxmlController#browseRepositoryPath(Ljavafx/event/ActionEvent;)Vd
+!runTask(Ljavafx/concurrent/Task;)?view.BasicPageFxmlController#runTask(Ljavafx/concurrent/Task;)V2
 <init>()&view.BasicPageFxmlController#<init>()V:
 initialize()*view.BasicPageFxmlController#initialize()V~
 .backButtonSelected(Ljavafx/event/ActionEvent;)Lview.BasicPageFxmlController#backButtonSelected(Ljavafx/event/ActionEvent;)V…
@@ -2227,84 +2228,7 @@ EnotifyPreloader(Ljavafx/application/Preloader$PreloaderNotification;)ejavafx.a
 (informationAlertShow(Ljava/lang/String;)<view.SceneSwitcher#informationAlertShow(Ljava/lang/String;)VN
 start(Ljavafx/stage/Stage;)/view.SceneSwitcher#start(Ljavafx/stage/Stage;)Vx
 0setControlChartScene(Ljavafx/event/ActionEvent;)Dview.SceneSwitcher#setControlChartScene(Ljavafx/event/ActionEvent;)V\
-"setHomeScene(Ljavafx/stage/Stage;)6view.SceneSwitcher#setHomeScene(Ljavafx/stage/Stage;)VÖ,
-java.lang.Threadjava.lang.Objectjava.lang.Runnable.
-setDaemon(Z)java.lang.Thread#setDaemon(Z)VE
-currentThread()2java.lang.Thread#currentThread()Ljava/lang/Thread;"
-join()java.lang.Thread#join()V.
-onSpinWait()java.lang.Thread#onSpinWait()V$
-start()java.lang.Thread#start()Vr
-.<init>(Ljava/lang/Runnable;Ljava/lang/String;)@java.lang.Thread#<init>(Ljava/lang/Runnable;Ljava/lang/String;)V0
-getPriority()java.lang.Thread#getPriority()I$
-yield()java.lang.Thread#yield()V&
-resume()java.lang.Thread#resume()V&
-join(JI)java.lang.Thread#join(JI)V9
-	getName(),java.lang.Thread#getName()Ljava/lang/String;&
-<init>()java.lang.Thread#<init>()V0
-interrupted()java.lang.Thread#interrupted()Zv
-0dispatchUncaughtException(Ljava/lang/Throwable;)Bjava.lang.Thread#dispatchUncaughtException(Ljava/lang/Throwable;)VZ
-"isCCLOverridden(Ljava/lang/Class;)4java.lang.Thread#isCCLOverridden(Ljava/lang/Class;)Zz
-getUncaughtExceptionHandler()Yjava.lang.Thread#getUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;r
-.setContextClassLoader(Ljava/lang/ClassLoader;)@java.lang.Thread#setContextClassLoader(Ljava/lang/ClassLoader;)VZ
-getContextClassLoader()?java.lang.Thread#getContextClassLoader()Ljava/lang/ClassLoader;0
-activeCount()java.lang.Thread#activeCount()I§
-G<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)Yjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)V¢
-F<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)Xjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)VA
-
-getState()3java.lang.Thread#getState()Ljava/lang/Thread$State;;
-
-toString()-java.lang.Thread#toString()Ljava/lang/String;¥
-OsetDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)ajava.lang.Thread#setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)VV
- auditSubclass(Ljava/lang/Class;)2java.lang.Thread#auditSubclass(Ljava/lang/Class;)Z4
-isInterrupted()!java.lang.Thread#isInterrupted()Z 
-run()java.lang.Thread#run()Vt
- dumpThreads([Ljava/lang/Thread;)Pjava.lang.Thread#dumpThreads([Ljava/lang/Thread;)[[Ljava/lang/StackTraceElement;P
-holdsLock(Ljava/lang/Object;)/java.lang.Thread#holdsLock(Ljava/lang/Object;)Z2
-nextThreadID() java.lang.Thread#nextThreadID()JQ
-getStackTrace()>java.lang.Thread#getStackTrace()[Ljava/lang/StackTraceElement;*
-
-isDaemon()java.lang.Thread#isDaemon()ZJ
-getAllStackTraces()3java.lang.Thread#getAllStackTraces()Ljava/util/Map;`
-%blockedOn(Lsun/nio/ch/Interruptible;)7java.lang.Thread#blockedOn(Lsun/nio/ch/Interruptible;)V"
-exit()java.lang.Thread#exit()VR
-enumerate([Ljava/lang/Thread;)0java.lang.Thread#enumerate([Ljava/lang/Thread;)I2
-setPriority(I) java.lang.Thread#setPriority(I)V5
-clone()*java.lang.Thread#clone()Ljava/lang/Object;à
-$getDefaultUncaughtExceptionHandler()`java.lang.Thread#getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;∂
-PprocessQueue(Ljava/lang/ref/ReferenceQueue;Ljava/util/concurrent/ConcurrentMap;)bjava.lang.Thread#processQueue(Ljava/lang/ref/ReferenceQueue;Ljava/util/concurrent/ConcurrentMap;)V(
-	suspend()java.lang.Thread#suspend()V,
-interrupt()java.lang.Thread#interrupt()V*
-
-suspend0()java.lang.Thread#suspend0()V8
-registerNatives()#java.lang.Thread#registerNatives()V|
-3<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)Ejava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)V(
-	sleep(JI)java.lang.Thread#sleep(JI)V¶
-HsetUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)Zjava.lang.Thread#setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V$
-getId()java.lang.Thread#getId()J†
-E<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)Wjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V6
-isInterrupted(Z)"java.lang.Thread#isInterrupted(Z)Z.
-interrupt0()java.lang.Thread#interrupt0()VÏ
-k<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JLjava/security/AccessControlContext;Z)}java.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JLjava/security/AccessControlContext;Z)VN
-<init>(Ljava/lang/Runnable;).java.lang.Thread#<init>(Ljava/lang/Runnable;)V"
-stop()java.lang.Thread#stop()VJ
-<init>(Ljava/lang/String;),java.lang.Thread#<init>(Ljava/lang/String;)VH
-stop0(Ljava/lang/Object;)+java.lang.Thread#stop0(Ljava/lang/Object;)V,
-dumpStack()java.lang.Thread#dumpStack()VL
-setName(Ljava/lang/String;)-java.lang.Thread#setName(Ljava/lang/String;)VX
-!setNativeName(Ljava/lang/String;)3java.lang.Thread#setNativeName(Ljava/lang/String;)V4
-setPriority0(I)!java.lang.Thread#setPriority0(I)V$
-join(J)java.lang.Thread#join(J)V4
-nextThreadNum()!java.lang.Thread#nextThreadNum()I0
-checkAccess()java.lang.Thread#checkAccess()Vñ
-@<init>(Ljava/lang/Runnable;Ljava/security/AccessControlContext;)Rjava.lang.Thread#<init>(Ljava/lang/Runnable;Ljava/security/AccessControlContext;)V&
-start0()java.lang.Thread#start0()V(
-	isAlive()java.lang.Thread#isAlive()Z&
-sleep(J)java.lang.Thread#sleep(J)VL
-getThreadGroup()8java.lang.Thread#getThreadGroup()Ljava/lang/ThreadGroup;:
-countStackFrames()$java.lang.Thread#countStackFrames()I(
-	resume0()java.lang.Thread#resume0()V@
-getThreads()0java.lang.Thread#getThreads()[Ljava/lang/Thread;x
-1<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)Cjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)VÚ
+"setHomeScene(Ljavafx/stage/Stage;)6view.SceneSwitcher#setHomeScene(Ljavafx/stage/Stage;)VÚ
 java.io.IOExceptionjava.lang.Exception)
 <init>()java.io.IOException#<init>()VM
 <init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
@@ -3715,16 +3639,25 @@ hashCode()java.lang.Boolean#hashCode()I3
 	<init>(Z)java.lang.Boolean#<init>(Z)VS
 getBoolean(Ljava/lang/String;)1java.lang.Boolean#getBoolean(Ljava/lang/String;)Zù
 %logic.exception.InvalidRangeExceptionjava.lang.Exception_
-<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)Vü
-3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerè
-+runTask(Llogic/abstracts/AbstractBoundary;)`view.ProcessControlChartAndProportionFxmlController#runTask(Llogic/abstracts/AbstractBoundary;)VI
+<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)Vç
+3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerI
 <init>()=view.ProcessControlChartAndProportionFxmlController#<init>()VQ
 initialize()Aview.ProcessControlChartAndProportionFxmlController#initialize()Vô
 0browseOutputFilePath(Ljavafx/event/ActionEvent;)eview.ProcessControlChartAndProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)V‹
 !view.ClassBugginessFxmlController3view.ProcessControlChartAndProportionFxmlController7
 <init>()+view.ClassBugginessFxmlController#<init>()V?
 initialize()/view.ClassBugginessFxmlController#initialize()Vá
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Sview.ClassBugginessFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)VÅ
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Sview.ClassBugginessFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V—
+#view.ClassBugginessFxmlController$1javafx.concurrent.TaskÀ
+Q<init>(Lview/ClassBugginessFxmlController;Llogic/boundary/FindBugginessBoundary;)vview.ClassBugginessFxmlController$1#<init>(Lview/ClassBugginessFxmlController;Llogic/boundary/FindBugginessBoundary;)VD
+call():view.ClassBugginessFxmlController$1#call()Ljava/lang/Void;±
+ logic.abstracts.AbstractBoundaryjava.lang.ObjectW
+getProjectName()Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;6
+<init>()*logic.abstracts.AbstractBoundary#<init>()Vj
+"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)VŸ
+$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundaryB
+runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V 
+P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)vlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÅ
 !javafx.scene.control.ComboBoxBasejavafx.scene.control.Control?
 isEditable()/javafx.scene.control.ComboBoxBase#isEditable()Z◊
 OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Éjavafx.scene.control.ComboBoxBase#queryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Ljava/lang/Object;u
@@ -3797,14 +3730,7 @@ OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)
 
 getItems()Kjavafx.scene.control.ComboBox#getItems()Ljavafx/collections/ObservableList;i
 #setPlaceholder(Ljavafx/scene/Node;)Bjavafx.scene.control.ComboBox#setPlaceholder(Ljavafx/scene/Node;)VX
-getCellFactory()Djavafx.scene.control.ComboBox#getCellFactory()Ljavafx/util/Callback;±
- logic.abstracts.AbstractBoundaryjava.lang.ObjectW
-getProjectName()Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;6
-<init>()*logic.abstracts.AbstractBoundary#<init>()Vj
-"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)VŸ
-$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundaryB
-runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V 
-P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)vlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÂ2
+getCellFactory()Djavafx.scene.control.ComboBox#getCellFactory()Ljavafx/util/Callback;Â2
  javafx.collections.FXCollectionsjava.lang.Object¢
 >shuffle(Ljavafx/collections/ObservableList;Ljava/util/Random;)`javafx.collections.FXCollections#shuffle(Ljavafx/collections/ObservableList;Ljava/util/Random;)V†
 ,concat([Ljavafx/collections/ObservableList;)pjavafx.collections.FXCollections#concat([Ljavafx/collections/ObservableList;)Ljavafx/collections/ObservableList;◊
@@ -4421,10 +4347,7 @@ FsetSelectedExtensionFilter(Ljavafx/stage/FileChooser$ExtensionFilter;)`javafx.
 !selectedExtensionFilterProperty()`javafx.stage.FileChooser#selectedExtensionFilterProperty()Ljavafx/beans/property/ObjectProperty;U
 getInitialDirectory()<javafx.stage.FileChooser#getInitialDirectory()Ljava/io/File;u
 initialFileNameProperty()Xjavafx.stage.FileChooser#initialFileNameProperty()Ljavafx/beans/property/ObjectProperty;–
-DfindSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)ájavafx.stage.FileChooser#findSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)Ljavafx/stage/FileChooser$ExtensionFilter;§
-5view.ProcessControlChartAndProportionFxmlController$1javafx.concurrent.TaskV
-call()Lview.ProcessControlChartAndProportionFxmlController$1#call()Ljava/lang/Void;˙
-_<init>(Lview/ProcessControlChartAndProportionFxmlController;Llogic/abstracts/AbstractBoundary;)ñview.ProcessControlChartAndProportionFxmlController$1#<init>(Lview/ProcessControlChartAndProportionFxmlController;Llogic/abstracts/AbstractBoundary;)VÅ
+DfindSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)ájavafx.stage.FileChooser#findSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)Ljavafx/stage/FileChooser$ExtensionFilter;Å
 	view.Mainjava.lang.Object
 <init>()view.Main#<init>()VA
 main([Ljava/lang/String;)$view.Main#main([Ljava/lang/String;)Vˆ2
@@ -4857,7 +4780,13 @@ toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;É
 &view.ProcessControlChartFxmlController3view.ProcessControlChartAndProportionFxmlController<
 <init>()0view.ProcessControlChartFxmlController#<init>()VD
 initialize()4view.ProcessControlChartFxmlController#initialize()Vå
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)VŒ%
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V˜
+(view.ProcessControlChartFxmlController$1javafx.concurrent.TaskI
+call()?view.ProcessControlChartFxmlController$1#call()Ljava/lang/Void;Á
+\<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)Üview.ProcessControlChartFxmlController$1#<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)VÌ
+*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
+runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
+Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VŒ%
 javafx.scene.control.Spinnerjavafx.scene.control.Control8
 increment())javafx.scene.control.Spinner#increment()Vq
 repeatDelayProperty()Xjavafx.scene.control.Spinner#repeatDelayProperty()Ljavafx/beans/property/ObjectProperty;X
@@ -4903,10 +4832,7 @@ getValue()9javafx.scene.control.Spinner#getValue()Ljava/lang/Object;8
 MwrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Äjavafx.scene.control.Spinner#wrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;l
 editableProperty()Vjavafx.scene.control.Spinner#editableProperty()Ljavafx/beans/property/BooleanProperty;ı
 i<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)ájavafx.scene.control.Spinner#<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)V[
-getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;Ì
-*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
-runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
-Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VÍ 
+getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;Í 
 java.text.NumberFormatjava.text.FormatP
 equals(Ljava/lang/Object;)2java.text.NumberFormat#equals(Ljava/lang/Object;)ZÖ
 )getScientificInstance(Ljava/util/Locale;)Xjava.text.NumberFormat#getScientificInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;N
@@ -5025,7 +4951,84 @@ getTitle():javafx.stage.DirectoryChooser#getTitle()Ljava/lang/String;r
 <init>()'javafx.stage.DirectoryChooser#<init>()VZ
 getInitialDirectory()Ajavafx.stage.DirectoryChooser#getInitialDirectory()Ljava/io/File;[
 setTitle(Ljava/lang/String;);javafx.stage.DirectoryChooser#setTitle(Ljava/lang/String;)Vi
-#setInitialDirectory(Ljava/io/File;)Bjavafx.stage.DirectoryChooser#setInitialDirectory(Ljava/io/File;)VŒ1
+#setInitialDirectory(Ljava/io/File;)Bjavafx.stage.DirectoryChooser#setInitialDirectory(Ljava/io/File;)VÖ,
+java.lang.Threadjava.lang.Objectjava.lang.Runnable.
+setDaemon(Z)java.lang.Thread#setDaemon(Z)VE
+currentThread()2java.lang.Thread#currentThread()Ljava/lang/Thread;"
+join()java.lang.Thread#join()V.
+onSpinWait()java.lang.Thread#onSpinWait()V$
+start()java.lang.Thread#start()Vr
+.<init>(Ljava/lang/Runnable;Ljava/lang/String;)@java.lang.Thread#<init>(Ljava/lang/Runnable;Ljava/lang/String;)V0
+getPriority()java.lang.Thread#getPriority()I$
+yield()java.lang.Thread#yield()V&
+resume()java.lang.Thread#resume()V&
+join(JI)java.lang.Thread#join(JI)V9
+	getName(),java.lang.Thread#getName()Ljava/lang/String;&
+<init>()java.lang.Thread#<init>()V0
+interrupted()java.lang.Thread#interrupted()Zv
+0dispatchUncaughtException(Ljava/lang/Throwable;)Bjava.lang.Thread#dispatchUncaughtException(Ljava/lang/Throwable;)VZ
+"isCCLOverridden(Ljava/lang/Class;)4java.lang.Thread#isCCLOverridden(Ljava/lang/Class;)Zz
+getUncaughtExceptionHandler()Yjava.lang.Thread#getUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;r
+.setContextClassLoader(Ljava/lang/ClassLoader;)@java.lang.Thread#setContextClassLoader(Ljava/lang/ClassLoader;)VZ
+getContextClassLoader()?java.lang.Thread#getContextClassLoader()Ljava/lang/ClassLoader;0
+activeCount()java.lang.Thread#activeCount()I§
+G<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)Yjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)V¢
+F<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)Xjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)VA
+
+getState()3java.lang.Thread#getState()Ljava/lang/Thread$State;;
+
+toString()-java.lang.Thread#toString()Ljava/lang/String;¥
+OsetDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)ajava.lang.Thread#setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)VV
+ auditSubclass(Ljava/lang/Class;)2java.lang.Thread#auditSubclass(Ljava/lang/Class;)Z4
+isInterrupted()!java.lang.Thread#isInterrupted()Z 
+run()java.lang.Thread#run()Vt
+ dumpThreads([Ljava/lang/Thread;)Pjava.lang.Thread#dumpThreads([Ljava/lang/Thread;)[[Ljava/lang/StackTraceElement;P
+holdsLock(Ljava/lang/Object;)/java.lang.Thread#holdsLock(Ljava/lang/Object;)Z2
+nextThreadID() java.lang.Thread#nextThreadID()JQ
+getStackTrace()>java.lang.Thread#getStackTrace()[Ljava/lang/StackTraceElement;*
+
+isDaemon()java.lang.Thread#isDaemon()ZJ
+getAllStackTraces()3java.lang.Thread#getAllStackTraces()Ljava/util/Map;`
+%blockedOn(Lsun/nio/ch/Interruptible;)7java.lang.Thread#blockedOn(Lsun/nio/ch/Interruptible;)V"
+exit()java.lang.Thread#exit()VR
+enumerate([Ljava/lang/Thread;)0java.lang.Thread#enumerate([Ljava/lang/Thread;)I2
+setPriority(I) java.lang.Thread#setPriority(I)V5
+clone()*java.lang.Thread#clone()Ljava/lang/Object;à
+$getDefaultUncaughtExceptionHandler()`java.lang.Thread#getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;∂
+PprocessQueue(Ljava/lang/ref/ReferenceQueue;Ljava/util/concurrent/ConcurrentMap;)bjava.lang.Thread#processQueue(Ljava/lang/ref/ReferenceQueue;Ljava/util/concurrent/ConcurrentMap;)V(
+	suspend()java.lang.Thread#suspend()V,
+interrupt()java.lang.Thread#interrupt()V*
+
+suspend0()java.lang.Thread#suspend0()V8
+registerNatives()#java.lang.Thread#registerNatives()V|
+3<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)Ejava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)V(
+	sleep(JI)java.lang.Thread#sleep(JI)V¶
+HsetUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)Zjava.lang.Thread#setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V$
+getId()java.lang.Thread#getId()J†
+E<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)Wjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V6
+isInterrupted(Z)"java.lang.Thread#isInterrupted(Z)Z.
+interrupt0()java.lang.Thread#interrupt0()VÏ
+k<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JLjava/security/AccessControlContext;Z)}java.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JLjava/security/AccessControlContext;Z)VN
+<init>(Ljava/lang/Runnable;).java.lang.Thread#<init>(Ljava/lang/Runnable;)V"
+stop()java.lang.Thread#stop()VJ
+<init>(Ljava/lang/String;),java.lang.Thread#<init>(Ljava/lang/String;)VH
+stop0(Ljava/lang/Object;)+java.lang.Thread#stop0(Ljava/lang/Object;)V,
+dumpStack()java.lang.Thread#dumpStack()VL
+setName(Ljava/lang/String;)-java.lang.Thread#setName(Ljava/lang/String;)VX
+!setNativeName(Ljava/lang/String;)3java.lang.Thread#setNativeName(Ljava/lang/String;)V4
+setPriority0(I)!java.lang.Thread#setPriority0(I)V$
+join(J)java.lang.Thread#join(J)V4
+nextThreadNum()!java.lang.Thread#nextThreadNum()I0
+checkAccess()java.lang.Thread#checkAccess()Vñ
+@<init>(Ljava/lang/Runnable;Ljava/security/AccessControlContext;)Rjava.lang.Thread#<init>(Ljava/lang/Runnable;Ljava/security/AccessControlContext;)V&
+start0()java.lang.Thread#start0()V(
+	isAlive()java.lang.Thread#isAlive()Z&
+sleep(J)java.lang.Thread#sleep(J)VL
+getThreadGroup()8java.lang.Thread#getThreadGroup()Ljava/lang/ThreadGroup;:
+countStackFrames()$java.lang.Thread#countStackFrames()I(
+	resume0()java.lang.Thread#resume0()V@
+getThreads()0java.lang.Thread#getThreads()[Ljava/lang/Thread;x
+1<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)Cjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)VŒ1
 java.util.Mapjava.lang.ObjectÜ
 1putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Qjava.util.Map#putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;§
 @computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)`java.util.Map#computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;À

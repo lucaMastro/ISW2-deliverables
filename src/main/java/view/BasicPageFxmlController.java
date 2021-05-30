@@ -52,7 +52,7 @@ public abstract class BasicPageFxmlController {
     @FXML
     protected abstract void submitButtonSelected(ActionEvent actionEvent);
 
-    protected void runTask(Task task){
+    protected void runTask(Task<Void> task){
         task.setOnSucceeded(e ->{
             SceneSwitcher.getInstance().informationAlertShow("Done!!");
             SceneSwitcher.getInstance().setDefautlCursor();

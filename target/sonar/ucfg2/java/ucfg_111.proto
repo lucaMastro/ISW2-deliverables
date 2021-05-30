@@ -1,16 +1,14 @@
 
-?logic.dataset_manager.ReleaseFile#getBuggy()Ljava/lang/Boolean;y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaç ç("1*È
-1y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaé é(œ
-Ã
-y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaé é(
-%0java.lang.Boolean"__id*0*.#
-!logic.dataset_manager.ReleaseFile"
-buggy"ñ
-y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaé é(
-
-%0java.lang.BooleanB%#
-!logic.dataset_manager.ReleaseFile
+?view.ProcessControlChartFxmlController$1#call()Ljava/lang/Void;|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java ("1*Í
+1|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java (›⁄
+|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java (%
+
+%0void"8logic.boundary.ProcessControlChartBoundary#runUseCase()V*
+""2runUseCase()"Ü
+|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java   (
+""B,*
+(view.ProcessControlChartFxmlController$1
