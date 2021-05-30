@@ -1,7 +1,6 @@
 package logic.boundary;
 
 import logic.abstracts.AbstractBoundary;
-import logic.bean.ProcessChartBean;
 import logic.bean.ProportionBean;
 import logic.controller.ProportionIncrementController;
 import logic.exception.InvalidRangeException;

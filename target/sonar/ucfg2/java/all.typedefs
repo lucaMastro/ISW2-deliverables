@@ -16,29 +16,28 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()I’
+hashCode()java.lang.Object#hashCode()I∏
 )logic.proportion_algo.ProportionIncrementjava.lang.Objectk
 updateBugsAV(Ljava/util/List;)Ilogic.proportion_algo.ProportionIncrement#updateBugsAV(Ljava/util/List;)V{
 &computeProportion(Ljava/lang/Integer;)Qlogic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)Ve
 getDataset()Ulogic.proportion_algo.ProportionIncrement#getDataset()Llogic/dataset_manager/Dataset;m
-computePvalue(Ljava/util/List;)Jlogic.proportion_algo.ProportionIncrement#computePvalue(Ljava/util/List;)Vë
-1<init>(Llogic/bean/BugginessAndProcessChartBean;)\logic.proportion_algo.ProportionIncrement#<init>(Llogic/bean/BugginessAndProcessChartBean;)Vg
+computePvalue(Ljava/util/List;)Jlogic.proportion_algo.ProportionIncrement#computePvalue(Ljava/util/List;)Vu
+#<init>(Llogic/bean/ProportionBean;)Nlogic.proportion_algo.ProportionIncrement#<init>(Llogic/bean/ProportionBean;)Vg
 computeProportionIncrement()Glogic.proportion_algo.ProportionIncrement#computeProportionIncrement()VY
-setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()VÜ	
+setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()VÈ
 logic.dataset_manager.Datasetjava.lang.ObjectN
 getFixedBugs()<logic.dataset_manager.Dataset#getFixedBugs()Ljava/util/List;Ç
-!findGitCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;Ö
-1<init>(Llogic/bean/BugginessAndProcessChartBean;)Plogic.dataset_manager.Dataset#<init>(Llogic/bean/BugginessAndProcessChartBean;)Và
+!findGitCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;i
+#<init>(Llogic/bean/ProportionBean;)Blogic.dataset_manager.Dataset#<init>(Llogic/bean/ProportionBean;)Và
 $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitFromId(Ljava/lang/String;)Llogic/dataset_manager/Commit;E
 getNumOfCommits()0logic.dataset_manager.Dataset#getNumOfCommits()Ià
 +findCommitsFromTicketId(Ljava/lang/String;)Ylogic.dataset_manager.Dataset#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;Ç
 !findSvnCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;ï
 9initializeCommitList(Llogic/dataset_manager/JgitManager;)Xlogic.dataset_manager.Dataset#initializeCommitList(Llogic/dataset_manager/JgitManager;)V|
-getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;˝
+getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;‡
 'logic.dataset_manager.ProportionDatasetlogic.dataset_manager.Datasetâ
 getRelease(Ljava/lang/Integer;)flogic.dataset_manager.ProportionDataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;O
-computeFeatures():logic.dataset_manager.ProportionDataset#computeFeatures()Vè
-1<init>(Llogic/bean/BugginessAndProcessChartBean;)Zlogic.dataset_manager.ProportionDataset#<init>(Llogic/bean/BugginessAndProcessChartBean;)VW
+computeFeatures():logic.dataset_manager.ProportionDataset#computeFeatures()VW
 removeRevertCommits()>logic.dataset_manager.ProportionDataset#removeRevertCommits()V¢
 3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)klogic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;K
 reduceDataset()8logic.dataset_manager.ProportionDataset#reduceDataset()V°
@@ -46,7 +45,8 @@ $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitF
 getReleases()Elogic.dataset_manager.ProportionDataset#getReleases()Ljava/util/List;°
 +getReleaseFromItsIndex(Ljava/lang/Integer;)rlogic.dataset_manager.ProportionDataset#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;Q
 getNumOfReleases();logic.dataset_manager.ProportionDataset#getNumOfReleases()Iì
-$findOpeningVersion(Ljava/util/Date;)klogic.dataset_manager.ProportionDataset#findOpeningVersion(Ljava/util/Date;)Llogic/dataset_manager/Release;y
+$findOpeningVersion(Ljava/util/Date;)klogic.dataset_manager.ProportionDataset#findOpeningVersion(Ljava/util/Date;)Llogic/dataset_manager/Release;s
+#<init>(Llogic/bean/ProportionBean;)Llogic.dataset_manager.ProportionDataset#<init>(Llogic/bean/ProportionBean;)Vy
 &initializeBugsList(Ljava/lang/String;)Ologic.dataset_manager.ProportionDataset#initializeBugsList(Ljava/lang/String;)Vè
 "findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.ProportionDataset#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Release;ô
 'findReleaseFromName(Ljava/lang/String;)nlogic.dataset_manager.ProportionDataset#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;∆
@@ -1872,7 +1872,21 @@ $setSkin(Ljavafx/scene/control/Skin;)Bjavafx.scene.control.Control#setSkin(Ljav
 computeMinWidth(D)0javafx.scene.control.Control#computeMinWidth(D)DQ
 getCssMetaData()=javafx.scene.control.Control#getCssMetaData()Ljava/util/List;§
 AloadSkinClass(Ljavafx/scene/control/Skinnable;Ljava/lang/String;)_javafx.scene.control.Control#loadSkinClass(Ljavafx/scene/control/Skinnable;Ljava/lang/String;)V[
-getClassCssMetaData()Bjavafx.scene.control.Control#getClassCssMetaData()Ljava/util/List;È*
+getClassCssMetaData()Bjavafx.scene.control.Control#getClassCssMetaData()Ljava/util/List;”
+
+&javafx.scene.control.ProgressIndicatorjavafx.scene.control.ControlH
+setProgress(D)6javafx.scene.control.ProgressIndicator#setProgress(D)Vl
+createDefaultSkin()Ujavafx.scene.control.ProgressIndicator#createDefaultSkin()Ljavafx/scene/control/Skin;>
+	<init>(D)1javafx.scene.control.ProgressIndicator#<init>(D)V<
+<init>()0javafx.scene.control.ProgressIndicator#<init>()V‹
+OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)àjavafx.scene.control.ProgressIndicator#queryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Ljava/lang/Object;à
+indeterminateProperty()mjavafx.scene.control.ProgressIndicator#indeterminateProperty()Ljavafx/beans/property/ReadOnlyBooleanProperty;è
+indeterminatePropertyImpl()pjavafx.scene.control.ProgressIndicator#indeterminatePropertyImpl()Ljavafx/beans/property/ReadOnlyBooleanWrapper;R
+setIndeterminate(Z);javafx.scene.control.ProgressIndicator#setIndeterminate(Z)VN
+isIndeterminate()9javafx.scene.control.ProgressIndicator#isIndeterminate()ZF
+getProgress()5javafx.scene.control.ProgressIndicator#getProgress()Dv
+getInitialFocusTraversable()Vjavafx.scene.control.ProgressIndicator#getInitialFocusTraversable()Ljava/lang/Boolean;u
+progressProperty()_javafx.scene.control.ProgressIndicator#progressProperty()Ljavafx/beans/property/DoubleProperty;È*
 javafx.scene.control.Labeledjavafx.scene.control.Controlu
 textAlignmentProperty()Zjavafx.scene.control.Labeled#textAlignmentProperty()Ljavafx/beans/property/ObjectProperty;d
 getTextOverrun()Pjavafx.scene.control.Labeled#getTextOverrun()Ljavafx/scene/control/OverrunStyle;c
@@ -2073,12 +2087,12 @@ EnotifyPreloader(Ljavafx/application/Preloader$PreloaderNotification;)ejavafx.a
 (informationAlertShow(Ljava/lang/String;)<view.SceneSwitcher#informationAlertShow(Ljava/lang/String;)VN
 start(Ljavafx/stage/Stage;)/view.SceneSwitcher#start(Ljavafx/stage/Stage;)Vx
 0setControlChartScene(Ljavafx/event/ActionEvent;)Dview.SceneSwitcher#setControlChartScene(Ljavafx/event/ActionEvent;)V\
-"setHomeScene(Ljavafx/stage/Stage;)6view.SceneSwitcher#setHomeScene(Ljavafx/stage/Stage;)VÒ
-'logic.bean.BugginessAndProcessChartBeanjava.lang.ObjectV
-getDirectory()Dlogic.bean.BugginessAndProcessChartBean#getDirectory()Ljava/io/File;V
-getProject()Flogic.bean.BugginessAndProcessChartBean#getProject()Ljava/lang/String;X
-getOutputFile()Elogic.bean.BugginessAndProcessChartBean#getOutputFile()Ljava/io/File;©
-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)glogic.bean.BugginessAndProcessChartBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÒ
+"setHomeScene(Ljavafx/stage/Stage;)6view.SceneSwitcher#setHomeScene(Ljavafx/stage/Stage;)V´
+logic.bean.ProportionBeanjava.lang.ObjectH
+getDirectory()6logic.bean.ProportionBean#getDirectory()Ljava/io/File;H
+getProject()8logic.bean.ProportionBean#getProject()Ljava/lang/String;J
+getOutputFile()7logic.bean.ProportionBean#getOutputFile()Ljava/io/File;õ
+><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ylogic.bean.ProportionBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÒ
 java.io.Filejava.lang.Comparablejava.lang.Objectjava.io.Serializable&
 
 isHidden()java.io.File#isHidden()ZF
@@ -3500,20 +3514,23 @@ hashCode()java.lang.Boolean#hashCode()I3
 	getPath()<logic.abstracts.AbstractBoundary#getPath()Ljava/lang/String;µ
 $logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundary¶
 ><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)dlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VB
-runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V 
+runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V≤
 
 0logic.dataset_manager.ProcessControlChartDatasetlogic.dataset_manager.DatasetŸ
 QupdateFixBugNum(Llogic/dataset_manager/ProcessControlChartEntry;Ljava/util/List;)Élogic.dataset_manager.ProcessControlChartDataset#updateFixBugNum(Llogic/dataset_manager/ProcessControlChartEntry;Ljava/util/List;)VX
-computeFeatures()Clogic.dataset_manager.ProcessControlChartDataset#computeFeatures()Vò
-1<init>(Llogic/bean/BugginessAndProcessChartBean;)clogic.dataset_manager.ProcessControlChartDataset#<init>(Llogic/bean/BugginessAndProcessChartBean;)V[
+computeFeatures()Clogic.dataset_manager.ProcessControlChartDataset#computeFeatures()V[
 
 toString()Mlogic.dataset_manager.ProcessControlChartDataset#toString()Ljava/lang/String;P
 computeMean()?logic.dataset_manager.ProcessControlChartDataset#computeMean()VÇ
 &initializeBugsList(Ljava/lang/String;)Xlogic.dataset_manager.ProcessControlChartDataset#initializeBugsList(Ljava/lang/String;)VX
 computeVariance()Clogic.dataset_manager.ProcessControlChartDataset#computeVariance()Vj
 computeUpperControlLimit()Llogic.dataset_manager.ProcessControlChartDataset#computeUpperControlLimit()Vø
-=retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)~logic.dataset_manager.ProcessControlChartDataset#retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)Ljava/util/List;j
-computeLowerControlLimit()Llogic.dataset_manager.ProcessControlChartDataset#computeLowerControlLimit()Vˇ.
+=retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)~logic.dataset_manager.ProcessControlChartDataset#retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)Ljava/util/List;Ä
+%<init>(Llogic/bean/ProcessChartBean;)Wlogic.dataset_manager.ProcessControlChartDataset#<init>(Llogic/bean/ProcessChartBean;)Vj
+computeLowerControlLimit()Llogic.dataset_manager.ProcessControlChartDataset#computeLowerControlLimit()Vœ
+logic.bean.ProcessChartBeanlogic.bean.ProportionBeanO
+getThreshold()=logic.bean.ProcessChartBean#getThreshold()Ljava/lang/Integer;√
+Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)nlogic.bean.ProcessChartBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)Vˇ.
 java.util.Calendarjava.lang.Cloneablejava.lang.Comparablejava.lang.Objectjava.io.SerializableL
 equals(Ljava/lang/Object;).java.util.Calendar#equals(Ljava/lang/Object;)Zq
 $getDisplayName(IILjava/util/Locale;)Ijava.util.Calendar#getDisplayName(IILjava/util/Locale;)Ljava/lang/String;D
@@ -4066,10 +4083,10 @@ FsetSelectedExtensionFilter(Ljavafx/stage/FileChooser$ExtensionFilter;)`javafx.
 DfindSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)ájavafx.stage.FileChooser#findSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)Ljavafx/stage/FileChooser$ExtensionFilter;Å
 	view.Mainjava.lang.Object
 <init>()view.Main#<init>()VA
-main([Ljava/lang/String;)$view.Main#main([Ljava/lang/String;)Võ
+main([Ljava/lang/String;)$view.Main#main([Ljava/lang/String;)V˛
 .logic.controller.ProportionIncrementControllerjava.lang.ObjectD
-<init>()8logic.controller.ProportionIncrementController#<init>()Vê
-.run(Llogic/bean/BugginessAndProcessChartBean;)^logic.controller.ProportionIncrementController#run(Llogic/bean/BugginessAndProcessChartBean;)Vˆ2
+<init>()8logic.controller.ProportionIncrementController#<init>()Vt
+ run(Llogic/bean/ProportionBean;)Plogic.controller.ProportionIncrementController#run(Llogic/bean/ProportionBean;)Vˆ2
 org.json.JSONArrayjava.lang.Objectjava.lang.IterableA
 optString(I)1org.json.JSONArray#optString(I)Ljava/lang/String;[
 query(Ljava/lang/String;)>org.json.JSONArray#query(Ljava/lang/String;)Ljava/lang/Object;9
@@ -4496,13 +4513,154 @@ toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;É
 updateNumberOfRevision();logic.dataset_manager.ReleaseFile#updateNumberOfRevision()VA
 updateNauth()0logic.dataset_manager.ReleaseFile#updateNauth()VC
 updateChurn(I)1logic.dataset_manager.ReleaseFile#updateChurn(I)VJ
-	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;™
+	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;
 &view.ProcessControlChartFxmlController3view.ProcessControlChartAndProportionFxmlController<
-<init>()0view.ProcessControlChartFxmlController#<init>()Vå
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V«
-*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundary¨
-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)jlogic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VH
-runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()Vä
+<init>()0view.ProcessControlChartFxmlController#<init>()VD
+initialize()4view.ProcessControlChartFxmlController#initialize()Vå
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)VŒ%
+javafx.scene.control.Spinnerjavafx.scene.control.Control8
+increment())javafx.scene.control.Spinner#increment()Vq
+repeatDelayProperty()Xjavafx.scene.control.Spinner#repeatDelayProperty()Ljavafx/beans/property/ObjectProperty;X
+setText(Ljava/lang/Object;)9javafx.scene.control.Spinner#setText(Ljava/lang/Object;)V:
+isEditable()*javafx.scene.control.Spinner#isEditable()Z—
+OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)~javafx.scene.control.Spinner#queryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Ljava/lang/Object;W
+getEditor()Hjavafx.scene.control.Spinner#getEditor()Ljavafx/scene/control/TextField;ò
+;setValueFactory(Ljavafx/scene/control/SpinnerValueFactory;)Yjavafx.scene.control.Spinner#setValueFactory(Ljavafx/scene/control/SpinnerValueFactory;)V>
+setEditable(Z),javafx.scene.control.Spinner#setEditable(Z)V:
+<init>(DDDD)*javafx.scene.control.Spinner#<init>(DDDD)Vp
+'setInitialDelay(Ljavafx/util/Duration;)Ejavafx.scene.control.Spinner#setInitialDelay(Ljavafx/util/Duration;)V<
+commitValue()+javafx.scene.control.Spinner#commitValue()V∞
+G<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;)ejavafx.scene.control.Spinner#<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;)Vs
+valueFactoryProperty()Yjavafx.scene.control.Spinner#valueFactoryProperty()Ljavafx/beans/property/ObjectProperty;:
+decrement(I)*javafx.scene.control.Spinner#decrement(I)VY
+getInitialDelay()Djavafx.scene.control.Spinner#getInitialDelay()Ljavafx/util/Duration;∏
+KexecuteAccessibleAction(Ljavafx/scene/AccessibleAction;[Ljava/lang/Object;)ijavafx.scene.control.Spinner#executeAccessibleAction(Ljavafx/scene/AccessibleAction;[Ljava/lang/Object;)V2
+<init>()&javafx.scene.control.Spinner#<init>()V_
+getControlCssMetaData()Djavafx.scene.control.Spinner#getControlCssMetaData()Ljava/util/List;∞
+G<init>(Ljava/time/LocalTime;Ljava/time/LocalTime;Ljava/time/LocalTime;)ejavafx.scene.control.Spinner#<init>(Ljava/time/LocalTime;Ljava/time/LocalTime;Ljava/time/LocalTime;)Vd
+!setPromptText(Ljava/lang/String;)?javafx.scene.control.Spinner#setPromptText(Ljava/lang/String;)Vm
+valueProperty()Zjavafx.scene.control.Spinner#valueProperty()Ljavafx/beans/property/ReadOnlyObjectProperty;Q
+getPromptText()>javafx.scene.control.Spinner#getPromptText()Ljava/lang/String;o
+promptTextProperty()Wjavafx.scene.control.Spinner#promptTextProperty()Ljavafx/beans/property/StringProperty;n
+&setRepeatDelay(Ljavafx/util/Duration;)Djavafx.scene.control.Spinner#setRepeatDelay(Ljavafx/util/Duration;)VW
+getRepeatDelay()Cjavafx.scene.control.Spinner#getRepeatDelay()Ljavafx/util/Duration;ı
+i<init>(Ljava/time/LocalTime;Ljava/time/LocalTime;Ljava/time/LocalTime;JLjava/time/temporal/TemporalUnit;)ájavafx.scene.control.Spinner#<init>(Ljava/time/LocalTime;Ljava/time/LocalTime;Ljava/time/LocalTime;JLjava/time/temporal/TemporalUnit;)Vx
++<init>(Ljavafx/collections/ObservableList;)Ijavafx.scene.control.Spinner#<init>(Ljavafx/collections/ObservableList;)V:
+increment(I)*javafx.scene.control.Spinner#increment(I)VG
+
+getValue()9javafx.scene.control.Spinner#getValue()Ljava/lang/Object;8
+<init>(III))javafx.scene.control.Spinner#<init>(III)V:
+cancelEdit()*javafx.scene.control.Spinner#cancelEdit()Vs
+initialDelayProperty()Yjavafx.scene.control.Spinner#initialDelayProperty()Ljavafx/beans/property/ObjectProperty;m
+getValueFactory()Xjavafx.scene.control.Spinner#getValueFactory()Ljavafx/scene/control/SpinnerValueFactory;8
+decrement())javafx.scene.control.Spinner#decrement()V:
+<init>(IIII)*javafx.scene.control.Spinner#<init>(IIII)V>
+wrapValue(III),javafx.scene.control.Spinner#wrapValue(III)IÜ
+2<init>(Ljavafx/scene/control/SpinnerValueFactory;)Pjavafx.scene.control.Spinner#<init>(Ljavafx/scene/control/SpinnerValueFactory;)Vb
+createDefaultSkin()Kjavafx.scene.control.Spinner#createDefaultSkin()Ljavafx/scene/control/Skin;8
+<init>(DDD))javafx.scene.control.Spinner#<init>(DDD)Vo
+editorProperty()[javafx.scene.control.Spinner#editorProperty()Ljavafx/beans/property/ReadOnlyObjectProperty;“
+MwrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Äjavafx.scene.control.Spinner#wrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;l
+editableProperty()Vjavafx.scene.control.Spinner#editableProperty()Ljavafx/beans/property/BooleanProperty;ı
+i<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)ájavafx.scene.control.Spinner#<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)V[
+getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;Ì
+*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
+runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
+Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VÍ 
+java.text.NumberFormatjava.text.FormatP
+equals(Ljava/lang/Object;)2java.text.NumberFormat#equals(Ljava/lang/Object;)ZÖ
+)getScientificInstance(Ljava/util/Locale;)Xjava.text.NumberFormat#getScientificInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;N
+getMinimumIntegerDigits()1java.text.NumberFormat#getMinimumIntegerDigits()Iù
+8parseObject(Ljava/lang/String;Ljava/text/ParsePosition;)ajava.text.NumberFormat#parseObject(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;D
+isParseIntegerOnly(),java.text.NumberFormat#isParseIntegerOnly()ZX
+getAvailableLocales()?java.text.NumberFormat#getAvailableLocales()[Ljava/util/Locale;^
+!setCurrency(Ljava/util/Currency;)9java.text.NumberFormat#setCurrency(Ljava/util/Currency;)Vs
+ getInstance(Ljava/util/Locale;I)Ojava.text.NumberFormat#getInstance(Ljava/util/Locale;I)Ljava/text/NumberFormat;n
+)setRoundingMode(Ljava/math/RoundingMode;)Ajava.text.NumberFormat#setRoundingMode(Ljava/math/RoundingMode;)VM
+getInstance()<java.text.NumberFormat#getInstance()Ljava/text/NumberFormat;?
+	format(J)2java.text.NumberFormat#format(J)Ljava/lang/String;G
+fastFormat(D)6java.text.NumberFormat#fastFormat(D)Ljava/lang/String;@
+setGroupingUsed(Z)*java.text.NumberFormat#setGroupingUsed(Z)V[
+getIntegerInstance()Cjava.text.NumberFormat#getIntegerInstance()Ljava/text/NumberFormat;[
+getPercentInstance()Cjava.text.NumberFormat#getPercentInstance()Ljava/text/NumberFormat;0
+
+hashCode()"java.text.NumberFormat#hashCode()I?
+	format(D)2java.text.NumberFormat#format(D)Ljava/lang/String;R
+setMinimumFractionDigits(I)3java.text.NumberFormat#setMinimumFractionDigits(I)VÅ
+'getCurrencyInstance(Ljava/util/Locale;)Vjava.text.NumberFormat#getCurrencyInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;P
+getMaximumFractionDigits()2java.text.NumberFormat#getMaximumFractionDigits()I
+&getIntegerInstance(Ljava/util/Locale;)Ujava.text.NumberFormat#getIntegerInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;,
+<init>() java.text.NumberFormat#<init>()Vj
+'readObject(Ljava/io/ObjectInputStream;)?java.text.NumberFormat#readObject(Ljava/io/ObjectInputStream;)VI
+getCurrency()8java.text.NumberFormat#getCurrency()Ljava/util/Currency;<
+isGroupingUsed()(java.text.NumberFormat#isGroupingUsed()ZY
+getNumberInstance()Bjava.text.NumberFormat#getNumberInstance()Ljava/text/NumberFormat;…
+Kformat(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)zjava.text.NumberFormat#format(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;P
+setMaximumIntegerDigits(I)2java.text.NumberFormat#setMaximumIntegerDigits(I)VP
+setMinimumIntegerDigits(I)2java.text.NumberFormat#setMinimumIntegerDigits(I)V
+&getPercentInstance(Ljava/util/Locale;)Ujava.text.NumberFormat#getPercentInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;N
+getMaximumIntegerDigits()1java.text.NumberFormat#getMaximumIntegerDigits()I_
+parse(Ljava/lang/String;)Bjava.text.NumberFormat#parse(Ljava/lang/String;)Ljava/lang/Number;”
+PgetInstance(Lsun/util/locale/provider/LocaleProviderAdapter;Ljava/util/Locale;I)java.text.NumberFormat#getInstance(Lsun/util/locale/provider/LocaleProviderAdapter;Ljava/util/Locale;I)Ljava/text/NumberFormat;R
+setMaximumFractionDigits(I)3java.text.NumberFormat#setMaximumFractionDigits(I)Va
+getScientificInstance()Fjava.text.NumberFormat#getScientificInstance()Ljava/text/NumberFormat;}
+%getNumberInstance(Ljava/util/Locale;)Tjava.text.NumberFormat#getNumberInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;q
+getInstance(Ljava/util/Locale;)Njava.text.NumberFormat#getInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;P
+getMinimumFractionDigits()2java.text.NumberFormat#getMinimumFractionDigits()IH
+setParseIntegerOnly(Z).java.text.NumberFormat#setParseIntegerOnly(Z)VU
+getRoundingMode()@java.text.NumberFormat#getRoundingMode()Ljava/math/RoundingMode;]
+getCurrencyInstance()Djava.text.NumberFormat#getCurrencyInstance()Ljava/text/NumberFormat;;
+clone()0java.text.NumberFormat#clone()Ljava/lang/Object;n
+)writeObject(Ljava/io/ObjectOutputStream;)Ajava.text.NumberFormat#writeObject(Ljava/io/ObjectOutputStream;)Vb
+javafx.util.StringConverterjava.lang.Object1
+<init>()%javafx.util.StringConverter#<init>()Vë
+,javafx.util.converter.IntegerStringConverterjavafx.util.StringConverterB
+<init>()6javafx.util.converter.IntegerStringConverter#<init>()VÄ
+fromString(Ljava/lang/String;)^javafx.util.converter.IntegerStringConverter#fromString(Ljava/lang/String;)Ljava/lang/Integer;}
+toString(Ljava/lang/Integer;)\javafx.util.converter.IntegerStringConverter#toString(Ljava/lang/Integer;)Ljava/lang/String;Ü
+"javafx.scene.control.TextFormatterjava.lang.Objectj
+getValueConverter()Sjavafx.scene.control.TextFormatter#getValueConverter()Ljavafx/util/StringConverter;_
+getFilter()Pjavafx.scene.control.TextFormatter#getFilter()Ljava/util/function/UnaryOperator;⁄
+Y<init>(Ljavafx/util/StringConverter;Ljava/lang/Object;Ljava/util/function/UnaryOperator;)}javafx.scene.control.TextFormatter#<init>(Ljavafx/util/StringConverter;Ljava/lang/Object;Ljava/util/function/UnaryOperator;)Vr
+%<init>(Ljavafx/util/StringConverter;)Ijavafx.scene.control.TextFormatter#<init>(Ljavafx/util/StringConverter;)V`
+setValue(Ljava/lang/Object;)@javafx.scene.control.TextFormatter#setValue(Ljava/lang/Object;)V|
+*<init>(Ljava/util/function/UnaryOperator;)Njavafx.scene.control.TextFormatter#<init>(Ljava/util/function/UnaryOperator;)VM
+
+getValue()?javafx.scene.control.TextFormatter#getValue()Ljava/lang/Object;N
+unbindFromControl()7javafx.scene.control.TextFormatter#unbindFromControl()Vk
+valueProperty()Xjavafx.scene.control.TextFormatter#valueProperty()Ljavafx/beans/property/ObjectProperty;@
+updateText()0javafx.scene.control.TextFormatter#updateText()VÄ
+,bindToControl(Ljava/util/function/Consumer;)Pjavafx.scene.control.TextFormatter#bindToControl(Ljava/util/function/Consumer;)Vf
+updateValue(Ljava/lang/String;)Cjavafx.scene.control.TextFormatter#updateValue(Ljava/lang/String;)Vñ
+7<init>(Ljavafx/util/StringConverter;Ljava/lang/Object;)[javafx.scene.control.TextFormatter#<init>(Ljavafx/util/StringConverter;Ljava/lang/Object;)V∞
+(javafx.scene.control.SpinnerValueFactoryjava.lang.ObjectÑ
++setConverter(Ljavafx/util/StringConverter;)Ujavafx.scene.control.SpinnerValueFactory#setConverter(Ljavafx/util/StringConverter;)V>
+<init>()2javafx.scene.control.SpinnerValueFactory#<init>()Vf
+setValue(Ljava/lang/Object;)Fjavafx.scene.control.SpinnerValueFactory#setValue(Ljava/lang/Object;)VS
+
+getValue()Ejavafx.scene.control.SpinnerValueFactory#getValue()Ljava/lang/Object;y
+converterProperty()bjavafx.scene.control.SpinnerValueFactory#converterProperty()Ljavafx/beans/property/ObjectProperty;|
+wrapAroundProperty()djavafx.scene.control.SpinnerValueFactory#wrapAroundProperty()Ljavafx/beans/property/BooleanProperty;q
+valueProperty()^javafx.scene.control.SpinnerValueFactory#valueProperty()Ljavafx/beans/property/ObjectProperty;f
+getConverter()Tjavafx.scene.control.SpinnerValueFactory#getConverter()Ljavafx/util/StringConverter;J
+isWrapAround()8javafx.scene.control.SpinnerValueFactory#isWrapAround()ZN
+setWrapAround(Z):javafx.scene.control.SpinnerValueFactory#setWrapAround(Z)VÁ
+Cjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory(javafx.scene.control.SpinnerValueFactory†
+amountToStepByProperty()Éjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#amountToStepByProperty()Ljavafx/beans/property/IntegerProperty;â
+minProperty()xjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#minProperty()Ljavafx/beans/property/IntegerProperty;Y
+getMax()Mjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#getMax()Io
+getAmountToStepBy()Xjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#getAmountToStepBy()Ia
+increment(I)Qjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#increment(I)Vq
+setAmountToStepBy(I)Yjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#setAmountToStepBy(I)V_
+<init>(III)Pjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#<init>(III)Va
+decrement(I)Qjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#decrement(I)Va
+<init>(IIII)Qjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#<init>(IIII)VY
+getMin()Mjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#getMin()I]
+
+<init>(II)Ojavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#<init>(II)Vâ
+maxProperty()xjavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#maxProperty()Ljavafx/beans/property/IntegerProperty;[
+	setMax(I)Njavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#setMax(I)V[
+	setMin(I)Njavafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#setMin(I)Vä
 java.text.ParsePositionjava.lang.ObjectQ
 equals(Ljava/lang/Object;)3java.text.ParsePosition#equals(Ljava/lang/Object;)Z;
 getErrorIndex()(java.text.ParsePosition#getErrorIndex()IB
@@ -4514,10 +4672,10 @@ toString()4java.text.ParsePosition#toString()Ljava/lang/String;=
 getIndex()#java.text.ParsePosition#getIndex()I3
 setIndex(I)$java.text.ParsePosition#setIndex(I)V1
 
-hashCode()#java.text.ParsePosition#hashCode()Iõ
+hashCode()#java.text.ParsePosition#hashCode()IÇ
 .logic.controller.ProcessControlChartControllerjava.lang.ObjectD
-<init>()8logic.controller.ProcessControlChartController#<init>()Vê
-.run(Llogic/bean/BugginessAndProcessChartBean;)^logic.controller.ProcessControlChartController#run(Llogic/bean/BugginessAndProcessChartBean;)V%
+<init>()8logic.controller.ProcessControlChartController#<init>()Vx
+"run(Llogic/bean/ProcessChartBean;)Rlogic.controller.ProcessControlChartController#run(Llogic/bean/ProcessChartBean;)V%
 java.io.Flushablejava.lang.ObjectÚ
 java.io.Writerjava.lang.Appendablejava.io.Closeablejava.lang.Objectjava.io.Flushable&
 	write([C)java.io.Writer#write([C)Vc

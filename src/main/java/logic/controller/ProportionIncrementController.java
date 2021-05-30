@@ -1,6 +1,5 @@
 package logic.controller;
 
-import logic.bean.ProcessChartBean;
 import logic.bean.ProportionBean;
 import logic.dataset_manager.ProportionDataset;
 import logic.dataset_manager.Release;

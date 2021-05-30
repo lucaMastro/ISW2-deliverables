@@ -1,6 +1,5 @@
 package logic.proportion_algo;
 
-import logic.bean.ProcessChartBean;
 import logic.bean.ProportionBean;
 import logic.dataset_manager.BugTicket;
 import logic.dataset_manager.Dataset;

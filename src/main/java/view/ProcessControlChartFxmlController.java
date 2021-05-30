@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TextFormatter;
-import javafx.scene.input.MouseEvent;
 import javafx.util.converter.IntegerStringConverter;
 import logic.boundary.ProcessControlChartBoundary;
 import logic.exception.InvalidRangeException;
@@ -45,10 +44,10 @@ public class ProcessControlChartFxmlController extends ProcessControlChartAndPro
         super.initialize();
 
         //prevent chars value on spinner
-        NumberFormat format = NumberFormat.getIntegerInstance();
+        var format = NumberFormat.getIntegerInstance();
         UnaryOperator<TextFormatter.Change> filter = c -> {
             if (c.isContentChange()) {
-                ParsePosition parsePosition = new ParsePosition(0);
+                var parsePosition = new ParsePosition(0);
                 // NumberFormat evaluates the beginning of the text
                 format.parse(c.getControlNewText(), parsePosition);
                 if (parsePosition.getIndex() == 0 ||
@@ -59,7 +58,7 @@ public class ProcessControlChartFxmlController extends ProcessControlChartAndPro
             }
             return c;
         };
-        TextFormatter<Integer> priceFormatter = new TextFormatter<Integer>(
+        TextFormatter<Integer> priceFormatter = new TextFormatter<>(
                 new IntegerStringConverter(), 0, filter);
         var fact = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, Integer.MAX_VALUE);
         this.thresholdSpinner.setValueFactory(fact);

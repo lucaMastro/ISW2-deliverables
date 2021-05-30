@@ -1,6 +1,5 @@
 package logic.dataset_manager;
 
-import logic.bean.ProcessChartBean;
 import logic.bean.JiraBeanInformations;
 import logic.bean.ProportionBean;
 import logic.exception.InvalidRangeException;

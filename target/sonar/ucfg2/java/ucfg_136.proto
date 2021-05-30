@@ -1,16 +1,16 @@
 
-<logic.abstracts.AbstractBoundary#getPath()Ljava/lang/String;v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ("1*ß
-1v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (Ì
-É
-v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
-%0java.lang.String"__id*1*/"
- logic.abstracts.AbstractBoundary"	
-dirPath"’
-v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+8logic.bean.ProportionBean#getProject()Ljava/lang/String;o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java ("1*Ã
+1o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (¾
+»
+o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (
+%0java.lang.String"__id***(
+logic.bean.ProportionBean"	
+project"‹
+o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (
 
-%0java.lang.StringB$"
- logic.abstracts.AbstractBoundary
+%0java.lang.StringB
+logic.bean.ProportionBean

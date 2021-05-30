@@ -1,16 +1,16 @@
 
-Elogic.bean.BugginessAndProcessChartBean#getOutputFile()Ljava/io/File;}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java ("1*ò
-1}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (Õ
-Ò
-}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
-%0java.io.File"__id*7*5)
-'logic.bean.BugginessAndProcessChartBean"
-output"•
-}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/BugginessAndProcessChartBean.java (
-
-%0java.io.FileB+)
-'logic.bean.BugginessAndProcessChartBean
+=logic.bean.ProcessChartBean#getThreshold()Ljava/lang/Integer;q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java ("1*Ï
+1q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (Å
+Â
+q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (
+%0java.lang.Integer"__id*.*,
+logic.bean.ProcessChartBean"
+	threshold"Ž
+q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (
+
+%0java.lang.IntegerB
+logic.bean.ProcessChartBean

@@ -1,6 +1,5 @@
 package logic.dataset_manager;
 
-import logic.bean.ProcessChartBean;
 import logic.bean.ProportionBean;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
