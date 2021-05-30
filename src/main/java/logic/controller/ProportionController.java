@@ -16,7 +16,7 @@ public class ProportionController {
     public void run(ProportionBean bean)
             throws IOException, GitAPIException, InvalidRangeException, NotAvaiableAlgorithm {
 
-        ProportionDataset dataset = null;
+        ProportionDataset dataset;
 
         /*  Checking proportion algo to use */
         switch (bean.getProportionAlgo()){
