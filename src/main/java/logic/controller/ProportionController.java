@@ -16,7 +16,7 @@ public class ProportionController {
     public void run(ProportionBean bean)
             throws IOException, GitAPIException, InvalidRangeException, NotAvaiableAlgorithm {
 
-        ProportionDataset dataset;
+        ProportionDataset dataset = null;
 
         /*  Checking proportion algo to use */
         switch (bean.getProportionAlgo()){
@@ -33,6 +33,7 @@ public class ProportionController {
 
         var file = bean.getOutputFile();
         try (var fw = new FileWriter(file)) {
+            assert dataset != null;
             fw.append(dataset.toString());
         } catch (Exception e) {
             var logger = Logger.getLogger(ProportionIncrement.class.getName());
