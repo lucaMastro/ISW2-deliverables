@@ -16,29 +16,32 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()I∏
+hashCode()java.lang.Object#hashCode()IÃ
 )logic.proportion_algo.ProportionIncrementjava.lang.Objectk
 updateBugsAV(Ljava/util/List;)Ilogic.proportion_algo.ProportionIncrement#updateBugsAV(Ljava/util/List;)V{
-&computeProportion(Ljava/lang/Integer;)Qlogic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)Ve
+&computeProportion(Ljava/lang/Integer;)Qlogic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)Vë
+1<init>(Llogic/dataset_manager/ProportionDataset;)\logic.proportion_algo.ProportionIncrement#<init>(Llogic/dataset_manager/ProportionDataset;)Ve
 getDataset()Ulogic.proportion_algo.ProportionIncrement#getDataset()Llogic/dataset_manager/Dataset;m
 computePvalue(Ljava/util/List;)Jlogic.proportion_algo.ProportionIncrement#computePvalue(Ljava/util/List;)Vu
 #<init>(Llogic/bean/ProportionBean;)Nlogic.proportion_algo.ProportionIncrement#<init>(Llogic/bean/ProportionBean;)Vg
 computeProportionIncrement()Glogic.proportion_algo.ProportionIncrement#computeProportionIncrement()VY
-setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()VÈ
+setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()VÔ
 logic.dataset_manager.Datasetjava.lang.ObjectN
 getFixedBugs()<logic.dataset_manager.Dataset#getFixedBugs()Ljava/util/List;Ç
-!findGitCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;i
-#<init>(Llogic/bean/ProportionBean;)Blogic.dataset_manager.Dataset#<init>(Llogic/bean/ProportionBean;)Và
+!findGitCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;à
 $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitFromId(Ljava/lang/String;)Llogic/dataset_manager/Commit;E
-getNumOfCommits()0logic.dataset_manager.Dataset#getNumOfCommits()Ià
+getNumOfCommits()0logic.dataset_manager.Dataset#getNumOfCommits()Io
+&<init>(Llogic/abstracts/AbstractBean;)Elogic.dataset_manager.Dataset#<init>(Llogic/abstracts/AbstractBean;)Và
 +findCommitsFromTicketId(Ljava/lang/String;)Ylogic.dataset_manager.Dataset#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;Ç
 !findSvnCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;ï
 9initializeCommitList(Llogic/dataset_manager/JgitManager;)Xlogic.dataset_manager.Dataset#initializeCommitList(Llogic/dataset_manager/JgitManager;)V|
-getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;‡
+getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;¥
 'logic.dataset_manager.ProportionDatasetlogic.dataset_manager.Datasetâ
 getRelease(Ljava/lang/Integer;)flogic.dataset_manager.ProportionDataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;O
 computeFeatures():logic.dataset_manager.ProportionDataset#computeFeatures()VW
-removeRevertCommits()>logic.dataset_manager.ProportionDataset#removeRevertCommits()V¢
+removeRevertCommits()>logic.dataset_manager.ProportionDataset#removeRevertCommits()VR
+
+toString()Dlogic.dataset_manager.ProportionDataset#toString()Ljava/lang/String;¢
 3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)klogic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;K
 reduceDataset()8logic.dataset_manager.ProportionDataset#reduceDataset()V°
 :initializeReleaseList(Llogic/dataset_manager/JgitManager;)clogic.dataset_manager.ProportionDataset#initializeReleaseList(Llogic/dataset_manager/JgitManager;)VV
@@ -1094,7 +1097,59 @@ LbinarySearch0([Ljava/lang/Object;IILjava/lang/Object;Ljava/util/Comparator;)^j
 +fill([Ljava/lang/Object;Ljava/lang/Object;)=java.util.Arrays#fill([Ljava/lang/Object;Ljava/lang/Object;)V?
 toString([D)/java.util.Arrays#toString([D)Ljava/lang/String;*
 
-sort([JII)java.util.Arrays#sort([JII)Væ
+sort([JII)java.util.Arrays#sort([JII)Vï
+%logic.controller.ProportionControllerjava.lang.Object;
+<init>()/logic.controller.ProportionController#<init>()Vk
+ run(Llogic/bean/ProportionBean;)Glogic.controller.ProportionController#run(Llogic/bean/ProportionBean;)VØ
+BproportionIncrementMode(Llogic/dataset_manager/ProportionDataset;)ilogic.controller.ProportionController#proportionIncrementMode(Llogic/dataset_manager/ProportionDataset;)V∫
+logic.abstracts.AbstractBeanjava.lang.ObjectK
+getDirectory()9logic.abstracts.AbstractBean#getDirectory()Ljava/io/File;K
+getProject();logic.abstracts.AbstractBean#getProject()Ljava/lang/String;M
+getOutputFile():logic.abstracts.AbstractBean#getOutputFile()Ljava/io/File;û
+><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)\logic.abstracts.AbstractBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V‰
+logic.bean.ProportionBeanlogic.abstracts.AbstractBeang
+getProportionAlgo()Plogic.bean.ProportionBean#getProportionAlgo()Llogic/enums/ProportionAlgoOptions;ø
+P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)klogic.bean.ProportionBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Võ
+$logic.exception.NotAvaiableAlgorithmjava.lang.Exception^
+<init>(Ljava/lang/String;)@logic.exception.NotAvaiableAlgorithm#<init>(Ljava/lang/String;)V(
+java.lang.Appendablejava.lang.Object>
+java.io.Closeablejava.lang.Objectjava.lang.AutoCloseable%
+java.io.Flushablejava.lang.ObjectÚ
+java.io.Writerjava.lang.Appendablejava.io.Closeablejava.lang.Objectjava.io.Flushable&
+	write([C)java.io.Writer#write([C)Vc
+ append(Ljava/lang/CharSequence;)?java.io.Writer#append(Ljava/lang/CharSequence;)Ljava/io/Writer;$
+<init>()java.io.Writer#<init>()V5
+	append(C)(java.io.Writer#append(C)Ljava/io/Writer;g
+"append(Ljava/lang/CharSequence;II)Ajava.io.Writer#append(Ljava/lang/CharSequence;II)Ljava/io/Writer;J
+write(Ljava/lang/String;II)+java.io.Writer#write(Ljava/lang/String;II)V$
+write(I)java.io.Writer#write(I)V;
+nullWriter()+java.io.Writer#nullWriter()Ljava/io/Writer;F
+write(Ljava/lang/String;))java.io.Writer#write(Ljava/lang/String;)VH
+<init>(Ljava/lang/Object;)*java.io.Writer#<init>(Ljava/lang/Object;)V“	
+java.io.OutputStreamWriterjava.io.Writerû
+?<init>(Ljava/io/OutputStream;Ljava/nio/charset/CharsetEncoder;)[java.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/nio/charset/CharsetEncoder;)Vo
+ append(Ljava/lang/CharSequence;)Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;K
+getEncoding():java.io.OutputStreamWriter#getEncoding()Ljava/lang/String;s
+"append(Ljava/lang/CharSequence;II)Mjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;II)Ljava/io/Writer;Ä
+0<init>(Ljava/io/OutputStream;Ljava/lang/String;)Ljava.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/lang/String;)V\
+<init>(Ljava/io/OutputStream;):java.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;)VV
+write(Ljava/lang/String;II)7java.io.OutputStreamWriter#write(Ljava/lang/String;II)V.
+flush()#java.io.OutputStreamWriter#flush()V0
+write(I)$java.io.OutputStreamWriter#write(I)V:
+flushBuffer())java.io.OutputStreamWriter#flushBuffer()V6
+write([CII)'java.io.OutputStreamWriter#write([CII)V.
+close()#java.io.OutputStreamWriter#close()Vê
+8<init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)Tjava.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V¥
+java.io.FileWriterjava.io.OutputStreamWriterz
+1<init>(Ljava/io/File;Ljava/nio/charset/Charset;Z)Ejava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;Z)VF
+<init>(Ljava/io/File;Z)+java.io.FileWriter#<init>(Ljava/io/File;Z)VÇ
+5<init>(Ljava/lang/String;Ljava/nio/charset/Charset;Z)Ijava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;Z)VN
+<init>(Ljava/lang/String;Z)/java.io.FileWriter#<init>(Ljava/lang/String;Z)VD
+<init>(Ljava/io/File;)*java.io.FileWriter#<init>(Ljava/io/File;)VL
+<init>(Ljava/lang/String;).java.io.FileWriter#<init>(Ljava/lang/String;)Vx
+0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Djava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)VÄ
+4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Hjava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)VX
+ <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)Væ
 logic.bean.CloneRepositoryBeanjava.lang.Objectt
 (<init>(Ljava/lang/String;Ljava/io/File;)Hlogic.bean.CloneRepositoryBean#<init>(Ljava/lang/String;Ljava/io/File;)VM
 getOutputDir();logic.bean.CloneRepositoryBean#getOutputDir()Ljava/io/File;E
@@ -1107,9 +1162,109 @@ sort([JII)java.util.Arrays#sort([JII)Væ
 "view.CloneRepositoryFxmlControllerview.BasicPageFxmlController8
 <init>(),view.CloneRepositoryFxmlController#<init>()V@
 initialize()0view.CloneRepositoryFxmlController#initialize()Và
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Tview.CloneRepositoryFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V2
-javafx.scene.control.Skinnablejava.lang.Object,
-javafx.event.EventTargetjava.lang.Objectz
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Tview.CloneRepositoryFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V,
+javafx.concurrent.Workerjava.lang.Object,
+javafx.event.EventTargetjava.lang.Object&
+java.lang.Runnablejava.lang.Object/
+java.util.concurrent.Futurejava.lang.Objecth
+#java.util.concurrent.RunnableFuturejava.util.concurrent.Futurejava.lang.Objectjava.lang.Runnable€
+java.util.concurrent.FutureTask#java.util.concurrent.RunnableFuturejava.lang.Objectk
+#setException(Ljava/lang/Throwable;)Djava.util.concurrent.FutureTask#setException(Ljava/lang/Throwable;)Vq
+&handlePossibleCancellationInterrupt(I)Gjava.util.concurrent.FutureTask#handlePossibleCancellationInterrupt(I)VI
+finishCompletion()3java.util.concurrent.FutureTask#finishCompletion()VJ
+
+toString()<java.util.concurrent.FutureTask#toString()Ljava/lang/String;?
+runAndReset().java.util.concurrent.FutureTask#runAndReset()ZS
+set(Ljava/lang/Object;)8java.util.concurrent.FutureTask#set(Ljava/lang/Object;)V5
+isDone())java.util.concurrent.FutureTask#isDone()Z@
+get()7java.util.concurrent.FutureTask#get()Ljava/lang/Object;Å
+.<init>(Ljava/lang/Runnable;Ljava/lang/Object;)Ojava.util.concurrent.FutureTask#<init>(Ljava/lang/Runnable;Ljava/lang/Object;)V/
+run()&java.util.concurrent.FutureTask#run()Vï
+8removeWaiter(Ljava/util/concurrent/FutureTask$WaitNode;)Yjava.util.concurrent.FutureTask#removeWaiter(Ljava/util/concurrent/FutureTask$WaitNode;)VÄ
+%get(JLjava/util/concurrent/TimeUnit;)Wjava.util.concurrent.FutureTask#get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;1
+done()'java.util.concurrent.FutureTask#done()V?
+awaitDone(ZJ).java.util.concurrent.FutureTask#awaitDone(ZJ)Is
+'<init>(Ljava/util/concurrent/Callable;)Hjava.util.concurrent.FutureTask#<init>(Ljava/util/concurrent/Callable;)V7
+	cancel(Z)*java.util.concurrent.FutureTask#cancel(Z)ZH
+	report(I);java.util.concurrent.FutureTask#report(I)Ljava/lang/Object;?
+isCancelled().java.util.concurrent.FutureTask#isCancelled()Zî0
+javafx.concurrent.Taskjavafx.concurrent.Workerjava.util.concurrent.FutureTaskjavafx.event.EventTargetg
+titleProperty()Tjavafx.concurrent.Task#titleProperty()Ljavafx/beans/property/ReadOnlyStringProperty;.
+	running()!javafx.concurrent.Task#running()V6
+getWorkDone()%javafx.concurrent.Task#getWorkDone()D®
+FremoveEventFilter(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)^javafx.concurrent.Task#removeEventFilter(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)V∞
+:buildEventDispatchChain(Ljavafx/event/EventDispatchChain;)rjavafx.concurrent.Task#buildEventDispatchChain(Ljavafx/event/EventDispatchChain;)Ljavafx/event/EventDispatchChain;g
+stateProperty()Tjavafx.concurrent.Task#stateProperty()Ljavafx/beans/property/ReadOnlyObjectProperty;6
+getProgress()%javafx.concurrent.Task#getProgress()DE
+getMessage()5javafx.concurrent.Task#getMessage()Ljava/lang/String;^
+!updateMessage(Ljava/lang/String;)9javafx.concurrent.Task#updateMessage(Ljava/lang/String;)V8
+getTotalWork()&javafx.concurrent.Task#getTotalWork()DV
+getOnCancelled()Bjavafx.concurrent.Task#getOnCancelled()Ljavafx/event/EventHandler;2
+scheduled()#javafx.concurrent.Task#scheduled()VJ
+isFxApplicationThread()/javafx.concurrent.Task#isFxApplicationThread()Z2
+cancelled()#javafx.concurrent.Task#cancelled()Vv
+-<init>(Ljavafx/concurrent/Task$TaskCallable;)Ejavafx.concurrent.Task#<init>(Ljavafx/concurrent/Task$TaskCallable;)V,
+<init>() javafx.concurrent.Task#<init>()V2
+succeeded()#javafx.concurrent.Task#succeeded()VT
+setValue(Ljava/lang/Object;)4javafx.concurrent.Task#setValue(Ljava/lang/Object;)Vg
+valueProperty()Tjavafx.concurrent.Task#valueProperty()Ljavafx/beans/property/ReadOnlyObjectProperty;.
+	cancel(Z)!javafx.concurrent.Task#cancel(Z)Z@
+updateProgress(JJ)*javafx.concurrent.Task#updateProgress(JJ)Vm
+workDoneProperty()Wjavafx.concurrent.Task#workDoneProperty()Ljavafx/beans/property/ReadOnlyDoubleProperty;O
+
+getState()Ajavafx.concurrent.Task#getState()Ljavafx/concurrent/Worker$State;V
+getOnSucceeded()Bjavafx.concurrent.Task#getOnSucceeded()Ljavafx/event/EventHandler;L
+getException():javafx.concurrent.Task#getException()Ljava/lang/Throwable;R
+getOnRunning()@javafx.concurrent.Task#getOnRunning()Ljavafx/event/EventHandler;l
+runningProperty()Wjavafx.concurrent.Task#runningProperty()Ljavafx/beans/property/ReadOnlyBooleanProperty;o
+totalWorkProperty()Xjavafx.concurrent.Task#totalWorkProperty()Ljavafx/beans/property/ReadOnlyDoubleProperty;V
+getOnScheduled()Bjavafx.concurrent.Task#getOnScheduled()Ljavafx/event/EventHandler;B
+_updateProgress(DD)+javafx.concurrent.Task#_updateProgress(DD)V§
+DsetEventHandler(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)\javafx.concurrent.Task#setEventHandler(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)VX
+runLater(Ljava/lang/Runnable;)6javafx.concurrent.Task#runLater(Ljava/lang/Runnable;)Vr
++setOnSucceeded(Ljavafx/event/EventHandler;)Cjavafx.concurrent.Task#setOnSucceeded(Ljavafx/event/EventHandler;)Vo
+exceptionProperty()Xjavafx.concurrent.Task#exceptionProperty()Ljavafx/beans/property/ReadOnlyObjectProperty;k
+onScheduledProperty()Rjavafx.concurrent.Task#onScheduledProperty()Ljavafx/beans/property/ObjectProperty;e
+onFailedProperty()Ojavafx.concurrent.Task#onFailedProperty()Ljavafx/beans/property/ObjectProperty;,
+failed() javafx.concurrent.Task#failed()VZ
+getEventHelper()Fjavafx.concurrent.Task#getEventHelper()Ljavafx/concurrent/EventHelper;m
+progressProperty()Wjavafx.concurrent.Task#progressProperty()Ljavafx/beans/property/ReadOnlyDoubleProperty;A
+
+getTitle()3javafx.concurrent.Task#getTitle()Ljava/lang/String;:
+setTotalWork(D)'javafx.concurrent.Task#setTotalWork(D)VZ
+fireEvent(Ljavafx/event/Event;)7javafx.concurrent.Task#fireEvent(Ljavafx/event/Event;)V¢
+CaddEventFilter(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)[javafx.concurrent.Task#addEventFilter(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)V2
+isRunning()#javafx.concurrent.Task#isRunning()Zr
++setOnScheduled(Ljavafx/event/EventHandler;)Cjavafx.concurrent.Task#setOnScheduled(Ljavafx/event/EventHandler;)V8
+setProgress(D)&javafx.concurrent.Task#setProgress(D)VZ
+updateTitle(Ljava/lang/String;)7javafx.concurrent.Task#updateTitle(Ljava/lang/String;)Vr
++setOnCancelled(Ljavafx/event/EventHandler;)Cjavafx.concurrent.Task#setOnCancelled(Ljavafx/event/EventHandler;)Vk
+onSucceededProperty()Rjavafx.concurrent.Task#onSucceededProperty()Ljavafx/beans/property/ObjectProperty;,
+cancel() javafx.concurrent.Task#cancel()Z@
+updateProgress(DD)*javafx.concurrent.Task#updateProgress(DD)V6
+setRunning(Z)%javafx.concurrent.Task#setRunning(Z)V§
+DaddEventHandler(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)\javafx.concurrent.Task#addEventHandler(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)V™
+GremoveEventHandler(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)_javafx.concurrent.Task#removeEventHandler(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)VA
+
+getValue()3javafx.concurrent.Task#getValue()Ljava/lang/Object;p
+*setState(Ljavafx/concurrent/Worker$State;)Bjavafx.concurrent.Task#setState(Ljavafx/concurrent/Worker$State;)VP
+getOnFailed()?javafx.concurrent.Task#getOnFailed()Ljavafx/event/EventHandler;8
+setWorkDone(D)&javafx.concurrent.Task#setWorkDone(D)V6
+checkThread()%javafx.concurrent.Task#checkThread()Vl
+(setOnFailed(Ljavafx/event/EventHandler;)@javafx.concurrent.Task#setOnFailed(Ljavafx/event/EventHandler;)Vn
+)setOnRunning(Ljavafx/event/EventHandler;)Ajavafx.concurrent.Task#setOnRunning(Ljavafx/event/EventHandler;)Vd
+$_setException(Ljava/lang/Throwable;)<javafx.concurrent.Task#_setException(Ljava/lang/Throwable;)Vk
+messageProperty()Vjavafx.concurrent.Task#messageProperty()Ljavafx/beans/property/ReadOnlyStringProperty;Z
+updateValue(Ljava/lang/Object;)7javafx.concurrent.Task#updateValue(Ljava/lang/Object;)Vg
+onRunningProperty()Pjavafx.concurrent.Task#onRunningProperty()Ljavafx/beans/property/ObjectProperty;k
+onCancelledProperty()Rjavafx.concurrent.Task#onCancelledProperty()Ljavafx/beans/property/ObjectProperty;⁄
+$view.CloneRepositoryFxmlController$1javafx.concurrent.TaskE
+call();view.CloneRepositoryFxmlController$1#call()Ljava/lang/Void;“
+T<init>(Lview/CloneRepositoryFxmlController;Llogic/boundary/CloneRepositoryBoundary;)zview.CloneRepositoryFxmlController$1#<init>(Lview/CloneRepositoryFxmlController;Llogic/boundary/CloneRepositoryBoundary;)Vë
+&logic.boundary.CloneRepositoryBoundaryjava.lang.ObjectÑ
+,<init>(Ljava/lang/String;Ljava/lang/String;)Tlogic.boundary.CloneRepositoryBoundary#<init>(Ljava/lang/String;Ljava/lang/String;)VN
+cloneRepository()9logic.boundary.CloneRepositoryBoundary#cloneRepository()V2
+javafx.scene.control.Skinnablejava.lang.Objectz
 javafx.css.Styleablejava.lang.ObjectP
 getStyleableNode():javafx.css.Styleable#getStyleableNode()Ljavafx/scene/Node;“›
 javafx.scene.Nodejavafx.event.EventTargetjava.lang.Objectjavafx.css.Styleableh
@@ -1872,21 +2027,7 @@ $setSkin(Ljavafx/scene/control/Skin;)Bjavafx.scene.control.Control#setSkin(Ljav
 computeMinWidth(D)0javafx.scene.control.Control#computeMinWidth(D)DQ
 getCssMetaData()=javafx.scene.control.Control#getCssMetaData()Ljava/util/List;§
 AloadSkinClass(Ljavafx/scene/control/Skinnable;Ljava/lang/String;)_javafx.scene.control.Control#loadSkinClass(Ljavafx/scene/control/Skinnable;Ljava/lang/String;)V[
-getClassCssMetaData()Bjavafx.scene.control.Control#getClassCssMetaData()Ljava/util/List;”
-
-&javafx.scene.control.ProgressIndicatorjavafx.scene.control.ControlH
-setProgress(D)6javafx.scene.control.ProgressIndicator#setProgress(D)Vl
-createDefaultSkin()Ujavafx.scene.control.ProgressIndicator#createDefaultSkin()Ljavafx/scene/control/Skin;>
-	<init>(D)1javafx.scene.control.ProgressIndicator#<init>(D)V<
-<init>()0javafx.scene.control.ProgressIndicator#<init>()V‹
-OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)àjavafx.scene.control.ProgressIndicator#queryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Ljava/lang/Object;à
-indeterminateProperty()mjavafx.scene.control.ProgressIndicator#indeterminateProperty()Ljavafx/beans/property/ReadOnlyBooleanProperty;è
-indeterminatePropertyImpl()pjavafx.scene.control.ProgressIndicator#indeterminatePropertyImpl()Ljavafx/beans/property/ReadOnlyBooleanWrapper;R
-setIndeterminate(Z);javafx.scene.control.ProgressIndicator#setIndeterminate(Z)VN
-isIndeterminate()9javafx.scene.control.ProgressIndicator#isIndeterminate()ZF
-getProgress()5javafx.scene.control.ProgressIndicator#getProgress()Dv
-getInitialFocusTraversable()Vjavafx.scene.control.ProgressIndicator#getInitialFocusTraversable()Ljava/lang/Boolean;u
-progressProperty()_javafx.scene.control.ProgressIndicator#progressProperty()Ljavafx/beans/property/DoubleProperty;È*
+getClassCssMetaData()Bjavafx.scene.control.Control#getClassCssMetaData()Ljava/util/List;È*
 javafx.scene.control.Labeledjavafx.scene.control.Controlu
 textAlignmentProperty()Zjavafx.scene.control.Labeled#textAlignmentProperty()Ljavafx/beans/property/ObjectProperty;d
 getTextOverrun()Pjavafx.scene.control.Labeled#getTextOverrun()Ljavafx/scene/control/OverrunStyle;c
@@ -2061,10 +2202,7 @@ nextWord()1javafx.scene.control.TextInputControl#nextWord()VC
 getPrefColumnCount()4javafx.scene.control.TextField#getPrefColumnCount()IT
 getAlignment()Bjavafx.scene.control.TextField#getAlignment()Ljavafx/geometry/Pos;t
 (setOnAction(Ljavafx/event/EventHandler;)Hjavafx.scene.control.TextField#setOnAction(Ljavafx/event/EventHandler;)V]
-getClassCssMetaData()Djavafx.scene.control.TextField#getClassCssMetaData()Ljava/util/List;ë
-&logic.boundary.CloneRepositoryBoundaryjava.lang.ObjectÑ
-,<init>(Ljava/lang/String;Ljava/lang/String;)Tlogic.boundary.CloneRepositoryBoundary#<init>(Ljava/lang/String;Ljava/lang/String;)VN
-cloneRepository()9logic.boundary.CloneRepositoryBoundary#cloneRepository()Vé
+getClassCssMetaData()Djavafx.scene.control.TextField#getClassCssMetaData()Ljava/util/List;é
 javafx.application.Applicationjava.lang.Objectl
 getParameters()Yjavafx.application.Application#getParameters()Ljavafx/application/Application$Parameters;Z
 launch([Ljava/lang/String;);javafx.application.Application#launch([Ljava/lang/String;)VÆ
@@ -2075,8 +2213,10 @@ EnotifyPreloader(Ljavafx/application/Preloader$PreloaderNotification;)ejavafx.a
 getHostServices()Qjavafx.application.Application#getHostServices()Ljavafx/application/HostServices;|
 ,launch(Ljava/lang/Class;[Ljava/lang/String;)Ljavafx.application.Application#launch(Ljava/lang/Class;[Ljava/lang/String;)V0
 init()&javafx.application.Application#init()Ve
-getUserAgentStylesheet()Ijavafx.application.Application#getUserAgentStylesheet()Ljava/lang/String;ø
-view.SceneSwitcherjavafx.application.Applicationh
+getUserAgentStylesheet()Ijavafx.application.Application#getUserAgentStylesheet()Ljava/lang/String;ª	
+view.SceneSwitcherjavafx.application.Application<
+setWorkingCursor()&view.SceneSwitcher#setWorkingCursor()V<
+setDefautlCursor()&view.SceneSwitcher#setDefautlCursor()Vh
 (setHomeScene(Ljavafx/event/ActionEvent;)<view.SceneSwitcher#setHomeScene(Ljavafx/event/ActionEvent;)V(
 <init>()view.SceneSwitcher#<init>()V~
 3setCloneRepositoryScene(Ljavafx/event/ActionEvent;)Gview.SceneSwitcher#setCloneRepositoryScene(Ljavafx/event/ActionEvent;)Vr
@@ -2087,12 +2227,91 @@ EnotifyPreloader(Ljavafx/application/Preloader$PreloaderNotification;)ejavafx.a
 (informationAlertShow(Ljava/lang/String;)<view.SceneSwitcher#informationAlertShow(Ljava/lang/String;)VN
 start(Ljavafx/stage/Stage;)/view.SceneSwitcher#start(Ljavafx/stage/Stage;)Vx
 0setControlChartScene(Ljavafx/event/ActionEvent;)Dview.SceneSwitcher#setControlChartScene(Ljavafx/event/ActionEvent;)V\
-"setHomeScene(Ljavafx/stage/Stage;)6view.SceneSwitcher#setHomeScene(Ljavafx/stage/Stage;)V´
-logic.bean.ProportionBeanjava.lang.ObjectH
-getDirectory()6logic.bean.ProportionBean#getDirectory()Ljava/io/File;H
-getProject()8logic.bean.ProportionBean#getProject()Ljava/lang/String;J
-getOutputFile()7logic.bean.ProportionBean#getOutputFile()Ljava/io/File;õ
-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ylogic.bean.ProportionBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÒ
+"setHomeScene(Ljavafx/stage/Stage;)6view.SceneSwitcher#setHomeScene(Ljavafx/stage/Stage;)VÖ,
+java.lang.Threadjava.lang.Objectjava.lang.Runnable.
+setDaemon(Z)java.lang.Thread#setDaemon(Z)VE
+currentThread()2java.lang.Thread#currentThread()Ljava/lang/Thread;"
+join()java.lang.Thread#join()V.
+onSpinWait()java.lang.Thread#onSpinWait()V$
+start()java.lang.Thread#start()Vr
+.<init>(Ljava/lang/Runnable;Ljava/lang/String;)@java.lang.Thread#<init>(Ljava/lang/Runnable;Ljava/lang/String;)V0
+getPriority()java.lang.Thread#getPriority()I$
+yield()java.lang.Thread#yield()V&
+resume()java.lang.Thread#resume()V&
+join(JI)java.lang.Thread#join(JI)V9
+	getName(),java.lang.Thread#getName()Ljava/lang/String;&
+<init>()java.lang.Thread#<init>()V0
+interrupted()java.lang.Thread#interrupted()Zv
+0dispatchUncaughtException(Ljava/lang/Throwable;)Bjava.lang.Thread#dispatchUncaughtException(Ljava/lang/Throwable;)VZ
+"isCCLOverridden(Ljava/lang/Class;)4java.lang.Thread#isCCLOverridden(Ljava/lang/Class;)Zz
+getUncaughtExceptionHandler()Yjava.lang.Thread#getUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;r
+.setContextClassLoader(Ljava/lang/ClassLoader;)@java.lang.Thread#setContextClassLoader(Ljava/lang/ClassLoader;)VZ
+getContextClassLoader()?java.lang.Thread#getContextClassLoader()Ljava/lang/ClassLoader;0
+activeCount()java.lang.Thread#activeCount()I§
+G<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)Yjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)V¢
+F<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)Xjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)VA
+
+getState()3java.lang.Thread#getState()Ljava/lang/Thread$State;;
+
+toString()-java.lang.Thread#toString()Ljava/lang/String;¥
+OsetDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)ajava.lang.Thread#setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)VV
+ auditSubclass(Ljava/lang/Class;)2java.lang.Thread#auditSubclass(Ljava/lang/Class;)Z4
+isInterrupted()!java.lang.Thread#isInterrupted()Z 
+run()java.lang.Thread#run()Vt
+ dumpThreads([Ljava/lang/Thread;)Pjava.lang.Thread#dumpThreads([Ljava/lang/Thread;)[[Ljava/lang/StackTraceElement;P
+holdsLock(Ljava/lang/Object;)/java.lang.Thread#holdsLock(Ljava/lang/Object;)Z2
+nextThreadID() java.lang.Thread#nextThreadID()JQ
+getStackTrace()>java.lang.Thread#getStackTrace()[Ljava/lang/StackTraceElement;*
+
+isDaemon()java.lang.Thread#isDaemon()ZJ
+getAllStackTraces()3java.lang.Thread#getAllStackTraces()Ljava/util/Map;`
+%blockedOn(Lsun/nio/ch/Interruptible;)7java.lang.Thread#blockedOn(Lsun/nio/ch/Interruptible;)V"
+exit()java.lang.Thread#exit()VR
+enumerate([Ljava/lang/Thread;)0java.lang.Thread#enumerate([Ljava/lang/Thread;)I2
+setPriority(I) java.lang.Thread#setPriority(I)V5
+clone()*java.lang.Thread#clone()Ljava/lang/Object;à
+$getDefaultUncaughtExceptionHandler()`java.lang.Thread#getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;∂
+PprocessQueue(Ljava/lang/ref/ReferenceQueue;Ljava/util/concurrent/ConcurrentMap;)bjava.lang.Thread#processQueue(Ljava/lang/ref/ReferenceQueue;Ljava/util/concurrent/ConcurrentMap;)V(
+	suspend()java.lang.Thread#suspend()V,
+interrupt()java.lang.Thread#interrupt()V*
+
+suspend0()java.lang.Thread#suspend0()V8
+registerNatives()#java.lang.Thread#registerNatives()V|
+3<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)Ejava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)V(
+	sleep(JI)java.lang.Thread#sleep(JI)V¶
+HsetUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)Zjava.lang.Thread#setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V$
+getId()java.lang.Thread#getId()J†
+E<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)Wjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V6
+isInterrupted(Z)"java.lang.Thread#isInterrupted(Z)Z.
+interrupt0()java.lang.Thread#interrupt0()VÏ
+k<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JLjava/security/AccessControlContext;Z)}java.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JLjava/security/AccessControlContext;Z)VN
+<init>(Ljava/lang/Runnable;).java.lang.Thread#<init>(Ljava/lang/Runnable;)V"
+stop()java.lang.Thread#stop()VJ
+<init>(Ljava/lang/String;),java.lang.Thread#<init>(Ljava/lang/String;)VH
+stop0(Ljava/lang/Object;)+java.lang.Thread#stop0(Ljava/lang/Object;)V,
+dumpStack()java.lang.Thread#dumpStack()VL
+setName(Ljava/lang/String;)-java.lang.Thread#setName(Ljava/lang/String;)VX
+!setNativeName(Ljava/lang/String;)3java.lang.Thread#setNativeName(Ljava/lang/String;)V4
+setPriority0(I)!java.lang.Thread#setPriority0(I)V$
+join(J)java.lang.Thread#join(J)V4
+nextThreadNum()!java.lang.Thread#nextThreadNum()I0
+checkAccess()java.lang.Thread#checkAccess()Vñ
+@<init>(Ljava/lang/Runnable;Ljava/security/AccessControlContext;)Rjava.lang.Thread#<init>(Ljava/lang/Runnable;Ljava/security/AccessControlContext;)V&
+start0()java.lang.Thread#start0()V(
+	isAlive()java.lang.Thread#isAlive()Z&
+sleep(J)java.lang.Thread#sleep(J)VL
+getThreadGroup()8java.lang.Thread#getThreadGroup()Ljava/lang/ThreadGroup;:
+countStackFrames()$java.lang.Thread#countStackFrames()I(
+	resume0()java.lang.Thread#resume0()V@
+getThreads()0java.lang.Thread#getThreads()[Ljava/lang/Thread;x
+1<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)Cjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)VÚ
+java.io.IOExceptionjava.lang.Exception)
+<init>()java.io.IOException#<init>()VM
+<init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
+<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vù
+%logic.exception.InvalidInputExceptionjava.io.IOException_
+<init>(Ljava/lang/String;)Alogic.exception.InvalidInputException#<init>(Ljava/lang/String;)VÒ
 java.io.Filejava.lang.Comparablejava.lang.Objectjava.io.Serializable&
 
 isHidden()java.io.File#isHidden()ZF
@@ -3500,21 +3719,163 @@ hashCode()java.lang.Boolean#hashCode()I3
 3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerI
 <init>()=view.ProcessControlChartAndProportionFxmlController#<init>()VQ
 initialize()Aview.ProcessControlChartAndProportionFxmlController#initialize()Vô
-0browseOutputFilePath(Ljavafx/event/ActionEvent;)eview.ProcessControlChartAndProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)Võ
+0browseOutputFilePath(Ljavafx/event/ActionEvent;)eview.ProcessControlChartAndProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)V‹
 !view.ClassBugginessFxmlController3view.ProcessControlChartAndProportionFxmlController7
-<init>()+view.ClassBugginessFxmlController#<init>()Vá
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Sview.ClassBugginessFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)Võ
- logic.abstracts.AbstractBoundaryjava.lang.Object\
-setPath(Ljava/lang/String;)=logic.abstracts.AbstractBoundary#setPath(Ljava/lang/String;)VW
-getProjectName()Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;U
-getOutputFile()Blogic.abstracts.AbstractBoundary#getOutputFile()Ljava/lang/String;6
-<init>()*logic.abstracts.AbstractBoundary#<init>()Vh
-!setOutputFile(Ljava/lang/String;)Clogic.abstracts.AbstractBoundary#setOutputFile(Ljava/lang/String;)Vj
-"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)VI
-	getPath()<logic.abstracts.AbstractBoundary#getPath()Ljava/lang/String;µ
-$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundary¶
-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)dlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VB
-runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V≤
+<init>()+view.ClassBugginessFxmlController#<init>()V?
+initialize()/view.ClassBugginessFxmlController#initialize()Vá
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Sview.ClassBugginessFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V—
+#view.ClassBugginessFxmlController$1javafx.concurrent.TaskÀ
+Q<init>(Lview/ClassBugginessFxmlController;Llogic/boundary/FindBugginessBoundary;)vview.ClassBugginessFxmlController$1#<init>(Lview/ClassBugginessFxmlController;Llogic/boundary/FindBugginessBoundary;)VD
+call():view.ClassBugginessFxmlController$1#call()Ljava/lang/Void;±
+ logic.abstracts.AbstractBoundaryjava.lang.ObjectW
+getProjectName()Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;6
+<init>()*logic.abstracts.AbstractBoundary#<init>()Vj
+"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)VŸ
+$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundaryB
+runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V 
+P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)vlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÅ
+!javafx.scene.control.ComboBoxBasejavafx.scene.control.Control?
+isEditable()/javafx.scene.control.ComboBoxBase#isEditable()Z◊
+OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Éjavafx.scene.control.ComboBoxBase#queryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Ljava/lang/Object;u
+'setOnShown(Ljavafx/event/EventHandler;)Jjavafx.scene.control.ComboBoxBase#setOnShown(Ljavafx/event/EventHandler;)VC
+setEditable(Z)1javafx.scene.control.ComboBoxBase#setEditable(Z)Vw
+(setOnHidden(Ljavafx/event/EventHandler;)Kjavafx.scene.control.ComboBoxBase#setOnHidden(Ljavafx/event/EventHandler;)Vr
+onShowingProperty()[javafx.scene.control.ComboBoxBase#onShowingProperty()Ljavafx/beans/property/ObjectProperty;k
+armedProperty()Xjavafx.scene.control.ComboBoxBase#armedProperty()Ljavafx/beans/property/BooleanProperty;[
+getOnAction()Jjavafx.scene.control.ComboBoxBase#getOnAction()Ljavafx/event/EventHandler;p
+onHiddenProperty()Zjavafx.scene.control.ComboBoxBase#onHiddenProperty()Ljavafx/beans/property/ObjectProperty;1
+arm()(javafx.scene.control.ComboBoxBase#arm()VΩ
+KexecuteAccessibleAction(Ljavafx/scene/AccessibleAction;[Ljava/lang/Object;)njavafx.scene.control.ComboBoxBase#executeAccessibleAction(Ljavafx/scene/AccessibleAction;[Ljava/lang/Object;)V7
+<init>()+javafx.scene.control.ComboBoxBase#<init>()V3
+show())javafx.scene.control.ComboBoxBase#show()V_
+setValue(Ljava/lang/Object;)?javafx.scene.control.ComboBoxBase#setValue(Ljava/lang/Object;)VA
+setShowing(Z)0javafx.scene.control.ComboBoxBase#setShowing(Z)Vw
+(setOnHiding(Ljavafx/event/EventHandler;)Kjavafx.scene.control.ComboBoxBase#setOnHiding(Ljavafx/event/EventHandler;)V[
+getOnHiding()Jjavafx.scene.control.ComboBoxBase#getOnHiding()Ljavafx/event/EventHandler;9
+	isArmed(),javafx.scene.control.ComboBoxBase#isArmed()Zi
+!setPromptText(Ljava/lang/String;)Djavafx.scene.control.ComboBoxBase#setPromptText(Ljava/lang/String;)Vj
+valueProperty()Wjavafx.scene.control.ComboBoxBase#valueProperty()Ljavafx/beans/property/ObjectProperty;V
+getPromptText()Cjavafx.scene.control.ComboBoxBase#getPromptText()Ljava/lang/String;t
+promptTextProperty()\javafx.scene.control.ComboBoxBase#promptTextProperty()Ljavafx/beans/property/StringProperty;p
+onActionProperty()Zjavafx.scene.control.ComboBoxBase#onActionProperty()Ljavafx/beans/property/ObjectProperty;7
+disarm()+javafx.scene.control.ComboBoxBase#disarm()VL
+
+getValue()>javafx.scene.control.ComboBoxBase#getValue()Ljava/lang/Object;p
+onHidingProperty()Zjavafx.scene.control.ComboBoxBase#onHidingProperty()Ljavafx/beans/property/ObjectProperty;=
+isShowing().javafx.scene.control.ComboBoxBase#isShowing()Z]
+getOnShowing()Kjavafx.scene.control.ComboBoxBase#getOnShowing()Ljavafx/event/EventHandler;~
+showingPropertyImpl()ejavafx.scene.control.ComboBoxBase#showingPropertyImpl()Ljavafx/beans/property/ReadOnlyBooleanWrapper;y
+)setOnShowing(Ljavafx/event/EventHandler;)Ljavafx.scene.control.ComboBoxBase#setOnShowing(Ljavafx/event/EventHandler;)V3
+hide())javafx.scene.control.ComboBoxBase#hide()Vn
+onShownProperty()Yjavafx.scene.control.ComboBoxBase#onShownProperty()Ljavafx/beans/property/ObjectProperty;=
+setArmed(Z).javafx.scene.control.ComboBoxBase#setArmed(Z)VY
+getOnShown()Ijavafx.scene.control.ComboBoxBase#getOnShown()Ljavafx/event/EventHandler;[
+getOnHidden()Jjavafx.scene.control.ComboBoxBase#getOnHidden()Ljavafx/event/EventHandler;w
+showingProperty()bjavafx.scene.control.ComboBoxBase#showingProperty()Ljavafx/beans/property/ReadOnlyBooleanProperty;q
+editableProperty()[javafx.scene.control.ComboBoxBase#editableProperty()Ljavafx/beans/property/BooleanProperty;w
+(setOnAction(Ljavafx/event/EventHandler;)Kjavafx.scene.control.ComboBoxBase#setOnAction(Ljavafx/event/EventHandler;)V≈
+javafx.scene.control.ComboBox!javafx.scene.control.ComboBoxBaseU
+getPlaceholder()Ajavafx.scene.control.ComboBox#getPlaceholder()Ljavafx/scene/Node;_
+getButtonCell()Ljavafx.scene.control.ComboBox#getButtonCell()Ljavafx/scene/control/ListCell;“
+OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)javafx.scene.control.ComboBox#queryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Ljava/lang/Object;X
+getEditor()Ijavafx.scene.control.ComboBox#getEditor()Ljavafx/scene/control/TextField;{
+visibleRowCountProperty()^javafx.scene.control.ComboBox#visibleRowCountProperty()Ljavafx/beans/property/IntegerProperty;n
+converterProperty()Wjavafx.scene.control.ComboBox#converterProperty()Ljavafx/beans/property/ObjectProperty;r
+placeholderProperty()Yjavafx.scene.control.ComboBox#placeholderProperty()Ljavafx/beans/property/ObjectProperty;=
+commitValue(),javafx.scene.control.ComboBox#commitValue()VK
+getVisibleRowCount()3javafx.scene.control.ComboBox#getVisibleRowCount()I3
+<init>()'javafx.scene.control.ComboBox#<init>()Vü
+>setSelectionModel(Ljavafx/scene/control/SingleSelectionModel;)]javafx.scene.control.ComboBox#setSelectionModel(Ljavafx/scene/control/SingleSelectionModel;)Vf
+itemsProperty()Sjavafx.scene.control.ComboBox#itemsProperty()Ljavafx/beans/property/ObjectProperty;s
+getSelectionModel()\javafx.scene.control.ComboBox#getSelectionModel()Ljavafx/scene/control/SingleSelectionModel;p
+buttonCellProperty()Xjavafx.scene.control.ComboBox#buttonCellProperty()Ljavafx/beans/property/ObjectProperty;o
+defaultStringConverter()Sjavafx.scene.control.ComboBox#defaultStringConverter()Ljavafx/util/StringConverter;r
+cellFactoryProperty()Yjavafx.scene.control.ComboBox#cellFactoryProperty()Ljavafx/beans/property/ObjectProperty;y
++<init>(Ljavafx/collections/ObservableList;)Jjavafx.scene.control.ComboBox#<init>(Ljavafx/collections/ObservableList;)V[
+getConverter()Ijavafx.scene.control.ComboBox#getConverter()Ljavafx/util/StringConverter;;
+cancelEdit()+javafx.scene.control.ComboBox#cancelEdit()Vo
+&setCellFactory(Ljavafx/util/Callback;)Ejavafx.scene.control.ComboBox#setCellFactory(Ljavafx/util/Callback;)V
+.setButtonCell(Ljavafx/scene/control/ListCell;)Mjavafx.scene.control.ComboBox#setButtonCell(Ljavafx/scene/control/ListCell;)V}
+-setItems(Ljavafx/collections/ObservableList;)Ljavafx.scene.control.ComboBox#setItems(Ljavafx/collections/ObservableList;)Vy
++setConverter(Ljavafx/util/StringConverter;)Jjavafx.scene.control.ComboBox#setConverter(Ljavafx/util/StringConverter;)VM
+setVisibleRowCount(I)4javafx.scene.control.ComboBox#setVisibleRowCount(I)Vc
+createDefaultSkin()Ljavafx.scene.control.ComboBox#createDefaultSkin()Ljavafx/scene/control/Skin;p
+editorProperty()\javafx.scene.control.ComboBox#editorProperty()Ljavafx/beans/property/ReadOnlyObjectProperty;x
+selectionModelProperty()\javafx.scene.control.ComboBox#selectionModelProperty()Ljavafx/beans/property/ObjectProperty;a
+updateValue(Ljava/lang/Object;)>javafx.scene.control.ComboBox#updateValue(Ljava/lang/Object;)VY
+
+getItems()Kjavafx.scene.control.ComboBox#getItems()Ljavafx/collections/ObservableList;i
+#setPlaceholder(Ljavafx/scene/Node;)Bjavafx.scene.control.ComboBox#setPlaceholder(Ljavafx/scene/Node;)VX
+getCellFactory()Djavafx.scene.control.ComboBox#getCellFactory()Ljavafx/util/Callback;Â2
+ javafx.collections.FXCollectionsjava.lang.Object¢
+>shuffle(Ljavafx/collections/ObservableList;Ljava/util/Random;)`javafx.collections.FXCollections#shuffle(Ljavafx/collections/ObservableList;Ljava/util/Random;)V†
+,concat([Ljavafx/collections/ObservableList;)pjavafx.collections.FXCollections#concat([Ljavafx/collections/ObservableList;)Ljavafx/collections/ObservableList;◊
+CobservableIntegerArray(Ljavafx/collections/ObservableIntegerArray;)èjavafx.collections.FXCollections#observableIntegerArray(Ljavafx/collections/ObservableIntegerArray;)Ljavafx/collections/ObservableIntegerArray;ò
+(observableArrayList([Ljava/lang/Object;)ljavafx.collections.FXCollections#observableArrayList([Ljava/lang/Object;)Ljavafx/collections/ObservableList;û
++singletonObservableList(Ljava/lang/Object;)ojavafx.collections.FXCollections#singletonObservableList(Ljava/lang/Object;)Ljavafx/collections/ObservableList;~
+,reverse(Ljavafx/collections/ObservableList;)Njavafx.collections.FXCollections#reverse(Ljavafx/collections/ObservableList;)VÉ
+observableMap(Ljava/util/Map;)ajavafx.collections.FXCollections#observableMap(Ljava/util/Map;)Ljavafx/collections/ObservableMap;z
+observableFloatArray()`javafx.collections.FXCollections#observableFloatArray()Ljavafx/collections/ObservableFloatArray;¸
+ZcheckedObservableMap(Ljavafx/collections/ObservableMap;Ljava/lang/Class;Ljava/lang/Class;)ùjavafx.collections.FXCollections#checkedObservableMap(Ljavafx/collections/ObservableMap;Ljava/lang/Class;Ljava/lang/Class;)Ljavafx/collections/ObservableMap;o
+emptyObservableSet()Wjavafx.collections.FXCollections#emptyObservableSet()Ljavafx/collections/ObservableSet;6
+<init>()*javafx.collections.FXCollections#<init>()V⁄
+IcheckedObservableSet(Ljavafx/collections/ObservableSet;Ljava/lang/Class;)åjavafx.collections.FXCollections#checkedObservableSet(Ljavafx/collections/ObservableSet;Ljava/lang/Class;)Ljavafx/collections/ObservableSet;§
+?sort(Ljavafx/collections/ObservableList;Ljava/util/Comparator;)ajavafx.collections.FXCollections#sort(Ljavafx/collections/ObservableList;Ljava/util/Comparator;)VÉ
+observableSet(Ljava/util/Set;)ajavafx.collections.FXCollections#observableSet(Ljava/util/Set;)Ljavafx/collections/ObservableSet;ﬂ
+KcheckedObservableList(Ljavafx/collections/ObservableList;Ljava/lang/Class;)èjavafx.collections.FXCollections#checkedObservableList(Ljavafx/collections/ObservableList;Ljava/lang/Class;)Ljavafx/collections/ObservableList;ò
+9copy(Ljavafx/collections/ObservableList;Ljava/util/List;)[javafx.collections.FXCollections#copy(Ljavafx/collections/ObservableList;Ljava/util/List;)V«
+?synchronizedObservableList(Ljavafx/collections/ObservableList;)Éjavafx.collections.FXCollections#synchronizedObservableList(Ljavafx/collections/ObservableList;)Ljavafx/collections/ObservableList;Ñ
+observableIntegerArray([I)fjavafx.collections.FXCollections#observableIntegerArray([I)Ljavafx/collections/ObservableIntegerArray;¥
+6observableList(Ljava/util/List;Ljavafx/util/Callback;)zjavafx.collections.FXCollections#observableList(Ljava/util/List;Ljavafx/util/Callback;)Ljavafx/collections/ObservableList;¬
+=synchronizedObservableSet(Ljavafx/collections/ObservableSet;)Äjavafx.collections.FXCollections#synchronizedObservableSet(Ljavafx/collections/ObservableSet;)Ljavafx/collections/ObservableSet;Õ
+?observableFloatArray(Ljavafx/collections/ObservableFloatArray;)âjavafx.collections.FXCollections#observableFloatArray(Ljavafx/collections/ObservableFloatArray;)Ljavafx/collections/ObservableFloatArray;ú
+;fill(Ljavafx/collections/ObservableList;Ljava/lang/Object;)]javafx.collections.FXCollections#fill(Ljavafx/collections/ObservableList;Ljava/lang/Object;)V¬
+=synchronizedObservableMap(Ljavafx/collections/ObservableMap;)Äjavafx.collections.FXCollections#synchronizedObservableMap(Ljavafx/collections/ObservableMap;)Ljavafx/collections/ObservableMap;o
+emptyObservableMap()Wjavafx.collections.FXCollections#emptyObservableMap()Ljavafx/collections/ObservableMap;«
+?unmodifiableObservableList(Ljavafx/collections/ObservableList;)Éjavafx.collections.FXCollections#unmodifiableObservableList(Ljavafx/collections/ObservableList;)Ljavafx/collections/ObservableList;~
+,shuffle(Ljavafx/collections/ObservableList;)Njavafx.collections.FXCollections#shuffle(Ljavafx/collections/ObservableList;)Vã
+"observableSet([Ljava/lang/Object;)ejavafx.collections.FXCollections#observableSet([Ljava/lang/Object;)Ljavafx/collections/ObservableSet;\
+swap([Ljava/lang/Object;II)=javafx.collections.FXCollections#swap([Ljava/lang/Object;II)VÃ
+SreplaceAll(Ljavafx/collections/ObservableList;Ljava/lang/Object;Ljava/lang/Object;)ujavafx.collections.FXCollections#replaceAll(Ljavafx/collections/ObservableList;Ljava/lang/Object;Ljava/lang/Object;)Zm
+observableHashMap()Vjavafx.collections.FXCollections#observableHashMap()Ljavafx/collections/ObservableMap;r
+observableArrayList()Yjavafx.collections.FXCollections#observableArrayList()Ljavafx/collections/ObservableList;~
+,rotate(Ljavafx/collections/ObservableList;I)Njavafx.collections.FXCollections#rotate(Ljavafx/collections/ObservableList;I)V¬
+=unmodifiableObservableMap(Ljavafx/collections/ObservableMap;)Äjavafx.collections.FXCollections#unmodifiableObservableMap(Ljavafx/collections/ObservableMap;)Ljavafx/collections/ObservableMap;x
+)sort(Ljavafx/collections/ObservableList;)Kjavafx.collections.FXCollections#sort(Ljavafx/collections/ObservableList;)V¬
+=unmodifiableObservableSet(Ljavafx/collections/ObservableSet;)Äjavafx.collections.FXCollections#unmodifiableObservableSet(Ljavafx/collections/ObservableSet;)Ljavafx/collections/ObservableSet;û
++observableArrayList(Ljavafx/util/Callback;)ojavafx.collections.FXCollections#observableArrayList(Ljavafx/util/Callback;)Ljavafx/collections/ObservableList;à
+ observableList(Ljava/util/List;)djavafx.collections.FXCollections#observableList(Ljava/util/List;)Ljavafx/collections/ObservableList;r
+emptyObservableList()Yjavafx.collections.FXCollections#emptyObservableList()Ljavafx/collections/ObservableList;û
++observableArrayList(Ljava/util/Collection;)ojavafx.collections.FXCollections#observableArrayList(Ljava/util/Collection;)Ljavafx/collections/ObservableList;~
+observableFloatArray([F)bjavafx.collections.FXCollections#observableFloatArray([F)Ljavafx/collections/ObservableFloatArray;Ä
+observableIntegerArray()djavafx.collections.FXCollections#observableIntegerArray()Ljavafx/collections/ObservableIntegerArray;∂
+java.lang.Enumjava.lang.Comparablejava.lang.Objectjava.io.SerializableH
+equals(Ljava/lang/Object;)*java.lang.Enum#equals(Ljava/lang/Object;)ZJ
+compareTo(Ljava/lang/Enum;)+java.lang.Enum#compareTo(Ljava/lang/Enum;)I(
+
+finalize()java.lang.Enum#finalize()V{
+,valueOf(Ljava/lang/Class;Ljava/lang/String;)Kjava.lang.Enum#valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;1
+name()'java.lang.Enum#name()Ljava/lang/String;9
+
+toString()+java.lang.Enum#toString()Ljava/lang/String;8
+readObjectNoData()"java.lang.Enum#readObjectNoData()Vb
+'readObject(Ljava/io/ObjectInputStream;)7java.lang.Enum#readObject(Ljava/io/ObjectInputStream;)VJ
+getDeclaringClass()3java.lang.Enum#getDeclaringClass()Ljava/lang/Class;J
+<init>(Ljava/lang/String;I)+java.lang.Enum#<init>(Ljava/lang/String;I)V&
+	ordinal()java.lang.Enum#ordinal()I3
+clone()(java.lang.Enum#clone()Ljava/lang/Object;(
+
+hashCode()java.lang.Enum#hashCode()I‡
+!logic.enums.ProportionAlgoOptionsjava.lang.Enum
+valueOf(Ljava/lang/String;)`logic.enums.ProportionAlgoOptions#valueOf(Ljava/lang/String;)Llogic/enums/ProportionAlgoOptions;Z
+values()Nlogic.enums.ProportionAlgoOptions#values()[Llogic/enums/ProportionAlgoOptions;J
+	getAlgo()=logic.enums.ProportionAlgoOptions#getAlgo()Ljava/lang/String;Å
+-<init>(Ljava/lang/String;ILjava/lang/String;)Plogic.enums.ProportionAlgoOptions#<init>(Ljava/lang/String;ILjava/lang/String;)V+
+javafx.beans.Observablejava.lang.ObjectÄ
+!javafx.collections.ObservableListjava.util.Listjava.lang.Objectjavafx.beans.Observable¶
+(filtered(Ljava/util/function/Predicate;)zjavafx.collections.ObservableList#filtered(Ljava/util/function/Predicate;)Ljavafx/collections/transformation/FilteredList;d
+sorted()Xjavafx.collections.ObservableList#sorted()Ljavafx/collections/transformation/SortedList;ê
+sorted(Ljava/util/Comparator;)njavafx.collections.ObservableList#sorted(Ljava/util/Comparator;)Ljavafx/collections/transformation/SortedList;≤
 
 0logic.dataset_manager.ProcessControlChartDatasetlogic.dataset_manager.DatasetŸ
 QupdateFixBugNum(Llogic/dataset_manager/ProcessControlChartEntry;Ljava/util/List;)Élogic.dataset_manager.ProcessControlChartDataset#updateFixBugNum(Llogic/dataset_manager/ProcessControlChartEntry;Ljava/util/List;)VX
@@ -3527,8 +3888,8 @@ toString()Mlogic.dataset_manager.ProcessControlChartDataset#toString()Ljava/lan
 computeUpperControlLimit()Llogic.dataset_manager.ProcessControlChartDataset#computeUpperControlLimit()Vø
 =retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)~logic.dataset_manager.ProcessControlChartDataset#retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)Ljava/util/List;Ä
 %<init>(Llogic/bean/ProcessChartBean;)Wlogic.dataset_manager.ProcessControlChartDataset#<init>(Llogic/bean/ProcessChartBean;)Vj
-computeLowerControlLimit()Llogic.dataset_manager.ProcessControlChartDataset#computeLowerControlLimit()Vœ
-logic.bean.ProcessChartBeanlogic.bean.ProportionBeanO
+computeLowerControlLimit()Llogic.dataset_manager.ProcessControlChartDataset#computeLowerControlLimit()V“
+logic.bean.ProcessChartBeanlogic.abstracts.AbstractBeanO
 getThreshold()=logic.bean.ProcessChartBean#getThreshold()Ljava/lang/Integer;√
 Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)nlogic.bean.ProcessChartBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)Vˇ.
 java.util.Calendarjava.lang.Cloneablejava.lang.Comparablejava.lang.Objectjava.io.SerializableL
@@ -3778,8 +4139,7 @@ hashCode(),org.decimal4j.util.DoubleRounder#hashCode()I8
 Fround(DLjava/math/RoundingMode;Lorg/decimal4j/api/DecimalArithmetic;D)horg.decimal4j.util.DoubleRounder#round(DLjava/math/RoundingMode;Lorg/decimal4j/api/DecimalArithmetic;D)Di
 toScaleMetrics(I)Torg.decimal4j.util.DoubleRounder#toScaleMetrics(I)Lorg/decimal4j/scale/ScaleMetrics;<
 isFinite(D)-org.decimal4j.util.DoubleRounder#isFinite(D)ZB
-getPrecision()0org.decimal4j.util.DoubleRounder#getPrecision()I(
-java.lang.Appendablejava.lang.Object¸3
+getPrecision()0org.decimal4j.util.DoubleRounder#getPrecision()I¸3
 java.lang.AbstractStringBuilderjava.lang.CharSequencejava.lang.Appendablejava.lang.Object?
 setCharAt(IC).java.lang.AbstractStringBuilder#setCharAt(IC)VW
 ensureCapacityInternal(I):java.lang.AbstractStringBuilder#ensureCapacityInternal(I)V7
@@ -4038,24 +4398,7 @@ toString()-java.lang.Double#toString()Ljava/lang/String;,
 isInfinite(D)java.lang.Double#isInfinite(D)Z0
 doubleValue()java.lang.Double#doubleValue()DT
 parseDouble(Ljava/lang/String;)1java.lang.Double#parseDouble(Ljava/lang/String;)D,
-isFinite(D)java.lang.Double#isFinite(D)Z∂
-java.lang.Enumjava.lang.Comparablejava.lang.Objectjava.io.SerializableH
-equals(Ljava/lang/Object;)*java.lang.Enum#equals(Ljava/lang/Object;)ZJ
-compareTo(Ljava/lang/Enum;)+java.lang.Enum#compareTo(Ljava/lang/Enum;)I(
-
-finalize()java.lang.Enum#finalize()V{
-,valueOf(Ljava/lang/Class;Ljava/lang/String;)Kjava.lang.Enum#valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;1
-name()'java.lang.Enum#name()Ljava/lang/String;9
-
-toString()+java.lang.Enum#toString()Ljava/lang/String;8
-readObjectNoData()"java.lang.Enum#readObjectNoData()Vb
-'readObject(Ljava/io/ObjectInputStream;)7java.lang.Enum#readObject(Ljava/io/ObjectInputStream;)VJ
-getDeclaringClass()3java.lang.Enum#getDeclaringClass()Ljava/lang/Class;J
-<init>(Ljava/lang/String;I)+java.lang.Enum#<init>(Ljava/lang/String;I)V&
-	ordinal()java.lang.Enum#ordinal()I3
-clone()(java.lang.Enum#clone()Ljava/lang/Object;(
-
-hashCode()java.lang.Enum#hashCode()I¶
+isFinite(D)java.lang.Double#isFinite(D)Z¶
 *org.eclipse.jgit.diff.DiffEntry$ChangeTypejava.lang.Enumë
 valueOf(Ljava/lang/String;)rorg.eclipse.jgit.diff.DiffEntry$ChangeType#valueOf(Ljava/lang/String;)Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;l
 values()`org.eclipse.jgit.diff.DiffEntry$ChangeType#values()[Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;f
@@ -4083,10 +4426,7 @@ FsetSelectedExtensionFilter(Ljavafx/stage/FileChooser$ExtensionFilter;)`javafx.
 DfindSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)ájavafx.stage.FileChooser#findSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)Ljavafx/stage/FileChooser$ExtensionFilter;Å
 	view.Mainjava.lang.Object
 <init>()view.Main#<init>()VA
-main([Ljava/lang/String;)$view.Main#main([Ljava/lang/String;)V˛
-.logic.controller.ProportionIncrementControllerjava.lang.ObjectD
-<init>()8logic.controller.ProportionIncrementController#<init>()Vt
- run(Llogic/bean/ProportionBean;)Plogic.controller.ProportionIncrementController#run(Llogic/bean/ProportionBean;)Vˆ2
+main([Ljava/lang/String;)$view.Main#main([Ljava/lang/String;)Vˆ2
 org.json.JSONArrayjava.lang.Objectjava.lang.IterableA
 optString(I)1org.json.JSONArray#optString(I)Ljava/lang/String;[
 query(Ljava/lang/String;)>org.json.JSONArray#query(Ljava/lang/String;)Ljava/lang/Object;9
@@ -4283,8 +4623,7 @@ TwrongValueFormatException(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwa
 getString(Ljava/lang/String;)Corg.json.JSONObject#getString(Ljava/lang/String;)Ljava/lang/String;p
 !getBigDecimal(Ljava/lang/String;)Korg.json.JSONObject#getBigDecimal(Ljava/lang/String;)Ljava/math/BigDecimal;M
 isNull(Ljava/lang/String;)/org.json.JSONObject#isNull(Ljava/lang/String;)Z&
-java.lang.Readablejava.lang.Object>
-java.io.Closeablejava.lang.Objectjava.lang.AutoCloseableú
+java.lang.Readablejava.lang.Objectú
 java.io.Readerjava.io.Closeablejava.lang.Readablejava.lang.Object"
 ready()java.io.Reader#ready()Z 
 read()java.io.Reader#read()I"
@@ -4517,7 +4856,13 @@ toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;É
 &view.ProcessControlChartFxmlController3view.ProcessControlChartAndProportionFxmlController<
 <init>()0view.ProcessControlChartFxmlController#<init>()VD
 initialize()4view.ProcessControlChartFxmlController#initialize()Vå
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)VŒ%
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V˜
+(view.ProcessControlChartFxmlController$1javafx.concurrent.TaskI
+call()?view.ProcessControlChartFxmlController$1#call()Ljava/lang/Void;Á
+\<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)Üview.ProcessControlChartFxmlController$1#<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)VÌ
+*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
+runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
+Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VŒ%
 javafx.scene.control.Spinnerjavafx.scene.control.Control8
 increment())javafx.scene.control.Spinner#increment()Vq
 repeatDelayProperty()Xjavafx.scene.control.Spinner#repeatDelayProperty()Ljavafx/beans/property/ObjectProperty;X
@@ -4563,10 +4908,7 @@ getValue()9javafx.scene.control.Spinner#getValue()Ljava/lang/Object;8
 MwrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Äjavafx.scene.control.Spinner#wrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;l
 editableProperty()Vjavafx.scene.control.Spinner#editableProperty()Ljavafx/beans/property/BooleanProperty;ı
 i<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)ájavafx.scene.control.Spinner#<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)V[
-getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;Ì
-*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
-runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
-Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VÍ 
+getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;Í 
 java.text.NumberFormatjava.text.FormatP
 equals(Ljava/lang/Object;)2java.text.NumberFormat#equals(Ljava/lang/Object;)ZÖ
 )getScientificInstance(Ljava/util/Locale;)Xjava.text.NumberFormat#getScientificInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;N
@@ -4675,43 +5017,7 @@ getIndex()#java.text.ParsePosition#getIndex()I3
 hashCode()#java.text.ParsePosition#hashCode()IÇ
 .logic.controller.ProcessControlChartControllerjava.lang.ObjectD
 <init>()8logic.controller.ProcessControlChartController#<init>()Vx
-"run(Llogic/bean/ProcessChartBean;)Rlogic.controller.ProcessControlChartController#run(Llogic/bean/ProcessChartBean;)V%
-java.io.Flushablejava.lang.ObjectÚ
-java.io.Writerjava.lang.Appendablejava.io.Closeablejava.lang.Objectjava.io.Flushable&
-	write([C)java.io.Writer#write([C)Vc
- append(Ljava/lang/CharSequence;)?java.io.Writer#append(Ljava/lang/CharSequence;)Ljava/io/Writer;$
-<init>()java.io.Writer#<init>()V5
-	append(C)(java.io.Writer#append(C)Ljava/io/Writer;g
-"append(Ljava/lang/CharSequence;II)Ajava.io.Writer#append(Ljava/lang/CharSequence;II)Ljava/io/Writer;J
-write(Ljava/lang/String;II)+java.io.Writer#write(Ljava/lang/String;II)V$
-write(I)java.io.Writer#write(I)V;
-nullWriter()+java.io.Writer#nullWriter()Ljava/io/Writer;F
-write(Ljava/lang/String;))java.io.Writer#write(Ljava/lang/String;)VH
-<init>(Ljava/lang/Object;)*java.io.Writer#<init>(Ljava/lang/Object;)V“	
-java.io.OutputStreamWriterjava.io.Writerû
-?<init>(Ljava/io/OutputStream;Ljava/nio/charset/CharsetEncoder;)[java.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/nio/charset/CharsetEncoder;)Vo
- append(Ljava/lang/CharSequence;)Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;K
-getEncoding():java.io.OutputStreamWriter#getEncoding()Ljava/lang/String;s
-"append(Ljava/lang/CharSequence;II)Mjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;II)Ljava/io/Writer;Ä
-0<init>(Ljava/io/OutputStream;Ljava/lang/String;)Ljava.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/lang/String;)V\
-<init>(Ljava/io/OutputStream;):java.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;)VV
-write(Ljava/lang/String;II)7java.io.OutputStreamWriter#write(Ljava/lang/String;II)V.
-flush()#java.io.OutputStreamWriter#flush()V0
-write(I)$java.io.OutputStreamWriter#write(I)V:
-flushBuffer())java.io.OutputStreamWriter#flushBuffer()V6
-write([CII)'java.io.OutputStreamWriter#write([CII)V.
-close()#java.io.OutputStreamWriter#close()Vê
-8<init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)Tjava.io.OutputStreamWriter#<init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V¥
-java.io.FileWriterjava.io.OutputStreamWriterz
-1<init>(Ljava/io/File;Ljava/nio/charset/Charset;Z)Ejava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;Z)VF
-<init>(Ljava/io/File;Z)+java.io.FileWriter#<init>(Ljava/io/File;Z)VÇ
-5<init>(Ljava/lang/String;Ljava/nio/charset/Charset;Z)Ijava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;Z)VN
-<init>(Ljava/lang/String;Z)/java.io.FileWriter#<init>(Ljava/lang/String;Z)VD
-<init>(Ljava/io/File;)*java.io.FileWriter#<init>(Ljava/io/File;)VL
-<init>(Ljava/lang/String;).java.io.FileWriter#<init>(Ljava/lang/String;)Vx
-0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Djava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)VÄ
-4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Hjava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)VX
- <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)VÆ
+"run(Llogic/bean/ProcessChartBean;)Rlogic.controller.ProcessControlChartController#run(Llogic/bean/ProcessChartBean;)VÆ
 javafx.stage.DirectoryChooserjava.lang.Objectf
 titleProperty()Sjavafx.stage.DirectoryChooser#titleProperty()Ljavafx/beans/property/StringProperty;H
 
@@ -4721,14 +5027,7 @@ getTitle():javafx.stage.DirectoryChooser#getTitle()Ljava/lang/String;r
 <init>()'javafx.stage.DirectoryChooser#<init>()VZ
 getInitialDirectory()Ajavafx.stage.DirectoryChooser#getInitialDirectory()Ljava/io/File;[
 setTitle(Ljava/lang/String;);javafx.stage.DirectoryChooser#setTitle(Ljava/lang/String;)Vi
-#setInitialDirectory(Ljava/io/File;)Bjavafx.stage.DirectoryChooser#setInitialDirectory(Ljava/io/File;)VÚ
-java.io.IOExceptionjava.lang.Exception)
-<init>()java.io.IOException#<init>()VM
-<init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
-<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vù
-%logic.exception.InvalidInputExceptionjava.io.IOException_
-<init>(Ljava/lang/String;)Alogic.exception.InvalidInputException#<init>(Ljava/lang/String;)VŒ1
+#setInitialDirectory(Ljava/io/File;)Bjavafx.stage.DirectoryChooser#setInitialDirectory(Ljava/io/File;)VŒ1
 java.util.Mapjava.lang.ObjectÜ
 1putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Qjava.util.Map#putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;§
 @computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)`java.util.Map#computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;À

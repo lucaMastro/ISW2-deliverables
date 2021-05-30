@@ -26,27 +26,7 @@ public class ProcessControlChartFxmlController extends ProcessControlChartAndPro
                 this.projectName.getText(),
                 this.thresholdSpinner.getValue());
 
-        var task = new Task<Void>() {
-            @Override
-            protected Void call() throws Exception {
-                boundary.runUseCase();
-                return null;
-            }
-        };
-        task.setOnSucceeded(e ->{
-            SceneSwitcher.getInstance().informationAlertShow("Done!!");
-            SceneSwitcher.getInstance().setDefautlCursor();
-        });
-
-        task.setOnFailed(e ->{
-            var exc = task.getException();
-            SceneSwitcher.getInstance().errorAlertShow(exc.getMessage());
-            SceneSwitcher.getInstance().setDefautlCursor();
-        });
-
-        SceneSwitcher.getInstance().setWorkingCursor();
-        var t = new Thread(task);
-        t.start();
+        this.runTask(boundary);
     }
 
     @Override
