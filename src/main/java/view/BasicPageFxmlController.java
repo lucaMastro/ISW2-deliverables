@@ -1,6 +1,7 @@
 package view;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -50,6 +51,23 @@ public abstract class BasicPageFxmlController {
 
     @FXML
     protected abstract void submitButtonSelected(ActionEvent actionEvent);
+
+    protected void runTask(Task task){
+        task.setOnSucceeded(e ->{
+            SceneSwitcher.getInstance().informationAlertShow("Done!!");
+            SceneSwitcher.getInstance().setDefautlCursor();
+        });
+
+        task.setOnFailed(e ->{
+            var exc = task.getException();
+            SceneSwitcher.getInstance().errorAlertShow(exc.getMessage());
+            SceneSwitcher.getInstance().setDefautlCursor();
+        });
+
+        SceneSwitcher.getInstance().setWorkingCursor();
+        var t = new Thread(task);
+        t.start();
+    }
 
     protected void initialize(){
         assert repositoryLabel != null : "fx:id=\"repositoryLabel\" was not injected: check your FXML file 'process_control_chart.fxml'.";

@@ -3715,25 +3715,16 @@ hashCode()java.lang.Boolean#hashCode()I3
 	<init>(Z)java.lang.Boolean#<init>(Z)VS
 getBoolean(Ljava/lang/String;)1java.lang.Boolean#getBoolean(Ljava/lang/String;)Zù
 %logic.exception.InvalidRangeExceptionjava.lang.Exception_
-<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)Vç
-3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerI
+<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)Vü
+3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerè
++runTask(Llogic/abstracts/AbstractBoundary;)`view.ProcessControlChartAndProportionFxmlController#runTask(Llogic/abstracts/AbstractBoundary;)VI
 <init>()=view.ProcessControlChartAndProportionFxmlController#<init>()VQ
 initialize()Aview.ProcessControlChartAndProportionFxmlController#initialize()Vô
 0browseOutputFilePath(Ljavafx/event/ActionEvent;)eview.ProcessControlChartAndProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)V‹
 !view.ClassBugginessFxmlController3view.ProcessControlChartAndProportionFxmlController7
 <init>()+view.ClassBugginessFxmlController#<init>()V?
 initialize()/view.ClassBugginessFxmlController#initialize()Vá
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Sview.ClassBugginessFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V—
-#view.ClassBugginessFxmlController$1javafx.concurrent.TaskÀ
-Q<init>(Lview/ClassBugginessFxmlController;Llogic/boundary/FindBugginessBoundary;)vview.ClassBugginessFxmlController$1#<init>(Lview/ClassBugginessFxmlController;Llogic/boundary/FindBugginessBoundary;)VD
-call():view.ClassBugginessFxmlController$1#call()Ljava/lang/Void;±
- logic.abstracts.AbstractBoundaryjava.lang.ObjectW
-getProjectName()Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;6
-<init>()*logic.abstracts.AbstractBoundary#<init>()Vj
-"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)VŸ
-$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundaryB
-runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V 
-P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)vlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÅ
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Sview.ClassBugginessFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)VÅ
 !javafx.scene.control.ComboBoxBasejavafx.scene.control.Control?
 isEditable()/javafx.scene.control.ComboBoxBase#isEditable()Z◊
 OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Éjavafx.scene.control.ComboBoxBase#queryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)Ljava/lang/Object;u
@@ -3806,7 +3797,14 @@ OqueryAccessibleAttribute(Ljavafx/scene/AccessibleAttribute;[Ljava/lang/Object;)
 
 getItems()Kjavafx.scene.control.ComboBox#getItems()Ljavafx/collections/ObservableList;i
 #setPlaceholder(Ljavafx/scene/Node;)Bjavafx.scene.control.ComboBox#setPlaceholder(Ljavafx/scene/Node;)VX
-getCellFactory()Djavafx.scene.control.ComboBox#getCellFactory()Ljavafx/util/Callback;Â2
+getCellFactory()Djavafx.scene.control.ComboBox#getCellFactory()Ljavafx/util/Callback;±
+ logic.abstracts.AbstractBoundaryjava.lang.ObjectW
+getProjectName()Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;6
+<init>()*logic.abstracts.AbstractBoundary#<init>()Vj
+"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)VŸ
+$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundaryB
+runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V 
+P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)vlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÂ2
  javafx.collections.FXCollectionsjava.lang.Object¢
 >shuffle(Ljavafx/collections/ObservableList;Ljava/util/Random;)`javafx.collections.FXCollections#shuffle(Ljavafx/collections/ObservableList;Ljava/util/Random;)V†
 ,concat([Ljavafx/collections/ObservableList;)pjavafx.collections.FXCollections#concat([Ljavafx/collections/ObservableList;)Ljavafx/collections/ObservableList;◊
@@ -4423,7 +4421,10 @@ FsetSelectedExtensionFilter(Ljavafx/stage/FileChooser$ExtensionFilter;)`javafx.
 !selectedExtensionFilterProperty()`javafx.stage.FileChooser#selectedExtensionFilterProperty()Ljavafx/beans/property/ObjectProperty;U
 getInitialDirectory()<javafx.stage.FileChooser#getInitialDirectory()Ljava/io/File;u
 initialFileNameProperty()Xjavafx.stage.FileChooser#initialFileNameProperty()Ljavafx/beans/property/ObjectProperty;–
-DfindSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)ájavafx.stage.FileChooser#findSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)Ljavafx/stage/FileChooser$ExtensionFilter;Å
+DfindSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)ájavafx.stage.FileChooser#findSelectedFilter(Lcom/sun/glass/ui/CommonDialogs$ExtensionFilter;)Ljavafx/stage/FileChooser$ExtensionFilter;§
+5view.ProcessControlChartAndProportionFxmlController$1javafx.concurrent.TaskV
+call()Lview.ProcessControlChartAndProportionFxmlController$1#call()Ljava/lang/Void;˙
+_<init>(Lview/ProcessControlChartAndProportionFxmlController;Llogic/abstracts/AbstractBoundary;)ñview.ProcessControlChartAndProportionFxmlController$1#<init>(Lview/ProcessControlChartAndProportionFxmlController;Llogic/abstracts/AbstractBoundary;)VÅ
 	view.Mainjava.lang.Object
 <init>()view.Main#<init>()VA
 main([Ljava/lang/String;)$view.Main#main([Ljava/lang/String;)Vˆ2
@@ -4856,13 +4857,7 @@ toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;É
 &view.ProcessControlChartFxmlController3view.ProcessControlChartAndProportionFxmlController<
 <init>()0view.ProcessControlChartFxmlController#<init>()VD
 initialize()4view.ProcessControlChartFxmlController#initialize()Vå
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V˜
-(view.ProcessControlChartFxmlController$1javafx.concurrent.TaskI
-call()?view.ProcessControlChartFxmlController$1#call()Ljava/lang/Void;Á
-\<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)Üview.ProcessControlChartFxmlController$1#<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)VÌ
-*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
-runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
-Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VŒ%
+0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)VŒ%
 javafx.scene.control.Spinnerjavafx.scene.control.Control8
 increment())javafx.scene.control.Spinner#increment()Vq
 repeatDelayProperty()Xjavafx.scene.control.Spinner#repeatDelayProperty()Ljavafx/beans/property/ObjectProperty;X
@@ -4908,7 +4903,10 @@ getValue()9javafx.scene.control.Spinner#getValue()Ljava/lang/Object;8
 MwrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Äjavafx.scene.control.Spinner#wrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;l
 editableProperty()Vjavafx.scene.control.Spinner#editableProperty()Ljavafx/beans/property/BooleanProperty;ı
 i<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)ájavafx.scene.control.Spinner#<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)V[
-getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;Í 
+getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;Ì
+*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
+runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
+Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VÍ 
 java.text.NumberFormatjava.text.FormatP
 equals(Ljava/lang/Object;)2java.text.NumberFormat#equals(Ljava/lang/Object;)ZÖ
 )getScientificInstance(Ljava/util/Locale;)Xjava.text.NumberFormat#getScientificInstance(Ljava/util/Locale;)Ljava/text/NumberFormat;N

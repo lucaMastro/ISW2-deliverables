@@ -1,6 +1,5 @@
 package view;
 
-import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -8,7 +7,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import logic.abstracts.AbstractBoundary;
 
 public abstract class ProcessControlChartAndProportionFxmlController extends BasicPageFxmlController {
 
@@ -30,30 +28,6 @@ public abstract class ProcessControlChartAndProportionFxmlController extends Bas
             String path = f.getPath();
             this.outputFileLabel.setText(path);
         }
-    }
-
-    protected void runTask(AbstractBoundary boundary){
-        var task = new Task<Void>() {
-            @Override
-            protected Void call() throws Exception {
-                boundary.runUseCase();
-                return null;
-            }
-        };
-        task.setOnSucceeded(e ->{
-            SceneSwitcher.getInstance().informationAlertShow("Done!!");
-            SceneSwitcher.getInstance().setDefautlCursor();
-        });
-
-        task.setOnFailed(e ->{
-            var exc = task.getException();
-            SceneSwitcher.getInstance().errorAlertShow(exc.getMessage());
-            SceneSwitcher.getInstance().setDefautlCursor();
-        });
-
-        SceneSwitcher.getInstance().setWorkingCursor();
-        var t = new Thread(task);
-        t.start();
     }
 
     @FXML

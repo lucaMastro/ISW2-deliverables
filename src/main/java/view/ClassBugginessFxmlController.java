@@ -22,7 +22,14 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
                 this.repositoryLabel.getText(),
                 this.projectName.getText(),
                 this.proportionPossibilities.getValue());
-        this.runTask(boundary);
+        var task = new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                boundary.runUseCase();
+                return null;
+            }
+        };
+        this.runTask(task);
     }
 
     @Override

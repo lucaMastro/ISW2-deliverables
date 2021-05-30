@@ -26,21 +26,7 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
                     return null;
                 }
             };
-            task.setOnSucceeded(e ->{
-                SceneSwitcher.getInstance().informationAlertShow("Done!!");
-                SceneSwitcher.getInstance().setDefautlCursor();
-            });
-
-            task.setOnFailed(e ->{
-                var exc = task.getException();
-                SceneSwitcher.getInstance().errorAlertShow(exc.getMessage());
-                SceneSwitcher.getInstance().setDefautlCursor();
-            });
-
-            SceneSwitcher.getInstance().setWorkingCursor();
-            var t = new Thread(task);
-            t.start();
-
+            this.runTask(task);
         }
         catch (InvalidInputException e){
             SceneSwitcher.getInstance().errorAlertShow(e.getMessage());

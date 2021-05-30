@@ -25,8 +25,14 @@ public class ProcessControlChartFxmlController extends ProcessControlChartAndPro
                 this.repositoryLabel.getText(),
                 this.projectName.getText(),
                 this.thresholdSpinner.getValue());
-
-        this.runTask(boundary);
+        var task = new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                boundary.runUseCase();
+                return null;
+            }
+        };
+        this.runTask(task);
     }
 
     @Override
