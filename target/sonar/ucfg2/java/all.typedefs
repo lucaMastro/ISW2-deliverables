@@ -3500,9 +3500,10 @@ hashCode()java.lang.Boolean#hashCode()I3
 3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerI
 <init>()=view.ProcessControlChartAndProportionFxmlController#<init>()VQ
 initialize()Aview.ProcessControlChartAndProportionFxmlController#initialize()V™
-0browseOutputFilePath(Ljavafx/event/ActionEvent;)eview.ProcessControlChartAndProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)V›
+0browseOutputFilePath(Ljavafx/event/ActionEvent;)eview.ProcessControlChartAndProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)VÜ
 !view.ClassBugginessFxmlController3view.ProcessControlChartAndProportionFxmlController7
-<init>()+view.ClassBugginessFxmlController#<init>()V‡
+<init>()+view.ClassBugginessFxmlController#<init>()V?
+initialize()/view.ClassBugginessFxmlController#initialize()V‡
 0submitButtonSelected(Ljavafx/event/ActionEvent;)Sview.ClassBugginessFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V›
  logic.abstracts.AbstractBoundaryjava.lang.Object\
 setPath(Ljava/lang/String;)=logic.abstracts.AbstractBoundary#setPath(Ljava/lang/String;)VW

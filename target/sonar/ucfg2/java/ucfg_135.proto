@@ -1,16 +1,16 @@
 
-7logic.bean.ProportionBean#getOutputFile()Ljava/io/File;o
-e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java ("1*º
+6logic.bean.ProportionBean#getDirectory()Ljava/io/File;o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java ("1*½
 1o
-e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (¹
-¶
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (¼
+¹
 o
-e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (
-%0java.io.File"__id*)*'
-logic.bean.ProportionBean"
-output"‡
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (
+%0java.io.File"__id*,**
+logic.bean.ProportionBean"
+	directory"‡
 o
-e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (
 
 %0java.io.FileB
 logic.bean.ProportionBean

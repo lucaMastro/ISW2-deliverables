@@ -17,17 +17,11 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
                     this.projectName.getText());
             boundary.runUseCase();
             SceneSwitcher.getInstance().informationAlertShow("Done!!");
-        }catch (InvalidRangeException |GitAPIException | IOException e){
+        } catch (InvalidRangeException | GitAPIException | IOException e) {
             SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
-        }
-        finally {
+        } finally {
             this.progressBar.setVisible(Boolean.FALSE);
         }
-    }
-
-    @Override
-    protected void initialize(){
-        super.initialize();
     }
 }
 
