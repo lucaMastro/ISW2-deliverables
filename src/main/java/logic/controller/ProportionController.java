@@ -16,18 +16,19 @@ public class ProportionController {
     public void run(ProportionBean bean)
             throws IOException, GitAPIException, InvalidRangeException, NotAvaiableAlgorithm {
 
-        var dataset = new ProportionDataset(bean);
+        ProportionDataset dataset = null;
 
         /*  Checking proportion algo to use */
         switch (bean.getProportionAlgo()){
             case PROPORTION_INCREMENT:
+                dataset = new ProportionDataset(bean);
                 dataset.computeFeatures();
                 this.proportionIncrementMode(dataset);
                 break;
             case PROPORTION_MOVING_WINDOW: //i want to implement also this
-                throw new NotAvaiableAlgorithm("Algorithm not avaiable");
+                throw new NotAvaiableAlgorithm("Algorithm not avaiable.");
             case PROPORTION_COLD_START:
-                throw new NotAvaiableAlgorithm("Algorithm not avaiable");
+                throw new NotAvaiableAlgorithm("Algorithm not avaiable.");
         }
 
         var file = bean.getOutputFile();
