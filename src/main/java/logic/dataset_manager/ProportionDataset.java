@@ -262,4 +262,16 @@ public class ProportionDataset extends Dataset {
         return this.releases.size();
     }
 
+
+    @Override
+    public String toString() {
+        var chosenFeatures = "Version,File Name,LOC,NR,NFix,NAuth,LOC_added,MAX_LOC_added,Churn,MAX_Churn,Age,Buggy\n";
+        var bld = new StringBuilder(chosenFeatures);
+        for (Release r : this.getReleases()) {
+            String rIndex = r.getIndex().toString() + ",";
+            for (ReleaseFile rf : r.getFiles())
+                bld.append(rIndex).append(rf.toString());
+        }
+        return bld.toString();
+    }
 }

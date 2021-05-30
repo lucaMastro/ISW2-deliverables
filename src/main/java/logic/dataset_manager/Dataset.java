@@ -1,6 +1,6 @@
 package logic.dataset_manager;
 
-import logic.bean.ProportionBean;
+import logic.abstracts.AbstractBean;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -18,7 +18,7 @@ public abstract class Dataset {
 
     //***********************************************************************************************************
 
-    protected Dataset(ProportionBean bean) throws IOException {
+    protected Dataset(AbstractBean bean) throws IOException {
         var jgitManager = new JgitManager(bean.getDirectory().getPath());
         this.initializeCommitList(jgitManager);
     }

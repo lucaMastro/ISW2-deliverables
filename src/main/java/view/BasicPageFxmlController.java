@@ -5,7 +5,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ProgressIndicator;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
@@ -25,9 +24,6 @@ public abstract class BasicPageFxmlController {
 
     @FXML
     protected Button browseRepoPathButton;
-
-    @FXML
-    protected ProgressIndicator progressBar;
 
     @FXML
     protected void backButtonSelected(ActionEvent actionEvent) throws IOException {

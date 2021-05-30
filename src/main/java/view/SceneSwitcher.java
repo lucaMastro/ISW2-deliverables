@@ -2,6 +2,7 @@ package view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -36,8 +37,8 @@ public class SceneSwitcher extends Application {
 	}
 
 	public void setHomeScene(ActionEvent event) throws IOException {
-		var stage = this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		this.setHomeScene(stage);
+		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.setHomeScene(this.primaryStage);
 	}
 
 	public void setControlChartScene(ActionEvent event) throws IOException {
@@ -80,6 +81,14 @@ public class SceneSwitcher extends Application {
 		loginAlert.setContentText(alertString);
 
 		loginAlert.show();
+	}
+
+	public void setWorkingCursor(){
+		this.scene.setCursor(Cursor.WAIT);
+	}
+
+	public void setDefautlCursor() {
+		this.scene.setCursor(Cursor.DEFAULT);
 	}
 
 	public static void main(String[] args) { launch(args); }

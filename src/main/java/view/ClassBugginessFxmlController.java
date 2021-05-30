@@ -1,27 +1,62 @@
 package view;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
-import java.io.IOException;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
 import logic.boundary.FindBugginessBoundary;
-import logic.exception.InvalidRangeException;
-import org.eclipse.jgit.api.errors.GitAPIException;
+import logic.enums.ProportionAlgoOptions;
 
 public class ClassBugginessFxmlController extends ProcessControlChartAndProportionFxmlController {
 
+
+    @FXML
+    private ComboBox<String> proportionPossibilities;
+
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
-        try {
-            this.progressBar.setVisible(Boolean.TRUE);
-            var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
-                    this.repositoryLabel.getText(),
-                    this.projectName.getText());
-            boundary.runUseCase();
+        var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
+                this.repositoryLabel.getText(),
+                this.projectName.getText(),
+                this.proportionPossibilities.getValue());
+        var task = new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                boundary.runUseCase();
+                return null;
+            }
+        };
+        task.setOnSucceeded(e ->{
             SceneSwitcher.getInstance().informationAlertShow("Done!!");
-        } catch (InvalidRangeException | GitAPIException | IOException e) {
-            SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
-        } finally {
-            this.progressBar.setVisible(Boolean.FALSE);
+            SceneSwitcher.getInstance().setDefautlCursor();
+        });
+
+        task.setOnFailed(e ->{
+            var exc = task.getException();
+            SceneSwitcher.getInstance().errorAlertShow(exc.getMessage());
+            SceneSwitcher.getInstance().setDefautlCursor();
+        });
+
+        SceneSwitcher.getInstance().setWorkingCursor();
+        var t = new Thread(task);
+        t.start();
+    }
+
+    @Override
+    protected void initialize(){
+        super.initialize();
+        this.repositoryLabel.setText("/home/luca/Scrivania/ISW2/deliverables/deliverable2/bookkeeper");
+        this.outputFileLabel.setText("/home/luca/Scrivania/bookkeeperGUI.csv");
+        this.projectName.setText("bookkeeper");
+
+        ObservableList<String> options = FXCollections.observableArrayList();
+        for (ProportionAlgoOptions obj : ProportionAlgoOptions.class.getEnumConstants()){
+            options.add(obj.getAlgo());
         }
+        this.proportionPossibilities.getItems().addAll(options);
     }
 }
 

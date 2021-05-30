@@ -1,12 +1,11 @@
 package view;
 
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import logic.boundary.CloneRepositoryBoundary;
 import logic.exception.InvalidInputException;
-import org.eclipse.jgit.api.errors.GitAPIException;
-
 
 public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
@@ -15,21 +14,38 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
     @FXML
     protected void submitButtonSelected(ActionEvent event) {
-        this.progressBar.setVisible(Boolean.TRUE);
         String outputDir = this.repositoryLabel.getText();
         String url = this.urlTextField.getText();
 
         try {
             var boundary = new CloneRepositoryBoundary(url, outputDir);
-            boundary.cloneRepository();
-            SceneSwitcher.getInstance().informationAlertShow("Done!!");
+            var task = new Task<Void>() {
+                @Override
+                protected Void call() throws Exception {
+                    boundary.cloneRepository();
+                    return null;
+                }
+            };
+            task.setOnSucceeded(e ->{
+                SceneSwitcher.getInstance().informationAlertShow("Done!!");
+                SceneSwitcher.getInstance().setDefautlCursor();
+            });
+
+            task.setOnFailed(e ->{
+                var exc = task.getException();
+                SceneSwitcher.getInstance().errorAlertShow(exc.getMessage());
+                SceneSwitcher.getInstance().setDefautlCursor();
+            });
+
+            SceneSwitcher.getInstance().setWorkingCursor();
+            var t = new Thread(task);
+            t.start();
+
         }
-        catch (InvalidInputException | GitAPIException e){
+        catch (InvalidInputException e){
             SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
         }
-        finally {
-            this.progressBar.setVisible(Boolean.FALSE);
-        }
+
     }
 
     @FXML

@@ -1,33 +1,26 @@
 package logic.bean;
 
+import logic.abstracts.AbstractBean;
+import logic.enums.ProportionAlgoOptions;
 import logic.exception.InvalidInputException;
 
-import java.io.File;
+public class ProportionBean extends AbstractBean {
 
-public class ProportionBean {
+    ProportionAlgoOptions proportionAlgo;
 
-    File directory;
-    File output;
-    String project; //should be UPPERCASE
+    public ProportionBean(String outputFile, String dirPath, String projectName, String proportion)
+            throws InvalidInputException {
 
-    public ProportionBean(String outputFile, String dirPath, String projectName) throws InvalidInputException {
-        this.directory = new File(dirPath);
-        if (!this.directory.exists()) {
-            throw new InvalidInputException("Directory doesn't exist.");
+        super(outputFile, dirPath, projectName);
+        for (ProportionAlgoOptions obj : ProportionAlgoOptions.values()){
+            if (obj.getAlgo().equals(proportion)){
+                this.proportionAlgo = obj;
+                break;
+            }
         }
-        this.output = new File(outputFile);
-        this.project = projectName.toUpperCase();
     }
 
-    public File getDirectory() {
-        return directory;
-    }
-
-    public File getOutputFile() {
-        return output;
-    }
-
-    public String getProject() {
-        return project;
+    public ProportionAlgoOptions getProportionAlgo() {
+        return proportionAlgo;
     }
 }

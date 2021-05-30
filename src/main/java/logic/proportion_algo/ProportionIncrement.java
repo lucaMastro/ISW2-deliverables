@@ -22,6 +22,10 @@ public class ProportionIncrement {
         this.proportionP = 0;
     }
 
+    public ProportionIncrement(ProportionDataset d){
+        this.dataset = d;
+        this.proportionP = 0;
+    }
 
     private void computePvalue(List<BugTicket> bugs){
         /* bugs is a the list of bug whose fixed version index is less than or equal a certain value
