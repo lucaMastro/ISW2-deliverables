@@ -8,8 +8,6 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 
 public class ClassBugginessFxmlController extends ProcessControlChartAndProportionFxmlController {
 
-
-
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
         try {
@@ -25,6 +23,11 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
         finally {
             this.progressBar.setVisible(Boolean.FALSE);
         }
+    }
+
+    @Override
+    protected void initialize(){
+        super.initialize();
     }
 }
 

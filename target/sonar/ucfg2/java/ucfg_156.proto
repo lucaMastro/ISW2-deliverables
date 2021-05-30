@@ -1,25 +1,25 @@
 
 rlogic.dataset_manager.ProportionDataset#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaæ æ()"1*ï
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaå å()"1*ï
 1
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaç ç(à
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaæ æ(à
 Ý
 
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaç ç(
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaæ æ(
 %0java.util.ArrayList"__id*9*7)
 'logic.dataset_manager.ProportionDataset"
 
 releasesÚ
 ×
 
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaç ç(2#
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaæ æ(2#
 %1logic.dataset_manager.Release"
 __arrayGet*
 
 %0java.util.ArrayList*
 """¨
 
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaç ç(3%
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaæ æ(3%
 #
 %1logic.dataset_manager.Release:!
 releaseIndexjava.lang.IntegerB+)
