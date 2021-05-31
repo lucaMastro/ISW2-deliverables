@@ -6,7 +6,7 @@ import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
+import javafx.scene.control.*;
 import logic.boundary.FindBugginessBoundary;
 import logic.enums.ProportionAlgoOptions;
 
@@ -15,6 +15,14 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
 
     @FXML
     private ComboBox<String> proportionPossibilities;
+
+
+    @FXML
+    private Label windowsPeriodLabel;
+
+    @FXML
+    private Spinner<Integer> windowPeriodValue;
+
 
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
@@ -44,6 +52,19 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
             options.add(obj.getAlgo());
         }
         this.proportionPossibilities.getItems().addAll(options);
+        //showing other elements if window mode is selected:
+        this.proportionPossibilities.valueProperty().addListener((obs, oldItem, newItem) ->{
+            if (newItem.equals(ProportionAlgoOptions.PROPORTION_MOVING_WINDOW.getAlgo())){
+                this.windowPeriodValue.setVisible(Boolean.TRUE);
+                this.windowsPeriodLabel.setVisible(Boolean.TRUE);
+            }
+            else{
+                this.windowPeriodValue.setVisible(Boolean.FALSE);
+                this.windowsPeriodLabel.setVisible(Boolean.FALSE);
+            }
+        });
+
+        SceneSwitcher.getInstance().initializeIntegerSpinner(this.windowPeriodValue);
     }
 }
 

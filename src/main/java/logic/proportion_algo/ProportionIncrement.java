@@ -27,9 +27,9 @@ public class ProportionIncrement {
         this.proportionP = 0;
     }
 
-    private void computePvalue(List<BugTicket> bugs){
+    private void computeInitialPvalue(List<BugTicket> bugs){
         /* bugs is a the list of bug whose fixed version index is less than or equal a certain value
-        *  and AffectedVersion is not empty, info got by jira  */
+        *  and AffectedVersion is not empty, info got by jira. This method computes P using jira info.  */
         double numerator;
         double denominator;
         double fract;
@@ -61,7 +61,7 @@ public class ProportionIncrement {
                 onlyRelativeBugs.add(b);
         }
         /*  computing p */
-        this.computePvalue(onlyRelativeBugs);
+        this.computeInitialPvalue(onlyRelativeBugs);
 
         /*  updating all bugs AV    */
         this.updateBugsAV(bugs);
@@ -96,13 +96,14 @@ public class ProportionIncrement {
             /*  this method uses releases indexing number: that's why for loop is between [1, size] */
             this.computeProportion(i);
         }
+        this.setDatasetBugginess();
     }
 
     public Dataset getDataset() {
         return dataset;
     }
 
-    public void setDatasetBugginess() {
+    private void setDatasetBugginess() {
         for (BugTicket b : this.dataset.getFixedBugs()) {
             for (Release r : b.getAffectedVersions())
                 r.setAllFileBuggines(b.getTouchedFiles());

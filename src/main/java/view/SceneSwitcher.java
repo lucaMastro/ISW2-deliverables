@@ -7,10 +7,18 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.TextFormatter;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
+import javafx.util.converter.IntegerStringConverter;
+
 import java.io.IOException;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
+import java.util.function.UnaryOperator;
 
 public class SceneSwitcher extends Application {
 	private Scene scene;
@@ -89,6 +97,28 @@ public class SceneSwitcher extends Application {
 
 	public void setDefautlCursor() {
 		this.scene.setCursor(Cursor.DEFAULT);
+	}
+
+	public void initializeIntegerSpinner(Spinner<Integer> spinner){
+		var format = NumberFormat.getIntegerInstance();
+		UnaryOperator<TextFormatter.Change> filter = c -> {
+			if (c.isContentChange()) {
+				var parsePosition = new ParsePosition(0);
+				// NumberFormat evaluates the beginning of the text
+				format.parse(c.getControlNewText(), parsePosition);
+				if (parsePosition.getIndex() == 0 ||
+						parsePosition.getIndex() < c.getControlNewText().length()) {
+					// reject parsing the complete text failed
+					return null;
+				}
+			}
+			return c;
+		};
+		TextFormatter<Integer> priceFormatter = new TextFormatter<>(
+				new IntegerStringConverter(), 0, filter);
+		var fact = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, Integer.MAX_VALUE);
+		spinner.setValueFactory(fact);
+		spinner.getEditor().setTextFormatter(priceFormatter);
 	}
 
 	public static void main(String[] args) { launch(args); }

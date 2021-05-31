@@ -44,6 +44,5 @@ public class ProportionController {
     private void proportionIncrementMode(ProportionDataset dataset){
         var proportionIncrement = new ProportionIncrement(dataset);
         proportionIncrement.computeProportionIncrement();
-        proportionIncrement.setDatasetBugginess();
     }
 }
