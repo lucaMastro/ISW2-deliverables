@@ -2,7 +2,6 @@ package logic.proportion_algo;
 
 import logic.bean.ProportionBean;
 import logic.dataset_manager.BugTicket;
-import logic.dataset_manager.Dataset;
 import logic.dataset_manager.ProportionDataset;
 import logic.dataset_manager.Release;
 import logic.exception.InvalidRangeException;
@@ -47,8 +46,8 @@ public class ProportionIncrement {
     }
 
     private void computeProportion(Integer index){
-        /*  this method compute the P value of the first index releases: as proportion increment wants,
-        *   if i want to predict buggines of index-th release's classes, i should use a P value computed
+        /*  this method compute the P value of the first i releases: as proportion increment wants,
+        *   if i want to predict buggines of index-th release's class, i should use a P value computed
         *   for fixed bugs in releases in [1, index].   */
 
         List<BugTicket> bugs = this.dataset.getFixedBugs();
@@ -99,14 +98,10 @@ public class ProportionIncrement {
         this.setDatasetBugginess();
     }
 
-    public Dataset getDataset() {
-        return dataset;
-    }
-
     private void setDatasetBugginess() {
         for (BugTicket b : this.dataset.getFixedBugs()) {
             for (Release r : b.getAffectedVersions())
-                r.setAllFileBuggines(b.getTouchedFiles());
+                r.setAllFileBuggines(b.getTouchedFiles(), this.dataset.getFiles(), r.getIndex());
         }
     }
 }

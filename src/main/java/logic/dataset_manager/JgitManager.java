@@ -1,10 +1,7 @@
 package logic.dataset_manager;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.diff.DiffEntry;
-import org.eclipse.jgit.diff.DiffFormatter;
-import org.eclipse.jgit.diff.Edit;
-import org.eclipse.jgit.diff.RawTextComparator;
+import org.eclipse.jgit.diff.*;
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
@@ -15,6 +12,7 @@ import org.eclipse.jgit.util.io.DisabledOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
@@ -82,6 +80,11 @@ public class JgitManager {
         }
         return new Integer[]{linesAdded, linesDeleted};
     }
+
+
+    /* ************************************************************************************************
+        LOC metric computing method and usefull method to prevent comment's inclusion in count
+    ************************************************************************************************** */
 
     public Integer getLocFileInGivenRelease(String fileName, RevCommit release) throws IOException {
 
@@ -170,5 +173,22 @@ public class JgitManager {
             }
         }
         return new Boolean[]{isValidLine, nowOpened};
+    }
+
+    public List<String> filesInRelease(RevCommit revCommit){
+        var files = new ArrayList<String>();
+        try (var tw = new TreeWalk(this.getRepository())){
+            tw.setRecursive(Boolean.TRUE);
+            tw.reset(revCommit.getTree().getId());
+            while (tw.next()){
+                var fileName = tw.getPathString();
+                if (fileName.endsWith(".java"))
+                    files.add(fileName);
+            }
+        } catch (IOException e) {
+            var logger = Logger.getLogger(JgitManager.class.getName());
+            logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
+        }
+        return files;
     }
 }

@@ -1,0 +1,142 @@
+
+Dlogic.dataset_manager.ProportionDataset#toString()Ljava/lang/String;
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaã ã("8*ú
+2
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaé é(∂
+≥
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaé é("
+rlogic.dataset_manager.Release"__id*
+""‘
+—
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaé é("
+rlogic.dataset_manager.Release"
+__arrayGet*
+
+%2java.util.List*
+""*
+6
+1*¶
+3
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaê ê(ª
+∏
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaê ê('
+rf!logic.dataset_manager.ReleaseFile"__id*
+""Ÿ
+÷
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaê ê('
+rf!logic.dataset_manager.ReleaseFile"
+__arrayGet*
+
+%6java.util.List*
+""*
+2
+4*∏
+4
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaë ë(Ã…
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaë ë("
+%7java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+bldjava.lang.StringBuilder*
+
+rIndexjava.lang.String2append(Ljava/lang/String;)ìê
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaë* ë(7
+%8java.lang.String">logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;*)
+'
+rf!logic.dataset_manager.ReleaseFile2
+toString()«ƒ
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaë ë(8
+%9java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+%7java.lang.StringBuilder*
+
+%8java.lang.String2append(Ljava/lang/String;)*
+3*í
+5
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaê" ê(#ÜÉ
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaê" ê(.
+%6java.util.List"8logic.dataset_manager.Release#getFiles()Ljava/util/List;*$
+"
+rlogic.dataset_manager.Release2
+getFiles()*
+3*õ
+6
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(åâ
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è((
+%3java.lang.Integer";logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;*$
+"
+rlogic.dataset_manager.Release2
+getIndex()Û
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(3
+%4java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%3java.lang.Integer2
+toString()«
+ƒ
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(9
+%5java.lang.String"__concat*
+
+%4java.lang.String*
+,¿
+Ω
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(:
+rIndexjava.lang.String"__id*
+
+%5java.lang.String*
+5*©
+7
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaé é(ùö
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaé é(+
+%2java.util.List"Elogic.dataset_manager.ProportionDataset#getReleases()Ljava/util/List;*+)
+'logic.dataset_manager.ProportionDataset2getReleases()*
+2*≠
+8
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaå å(vã
+à
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaå å(w"
+chosenFeaturesjava.lang.String"__id*[Y
+WVersion,File Name,LOC,NR,NFix,NAuth,LOC_added,MAX_LOC_added,Churn,MAX_Churn,Age,Buggy\nºπ
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaç ç(#
+%0java.lang.StringBuilder"java.lang.StringBuilderÜ
+É
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaç ç(3
+%1"3java.lang.StringBuilder#<init>(Ljava/lang/String;)V*
+
+%0java.lang.StringBuilder*$
+"
+chosenFeaturesjava.lang.StringÀ
+»
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaç ç(4
+bldjava.lang.StringBuilder"__id*
+
+%0java.lang.StringBuilder*
+7*ß
+1
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaì ì(Å˛
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaì ì(
+%10java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;* 
+
+bldjava.lang.StringBuilder2
+toString()"ú
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaì ì(
+
+%10java.lang.StringB+)
+'logic.dataset_manager.ProportionDataset

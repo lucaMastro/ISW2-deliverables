@@ -29,4 +29,12 @@ public class FindBugginessBoundary extends AbstractBoundary {
         var controller = new ProportionController();
         controller.run(bean);
     }
+
+    public static void main(String[] args) throws GitAPIException, NotAvaiableAlgorithm, InvalidRangeException, IOException {
+        var boundary = new FindBugginessBoundary("/home/luca/Scrivania/bookkeeperGUI.csv",
+                "/home/luca/Scrivania/ISW2/deliverables/deliverable2/bookkeeper",
+                "bookkeeper",
+                "Increment");
+        boundary.runUseCase();
+    }
 }

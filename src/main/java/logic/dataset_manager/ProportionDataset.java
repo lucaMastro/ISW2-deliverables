@@ -11,7 +11,7 @@ import java.util.*;
 
 public class ProportionDataset extends Dataset {
     private ArrayList<Release> releases;
-    private Map<String, Date> nameToAdditionDate;
+    private ReleaseFileManager files;
 
     //***********************************************************************************************************
     // Constructor and relative methods
@@ -25,14 +25,12 @@ public class ProportionDataset extends Dataset {
         this.initializeBugsList(bean.getProject());
 
         this.reduceDataset();
-        this.nameToAdditionDate = new TreeMap<>();
-    }
 
+        this.files = new ReleaseFileManager(jgitManager, this.releases);
+    }
 
     public void reduceDataset() {
         /*  removing releases   */
-        Integer half = this.releases.size() / 2;
-        this.releases.removeIf(r -> r.index > half);
         var lastDate = this.releases.get(this.releases.size() - 1).date;
 
         /*  removing commits done after the last release    */
@@ -73,11 +71,13 @@ public class ProportionDataset extends Dataset {
 
     private void initializeReleaseList(JgitManager manager)
             throws GitAPIException, InvalidRangeException {
+
         List<Ref> tagList = new Git(manager.getRepository()).tagList().call();
         this.releases = new ArrayList<>();
         Integer i;
+        int half = tagList.size() / 2;
 
-        for (i = 0; i < tagList.size(); i++){
+        for (i = 0; i < half; i++){
             var cur = new Release(tagList.get(i), manager);
             this.releases.add(cur);
         }
@@ -86,7 +86,7 @@ public class ProportionDataset extends Dataset {
             Date d2 = o2.date;
             return d1.compareTo(d2);
         });
-        for (i = 0; i < tagList.size(); i++) {
+        for (i = 0; i < half; i++) {
             Release cur = this.releases.get(i);
             cur.setIndex(i + 1);
             cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
@@ -252,26 +252,16 @@ public class ProportionDataset extends Dataset {
     public void computeFeatures() throws IOException {
         Release prev = null;
         for (Release r : this.releases) {
-            this.nameToAdditionDate = r.computeMetrics(prev, this.fixedBugs, this.nameToAdditionDate);
+            this.files = r.computeMetrics(prev, this.fixedBugs, this.files);
             prev = r;
         }
     }
-
 
     public int getNumOfReleases(){
         return this.releases.size();
     }
 
-
-    @Override
-    public String toString() {
-        var chosenFeatures = "Version,File Name,LOC,NR,NFix,NAuth,LOC_added,MAX_LOC_added,Churn,MAX_Churn,Age,Buggy\n";
-        var bld = new StringBuilder(chosenFeatures);
-        for (Release r : this.getReleases()) {
-            String rIndex = r.getIndex().toString() + ",";
-            for (ReleaseFile rf : r.getFiles())
-                bld.append(rIndex).append(rf.toString());
-        }
-        return bld.toString();
+    public List<ReleaseFile> getFiles() {
+        return this.files.getFileList();
     }
 }

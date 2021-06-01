@@ -1,4 +1,5 @@
 /*
+
  *
  *   Size                  Lines of code(LOC)
  *   LOC                   Touched Sum over revisions of LOC added + deleted
@@ -23,122 +24,189 @@ package logic.dataset_manager;
 
 import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.revwalk.RevCommit;
+
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
+
 
 public class ReleaseFile {
 
-    private String name;
-    private List<PersonIdent> editors;
     private Date additionDate;
-
-    //metrics
-    private long loc; //lines of code
-    private long nr;    //number of revisions that modifies this file
-    private long nFix; //number of bug fixes on this file
-    private long nAuth; //number of authors which commits this file
-    private long locAdded; //sum over revision of LOC added
-    private long maxLocAdded; //maximum over revisions of LOC added
-    private long churn; //sum over revisions of added - deleted LOC
-    private long maxChurn; //maximum churn over revisions
-    private long age; //age of Release
-
-    private Boolean buggy;
     private JgitManager jgitManager;
 
-    public ReleaseFile(String name, JgitManager manager){
+    private String[] names;
+    private ArrayList<PersonIdent>[] editors;
+
+    //metrics
+    private Long[] loc; //lines of code
+    private Long[] nr;    //number of revisions that modifies this file
+    private Long[] nFix; //number of bug fixes on this file
+    private Long[] nAuth; //number of authors which commits this file
+    private Long[] locAdded; //sum over revision of LOC added
+    private Long[] maxLocAdded; //maximum over revisions of LOC added
+    private Long[] churn; //sum over revisions of added - deleted LOC
+    private Long[] maxChurn; //maximum churn over revisions
+    private Long[] age; //age of Release
+
+    private Boolean[] buggy;
+
+    public ReleaseFile(JgitManager manager, int numberOfRelease, int currRelease, String name) {
+        this(manager,numberOfRelease,currRelease,null,name);
+    }
+
+
+    public ReleaseFile(JgitManager manager, int numberOfRelease, int currRelease, Date date, String name){
         this.jgitManager = manager;
-        this.editors = new ArrayList<>();
-        this.name = name;
-        this.nr = 0;
-        this.nAuth = 0;
-        this.locAdded = 0;
-        this.churn = 0;
-        this.maxChurn = 0;
-        this.maxLocAdded = 0;
-        this.age = 0;
-        this.buggy = Boolean.FALSE;
+        this.additionDate = date;
+
+        this.editors = new ArrayList[numberOfRelease];
+
+        this.loc = new Long[numberOfRelease];
+        this.names = new String[numberOfRelease];
+        this.nr = new Long[numberOfRelease];
+        this.nFix = new Long[numberOfRelease];
+        this.nAuth = new Long[numberOfRelease];
+        this.locAdded = new Long[numberOfRelease];
+        this.churn = new Long[numberOfRelease];
+        this.maxChurn = new Long[numberOfRelease];
+        this.maxLocAdded = new Long[numberOfRelease];
+        this.age = new Long[numberOfRelease];
+        this.buggy = new Boolean[numberOfRelease];
+
+        int i;
+
+        for (i = 0; i < numberOfRelease; i++) {
+            this.editors[i] = new ArrayList<>();
+            this.loc[i] = (long) 0;
+            this.names[i] = i == currRelease - 1 ? name : "";
+            this.nr[i] = (long) 0;
+            this.nFix[i] = (long) 0;
+            this.nAuth[i] = (long) 0;
+            this.locAdded[i] = (long) 0;
+            this.maxLocAdded[i] = (long) 0;
+            this.churn[i] = (long) 0;
+            this.maxChurn[i] = (long) 0;
+            this.age[i] = (long) 0;
+            this.buggy[i] = Boolean.FALSE;
+        }
     }
 
-    public String getPath(){
-        return this.name;
+    public Boolean isThisFile(String name){
+        /*  checks if this file has/had the given name */
+        Boolean b = Boolean.FALSE;
+        for (String s : this.names)
+            if (s.equals(name)){
+                b = Boolean.TRUE;
+                break;
+            }
+        return b;
     }
 
-    public void computeLoc(RevCommit release) throws IOException {
-        this.loc = this.jgitManager.getLocFileInGivenRelease(this.name, release);
+    public void addName(String name, int releaseIndex) {
+        this.names[releaseIndex - 1] = name;
     }
 
-    @Override
-    public String toString() {
+    public void computeLoc(RevCommit release, Integer index) throws IOException {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty())
+            this.loc[index - 1] = (long) this.jgitManager.getLocFileInGivenRelease(this.names[index - 1], release);
+    }
+
+    public void updateNumberOfRevision(Integer index) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty())
+            this.nr[index - 1]++;
+    }
+
+    public void addEditors(Integer index, PersonIdent authorIdent) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty()) {
+            var list = this.editors[index - 1];
+            if (!list.contains(authorIdent))
+                list.add(authorIdent);
+        }
+    }
+
+    public void updateNauth(Integer index) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty())
+            this.nAuth[index - 1] = (long) this.editors[index - 1].size();
+    }
+
+    public void updateLocAdded(Integer index, Integer linesAdded) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty()) {
+            this.locAdded[index - 1] += linesAdded;
+            if (this.maxLocAdded[index - 1] < linesAdded)
+                this.maxLocAdded[index - 1] = (long) linesAdded;
+        }
+    }
+
+    public void updateChurn(Integer index, int i) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty()) {
+            this.churn[index - 1] += i;
+            if (this.maxChurn[index - 1] < i)
+                this.maxChurn[index - 1] = (long) i;
+        }
+    }
+
+    public void updateNfix(Integer index) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty())
+            this.nFix[index - 1]++;
+    }
+
+    public void computeAge(Integer index, Date releaseDate) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty()) {
+            Long fileTime = this.additionDate.getTime();
+            Long releaseTime = releaseDate.getTime();
+            Long diffTime = releaseTime - fileTime; //milliseconds
+
+            /* milliseconds to weeks:
+             *  n [ms] = n / 1000 [s] = n / (1000 * 60) [m] =
+             *  n / (1000 * 60 * 60) [h] = n / (1000 * 60 * 60 * 24) [d] =
+             *  n / (1000 * 60 * 60 * 24 * 7) [w]
+             * */
+            this.age[index - 1] = diffTime / (1000 * 60 * 60 * 24 * 7);
+        }
+    }
+
+    public void updateBugginess(Integer index) {
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty())
+            this.buggy[index - 1] = Boolean.TRUE;
+    }
+
+    public String[] getNames() {
+        return this.names;
+    }
+
+    public String getOutputLine(Integer index) {
         var sb = new StringBuilder();
-        sb.append(this.name).append(",")
-                .append(this.loc).append(",")
-                .append(this.nr).append(",")
-                .append(this.nFix).append(",")
-                .append(this.nAuth).append(",")
-                .append(this.locAdded).append(",")
-                .append(this.maxLocAdded).append(",")
-                .append(this.churn).append(",")
-                .append(this.maxChurn).append(",")
-                .append(this.age).append(",");
-        String isBuggy = this.buggy.equals(Boolean.TRUE) ? "Yes" : "No";
-        sb.append(isBuggy).append("\n");
+        var currName = this.names[index - 1];
+        if (!currName.isEmpty()) {
+            sb.append(this.names[index - 1]).append(",")
+                    .append(this.loc[index - 1]).append(",")
+                    .append(this.nr[index - 1]).append(",")
+                    .append(this.nFix[index - 1]).append(",")
+                    .append(this.nAuth[index - 1]).append(",")
+                    .append(this.locAdded[index - 1]).append(",")
+                    .append(this.maxLocAdded[index - 1]).append(",")
+                    .append(this.churn[index - 1]).append(",")
+                    .append(this.maxChurn[index - 1]).append(",")
+                    .append(this.age[index - 1]).append(",");
+            sb.append(this.buggy[index - 1].equals(Boolean.TRUE) ? "Yes" : "No").append("\n");
+        }
         return sb.toString();
     }
 
-    public void updateNumberOfRevision(){
-        this.nr++;
-    }
-
-    public void updateNfix() {
-        this.nFix ++;
-    }
-
-    public void addEditors(PersonIdent editor) {
-        if (!this.editors.contains(editor))
-            this.editors.add(editor);
-    }
-
-    public void updateNauth(){
-        this.nAuth = this.editors.size();
-    }
-
-    public void updateLocAdded(Integer linesAdded) {
-        this.locAdded += linesAdded;
-        if (this.maxLocAdded < linesAdded)
-            this.maxLocAdded = linesAdded;
-    }
-
-    public void updateChurn(int i) {
-        this.churn += i;
-        if (this.maxChurn < i)
-            this.maxChurn = i;
-    }
-
-    public void setAdditionDate(Date date) {
+    public void setAdditiondate(Date date) {
         this.additionDate = date;
     }
 
-    public void computeAge(Date releaseDate) {
-        Long fileTime = this.additionDate.getTime();
-        Long releaseTime = releaseDate.getTime();
-        Long diffTime = releaseTime - fileTime; //milliseconds
-
-        /* milliseconds to weeks:
-        *  n [ms] = n / 1000 [s] = n / (1000 * 60) [m] =
-        *  n / (1000 * 60 * 60) [h] = n / (1000 * 60 * 60 * 24) [d] =
-        *  n / (1000 * 60 * 60 * 24 * 7) [w]
-        * */
-        this.age = diffTime / (1000 * 60 * 60 * 24 * 7);
-    }
-
-    public void updateBugginess() {
-        this.buggy = Boolean.TRUE;
-    }
-
-    public Boolean getBuggy() {
-        return buggy;
+    public Date getDate() {
+        return this.additionDate;
     }
 }
