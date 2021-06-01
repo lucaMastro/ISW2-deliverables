@@ -16,12 +16,11 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()I⁄
+hashCode()java.lang.Object#hashCode()IÛ
 )logic.proportion_algo.ProportionIncrementjava.lang.Objectk
 updateBugsAV(Ljava/util/List;)Ilogic.proportion_algo.ProportionIncrement#updateBugsAV(Ljava/util/List;)V{
 &computeProportion(Ljava/lang/Integer;)Qlogic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)Vë
-1<init>(Llogic/dataset_manager/ProportionDataset;)\logic.proportion_algo.ProportionIncrement#<init>(Llogic/dataset_manager/ProportionDataset;)Ve
-getDataset()Ulogic.proportion_algo.ProportionIncrement#getDataset()Llogic/dataset_manager/Dataset;u
+1<init>(Llogic/dataset_manager/ProportionDataset;)\logic.proportion_algo.ProportionIncrement#<init>(Llogic/dataset_manager/ProportionDataset;)Vu
 #<init>(Llogic/bean/ProportionBean;)Nlogic.proportion_algo.ProportionIncrement#<init>(Llogic/bean/ProportionBean;)Vg
 computeProportionIncrement()Glogic.proportion_algo.ProportionIncrement#computeProportionIncrement()V{
 &computeInitialPvalue(Ljava/util/List;)Qlogic.proportion_algo.ProportionIncrement#computeInitialPvalue(Ljava/util/List;)VY
@@ -35,20 +34,20 @@ $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitF
 +findCommitsFromTicketId(Ljava/lang/String;)Ylogic.dataset_manager.Dataset#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;Ç
 !findSvnCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;ï
 9initializeCommitList(Llogic/dataset_manager/JgitManager;)Xlogic.dataset_manager.Dataset#initializeCommitList(Llogic/dataset_manager/JgitManager;)V|
-getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;¥
+getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;≤
 'logic.dataset_manager.ProportionDatasetlogic.dataset_manager.Datasetâ
 getRelease(Ljava/lang/Integer;)flogic.dataset_manager.ProportionDataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;O
 computeFeatures():logic.dataset_manager.ProportionDataset#computeFeatures()VW
-removeRevertCommits()>logic.dataset_manager.ProportionDataset#removeRevertCommits()VR
-
-toString()Dlogic.dataset_manager.ProportionDataset#toString()Ljava/lang/String;¢
+removeRevertCommits()>logic.dataset_manager.ProportionDataset#removeRevertCommits()V¢
 3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)klogic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;K
 reduceDataset()8logic.dataset_manager.ProportionDataset#reduceDataset()V°
 :initializeReleaseList(Llogic/dataset_manager/JgitManager;)clogic.dataset_manager.ProportionDataset#initializeReleaseList(Llogic/dataset_manager/JgitManager;)VV
 getReleases()Elogic.dataset_manager.ProportionDataset#getReleases()Ljava/util/List;°
 +getReleaseFromItsIndex(Ljava/lang/Integer;)rlogic.dataset_manager.ProportionDataset#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;Q
 getNumOfReleases();logic.dataset_manager.ProportionDataset#getNumOfReleases()Iì
-$findOpeningVersion(Ljava/util/Date;)klogic.dataset_manager.ProportionDataset#findOpeningVersion(Ljava/util/Date;)Llogic/dataset_manager/Release;s
+$findOpeningVersion(Ljava/util/Date;)klogic.dataset_manager.ProportionDataset#findOpeningVersion(Ljava/util/Date;)Llogic/dataset_manager/Release;P
+
+getFiles()Blogic.dataset_manager.ProportionDataset#getFiles()Ljava/util/List;s
 #<init>(Llogic/bean/ProportionBean;)Llogic.dataset_manager.ProportionDataset#<init>(Llogic/bean/ProportionBean;)Vy
 &initializeBugsList(Ljava/lang/String;)Ologic.dataset_manager.ProportionDataset#initializeBugsList(Ljava/lang/String;)Vè
 "findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.ProportionDataset#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Release;ô
@@ -68,20 +67,18 @@ $setRelativeCommits(Ljava/util/List;)Elogic.dataset_manager.BugTicket#setRelati
 O<init>(Lorg/eclipse/jgit/revwalk/RevCommit;Llogic/dataset_manager/JgitManager;)mlogic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/revwalk/RevCommit;Llogic/dataset_manager/JgitManager;)V¨
 E<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)clogic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)VC
 	getDate()6logic.dataset_manager.Commit#getDate()Ljava/util/Date;|
-isFixCommit(Ljava/util/List;)[logic.dataset_manager.Commit#isFixCommit(Ljava/util/List;)Llogic/dataset_manager/BugTicket;à
-logic.dataset_manager.Releaselogic.dataset_manager.Commitœ
-ïupdateFileMetrics(Llogic/dataset_manager/ReleaseFile;Llogic/dataset_manager/Commit;Lorg/eclipse/jgit/diff/DiffEntry;Ljava/util/List;Ljava/util/Date;)¥logic.dataset_manager.Release#updateFileMetrics(Llogic/dataset_manager/ReleaseFile;Llogic/dataset_manager/Commit;Lorg/eclipse/jgit/diff/DiffEntry;Ljava/util/List;Ljava/util/Date;)V]
-setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)Vk
-$setAllFileBuggines(Ljava/util/List;)Clogic.dataset_manager.Release#setAllFileBuggines(Ljava/util/List;)VF
+isFixCommit(Ljava/util/List;)[logic.dataset_manager.Commit#isFixCommit(Ljava/util/List;)Llogic/dataset_manager/BugTicket;Æ
+logic.dataset_manager.Releaselogic.dataset_manager.Commit]
+setIndex(Ljava/lang/Integer;)<logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)V±
+GsetAllFileBuggines(Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;)flogic.dataset_manager.Release#setAllFileBuggines(Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;)Vü
+icomputeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Llogic/dataset_manager/ReleaseFileManager;)±logic.dataset_manager.Release#computeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Llogic/dataset_manager/ReleaseFileManager;)Llogic/dataset_manager/ReleaseFileManager; 
+LfindOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)zlogic.dataset_manager.Release#findOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)Ljava/util/List;ó
+:setEachFileLoc(Llogic/dataset_manager/ReleaseFileManager;)Ylogic.dataset_manager.Release#setEachFileLoc(Llogic/dataset_manager/ReleaseFileManager;)V≠
+E<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)dlogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)V•
+0findFromName(Ljava/lang/String;Ljava/util/List;)qlogic.dataset_manager.Release#findFromName(Ljava/lang/String;Ljava/util/List;)Llogic/dataset_manager/ReleaseFile;Ø
+ÖupdateFileMetrics(Llogic/dataset_manager/ReleaseFile;Llogic/dataset_manager/Commit;Lorg/eclipse/jgit/diff/DiffEntry;Ljava/util/List;)§logic.dataset_manager.Release#updateFileMetrics(Llogic/dataset_manager/ReleaseFile;Llogic/dataset_manager/Commit;Lorg/eclipse/jgit/diff/DiffEntry;Ljava/util/List;)VI
 
-getFiles()8logic.dataset_manager.Release#getFiles()Ljava/util/List;Ö
- findFromName(Ljava/lang/String;)alogic.dataset_manager.Release#findFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;Õ
-NcomputeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Ljava/util/Map;){logic.dataset_manager.Release#computeMetrics(Llogic/dataset_manager/Release;Ljava/util/List;Ljava/util/Map;)Ljava/util/Map; 
-LfindOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)zlogic.dataset_manager.Release#findOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)Ljava/util/List;≠
-E<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)dlogic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)VI
-
-getIndex();logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;C
-setEachFileLoc()/logic.dataset_manager.Release#setEachFileLoc()V÷
+getIndex();logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;÷
 java.lang.Iterablejava.lang.Objectd
 &forEach(Ljava/util/function/Consumer;):java.lang.Iterable#forEach(Ljava/util/function/Consumer;)VH
 spliterator()7java.lang.Iterable#spliterator()Ljava/util/Spliterator;å
@@ -502,11 +499,13 @@ hashCode(),org.eclipse.jgit.lib.PersonIdent#hashCode()Iz
 P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/TimeZone;)rorg.eclipse.jgit.lib.PersonIdent#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/TimeZone;)V~
 ,<init>(Ljava/lang/String;Ljava/lang/String;)Norg.eclipse.jgit.lib.PersonIdent#<init>(Ljava/lang/String;Ljava/lang/String;)V~
 ,<init>(Lorg/eclipse/jgit/lib/PersonIdent;JI)Norg.eclipse.jgit.lib.PersonIdent#<init>(Lorg/eclipse/jgit/lib/PersonIdent;JI)Vx
-)<init>(Lorg/eclipse/jgit/lib/UserConfig;)Korg.eclipse.jgit.lib.PersonIdent#<init>(Lorg/eclipse/jgit/lib/UserConfig;)V∑	
+)<init>(Lorg/eclipse/jgit/lib/UserConfig;)Korg.eclipse.jgit.lib.PersonIdent#<init>(Lorg/eclipse/jgit/lib/UserConfig;)Vÿ
+
 !logic.dataset_manager.JgitManagerjava.lang.Objectã
 jlistDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)úlogic.dataset_manager.JgitManager#listDifferencesBetweenTwoCommits(Lorg/eclipse/jgit/revwalk/RevCommit;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;{
 !updateQuote(CLjava/lang/Boolean;)Vlogic.dataset_manager.JgitManager#updateQuote(CLjava/lang/Boolean;)Ljava/lang/Boolean;û
-2isLineValid(Ljava/lang/String;Ljava/lang/Boolean;)hlogic.dataset_manager.JgitManager#isLineValid(Ljava/lang/String;Ljava/lang/Boolean;)[Ljava/lang/Boolean;[
+2isLineValid(Ljava/lang/String;Ljava/lang/Boolean;)hlogic.dataset_manager.JgitManager#isLineValid(Ljava/lang/String;Ljava/lang/Boolean;)[Ljava/lang/Boolean;û
+4filesInRelease(Lorg/eclipse/jgit/revwalk/RevCommit;)flogic.dataset_manager.JgitManager#filesInRelease(Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;[
 <init>(Ljava/lang/String;)=logic.dataset_manager.JgitManager#<init>(Ljava/lang/String;)V⁄
 PgetLocFileInGivenRelease(Ljava/lang/String;Lorg/eclipse/jgit/revwalk/RevCommit;)Ölogic.dataset_manager.JgitManager#getLocFileInGivenRelease(Ljava/lang/String;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/lang/Integer;e
 getRepository()Rlogic.dataset_manager.JgitManager#getRepository()Lorg/eclipse/jgit/lib/Repository;≤
@@ -1097,9 +1096,10 @@ LbinarySearch0([Ljava/lang/Object;IILjava/lang/Object;Ljava/util/Comparator;)^j
 +fill([Ljava/lang/Object;Ljava/lang/Object;)=java.util.Arrays#fill([Ljava/lang/Object;Ljava/lang/Object;)V?
 toString([D)/java.util.Arrays#toString([D)Ljava/lang/String;*
 
-sort([JII)java.util.Arrays#sort([JII)Vï
+sort([JII)java.util.Arrays#sort([JII)VÂ
 %logic.controller.ProportionControllerjava.lang.Object;
-<init>()/logic.controller.ProportionController#<init>()Vk
+<init>()/logic.controller.ProportionController#<init>()VÕ
+QwriteToFile(Llogic/bean/ProportionBean;Llogic/dataset_manager/ProportionDataset;)xlogic.controller.ProportionController#writeToFile(Llogic/bean/ProportionBean;Llogic/dataset_manager/ProportionDataset;)Vk
  run(Llogic/bean/ProportionBean;)Glogic.controller.ProportionController#run(Llogic/bean/ProportionBean;)VØ
 BproportionIncrementMode(Llogic/dataset_manager/ProportionDataset;)ilogic.controller.ProportionController#proportionIncrementMode(Llogic/dataset_manager/ProportionDataset;)V∫
 logic.abstracts.AbstractBeanjava.lang.ObjectK
@@ -1149,7 +1149,151 @@ $logic.exception.NotAvaiableAlgorithmjava.lang.Exception^
 <init>(Ljava/lang/String;).java.io.FileWriter#<init>(Ljava/lang/String;)Vx
 0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Djava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)VÄ
 4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Hjava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)VX
- <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)Væ
+ <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)V§
+!logic.dataset_manager.ReleaseFilejava.lang.ObjectÖ
+/computeAge(Ljava/lang/Integer;Ljava/util/Date;)Rlogic.dataset_manager.ReleaseFile#computeAge(Ljava/lang/Integer;Ljava/util/Date;)Ve
+updateNfix(Ljava/lang/Integer;)Blogic.dataset_manager.ReleaseFile#updateNfix(Ljava/lang/Integer;)VM
+
+getNames()?logic.dataset_manager.ReleaseFile#getNames()[Ljava/lang/String;_
+addName(Ljava/lang/String;I)?logic.dataset_manager.ReleaseFile#addName(Ljava/lang/String;I)Vg
+ updateNauth(Ljava/lang/Integer;)Clogic.dataset_manager.ReleaseFile#updateNauth(Ljava/lang/Integer;)V≠
+CcomputeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;Ljava/lang/Integer;)flogic.dataset_manager.ReleaseFile#computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;Ljava/lang/Integer;)V≈
+O<init>(Llogic/dataset_manager/JgitManager;IILjava/util/Date;Ljava/lang/String;)rlogic.dataset_manager.ReleaseFile#<init>(Llogic/dataset_manager/JgitManager;IILjava/util/Date;Ljava/lang/String;)Vì
+6updateLocAdded(Ljava/lang/Integer;Ljava/lang/Integer;)Ylogic.dataset_manager.ReleaseFile#updateLocAdded(Ljava/lang/Integer;Ljava/lang/Integer;)VH
+	getDate();logic.dataset_manager.ReleaseFile#getDate()Ljava/util/Date;i
+!setAdditiondate(Ljava/util/Date;)Dlogic.dataset_manager.ReleaseFile#setAdditiondate(Ljava/util/Date;)Vo
+$updateBugginess(Ljava/lang/Integer;)Glogic.dataset_manager.ReleaseFile#updateBugginess(Ljava/lang/Integer;)Vi
+!updateChurn(Ljava/lang/Integer;I)Dlogic.dataset_manager.ReleaseFile#updateChurn(Ljava/lang/Integer;I)V©
+AaddEditors(Ljava/lang/Integer;Lorg/eclipse/jgit/lib/PersonIdent;)dlogic.dataset_manager.ReleaseFile#addEditors(Ljava/lang/Integer;Lorg/eclipse/jgit/lib/PersonIdent;)V•
+?<init>(Llogic/dataset_manager/JgitManager;IILjava/lang/String;)blogic.dataset_manager.ReleaseFile#<init>(Llogic/dataset_manager/JgitManager;IILjava/lang/String;)V}
++updateNumberOfRevision(Ljava/lang/Integer;)Nlogic.dataset_manager.ReleaseFile#updateNumberOfRevision(Ljava/lang/Integer;)V|
+"getOutputLine(Ljava/lang/Integer;)Vlogic.dataset_manager.ReleaseFile#getOutputLine(Ljava/lang/Integer;)Ljava/lang/String;u
+isThisFile(Ljava/lang/String;)Slogic.dataset_manager.ReleaseFile#isThisFile(Ljava/lang/String;)Ljava/lang/Boolean;”
+java.lang.CharSequencejava.lang.ObjectE
+chars():java.lang.CharSequence#chars()Ljava/util/stream/IntStream;é
+9compare(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Qjava.lang.CharSequence#compare(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)IO
+codePoints()?java.lang.CharSequence#codePoints()Ljava/util/stream/IntStream;¬?
+java.lang.Stringjava.lang.CharSequencejava.lang.Comparablejava.lang.Objectjava.io.Serializableã
+2join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ujava.lang.String#join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;R
+startsWith(Ljava/lang/String;)0java.lang.String#startsWith(Ljava/lang/String;)Z&
+length()java.lang.String#length()I?
+substring(I)/java.lang.String#substring(I)Ljava/lang/String;V
+ indexOf([BBILjava/lang/String;I)2java.lang.String#indexOf([BBILjava/lang/String;I)I.
+<init>([BII)java.lang.String#<init>([BII)V&
+<init>()java.lang.String#<init>()V[
+concat(Ljava/lang/String;)=java.lang.String#concat(Ljava/lang/String;)Ljava/lang/String;P
+compareTo(Ljava/lang/String;)/java.lang.String#compareTo(Ljava/lang/String;)I:
+codePointCount(II)$java.lang.String#codePointCount(II)IF
+checkBoundsBeginEnd(III)*java.lang.String#checkBoundsBeginEnd(III)VL
+indexOf(Ljava/lang/String;)-java.lang.String#indexOf(Ljava/lang/String;)II
+codePoints()9java.lang.String#codePoints()Ljava/util/stream/IntStream;^
+$lastIndexOf([BBILjava/lang/String;I)6java.lang.String#lastIndexOf([BBILjava/lang/String;I)IN
+endsWith(Ljava/lang/String;).java.lang.String#endsWith(Ljava/lang/String;)Z(
+	charAt(I)java.lang.String#charAt(I)C(
+	isEmpty()java.lang.String#isEmpty()ZA
+toLowerCase()0java.lang.String#toLowerCase()Ljava/lang/String;Z
+"contains(Ljava/lang/CharSequence;)4java.lang.String#contains(Ljava/lang/CharSequence;)Z•
+?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)bjava.lang.String#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;4
+getChars(II[CI)!java.lang.String#getChars(II[CI)VE
+copyValueOf([C)2java.lang.String#copyValueOf([C)Ljava/lang/String;C
+stripLeading()1java.lang.String#stripLeading()Ljava/lang/String;;
+
+valueOf(F)-java.lang.String#valueOf(F)Ljava/lang/String;9
+	repeat(I),java.lang.String#repeat(I)Ljava/lang/String;b
+&<init>([BIILjava/nio/charset/Charset;)8java.lang.String#<init>([BIILjava/nio/charset/Charset;)Vá
+0replaceAll(Ljava/lang/String;Ljava/lang/String;)Sjava.lang.String#replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;4
+getBytes(II[BI)!java.lang.String#getBytes(II[BI)V*
+
+hashCode()java.lang.String#hashCode()IZ
+split(Ljava/lang/String;)=java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;O
+getBytes(Ljava/lang/String;)/java.lang.String#getBytes(Ljava/lang/String;)[BJ
+<init>(Ljava/lang/String;),java.lang.String#<init>(Ljava/lang/String;)VÅ
+-format(Ljava/lang/String;[Ljava/lang/Object;)Pjava.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;A
+toUpperCase()0java.lang.String#toUpperCase()Ljava/lang/String;,
+<init>([BB)java.lang.String#<init>([BB)V^
+$<init>([BLjava/nio/charset/Charset;)6java.lang.String#<init>([BLjava/nio/charset/Charset;)V2
+lastIndexOf(I) java.lang.String#lastIndexOf(I)IV
+ lastIndexOf(Ljava/lang/String;I)2java.lang.String#lastIndexOf(Ljava/lang/String;I)IV
+ <init>(Ljava/lang/StringBuffer;)2java.lang.String#<init>(Ljava/lang/StringBuffer;)Và
+9<init>(Ljava/lang/AbstractStringBuilder;Ljava/lang/Void;)Kjava.lang.String#<init>(Ljava/lang/AbstractStringBuilder;Ljava/lang/Void;)V*
+
+isLatin1()java.lang.String#isLatin1()ZL
+matches(Ljava/lang/String;)-java.lang.String#matches(Ljava/lang/String;)Z7
+intern()+java.lang.String#intern()Ljava/lang/String;T
+startsWith(Ljava/lang/String;I)1java.lang.String#startsWith(Ljava/lang/String;I)Z^
+$regionMatches(ILjava/lang/String;II)6java.lang.String#regionMatches(ILjava/lang/String;II)Zd
+'contentEquals(Ljava/lang/CharSequence;)9java.lang.String#contentEquals(Ljava/lang/CharSequence;)ZA
+substring(II)0java.lang.String#substring(II)Ljava/lang/String;K
+subSequence(II)8java.lang.String#subSequence(II)Ljava/lang/CharSequence;d
+'compareToIgnoreCase(Ljava/lang/String;)9java.lang.String#compareToIgnoreCase(Ljava/lang/String;)Iô
+9replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)\java.lang.String#replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;R
+<init>([BIILjava/lang/String;)0java.lang.String#<init>([BIILjava/lang/String;)VB
+offsetByCodePoints(II)(java.lang.String#offsetByCodePoints(II)IJ
+equals(Ljava/lang/Object;),java.lang.String#equals(Ljava/lang/Object;)Z4
+lastIndexOf(II)!java.lang.String#lastIndexOf(II)I;
+
+valueOf(D)-java.lang.String#valueOf(D)Ljava/lang/String;.
+<init>([III)java.lang.String#<init>([III)V,
+<init>([BI)java.lang.String#<init>([BI)VN
+<init>([CIILjava/lang/Void;).java.lang.String#<init>([CIILjava/lang/Void;)V]
+valueOf(Ljava/lang/Object;)>java.lang.String#valueOf(Ljava/lang/Object;)Ljava/lang/String;+
+
+getBytes()java.lang.String#getBytes()[Bd
+'contentEquals(Ljava/lang/StringBuffer;)9java.lang.String#contentEquals(Ljava/lang/StringBuffer;)Z?
+chars()4java.lang.String#chars()Ljava/util/stream/IntStream;2
+getBytes([BIB) java.lang.String#getBytes([BIB)VA
+valueOf([CII)0java.lang.String#valueOf([CII)Ljava/lang/String;e
+toLowerCase(Ljava/util/Locale;)Bjava.lang.String#toLowerCase(Ljava/util/Locale;)Ljava/lang/String;N
+indexOf(Ljava/lang/String;I).java.lang.String#indexOf(Ljava/lang/String;I)I*
+
+indexOf(I)java.lang.String#indexOf(I)I(
+	isBlank()java.lang.String#isBlank()Ze
+toUpperCase(Ljava/util/Locale;)Bjava.lang.String#toUpperCase(Ljava/util/Locale;)Ljava/lang/String;;
+
+toString()-java.lang.String#toString()Ljava/lang/String;;
+
+valueOf(C)-java.lang.String#valueOf(C)Ljava/lang/String;E
+rangeCheck([CII)1java.lang.String#rangeCheck([CII)Ljava/lang/Void;T
+lastIndexOf(Ljava/lang/String;)1java.lang.String#lastIndexOf(Ljava/lang/String;)IB
+indexOfNonWhitespace()(java.lang.String#indexOfNonWhitespace()I.
+<init>([CII)java.lang.String#<init>([CII)VE
+stripTrailing()2java.lang.String#stripTrailing()Ljava/lang/String;M
+valueOfCodePoint(I)6java.lang.String#valueOfCodePoint(I)Ljava/lang/String;=
+valueOf([C).java.lang.String#valueOf([C)Ljava/lang/String;ã
+2replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ujava.lang.String#replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;$
+coder()java.lang.String#coder()B_
+$getBytes(Ljava/nio/charset/Charset;)7java.lang.String#getBytes(Ljava/nio/charset/Charset;)[B3
+trim())java.lang.String#trim()Ljava/lang/String;<
+lines()1java.lang.String#lines()Ljava/util/stream/Stream;*
+
+<init>([C)java.lang.String#<init>([C)V4
+checkOffset(II)!java.lang.String#checkOffset(II)V5
+strip()*java.lang.String#strip()Ljava/lang/String;1
+toCharArray() java.lang.String#toCharArray()[C0
+<init>([BIII)java.lang.String#<init>([BIII)V=
+replace(CC).java.lang.String#replace(CC)Ljava/lang/String;:
+codePointBefore(I)$java.lang.String#codePointBefore(I)I^
+$equalsIgnoreCase(Ljava/lang/String;)6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z;
+
+valueOf(I)-java.lang.String#valueOf(I)Ljava/lang/String;ï
+7join(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Zjava.lang.String#join(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;2
+codePointAt(I) java.lang.String#codePointAt(I)IN
+<init>([BLjava/lang/String;).java.lang.String#<init>([BLjava/lang/String;)V*
+
+<init>([B)java.lang.String#<init>([B)V;
+
+valueOf(Z)-java.lang.String#valueOf(Z)Ljava/lang/String;I
+copyValueOf([CII)4java.lang.String#copyValueOf([CII)Ljava/lang/String;,
+indexOf(II)java.lang.String#indexOf(II)I\
+split(Ljava/lang/String;I)>java.lang.String#split(Ljava/lang/String;I)[Ljava/lang/String;F
+checkBoundsOffCount(III)*java.lang.String#checkBoundsOffCount(III)VÑ
+7nonSyncContentEquals(Ljava/lang/AbstractStringBuilder;)Ijava.lang.String#nonSyncContentEquals(Ljava/lang/AbstractStringBuilder;)Z;
+
+valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
+checkIndex(II) java.lang.String#checkIndex(II)VX
+!<init>(Ljava/lang/StringBuilder;)3java.lang.String#<init>(Ljava/lang/StringBuilder;)V%
+value()java.lang.String#value()[B`
+%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Zæ
 logic.bean.CloneRepositoryBeanjava.lang.Objectt
 (<init>(Ljava/lang/String;Ljava/io/File;)Hlogic.bean.CloneRepositoryBean#<init>(Ljava/lang/String;Ljava/io/File;)VM
 getOutputDir();logic.bean.CloneRepositoryBean#getOutputDir()Ljava/io/File;E
@@ -2481,132 +2625,7 @@ NiteratorBinarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)
 8checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)cjava.util.Collections#checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;ª
 +org.eclipse.jgit.api.errors.GitAPIExceptionjava.lang.Exceptione
 <init>(Ljava/lang/String;)Gorg.eclipse.jgit.api.errors.GitAPIException#<init>(Ljava/lang/String;)Vè
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)\org.eclipse.jgit.api.errors.GitAPIException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V”
-java.lang.CharSequencejava.lang.ObjectE
-chars():java.lang.CharSequence#chars()Ljava/util/stream/IntStream;é
-9compare(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Qjava.lang.CharSequence#compare(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)IO
-codePoints()?java.lang.CharSequence#codePoints()Ljava/util/stream/IntStream;¬?
-java.lang.Stringjava.lang.CharSequencejava.lang.Comparablejava.lang.Objectjava.io.Serializableã
-2join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ujava.lang.String#join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;R
-startsWith(Ljava/lang/String;)0java.lang.String#startsWith(Ljava/lang/String;)Z&
-length()java.lang.String#length()I?
-substring(I)/java.lang.String#substring(I)Ljava/lang/String;V
- indexOf([BBILjava/lang/String;I)2java.lang.String#indexOf([BBILjava/lang/String;I)I.
-<init>([BII)java.lang.String#<init>([BII)V&
-<init>()java.lang.String#<init>()V[
-concat(Ljava/lang/String;)=java.lang.String#concat(Ljava/lang/String;)Ljava/lang/String;P
-compareTo(Ljava/lang/String;)/java.lang.String#compareTo(Ljava/lang/String;)I:
-codePointCount(II)$java.lang.String#codePointCount(II)IF
-checkBoundsBeginEnd(III)*java.lang.String#checkBoundsBeginEnd(III)VL
-indexOf(Ljava/lang/String;)-java.lang.String#indexOf(Ljava/lang/String;)II
-codePoints()9java.lang.String#codePoints()Ljava/util/stream/IntStream;^
-$lastIndexOf([BBILjava/lang/String;I)6java.lang.String#lastIndexOf([BBILjava/lang/String;I)IN
-endsWith(Ljava/lang/String;).java.lang.String#endsWith(Ljava/lang/String;)Z(
-	charAt(I)java.lang.String#charAt(I)C(
-	isEmpty()java.lang.String#isEmpty()ZA
-toLowerCase()0java.lang.String#toLowerCase()Ljava/lang/String;Z
-"contains(Ljava/lang/CharSequence;)4java.lang.String#contains(Ljava/lang/CharSequence;)Z•
-?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)bjava.lang.String#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;4
-getChars(II[CI)!java.lang.String#getChars(II[CI)VE
-copyValueOf([C)2java.lang.String#copyValueOf([C)Ljava/lang/String;C
-stripLeading()1java.lang.String#stripLeading()Ljava/lang/String;;
-
-valueOf(F)-java.lang.String#valueOf(F)Ljava/lang/String;9
-	repeat(I),java.lang.String#repeat(I)Ljava/lang/String;b
-&<init>([BIILjava/nio/charset/Charset;)8java.lang.String#<init>([BIILjava/nio/charset/Charset;)Vá
-0replaceAll(Ljava/lang/String;Ljava/lang/String;)Sjava.lang.String#replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;4
-getBytes(II[BI)!java.lang.String#getBytes(II[BI)V*
-
-hashCode()java.lang.String#hashCode()IZ
-split(Ljava/lang/String;)=java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;O
-getBytes(Ljava/lang/String;)/java.lang.String#getBytes(Ljava/lang/String;)[BJ
-<init>(Ljava/lang/String;),java.lang.String#<init>(Ljava/lang/String;)VÅ
--format(Ljava/lang/String;[Ljava/lang/Object;)Pjava.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;A
-toUpperCase()0java.lang.String#toUpperCase()Ljava/lang/String;,
-<init>([BB)java.lang.String#<init>([BB)V^
-$<init>([BLjava/nio/charset/Charset;)6java.lang.String#<init>([BLjava/nio/charset/Charset;)V2
-lastIndexOf(I) java.lang.String#lastIndexOf(I)IV
- lastIndexOf(Ljava/lang/String;I)2java.lang.String#lastIndexOf(Ljava/lang/String;I)IV
- <init>(Ljava/lang/StringBuffer;)2java.lang.String#<init>(Ljava/lang/StringBuffer;)Và
-9<init>(Ljava/lang/AbstractStringBuilder;Ljava/lang/Void;)Kjava.lang.String#<init>(Ljava/lang/AbstractStringBuilder;Ljava/lang/Void;)V*
-
-isLatin1()java.lang.String#isLatin1()ZL
-matches(Ljava/lang/String;)-java.lang.String#matches(Ljava/lang/String;)Z7
-intern()+java.lang.String#intern()Ljava/lang/String;T
-startsWith(Ljava/lang/String;I)1java.lang.String#startsWith(Ljava/lang/String;I)Z^
-$regionMatches(ILjava/lang/String;II)6java.lang.String#regionMatches(ILjava/lang/String;II)Zd
-'contentEquals(Ljava/lang/CharSequence;)9java.lang.String#contentEquals(Ljava/lang/CharSequence;)ZA
-substring(II)0java.lang.String#substring(II)Ljava/lang/String;K
-subSequence(II)8java.lang.String#subSequence(II)Ljava/lang/CharSequence;d
-'compareToIgnoreCase(Ljava/lang/String;)9java.lang.String#compareToIgnoreCase(Ljava/lang/String;)Iô
-9replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)\java.lang.String#replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;R
-<init>([BIILjava/lang/String;)0java.lang.String#<init>([BIILjava/lang/String;)VB
-offsetByCodePoints(II)(java.lang.String#offsetByCodePoints(II)IJ
-equals(Ljava/lang/Object;),java.lang.String#equals(Ljava/lang/Object;)Z4
-lastIndexOf(II)!java.lang.String#lastIndexOf(II)I;
-
-valueOf(D)-java.lang.String#valueOf(D)Ljava/lang/String;.
-<init>([III)java.lang.String#<init>([III)V,
-<init>([BI)java.lang.String#<init>([BI)VN
-<init>([CIILjava/lang/Void;).java.lang.String#<init>([CIILjava/lang/Void;)V]
-valueOf(Ljava/lang/Object;)>java.lang.String#valueOf(Ljava/lang/Object;)Ljava/lang/String;+
-
-getBytes()java.lang.String#getBytes()[Bd
-'contentEquals(Ljava/lang/StringBuffer;)9java.lang.String#contentEquals(Ljava/lang/StringBuffer;)Z?
-chars()4java.lang.String#chars()Ljava/util/stream/IntStream;2
-getBytes([BIB) java.lang.String#getBytes([BIB)VA
-valueOf([CII)0java.lang.String#valueOf([CII)Ljava/lang/String;e
-toLowerCase(Ljava/util/Locale;)Bjava.lang.String#toLowerCase(Ljava/util/Locale;)Ljava/lang/String;N
-indexOf(Ljava/lang/String;I).java.lang.String#indexOf(Ljava/lang/String;I)I*
-
-indexOf(I)java.lang.String#indexOf(I)I(
-	isBlank()java.lang.String#isBlank()Ze
-toUpperCase(Ljava/util/Locale;)Bjava.lang.String#toUpperCase(Ljava/util/Locale;)Ljava/lang/String;;
-
-toString()-java.lang.String#toString()Ljava/lang/String;;
-
-valueOf(C)-java.lang.String#valueOf(C)Ljava/lang/String;E
-rangeCheck([CII)1java.lang.String#rangeCheck([CII)Ljava/lang/Void;T
-lastIndexOf(Ljava/lang/String;)1java.lang.String#lastIndexOf(Ljava/lang/String;)IB
-indexOfNonWhitespace()(java.lang.String#indexOfNonWhitespace()I.
-<init>([CII)java.lang.String#<init>([CII)VE
-stripTrailing()2java.lang.String#stripTrailing()Ljava/lang/String;M
-valueOfCodePoint(I)6java.lang.String#valueOfCodePoint(I)Ljava/lang/String;=
-valueOf([C).java.lang.String#valueOf([C)Ljava/lang/String;ã
-2replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ujava.lang.String#replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;$
-coder()java.lang.String#coder()B_
-$getBytes(Ljava/nio/charset/Charset;)7java.lang.String#getBytes(Ljava/nio/charset/Charset;)[B3
-trim())java.lang.String#trim()Ljava/lang/String;<
-lines()1java.lang.String#lines()Ljava/util/stream/Stream;*
-
-<init>([C)java.lang.String#<init>([C)V4
-checkOffset(II)!java.lang.String#checkOffset(II)V5
-strip()*java.lang.String#strip()Ljava/lang/String;1
-toCharArray() java.lang.String#toCharArray()[C0
-<init>([BIII)java.lang.String#<init>([BIII)V=
-replace(CC).java.lang.String#replace(CC)Ljava/lang/String;:
-codePointBefore(I)$java.lang.String#codePointBefore(I)I^
-$equalsIgnoreCase(Ljava/lang/String;)6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z;
-
-valueOf(I)-java.lang.String#valueOf(I)Ljava/lang/String;ï
-7join(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Zjava.lang.String#join(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;2
-codePointAt(I) java.lang.String#codePointAt(I)IN
-<init>([BLjava/lang/String;).java.lang.String#<init>([BLjava/lang/String;)V*
-
-<init>([B)java.lang.String#<init>([B)V;
-
-valueOf(Z)-java.lang.String#valueOf(Z)Ljava/lang/String;I
-copyValueOf([CII)4java.lang.String#copyValueOf([CII)Ljava/lang/String;,
-indexOf(II)java.lang.String#indexOf(II)I\
-split(Ljava/lang/String;I)>java.lang.String#split(Ljava/lang/String;I)[Ljava/lang/String;F
-checkBoundsOffCount(III)*java.lang.String#checkBoundsOffCount(III)VÑ
-7nonSyncContentEquals(Ljava/lang/AbstractStringBuilder;)Ijava.lang.String#nonSyncContentEquals(Ljava/lang/AbstractStringBuilder;)Z;
-
-valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
-checkIndex(II) java.lang.String#checkIndex(II)VX
-!<init>(Ljava/lang/StringBuilder;)3java.lang.String#<init>(Ljava/lang/StringBuilder;)V%
-value()java.lang.String#value()[B`
-%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)ZÄ
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)\org.eclipse.jgit.api.errors.GitAPIException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VÄ
 *logic.controller.CloneRepositoryControllerjava.lang.Object~
 'clone(Llogic/bean/CloneRepositoryBean;)Slogic.controller.CloneRepositoryController#clone(Llogic/bean/CloneRepositoryBean;)V@
 <init>()4logic.controller.CloneRepositoryController#<init>()V´	
@@ -3639,7 +3658,11 @@ hashCode()java.lang.Boolean#hashCode()I3
 compareTo(Ljava/lang/Boolean;)1java.lang.Boolean#compareTo(Ljava/lang/Boolean;)IK
 <init>(Ljava/lang/String;)-java.lang.Boolean#<init>(Ljava/lang/String;)V)
 	<init>(Z)java.lang.Boolean#<init>(Z)VS
-getBoolean(Ljava/lang/String;)1java.lang.Boolean#getBoolean(Ljava/lang/String;)Zù
+getBoolean(Ljava/lang/String;)1java.lang.Boolean#getBoolean(Ljava/lang/String;)Z◊
+(logic.dataset_manager.ReleaseFileManagerjava.lang.Objectò
+$findFileFromName(Ljava/lang/String;)plogic.dataset_manager.ReleaseFileManager#findFileFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;W
+getFileList()Flogic.dataset_manager.ReleaseFileManager#getFileList()Ljava/util/List;§
+;<init>(Llogic/dataset_manager/JgitManager;Ljava/util/List;)elogic.dataset_manager.ReleaseFileManager#<init>(Llogic/dataset_manager/JgitManager;Ljava/util/List;)Vù
 %logic.exception.InvalidRangeExceptionjava.lang.Exception_
 <init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)Vç
 3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerI
@@ -3656,8 +3679,9 @@ Q<init>(Lview/ClassBugginessFxmlController;Llogic/boundary/FindBugginessBoundary
  logic.abstracts.AbstractBoundaryjava.lang.ObjectW
 getProjectName()Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;6
 <init>()*logic.abstracts.AbstractBoundary#<init>()Vj
-"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)VŸ
-$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundaryB
+"setProjectName(Ljava/lang/String;)Dlogic.abstracts.AbstractBoundary#setProjectName(Ljava/lang/String;)V∑
+$logic.boundary.FindBugginessBoundary logic.abstracts.AbstractBoundary\
+main([Ljava/lang/String;)?logic.boundary.FindBugginessBoundary#main([Ljava/lang/String;)VB
 runUseCase()2logic.boundary.FindBugginessBoundary#runUseCase()V 
 P<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)vlogic.boundary.FindBugginessBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VÅ
 !javafx.scene.control.ComboBoxBasejavafx.scene.control.Control?
@@ -4932,25 +4956,7 @@ getValue()9javafx.scene.control.Spinner#getValue()Ljava/lang/Object;8
 MwrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Äjavafx.scene.control.Spinner#wrapValue(Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;l
 editableProperty()Vjavafx.scene.control.Spinner#editableProperty()Ljavafx/beans/property/BooleanProperty;ı
 i<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)ájavafx.scene.control.Spinner#<init>(Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/time/LocalDate;JLjava/time/temporal/TemporalUnit;)V[
-getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;˙
-
-!logic.dataset_manager.ReleaseFilejava.lang.ObjectM
-
-getBuggy()?logic.dataset_manager.ReleaseFile#getBuggy()Ljava/lang/Boolean;°
-=<init>(Ljava/lang/String;Llogic/dataset_manager/JgitManager;)`logic.dataset_manager.ReleaseFile#<init>(Ljava/lang/String;Llogic/dataset_manager/JgitManager;)Vi
-!setAdditionDate(Ljava/util/Date;)Dlogic.dataset_manager.ReleaseFile#setAdditionDate(Ljava/util/Date;)Vá
-0computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)Slogic.dataset_manager.ReleaseFile#computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;)VL
-
-toString()>logic.dataset_manager.ReleaseFile#toString()Ljava/lang/String;É
-.addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)Qlogic.dataset_manager.ReleaseFile#addEditors(Lorg/eclipse/jgit/lib/PersonIdent;)V?
-updateNfix()/logic.dataset_manager.ReleaseFile#updateNfix()Vm
-#updateLocAdded(Ljava/lang/Integer;)Flogic.dataset_manager.ReleaseFile#updateLocAdded(Ljava/lang/Integer;)V_
-computeAge(Ljava/util/Date;)?logic.dataset_manager.ReleaseFile#computeAge(Ljava/util/Date;)VI
-updateBugginess()4logic.dataset_manager.ReleaseFile#updateBugginess()VW
-updateNumberOfRevision();logic.dataset_manager.ReleaseFile#updateNumberOfRevision()VA
-updateNauth()0logic.dataset_manager.ReleaseFile#updateNauth()VC
-updateChurn(I)1logic.dataset_manager.ReleaseFile#updateChurn(I)VJ
-	getPath()=logic.dataset_manager.ReleaseFile#getPath()Ljava/lang/String;
+getClassCssMetaData()Bjavafx.scene.control.Spinner#getClassCssMetaData()Ljava/util/List;
 &view.ProcessControlChartFxmlController3view.ProcessControlChartAndProportionFxmlController<
 <init>()0view.ProcessControlChartFxmlController#<init>()VD
 initialize()4view.ProcessControlChartFxmlController#initialize()Vå
@@ -5062,140 +5068,7 @@ k<init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JLjava/secu
 countStackFrames()$java.lang.Thread#countStackFrames()I(
 	resume0()java.lang.Thread#resume0()V@
 getThreads()0java.lang.Thread#getThreads()[Ljava/lang/Thread;x
-1<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)Cjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)VŒ1
-java.util.Mapjava.lang.ObjectÜ
-1putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Qjava.util.Map#putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;§
-@computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)`java.util.Map#computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;À
-îof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)±java.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;k
-,remove(Ljava/lang/Object;Ljava/lang/Object;);java.util.Map#remove(Ljava/lang/Object;Ljava/lang/Object;)ZÇ
-pof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)çjava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;∏
-Jmerge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)jjava.util.Map#merge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;ì
-∏of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)’java.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;£
-Äof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)ùjava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;)
-of()!java.util.Map#of()Ljava/util/Map;c
-(forEach(Ljava/util/function/BiConsumer;)7java.util.Map#forEach(Ljava/util/function/BiConsumer;)V™
-CcomputeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)cjava.util.Map#computeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;€
-‹of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)˘java.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;~
--replace(Ljava/lang/Object;Ljava/lang/Object;)Mjava.util.Map#replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;i
-+replaceAll(Ljava/util/function/BiFunction;):java.util.Map#replaceAll(Ljava/util/function/BiFunction;)Vë
-?replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Njava.util.Map#replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Zc
-!ofEntries([Ljava/util/Map$Entry;)>java.util.Map#ofEntries([Ljava/util/Map$Entry;)Ljava/util/Map;˚
-Ïof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)âjava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;q
-(of(Ljava/lang/Object;Ljava/lang/Object;)Ejava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;Î
-§of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)¡java.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;ò
-:compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)Zjava.util.Map#compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;O
-copyOf(Ljava/util/Map;)4java.util.Map#copyOf(Ljava/util/Map;)Ljava/util/Map;≥
-»of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Âjava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;π
-Lof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)ijava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;à
-2getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Rjava.util.Map#getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;}
-+entry(Ljava/lang/Object;Ljava/lang/Object;)Njava.util.Map#entry(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;6
-java.util.SortedMapjava.util.Mapjava.lang.Object?
-java.util.NavigableMapjava.lang.Objectjava.util.SortedMapï
-
-java.util.AbstractMapjava.util.Mapjava.lang.ObjectO
-equals(Ljava/lang/Object;)1java.util.AbstractMap#equals(Ljava/lang/Object;)Z-
-	isEmpty() java.util.AbstractMap#isEmpty()ZZ
-get(Ljava/lang/Object;)?java.util.AbstractMap#get(Ljava/lang/Object;)Ljava/lang/Object;k
-(eq(Ljava/lang/Object;Ljava/lang/Object;)?java.util.AbstractMap#eq(Ljava/lang/Object;Ljava/lang/Object;)ZY
-containsKey(Ljava/lang/Object;)6java.util.AbstractMap#containsKey(Ljava/lang/Object;)Z@
-
-toString()2java.util.AbstractMap#toString()Ljava/lang/String;`
-remove(Ljava/lang/Object;)Bjava.util.AbstractMap#remove(Ljava/lang/Object;)Ljava/lang/Object;9
-keySet()-java.util.AbstractMap#keySet()Ljava/util/Set;]
-!containsValue(Ljava/lang/Object;)8java.util.AbstractMap#containsValue(Ljava/lang/Object;)Z/
-
-hashCode()!java.util.AbstractMap#hashCode()I@
-values()4java.util.AbstractMap#values()Ljava/util/Collection;~
-)put(Ljava/lang/Object;Ljava/lang/Object;)Qjava.util.AbstractMap#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;I
-putAll(Ljava/util/Map;).java.util.AbstractMap#putAll(Ljava/util/Map;)V+
-<init>()java.util.AbstractMap#<init>()V:
-clone()/java.util.AbstractMap#clone()Ljava/lang/Object;'
-size()java.util.AbstractMap#size()I)
-clear()java.util.AbstractMap#clear()VÍ?
-java.util.TreeMapjava.lang.Cloneablejava.util.AbstractMapjava.util.NavigableMapjava.io.SerializableK
-pollFirstEntry()7java.util.TreeMap#pollFirstEntry()Ljava/util/Map$Entry;K
-getLastEntry()9java.util.TreeMap#getLastEntry()Ljava/util/TreeMap$Entry;d
-ceilingKey(Ljava/lang/Object;)Bjava.util.TreeMap#ceilingKey(Ljava/lang/Object;)Ljava/lang/Object;É
-,subMap(Ljava/lang/Object;Ljava/lang/Object;)Sjava.util.TreeMap#subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;I
-pollLastEntry()6java.util.TreeMap#pollLastEntry()Ljava/util/Map$Entry;L
-descendingMap()9java.util.TreeMap#descendingMap()Ljava/util/NavigableMap;\
-remove(Ljava/lang/Object;)>java.util.TreeMap#remove(Ljava/lang/Object;)Ljava/lang/Object;g
-lowerEntry(Ljava/lang/Object;)Ejava.util.TreeMap#lowerEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;a
-descendingKeySpliterator()Cjava.util.TreeMap#descendingKeySpliterator()Ljava/util/Spliterator;u
-/valEquals(Ljava/lang/Object;Ljava/lang/Object;)Bjava.util.TreeMap#valEquals(Ljava/lang/Object;Ljava/lang/Object;)ZA
-lastEntry()2java.util.TreeMap#lastEntry()Ljava/util/Map$Entry;E
-putAll(Ljava/util/Map;)*java.util.TreeMap#putAll(Ljava/util/Map;)Vb
-higherKey(Ljava/lang/Object;)Ajava.util.TreeMap#higherKey(Ljava/lang/Object;)Ljava/lang/Object;Q
-<init>(Ljava/util/SortedMap;)0java.util.TreeMap#<init>(Ljava/util/SortedMap;)V'
-<init>()java.util.TreeMap#<init>()Ve
-'readObject(Ljava/io/ObjectInputStream;):java.util.TreeMap#readObject(Ljava/io/ObjectInputStream;)VM
-keySpliterator()9java.util.TreeMap#keySpliterator()Ljava/util/Spliterator;<
-
-firstKey().java.util.TreeMap#firstKey()Ljava/lang/Object;[
-"colorOf(Ljava/util/TreeMap$Entry;)5java.util.TreeMap#colorOf(Ljava/util/TreeMap$Entry;)Zw
-&exportEntry(Ljava/util/TreeMap$Entry;)Mjava.util.TreeMap#exportEntry(Ljava/util/TreeMap$Entry;)Ljava/util/Map$Entry;X
-descendingKeyIterator()=java.util.TreeMap#descendingKeyIterator()Ljava/util/Iterator;%
-clear()java.util.TreeMap#clear()V`
-lowerKey(Ljava/lang/Object;)@java.util.TreeMap#lowerKey(Ljava/lang/Object;)Ljava/lang/Object;;
-computeRedLevel(I)%java.util.TreeMap#computeRedLevel(I)Ig
-getEntry(Ljava/lang/Object;)Gjava.util.TreeMap#getEntry(Ljava/lang/Object;)Ljava/util/TreeMap$Entry;c
-&deleteEntry(Ljava/util/TreeMap$Entry;)9java.util.TreeMap#deleteEntry(Ljava/util/TreeMap$Entry;)Vg
-(forEach(Ljava/util/function/BiConsumer;);java.util.TreeMap#forEach(Ljava/util/function/BiConsumer;)Vg
-floorEntry(Ljava/lang/Object;)Ejava.util.TreeMap#floorEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;Ω
-SbuildFromSorted(ILjava/util/Iterator;Ljava/io/ObjectInputStream;Ljava/lang/Object;)fjava.util.TreeMap#buildFromSorted(ILjava/util/Iterator;Ljava/io/ObjectInputStream;Ljava/lang/Object;)VÇ
--replace(Ljava/lang/Object;Ljava/lang/Object;)Qjava.util.TreeMap#replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;z
-)put(Ljava/lang/Object;Ljava/lang/Object;)Mjava.util.TreeMap#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;u
-#parentOf(Ljava/util/TreeMap$Entry;)Njava.util.TreeMap#parentOf(Ljava/util/TreeMap$Entry;)Ljava/util/TreeMap$Entry;q
-!leftOf(Ljava/util/TreeMap$Entry;)Ljava.util.TreeMap#leftOf(Ljava/util/TreeMap$Entry;)Ljava/util/TreeMap$Entry;9
-
-entrySet()+java.util.TreeMap#entrySet()Ljava/util/Set;o
-,fixAfterInsertion(Ljava/util/TreeMap$Entry;)?java.util.TreeMap#fixAfterInsertion(Ljava/util/TreeMap$Entry;)VÖ
-+getEntryUsingComparator(Ljava/lang/Object;)Vjava.util.TreeMap#getEntryUsingComparator(Ljava/lang/Object;)Ljava/util/TreeMap$Entry;6
-clone()+java.util.TreeMap#clone()Ljava/lang/Object;f
-headMap(Ljava/lang/Object;Z)Fjava.util.TreeMap#headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;V
-get(Ljava/lang/Object;);java.util.TreeMap#get(Ljava/lang/Object;)Ljava/lang/Object;M
-getFirstEntry():java.util.TreeMap#getFirstEntry()Ljava/util/TreeMap$Entry;s
-"getHigherEntry(Ljava/lang/Object;)Mjava.util.TreeMap#getHigherEntry(Ljava/lang/Object;)Ljava/util/TreeMap$Entry;a
-headMap(Ljava/lang/Object;)Bjava.util.TreeMap#headMap(Ljava/lang/Object;)Ljava/util/SortedMap;C
-firstEntry()3java.util.TreeMap#firstEntry()Ljava/util/Map$Entry;P
-navigableKeySet();java.util.TreeMap#navigableKeySet()Ljava/util/NavigableSet;:
-	lastKey()-java.util.TreeMap#lastKey()Ljava/lang/Object;Y
-!containsValue(Ljava/lang/Object;)4java.util.TreeMap#containsValue(Ljava/lang/Object;)ZE
-<init>(Ljava/util/Map;)*java.util.TreeMap#<init>(Ljava/util/Map;)V‹
-VbuildFromSorted(IIIILjava/util/Iterator;Ljava/io/ObjectInputStream;Ljava/lang/Object;)Åjava.util.TreeMap#buildFromSorted(IIIILjava/util/Iterator;Ljava/io/ObjectInputStream;Ljava/lang/Object;)Ljava/util/TreeMap$Entry;D
-comparator()4java.util.TreeMap#comparator()Ljava/util/Comparator;<
-values()0java.util.TreeMap#values()Ljava/util/Collection;a
-tailMap(Ljava/lang/Object;)Bjava.util.TreeMap#tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;m
-+fixAfterDeletion(Ljava/util/TreeMap$Entry;)>java.util.TreeMap#fixAfterDeletion(Ljava/util/TreeMap$Entry;)V_
-$setColor(Ljava/util/TreeMap$Entry;Z)7java.util.TreeMap#setColor(Ljava/util/TreeMap$Entry;Z)Vq
-!getLowerEntry(Ljava/lang/Object;)Ljava.util.TreeMap#getLowerEntry(Ljava/lang/Object;)Ljava/util/TreeMap$Entry;s
-"rightOf(Ljava/util/TreeMap$Entry;)Mjava.util.TreeMap#rightOf(Ljava/util/TreeMap$Entry;)Ljava/util/TreeMap$Entry;R
-descendingKeySet()<java.util.TreeMap#descendingKeySet()Ljava/util/NavigableSet;q
--compare(Ljava/lang/Object;Ljava/lang/Object;)@java.util.TreeMap#compare(Ljava/lang/Object;Ljava/lang/Object;)Ip
-$keyOrNull(Ljava/util/TreeMap$Entry;)Hjava.util.TreeMap#keyOrNull(Ljava/util/TreeMap$Entry;)Ljava/lang/Object;{
-&predecessor(Ljava/util/TreeMap$Entry;)Qjava.util.TreeMap#predecessor(Ljava/util/TreeMap$Entry;)Ljava/util/TreeMap$Entry;q
-!getFloorEntry(Ljava/lang/Object;)Ljava.util.TreeMap#getFloorEntry(Ljava/lang/Object;)Ljava/util/TreeMap$Entry;É
-+keySpliteratorFor(Ljava/util/NavigableMap;)Tjava.util.TreeMap#keySpliteratorFor(Ljava/util/NavigableMap;)Ljava/util/Spliterator;i
-higherEntry(Ljava/lang/Object;)Fjava.util.TreeMap#higherEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;u
-#getCeilingEntry(Ljava/lang/Object;)Njava.util.TreeMap#getCeilingEntry(Ljava/lang/Object;)Ljava/util/TreeMap$Entry;U
-containsKey(Ljava/lang/Object;)2java.util.TreeMap#containsKey(Ljava/lang/Object;)Zd
-key(Ljava/util/TreeMap$Entry;)Bjava.util.TreeMap#key(Ljava/util/TreeMap$Entry;)Ljava/lang/Object;k
- ceilingEntry(Ljava/lang/Object;)Gjava.util.TreeMap#ceilingEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;â
-9addAllForTreeSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava.util.TreeMap#addAllForTreeSet(Ljava/util/SortedSet;Ljava/lang/Object;)V5
-keySet())java.util.TreeMap#keySet()Ljava/util/Set;c
-&rotateRight(Ljava/util/TreeMap$Entry;)9java.util.TreeMap#rotateRight(Ljava/util/TreeMap$Entry;)Vf
-tailMap(Ljava/lang/Object;Z)Fjava.util.TreeMap#tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;D
-keyIterator()3java.util.TreeMap#keyIterator()Ljava/util/Iterator;m
-+replaceAll(Ljava/util/function/BiFunction;)>java.util.TreeMap#replaceAll(Ljava/util/function/BiFunction;)Vï
-?replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Rjava.util.TreeMap#replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Zw
-$successor(Ljava/util/TreeMap$Entry;)Ojava.util.TreeMap#successor(Ljava/util/TreeMap$Entry;)Ljava/util/TreeMap$Entry;a
-%rotateLeft(Ljava/util/TreeMap$Entry;)8java.util.TreeMap#rotateLeft(Ljava/util/TreeMap$Entry;)VS
-<init>(Ljava/util/Comparator;)1java.util.TreeMap#<init>(Ljava/util/Comparator;)V`
-floorKey(Ljava/lang/Object;)@java.util.TreeMap#floorKey(Ljava/lang/Object;)Ljava/lang/Object;ä
-.subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Xjava.util.TreeMap#subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;ç
-;readTreeSet(ILjava/io/ObjectInputStream;Ljava/lang/Object;)Njava.util.TreeMap#readTreeSet(ILjava/io/ObjectInputStream;Ljava/lang/Object;)Vi
-)writeObject(Ljava/io/ObjectOutputStream;)<java.util.TreeMap#writeObject(Ljava/io/ObjectOutputStream;)V#
-size()java.util.TreeMap#size()Iâ
+1<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)Cjava.lang.Thread#<init>(Ljava/lang/ThreadGroup;Ljava/lang/String;)Vâ
 #org.eclipse.jgit.api.ListTagCommandorg.eclipse.jgit.api.GitCommand{
 )<init>(Lorg/eclipse/jgit/lib/Repository;)Norg.eclipse.jgit.api.ListTagCommand#<init>(Lorg/eclipse/jgit/lib/Repository;)VD
 call():org.eclipse.jgit.api.ListTagCommand#call()Ljava/util/List;

@@ -30,7 +30,7 @@ public class Release extends Commit {
     private ReleaseFile findFromName(String name, List<ReleaseFile> files){
         ReleaseFile releaseFile = null;
         for (ReleaseFile r : files){
-            if (r.isThisFile(name)){
+            if (r.isThisFile(name).equals(Boolean.TRUE)){
                 releaseFile = r;
                 break;
             }
@@ -122,8 +122,8 @@ public class Release extends Commit {
 
                 rf = files.findFileFromName(fileNameToSearch);
                 if (rf != null) {
-                    if (diff.getChangeType().equals(DiffEntry.ChangeType.ADD) && rf.getDate() == null)
-                        rf.setAdditiondate(newer.date);
+                    if (diff.getChangeType().equals(DiffEntry.ChangeType.ADD))
+                        rf.setAdditionDate(newer.date);
                     this.updateFileMetrics(rf, newer, diff, fixedBugs);
                 }
             }

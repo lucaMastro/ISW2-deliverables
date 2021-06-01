@@ -1,7 +1,7 @@
 organization=lucamastro
 projectKey=lucaMastro_deliverable2
 serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.20494
+serverVersion=8.0.0.20583
 dashboardUrl=https://sonarcloud.io/dashboard?id=lucaMastro_deliverable2
-ceTaskId=AXnCBnKKEWSx6mqOjhDD
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXnCBnKKEWSx6mqOjhDD
+ceTaskId=AXnHxwQx20csC6kVd4AM
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXnHxwQx20csC6kVd4AM

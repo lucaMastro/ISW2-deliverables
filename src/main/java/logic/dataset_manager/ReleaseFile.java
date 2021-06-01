@@ -202,11 +202,16 @@ public class ReleaseFile {
         return sb.toString();
     }
 
-    public void setAdditiondate(Date date) {
-        this.additionDate = date;
-    }
-
     public Date getDate() {
         return this.additionDate;
+    }
+
+    public void setAdditionDate(Date d){
+        if (d != null) {
+            if (this.additionDate == null)
+                this.additionDate = d;
+            else
+                this.additionDate = this.additionDate.before(d) ? this.additionDate : d;
+        }
     }
 }

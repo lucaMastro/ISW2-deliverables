@@ -32,14 +32,13 @@ public class ReleaseFileManager {
         var className = "/" + classNames[classNames.length - 1];
 
         int i;
-        releaseFileLoop:
         for (ReleaseFile r : this.files) {
             var names = r.getNames();
-            for (i = 0; i < this.numOfRelease; i++){
+            for (i = 0; i < this.numOfRelease && releaseFile == null; i++){
                 var currName = names[i];
                 if (currName.endsWith(className)){
                     releaseFile = r;
-                    break releaseFileLoop;
+                    break;
                 }
             }
         }

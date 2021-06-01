@@ -1,16 +1,14 @@
 
-:logic.bean.JiraBeanInformations#getKey()Ljava/lang/String;u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java+ +("1*×
-1u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java, ,(Æ
-Ã
-u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java, ,(
-%0java.lang.String"__id*,**!
-logic.bean.JiraBeanInformations"
-key"‘
-u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java, ,(
-
-%0java.lang.StringB#!
-logic.bean.JiraBeanInformations
+?view.ProcessControlChartFxmlController$1#call()Ljava/lang/Void;|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java ("1*ê
+1|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java (ÝÚ
+|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java (%
+
+%0void"8logic.boundary.ProcessControlChartBoundary#runUseCase()V*
+""2runUseCase()"†
+|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java (
+""B,*
+(view.ProcessControlChartFxmlController$1

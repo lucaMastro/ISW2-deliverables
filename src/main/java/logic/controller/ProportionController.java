@@ -47,13 +47,11 @@ public class ProportionController {
         try (var fw = new FileWriter(file)) {
             var chosenFeatures = "Version,File Name,LOC,NR,NFix,NAuth,LOC_added,MAX_LOC_added,Churn,MAX_Churn,Age,Buggy\n";
             fw.append(chosenFeatures);
-            //var bld = new StringBuilder(chosenFeatures);
             for (Release r : dataset.getReleases()){
                 String rIndex = r.getIndex().toString() + ",";
                 for (ReleaseFile rf : dataset.getFiles()) {
                     var line = rf.getOutputLine(r.getIndex());
                     if (!line.isEmpty()) {
-                        //bld.append(rIndex).append(rf.getOutputLine(r.getIndex()));
                         fw.append(rIndex);
                         fw.append(rf.getOutputLine(r.getIndex()));
                     }
