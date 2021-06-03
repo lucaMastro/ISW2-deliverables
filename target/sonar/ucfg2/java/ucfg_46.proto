@@ -1,37 +1,37 @@
 
 plogic.dataset_manager.ReleaseFileManager#findFileFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java ('"9*¦
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java ('"10*¦
 2~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(¹
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(¹
 ¶
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(&
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(&
 r!logic.dataset_manager.ReleaseFile"__id*
 ""Ü
 Ù
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(&
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(&
 r!logic.dataset_manager.ReleaseFile"
 __arrayGet*
 
 %3java.util.ArrayList*
 ""*
-7
+8
 1*ð
 4~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java)" )(#å
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java(" ((#å
 â
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java) )(#0
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java( ((#0
 releaseFile!logic.dataset_manager.ReleaseFile"__id*(
 &
 r!logic.dataset_manager.ReleaseFile*
-1*Ä
+2*Ä
 5~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java' '($Î
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &($Î
 Ë
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java' '('
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &('
 %6java.lang.String"
 __arrayGet*
 
@@ -39,54 +39,54 @@ __arrayGet*
 ""Á
 ¾
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java' '((
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &((
 currNamejava.lang.String"__id*
 
 %6java.lang.String¡ž
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java( ((0
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java' '(0
 %7boolean".java.lang.String#endsWith(Ljava/lang/String;)Z*
 
 currNamejava.lang.String*
 
 	classNamejava.lang.String2endsWith(Ljava/lang/String;)*
 4
-6*ð
-6~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &(â
+7*ð
+7~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java% %(â
 ß
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &(-
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java% %(-
 %5java.lang.Integer"__id*>*<*
 (logic.dataset_manager.ReleaseFileManager"
 numOfRelease*
 2
 5*ä
-7~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java% %(”‘
+8~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(”‘
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java% %($
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $($
 %4java.lang.String[]"?logic.dataset_manager.ReleaseFile#getNames()[Ljava/lang/String;*(
 &
 r!logic.dataset_manager.ReleaseFile2
 getNames()Â
 ¿
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java% %(%
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(%
 namesjava.lang.String[]"__id*
 
 %4java.lang.String[]*
-6*è
-8~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(!Ý
+7*è
+9~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(!Ý
 Ú
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $('
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #('
 %3java.util.ArrayList"__id*7*5*
 (logic.dataset_manager.ReleaseFileManager"
 files*
-2*™
-9~
+2*š
+10~
 t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java" (&Ã
 À
 ~
@@ -128,11 +128,11 @@ t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/da
 	classNamejava.lang.String"__id*
 
 %2java.lang.String*
-8*º
+9*º
 1~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java. .("´
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java- -("´
 ~
-t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java. .(2
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java- -(2
 0
 releaseFile!logic.dataset_manager.ReleaseFile:
 namejava.lang.StringB,*

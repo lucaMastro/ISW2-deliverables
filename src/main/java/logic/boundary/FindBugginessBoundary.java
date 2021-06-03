@@ -31,9 +31,9 @@ public class FindBugginessBoundary extends AbstractBoundary {
     }
 
     public static void main(String[] args) throws GitAPIException, NotAvaiableAlgorithm, InvalidRangeException, IOException {
-        var boundary = new FindBugginessBoundary("/home/luca/Scrivania/bookkeeperGUI2.csv",
-                "/home/luca/Scrivania/ISW2/deliverables/deliverable2/bookkeeper",
-                "bookkeeper",
+        var boundary = new FindBugginessBoundary("/home/luca/Scrivania/openjpa3.csv",
+                "/home/luca/Scrivania/ISW2/deliverables/deliverable2/openjpa",
+                "openjpa",
                 "Increment");
         boundary.runUseCase();
     }

@@ -24,24 +24,7 @@ public class ProportionDataset extends Dataset {
 
         this.initializeBugsList(bean.getProject());
 
-        this.reduceDataset();
-
         this.files = new ReleaseFileManager(jgitManager, this.releases);
-    }
-
-    public void reduceDataset() {
-        /*  removing releases   */
-        var lastDate = this.releases.get(this.releases.size() - 1).date;
-
-        /*  removing commits done after the last release    */
-        this.commits.removeIf(c -> lastDate.before(c.date));
-
-        /*  removing defects whose fixedVersionDate is before than opening date and the fixedVersionIndex
-         *   is bigger than the older release we want to track   */
-        this.fixedBugs.removeIf(b -> lastDate.before(b.fixedVersion.date) ||
-                b.fixedVersion.date.before(b.openingDate));
-
-
     }
 
     private void removeRevertCommits() {
@@ -75,9 +58,10 @@ public class ProportionDataset extends Dataset {
         List<Ref> tagList = new Git(manager.getRepository()).tagList().call();
         this.releases = new ArrayList<>();
         Integer i;
-        int half = tagList.size() / 2;
+        int len = tagList.size();
+        int half = len / 2;
 
-        for (i = 0; i < half; i++){
+        for (i = 0; i < len; i++){
             var cur = new Release(tagList.get(i), manager);
             this.releases.add(cur);
         }
@@ -86,11 +70,17 @@ public class ProportionDataset extends Dataset {
             Date d2 = o2.date;
             return d1.compareTo(d2);
         });
-        for (i = 0; i < half; i++) {
+        for (i = 0; i < len; i++) {
             Release cur = this.releases.get(i);
             cur.setIndex(i + 1);
             cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
         }
+        //this.releases.removeIf(r -> r.getIndex() > half);
+    }
+
+    public void removeHalfRelease(){
+        int half = this.releases.size() / 2;
+        this.releases.removeIf(r -> r.getIndex() > half);
     }
 
     private List<Commit> retrieveCommitsBeetwenReleases(Integer endIndexRelease)

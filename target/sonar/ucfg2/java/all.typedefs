@@ -1155,13 +1155,13 @@ $logic.exception.NotAvaiableAlgorithmjava.lang.Exception^
 updateNfix(Ljava/lang/Integer;)Blogic.dataset_manager.ReleaseFile#updateNfix(Ljava/lang/Integer;)VM
 
 getNames()?logic.dataset_manager.ReleaseFile#getNames()[Ljava/lang/String;_
-addName(Ljava/lang/String;I)?logic.dataset_manager.ReleaseFile#addName(Ljava/lang/String;I)Vg
+addName(Ljava/lang/String;I)?logic.dataset_manager.ReleaseFile#addName(Ljava/lang/String;I)Vi
+!setAdditionDate(Ljava/util/Date;)Dlogic.dataset_manager.ReleaseFile#setAdditionDate(Ljava/util/Date;)Vg
  updateNauth(Ljava/lang/Integer;)Clogic.dataset_manager.ReleaseFile#updateNauth(Ljava/lang/Integer;)V­
 CcomputeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;Ljava/lang/Integer;)flogic.dataset_manager.ReleaseFile#computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;Ljava/lang/Integer;)VÅ
 O<init>(Llogic/dataset_manager/JgitManager;IILjava/util/Date;Ljava/lang/String;)rlogic.dataset_manager.ReleaseFile#<init>(Llogic/dataset_manager/JgitManager;IILjava/util/Date;Ljava/lang/String;)V“
 6updateLocAdded(Ljava/lang/Integer;Ljava/lang/Integer;)Ylogic.dataset_manager.ReleaseFile#updateLocAdded(Ljava/lang/Integer;Ljava/lang/Integer;)VH
-	getDate();logic.dataset_manager.ReleaseFile#getDate()Ljava/util/Date;i
-!setAdditiondate(Ljava/util/Date;)Dlogic.dataset_manager.ReleaseFile#setAdditiondate(Ljava/util/Date;)Vo
+	getDate();logic.dataset_manager.ReleaseFile#getDate()Ljava/util/Date;o
 $updateBugginess(Ljava/lang/Integer;)Glogic.dataset_manager.ReleaseFile#updateBugginess(Ljava/lang/Integer;)Vi
 !updateChurn(Ljava/lang/Integer;I)Dlogic.dataset_manager.ReleaseFile#updateChurn(Ljava/lang/Integer;I)V©
 AaddEditors(Ljava/lang/Integer;Lorg/eclipse/jgit/lib/PersonIdent;)dlogic.dataset_manager.ReleaseFile#addEditors(Ljava/lang/Integer;Lorg/eclipse/jgit/lib/PersonIdent;)V¥

@@ -26,6 +26,8 @@ public class ProportionController {
                 dataset = new ProportionDataset(bean);
                 dataset.computeFeatures();
                 this.proportionIncrementMode(dataset);
+                /*  halve releases: */
+                dataset.removeHalfRelease();
                 this.writeToFile(bean, dataset);
                 break;
             case PROPORTION_MOVING_WINDOW: //i want to implement also this

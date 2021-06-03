@@ -1,4 +1,5 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/controller/ProportionController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/module-info.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ClassBugginessFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/BasicPageFxmlController.java
@@ -12,11 +13,13 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/ProcessControlChartBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/CloneRepositoryFxmlController.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/proportion_algo/ProportionIncrement.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/SceneSwitcher.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/HomePageFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/CloneRepositoryBoundary.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/CloneRepositoryBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartAndProportionFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java
@@ -28,6 +31,7 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/InvalidInputException.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/FindBugginessBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java
-/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/controller/ProportionIncrementController.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/NotAvaiableAlgorithm.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java
