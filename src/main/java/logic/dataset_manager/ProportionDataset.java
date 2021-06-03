@@ -12,6 +12,7 @@ import java.util.*;
 public class ProportionDataset extends Dataset {
     private ArrayList<Release> releases;
     private ReleaseFileManager files;
+    private int reduceToThisIndex;
 
     //***********************************************************************************************************
     // Constructor and relative methods
@@ -21,10 +22,23 @@ public class ProportionDataset extends Dataset {
 
         this.removeRevertCommits();
         this.initializeReleaseList(jgitManager);
+        this.reduceToThisIndex = this.releases.size() / 2;
 
         this.initializeBugsList(bean.getProject());
 
+        this.firstReduction();
         this.files = new ReleaseFileManager(jgitManager, this.releases);
+    }
+
+    private void firstReduction(){
+        /*  trying to redute computation time   */
+        int half = this.releases.size();
+
+        Release lastFixedVersion = this.fixedBugs.get(this.fixedBugs.size() - 1).getFixedVersion();
+        int minReleaseIndex = half < lastFixedVersion.getIndex() ? half : lastFixedVersion.getIndex();
+
+        this.releases.removeIf(r -> r.getIndex() > minReleaseIndex);
+
     }
 
     private void removeRevertCommits() {
@@ -77,8 +91,7 @@ public class ProportionDataset extends Dataset {
     }
 
     public void removeHalfRelease(){
-        int half = this.releases.size() / 2;
-        this.releases.removeIf(r -> r.getIndex() > half);
+        this.releases.removeIf(r -> r.getIndex() > this.reduceToThisIndex);
     }
 
     private List<Commit> retrieveCommitsBeetwenReleases(Integer endIndexRelease)
@@ -136,6 +149,11 @@ public class ProportionDataset extends Dataset {
                 this.fixedBugs.add(bug);
             }
         }
+        Collections.sort(this.fixedBugs, (BugTicket b1, BugTicket b2) ->{
+            Date d1 = b1.getFixedVersion().date;
+            Date d2 = b2.getFixedVersion().date;
+            return d1.compareTo(d2);
+        });
     }
 
 
