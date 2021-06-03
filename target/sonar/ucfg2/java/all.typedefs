@@ -34,13 +34,13 @@ $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitF
 +findCommitsFromTicketId(Ljava/lang/String;)Ylogic.dataset_manager.Dataset#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;‚
 !findSvnCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;•
 9initializeCommitList(Llogic/dataset_manager/JgitManager;)Xlogic.dataset_manager.Dataset#initializeCommitList(Llogic/dataset_manager/JgitManager;)V|
-getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;²
+getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;º
 'logic.dataset_manager.ProportionDatasetlogic.dataset_manager.Dataset‰
 getRelease(Ljava/lang/Integer;)flogic.dataset_manager.ProportionDataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;O
-computeFeatures():logic.dataset_manager.ProportionDataset#computeFeatures()VW
+computeFeatures():logic.dataset_manager.ProportionDataset#computeFeatures()VS
+removeHalfRelease()<logic.dataset_manager.ProportionDataset#removeHalfRelease()VW
 removeRevertCommits()>logic.dataset_manager.ProportionDataset#removeRevertCommits()V¢
-3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)klogic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;K
-reduceDataset()8logic.dataset_manager.ProportionDataset#reduceDataset()V¡
+3retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)klogic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;¡
 :initializeReleaseList(Llogic/dataset_manager/JgitManager;)clogic.dataset_manager.ProportionDataset#initializeReleaseList(Llogic/dataset_manager/JgitManager;)VV
 getReleases()Elogic.dataset_manager.ProportionDataset#getReleases()Ljava/util/List;¡
 +getReleaseFromItsIndex(Ljava/lang/Integer;)rlogic.dataset_manager.ProportionDataset#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;Q

@@ -59,7 +59,6 @@ public class ProportionDataset extends Dataset {
         this.releases = new ArrayList<>();
         Integer i;
         int len = tagList.size();
-        int half = len / 2;
 
         for (i = 0; i < len; i++){
             var cur = new Release(tagList.get(i), manager);
@@ -75,7 +74,6 @@ public class ProportionDataset extends Dataset {
             cur.setIndex(i + 1);
             cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
         }
-        //this.releases.removeIf(r -> r.getIndex() > half);
     }
 
     public void removeHalfRelease(){
