@@ -34,7 +34,7 @@ $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitF
 +findCommitsFromTicketId(Ljava/lang/String;)Ylogic.dataset_manager.Dataset#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;Ç
 !findSvnCommit(Ljava/lang/String;)]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;ï
 9initializeCommitList(Llogic/dataset_manager/JgitManager;)Xlogic.dataset_manager.Dataset#initializeCommitList(Llogic/dataset_manager/JgitManager;)V|
-getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;∫
+getCommit(Ljava/lang/Integer;)Zlogic.dataset_manager.Dataset#getCommit(Ljava/lang/Integer;)Llogic/dataset_manager/Commit;â
 'logic.dataset_manager.ProportionDatasetlogic.dataset_manager.Datasetâ
 getRelease(Ljava/lang/Integer;)flogic.dataset_manager.ProportionDataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;O
 computeFeatures():logic.dataset_manager.ProportionDataset#computeFeatures()VS
@@ -48,7 +48,8 @@ $findCommitFromId(Ljava/lang/String;)`logic.dataset_manager.Dataset#findCommitF
 $findOpeningVersion(Ljava/util/Date;)klogic.dataset_manager.ProportionDataset#findOpeningVersion(Ljava/util/Date;)Llogic/dataset_manager/Release;P
 
 getFiles()Blogic.dataset_manager.ProportionDataset#getFiles()Ljava/util/List;s
-#<init>(Llogic/bean/ProportionBean;)Llogic.dataset_manager.ProportionDataset#<init>(Llogic/bean/ProportionBean;)Vy
+#<init>(Llogic/bean/ProportionBean;)Llogic.dataset_manager.ProportionDataset#<init>(Llogic/bean/ProportionBean;)VM
+firstReduction()9logic.dataset_manager.ProportionDataset#firstReduction()Vy
 &initializeBugsList(Ljava/lang/String;)Ologic.dataset_manager.ProportionDataset#initializeBugsList(Ljava/lang/String;)Vè
 "findFixedVersion(Ljava/util/List;)ilogic.dataset_manager.ProportionDataset#findFixedVersion(Ljava/util/List;)Llogic/dataset_manager/Release;ô
 'findReleaseFromName(Ljava/lang/String;)nlogic.dataset_manager.ProportionDataset#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;∆

@@ -37,8 +37,10 @@ public abstract class BasicPageFxmlController {
         /* Different titles for each use case, based on the object type instantiated    */
         if (this.getClass().getName().contains("Clone"))
             s = "Select output directory";
+        else if (this.getClass().getName().contains("Chart"))
+            s = "Select repository for process control chart analisys";
         else
-            s = "Select repository for bugginess analisys";
+            s = "Select repository for proportion analisys";
 
         var repository = new DirectoryChooser();
         repository.setTitle(s);

@@ -41,11 +41,13 @@ public class SceneSwitcher extends Application {
 		Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
 		this.scene = new Scene(root);
 		primaryStage.setScene(scene);
+		this.primaryStage.setTitle("Home page");
 		primaryStage.show();
 	}
 
 	public void setHomeScene(ActionEvent event) throws IOException {
 		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.primaryStage.setTitle("Home page");
 		this.setHomeScene(this.primaryStage);
 	}
 
@@ -53,6 +55,7 @@ public class SceneSwitcher extends Application {
 		Parent bugginessScene = FXMLLoader.load(getClass().getResource("process_control_chart.fxml"));
 		this.scene = new Scene(bugginessScene);
 		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.primaryStage.setTitle("Process control chart");
 		this.primaryStage.setScene(scene);
 		this.primaryStage.show();
 	}
@@ -61,6 +64,7 @@ public class SceneSwitcher extends Application {
 		Parent bugginessScene = FXMLLoader.load(getClass().getResource("class_bugginess.fxml"));
 		this.scene = new Scene(bugginessScene);
 		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.primaryStage.setTitle("Proportion analisys");
 		this.primaryStage.setScene(scene);
 		this.primaryStage.show();
 	}
@@ -69,6 +73,7 @@ public class SceneSwitcher extends Application {
 		Parent cloneScene = FXMLLoader.load(getClass().getResource("clone_page.fxml"));
 		this.scene = new Scene(cloneScene);
 		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.primaryStage.setTitle("Clone a repository");
 		this.primaryStage.setScene(scene);
 		this.primaryStage.show();
 	}
