@@ -14,24 +14,26 @@ public class ProcessControlChartFxmlController extends ProcessControlChartAndPro
 
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
-
+        this.changeEditability();
         var boundary = new ProcessControlChartBoundary(this.outputFileLabel.getText(),
                 this.repositoryLabel.getText(),
                 this.projectName.getText(),
                 this.thresholdSpinner.getValue());
-        var task = new Task<Void>() {
+        this.job = new Task<Void>() {
             @Override
             protected Void call() throws Exception {
                 boundary.runUseCase();
                 return null;
             }
         };
-        this.runTask(task);
+        this.runTask();
+        this.interruptButton.setVisible(Boolean.TRUE);
     }
 
     @Override
     protected void initialize(){
         super.initialize();
+        this.editableItems.add(this.thresholdSpinner);
 
         //prevent chars value on spinner
         SceneSwitcher.getInstance().initializeIntegerSpinner(this.thresholdSpinner);

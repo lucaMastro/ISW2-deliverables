@@ -5,7 +5,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import logic.boundary.CloneRepositoryBoundary;
-import logic.exception.InvalidInputException;
 
 public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
@@ -14,29 +13,27 @@ public class CloneRepositoryFxmlController extends BasicPageFxmlController {
 
     @FXML
     protected void submitButtonSelected(ActionEvent event) {
+        this.changeEditability();
+
         String outputDir = this.repositoryLabel.getText();
         String url = this.urlTextField.getText();
+        var boundary = new CloneRepositoryBoundary(url, outputDir);
+        this.job = new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                boundary.cloneRepository();
+                return null;
+            }
+        };
+        this.runTask();
 
-        try {
-            var boundary = new CloneRepositoryBoundary(url, outputDir);
-            var task = new Task<Void>() {
-                @Override
-                protected Void call() throws Exception {
-                    boundary.cloneRepository();
-                    return null;
-                }
-            };
-            this.runTask(task);
-        }
-        catch (InvalidInputException e){
-            SceneSwitcher.getInstance().errorAlertShow(e.getMessage());
-        }
-
+        this.interruptButton.setVisible(Boolean.TRUE);
     }
 
     @FXML
     @Override
     protected void initialize() {
         super.initialize();
+        this.editableItems.add(this.urlTextField);
     }
 }

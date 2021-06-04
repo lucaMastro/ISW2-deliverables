@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.DirectoryChooser;
@@ -11,6 +12,8 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class BasicPageFxmlController {
 
@@ -25,6 +28,13 @@ public abstract class BasicPageFxmlController {
 
     @FXML
     protected Button browseRepoPathButton;
+
+    @FXML
+    protected Button interruptButton;
+
+    protected List<Node> editableItems;
+
+    protected Task<Void> job;
 
     @FXML
     protected void backButtonSelected(ActionEvent actionEvent) throws IOException {
@@ -54,20 +64,36 @@ public abstract class BasicPageFxmlController {
     @FXML
     protected abstract void submitButtonSelected(ActionEvent actionEvent);
 
-    protected void runTask(Task<Void> task){
-        task.setOnSucceeded(e ->{
+    @FXML
+    protected void interruptButtonSelected(ActionEvent event){
+        this.job.cancel();
+    }
+
+
+    protected void runTask(){
+        this.job.setOnSucceeded(e ->{
             SceneSwitcher.getInstance().informationAlertShow("Done!!");
             SceneSwitcher.getInstance().setDefautlCursor();
+            this.changeEditability();
+            this.interruptButton.setVisible(Boolean.FALSE);
         });
 
-        task.setOnFailed(e ->{
-            var exc = task.getException();
+        this.job.setOnFailed(e ->{
+            var exc = this.job.getException();
             SceneSwitcher.getInstance().errorAlertShow(exc.getMessage());
             SceneSwitcher.getInstance().setDefautlCursor();
+            this.changeEditability();
+            this.interruptButton.setVisible(Boolean.FALSE);
+        });
+
+        this.job.setOnCancelled(e -> {
+            SceneSwitcher.getInstance().setDefautlCursor();
+            this.changeEditability();
+            this.interruptButton.setVisible(Boolean.FALSE);
         });
 
         SceneSwitcher.getInstance().setWorkingCursor();
-        var t = new Thread(task);
+        var t = new Thread(this.job);
         t.start();
     }
 
@@ -76,6 +102,15 @@ public abstract class BasicPageFxmlController {
         assert submitButton != null : "fx:id=\"SubmitButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
         assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
         assert browseRepoPathButton != null : "fx:id=\"browseRepoPathButton\" was not injected: check your FXML file 'clone_page.fxml'.";
+
+        this.editableItems = new ArrayList<>();
+        this.editableItems.add(submitButton);
+        this.editableItems.add(backButton);
+        this.editableItems.add(browseRepoPathButton);
     }
 
+    protected void changeEditability(){
+        for (Node n : this.editableItems)
+            n.setDisable(! n.isDisabled());
+    }
 }

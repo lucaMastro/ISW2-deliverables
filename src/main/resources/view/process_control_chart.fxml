@@ -37,4 +37,9 @@
       </Label>
       <Spinner fx:id="thresholdSpinner" editable="true" layoutX="133.0" layoutY="263.0" prefHeight="30.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="260.0" />
    </children>
+   <Button fx:id="interruptButton" layoutX="508.0" layoutY="328.0" mnemonicParsing="false" onAction="#interruptButtonSelected" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: #cc020b;" text="X" textFill="WHITE" visible="false">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+   </Button>
 </AnchorPane>

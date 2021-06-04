@@ -5,21 +5,17 @@ import logic.controller.CloneRepositoryController;
 import logic.exception.InvalidInputException;
 import org.eclipse.jgit.api.errors.GitAPIException;
 
-import java.io.File;
 
 public class CloneRepositoryBoundary {
     String url;
-    File outputDirectory;
+    String outputDirectory;
 
-    public CloneRepositoryBoundary(String u, String file) throws InvalidInputException {
-        if (u == null || u.isEmpty() ||
-                file == null || file.isEmpty())
-            throw new InvalidInputException("Empty field detected: all field are mandatory.");
+    public CloneRepositoryBoundary(String u, String file){
         this.url = u;
-        this.outputDirectory = new File(file);
+        this.outputDirectory = file;
     }
 
-    public void cloneRepository() throws GitAPIException {
+    public void cloneRepository() throws GitAPIException, InvalidInputException {
         var bean = new CloneRepositoryBean(this.url, this.outputDirectory);
         var controller = new CloneRepositoryController();
         controller.clone(bean);

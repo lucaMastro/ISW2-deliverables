@@ -16,7 +16,6 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
     @FXML
     private ComboBox<String> proportionPossibilities;
 
-
     @FXML
     private Label windowsPeriodLabel;
 
@@ -26,18 +25,23 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
 
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
+        this.changeEditability();
+
         var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
                 this.repositoryLabel.getText(),
                 this.projectName.getText(),
                 this.proportionPossibilities.getValue());
-        var task = new Task<Void>() {
+        this.job = new Task<Void>() {
             @Override
             protected Void call() throws Exception {
                 boundary.runUseCase();
                 return null;
             }
         };
-        this.runTask(task);
+
+        this.runTask();
+        this.interruptButton.setVisible(Boolean.TRUE);
+        this.interruptButton.setDisable(Boolean.FALSE);
     }
 
     @Override
@@ -46,6 +50,9 @@ public class ClassBugginessFxmlController extends ProcessControlChartAndProporti
         this.repositoryLabel.setText("/home/luca/Scrivania/ISW2/deliverables/deliverable2/bookkeeper");
         this.outputFileLabel.setText("/home/luca/Scrivania/bookkeeperGUI.csv");
         this.projectName.setText("bookkeeper");
+
+        this.editableItems.add(this.windowPeriodValue);
+        this.editableItems.add(this.proportionPossibilities);
 
         ObservableList<String> options = FXCollections.observableArrayList();
         for (ProportionAlgoOptions obj : ProportionAlgoOptions.class.getEnumConstants()){
