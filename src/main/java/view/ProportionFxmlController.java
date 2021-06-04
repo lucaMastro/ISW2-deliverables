@@ -10,7 +10,7 @@ import javafx.scene.control.*;
 import logic.boundary.FindBugginessBoundary;
 import logic.enums.ProportionAlgoOptions;
 
-public class ClassBugginessFxmlController extends ProcessControlChartAndProportionFxmlController {
+public class ProportionFxmlController extends ProcessControlChartAndProportionFxmlController {
 
 
     @FXML

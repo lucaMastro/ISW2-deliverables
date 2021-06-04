@@ -36,7 +36,7 @@ public abstract class ProcessControlChartAndProportionFxmlController extends Bas
         assert browseOutputFileButton != null : "fx:id=\"browseOutputFilehButton\" was not injected: check your FXML file 'process_control_chart.fxml'.";
         assert projectName != null : "fx:id=\"projectNameLabel\" was not injected: check your FXML file 'process_control_chart.fxml'.";
 
-        this.editableItems.add(this.projectName);;
+        this.editableItems.add(this.projectName);
         this.editableItems.add(this.browseOutputFileButton);
         this.editableItems.add(this.projectName);
 
