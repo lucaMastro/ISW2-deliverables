@@ -1,38 +1,16 @@
 
-`logic.dataset_manager.Dataset#findCommitFromId(Ljava/lang/String;)Llogic/dataset_manager/Commit;s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java` `(""3*ô
-2s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javab b(ÛØ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javab b()"
-%1logic.dataset_manager.Commit"]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;*!
-logic.dataset_manager.Dataset*
-
-idjava.lang.String2!findGitCommit(Ljava/lang/String;)"›
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javab b(*$
-"
-%1logic.dataset_manager.Commit*Æ
-3s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaa a(ÃÀ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaa a(	
-%0int"java.lang.String#length()I*
-
-idjava.lang.String2length()*
-2
-1*ô
+<logic.dataset_manager.Dataset#getFixedBugs()Ljava/util/List;s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaB B('"1*Û
 1s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javad d(ÛØ
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaC C(Ë
+È
 s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javad d()"
-%2logic.dataset_manager.Commit"]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;*!
-logic.dataset_manager.Dataset*
-
-idjava.lang.String2!findSvnCommit(Ljava/lang/String;)"›
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaC C(
+%0java.util.ArrayList"__id*0*.
+logic.dataset_manager.Dataset"
+	fixedBugs"’
 s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javad d(*$
-"
-%2logic.dataset_manager.Commit:
-idjava.lang.StringB!
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaC C(
+
+%0java.util.ArrayListB!
 logic.dataset_manager.Dataset

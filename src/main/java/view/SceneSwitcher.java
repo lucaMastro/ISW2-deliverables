@@ -52,10 +52,20 @@ public class SceneSwitcher extends Application {
 	}
 
 	public void setControlChartScene(ActionEvent event) throws IOException {
-		Parent bugginessScene = FXMLLoader.load(getClass().getResource("process_control_chart.fxml"));
-		this.scene = new Scene(bugginessScene);
+		Parent controlChartScene = FXMLLoader.load(getClass().getResource("process_control_chart.fxml"));
+		this.scene = new Scene(controlChartScene);
 		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		this.primaryStage.setTitle("Process control chart");
+		this.primaryStage.setScene(scene);
+		this.primaryStage.show();
+	}
+
+
+	public void setWekaScene(ActionEvent event) throws IOException {
+		Parent wekaScene = FXMLLoader.load(getClass().getResource("weka_analisys.fxml"));
+		this.scene = new Scene(wekaScene);
+		this.primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		this.primaryStage.setTitle("Weka analisys");
 		this.primaryStage.setScene(scene);
 		this.primaryStage.show();
 	}

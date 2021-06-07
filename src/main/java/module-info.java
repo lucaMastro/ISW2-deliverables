@@ -10,9 +10,9 @@ module view {
     requires com.jfoenix;
     requires org.apache.commons.lang3;
     requires decimal4j;
+    requires weka.stable;
 
     exports view;
 
     opens view to javafx.fxml;
-
 }

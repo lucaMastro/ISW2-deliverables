@@ -38,7 +38,6 @@ public abstract class ProcessControlChartAndProportionFxmlController extends Bas
 
         this.editableItems.add(this.projectName);
         this.editableItems.add(this.browseOutputFileButton);
-        this.editableItems.add(this.projectName);
 
     }
 }
