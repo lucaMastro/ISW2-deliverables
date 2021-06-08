@@ -1,20 +1,20 @@
 
 :logic.weka.WalkForwardSetsManager#getNumberOfAttributes()Iy
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaê ê($"1*·
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaä ä($"1*·
 1y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaë ë(Ð
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaå å(Ð
 Í
 y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaë ë(
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaå å(
 %0weka.core.Instances"__id*/*-#
 !logic.weka.WalkForwardSetsManager"
 dataÝÚ
 y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaë ë((	
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaå å((	
 %1int"$weka.core.Instances#numAttributes()I*
 
 %0weka.core.Instances2numAttributes()"ƒ
 y
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaë ë()
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaå å()
 ""B%#
 !logic.weka.WalkForwardSetsManager

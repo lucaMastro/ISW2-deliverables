@@ -1,16 +1,17 @@
 
-+logic.bean.WekaBean#getArff()Ljava/io/File;i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java0 0("1*†
+6logic.bean.WekaBean#getArffIsTemp()Ljava/lang/Boolean;i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java5 5( "1*∞
 1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java1 1(´
-®
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java6 6(∂
+≥
 i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java1 1(
-%0java.io.File"__id*!*
-logic.bean.WekaBean"
-arff"Å
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java6 6(
+%0java.lang.Boolean"__id*'*%
+logic.bean.WekaBean"
+
+arffIsTemp"Ü
 i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java1 1(
-
-%0java.io.FileB
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java6 6(
+
+%0java.lang.BooleanB
 logic.bean.WekaBean

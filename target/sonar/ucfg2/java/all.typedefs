@@ -366,7 +366,7 @@ valueOf(I)/java.lang.Integer#valueOf(I)Ljava/lang/Integer;5
 toUnsignedString(I)7java.lang.Integer#toUnsignedString(I)Ljava/lang/String;J
 toStringUTF16(II)5java.lang.Integer#toStringUTF16(II)Ljava/lang/String;=
 compareUnsigned(II)&java.lang.Integer#compareUnsigned(II)I%
-max(II)java.lang.Integer#max(II)Iƒ	
+max(II)java.lang.Integer#max(II)IÉ	
 !logic.weka.WalkForwardSetsManagerjava.lang.ObjectX
 getDatasetName()Dlogic.weka.WalkForwardSetsManager#getDatasetName()Ljava/lang/String;O
 computeTestingSet(I)7logic.weka.WalkForwardSetsManager#computeTestingSet(I)VS
@@ -375,9 +375,9 @@ valueOf(I)/java.lang.Integer#valueOf(I)Ljava/lang/Integer;5
 convert(Ljava/io/File;):logic.weka.WalkForwardSetsManager#convert(Ljava/io/File;)V?
 changeLine()/logic.weka.WalkForwardSetsManager#changeLine()Vk
 "writeHeader(Ljava/io/PrintWriter;)Elogic.weka.WalkForwardSetsManager#writeHeader(Ljava/io/PrintWriter;)VQ
-computeTestingFile(I)8logic.weka.WalkForwardSetsManager#computeTestingFile(I)VI
-getNumOfRelease()4logic.weka.WalkForwardSetsManager#getNumOfRelease()Iì
-6computeNumOfReleases(Lweka/core/converters/CSVLoader;)Ylogic.weka.WalkForwardSetsManager#computeNumOfReleases(Lweka/core/converters/CSVLoader;)VU
+computeTestingFile(I)8logic.weka.WalkForwardSetsManager#computeTestingFile(I)VS
+computeNumOfReleases()9logic.weka.WalkForwardSetsManager#computeNumOfReleases()VI
+getNumOfRelease()4logic.weka.WalkForwardSetsManager#getNumOfRelease()IU
 getNumberOfAttributes():logic.weka.WalkForwardSetsManager#getNumberOfAttributes()Iß
 @<init>(Ljava/io/File;Ljava/io/File;Ljava/io/File;Ljava/io/File;)clogic.weka.WalkForwardSetsManager#<init>(Ljava/io/File;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V7
 #weka.core.converters.BatchConverterjava.lang.Object+
@@ -2101,7 +2101,7 @@ AaddEditors(Ljava/lang/Integer;Lorg/eclipse/jgit/lib/PersonIdent;)dlogic.datase
 ,<init>(Ljava/lang/String;Ljava/lang/String;)Llogic.bean.CloneRepositoryBean#<init>(Ljava/lang/String;Ljava/lang/String;)Vù
 %logic.exception.InvalidInputExceptionjava.io.IOException_
 <init>(Ljava/lang/String;)Alogic.exception.InvalidInputException#<init>(Ljava/lang/String;)V°
-'logic.exception.UnexistingFileExceptionjava.lang.Throwablea
+'logic.exception.UnexistingFileExceptionjava.lang.Exceptiona
 <init>(Ljava/lang/String;)Clogic.exception.UnexistingFileException#<init>(Ljava/lang/String;)V…
 "view.CloneRepositoryFxmlControllerview.BasicPageFxmlController8
 <init>(),view.CloneRepositoryFxmlController#<init>()V@
@@ -4998,35 +4998,43 @@ toString()-java.lang.Double#toString()Ljava/lang/String;,
 *org.eclipse.jgit.diff.DiffEntry$ChangeTypejava.lang.Enumë
 valueOf(Ljava/lang/String;)rorg.eclipse.jgit.diff.DiffEntry$ChangeType#valueOf(Ljava/lang/String;)Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;l
 values()`org.eclipse.jgit.diff.DiffEntry$ChangeType#values()[Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;f
-<init>(Ljava/lang/String;I)Gorg.eclipse.jgit.diff.DiffEntry$ChangeType#<init>(Ljava/lang/String;I)V…
+<init>(Ljava/lang/String;I)Gorg.eclipse.jgit.diff.DiffEntry$ChangeType#<init>(Ljava/lang/String;I)V
 logic.controller.WekaControllerjava.lang.Object5
-<init>())logic.controller.WekaController#<init>()VW
-main([Ljava/lang/String;):logic.controller.WekaController#main([Ljava/lang/String;)VY
+<init>())logic.controller.WekaController#<init>()VY
 run(Llogic/bean/WekaBean;);logic.controller.WekaController#run(Llogic/bean/WekaBean;)V•
 @writeFile(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)alogic.controller.WekaController#writeFile(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)VÄ
-&computeMetrics(Llogic/bean/WekaBean;I)Vlogic.controller.WekaController#computeMetrics(Llogic/bean/WekaBean;I)Ljava/util/List;¯
-.weka.core.converters.ConverterUtils$DataSourceweka.core.RevisionHandlerjava.lang.Objectjava.io.SerializableR
-isIncremental()?weka.core.converters.ConverterUtils$DataSource#isIncremental()Zd
-getStructure()Rweka.core.converters.ConverterUtils$DataSource#getStructure()Lweka/core/Instances;h
-isArff(Ljava/lang/String;)Jweka.core.converters.ConverterUtils$DataSource#isArff(Ljava/lang/String;)Zã
-"nextElement(Lweka/core/Instances;)eweka.core.converters.ConverterUtils$DataSource#nextElement(Lweka/core/Instances;)Lweka/core/Instance;f
-getLoader()Wweka.core.converters.ConverterUtils$DataSource#getLoader()Lweka/core/converters/Loader;b
-getDataSet(I)Qweka.core.converters.ConverterUtils$DataSource#getDataSet(I)Lweka/core/Instances;V
-initBatchBuffer()Aweka.core.converters.ConverterUtils$DataSource#initBatchBuffer()Vn
-<init>(Ljava/io/InputStream;)Mweka.core.converters.ConverterUtils$DataSource#<init>(Ljava/io/InputStream;)VB
-reset()7weka.core.converters.ConverterUtils$DataSource#reset()Vx
-read(Ljava/lang/String;)\weka.core.converters.ConverterUtils$DataSource#read(Ljava/lang/String;)Lweka/core/Instances;f
-getStructure(I)Sweka.core.converters.ConverterUtils$DataSource#getStructure(I)Lweka/core/Instances;_
-getRevision()Nweka.core.converters.ConverterUtils$DataSource#getRevision()Ljava/lang/String;~
-read(Ljava/io/InputStream;)_weka.core.converters.ConverterUtils$DataSource#read(Ljava/io/InputStream;)Lweka/core/Instances;n
-<init>(Lweka/core/Instances;)Mweka.core.converters.ConverterUtils$DataSource#<init>(Lweka/core/Instances;)Vf
-main([Ljava/lang/String;)Iweka.core.converters.ConverterUtils$DataSource#main([Ljava/lang/String;)V`
-getDataSet()Pweka.core.converters.ConverterUtils$DataSource#getDataSet()Lweka/core/Instances;h
-<init>(Ljava/lang/String;)Jweka.core.converters.ConverterUtils$DataSource#<init>(Ljava/lang/String;)Vé
-#read(Lweka/core/converters/Loader;)gweka.core.converters.ConverterUtils$DataSource#read(Lweka/core/converters/Loader;)Lweka/core/Instances;Ä
-&hasMoreElements(Lweka/core/Instances;)Vweka.core.converters.ConverterUtils$DataSource#hasMoreElements(Lweka/core/Instances;)Z~
-%<init>(Lweka/core/converters/Loader;)Uweka.core.converters.ConverterUtils$DataSource#<init>(Lweka/core/converters/Loader;)V6
-"weka.core.WeightedInstancesHandlerjava.lang.Object9
+&computeMetrics(Llogic/bean/WekaBean;I)Vlogic.controller.WekaController#computeMetrics(Llogic/bean/WekaBean;I)Ljava/util/List;∆
+logic.bean.WekaBeanjava.lang.Object@
+getTraining()/logic.bean.WekaBean#getTraining()Ljava/io/File;:
+
+getInput(),logic.bean.WekaBean#getInput()Ljava/io/File;ï
+><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Slogic.bean.WekaBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VB
+getOutputCSV()0logic.bean.WekaBean#getOutputCSV()Ljava/io/File;>
+getTesting().logic.bean.WekaBean#getTesting()Ljava/io/File;I
+getArffIsTemp()6logic.bean.WekaBean#getArffIsTemp()Ljava/lang/Boolean;8
+	getArff()+logic.bean.WekaBean#getArff()Ljava/io/File;9
+%weka.core.converters.URLSourcedLoaderjava.lang.ObjectÜ
+weka.core.converters.ArffLoader'weka.core.converters.AbstractFileLoader#weka.core.converters.BatchConverter%weka.core.converters.URLSourcedLoader)weka.core.converters.IncrementalConverterY
+setURL(Ljava/lang/String;);weka.core.converters.ArffLoader#setURL(Ljava/lang/String;)VN
+retrieveFile()<weka.core.converters.ArffLoader#retrieveFile()Ljava/io/File;U
+getStructure()Cweka.core.converters.ArffLoader#getStructure()Lweka/core/Instances;^
+getFileDescription()Fweka.core.converters.ArffLoader#getFileDescription()Ljava/lang/String;Ñ
+&getNextInstance(Lweka/core/Instances;)Zweka.core.converters.ArffLoader#getNextInstance(Lweka/core/Instances;)Lweka/core/Instance;S
+setFile(Ljava/io/File;)8weka.core.converters.ArffLoader#setFile(Ljava/io/File;)VP
+retrieveURL()?weka.core.converters.ArffLoader#retrieveURL()Ljava/lang/String;N
+globalInfo()>weka.core.converters.ArffLoader#globalInfo()Ljava/lang/String;3
+reset()(weka.core.converters.ArffLoader#reset()VP
+getRevision()?weka.core.converters.ArffLoader#getRevision()Ljava/lang/String;5
+<init>())weka.core.converters.ArffLoader#<init>()VW
+main([Ljava/lang/String;):weka.core.converters.ArffLoader#main([Ljava/lang/String;)VQ
+getDataSet()Aweka.core.converters.ArffLoader#getDataSet()Lweka/core/Instances;]
+getFileExtensions()Fweka.core.converters.ArffLoader#getFileExtensions()[Ljava/lang/String;W
+setSource(Ljava/net/URL;):weka.core.converters.ArffLoader#setSource(Ljava/net/URL;)Ve
+ setSource(Ljava/io/InputStream;)Aweka.core.converters.ArffLoader#setSource(Ljava/io/InputStream;)VZ
+getFileExtension()Dweka.core.converters.ArffLoader#getFileExtension()Ljava/lang/String;*
+weka.core.Randomizablejava.lang.Object6
+"weka.core.WeightedInstancesHandlerjava.lang.Object7
+#weka.core.AdditionalMeasureProducerjava.lang.Object9
 %weka.core.TechnicalInformationHandlerjava.lang.Objectô
 weka.classifiers.Classifierjava.lang.Cloneableweka.core.RevisionHandlerweka.core.OptionHandlerjava.lang.Objectweka.core.CapabilitiesHandlerjava.io.SerializableK
 getOptions();weka.classifiers.Classifier#getOptions()[Ljava/lang/String;ã
@@ -5044,7 +5052,37 @@ getDebug()'weka.classifiers.Classifier#getDebug()ZL
 ?runClassifier(Lweka/classifiers/Classifier;[Ljava/lang/String;)\weka.classifiers.Classifier#runClassifier(Lweka/classifiers/Classifier;[Ljava/lang/String;)VQ
 listOptions()@weka.classifiers.Classifier#listOptions()Ljava/util/Enumeration;7
 setDebug(Z)(weka.classifiers.Classifier#setDebug(Z)Ví
-*makeCopies(Lweka/classifiers/Classifier;I)dweka.classifiers.Classifier#makeCopies(Lweka/classifiers/Classifier;I)[Lweka/classifiers/Classifier;Æ
+*makeCopies(Lweka/classifiers/Classifier;I)dweka.classifiers.Classifier#makeCopies(Lweka/classifiers/Classifier;I)[Lweka/classifiers/Classifier;≥
+#weka.classifiers.trees.RandomForestweka.core.Randomizableweka.classifiers.Classifierweka.core.OptionHandler%weka.core.TechnicalInformationHandler"weka.core.WeightedInstancesHandler#weka.core.AdditionalMeasureProducerb
+numFeaturesTipText()Jweka.classifiers.trees.RandomForest#numFeaturesTipText()Ljava/lang/String;S
+getOptions()Cweka.classifiers.trees.RandomForest#getOptions()[Ljava/lang/String;u
+&buildClassifier(Lweka/core/Instances;)Kweka.classifiers.trees.RandomForest#buildClassifier(Lweka/core/Instances;)Vb
+getCapabilities()Mweka.classifiers.trees.RandomForest#getCapabilities()Lweka/core/Capabilities;Ñ
+-distributionForInstance(Lweka/core/Instance;)Sweka.classifiers.trees.RandomForest#distributionForInstance(Lweka/core/Instance;)[D\
+maxDepthTipText()Gweka.classifiers.trees.RandomForest#maxDepthTipText()Ljava/lang/String;\
+numTreesTipText()Gweka.classifiers.trees.RandomForest#numTreesTipText()Ljava/lang/String;e
+enumerateMeasures()Nweka.classifiers.trees.RandomForest#enumerateMeasures()Ljava/util/Enumeration;=
+
+setSeed(I)/weka.classifiers.trees.RandomForest#setSeed(I)VC
+getMaxDepth()2weka.classifiers.trees.RandomForest#getMaxDepth()I9
+<init>()-weka.classifiers.trees.RandomForest#<init>()Vg
+setOptions([Ljava/lang/String;)Dweka.classifiers.trees.RandomForest#setOptions([Ljava/lang/String;)V[
+main([Ljava/lang/String;)>weka.classifiers.trees.RandomForest#main([Ljava/lang/String;)VE
+setMaxDepth(I)3weka.classifiers.trees.RandomForest#setMaxDepth(I)VU
+measureOutOfBagError();weka.classifiers.trees.RandomForest#measureOutOfBagError()DN
+
+toString()@weka.classifiers.trees.RandomForest#toString()Ljava/lang/String;E
+setNumTrees(I)3weka.classifiers.trees.RandomForest#setNumTrees(I)VC
+getNumTrees()2weka.classifiers.trees.RandomForest#getNumTrees()Ie
+getMeasure(Ljava/lang/String;)Cweka.classifiers.trees.RandomForest#getMeasure(Ljava/lang/String;)DR
+globalInfo()Bweka.classifiers.trees.RandomForest#globalInfo()Ljava/lang/String;z
+getTechnicalInformation()]weka.classifiers.trees.RandomForest#getTechnicalInformation()Lweka/core/TechnicalInformation;T
+getRevision()Cweka.classifiers.trees.RandomForest#getRevision()Ljava/lang/String;K
+setNumFeatures(I)6weka.classifiers.trees.RandomForest#setNumFeatures(I)VY
+listOptions()Hweka.classifiers.trees.RandomForest#listOptions()Ljava/util/Enumeration;;
+	getSeed().weka.classifiers.trees.RandomForest#getSeed()IT
+seedTipText()Cweka.classifiers.trees.RandomForest#seedTipText()Ljava/lang/String;I
+getNumFeatures()5weka.classifiers.trees.RandomForest#getNumFeatures()IÆ
 !weka.classifiers.bayes.NaiveBayesweka.classifiers.Classifierweka.core.OptionHandler%weka.core.TechnicalInformationHandler"weka.core.WeightedInstancesHandlerx
  displayModelInOldFormatTipText()Tweka.classifiers.bayes.NaiveBayes#displayModelInOldFormatTipText()Ljava/lang/String;\
 toStringOriginal()Fweka.classifiers.bayes.NaiveBayes#toStringOriginal()Ljava/lang/String;Q
@@ -5070,7 +5108,49 @@ toString()>weka.classifiers.bayes.NaiveBayes#toString()Ljava/lang/String;U
 useKernelEstimatorTipText()Oweka.classifiers.bayes.NaiveBayes#useKernelEstimatorTipText()Ljava/lang/String;W
 listOptions()Fweka.classifiers.bayes.NaiveBayes#listOptions()Ljava/util/Enumeration;Ä
 $useSupervisedDiscretizationTipText()Xweka.classifiers.bayes.NaiveBayes#useSupervisedDiscretizationTipText()Ljava/lang/String;i
-!setUseSupervisedDiscretization(Z)Dweka.classifiers.bayes.NaiveBayes#setUseSupervisedDiscretization(Z)V*
+!setUseSupervisedDiscretization(Z)Dweka.classifiers.bayes.NaiveBayes#setUseSupervisedDiscretization(Z)V9
+%weka.classifiers.UpdateableClassifierjava.lang.ObjectÍ
+weka.classifiers.lazy.IBk%weka.classifiers.UpdateableClassifierweka.classifiers.Classifierweka.core.OptionHandler%weka.core.TechnicalInformationHandler"weka.core.WeightedInstancesHandler#weka.core.AdditionalMeasureProducerI
+getOptions()9weka.classifiers.lazy.IBk#getOptions()[Ljava/lang/String;=
+crossValidate()*weka.classifiers.lazy.IBk#crossValidate()Vk
+&buildClassifier(Lweka/core/Instances;)Aweka.classifiers.lazy.IBk#buildClassifier(Lweka/core/Instances;)V1
+	<init>(I)$weka.classifiers.lazy.IBk#<init>(I)V?
+setWindowSize(I)+weka.classifiers.lazy.IBk#setWindowSize(I)VX
+getCapabilities()Cweka.classifiers.lazy.IBk#getCapabilities()Lweka/core/Capabilities;?
+getNumTraining()+weka.classifiers.lazy.IBk#getNumTraining()Iz
+-distributionForInstance(Lweka/core/Instance;)Iweka.classifiers.lazy.IBk#distributionForInstance(Lweka/core/Instance;)[D1
+	setKNN(I)$weka.classifiers.lazy.IBk#setKNN(I)V/
+getKNN()#weka.classifiers.lazy.IBk#getKNN()I[
+enumerateMeasures()Dweka.classifiers.lazy.IBk#enumerateMeasures()Ljava/util/Enumeration;?
+getMeanSquared()+weka.classifiers.lazy.IBk#getMeanSquared()ZC
+getCrossValidate()-weka.classifiers.lazy.IBk#getCrossValidate()Z/
+<init>()#weka.classifiers.lazy.IBk#<init>()V]
+setOptions([Ljava/lang/String;):weka.classifiers.lazy.IBk#setOptions([Ljava/lang/String;)VQ
+main([Ljava/lang/String;)4weka.classifiers.lazy.IBk#main([Ljava/lang/String;)VX
+meanSquaredTipText()@weka.classifiers.lazy.IBk#meanSquaredTipText()Ljava/lang/String;H
+KNNTipText()8weka.classifiers.lazy.IBk#KNNTipText()Ljava/lang/String;=
+getWindowSize()*weka.classifiers.lazy.IBk#getWindowSize()I\
+crossValidateTipText()Bweka.classifiers.lazy.IBk#crossValidateTipText()Ljava/lang/String;d
+distanceWeightingTipText()Fweka.classifiers.lazy.IBk#distanceWeightingTipText()Ljava/lang/String;A
+setMeanSquared(Z),weka.classifiers.lazy.IBk#setMeanSquared(Z)Vr
+)makeDistribution(Lweka/core/Instances;[D)Eweka.classifiers.lazy.IBk#makeDistribution(Lweka/core/Instances;[D)[DD
+
+toString()6weka.classifiers.lazy.IBk#toString()Ljava/lang/String;ò
+$getNearestNeighbourSearchAlgorithm()pweka.classifiers.lazy.IBk#getNearestNeighbourSearchAlgorithm()Lweka/core/neighboursearch/NearestNeighbourSearch;V
+windowSizeTipText()?weka.classifiers.lazy.IBk#windowSizeTipText()Ljava/lang/String;E
+setCrossValidate(Z).weka.classifiers.lazy.IBk#setCrossValidate(Z)V[
+getMeasure(Ljava/lang/String;)9weka.classifiers.lazy.IBk#getMeasure(Ljava/lang/String;)DÀ
+VsetNearestNeighbourSearchAlgorithm(Lweka/core/neighboursearch/NearestNeighbourSearch;)qweka.classifiers.lazy.IBk#setNearestNeighbourSearchAlgorithm(Lweka/core/neighboursearch/NearestNeighbourSearch;)VÄ
+(nearestNeighbourSearchAlgorithmTipText()Tweka.classifiers.lazy.IBk#nearestNeighbourSearchAlgorithmTipText()Ljava/lang/String;H
+globalInfo()8weka.classifiers.lazy.IBk#globalInfo()Ljava/lang/String;p
+getTechnicalInformation()Sweka.classifiers.lazy.IBk#getTechnicalInformation()Lweka/core/TechnicalInformation;J
+getRevision()9weka.classifiers.lazy.IBk#getRevision()Ljava/lang/String;k
+&updateClassifier(Lweka/core/Instance;)Aweka.classifiers.lazy.IBk#updateClassifier(Lweka/core/Instance;)Vy
+-setDistanceWeighting(Lweka/core/SelectedTag;)Hweka.classifiers.lazy.IBk#setDistanceWeighting(Lweka/core/SelectedTag;)VO
+listOptions()>weka.classifiers.lazy.IBk#listOptions()Ljava/util/Enumeration;w
+"pruneToK(Lweka/core/Instances;[DI)Qweka.classifiers.lazy.IBk#pruneToK(Lweka/core/Instances;[DI)Lweka/core/Instances;+
+init()!weka.classifiers.lazy.IBk#init()Va
+getDistanceWeighting()Gweka.classifiers.lazy.IBk#getDistanceWeighting()Lweka/core/SelectedTag;*
 weka.core.Summarizablejava.lang.Object„L
 weka.classifiers.Evaluationweka.core.RevisionHandlerjava.lang.Objectweka.core.Summarizable7
 fMeasure(I)(weka.classifiers.Evaluation#fMeasure(I)DU
@@ -5166,182 +5246,7 @@ $toSummaryString(Ljava/lang/String;Z)Rweka.classifiers.Evaluation#toSummaryStri
 4evaluateModel(Ljava/lang/String;[Ljava/lang/String;)bweka.classifiers.Evaluation#evaluateModel(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;I
 falseNegativeRate(I)1weka.classifiers.Evaluation#falseNegativeRate(I)DU
 weightedTruePositiveRate()7weka.classifiers.Evaluation#weightedTruePositiveRate()DQ
-correlationCoefficient()5weka.classifiers.Evaluation#correlationCoefficient()DÉ
-java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.FlushableS
-nullOutputStream()=java.io.OutputStream#nullOutputStream()Ljava/io/OutputStream;,
-	write([B)java.io.OutputStream#write([B)V*
-<init>()java.io.OutputStream#<init>()V(
-flush()java.io.OutputStream#flush()V0
-write([BII)!java.io.OutputStream#write([BII)V(
-close()java.io.OutputStream#close()Vé
-java.io.FilterOutputStreamjava.io.OutputStream2
-	write([B)%java.io.FilterOutputStream#write([B)V\
-<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
-flush()#java.io.FilterOutputStream#flush()V0
-write(I)$java.io.FilterOutputStream#write(I)V6
-write([BII)'java.io.FilterOutputStream#write([BII)V.
-close()#java.io.FilterOutputStream#close()VÖ 
-java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
-	write([C)java.io.PrintStream#write([C)V)
-print(J)java.io.PrintStream#print(J)V-
-
-println(J)java.io.PrintStream#println(J)V)
-print(F)java.io.PrintStream#print(F)V-
-
-println(F)java.io.PrintStream#println(F)V/
-write([BII) java.io.PrintStream#write([BII)VÅ
-4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Ijava.io.PrintStream#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V)
-print(Z)java.io.PrintStream#print(Z)V1
-clearError()!java.io.PrintStream#clearError()V-
-
-println(Z)java.io.PrintStream#println(Z)Vi
-(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V)
-write(I)java.io.PrintStream#write(I)VO
-println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)VK
-print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)Ví
-4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
-print(I)java.io.PrintStream#print(I)V-
-
-println(I)java.io.PrintStream#println(I)V'
-flush()java.io.PrintStream#flush()V´
-?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;m
- append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
-toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
-<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
-	print([C)java.io.PrintStream#print([C)Vq
-"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;)
-print(D)java.io.PrintStream#print(D)Vq
-,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V-
-
-println(D)java.io.PrintStream#println(D)VO
-println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
-<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
-<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)Vy
-0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Ejava.io.PrintStream#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V1
-ensureOpen()!java.io.PrintStream#ensureOpen()Vã
-9<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)Njava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)V´
-?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;-
-
-setError()java.io.PrintStream#setError()Vá
--printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;?
-	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
-<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)Vá
--format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
-	newLine()java.io.PrintStream#newLine()V)
-print(C)java.io.PrintStream#print(C)V1
-checkError()!java.io.PrintStream#checkError()Z+
-	println()java.io.PrintStream#println()V'
-close()java.io.PrintStream#close()V-
-
-println(C)java.io.PrintStream#println(C)VK
-write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)VK
-print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
-1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)VU
-<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)V/
-println([C) java.io.PrintStream#println([C)Vã
-9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)V∆
-logic.bean.WekaBeanjava.lang.Object@
-getTraining()/logic.bean.WekaBean#getTraining()Ljava/io/File;:
-
-getInput(),logic.bean.WekaBean#getInput()Ljava/io/File;ï
-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Slogic.bean.WekaBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VB
-getOutputCSV()0logic.bean.WekaBean#getOutputCSV()Ljava/io/File;>
-getTesting().logic.bean.WekaBean#getTesting()Ljava/io/File;I
-getArffIsTemp()6logic.bean.WekaBean#getArffIsTemp()Ljava/lang/Boolean;8
-	getArff()+logic.bean.WekaBean#getArff()Ljava/io/File;9
-%weka.core.converters.URLSourcedLoaderjava.lang.ObjectÜ
-weka.core.converters.ArffLoader'weka.core.converters.AbstractFileLoader#weka.core.converters.BatchConverter%weka.core.converters.URLSourcedLoader)weka.core.converters.IncrementalConverterY
-setURL(Ljava/lang/String;);weka.core.converters.ArffLoader#setURL(Ljava/lang/String;)VN
-retrieveFile()<weka.core.converters.ArffLoader#retrieveFile()Ljava/io/File;U
-getStructure()Cweka.core.converters.ArffLoader#getStructure()Lweka/core/Instances;^
-getFileDescription()Fweka.core.converters.ArffLoader#getFileDescription()Ljava/lang/String;Ñ
-&getNextInstance(Lweka/core/Instances;)Zweka.core.converters.ArffLoader#getNextInstance(Lweka/core/Instances;)Lweka/core/Instance;S
-setFile(Ljava/io/File;)8weka.core.converters.ArffLoader#setFile(Ljava/io/File;)VP
-retrieveURL()?weka.core.converters.ArffLoader#retrieveURL()Ljava/lang/String;N
-globalInfo()>weka.core.converters.ArffLoader#globalInfo()Ljava/lang/String;3
-reset()(weka.core.converters.ArffLoader#reset()VP
-getRevision()?weka.core.converters.ArffLoader#getRevision()Ljava/lang/String;5
-<init>())weka.core.converters.ArffLoader#<init>()VW
-main([Ljava/lang/String;):weka.core.converters.ArffLoader#main([Ljava/lang/String;)VQ
-getDataSet()Aweka.core.converters.ArffLoader#getDataSet()Lweka/core/Instances;]
-getFileExtensions()Fweka.core.converters.ArffLoader#getFileExtensions()[Ljava/lang/String;W
-setSource(Ljava/net/URL;):weka.core.converters.ArffLoader#setSource(Ljava/net/URL;)Ve
- setSource(Ljava/io/InputStream;)Aweka.core.converters.ArffLoader#setSource(Ljava/io/InputStream;)VZ
-getFileExtension()Dweka.core.converters.ArffLoader#getFileExtension()Ljava/lang/String;*
-weka.core.Randomizablejava.lang.Object7
-#weka.core.AdditionalMeasureProducerjava.lang.Object≥
-#weka.classifiers.trees.RandomForestweka.core.Randomizableweka.classifiers.Classifierweka.core.OptionHandler%weka.core.TechnicalInformationHandler"weka.core.WeightedInstancesHandler#weka.core.AdditionalMeasureProducerb
-numFeaturesTipText()Jweka.classifiers.trees.RandomForest#numFeaturesTipText()Ljava/lang/String;S
-getOptions()Cweka.classifiers.trees.RandomForest#getOptions()[Ljava/lang/String;u
-&buildClassifier(Lweka/core/Instances;)Kweka.classifiers.trees.RandomForest#buildClassifier(Lweka/core/Instances;)Vb
-getCapabilities()Mweka.classifiers.trees.RandomForest#getCapabilities()Lweka/core/Capabilities;Ñ
--distributionForInstance(Lweka/core/Instance;)Sweka.classifiers.trees.RandomForest#distributionForInstance(Lweka/core/Instance;)[D\
-maxDepthTipText()Gweka.classifiers.trees.RandomForest#maxDepthTipText()Ljava/lang/String;\
-numTreesTipText()Gweka.classifiers.trees.RandomForest#numTreesTipText()Ljava/lang/String;e
-enumerateMeasures()Nweka.classifiers.trees.RandomForest#enumerateMeasures()Ljava/util/Enumeration;=
-
-setSeed(I)/weka.classifiers.trees.RandomForest#setSeed(I)VC
-getMaxDepth()2weka.classifiers.trees.RandomForest#getMaxDepth()I9
-<init>()-weka.classifiers.trees.RandomForest#<init>()Vg
-setOptions([Ljava/lang/String;)Dweka.classifiers.trees.RandomForest#setOptions([Ljava/lang/String;)V[
-main([Ljava/lang/String;)>weka.classifiers.trees.RandomForest#main([Ljava/lang/String;)VE
-setMaxDepth(I)3weka.classifiers.trees.RandomForest#setMaxDepth(I)VU
-measureOutOfBagError();weka.classifiers.trees.RandomForest#measureOutOfBagError()DN
-
-toString()@weka.classifiers.trees.RandomForest#toString()Ljava/lang/String;E
-setNumTrees(I)3weka.classifiers.trees.RandomForest#setNumTrees(I)VC
-getNumTrees()2weka.classifiers.trees.RandomForest#getNumTrees()Ie
-getMeasure(Ljava/lang/String;)Cweka.classifiers.trees.RandomForest#getMeasure(Ljava/lang/String;)DR
-globalInfo()Bweka.classifiers.trees.RandomForest#globalInfo()Ljava/lang/String;z
-getTechnicalInformation()]weka.classifiers.trees.RandomForest#getTechnicalInformation()Lweka/core/TechnicalInformation;T
-getRevision()Cweka.classifiers.trees.RandomForest#getRevision()Ljava/lang/String;K
-setNumFeatures(I)6weka.classifiers.trees.RandomForest#setNumFeatures(I)VY
-listOptions()Hweka.classifiers.trees.RandomForest#listOptions()Ljava/util/Enumeration;;
-	getSeed().weka.classifiers.trees.RandomForest#getSeed()IT
-seedTipText()Cweka.classifiers.trees.RandomForest#seedTipText()Ljava/lang/String;I
-getNumFeatures()5weka.classifiers.trees.RandomForest#getNumFeatures()I9
-%weka.classifiers.UpdateableClassifierjava.lang.ObjectÍ
-weka.classifiers.lazy.IBk%weka.classifiers.UpdateableClassifierweka.classifiers.Classifierweka.core.OptionHandler%weka.core.TechnicalInformationHandler"weka.core.WeightedInstancesHandler#weka.core.AdditionalMeasureProducerI
-getOptions()9weka.classifiers.lazy.IBk#getOptions()[Ljava/lang/String;=
-crossValidate()*weka.classifiers.lazy.IBk#crossValidate()Vk
-&buildClassifier(Lweka/core/Instances;)Aweka.classifiers.lazy.IBk#buildClassifier(Lweka/core/Instances;)V1
-	<init>(I)$weka.classifiers.lazy.IBk#<init>(I)V?
-setWindowSize(I)+weka.classifiers.lazy.IBk#setWindowSize(I)VX
-getCapabilities()Cweka.classifiers.lazy.IBk#getCapabilities()Lweka/core/Capabilities;?
-getNumTraining()+weka.classifiers.lazy.IBk#getNumTraining()Iz
--distributionForInstance(Lweka/core/Instance;)Iweka.classifiers.lazy.IBk#distributionForInstance(Lweka/core/Instance;)[D1
-	setKNN(I)$weka.classifiers.lazy.IBk#setKNN(I)V/
-getKNN()#weka.classifiers.lazy.IBk#getKNN()I[
-enumerateMeasures()Dweka.classifiers.lazy.IBk#enumerateMeasures()Ljava/util/Enumeration;?
-getMeanSquared()+weka.classifiers.lazy.IBk#getMeanSquared()ZC
-getCrossValidate()-weka.classifiers.lazy.IBk#getCrossValidate()Z/
-<init>()#weka.classifiers.lazy.IBk#<init>()V]
-setOptions([Ljava/lang/String;):weka.classifiers.lazy.IBk#setOptions([Ljava/lang/String;)VQ
-main([Ljava/lang/String;)4weka.classifiers.lazy.IBk#main([Ljava/lang/String;)VX
-meanSquaredTipText()@weka.classifiers.lazy.IBk#meanSquaredTipText()Ljava/lang/String;H
-KNNTipText()8weka.classifiers.lazy.IBk#KNNTipText()Ljava/lang/String;=
-getWindowSize()*weka.classifiers.lazy.IBk#getWindowSize()I\
-crossValidateTipText()Bweka.classifiers.lazy.IBk#crossValidateTipText()Ljava/lang/String;d
-distanceWeightingTipText()Fweka.classifiers.lazy.IBk#distanceWeightingTipText()Ljava/lang/String;A
-setMeanSquared(Z),weka.classifiers.lazy.IBk#setMeanSquared(Z)Vr
-)makeDistribution(Lweka/core/Instances;[D)Eweka.classifiers.lazy.IBk#makeDistribution(Lweka/core/Instances;[D)[DD
-
-toString()6weka.classifiers.lazy.IBk#toString()Ljava/lang/String;ò
-$getNearestNeighbourSearchAlgorithm()pweka.classifiers.lazy.IBk#getNearestNeighbourSearchAlgorithm()Lweka/core/neighboursearch/NearestNeighbourSearch;V
-windowSizeTipText()?weka.classifiers.lazy.IBk#windowSizeTipText()Ljava/lang/String;E
-setCrossValidate(Z).weka.classifiers.lazy.IBk#setCrossValidate(Z)V[
-getMeasure(Ljava/lang/String;)9weka.classifiers.lazy.IBk#getMeasure(Ljava/lang/String;)DÀ
-VsetNearestNeighbourSearchAlgorithm(Lweka/core/neighboursearch/NearestNeighbourSearch;)qweka.classifiers.lazy.IBk#setNearestNeighbourSearchAlgorithm(Lweka/core/neighboursearch/NearestNeighbourSearch;)VÄ
-(nearestNeighbourSearchAlgorithmTipText()Tweka.classifiers.lazy.IBk#nearestNeighbourSearchAlgorithmTipText()Ljava/lang/String;H
-globalInfo()8weka.classifiers.lazy.IBk#globalInfo()Ljava/lang/String;p
-getTechnicalInformation()Sweka.classifiers.lazy.IBk#getTechnicalInformation()Lweka/core/TechnicalInformation;J
-getRevision()9weka.classifiers.lazy.IBk#getRevision()Ljava/lang/String;k
-&updateClassifier(Lweka/core/Instance;)Aweka.classifiers.lazy.IBk#updateClassifier(Lweka/core/Instance;)Vy
--setDistanceWeighting(Lweka/core/SelectedTag;)Hweka.classifiers.lazy.IBk#setDistanceWeighting(Lweka/core/SelectedTag;)VO
-listOptions()>weka.classifiers.lazy.IBk#listOptions()Ljava/util/Enumeration;w
-"pruneToK(Lweka/core/Instances;[DI)Qweka.classifiers.lazy.IBk#pruneToK(Lweka/core/Instances;[DI)Lweka/core/Instances;+
-init()!weka.classifiers.lazy.IBk#init()Va
-getDistanceWeighting()Gweka.classifiers.lazy.IBk#getDistanceWeighting()Lweka/core/SelectedTag;Û
+correlationCoefficient()5weka.classifiers.Evaluation#correlationCoefficient()DÛ
 javafx.stage.FileChooserjava.lang.Objecta
 titleProperty()Njavafx.stage.FileChooser#titleProperty()Ljavafx/beans/property/StringProperty;u
 %showSaveDialog(Ljavafx/stage/Window;)Ljavafx.stage.FileChooser#showSaveDialog(Ljavafx/stage/Window;)Ljava/io/File;j

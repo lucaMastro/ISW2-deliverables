@@ -1,16 +1,17 @@
 
-.logic.bean.WekaBean#getTesting()Ljava/io/File;i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java8 8("1*£
+/logic.bean.WekaBean#getTraining()Ljava/io/File;i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java= =("1*¤
 1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java9 9(®
-«
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java> >(¯
+¬
 i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java9 9(
-%0java.io.File"__id*$*"
-logic.bean.WekaBean"	
-testing"
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java> >(
+%0java.io.File"__id*%*#
+logic.bean.WekaBean"
+
+training"
 i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java9 9(
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java> >(
 
 %0java.io.FileB
 logic.bean.WekaBean
