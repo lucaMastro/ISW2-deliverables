@@ -1,16 +1,16 @@
 
-Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ( "1*ã
-1v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (Ð
-Í
-v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
-%0java.lang.String"__id*5*3"
- logic.abstracts.AbstractBoundary"
-projectName"’
-v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
-
-%0java.lang.StringB$"
- logic.abstracts.AbstractBoundary
+Plogic.bean.ProportionBean#getProportionAlgo()Llogic/enums/ProportionAlgoOptions;o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java! (2"1*ì
+1o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java (Ö
+Ó
+o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java ('
+%0!logic.enums.ProportionAlgoOptions"__id*1*/
+logic.bean.ProportionBean"
+proportionAlgo"œ
+o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProportionBean.java ()
+'
+%0!logic.enums.ProportionAlgoOptionsB
+logic.bean.ProportionBean

@@ -62,10 +62,10 @@ public class WekaBean {
         return training;
     }
 
-    public void removeTempFiles(){
-        this.training.delete();
-        this.testing.delete();
+    public void removeTempFiles() throws IOException {
+        Files.delete(this.training.toPath());
+        Files.delete(this.testing.toPath());
         if (this.arffIsTemp.equals(Boolean.TRUE))
-            this.arff.delete();
+            Files.delete(this.arff.toPath());
     }
 }
