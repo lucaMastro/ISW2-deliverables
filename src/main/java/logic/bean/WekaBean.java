@@ -4,6 +4,7 @@ import logic.exception.UnexistingFileException;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 
 public class WekaBean {
 
@@ -28,14 +29,17 @@ public class WekaBean {
         /*  arfOutputFile may be null. in this case, i need to create a temporary file  */
         var ext = ".arff";
         if (arfOutputFile == null) {
-            this.arff = File.createTempFile("tempArf", ext);
+            var tempPath = Files.createTempFile("", ext);
+            this.arff = tempPath.toFile();
             this.arffIsTemp = Boolean.TRUE;
         }
         else
             this.arff = new File(arfOutputFile);
 
-        this.testing = File.createTempFile("testing", ext);
-        this.training = File.createTempFile("training", ext);
+        var tempTesting = Files.createTempFile("test", ext);
+        this.testing = tempTesting.toFile();
+        var tempTraining = Files.createTempFile("train", ext);
+        this.training = tempTraining.toFile();
     }
 
     public File getInput() {
@@ -48,10 +52,6 @@ public class WekaBean {
 
     public File getArff() {
         return arff;
-    }
-
-    public Boolean getArffIsTemp() {
-        return arffIsTemp;
     }
 
     public File getTesting() {
