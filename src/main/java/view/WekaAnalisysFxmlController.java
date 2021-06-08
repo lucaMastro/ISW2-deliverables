@@ -8,7 +8,7 @@ public class WekaAnalisysFxmlController extends BasicPageFxmlController {
 
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
-
+        SceneSwitcher.getInstance().errorAlertShow("Not implemented yet!");
     }
 
     @FXML

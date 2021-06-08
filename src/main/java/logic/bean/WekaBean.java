@@ -61,4 +61,11 @@ public class WekaBean {
     public File getTraining() {
         return training;
     }
+
+    public void removeTempFiles(){
+        this.training.delete();
+        this.testing.delete();
+        if (this.arffIsTemp.equals(Boolean.TRUE))
+            this.arff.delete();
+    }
 }
