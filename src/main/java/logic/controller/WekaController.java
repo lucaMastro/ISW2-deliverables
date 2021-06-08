@@ -19,14 +19,9 @@ import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Classifier;
 import weka.classifiers.lazy.IBk;
 import weka.classifiers.trees.RandomForest;
-import weka.core.Instances;
-
-
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.core.converters.ArffLoader;
-import weka.core.converters.ConverterUtils.DataSource;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

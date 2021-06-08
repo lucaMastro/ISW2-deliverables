@@ -2,7 +2,6 @@ package logic.boundary;
 
 import logic.bean.WekaBean;
 import logic.controller.WekaController;
-import logic.exception.UnexistingFileException;
 
 public class WekaAnalisysBoundary {
 
@@ -20,13 +19,13 @@ public class WekaAnalisysBoundary {
         this.csvOutputFile = csvOut;
     }
 
-    public void runAnalisys() throws UnexistingFileException, Exception {
+    public void runAnalisys() throws Exception {
         var bean = new WekaBean(this.csvInputFile, this.csvOutputFile, this.arfOutputFile);
         var controller = new WekaController();
         controller.run(bean);
     }
 
-    public static void main(String[] args) throws Exception, UnexistingFileException {
+    public static void main(String[] args) throws Exception {
 
         var boundary = new WekaAnalisysBoundary("/home/luca/Scrivania/bookkeeperGUI.csv",
                 "/home/luca/Scrivania/wekaOutput.csv",
