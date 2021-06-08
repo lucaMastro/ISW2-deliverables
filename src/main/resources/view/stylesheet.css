@@ -1,32 +1,4 @@
-#pane{
-  fx-background-color: Black
-}
-
-.anchorpane{
-  -fx-background-image: url('../images/home_page.jpg');
-  -fx-background-size: cover;
-}
-
-.cloningpane{
-  -fx-background-image: url('../images/github.jpg');
-  -fx-background-size: cover;
-}
-
-.bigbutton{
-   -fx-background-color:
-        linear-gradient(#b8ee36, #80c800), /*sopra, sotto*/
-        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
-}
-
-.button:hover{
-  -fx-font-weight: bold;
-  -fx-background-radius: 22;
-  -fx-border-color: white;
-  -fx-border-radius: 5em;
-  -fx-border-width: 2;
-}
-
-.submitBrowseButton {
+.button {
     -fx-background-color: 
         #090a0c,
         linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
@@ -38,6 +10,7 @@
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
     -fx-font-family: "Arial";
     -fx-text-fill: linear-gradient(white, #d0d0d0);
+  -fx-background-radius: 22;
 }
 
 Label{
@@ -45,6 +18,46 @@ Label{
   -fx-font-family: "Arial";
   -fx-text-fill: Black;
 }
+
+
+.button:hover{
+-fx-font-weight: bold;
+  -fx-background-radius: 22;
+  -fx-border-radius: 5em;
+}
+
+.bigbutton:hover{
+  -fx-font-weight: bold;
+  -fx-background-color: 
+        #3271a8,
+        linear-gradient(#38424b 0%, #1f2429 20%, #3271a8 100%),
+        linear-gradient(#20262b, #3271a8),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+
+
+#backButton:hover{
+  -fx-border-color: white;
+  -fx-border-width: 2;
+}
+
+
+
+
+
+
+#homeBackground{
+  -fx-background-image: url('../images/home_page.jpg');
+  -fx-background-size: cover;
+}
+
+#cloneBackground{
+  -fx-background-image: url('../images/github.jpg');
+  -fx-background-size: cover;
+}
+
+
+
 
 .skyBlueLabel{
   -fx-font-family: "Arial";
@@ -60,4 +73,20 @@ Label{
   -fx-background-image: url('../images/bugginess.jpg');
   -fx-background-size: cover;
 
+}
+
+#processControlChartPane{
+  -fx-background-image: url('../images/data_mining.png');
+  -fx-background-size: cover;
+}
+
+#wekaBackground{
+  -fx-background-image: url('../images/machine_learning.jpg');
+  -fx-background-size: cover;
+
+}
+
+.whiteLabel{
+  -fx-font-family: "Arial";
+  -fx-text-fill: white;
 }

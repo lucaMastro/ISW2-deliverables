@@ -7,7 +7,7 @@ import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import logic.boundary.FindBugginessBoundary;
+import logic.boundary.ProportionAnalisysBoundary;
 import logic.enums.ProportionAlgoOptions;
 
 public class ProportionFxmlController extends ProcessControlChartAndProportionFxmlController {
@@ -27,7 +27,7 @@ public class ProportionFxmlController extends ProcessControlChartAndProportionFx
     protected void submitButtonSelected(ActionEvent actionEvent) {
         this.changeEditability();
 
-        var boundary = new FindBugginessBoundary(this.outputFileLabel.getText(),
+        var boundary = new ProportionAnalisysBoundary(this.outputFileLabel.getText(),
                 this.repositoryLabel.getText(),
                 this.projectName.getText(),
                 this.proportionPossibilities.getValue());

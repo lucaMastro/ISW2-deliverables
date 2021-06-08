@@ -1,13 +1,8 @@
 package logic.proportion_algo;
 
-import logic.bean.ProportionBean;
 import logic.dataset_manager.BugTicket;
 import logic.dataset_manager.ProportionDataset;
 import logic.dataset_manager.Release;
-import logic.exception.InvalidRangeException;
-import org.eclipse.jgit.api.errors.GitAPIException;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,11 +10,6 @@ public class ProportionIncrement {
 
     Integer proportionP;
     ProportionDataset dataset;
-
-    public ProportionIncrement(ProportionBean bean) throws IOException, InvalidRangeException, GitAPIException {
-        this.dataset = new ProportionDataset(bean);
-        this.proportionP = 0;
-    }
 
     public ProportionIncrement(ProportionDataset d){
         this.dataset = d;

@@ -8,15 +8,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <?import java.net.URL?>
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WekaAnalisysFxmlController">
+<AnchorPane fx:id="wekaBackground" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WekaAnalisysFxmlController">
    <stylesheets>
       <URL value="@stylesheet.css"/>
    </stylesheets>
    <children>
       <Button fx:id="submitButton" layoutX="276.0" layoutY="328.0" mnemonicParsing="false" onAction="#submitButtonSelected" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Submit" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="328.0" />
-      <JFXButton fx:id="backButton" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="29.0" layoutY="315.0" onAction="#backButtonSelected" prefHeight="50.0" prefWidth="70.0">
+      <JFXButton fx:id="backButton" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="324.0" onAction="#backButtonSelected" prefHeight="24.0" prefWidth="37.0">
          <graphic>
-            <ImageView fitHeight="49.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/back_arrow.png" />
                </image>
