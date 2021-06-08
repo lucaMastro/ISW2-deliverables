@@ -1,17 +1,80 @@
 
-Rlogic.dataset_manager.JgitManager#getRepository()Lorg/eclipse/jgit/lib/Repository;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java (#"1*„
-1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java   (à
-Ý
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java   (%
-%0org.eclipse.jgit.lib.Repository"__id*5*3#
-!logic.dataset_manager.JgitManager"
-
-repository"¢
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java   ('
-%
-%0org.eclipse.jgit.lib.RepositoryB%#
-!logic.dataset_manager.JgitManager
+]logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaU U(""6*û
+2s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaW W(©
+¦
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaW W(!
+clogic.dataset_manager.Commit"__id*
+""Ì
+É
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaW W(!
+clogic.dataset_manager.Commit"
+__arrayGet*
+
+%0java.util.ArrayList*
+""*
+4
+1*Ë
+3s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaY Y(Ë
+È
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaY Y(&
+commitlogic.dataset_manager.Commit"__id*#
+!
+clogic.dataset_manager.Commit*
+1*¦
+4s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaX X(È
+Å
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaX X(
+%1java.lang.String"__id*0*.
+!
+clogic.dataset_manager.Commit"	
+messageÀ
+½
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaX# X(0
+%2java.lang.String"__concat*
+
+trunk@*
+
+idjava.lang.String•’
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaX X(1
+%3boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%1java.lang.String*
+
+%2java.lang.String2"contains(Ljava/lang/CharSequence;)*
+2
+3*É
+5s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaW W(É
+Æ
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaW W($
+%0java.util.ArrayList"__id*.*,
+logic.dataset_manager.Dataset"	
+commits*
+2*®
+6s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaV V(®
+«
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaV V(&
+commitlogic.dataset_manager.Commit"__id*
+""*
+5*š
+1s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java] ]("Ÿ
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.java] ]((
+&
+commitlogic.dataset_manager.Commit:
+idjava.lang.StringB!
+logic.dataset_manager.Dataset

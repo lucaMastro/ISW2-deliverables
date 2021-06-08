@@ -1,16 +1,16 @@
 
-=logic.bean.ProcessChartBean#getThreshold()Ljava/lang/Integer;q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java ("1*Ï
-1q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (Å
-Â
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (
-%0java.lang.Integer"__id*.*,
-logic.bean.ProcessChartBean"
-	threshold"Ž
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (
-
-%0java.lang.IntegerB
-logic.bean.ProcessChartBean
+=logic.enums.ProportionAlgoOptions#getAlgo()Ljava/lang/String;w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java ("1*à
+1w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (Ë
+È
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (
+%0java.lang.String"__id*/*-#
+!logic.enums.ProportionAlgoOptions"
+algo"“
+w
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (
+
+%0java.lang.StringB%#
+!logic.enums.ProportionAlgoOptions

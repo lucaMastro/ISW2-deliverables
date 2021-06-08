@@ -26,15 +26,16 @@ public class WekaBean {
         this.outputCSV = new File(csvOutputFile);
 
         /*  arfOutputFile may be null. in this case, i need to create a temporary file  */
+        var ext = ".arff";
         if (arfOutputFile == null) {
-            this.arff = File.createTempFile("tempArf", ".arff");
+            this.arff = File.createTempFile("tempArf", ext);
             this.arffIsTemp = Boolean.TRUE;
         }
         else
             this.arff = new File(arfOutputFile);
 
-        this.testing = File.createTempFile("testing", ".arff");
-        this.training = File.createTempFile("training", ".arff");
+        this.testing = File.createTempFile("testing", ext);
+        this.training = File.createTempFile("training", ext);
     }
 
     public File getInput() {

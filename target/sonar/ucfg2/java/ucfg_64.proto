@@ -1,243 +1,139 @@
 
-Mlogic.dataset_manager.ProcessControlChartDataset#toString()Ljava/lang/String;ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java§ §("6*é
-2ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java© ©(+Õ
-Ò
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java© ©(+7
-entry.logic.dataset_manager.ProcessControlChartEntry"__id*
-""ø
-õ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java© ©(+7
-entry.logic.dataset_manager.ProcessControlChartEntry"
+plogic.dataset_manager.ReleaseFileManager#findFileFromName(Ljava/lang/String;)Llogic/dataset_manager/ReleaseFile;~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java ('"10*¦
+2~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(¹
+¶
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(&
+r!logic.dataset_manager.ReleaseFile"__id*
+""Ü
+Ù
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(&
+r!logic.dataset_manager.ReleaseFile"
 __arrayGet*
 
-%2java.util.ArrayList*
+%3java.util.ArrayList*
 ""*
-4
-1*ï;
-3ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java«: «(CÌÉ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java«) «(9 
-%5java.text.SimpleDateFormat"java.text.SimpleDateFormatý
-ú
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java«% «(D
-%6"6java.text.SimpleDateFormat#<init>(Ljava/lang/String;)V*"
- 
-%5java.text.SimpleDateFormat*	
-yyyy-MMÙ
-Ö
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java« «(E
-patternjava.text.DateFormat"__id*"
- 
-%5java.text.SimpleDateFormatï
-ì
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬* ¬(4
-%7java.util.Date"__id*C*A
-7
-entry.logic.dataset_manager.ProcessControlChartEntry"
-date¼¹
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ¬(5
-%8java.lang.String"?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;*!
-
-patternjava.text.DateFormat*
-
-%7java.util.Date2format(Ljava/util/Date;)ÒÏ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ¬(6
-%9java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-bldjava.lang.StringBuilder*
+8
+1*ð
+4~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java(" ((#å
+â
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java( ((#0
+releaseFile!logic.dataset_manager.ReleaseFile"__id*(
+&
+r!logic.dataset_manager.ReleaseFile*
+2*Ä
+5~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &($Î
+Ë
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &('
+%6java.lang.String"
+__arrayGet*
+
+namesjava.lang.String[]*
+""Á
+¾
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java& &((
+currNamejava.lang.String"__id*
 
-%8java.lang.String2append(Ljava/lang/String;)¿¼
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ¬(B
-%10java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+%6java.lang.String¡ž
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java' '(0
+%7boolean".java.lang.String#endsWith(Ljava/lang/String;)Z*
+
+currNamejava.lang.String*
 
-%9java.lang.StringBuilder*
-,2append(Ljava/lang/String;)ø
-õ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java­  ­(/
-%11java.lang.Integer"__id*H*F
-7
-entry.logic.dataset_manager.ProcessControlChartEntry"
-	fixedBugsÿü
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java­  ­(:
-%12java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
-
-%11java.lang.Integer2
-toString()ÔÑ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ­(;
-%13java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%10java.lang.StringBuilder*
-
-%12java.lang.String2append(Ljava/lang/String;)À½
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ­(G
-%14java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%13java.lang.StringBuilder*
-,2append(Ljava/lang/String;)û
-ø
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java®  ®(2
-%15java.lang.Integer"__id*K*I
-7
-entry.logic.dataset_manager.ProcessControlChartEntry"
-totalCommitsÕÒ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ®(3
-%16java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/Object;)Ljava/lang/StringBuilder;* 
-
-%14java.lang.StringBuilder*
-
-%15java.lang.Integer2append(Ljava/lang/Object;)À½
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ®(?
-%17java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%16java.lang.StringBuilder*
-,2append(Ljava/lang/String;)í
-ê
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¯  ¯()
-%18java.lang.Double"__id*>*<2
-0logic.dataset_manager.ProcessControlChartDataset"
-meanýú
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¯  ¯(4
-%19java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
-
-%18java.lang.Double2
-toString()ÔÑ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ¯(5
-%20java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%17java.lang.StringBuilder*
-
-%19java.lang.String2append(Ljava/lang/String;)À½
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ¯(A
-%21java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%20java.lang.StringBuilder*
-,2append(Ljava/lang/String;)ú
-÷
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java°  °(6
-%22java.lang.Double"__id*K*I2
-0logic.dataset_manager.ProcessControlChartDataset"
-upperControlLimitýú
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java°  °(A
-%23java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
-
-%22java.lang.Double2
-toString()ÔÑ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ °(B
-%24java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%21java.lang.StringBuilder*
-
-%23java.lang.String2append(Ljava/lang/String;)À½
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ °(N
-%25java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%24java.lang.StringBuilder*
-,2append(Ljava/lang/String;)ú
-÷
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java±  ±(6
-%26java.lang.Double"__id*K*I2
-0logic.dataset_manager.ProcessControlChartDataset"
-lowerControlLimitýú
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java±  ±(A
-%27java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
-
-%26java.lang.Double2
-toString()ÔÑ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ±(B
-%28java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%25java.lang.StringBuilder*
-
-%27java.lang.String2append(Ljava/lang/String;)Á¾
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¬ ±(O
-%29java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
-
-%28java.lang.StringBuilder*
-\n2append(Ljava/lang/String;)*
-2*´
-4ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaª ª(¦£
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaª ª(%	
-%3int"?logic.dataset_manager.ProcessControlChartEntry#getCommitsNum()I*9
-7
-entry.logic.dataset_manager.ProcessControlChartEntry2getCommitsNum()ò
-ï
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaª) ª(7
-%4java.lang.Integer"__id*C*A2
-0logic.dataset_manager.ProcessControlChartDataset"
-	threshold*
+	classNamejava.lang.String2endsWith(Ljava/lang/String;)*
+4
+7*ð
+7~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java% %(â
+ß
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java% %(-
+%5java.lang.Integer"__id*>*<*
+(logic.dataset_manager.ReleaseFileManager"
+numOfRelease*
 2
-3*‡
-5ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java©. ©(2ñ
-î
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java©. ©(9
-%2java.util.ArrayList"__id*@*>2
-0logic.dataset_manager.ProcessControlChartDataset"
-months*
-2*ð
-6ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨$ ¨(oÆÃ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ¨(#
-%0java.lang.StringBuilder"java.lang.StringBuilder¹
-¶
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ¨(p
-%1"3java.lang.StringBuilder#<init>(Ljava/lang/String;)V*
-
-%0java.lang.StringBuilder*MK
-Idate,fixedCommits,totalCommits,mean,upperControlLimit,lowerControlLimit\nÕ
-Ò
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ¨(q
-bldjava.lang.StringBuilder"__id*
-
-%0java.lang.StringBuilder*
-5*Å
-1ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java´ ´(‹ˆ
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java´ ´(
-%30java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;* 
-
-bldjava.lang.StringBuilder2
-toString()"¦
-ˆ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java´ ´(
-
-%30java.lang.StringB42
-0logic.dataset_manager.ProcessControlChartDataset
+5*ä
+8~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(”‘
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $($
+%4java.lang.String[]"?logic.dataset_manager.ReleaseFile#getNames()[Ljava/lang/String;*(
+&
+r!logic.dataset_manager.ReleaseFile2
+getNames()Â
+¿
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java$ $(%
+namesjava.lang.String[]"__id*
+
+%4java.lang.String[]*
+7*è
+9~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #(!Ý
+Ú
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java# #('
+%3java.util.ArrayList"__id*7*5*
+(logic.dataset_manager.ReleaseFileManager"
+files*
+2*š
+10~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java" (&Ã
+À
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java ('0
+releaseFile!logic.dataset_manager.ReleaseFile"__id*
+""š—
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java ((
+%0java.lang.String[]"=java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;*
+
+namejava.lang.String*
+/2split(Ljava/lang/String;)Ç
+Ä
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java () 
+
+classNamesjava.lang.String[]"__id*
+
+%0java.lang.String[]Ó
+Ð
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java   (?
+%1java.lang.String"
+__arrayGet*"
+ 
+
+classNamesjava.lang.String[]*
+""Æ
+Ã
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java   (?
+%2java.lang.String"__concat*
+/*
+
+%1java.lang.StringÂ
+¿
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java   (@
+	classNamejava.lang.String"__id*
+
+%2java.lang.String*
+9*º
+1~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java- -("´
+~
+t/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFileManager.java- -(2
+0
+releaseFile!logic.dataset_manager.ReleaseFile:
+namejava.lang.StringB,*
+(logic.dataset_manager.ReleaseFileManager

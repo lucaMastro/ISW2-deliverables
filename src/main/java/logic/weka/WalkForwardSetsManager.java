@@ -15,7 +15,6 @@ package logic.weka;
 import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
-import weka.core.converters.ArffLoader;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 
@@ -36,7 +35,6 @@ public class WalkForwardSetsManager {
     private Instances data;
 
     private ArrayList<Attribute> attributes;
-    private ArrayList<Instance> trainingInstances;
     private ArrayList<Instance> testingInstances;
     private File testingSet;
     private File trainingSet;
@@ -44,7 +42,6 @@ public class WalkForwardSetsManager {
     /* *******************************************************************************************************/
 
     public WalkForwardSetsManager(File csvFile, File arffFile, File training, File testing) throws IOException {
-    //public WalkForwardSetsManager(String csvPath, String outputArff, String training, String testing) throws IOException {
         var loader = new CSVLoader();
         loader.setSource(csvFile);
         this.data = loader.getDataSet();//get instances object
@@ -52,12 +49,11 @@ public class WalkForwardSetsManager {
         this.data.deleteAttributeAt(1);
 
         this.convert(arffFile);
-        this.computeNumOfReleases(loader);
+        this.computeNumOfReleases();
 
         this.testingSet = testing;
         this.trainingSet = training;
         this.initializeAttributes();
-        this.trainingInstances = new ArrayList<>();
     }
 
 
@@ -119,7 +115,7 @@ public class WalkForwardSetsManager {
 
     /* *******************************************************************************************************/
 
-    private void computeNumOfReleases(CSVLoader loader) throws IOException {
+    private void computeNumOfReleases() {
 
         //need a replication of data
         var copy = new Instances(this.data);//get instances object
@@ -197,8 +193,6 @@ public class WalkForwardSetsManager {
         *   - train = 1 -> test = 2
         *   - train = 1,2 -> test = 3
         *   */
-        assert indexRelease > 0;
-
         int i;
 
         try(var fw = new FileWriter(this.trainingSet, true);
@@ -238,20 +232,4 @@ public class WalkForwardSetsManager {
     public String getDatasetName() {
         return this.data.relationName();
     }
-
-    /*
-    public static void main(String[] args) throws IOException {
-
-        var d = new WalkForwardSetsManager("/home/luca/Scrivania/bookkeeperCSV.csv",
-                "/home/luca/Scrivania/bookkeeperCSV.arff",
-                "/home/luca/Scrivania/training.arff",
-                "/home/luca/Scrivania/testing.arff");
-
-        for (var i = 0; i < d.numOfRelease - 1; i++){
-            d.computeTrainingFile(i + 1);
-            d.computeTestingFile(i + 2);
-            System.out.println("insert to continue");
-            System.in.read();
-        }
-    }*/
 }

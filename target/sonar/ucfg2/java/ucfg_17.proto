@@ -1,16 +1,21 @@
 
-9logic.bean.CloneRepositoryBean#getUrl()Ljava/lang/String;t
-j/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/CloneRepositoryBean.java ("1*”
-1t
-j/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/CloneRepositoryBean.java (ƒ
-¡
-t
-j/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/CloneRepositoryBean.java (
-%0java.lang.String"__id*+*) 
-logic.bean.CloneRepositoryBean"
-url"ê
-t
-j/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/CloneRepositoryBean.java (
+Dlogic.weka.WalkForwardSetsManager#getDatasetName()Ljava/lang/String;y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaÓ Ó( "1*Â
+1y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaÔ Ô(–
+Õ
+y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaÔ Ô(
+%0weka.core.Instances"__id*/*-#
+!logic.weka.WalkForwardSetsManager"
+data˘ˆ
+y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaÔ Ô('
+%1java.lang.String"4weka.core.Instances#relationName()Ljava/lang/String;*
+
+%0weka.core.Instances2relationName()"ï
+y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardSetsManager.javaÔ Ô((
 
-%0java.lang.StringB" 
-logic.bean.CloneRepositoryBean
+%1java.lang.StringB%#
+!logic.weka.WalkForwardSetsManager

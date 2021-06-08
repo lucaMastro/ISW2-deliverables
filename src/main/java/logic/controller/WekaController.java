@@ -39,31 +39,6 @@ import java.util.logging.Logger;
 
 public class WekaController {
 
-    public static void main(String[] args) throws Exception{
-        //load datasets
-        var source1 = new DataSource("/home/luca/Scrivania/training.arff");
-        Instances training = source1.getDataSet();
-        var source2 = new DataSource("/home/luca/Scrivania/testing.arff");
-        Instances testing = source2.getDataSet();
-
-        int numAttr = training.numAttributes();
-        training.setClassIndex(numAttr - 1);
-        testing.setClassIndex(numAttr - 1);
-
-        var classifier = new NaiveBayes();
-
-        classifier.buildClassifier(training);
-
-        var eval = new Evaluation(testing);
-
-        eval.evaluateModel(classifier, testing);
-
-        System.out.println("precision = "+eval.precision(0));
-        System.out.println("recall = "+eval.recall(0));
-        System.out.println("AUC = "+eval.areaUnderROC(0));
-        System.out.println("kappa = "+eval.kappa());
-    }
-
     private List<Evaluation> computeMetrics(WekaBean bean, int numAttr) throws Exception {
         int i;
         Classifier classifier;
@@ -114,7 +89,7 @@ public class WekaController {
                 bean.getTraining(),
                 bean.getTesting() );
 
-        var list = new ArrayList<List>();
+        var list = new ArrayList<List<Evaluation>>();
         var numRelease = filesManager.getNumOfRelease();
         int i;
         for (i = 1; i < numRelease; i++){
@@ -130,7 +105,7 @@ public class WekaController {
     }
 
 
-    private void writeFile(ArrayList<List> list, File outputCSV, String dataset) {
+    private void writeFile(ArrayList<List<Evaluation>> list, File outputCSV, String dataset) {
         int i;
         double precision;
         double recall;
@@ -143,7 +118,7 @@ public class WekaController {
             fw.append("Dataset,#TrainingRelease,Classifier,Precision,Recall,AUC,Kappa\n");
             var bld = new StringBuilder();
             for (i = 0; i < list.size(); i++){
-                var l = (List<Evaluation>) list.get(i);
+                var l = list.get(i);
                 for (Evaluation e : l){
                     precision = DoubleRounder.round(e.precision(0), 3);
                     recall = DoubleRounder.round(e.recall(0), 3);
