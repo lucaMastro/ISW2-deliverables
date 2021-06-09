@@ -97,8 +97,6 @@ public class WekaController {
         }
         this.writeFile(list, bean.getOutputCSV(), filesManager.getDatasetName());
 
-        bean.removeTempFiles();
-
     }
 
 

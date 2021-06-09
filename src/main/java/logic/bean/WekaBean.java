@@ -5,6 +5,9 @@ import logic.exception.UnexistingFileException;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import static java.nio.file.Paths.get;
 
 public class WekaBean {
 
@@ -20,6 +23,7 @@ public class WekaBean {
     public WekaBean(String csvInputFile, String csvOutputFile, String arfOutputFile)
             throws UnexistingFileException, IOException {
 
+        var currDir = Paths.get(".").toAbsolutePath().normalize().toFile();
         this.input = new File(csvInputFile);
         if (!this.input.exists())
             throw new UnexistingFileException("Input file doesn't exist");
@@ -29,17 +33,14 @@ public class WekaBean {
         /*  arfOutputFile may be null. in this case, i need to create a temporary file  */
         var ext = ".arff";
         if (arfOutputFile == null) {
-            var tempPath = Files.createTempFile("", ext);
-            this.arff = tempPath.toFile();
+            this.arff = File.createTempFile("", ext, currDir);
             this.arffIsTemp = Boolean.TRUE;
         }
         else
             this.arff = new File(arfOutputFile);
 
-        var tempTesting = Files.createTempFile("test", ext);
-        this.testing = tempTesting.toFile();
-        var tempTraining = Files.createTempFile("train", ext);
-        this.training = tempTraining.toFile();
+        this.testing = File.createTempFile("test", ext, currDir);
+        this.training = File.createTempFile("train", ext, currDir);
     }
 
     public File getInput() {
