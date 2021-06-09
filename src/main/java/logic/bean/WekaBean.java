@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static java.nio.file.Paths.get;
-
 public class WekaBean {
 
     private File input;
