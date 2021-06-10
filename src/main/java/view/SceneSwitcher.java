@@ -7,11 +7,15 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
 import javafx.util.Duration;
 import javafx.util.converter.IntegerStringConverter;
+
+import java.io.File;
 import java.io.IOException;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
@@ -144,6 +148,34 @@ public class SceneSwitcher extends Application {
 		var fact = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, Integer.MAX_VALUE);
 		spinner.setValueFactory(fact);
 		spinner.getEditor().setTextFormatter(priceFormatter);
+	}
+
+	public String repositoryBrowser(String title){
+		var repository = new DirectoryChooser();
+		var path = "";
+		repository.setTitle(title);
+		File dir = repository.showDialog(new Stage());
+		if (dir != null)
+			path = dir.getPath();
+		return path;
+	}
+
+	public String fileBrowser(String title, Boolean isSave){
+		/*	boolean parameter make me able to choose the correct dialog: if it is an output
+		* 	file, it will show a warning when overwriting	*/
+		var fileChooser = new FileChooser();
+
+		var path = "";
+		fileChooser.setTitle(title);
+		File f;
+		if (isSave.equals(Boolean.TRUE))
+			f = fileChooser.showSaveDialog(new Stage());
+		else
+			f = fileChooser.showOpenDialog(new Stage());
+
+		if (f != null)
+			path = f.getPath();
+		return path;
 	}
 
 	public static void main(String[] args) { launch(args); }

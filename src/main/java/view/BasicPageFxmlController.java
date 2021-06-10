@@ -9,10 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.DirectoryChooser;
-import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -56,13 +53,7 @@ public abstract class BasicPageFxmlController {
         else
             s = "Select repository for proportion analisys";
 
-        var repository = new DirectoryChooser();
-        repository.setTitle(s);
-        File dir = repository.showDialog(new Stage());
-        if (dir != null) {
-            String path = dir.getPath();
-            this.repositoryLabel.setText(path);
-        }
+        this.repositoryLabel.setText(SceneSwitcher.getInstance().repositoryBrowser(s));
     }
 
     @FXML
@@ -115,7 +106,8 @@ public abstract class BasicPageFxmlController {
 
     protected void changeEditability(){
         for (Node n : this.editableItems)
-            n.setDisable(! n.isDisabled());
+            if (n != null)
+                n.setDisable(! n.isDisabled());
     }
 
     @FXML

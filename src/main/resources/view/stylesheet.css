@@ -65,9 +65,14 @@ TextField{
   
 }
 
+.skyBlueRadioButton{
+  -fx-font-family: "Arial";
+  -fx-text-fill: #D0EFFF;
+}
 
 
-.skyBlueLabel{
+
+.skyBlueText{
   -fx-font-family: "Arial";
   -fx-text-fill: #D0EFFF;
 }

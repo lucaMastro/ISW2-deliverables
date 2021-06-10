@@ -19,13 +19,8 @@ public abstract class ProcessControlChartAndProportionFxmlController extends Bas
 
     @FXML
     protected void browseOutputFilePath(ActionEvent event) {
-        var fileChooser = new FileChooser();
-        fileChooser.setTitle("Select output file");
-        var f = fileChooser.showSaveDialog(new Stage());
-        if (f != null) {
-            String path = f.getPath();
-            this.outputFileLabel.setText(path);
-        }
+        var s = SceneSwitcher.getInstance().fileBrowser("Select output file", Boolean.TRUE);
+        this.outputFileLabel.setText(s);
     }
 
     @FXML
