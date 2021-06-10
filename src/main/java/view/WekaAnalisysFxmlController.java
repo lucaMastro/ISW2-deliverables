@@ -8,9 +8,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import logic.boundary.WekaAnalisysBoundary;
 
-import java.io.IOException;
-
-
 public class WekaAnalisysFxmlController extends BasicPageFxmlController {
 
     @FXML

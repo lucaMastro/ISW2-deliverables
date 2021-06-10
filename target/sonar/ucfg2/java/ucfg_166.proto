@@ -1,16 +1,16 @@
 
-=logic.enums.ProportionAlgoOptions#getAlgo()Ljava/lang/String;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java ("1*‡
-1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (À
-»
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (
-%0java.lang.String"__id*/*-#
-!logic.enums.ProportionAlgoOptions"
-algo"ì
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (
-
-%0java.lang.StringB%#
-!logic.enums.ProportionAlgoOptions
+0logic.bean.WekaBean#getOutputCSV()Ljava/io/File;i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java0 0("1*•
+1i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java1 1(∞
+≠
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java1 1(
+%0java.io.File"__id*&*$
+logic.bean.WekaBean"
+	outputCSV"Å
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java1 1(
+
+%0java.io.FileB
+logic.bean.WekaBean

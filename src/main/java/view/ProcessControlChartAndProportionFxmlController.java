@@ -3,8 +3,6 @@ package view;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 public abstract class ProcessControlChartAndProportionFxmlController extends BasicPageFxmlController {
 
