@@ -7,6 +7,8 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
@@ -35,6 +37,8 @@ public abstract class BasicPageFxmlController {
     protected List<Node> editableItems;
 
     protected Task<Void> job;
+
+    protected Tooltip tooltipOpened;
 
     @FXML
     protected void backButtonSelected(ActionEvent actionEvent) throws IOException {
@@ -112,5 +116,20 @@ public abstract class BasicPageFxmlController {
     protected void changeEditability(){
         for (Node n : this.editableItems)
             n.setDisable(! n.isDisabled());
+    }
+
+    @FXML
+    void showText(MouseEvent event) {
+        var node = (Label) event.getTarget();
+        if (!node.getText().isEmpty()) {
+            this.tooltipOpened = new Tooltip();
+            SceneSwitcher.getInstance().showTooltip(node, this.tooltipOpened, "tooltip");
+        }
+    }
+
+    @FXML
+    void hideText(MouseEvent event) {
+        if (this.tooltipOpened != null)
+            this.tooltipOpened.hide();
     }
 }

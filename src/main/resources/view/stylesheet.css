@@ -19,6 +19,12 @@ Label{
   -fx-text-fill: Black;
 }
 
+TextField{
+  -fx-font-family: "Arial";
+  -fx-text-fill: Black;
+
+}
+
 
 .button:hover{
 -fx-font-weight: bold;
@@ -41,11 +47,6 @@ Label{
   -fx-border-width: 2;
 }
 
-
-
-
-
-
 #homeBackground{
   -fx-background-image: url('../images/home_page.jpg');
   -fx-background-size: cover;
@@ -56,6 +57,13 @@ Label{
   -fx-background-size: cover;
 }
 
+.tooltip{
+  -fx-background-color: white;
+  -fx-font-family: Arial;
+  -fx-text-fill: black;
+  -fx-font-size: 13;
+  
+}
 
 
 
@@ -89,4 +97,20 @@ Label{
 .whiteLabel{
   -fx-font-family: "Arial";
   -fx-text-fill: white;
+}
+
+#interruptButton{
+    -fx-background-color: 
+        #e60000,
+        linear-gradient(#780404 0%, #3b0208 20%, #fc0000 100%),
+        linear-gradient(#540202, #fc0000),
+        radial-gradient(center 50% 0%, radius 100%, rgba(128,15,9,0.0), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+  -fx-background-radius: 22;
+
 }

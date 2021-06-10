@@ -18,10 +18,10 @@
    </stylesheets>
    <children>
       <Label layoutX="32.0" layoutY="65.0" prefHeight="30.0" styleClass="skyBlueLabel" text="Repository path:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
-      <Label fx:id="repositoryLabel" layoutX="133.0" layoutY="57.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.topAnchor="50.0" />
+      <Label fx:id="repositoryLabel" layoutX="133.0" layoutY="57.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.topAnchor="50.0" />
       <Button fx:id="browseRepoPathButton" layoutX="508.0" layoutY="53.0" mnemonicParsing="false" onAction="#browseRepositoryPath" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="50.0" />
       <Label layoutX="44.0" layoutY="150.0" prefHeight="30.0" styleClass="skyBlueLabel" text="Output file:" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="120.0" />
-      <Label fx:id="outputFileLabel" layoutX="133.0" layoutY="110.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="120.0" />
+      <Label fx:id="outputFileLabel" layoutX="133.0" layoutY="110.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="120.0" />
       <Button fx:id="browseOutputFileButton" layoutX="508.0" layoutY="153.0" mnemonicParsing="false" onAction="#browseOutputFilePath" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" AnchorPane.topAnchor="120.0" />
       <Label layoutX="27.0" layoutY="250.0" prefHeight="30.0" styleClass="skyBlueLabel" text="Project name:" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="190.0" />
       <Button fx:id="submitButton" layoutX="276.0" layoutY="328.0" mnemonicParsing="false" onAction="#submitButtonSelected" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Submit" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="328.0" />
@@ -39,7 +39,7 @@
       <ComboBox fx:id="proportionPossibilities" layoutX="133.0" layoutY="263.0" prefHeight="30.0" prefWidth="194.0" AnchorPane.topAnchor="260.0" />
       <Label fx:id="windowsPeriodLabel" layoutX="364.0" layoutY="260.0" prefHeight="30.0" styleClass="skyBlueLabel" text="Window period:" visible="false" AnchorPane.topAnchor="260.0" />
       <Spinner fx:id="windowPeriodValue" editable="true" layoutX="483.0" layoutY="263.0" prefHeight="24.0" prefWidth="91.0" visible="false" AnchorPane.rightAnchor="26.0" />
-      <Button fx:id="interruptButton" layoutX="508.0" layoutY="328.0" mnemonicParsing="false" onAction="#interruptButtonSelected" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: #cc020b;" text="X" textFill="WHITE" visible="false">
+      <Button fx:id="interruptButton" cancelButton="true" layoutX="508.0" layoutY="328.0" mnemonicParsing="false" onAction="#interruptButtonSelected" prefHeight="30.0" prefWidth="76.0" text="X" textFill="WHITE" visible="false">
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>

@@ -6,15 +6,12 @@ import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
-import javafx.scene.control.TextFormatter;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
+import javafx.util.Duration;
 import javafx.util.converter.IntegerStringConverter;
-
 import java.io.IOException;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
@@ -104,6 +101,19 @@ public class SceneSwitcher extends Application {
 		loginAlert.setContentText(alertString);
 
 		loginAlert.show();
+	}
+
+	public void showTooltip(Label node, Tooltip tooltipOpened, String classStyle){
+		tooltipOpened.setShowDelay(Duration.ZERO);
+
+		tooltipOpened.setText(node.getText());
+		tooltipOpened.getStyleClass().add(classStyle);
+
+		var bounds = node.localToScreen(node.getBoundsInLocal());
+		tooltipOpened.setX(bounds.getMinX());
+		tooltipOpened.setY(bounds.getMinY() - node.getHeight());
+
+		tooltipOpened.show(node, bounds.getMinX(), bounds.getMinY() - node.getHeight());
 	}
 
 	public void setWorkingCursor(){
