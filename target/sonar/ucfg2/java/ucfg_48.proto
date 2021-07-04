@@ -1,77 +1,20 @@
 
-]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaI I(""6*û
-2s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaL L(©
-¦
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaL L(!
-clogic.dataset_manager.Commit"__id*
-""Ì
-É
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaL L(!
-clogic.dataset_manager.Commit"
-__arrayGet*
-
-%0java.util.ArrayList*
-""*
-4
-1*Ë
-3s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaN N(Ë
-È
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaN N(&
-commitlogic.dataset_manager.Commit"__id*#
-!
-clogic.dataset_manager.Commit*
-1*ï
-4s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaM M(Ü
-Ù
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaM M((
-%1"org.eclipse.jgit.revwalk.RevCommit"__id*2*0
-!
-clogic.dataset_manager.Commit"
-	revCommit…‚
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaM M(%
-%2java.lang.String"<org.eclipse.jgit.lib.AnyObjectId#getName()Ljava/lang/String;**
-(
-%1"org.eclipse.jgit.revwalk.RevCommit2	getName()…‚
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaM M(0
-%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%2java.lang.String*
-
-idjava.lang.String2equals(Ljava/lang/Object;)*
-2
-3*É
-5s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaL L(É
-Æ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaL L($
-%0java.util.ArrayList"__id*.*,
-logic.dataset_manager.Dataset"	
-commits*
-2*®
-6s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaK K(®
-«
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaK K(&
-commitlogic.dataset_manager.Commit"__id*
-""*
-5*š
-1s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaR R("Ÿ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javaR R((
-&
-commitlogic.dataset_manager.Commit:
-idjava.lang.StringB!
-logic.dataset_manager.Dataset
+)logic.weka.WekaManager#getNumOfRelease()Il
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaV V("1*­
+1l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W(Î
+Ë
+l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W( '
+%0!logic.weka.WalkForwardSetsManager"__id*,**
+logic.weka.WekaManager"
+filesManagerðí
+l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W(2	
+%1int"4logic.weka.WalkForwardSetsManager#getNumOfRelease()I*)
+'
+%0!logic.weka.WalkForwardSetsManager2getNumOfRelease()"v
+l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W(3
+""B
+logic.weka.WekaManager

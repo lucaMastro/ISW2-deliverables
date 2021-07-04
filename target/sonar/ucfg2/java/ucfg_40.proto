@@ -1,14 +1,20 @@
 
-6view.ProportionFxmlController$1#call()Ljava/lang/Void;s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java$ $("1*Í
+0logic.dataset_manager.Dataset#getNumOfCommits()Is
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javah h("1*‹
 1s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java% %(ÓÐ
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javai i(É
+Æ
 s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java% %(%
-
-%0void"7logic.boundary.ProportionAnalisysBoundary#runUseCase()V*
-""2runUseCase()"}
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javai i(
+%0java.util.ArrayList"__id*.*,
+logic.dataset_manager.Dataset"	
+commitsÅÂ
 s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java& &(
-""B#!
-view.ProportionFxmlController$1
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javai i("	
+%1int"java.util.ArrayList#size()I*
+
+%0java.util.ArrayList2size()"}
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Dataset.javai i(#
+""B!
+logic.dataset_manager.Dataset

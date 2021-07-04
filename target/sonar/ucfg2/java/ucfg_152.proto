@@ -1,16 +1,21 @@
 
-:logic.abstracts.AbstractBean#getOutputFile()Ljava/io/File;r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java ("1*∆
-1r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (ø
-º
-r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (
-%0java.io.File"__id*,**
-logic.abstracts.AbstractBean"
-output"ä
-r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (
-
-%0java.io.FileB 
-logic.abstracts.AbstractBean
+Blogic.dataset_manager.ProportionDataset#getFiles()Ljava/util/List;
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaé é(%"1*ª
+1
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(Ú
+Ô
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(.
+%0(logic.dataset_manager.ReleaseFileManager"__id*6*4)
+'logic.dataset_manager.ProportionDataset"
+files£†
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è('
+%1java.util.List"Flogic.dataset_manager.ReleaseFileManager#getFileList()Ljava/util/List;*0
+.
+%0(logic.dataset_manager.ReleaseFileManager2getFileList()"ô
+
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è((
+
+%1java.util.ListB+)
+'logic.dataset_manager.ProportionDataset
