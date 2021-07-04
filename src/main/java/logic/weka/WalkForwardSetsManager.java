@@ -49,7 +49,7 @@ public class WalkForwardSetsManager {
         this.data.deleteAttributeAt(1);
 
         this.convert(arffFile);
-        this.computeNumOfReleases();
+        this.numOfRelease = this.data.numDistinctValues(0);
 
         this.testingSet = testing;
         this.trainingSet = training;
@@ -69,6 +69,7 @@ public class WalkForwardSetsManager {
 
         saver.writeBatch();
 
+        //this is the case when the header of "Buggy" attribute starts with "No" instead of "Yes"
         if (this.data.attribute(10).value(0).equals("No")){
             //have to change this line
             this.changeLine();
@@ -115,28 +116,6 @@ public class WalkForwardSetsManager {
 
     /* *******************************************************************************************************/
 
-    private void computeNumOfReleases() {
-
-        //need a replication of data
-        var copy = new Instances(this.data);//get instances object
-
-        var numAttrib = copy.numAttributes();
-        int i;
-        for (i = 1; i < numAttrib; i++)
-            copy.deleteAttributeAt(1);
-
-        //removing name's column
-        var num = 1;
-        var previous = copy.instance(0);
-        for (i = 0; i < copy.numInstances(); i++){
-            if (copy.instance(i).value(0) != previous.value(0)){
-                previous = copy.instance(i);
-                num++;
-            }
-        }
-        this.numOfRelease = num;
-    }
-
     private void initializeAttributes(){
         this.attributes = new ArrayList<>();
         int i;
@@ -173,7 +152,7 @@ public class WalkForwardSetsManager {
         pf.flush();
     }
 
-    public void computeTestingFile(int indexRelease){
+    private void computeTestingFile(int indexRelease){
         this.computeTestingSet(indexRelease);
         try(var fp = new PrintWriter(this.testingSet)) {
 
@@ -188,7 +167,7 @@ public class WalkForwardSetsManager {
         }
     }
 
-    public void computeTrainingFile(int indexRelease){
+    private void computeTrainingFile(int indexRelease){
         /* this code is optimized for increment creation. on an iterative loop:
         *   - train = 1 -> test = 2
         *   - train = 1,2 -> test = 3
@@ -219,6 +198,11 @@ public class WalkForwardSetsManager {
             var logger = Logger.getLogger(WalkForwardSetsManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
+    }
+
+    public void computeFiles(int indexRelease){
+        this.computeTrainingFile(indexRelease);
+        this.computeTestingFile(indexRelease + 1);
     }
 
     public int getNumOfRelease() {
