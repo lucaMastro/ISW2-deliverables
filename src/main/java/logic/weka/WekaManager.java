@@ -1,7 +1,7 @@
 package logic.weka;
 
-import logic.enums.CostSensitiveClassifier;
-import logic.enums.FeaturesSelection;
+import logic.enums.CostSensitiveClassifierType;
+import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
@@ -62,21 +62,17 @@ public class WekaManager {
         var trainingDataset = this.steps.get(releseIndex - 1).getTrainingSet();
         var testingDataset = this.steps.get(releseIndex - 1).getTestingSet();
 
-        /*  classifier creation */
-        var classifiers = new ArrayList<Classifier>();
-        classifiers.add(new RandomForest());
-        classifiers.add(new NaiveBayes());
-        classifiers.add(new IBk());
-        for (Classifier c : classifiers)
+        /*  classifiers train */
+        for (Classifier c : this.classifiers)
             c.buildClassifier(trainingDataset);
 
         /*  evaluation creation */
         var evaluations = new ArrayList<Evaluation>();
-        for (i = 0; i < classifiers.size(); i++)
+        for (i = 0; i < this.classifiers.size(); i++)
             evaluations.add(new Evaluation(testingDataset));
 
-        for (i = 0; i < classifiers.size(); i++){
-            classifier = classifiers.get(i);
+        for (i = 0; i < this.classifiers.size(); i++){
+            classifier = this.classifiers.get(i);
             evaluation = evaluations.get(i);
             evaluation.evaluateModel(classifier, testingDataset);
         }
@@ -92,9 +88,9 @@ public class WekaManager {
     }
 
 
-    public void applyFeaturesSelection(FeaturesSelection fs){
+    public void applyFeaturesSelection(FeaturesSelectionType fs){
         /*  just 2 options  */
-        if (fs.equals(FeaturesSelection.BEST_FIRST)){
+        if (fs.equals(FeaturesSelectionType.BEST_FIRST)){
             // TODO: 03/07/21
         }
     }
@@ -108,23 +104,27 @@ public class WekaManager {
                 break;
             case SMOTE:
                 break;
+            default:
+                break;
         }
     }
 
-    public void applyCostSensitive(CostSensitiveClassifier csc){
+    public void applyCostSensitive(CostSensitiveClassifierType csc){
         switch (csc){
             case SENSITIVE_THRESHOLD:
                 break;
             case SENSITIVE_LEARNING:
                 break;
+            default:
+                break;
         }
     }
 
 
-    public WekaConfigurationOutput computeMetrics(FeaturesSelection fs, CostSensitiveClassifier csc, SamplingType st)
+    public WekaConfigurationOutput computeMetrics(FeaturesSelectionType fs, CostSensitiveClassifierType csc, SamplingType st)
             throws Exception {
 
-        var output = new WekaConfigurationOutput(fs, st, csc, this.getDatasetName());
+        var output = new WekaConfigurationOutput(fs, st, csc);
 
         this.applyFeaturesSelection(fs);
         this.applySampling(st);

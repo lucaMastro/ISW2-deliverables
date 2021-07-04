@@ -1,11 +1,9 @@
 package logic.weka;
 
-import logic.enums.CostSensitiveClassifier;
-import logic.enums.FeaturesSelection;
+import logic.enums.CostSensitiveClassifierType;
+import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
-import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Evaluation;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,22 +11,20 @@ public class WekaConfigurationOutput {
     /*  this class is meant to store weka analysis output of a given combination of
         FeaturesSelection, Cost Sensitive Classifier and Sampling   */
 
-    private FeaturesSelection featuresSelection;
+    private FeaturesSelectionType featuresSelection;
     private SamplingType samplingType;
-    private CostSensitiveClassifier costSensitiveClassifier;
+    private CostSensitiveClassifierType costSensitiveClassifier;
 
     private List<Evaluation> evaluations;
 
-    private String datasetName;
     private String title;
 
-    public WekaConfigurationOutput(FeaturesSelection fs, SamplingType st, CostSensitiveClassifier csc, String dn){
+    public WekaConfigurationOutput(FeaturesSelectionType fs, SamplingType st, CostSensitiveClassifierType csc){
         this.featuresSelection = fs;
         this.samplingType = st;
         this.costSensitiveClassifier = csc;
 
         this.evaluations = new ArrayList<>();
-        this.datasetName = dn;
 
         var s = new StringBuilder("Output for: ");
         this.title = s.append(this.featuresSelection.getType()).append(",")

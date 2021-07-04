@@ -7,9 +7,9 @@ public enum SamplingType {
     SMOTE("smote");
 
 
-    public final String semplingType;
-    SamplingType(String type){ this.semplingType = type; }
+    public final String sampling;
+    SamplingType(String type){ this.sampling = type; }
 
-    public String getType(){ return this.semplingType; }
+    public String getType(){ return this.sampling; }
 
 }

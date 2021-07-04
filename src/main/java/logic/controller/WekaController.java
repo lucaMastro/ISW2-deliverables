@@ -14,19 +14,13 @@
 package logic.controller;
 
 import logic.bean.WekaBean;
-import logic.enums.CostSensitiveClassifier;
-import logic.enums.FeaturesSelection;
+import logic.enums.CostSensitiveClassifierType;
+import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
-import logic.weka.WalkForwardSetsManager;
 import logic.weka.WekaConfigurationOutput;
 import logic.weka.WekaManager;
 import org.decimal4j.util.DoubleRounder;
-import weka.classifiers.Classifier;
-import weka.classifiers.lazy.IBk;
-import weka.classifiers.trees.RandomForest;
 import weka.classifiers.Evaluation;
-import weka.classifiers.bayes.NaiveBayes;
-import weka.core.converters.ArffLoader;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -48,8 +42,8 @@ public class WekaController {
 
         var list = new ArrayList<WekaConfigurationOutput>();
 
-        for (FeaturesSelection fs : FeaturesSelection.values()){
-            for (CostSensitiveClassifier csc : CostSensitiveClassifier.values()){
+        for (FeaturesSelectionType fs : FeaturesSelectionType.values()){
+            for (CostSensitiveClassifierType csc : CostSensitiveClassifierType.values()){
                 for (SamplingType st : SamplingType.values()){
                     var output = wekaManager.computeMetrics(fs, csc, st);
                     list.add(output);

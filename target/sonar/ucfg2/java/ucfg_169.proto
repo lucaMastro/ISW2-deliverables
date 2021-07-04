@@ -1,48 +1,14 @@
 
-Alogic.weka.TestWekaSampling#countPositive(Lweka/core/Instances;)Iq
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java   ("6*á
-4q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java$ $(ú÷
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java$ $(
-%2weka.core.Instance"3weka.core.Instances#instance(I)Lweka/core/Instance;*
-
-trainweka.core.Instances*
-""2instance(I)ñî
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java$ $(-
-%3java.lang.String"0weka.core.Instance#toString(I)Ljava/lang/String;*
-
-%2weka.core.Instance*
-""2toString(I)òï
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java$ $(;
-%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%3java.lang.String*
-Yes2equals(Ljava/lang/Object;)*
-5*×
-5q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java# #(ÖÓ
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java# #(*	
-%1int"#weka.core.Instances#numInstances()I*
-
-trainweka.core.Instances2numInstances()*
-4
-1*Ö
-6q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java! !(ØÕ
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java" "((	
-%0int"$weka.core.Instances#numAttributes()I*
-
-trainweka.core.Instances2numAttributes()*
-5*ó
-1q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java'	 '("{
-q
-g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/TestWekaSampling.java' '(
-"":
-trainweka.core.InstancesB
-logic.weka.TestWekaSampling
+6view.ProportionFxmlController$1#call()Ljava/lang/Void;s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java$ $("1*Í
+1s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java% %(ÓÐ
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java% %(%
+
+%0void"7logic.boundary.ProportionAnalisysBoundary#runUseCase()V*
+""2runUseCase()"}
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java& &(
+""B#!
+view.ProportionFxmlController$1

@@ -9,7 +9,6 @@ import weka.filters.supervised.instance.Resample;
 import weka.filters.supervised.instance.SpreadSubsample;
 
 import java.io.File;
-import java.io.IOException;
 
 public class WalkStep {
 
