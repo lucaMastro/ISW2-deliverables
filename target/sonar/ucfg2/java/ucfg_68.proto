@@ -1,16 +1,45 @@
 
-8logic.weka.WalkStep#getTestingSet()Lweka/core/Instances;i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java< <(""1*±
+[logic.weka.WalkStep#getTestingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java@ @(""3*À
+2i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaB B(Ä
+Á
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaB B(.
+%2weka.core.Instances"__id*3*1
+logic.weka.WalkStep"
+featureSelectedTesting"ˆ
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaB B(/
+
+%2weka.core.Instances*¼
+3i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaA A(¥
+¢
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaA A(6'
+%0!logic.enums.FeaturesSelectionType"__id*
+""›˜
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaA A(7
+%1boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*)
+'
+fs!logic.enums.FeaturesSelectionType*)
+'
+%0!logic.enums.FeaturesSelectionType2equals(Ljava/lang/Object;)*
+2
+1*±
 1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java= =(µ
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaD D(µ
 ²
 i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java= =(
-%0weka.core.Instances"__id*$*"
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaD D(
+%3weka.core.Instances"__id*$*"
 logic.weka.WalkStep"	
 testing"ˆ
 i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java= =(
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaD D( 
 
-%0weka.core.InstancesB
+%3weka.core.Instances:'
+fs!logic.enums.FeaturesSelectionTypeB
 logic.weka.WalkStep
