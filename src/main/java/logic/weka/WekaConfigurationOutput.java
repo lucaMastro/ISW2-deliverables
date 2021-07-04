@@ -27,9 +27,9 @@ public class WekaConfigurationOutput {
         this.evaluations = new ArrayList<>();
 
         var s = new StringBuilder("Output for: ");
-        this.title = s.append(this.featuresSelection.getType()).append(",")
-                .append(this.samplingType.getType()).append(",")
-                .append(this.costSensitiveClassifier.getType()).append("\n").toString();
+        this.title = s.append("Features Selection = ").append(this.featuresSelection.getType()).append(",")
+                .append("Sampling = ").append(this.samplingType.getType()).append(",")
+                .append("Cost Sensitive = ").append(this.costSensitiveClassifier.getType()).append("\n").toString();
     }
 
     public void appendEvaluation(Evaluation eval){

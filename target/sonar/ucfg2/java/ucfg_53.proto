@@ -1,5 +1,5 @@
 
-©logic.weka.WekaManager#computeMetrics(Llogic/enums/FeaturesSelection;Llogic/enums/CostSensitiveClassifier;Llogic/enums/SamplingType;)Llogic/weka/WekaConfigurationOutput;l
+±logic.weka.WekaManager#computeMetrics(Llogic/enums/FeaturesSelectionType;Llogic/enums/CostSensitiveClassifierType;Llogic/enums/SamplingType;)Llogic/weka/WekaConfigurationOutput;l
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java|# |(1"8*Î
 3n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaã ã(£
@@ -14,7 +14,7 @@ b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/we
 cweka.classifiers.Classifier"
 __arrayGet*
 
-%13java.util.ArrayList*
+%12java.util.ArrayList*
 ""*
 4
 7*ˇ
@@ -22,20 +22,20 @@ __arrayGet*
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaå å(ª∏
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaå å(2
-%14void"Cweka.classifiers.Classifier#buildClassifier(Lweka/core/Instances;)V*"
+%13void"Cweka.classifiers.Classifier#buildClassifier(Lweka/core/Instances;)V*"
  
 cweka.classifiers.Classifier*(
 &
 trainingDatasetweka.core.Instances2&buildClassifier(Lweka/core/Instances;)¥±
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaç) ç(3"
-%15weka.classifiers.Evaluation"weka.classifiers.EvaluationÖ
+%14weka.classifiers.Evaluation"weka.classifiers.EvaluationÖ
 Ç
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaç% ç(C
-%16":weka.classifiers.Evaluation#<init>(Lweka/core/Instances;)V*$
+%15":weka.classifiers.Evaluation#<init>(Lweka/core/Instances;)V*$
 "
-%15weka.classifiers.Evaluation*'
+%14weka.classifiers.Evaluation*'
 %
 testingDatasetweka.core.InstancesŒ
 À
@@ -43,10 +43,10 @@ n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaç ç(D-
 currEvaluationweka.classifiers.Evaluation"__id*$
 "
-%15weka.classifiers.EvaluationÃ…
+%14weka.classifiers.EvaluationÃ…
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaé é(?
-%17double[]"rweka.classifiers.Evaluation#evaluateModel(Lweka/classifiers/Classifier;Lweka/core/Instances;[Ljava/lang/Object;)[D*/
+%16double[]"rweka.classifiers.Evaluation#evaluateModel(Lweka/classifiers/Classifier;Lweka/core/Instances;[Ljava/lang/Object;)[D*/
 -
 currEvaluationweka.classifiers.Evaluation*"
  
@@ -55,7 +55,7 @@ b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/we
 testingDatasetweka.core.Instances2TevaluateModel(Lweka/classifiers/Classifier;Lweka/core/Instances;[Ljava/lang/Object;)Á‰
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaê ê(7
-%18void"Slogic.weka.WekaConfigurationOutput#appendEvaluation(Lweka/classifiers/Evaluation;)V*.
+%17void"Slogic.weka.WekaConfigurationOutput#appendEvaluation(Lweka/classifiers/Evaluation;)V*.
 ,
 output"logic.weka.WekaConfigurationOutput*/
 -
@@ -66,129 +66,123 @@ b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/we
 ø
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaã  ã(0
-%13java.util.ArrayList"__id*+*)
+%12java.util.ArrayList"__id*+*)
 logic.weka.WekaManager"
 classifiers*
-3*Û
+3*Ò
 6n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaá" á(&ª
 ∏
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaá" á(,
-%7java.util.ArrayList"__id*%*#
+%6java.util.ArrayList"__id*%*#
 logic.weka.WekaManager"
 stepsø
 º
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaá" á(3
-%8logic.weka.WalkStep"
+%7logic.weka.WalkStep"
 __arrayGet*
 
-%7java.util.ArrayList*
+%6java.util.ArrayList*
 ""¯ı
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaá" á(D
-%9weka.core.Instances"9logic.weka.WalkStep#getTrainingSet()Lweka/core/Instances;*
+%8weka.core.Instances"9logic.weka.WalkStep#getTrainingSet()Lweka/core/Instances;*
 
-%8logic.weka.WalkStep2getTrainingSet()æ
+%7logic.weka.WalkStep2getTrainingSet()æ
 ª
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaá á(E&
 trainingDatasetweka.core.Instances"__id*
 
-%9weka.core.Instancesº
-π
+%8weka.core.Instancesª
+∏
 n
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaà! à(+
-%10java.util.ArrayList"__id*%*#
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaà! à(+
+%9java.util.ArrayList"__id*%*#
 logic.weka.WekaManager"
-steps¡
-æ
+steps¿
+Ω
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaà! à(2
-%11logic.weka.WalkStep"
-__arrayGet*
-
-%10java.util.ArrayList*
+%10logic.weka.WalkStep"
+__arrayGet*
+
+%9java.util.ArrayList*
 ""¯ı
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaà! à(B
-%12weka.core.Instances"8logic.weka.WalkStep#getTestingSet()Lweka/core/Instances;*
+%11weka.core.Instances"8logic.weka.WalkStep#getTestingSet()Lweka/core/Instances;*
 
-%11logic.weka.WalkStep2getTestingSet()æ
+%10logic.weka.WalkStep2getTestingSet()æ
 ª
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaà à(C%
 testingDatasetweka.core.Instances"__id*
 
-%12weka.core.Instances*
+%11weka.core.Instances*
 5*÷
 7n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaÜ Ü(ÿ’
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaÜ Ü(.	
-%6int")logic.weka.WekaManager#getNumOfRelease()I*
+%5int")logic.weka.WekaManager#getNumOfRelease()I*
 logic.weka.WekaManager2getNumOfRelease()*
 6
-1*Æ
+1*µ
 8l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java1 (3ÚÔ
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java> (S
-%0java.lang.String"9logic.weka.WekaManager#getDatasetName()Ljava/lang/String;*
-logic.weka.WekaManager2getDatasetName()øº
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java1 (3øº
 l
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java (0(
-%1"logic.weka.WekaConfigurationOutput""logic.weka.WekaConfigurationOutput”
-–
+%0"logic.weka.WekaConfigurationOutput""logic.weka.WekaConfigurationOutput∑
+¥
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java (T
-%2"úlogic.weka.WekaConfigurationOutput#<init>(Llogic/enums/FeaturesSelection;Llogic/enums/SamplingType;Llogic/enums/CostSensitiveClassifier;Ljava/lang/String;)V**
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java (=
+%1"ílogic.weka.WekaConfigurationOutput#<init>(Llogic/enums/FeaturesSelectionType;Llogic/enums/SamplingType;Llogic/enums/CostSensitiveClassifierType;)V**
 (
-%1"logic.weka.WekaConfigurationOutput*%
-#
-fslogic.enums.FeaturesSelection* 
+%0"logic.weka.WekaConfigurationOutput*)
+'
+fs!logic.enums.FeaturesSelectionType* 
 
-stlogic.enums.SamplingType*,
-*
-csc#logic.enums.CostSensitiveClassifier*
-
-%0java.lang.String—
+stlogic.enums.SamplingType*0
+.
+csc'logic.enums.CostSensitiveClassifierType—
 Œ
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java (U,
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java (>,
 output"logic.weka.WekaConfigurationOutput"__id**
 (
-%1"logic.weka.WekaConfigurationOutputÃ…
+%0"logic.weka.WekaConfigurationOutputÿ’
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaÅ Å('
 
-%3void"Ologic.weka.WekaManager#applyFeaturesSelection(Llogic/enums/FeaturesSelection;)V*
-logic.weka.WekaManager*%
-#
-fslogic.enums.FeaturesSelection27applyFeaturesSelection(Llogic/enums/FeaturesSelection;)´®
+%2void"Slogic.weka.WekaManager#applyFeaturesSelection(Llogic/enums/FeaturesSelectionType;)V*
+logic.weka.WekaManager*)
+'
+fs!logic.enums.FeaturesSelectionType2;applyFeaturesSelection(Llogic/enums/FeaturesSelectionType;)´®
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaÇ Ç(
 
-%4void"Alogic.weka.WekaManager#applySampling(Llogic/enums/SamplingType;)V*
+%3void"Alogic.weka.WekaManager#applySampling(Llogic/enums/SamplingType;)V*
 logic.weka.WekaManager* 
 
-stlogic.enums.SamplingType2)applySampling(Llogic/enums/SamplingType;)◊‘
+stlogic.enums.SamplingType2)applySampling(Llogic/enums/SamplingType;)„‡
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaÉ É($
 
-%5void"Qlogic.weka.WekaManager#applyCostSensitive(Llogic/enums/CostSensitiveClassifier;)V*
-logic.weka.WekaManager*,
-*
-csc#logic.enums.CostSensitiveClassifier29applyCostSensitive(Llogic/enums/CostSensitiveClassifier;)*
+%4void"Ulogic.weka.WekaManager#applyCostSensitive(Llogic/enums/CostSensitiveClassifierType;)V*
+logic.weka.WekaManager*0
+.
+csc'logic.enums.CostSensitiveClassifierType2=applyCostSensitive(Llogic/enums/CostSensitiveClassifierType;)*
 7*ñ
 1n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaî î("†
 n
 b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaî î(.
 ,
-output"logic.weka.WekaConfigurationOutput:#
-fslogic.enums.FeaturesSelection:*
-csc#logic.enums.CostSensitiveClassifier:
+output"logic.weka.WekaConfigurationOutput:'
+fs!logic.enums.FeaturesSelectionType:.
+csc'logic.enums.CostSensitiveClassifierType:
 stlogic.enums.SamplingTypeB
 logic.weka.WekaManager

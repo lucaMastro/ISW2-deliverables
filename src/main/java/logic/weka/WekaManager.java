@@ -13,15 +13,12 @@ import weka.filters.supervised.instance.SpreadSubsample;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.List;
 
 public class WekaManager {
 
     private ArrayList<WalkStep> steps;
     private int numRelease;
     private WalkForwardSetsManager filesManager;
-
-    private FilteredClassifier undersapling;
 
     private ArrayList<Classifier> classifiers;
 
@@ -37,46 +34,16 @@ public class WekaManager {
             this.steps.add(new WalkStep(training, testing, this.filesManager.getNumberOfAttributes()));
         }
 
-        //initialization of filteredClassifier for undersampling
-        this.undersapling = new FilteredClassifier();
-        var ss = new SpreadSubsample();
-        String[] opts = new String[]{ "-M", "1.0"};
-        ss.setOptions(opts);
-        this.undersapling.setFilter(ss);
-
         //classifiers
+        this.initializeClassifiers();
+
+    }
+
+    private void initializeClassifiers(){
         this.classifiers = new ArrayList<>();
         this.classifiers.add(new RandomForest());
         this.classifiers.add(new NaiveBayes());
         this.classifiers.add(new IBk());
-
-    }
-
-
-    public List<Evaluation> computeMetrics(int releseIndex) throws Exception {
-        int i;
-        Classifier classifier;
-        Evaluation evaluation;
-
-        /*  sets settings    */
-        var trainingDataset = this.steps.get(releseIndex - 1).getTrainingSet();
-        var testingDataset = this.steps.get(releseIndex - 1).getTestingSet();
-
-        /*  classifiers train */
-        for (Classifier c : this.classifiers)
-            c.buildClassifier(trainingDataset);
-
-        /*  evaluation creation */
-        var evaluations = new ArrayList<Evaluation>();
-        for (i = 0; i < this.classifiers.size(); i++)
-            evaluations.add(new Evaluation(testingDataset));
-
-        for (i = 0; i < this.classifiers.size(); i++){
-            classifier = this.classifiers.get(i);
-            evaluation = evaluations.get(i);
-            evaluation.evaluateModel(classifier, testingDataset);
-        }
-        return evaluations;
     }
 
     public int getNumOfRelease() {
@@ -87,53 +54,67 @@ public class WekaManager {
         return this.filesManager.getDatasetName();
     }
 
-
-    public void applyFeaturesSelection(FeaturesSelectionType fs){
-        /*  just 2 options  */
-        if (fs.equals(FeaturesSelectionType.BEST_FIRST)){
-            // TODO: 03/07/21
-        }
-    }
-
-    public void applySampling(SamplingType st){
-
+    public void applySampling(SamplingType st) throws Exception {
+        int i;
+        //re-initialize cassifiers
+        this.initializeClassifiers();
         switch (st){
             case UNDERSAMPLING:
+                // just replace the classifiers with a filtered classifier
+                for (i = 0; i < this.classifiers.size(); i++) {
+                    var newInstance = this.classifiers.get(i).getClass().getDeclaredConstructor().newInstance();
+                    var filtered = this.getUndersaplingClassifier();
+                    filtered.setClassifier(newInstance);
+                    this.classifiers.set(i, filtered);
+                }
                 break;
-            case OVERSAMPLING:
+          /*  case OVERSAMPLING:
                 break;
             case SMOTE:
-                break;
+                break;*/
             default:
                 break;
         }
     }
 
+    private FilteredClassifier getUndersaplingClassifier() throws Exception {
+        //initialization of filteredClassifier for undersampling
+        var classifier = new FilteredClassifier();
+        var ss = new SpreadSubsample();
+        String[] opts = new String[]{ "-M", "1.0"};
+        ss.setOptions(opts);
+        classifier.setFilter(ss);
+
+        return classifier;
+    }
+
+
     public void applyCostSensitive(CostSensitiveClassifierType csc){
-        switch (csc){
+        /*switch (csc){
             case SENSITIVE_THRESHOLD:
                 break;
             case SENSITIVE_LEARNING:
                 break;
             default:
                 break;
-        }
+        }*/
     }
 
 
-    public WekaConfigurationOutput computeMetrics(FeaturesSelectionType fs, CostSensitiveClassifierType csc, SamplingType st)
-            throws Exception {
+    public WekaConfigurationOutput computeMetrics(FeaturesSelectionType fs, CostSensitiveClassifierType csc,
+                                            SamplingType st) throws Exception {
 
         var output = new WekaConfigurationOutput(fs, st, csc);
 
-        this.applyFeaturesSelection(fs);
+        /*  feature selection is applied in walkStep: it keep a train and a test for both cases: none and features
+            selection best first.    */
         this.applySampling(st);
         this.applyCostSensitive(csc);
 
         int i;
         for (i = 0; i < this.getNumOfRelease() - 1; i++) {
-            var trainingDataset = this.steps.get(i).getTrainingSet();
-            var testingDataset = this.steps.get(i).getTestingSet();
+            var trainingDataset = this.steps.get(i).getTrainingSet(fs);
+            var testingDataset = this.steps.get(i).getTestingSet(fs);
 
             //now i need to train the classifiers
             for (Classifier c : this.classifiers) {

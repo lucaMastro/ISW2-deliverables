@@ -1,21 +1,21 @@
 
 9logic.weka.WekaManager#getDatasetName()Ljava/lang/String;l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaZ Z( "1*Ü
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaV V( "1*Ü
 1l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java[ [(Î
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W(Î
 Ë
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java[ [( '
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W( '
 %0!logic.weka.WalkForwardSetsManager"__id*,**
 logic.weka.WekaManager"
 filesManagerŒ‰
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java[ [(1
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W(1
 %1java.lang.String"Dlogic.weka.WalkForwardSetsManager#getDatasetName()Ljava/lang/String;*)
 '
 %0!logic.weka.WalkForwardSetsManager2getDatasetName()"ˆ
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java[ [(2
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaW W(2
 
 %1java.lang.StringB
 logic.weka.WekaManager

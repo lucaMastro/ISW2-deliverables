@@ -1,12 +1,12 @@
 package logic.weka;
 
-import weka.classifiers.Evaluation;
-import weka.classifiers.bayes.NaiveBayes;
-import weka.classifiers.meta.FilteredClassifier;
+import logic.enums.FeaturesSelectionType;
+import weka.attributeSelection.BestFirst;
+import weka.attributeSelection.CfsSubsetEval;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
-import weka.filters.supervised.instance.Resample;
-import weka.filters.supervised.instance.SpreadSubsample;
+import weka.filters.Filter;
+import weka.filters.supervised.attribute.AttributeSelection;
 
 import java.io.File;
 
@@ -15,9 +15,8 @@ public class WalkStep {
     private Instances training;
     private Instances testing;
 
-    private Instances undersampledTraining;
-    private Instances oversampledTraining;
-    private Instances smoteSampledTraining;
+    private Instances featureSelectedTraining;
+    private Instances featureSelectedTesting;
 
     public WalkStep(File train, File test, int numAttr) throws Exception {
 
@@ -33,31 +32,39 @@ public class WalkStep {
         this.testing.setClassIndex(numAttr - 1);
 
 
-        //undersampling
-        var undersamplingCopy = new Instances(this.training);
-        var resample = new Resample();
-        resample.setInputFormat(undersamplingCopy);
-        var fc = new FilteredClassifier();
-        var naiveBayesSampeld = new NaiveBayes();
-        fc.setClassifier(naiveBayesSampeld);
+        //create AttributeSelection object
+        var filter = new AttributeSelection();
+        //create evaluator and search algorithm objects
+        var eval = new CfsSubsetEval();
+        var search = new BestFirst();
 
-        SpreadSubsample spreadSubsample = new SpreadSubsample();
-        String[] opts = new String[]{ "-M", "1.0"};
-        spreadSubsample.setOptions(opts);
+        //set the filter to use the evaluator and search algorithm
+        filter.setEvaluator(eval);
+        filter.setSearch(search);
 
-        fc.setFilter(spreadSubsample);
+        //specify the dataset
+        filter.setInputFormat(this.training);
+        //apply
+        this.featureSelectedTraining = Filter.useFilter(this.training, filter);
+        this.featureSelectedTesting = Filter.useFilter(this.testing, filter);
 
+        var numAttrFiltered = this.featureSelectedTraining.numAttributes();
+        this.featureSelectedTraining.setClassIndex(numAttrFiltered - 1);
+        this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
 
-        fc.buildClassifier(training);
-        Evaluation eval2 = new Evaluation(testing);
-        eval2.evaluateModel(fc, testing); //sampled
     }
 
-    public Instances getTrainingSet() {
-        return training;
+    public Instances getTrainingSet(FeaturesSelectionType fs) {
+        if (fs.equals(FeaturesSelectionType.BEST_FIRST))
+            return this.featureSelectedTraining;
+        else
+            return this.training;
     }
 
-    public Instances getTestingSet() {
-        return testing;
+    public Instances getTestingSet(FeaturesSelectionType fs) {
+        if (fs.equals(FeaturesSelectionType.BEST_FIRST))
+            return this.featureSelectedTesting;
+        else
+            return this.testing;
     }
 }
