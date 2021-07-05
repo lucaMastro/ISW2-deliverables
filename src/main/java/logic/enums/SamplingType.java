@@ -2,7 +2,7 @@ package logic.enums;
 
 public enum SamplingType {
     NONE("none"),
-    //OVERSAMPLING("oversampling"),
+    OVERSAMPLING("oversampling"),
     UNDERSAMPLING("undersampling");//,
     //SMOTE("smote");
 

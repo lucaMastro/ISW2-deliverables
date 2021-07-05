@@ -9,6 +9,7 @@ import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.lazy.IBk;
 import weka.classifiers.meta.FilteredClassifier;
 import weka.classifiers.trees.RandomForest;
+import weka.filters.supervised.instance.Resample;
 import weka.filters.supervised.instance.SpreadSubsample;
 
 import java.io.File;
@@ -54,7 +55,7 @@ public class WekaManager {
         return this.filesManager.getDatasetName();
     }
 
-    public void applySampling(SamplingType st) throws Exception {
+    public void applySampling(SamplingType st, WalkStep currentStep) throws Exception {
         int i;
         //re-initialize cassifiers
         this.initializeClassifiers();
@@ -63,21 +64,46 @@ public class WekaManager {
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
                     var newInstance = this.classifiers.get(i).getClass().getDeclaredConstructor().newInstance();
-                    var filtered = this.getUndersaplingClassifier();
+                    var filtered = this.getUnderSaplingClassifier();
                     filtered.setClassifier(newInstance);
                     this.classifiers.set(i, filtered);
                 }
                 break;
-          /*  case OVERSAMPLING:
+            case OVERSAMPLING:
+                // just replace the classifiers with a filtered classifier
+                for (i = 0; i < this.classifiers.size(); i++) {
+                    // create a new instance of a classifier
+                    var newInstance = this.classifiers.get(i).getClass().getDeclaredConstructor().newInstance();
+                    var filtered = this.getOverSaplingClassifier(currentStep);
+                    filtered.setClassifier(newInstance);
+                    this.classifiers.set(i, filtered);
+                }
                 break;
-            case SMOTE:
+          /*  case SMOTE:
                 break;*/
             default:
                 break;
         }
     }
 
-    private FilteredClassifier getUndersaplingClassifier() throws Exception {
+    private FilteredClassifier getOverSaplingClassifier(WalkStep currentStep) throws Exception {
+        var classifier = new FilteredClassifier();
+
+        var positive = currentStep.getPositives();
+        var negative = currentStep.getNegatives();
+        var minor = Math.min(positive, negative);
+        var p = Math.abs(positive - negative) * 100 / minor;
+
+        var resample = new Resample();
+        //no decimal position
+        String[] opts = new String[]{ "-B", "1.0", "-Z", String.valueOf(Integer.valueOf(p))};
+        resample.setOptions(opts);
+        classifier.setFilter(resample);
+
+        return classifier;
+    }
+
+    private FilteredClassifier getUnderSaplingClassifier() throws Exception {
         //initialization of filteredClassifier for undersampling
         var classifier = new FilteredClassifier();
         var ss = new SpreadSubsample();
@@ -107,14 +133,17 @@ public class WekaManager {
         var output = new WekaConfigurationOutput(fs, st, csc);
 
         /*  feature selection is applied in walkStep: it keep a train and a test for both cases: none and features
-            selection best first.    */
-        this.applySampling(st);
-        this.applyCostSensitive(csc);
+            selection best first.
+            To apply sampling, it's needed the training set: in fact, for oversampling and smoote, it needs the
+             percentage that should be used in the filter.  */
 
-        int i;
+        int i = 0;
         for (i = 0; i < this.getNumOfRelease() - 1; i++) {
             var trainingDataset = this.steps.get(i).getTrainingSet(fs);
             var testingDataset = this.steps.get(i).getTestingSet(fs);
+
+            this.applySampling(st, this.steps.get(i));
+            this.applyCostSensitive(csc);
 
             //now i need to train the classifiers
             for (Classifier c : this.classifiers) {

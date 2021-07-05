@@ -3,6 +3,7 @@ package logic.weka;
 import logic.enums.FeaturesSelectionType;
 import weka.attributeSelection.BestFirst;
 import weka.attributeSelection.CfsSubsetEval;
+import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
 import weka.filters.Filter;
@@ -66,5 +67,19 @@ public class WalkStep {
             return this.featureSelectedTesting;
         else
             return this.testing;
+    }
+
+    public int getPositives() {
+        var count = 0;
+        for (Instance instance : this.training){
+            var curr = instance.toString(this.training.numAttributes() - 1);
+            if (curr.equals("Yes"))
+                count++;
+        }
+        return count;
+    }
+
+    public int getNegatives() {
+        return this.training.numInstances() - this.getPositives();
     }
 }
