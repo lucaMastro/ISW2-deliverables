@@ -3,6 +3,7 @@ package logic.weka;
 import logic.enums.CostSensitiveClassifierType;
 import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
+import logic.exception.WalkStepFilterException;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
@@ -10,6 +11,7 @@ import weka.classifiers.lazy.IBk;
 import weka.classifiers.trees.RandomForest;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class WekaManager {
@@ -21,7 +23,7 @@ public class WekaManager {
     private ArrayList<Classifier> classifiers;
 
 
-    public WekaManager(File input, File arff, File training, File testing) throws Exception {
+    public WekaManager(File input, File arff, File training, File testing) throws IOException, WalkStepFilterException {
         this.filesManager = new WalkForwardSetsManager(input, arff, training, testing);
         this.steps = new ArrayList<>();
         this.numRelease = this.filesManager.getNumOfRelease();
@@ -68,7 +70,7 @@ public class WekaManager {
             case OVERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var filtered = FilterCreator.getInstance().getOverSaplingClassifier(currentStep);;
+                    var filtered = FilterCreator.getInstance().getOverSaplingClassifier(currentStep);
                     filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
                 }

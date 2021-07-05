@@ -1,6 +1,7 @@
 package logic.weka;
 
 import logic.enums.FeaturesSelectionType;
+import logic.exception.WalkStepFilterException;
 import weka.attributeSelection.BestFirst;
 import weka.attributeSelection.CfsSubsetEval;
 import weka.core.Instance;
@@ -10,6 +11,7 @@ import weka.filters.Filter;
 import weka.filters.supervised.attribute.AttributeSelection;
 
 import java.io.File;
+import java.io.IOException;
 
 public class WalkStep {
 
@@ -19,7 +21,7 @@ public class WalkStep {
     private Instances featureSelectedTraining;
     private Instances featureSelectedTesting;
 
-    public WalkStep(File train, File test, int numAttr) throws Exception {
+    public WalkStep(File train, File test, int numAttr) throws IOException, WalkStepFilterException {
 
         var loader = new ArffLoader();
 
@@ -43,15 +45,19 @@ public class WalkStep {
         filter.setEvaluator(eval);
         filter.setSearch(search);
 
-        //specify the dataset
-        filter.setInputFormat(this.training);
-        //apply
-        this.featureSelectedTraining = Filter.useFilter(this.training, filter);
-        this.featureSelectedTesting = Filter.useFilter(this.testing, filter);
+        try {
+            //specify the dataset
+            filter.setInputFormat(this.training);
+            //apply
+            this.featureSelectedTraining = Filter.useFilter(this.training, filter);
+            this.featureSelectedTesting = Filter.useFilter(this.testing, filter);
 
-        var numAttrFiltered = this.featureSelectedTraining.numAttributes();
-        this.featureSelectedTraining.setClassIndex(numAttrFiltered - 1);
-        this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
+            var numAttrFiltered = this.featureSelectedTraining.numAttributes();
+            this.featureSelectedTraining.setClassIndex(numAttrFiltered - 1);
+            this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
+        }catch (Exception e){
+            throw new WalkStepFilterException("Error creating features selectioned datasets");
+        }
 
     }
 
