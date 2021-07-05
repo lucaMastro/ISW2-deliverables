@@ -1,25 +1,22 @@
 
-#logic.weka.WalkStep#getNegatives()Ii
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaR R("1*´
-1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaS S(¶
-³
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaS S(
-%0weka.core.Instances"__id*%*#
-logic.weka.WalkStep"
-
-trainingËÈ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaS S(+	
-%1int"#weka.core.Instances#numInstances()I*
-
-%0weka.core.Instances2numInstances()ÇÄ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaS. S(A	
-%2int"#logic.weka.WalkStep#getPositives()I*
-logic.weka.WalkStep2getPositives()"s
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaS S(B
-""B
-logic.weka.WalkStep
+elogic.weka.FilterCreator#sensitiveLearningClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaL# L(>"1*š
+1n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaM M(š
+—
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaM2 M(?
+%0java.lang.Boolean"__id*
+""Ý
+Ú
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaM M(@3
+%1-weka.classifiers.meta.CostSensitiveClassifier"zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;*
+logic.weka.FilterCreator*
+
+%0java.lang.Boolean"§
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaM M(A5
+3
+%1-weka.classifiers.meta.CostSensitiveClassifierB
+logic.weka.FilterCreator

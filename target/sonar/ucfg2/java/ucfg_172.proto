@@ -1,14 +1,17 @@
 
-6view.ProportionFxmlController$1#call()Ljava/lang/Void;s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java$ $("1*Í
-1s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java% %(ÓÐ
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java% %(%
+4logic.enums.SamplingType#getType()Ljava/lang/String;n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/SamplingType.java ("1*À
+1n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/SamplingType.java$ ((½
+º
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/SamplingType.java$ (1
+%0java.lang.String"__id***(
+logic.enums.SamplingType"
 
-%0void"7logic.boundary.ProportionAnalisysBoundary#runUseCase()V*
-""2runUseCase()"}
-s
-i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java& &(
-""B#!
-view.ProportionFxmlController$1
+sampling"Š
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/SamplingType.java (2
+
+%0java.lang.StringB
+logic.enums.SamplingType

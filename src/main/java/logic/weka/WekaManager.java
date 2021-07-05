@@ -7,10 +7,7 @@ import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.lazy.IBk;
-import weka.classifiers.meta.FilteredClassifier;
 import weka.classifiers.trees.RandomForest;
-import weka.filters.supervised.instance.Resample;
-import weka.filters.supervised.instance.SpreadSubsample;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -63,7 +60,6 @@ public class WekaManager {
             case UNDERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    //var filtered = this.getUnderSaplingClassifier();
                     var filtered = FilterCreator.getInstance().getUnderSaplingClassifier();
                     filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
@@ -72,7 +68,6 @@ public class WekaManager {
             case OVERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    //var filtered = this.getOverSaplingClassifier(currentStep);
                     var filtered = FilterCreator.getInstance().getOverSaplingClassifier(currentStep);;
                     filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);

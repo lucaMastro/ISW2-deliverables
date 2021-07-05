@@ -1,21 +1,26 @@
 
-Blogic.dataset_manager.ProportionDataset#getFiles()Ljava/util/List;
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaé é(%"1*ª
+rlogic.dataset_manager.ProportionDataset#getReleaseFromItsIndex(Ljava/lang/Integer;)Llogic/dataset_manager/Release;
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaÎ Î()"1*Ô
 1
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(Ú
-Ô
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaÏ Ï(‡
+›
 
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è(.
-%0(logic.dataset_manager.ReleaseFileManager"__id*6*4)
-'logic.dataset_manager.ProportionDataset"
-files£†
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaÏ Ï(
+%0java.util.ArrayList"__id*9*7)
+'logic.dataset_manager.ProportionDataset"
+
+releases⁄
+◊
 
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è('
-%1java.util.List"Flogic.dataset_manager.ReleaseFileManager#getFileList()Ljava/util/List;*0
-.
-%0(logic.dataset_manager.ReleaseFileManager2getFileList()"ô
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaÏ Ï(2#
+%1logic.dataset_manager.Release"
+__arrayGet*
+
+%0java.util.ArrayList*
+"""®
 
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaè è((
-
-%1java.util.ListB+)
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaÏ Ï(3%
+#
+%1logic.dataset_manager.Release:!
+releaseIndexjava.lang.IntegerB+)
 'logic.dataset_manager.ProportionDataset

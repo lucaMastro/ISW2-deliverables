@@ -1,16 +1,16 @@
 
-@logic.bean.JiraBeanInformations#getOpeningDate()Ljava/util/Date;u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaE E("1*€
+Ilogic.bean.JiraBeanInformations#getAffectedVersionsName()Ljava/util/List;u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java0 0(/"1*Ó
 1u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaF F(Ã
-…
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java1 1(#⁄
+◊
 u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaF F(
-%0java.util.Date"__id*4*2!
-logic.bean.JiraBeanInformations"
-openingDate"è
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java1 1(#
+%0java.util.ArrayList"__id*=*;!
+logic.bean.JiraBeanInformations"
+affectedVersionsName"î
 u
-k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaF F(
-
-%0java.util.DateB#!
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java1 1($
+
+%0java.util.ArrayListB#!
 logic.bean.JiraBeanInformations

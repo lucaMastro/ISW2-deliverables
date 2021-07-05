@@ -1,45 +1,55 @@
 
-[logic.weka.WalkStep#getTestingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaA A(""3*À
-2i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaC C(Ä
-Á
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaC C(.
-%2weka.core.Instances"__id*3*1
-logic.weka.WalkStep"
-featureSelectedTesting"ˆ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaC C(/
-
-%2weka.core.Instances*¼
-3i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaB B(¥
-¢
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaB B(6'
-%0!logic.enums.FeaturesSelectionType"__id*
-""›˜
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaB B(7
-%1boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*)
-'
-fs!logic.enums.FeaturesSelectionType*)
-'
-%0!logic.enums.FeaturesSelectionType2equals(Ljava/lang/Object;)*
-2
-1*±
-1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaE E(µ
-²
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaE E(
-%3weka.core.Instances"__id*$*"
-logic.weka.WalkStep"	
-testing"ˆ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaE E( 
-
-%3weka.core.Instances:'
-fs!logic.enums.FeaturesSelectionTypeB
-logic.weka.WalkStep
+zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java=$ =(A"1*‡
+1n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java? ?(þ
+û
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java? ?(0!
+%0weka.classifiers.CostMatrix"Hlogic.weka.FilterCreator#createCostMatrix()Lweka/classifiers/CostMatrix;*
+logic.weka.FilterCreatorÉ
+Æ
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java? ?(1)
+
+costMatrixweka.classifiers.CostMatrix"__id*#
+!
+%0weka.classifiers.CostMatrix×Ô
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java@& @(=3
+%1-weka.classifiers.meta.CostSensitiveClassifier"-weka.classifiers.meta.CostSensitiveClassifieré
+æ
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java@" @(?
+%2"7weka.classifiers.meta.CostSensitiveClassifier#<init>()V*5
+3
+%1-weka.classifiers.meta.CostSensitiveClassifierö
+ó
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java@ @(@D
+sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier"__id*5
+3
+%1-weka.classifiers.meta.CostSensitiveClassifierÿü
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaA A(5
+
+%3void"[weka.classifiers.meta.CostSensitiveClassifier#setCostMatrix(Lweka/classifiers/CostMatrix;)V*F
+D
+sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier*+
+)
+
+costMatrixweka.classifiers.CostMatrix2,setCostMatrix(Lweka/classifiers/CostMatrix;)ÈÅ
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaC C(6
+
+%4void"Iweka.classifiers.meta.CostSensitiveClassifier#setMinimizeExpectedCost(Z)V*F
+D
+sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier*
+
+bjava.lang.Boolean2setMinimizeExpectedCost(Z)"¸
+n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaE E(#F
+D
+sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier:
+bjava.lang.BooleanB
+logic.weka.FilterCreator
