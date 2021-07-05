@@ -1,15 +1,16 @@
 
-?logic.dataset_manager.ProcessControlChartEntry#getCommitsNum()IÑ
-z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java$ $("1*é
+Hlogic.dataset_manager.ProcessControlChartEntry#getDate()Ljava/util/Date;Ñ
+z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java ("1*ì
 1Ñ
-z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java% %(Ô
-Ï
+z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java (‰
+·
 Ñ
-z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java% %( 
-%0java.lang.Integer"__id*D*B0
-.logic.dataset_manager.ProcessControlChartEntry"
-totalCommits"è
+z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java (
+%0java.util.Date"__id*<*:0
+.logic.dataset_manager.ProcessControlChartEntry"
+date"ü
 Ñ
-z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java% %(!
-""B20
+z/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java (
+
+%0java.util.DateB20
 .logic.dataset_manager.ProcessControlChartEntry

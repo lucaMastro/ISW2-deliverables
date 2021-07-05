@@ -1,16 +1,16 @@
 
-9logic.abstracts.AbstractBean#getDirectory()Ljava/io/File;r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java ("1*É
-1r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (Â
-¿
-r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (
-%0java.io.File"__id*/*-
-logic.abstracts.AbstractBean"
-	directory"Š
-r
-h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (
-
-%0java.io.FileB 
-logic.abstracts.AbstractBean
+;logic.dataset_manager.ReleaseFile#getDate()Ljava/util/Date;y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaÍ Í("1*ê
+1y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaÎ Î(Ó
+Ð
+y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaÎ Î( 
+%0java.util.Date"__id*7*5#
+!logic.dataset_manager.ReleaseFile"
+additionDate"“
+y
+m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.javaÎ Î(!
+
+%0java.util.DateB%#
+!logic.dataset_manager.ReleaseFile
