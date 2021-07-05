@@ -10,7 +10,6 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java
-/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifier.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/controller/ProcessControlChartController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/UnexistingFileException.java
@@ -21,7 +20,6 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/proportion_algo/ProportionIncrement.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/SceneSwitcher.java
-/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/FeaturesSelection.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/HomePageFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/CloneRepositoryBoundary.java
@@ -33,6 +31,7 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/FeaturesSelectionType.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/InvalidRangeException.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/WekaAnalisysBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/Main.java
@@ -41,6 +40,7 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/NotAvaiableAlgorithm.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/WekaAnalisysFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartEntry.java

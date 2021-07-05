@@ -63,19 +63,18 @@ public class WekaManager {
             case UNDERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var newInstance = this.classifiers.get(i).getClass().getDeclaredConstructor().newInstance();
-                    var filtered = this.getUnderSaplingClassifier();
-                    filtered.setClassifier(newInstance);
+                    //var filtered = this.getUnderSaplingClassifier();
+                    var filtered = FilterCreator.getInstance().getUnderSaplingClassifier();
+                    filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
                 }
                 break;
             case OVERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    // create a new instance of a classifier
-                    var newInstance = this.classifiers.get(i).getClass().getDeclaredConstructor().newInstance();
-                    var filtered = this.getOverSaplingClassifier(currentStep);
-                    filtered.setClassifier(newInstance);
+                    //var filtered = this.getOverSaplingClassifier(currentStep);
+                    var filtered = FilterCreator.getInstance().getOverSaplingClassifier(currentStep);;
+                    filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
                 }
                 break;
@@ -86,44 +85,29 @@ public class WekaManager {
         }
     }
 
-    private FilteredClassifier getOverSaplingClassifier(WalkStep currentStep) throws Exception {
-        var classifier = new FilteredClassifier();
-
-        var positive = currentStep.getPositives();
-        var negative = currentStep.getNegatives();
-        var minor = Math.min(positive, negative);
-        var p = Math.abs(positive - negative) * 100 / minor;
-
-        var resample = new Resample();
-        //no decimal position
-        String[] opts = new String[]{ "-B", "1.0", "-Z", String.valueOf(Integer.valueOf(p))};
-        resample.setOptions(opts);
-        classifier.setFilter(resample);
-
-        return classifier;
-    }
-
-    private FilteredClassifier getUnderSaplingClassifier() throws Exception {
-        //initialization of filteredClassifier for undersampling
-        var classifier = new FilteredClassifier();
-        var ss = new SpreadSubsample();
-        String[] opts = new String[]{ "-M", "1.0"};
-        ss.setOptions(opts);
-        classifier.setFilter(ss);
-
-        return classifier;
-    }
-
-
     public void applyCostSensitive(CostSensitiveClassifierType csc){
-        /*switch (csc){
+        /*  this method is invoked after applySampling method. This means that this.classifier may contain
+        *   FilteredClassifier, sampled. Just setting them as classifier for a CostSensitiveClassifier */
+
+        int i;
+        switch (csc){
             case SENSITIVE_THRESHOLD:
+                for (i = 0; i < this.classifiers.size(); i++) {
+                    var costSensitiveClassifier = FilterCreator.getInstance().sensitiveThresholdClassifier();
+                    costSensitiveClassifier.setClassifier(this.classifiers.get(i));
+                    this.classifiers.set(i, costSensitiveClassifier);
+                }
                 break;
             case SENSITIVE_LEARNING:
+                for (i = 0; i < this.classifiers.size(); i++) {
+                    var costSensitiveClassifier = FilterCreator.getInstance().sensitiveLearningClassifier();
+                    costSensitiveClassifier.setClassifier(this.classifiers.get(i));
+                    this.classifiers.set(i, costSensitiveClassifier);
+                }
                 break;
             default:
                 break;
-        }*/
+        }
     }
 
 
@@ -137,7 +121,7 @@ public class WekaManager {
             To apply sampling, it's needed the training set: in fact, for oversampling and smoote, it needs the
              percentage that should be used in the filter.  */
 
-        int i = 0;
+        int i;
         for (i = 0; i < this.getNumOfRelease() - 1; i++) {
             var trainingDataset = this.steps.get(i).getTrainingSet(fs);
             var testingDataset = this.steps.get(i).getTestingSet(fs);
