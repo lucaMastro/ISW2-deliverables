@@ -1,24 +1,9 @@
 
-=logic.enums.FeaturesSelectionType#getType()Ljava/lang/String;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/FeaturesSelectionType.java
- 
-("1*í
-1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/FeaturesSelectionType.java
-$ 
-((Ø
-Õ
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/FeaturesSelectionType.java
-$ 
-(:
-%0java.lang.String"__id*<*:#
-!logic.enums.FeaturesSelectionType"
-featuresSelection"“
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/FeaturesSelectionType.java
- 
-(;
-
-%0java.lang.StringB%#
-!logic.enums.FeaturesSelectionType
+2logic.weka.WekaStepOutput#getTrainingPercentage()Do
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaStepOutput.java ('"1*ï
+1o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaStepOutput.java (!"y
+o
+e/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaStepOutput.java ("
+""B
+logic.weka.WekaStepOutput

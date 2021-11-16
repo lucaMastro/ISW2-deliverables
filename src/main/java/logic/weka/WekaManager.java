@@ -146,8 +146,7 @@ public class WekaManager {
             this.applySampling(st, this.steps.get(i));
             this.applyCostSensitive(csc);
 
-            //now i need to train the classifiers
-            //for (Classifier c : this.classifiers) {
+            //now i need to train the classifier
             int j;
             for (j = 0; j < this.classifiers.size(); j++) {
                 var c = this.classifiers.get(j);

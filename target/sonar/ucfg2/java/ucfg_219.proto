@@ -1,107 +1,243 @@
 
-clogic.dataset_manager.RetrieveInformations#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaG G(,"7*©
-2Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaK K(,"†
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaK K(,
+Mlogic.dataset_manager.ProcessControlChartDataset#toString()Ljava/lang/String;à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaß ß("6*È
+2à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java© ©(+’
+“
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java© ©(+7
+entry.logic.dataset_manager.ProcessControlChartEntry"__id*
+""¯
+ı
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java© ©(+7
+entry.logic.dataset_manager.ProcessControlChartEntry"
+__arrayGet*
 
-%9org.json.JSONObject*â
-3Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaJ J(*ƒ
-¡
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaJ J(*
-jsonTextjava.lang.String"__id*
-
-%8java.lang.String∂≥
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaK K(!
-%9org.json.JSONObject"org.json.JSONObject˚
-¯
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaK K(+
-%10"/org.json.JSONObject#<init>(Ljava/lang/String;)V*
-
-%9org.json.JSONObject*
-
-jsonTextjava.lang.String*
-2*°
-4Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI I([ 
-«
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI I([
-rdjava.io.BufferedReader"__id*
-
-%6java.io.BufferedReader∆
-√
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaJ J()
-%8java.lang.String"Vlogic.dataset_manager.RetrieveInformations#readAll(Ljava/io/Reader;)Ljava/lang/String;*.",
-*logic.dataset_manager.RetrieveInformations*
-
-rdjava.io.BufferedReader*
-3*Œ
-5Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI I([ºπ
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI I((
-%6java.io.BufferedReader"java.io.BufferedReaderÅ
-˛
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI I([
-%7"0java.io.BufferedReader#<init>(Ljava/io/Reader;)V*
-
-%6java.io.BufferedReader*!
+%2java.util.ArrayList*
+""*
+4
+1*Ô;
+3à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java´: ´(CÃ…
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java´) ´(9 
+%5java.text.SimpleDateFormat"java.text.SimpleDateFormat˝
+˙
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java´% ´(D
+%6"6java.text.SimpleDateFormat#<init>(Ljava/lang/String;)V*"
+ 
+%5java.text.SimpleDateFormat*	
+yyyy-MMŸ
+÷
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java´ ´(E
+patternjava.text.DateFormat"__id*"
+ 
+%5java.text.SimpleDateFormatÔ
+Ï
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨* ¨(4
+%7java.util.Date"__id*C*A
+7
+entry.logic.dataset_manager.ProcessControlChartEntry"
+dateºπ
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ¨(5
+%8java.lang.String"?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;*!
 
-%4java.io.InputStreamReader*
-4*Ã
-6Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI? I(A¥
-±
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaIC I(Y
-%3java.nio.charset.Charset"__id*
-""¬ø
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI- I(>
-%4java.io.InputStreamReader"java.io.InputStreamReader¬
-ø
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaI) I(Z
-%5"Rjava.io.InputStreamReader#<init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V*!
-
-%4java.io.InputStreamReader*
-
-isjava.io.InputStream* 
+patternjava.text.DateFormat*
+
+%7java.util.Date2format(Ljava/util/Date;)“œ
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ¨(6
+%9java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
 
-%3java.nio.charset.Charset*
-5*ﬂ
-7Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaH! H($®•
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaH H( 
-%0java.net.URL"java.net.URLÁ
-‰
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaH H(%
-%1"(java.net.URL#<init>(Ljava/lang/String;)V*
-
-%0java.net.URL*
+bldjava.lang.StringBuilder*
+
+%8java.lang.String2append(Ljava/lang/String;)øº
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ¨(B
+%10java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+%9java.lang.StringBuilder*
+,2append(Ljava/lang/String;)¯
+ı
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java≠  ≠(/
+%11java.lang.Integer"__id*H*F
+7
+entry.logic.dataset_manager.ProcessControlChartEntry"
+	fixedBugsˇ¸
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java≠  ≠(:
+%12java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%11java.lang.Integer2
+toString()‘—
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ≠(;
+%13java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%10java.lang.StringBuilder*
 
-urljava.lang.StringıÚ
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaH H(2
-%2java.io.InputStream".java.net.URL#openStream()Ljava/io/InputStream;*
-
-%0java.net.URL2openStream()ƒ
-¡
-Ä
-v/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.javaH H(3
-isjava.io.InputStream"__id*
-
-%2java.io.InputStream*
-6:
-urljava.lang.StringB.",
-*logic.dataset_manager.RetrieveInformations
+%12java.lang.String2append(Ljava/lang/String;)¿Ω
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ≠(G
+%14java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%13java.lang.StringBuilder*
+,2append(Ljava/lang/String;)˚
+¯
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaÆ  Æ(2
+%15java.lang.Integer"__id*K*I
+7
+entry.logic.dataset_manager.ProcessControlChartEntry"
+totalCommits’“
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ Æ(3
+%16java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/Object;)Ljava/lang/StringBuilder;* 
+
+%14java.lang.StringBuilder*
+
+%15java.lang.Integer2append(Ljava/lang/Object;)¿Ω
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ Æ(?
+%17java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%16java.lang.StringBuilder*
+,2append(Ljava/lang/String;)Ì
+Í
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaØ  Ø()
+%18java.lang.Double"__id*>*<2
+0logic.dataset_manager.ProcessControlChartDataset"
+mean˝˙
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaØ  Ø(4
+%19java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
+
+%18java.lang.Double2
+toString()‘—
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ Ø(5
+%20java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%17java.lang.StringBuilder*
+
+%19java.lang.String2append(Ljava/lang/String;)¿Ω
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ Ø(A
+%21java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%20java.lang.StringBuilder*
+,2append(Ljava/lang/String;)˙
+˜
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java∞  ∞(6
+%22java.lang.Double"__id*K*I2
+0logic.dataset_manager.ProcessControlChartDataset"
+upperControlLimit˝˙
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java∞  ∞(A
+%23java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
+
+%22java.lang.Double2
+toString()‘—
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ∞(B
+%24java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%21java.lang.StringBuilder*
+
+%23java.lang.String2append(Ljava/lang/String;)¿Ω
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ∞(N
+%25java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%24java.lang.StringBuilder*
+,2append(Ljava/lang/String;)˙
+˜
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java±  ±(6
+%26java.lang.Double"__id*K*I2
+0logic.dataset_manager.ProcessControlChartDataset"
+lowerControlLimit˝˙
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java±  ±(A
+%27java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
+
+%26java.lang.Double2
+toString()‘—
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ±(B
+%28java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%25java.lang.StringBuilder*
+
+%27java.lang.String2append(Ljava/lang/String;)¡æ
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¨ ±(O
+%29java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%28java.lang.StringBuilder*
+\n2append(Ljava/lang/String;)*
+2*¥
+4à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java™ ™(¶£
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java™ ™(%	
+%3int"?logic.dataset_manager.ProcessControlChartEntry#getCommitsNum()I*9
+7
+entry.logic.dataset_manager.ProcessControlChartEntry2getCommitsNum()Ú
+Ô
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java™) ™(7
+%4java.lang.Integer"__id*C*A2
+0logic.dataset_manager.ProcessControlChartDataset"
+	threshold*
+2
+3*á
+5à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java©. ©(2Ò
+Ó
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java©. ©(9
+%2java.util.ArrayList"__id*@*>2
+0logic.dataset_manager.ProcessControlChartDataset"
+months*
+2*
+6à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java®$ ®(o∆√
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java® ®(#
+%0java.lang.StringBuilder"java.lang.StringBuilderπ
+∂
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java® ®(p
+%1"3java.lang.StringBuilder#<init>(Ljava/lang/String;)V*
+
+%0java.lang.StringBuilder*MK
+Idate,fixedCommits,totalCommits,mean,upperControlLimit,lowerControlLimit\n’
+“
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java® ®(q
+bldjava.lang.StringBuilder"__id*
+
+%0java.lang.StringBuilder*
+5*≈
+1à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¥ ¥(ãà
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¥ ¥(
+%30java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;* 
+
+bldjava.lang.StringBuilder2
+toString()"¶
+à
+|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.java¥ ¥(
+
+%30java.lang.StringB42
+0logic.dataset_manager.ProcessControlChartDataset

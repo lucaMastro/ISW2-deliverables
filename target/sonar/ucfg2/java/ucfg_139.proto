@@ -1,16 +1,16 @@
 
-Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ( "1*ã
-1v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (Ð
-Í
-v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
-%0java.lang.String"__id*5*3"
- logic.abstracts.AbstractBoundary"
-projectName"’
-v
-l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
-
-%0java.lang.StringB$"
- logic.abstracts.AbstractBoundary
+=logic.bean.ProcessChartBean#getThreshold()Ljava/lang/Integer;q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java ("1*Ï
+1q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (Å
+Â
+q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (
+%0java.lang.Integer"__id*.*,
+logic.bean.ProcessChartBean"
+	threshold"Ž
+q
+g/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/ProcessChartBean.java (
+
+%0java.lang.IntegerB
+logic.bean.ProcessChartBean

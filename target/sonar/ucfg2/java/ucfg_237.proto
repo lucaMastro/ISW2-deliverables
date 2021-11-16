@@ -1,16 +1,16 @@
 
-+logic.bean.WekaBean#getArff()Ljava/io/File;i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java4 4("1*†
-1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java5 5(´
-®
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java5 5(
-%0java.io.File"__id*!*
-logic.bean.WekaBean"
-arff"Å
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java5 5(
-
-%0java.io.FileB
-logic.bean.WekaBean
+Tlogic.bean.JiraBeanInformations#getTrulyFixedVersion()Llogic/dataset_manager/Commit;u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java5 5(&"1*ˇ
+1u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java6 6( ·
+ﬁ
+u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java6 6( #
+%0logic.dataset_manager.Release"__id*:*8!
+logic.bean.JiraBeanInformations"
+trulyFixedVersion"û
+u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.java6 6(!%
+#
+%0logic.dataset_manager.ReleaseB#!
+logic.bean.JiraBeanInformations

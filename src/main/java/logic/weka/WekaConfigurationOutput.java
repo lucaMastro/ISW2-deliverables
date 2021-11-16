@@ -3,7 +3,6 @@ package logic.weka;
 import logic.enums.CostSensitiveClassifierType;
 import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
-import weka.classifiers.Evaluation;
 import java.util.ArrayList;
 import java.util.List;
 

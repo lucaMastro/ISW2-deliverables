@@ -1,20 +1,20 @@
 
 )logic.weka.WekaManager#getNumOfRelease()Il
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java1 1("1*­
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java4 4("1*°
 1l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java2 2(Î
-Ë
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java5 5(Ï
+Ì
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java2 2( '
-%0!logic.weka.WalkForwardSetsManager"__id*,**
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java5 5( (
+%0"logic.weka.WalkForwardFilesManager"__id*,**
 logic.weka.WekaManager"
-filesManagerðí
+filesManageròï
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java2 2(2	
-%1int"4logic.weka.WalkForwardSetsManager#getNumOfRelease()I*)
-'
-%0!logic.weka.WalkForwardSetsManager2getNumOfRelease()"v
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java5 5(2	
+%1int"5logic.weka.WalkForwardFilesManager#getNumOfRelease()I**
+(
+%0"logic.weka.WalkForwardFilesManager2getNumOfRelease()"v
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java2 2(3
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java5 5(3
 ""B
 logic.weka.WekaManager

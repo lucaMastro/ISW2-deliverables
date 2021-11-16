@@ -1,16 +1,16 @@
 
-Clogic.enums.CostSensitiveClassifierType#getType()Ljava/lang/String;}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java ("1*‹
-1}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java$ ((ê
-ç
-}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java$ (@
-%0java.lang.String"__id*H*F)
-'logic.enums.CostSensitiveClassifierType"
-costSensitiveClassifier"™
-}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java (A
+Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java ( "1*ã
+1v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (Ð
+Í
+v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
+%0java.lang.String"__id*5*3"
+ logic.abstracts.AbstractBoundary"
+projectName"’
+v
+l/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java (
 
-%0java.lang.StringB+)
-'logic.enums.CostSensitiveClassifierType
+%0java.lang.StringB$"
+ logic.abstracts.AbstractBoundary
