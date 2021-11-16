@@ -8,19 +8,11 @@ import weka.filters.supervised.instance.SpreadSubsample;
 
 public class FilterCreator {
 
-    private static FilterCreator instance = null;
-
-    public static FilterCreator getInstance(){
-        if (FilterCreator.instance == null)
-            FilterCreator.instance = new FilterCreator();
-        return FilterCreator.instance;
-    }
-
     public FilteredClassifier getOverSaplingClassifier(WalkStep currentStep) throws Exception {
         var classifier = new FilteredClassifier();
 
-        var positive = currentStep.getPositives();
-        var negative = currentStep.getNegatives();
+        var positive = currentStep.getPositivesTraining();
+        var negative = currentStep.getNegativesTraining();
         var minor = Math.min(positive, negative);
         var p = Math.abs(positive - negative) * 100 / minor;
 

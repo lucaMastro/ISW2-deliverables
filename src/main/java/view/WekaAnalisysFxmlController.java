@@ -45,7 +45,7 @@ public class WekaAnalisysFxmlController extends BasicPageFxmlController {
         this.job = new Task<Void>() {
             @Override
             protected Void call() throws Exception {
-                boundary.runAnalisys();
+                boundary.runAnalysis();
                 return null;
             }
         };

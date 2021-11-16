@@ -2,7 +2,7 @@ package logic.boundary;
 
 import logic.bean.WekaBean;
 import logic.controller.WekaController;
-import logic.weka.WalkForwardSetsManager;
+import logic.weka.WalkForwardFilesManager;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -25,14 +25,15 @@ public class WekaAnalisysBoundary {
         this.csvOutputFile = csvOut;
     }
 
-    public void runAnalisys() throws IOException {
+    public void runAnalysis() throws IOException {
         WekaBean bean = null;
         try {
             bean = new WekaBean(this.csvInputFile, this.csvOutputFile, this.arfOutputFile);
             var controller = new WekaController();
             controller.run(bean);
         }catch (Exception e){
-            var logger = Logger.getLogger(WalkForwardSetsManager.class.getName());
+            e.printStackTrace();
+            var logger = Logger.getLogger(WalkForwardFilesManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
         finally {
@@ -44,9 +45,9 @@ public class WekaAnalisysBoundary {
     public static void main(String[] args) throws Exception {
 
         var boundary = new WekaAnalisysBoundary("/home/luca/Scrivania/bookkeeperGUI.csv",
-                "/home/luca/Scrivania/wekaOutput2.csv",
+                "/home/luca/Scrivania/wekaOutput22.csv",
                 "/home/luca/Scrivania/bookkeeperARFF.arff");
-        boundary.runAnalisys();
+        boundary.runAnalysis();
 
     }
 }

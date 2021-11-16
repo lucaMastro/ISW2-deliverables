@@ -4089,7 +4089,9 @@ Csearch(Lweka/attributeSelection/ASEvaluation;Lweka/core/Instances;)gweka.attri
 listOptions()Fweka.attributeSelection.BestFirst#listOptions()Ljava/util/Enumeration;R
 getStartSet()Aweka.attributeSelection.BestFirst#getStartSet()Ljava/lang/String;S
 getSearchTermination()9weka.attributeSelection.BestFirst#getSearchTermination()Ie
-setStartSet(Ljava/lang/String;)Bweka.attributeSelection.BestFirst#setStartSet(Ljava/lang/String;)VºH
+setStartSet(Ljava/lang/String;)Bweka.attributeSelection.BestFirst#setStartSet(Ljava/lang/String;)V¡
+'logic.exception.WalkStepFilterExceptionjava.lang.Exceptiona
+<init>(Ljava/lang/String;)Clogic.exception.WalkStepFilterException#<init>(Ljava/lang/String;)VºH
 javafx.fxml.FXMLLoaderjava.lang.ObjectR
 setRoot(Ljava/lang/Object;)3javafx.fxml.FXMLLoader#setRoot(Ljava/lang/Object;)VP
 equals(Ljava/lang/Object;)2javafx.fxml.FXMLLoader#equals(Ljava/lang/Object;)Z`

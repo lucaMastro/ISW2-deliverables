@@ -19,6 +19,7 @@ import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
 import logic.weka.WekaConfigurationOutput;
 import logic.weka.WekaManager;
+import logic.weka.WekaStepOutput;
 import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Evaluation;
 import java.io.File;
@@ -59,39 +60,72 @@ public class WekaController {
         double recall;
         double auc;
         double kappa;
+        double tp;
+        double fp;
+        double tn;
+        double fn;
 
         var names = new String[]{"RandomForest", "NaiveBayes", "Ibk"};
-        var legendLine = "Dataset,#TrainingRelease,Classifier,Precision,Recall,AUC,Kappa\n";
-
+        var legendLine = new StringBuilder("Dataset,");
+        legendLine.append("#TrainingRelease,")
+                .append("%Training (data on training / total data),")
+                .append("%Defective in training,")
+                .append("%Defective in testing,")
+                .append("Classifier,")
+                .append("Balancing,")
+                .append("Feature Selection,")
+                .append("Sensitivity,")
+                .append("TP,")
+                .append("FP,")
+                .append("TN,")
+                .append("FN,")
+                .append("Precision,")
+                .append("Recall,")
+                .append("AUC,")
+                .append("Kappa\n").toString();
 
         try (var fw = new FileWriter(outputCSV)) {
-
+            fw.append(legendLine);
             for (WekaConfigurationOutput output : list) {
                 var currIndexRelease = 0; //should be incremented
-                var currNameIndex = 0;
-                fw.append(output.getTitle());
-                fw.append(legendLine);
-                var bld = new StringBuilder();
 
-                for (Evaluation e : output.getEvaluations()) {
-                    precision = DoubleRounder.round(e.precision(0), 3);
-                    recall = DoubleRounder.round(e.recall(0), 3);
-                    auc = DoubleRounder.round(e.areaUnderROC(0), 3);
-                    kappa = DoubleRounder.round(e.kappa(), 3);
+                for (WekaStepOutput wekaStepOutput : output.getStepEvaluations()) {
+                    var currNameIndex = 0;
+                    for (Evaluation e : wekaStepOutput.getEvaluationsArray()) {
+                        var bld = new StringBuilder();
+                        precision = DoubleRounder.round(e.precision(0), 3);
+                        recall = DoubleRounder.round(e.recall(0), 3);
+                        auc = DoubleRounder.round(e.areaUnderROC(0), 3);
+                        kappa = DoubleRounder.round(e.kappa(), 3);
 
-                    bld.append(datasetName).append(",")
-                            .append(currIndexRelease + 1).append(",")
-                            .append(names[currNameIndex]).append(",")
-                            .append(precision).append(",")
-                            .append(recall).append(",")
-                            .append(auc).append(",")
-                            .append(kappa).append("\n");
+                        tp = DoubleRounder.round(e.truePositiveRate(0), 3);
+                        fp = DoubleRounder.round(e.falsePositiveRate(0), 3);
+                        tn = DoubleRounder.round(e.trueNegativeRate(0), 3);
+                        fn = DoubleRounder.round(e.falseNegativeRate(0), 3);
 
-                    currNameIndex = (currNameIndex + 1) % 3;
-                    if (currNameIndex == 0)
-                        currIndexRelease = (currIndexRelease + 1) % numOfRelease;
+                        bld.append(datasetName).append(",") //Dataset
+                                .append(currIndexRelease + 1).append(",") // #TrainingRelease
+                                .append(wekaStepOutput.getTrainingPercentage()).append(",") //train %
+                                .append(wekaStepOutput.getDefectiveInTrainingPercentage()).append(",") // defects in train
+                                .append(wekaStepOutput.getDefectiveInTestingPercentage()).append(",") // defects in test
+                                .append(names[currNameIndex]).append(",") // Classifier
+                                .append(output.getSamplingType()).append(",") // Sampling
+                                .append(output.getFeaturesSelection()).append(",") // Features
+                                .append(output.getCostSensitiveClassifier()).append(",") // Cost sens. class
+                                .append(tp).append(",") // TP
+                                .append(fp).append(",") // FP
+                                .append(tn).append(",") // TN
+                                .append(fn).append(",") // FN
+                                .append(precision).append(",") //Precision
+                                .append(recall).append(",") //Recall
+                                .append(auc).append(",") // AUC
+                                .append(kappa).append("\n"); // Kappa
+
+                        currNameIndex++;
+                        fw.append(bld.toString());
+                    }
+                    currIndexRelease = (currIndexRelease + 1) % numOfRelease;
                 }
-                fw.append(bld.toString());
             }
         } catch (IOException e) {
             var logger = Logger.getLogger(WekaController.class.getName());

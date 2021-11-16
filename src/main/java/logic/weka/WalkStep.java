@@ -75,7 +75,7 @@ public class WalkStep {
             return this.testing;
     }
 
-    public int getPositives() {
+    public int getPositivesTraining() {
         var count = 0;
         for (Instance instance : this.training){
             var curr = instance.toString(this.training.numAttributes() - 1);
@@ -85,7 +85,21 @@ public class WalkStep {
         return count;
     }
 
-    public int getNegatives() {
-        return this.training.numInstances() - this.getPositives();
+    public int getNegativesTraining() {
+        return this.training.numInstances() - this.getPositivesTraining();
+    }
+
+    public int getPositivesTesting() {
+        var count = 0;
+        for (Instance instance : this.testing){
+            var curr = instance.toString(this.testing.numAttributes() - 1);
+            if (curr.equals("Yes"))
+                count++;
+        }
+        return count;
+    }
+
+    public int getNegativesTesting() {
+        return this.testing.numInstances() - this.getPositivesTesting();
     }
 }

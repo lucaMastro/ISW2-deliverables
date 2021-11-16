@@ -28,32 +28,31 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class WalkForwardSetsManager {
+public class WalkForwardFilesManager {
 
     private File basicArff;
     private int numOfRelease;
-    private Instances data;
+    private Instances totalData;
 
-    private ArrayList<Attribute> attributes;
     private ArrayList<Instance> testingInstances;
     private File testingSet;
     private File trainingSet;
 
     /* *******************************************************************************************************/
 
-    public WalkForwardSetsManager(File csvFile, File arffFile, File training, File testing) throws IOException {
+    public WalkForwardFilesManager(File csvFile, File arffFile, File training, File testing) throws IOException {
         var loader = new CSVLoader();
         loader.setSource(csvFile);
-        this.data = loader.getDataSet();//get instances object
+        this.totalData = loader.getDataSet();//get instances object
         //removing name's column
-        this.data.deleteAttributeAt(1);
+        this.totalData.deleteAttributeAt(1);
 
         this.convert(arffFile);
-        this.numOfRelease = this.data.numDistinctValues(0);
+        this.numOfRelease = this.totalData.numDistinctValues(0);
 
         this.testingSet = testing;
         this.trainingSet = training;
-        this.initializeAttributes();
+        this.getAttributesList();
     }
 
 
@@ -61,7 +60,7 @@ public class WalkForwardSetsManager {
     private void convert(File arffOutputFile) throws IOException {
 
         var saver = new ArffSaver();
-        saver.setInstances(this.data);//set the dataset we want to convert
+        saver.setInstances(this.totalData);//set the dataset we want to convert
 
         //save as arff
         this.basicArff = arffOutputFile;
@@ -70,7 +69,7 @@ public class WalkForwardSetsManager {
         saver.writeBatch();
 
         //this is the case when the header of "Buggy" attribute starts with "No" instead of "Yes"
-        if (this.data.attribute(10).value(0).equals("No")){
+        if (this.totalData.attribute(10).value(0).equals("No")){
             //have to change this line
             this.changeLine();
         }
@@ -101,7 +100,7 @@ public class WalkForwardSetsManager {
             fileContent = buffer.toString();
 
         } catch (IOException e) {
-            var logger = Logger.getLogger(WalkForwardSetsManager.class.getName());
+            var logger = Logger.getLogger(WalkForwardFilesManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
 
@@ -109,18 +108,19 @@ public class WalkForwardSetsManager {
             fw.append(fileContent);
             fw.flush();
         } catch (IOException e) {
-            var logger = Logger.getLogger(WalkForwardSetsManager.class.getName());
+            var logger = Logger.getLogger(WalkForwardFilesManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }
 
     /* *******************************************************************************************************/
 
-    private void initializeAttributes(){
-        this.attributes = new ArrayList<>();
+    private ArrayList<Attribute> getAttributesList(){
+        var attributes = new ArrayList<Attribute>();
         int i;
-        for (i = 0; i < this.data.numAttributes(); i++)
-            this.attributes.add(this.data.attribute(i));
+        for (i = 0; i < this.totalData.numAttributes(); i++)
+            attributes.add(this.totalData.attribute(i));
+        return attributes;
     }
 
     private void computeTestingSet(int indexRelease){
@@ -129,10 +129,10 @@ public class WalkForwardSetsManager {
 
         // re-initialize the list
         this.testingInstances = new ArrayList<>();
-        for (i = 0; i < this.data.numInstances(); i++){
-            currIndex = (int) this.data.instance(i).value(0);
+        for (i = 0; i < this.totalData.numInstances(); i++){
+            currIndex = (int) this.totalData.instance(i).value(0);
             if (currIndex == indexRelease)
-                testingInstances.add(this.data.instance(i));
+                testingInstances.add(this.totalData.instance(i));
             else if (currIndex > indexRelease)
                 break;
         }
@@ -142,9 +142,10 @@ public class WalkForwardSetsManager {
     private void writeHeader(PrintWriter pf) {
         //just write the attributes in the given file. f is either this.testingSet or this.trainingSet
 
-        pf.append("@relation " + this.data.relationName() + "\n\n");
+        pf.append("@relation " + this.totalData.relationName() + "\n\n");
         pf.flush();
-        for (Attribute line : this.attributes){
+        var attributes = this.getAttributesList();
+        for (Attribute line : attributes){
             pf.append(line.toString() + "\n");
             pf.flush();
         }
@@ -162,7 +163,7 @@ public class WalkForwardSetsManager {
                 fp.flush();
             }
         } catch (IOException e) {
-            var logger = Logger.getLogger(WalkForwardSetsManager.class.getName());
+            var logger = Logger.getLogger(WalkForwardFilesManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }
@@ -180,10 +181,10 @@ public class WalkForwardSetsManager {
                 fp.print("");
                 fp.flush();
                 this.writeHeader(fp);
-                for (i = 0; i < this.data.numInstances(); i++) {
-                    if ( (int) this.data.instance(i).value(0) > indexRelease)
+                for (i = 0; i < this.totalData.numInstances(); i++) {
+                    if ( (int) this.totalData.instance(i).value(0) > indexRelease)
                         break;
-                    fp.append(this.data.instance(i).toString() + "\n");
+                    fp.append(this.totalData.instance(i).toString() + "\n");
                     fp.flush();
                 }
             }
@@ -195,7 +196,7 @@ public class WalkForwardSetsManager {
                 }
             }
         } catch (IOException e) {
-            var logger = Logger.getLogger(WalkForwardSetsManager.class.getName());
+            var logger = Logger.getLogger(WalkForwardFilesManager.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }
     }
@@ -210,10 +211,14 @@ public class WalkForwardSetsManager {
     }
 
     public int getNumberOfAttributes() {
-        return this.data.numAttributes();
+        return this.totalData.numAttributes();
     }
 
     public String getDatasetName() {
-        return this.data.relationName();
+        return this.totalData.relationName();
+    }
+
+    public int getTotalDataLen() {
+        return totalData.numInstances();
     }
 }
