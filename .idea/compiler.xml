@@ -9,8 +9,5 @@
         <module name="code" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="deliverable2" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

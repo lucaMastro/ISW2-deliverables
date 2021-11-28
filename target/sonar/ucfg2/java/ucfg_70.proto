@@ -1,0 +1,46 @@
+
+\logic.weka.WalkStep#getTrainingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java] ](#"3*Á
+2i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java_ _(Å
+Â
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java_ _(/
+%2weka.core.Instances"__id*4*2
+logic.weka.WalkStep"
+featureSelectedTraining"ˆ
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java_ _(0
+
+%2weka.core.Instances*¼
+3i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java^ ^(¥
+¢
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java^ ^(6'
+%0!logic.enums.FeaturesSelectionType"__id*
+""›˜
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java^ ^(7
+%1boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*)
+'
+fs!logic.enums.FeaturesSelectionType*)
+'
+%0!logic.enums.FeaturesSelectionType2equals(Ljava/lang/Object;)*
+2
+1*²
+1i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaa a(¶
+³
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaa a( 
+%3weka.core.Instances"__id*%*#
+logic.weka.WalkStep"
+
+training"ˆ
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaa a(!
+
+%3weka.core.Instances:'
+fs!logic.enums.FeaturesSelectionTypeB
+logic.weka.WalkStep

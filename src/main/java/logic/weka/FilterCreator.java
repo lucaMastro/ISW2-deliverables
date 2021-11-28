@@ -37,7 +37,7 @@ public class FilterCreator {
         return classifier;
     }
 
-    public FilteredClassifier getSMOTEClassifier() throws Exception {
+    public FilteredClassifier getSMOTEClassifier() {
         var classifier = new FilteredClassifier();
         var smote = new SMOTE();
         classifier.setFilter(smote);

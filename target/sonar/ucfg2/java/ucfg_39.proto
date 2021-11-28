@@ -1,0 +1,20 @@
+
+)logic.weka.WekaManager#getTotalDataLen()In
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java¾ ¾("1*‚
+1n
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java¿ ¿(¿
+¼
+n
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java¿ ¿(
+%0weka.core.Instances"__id*)*'
+logic.weka.WekaManager"
+	totalDataÐÍ
+n
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java¿ ¿(,	
+%1int"#weka.core.Instances#numInstances()I*
+
+%0weka.core.Instances2numInstances()"x
+n
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java¿ ¿(-
+""B
+logic.weka.WekaManager

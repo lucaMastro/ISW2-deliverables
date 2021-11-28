@@ -5,6 +5,7 @@ import logic.bean.WekaStepOutputBean;
 import logic.enums.CostSensitiveClassifierType;
 import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
+import logic.exception.WalkStepFilterException;
 import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
@@ -13,7 +14,6 @@ import weka.classifiers.lazy.IBk;
 import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
-import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 
 import java.io.File;
@@ -28,7 +28,7 @@ public class WekaManager {
     private int numOfRelease;
     private Instances totalData;
 
-    public WekaManager(File input, File arff) throws Exception {
+    public WekaManager(File input, File arff) throws IOException, WalkStepFilterException {
         this.steps = new ArrayList<>();
         this.filterCreator = new FilterCreator();
 

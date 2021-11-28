@@ -31,7 +31,6 @@ public class WekaAnalysisBoundary {
             var controller = new WekaController();
             controller.run(bean);
         }catch (Exception e){
-            e.printStackTrace();
             var logger = Logger.getLogger(WekaAnalysisBoundary.class.getName());
             logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
         }

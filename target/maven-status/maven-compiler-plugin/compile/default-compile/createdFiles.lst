@@ -15,7 +15,6 @@ logic/weka/WekaManager$1.class
 logic/enums/SamplingType.class
 view/BasicPageFxmlController.class
 logic/weka/WalkStep.class
-logic/weka/WalkForwardFilesManager.class
 logic/dataset_manager/RetrieveInformations.class
 logic/bean/WekaBean.class
 logic/exception/InvalidInputException.class
@@ -31,7 +30,6 @@ view/ProportionFxmlController$1.class
 logic/weka/FilterCreator.class
 logic/exception/UnexistingFileException.class
 logic/controller/ProcessControlChartController.class
-logic/boundary/WekaAnalisysBoundary.class
 logic/proportion_algo/ProportionIncrement.class
 logic/bean/CloneRepositoryBean.class
 logic/boundary/CloneRepositoryBoundary.class

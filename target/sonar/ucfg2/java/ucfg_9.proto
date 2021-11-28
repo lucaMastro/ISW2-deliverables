@@ -1,0 +1,62 @@
+
+[logic.dataset_manager.Commit#isFixCommit(Ljava/util/List;)Llogic/dataset_manager/BugTicket;r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java) )( "6*„
+2r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java- -(­
+ª
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java- -(&
+buglogic.dataset_manager.BugTicket"__id*
+""Ò
+Ï
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java- -(&
+buglogic.dataset_manager.BugTicket"
+__arrayGet*
+
+	fixedBugsjava.util.List*
+""*
+4
+1*Ì
+3r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java/ /(Í
+Ê
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java/ /($
+blogic.dataset_manager.BugTicket"__id*(
+&
+buglogic.dataset_manager.BugTicket*
+1*ò
+4r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java. .(×
+Ô
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java. .(#
+%0java.util.ArrayList"__id*=*;
+&
+buglogic.dataset_manager.BugTicket"
+relativeCommits–“
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java. .(2
+%1boolean"1java.util.ArrayList#contains(Ljava/lang/Object;)Z*
+
+%0java.util.ArrayList* 
+logic.dataset_manager.Commit2contains(Ljava/lang/Object;)*
+2
+3*ª
+6r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java, ,(«
+¨
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java, ,($
+blogic.dataset_manager.BugTicket"__id*
+""*
+2*–
+1r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java3 3("œ
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Commit.java3 3(&
+$
+blogic.dataset_manager.BugTicket:
+	fixedBugsjava.util.ListB 
+logic.dataset_manager.Commit

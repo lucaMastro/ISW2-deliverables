@@ -1,0 +1,69 @@
+
+qlogic.dataset_manager.Release#findFromName(Ljava/lang/String;Ljava/util/List;)Llogic/dataset_manager/ReleaseFile;s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java ($"6*ƒ
+2s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java   (®
+«
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java   (&
+r!logic.dataset_manager.ReleaseFile"__id*
+""Ï
+Ì
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java   (&
+r!logic.dataset_manager.ReleaseFile"
+__arrayGet*
+
+filesjava.util.List*
+""*
+4
+1*Ú
+3s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java" "(Ú
+×
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java" "(0
+releaseFile!logic.dataset_manager.ReleaseFile"__id*(
+&
+r!logic.dataset_manager.ReleaseFile*
+1*ü
+4s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java! !(ÌÉ
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java! !("
+%0java.lang.Boolean"Slogic.dataset_manager.ReleaseFile#isThisFile(Ljava/lang/String;)Ljava/lang/Boolean;*(
+&
+r!logic.dataset_manager.ReleaseFile*
+
+namejava.lang.String2isThisFile(Ljava/lang/String;)Ÿ
+œ
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java!* !(6
+%1java.lang.Boolean"__id*
+""ˆ…
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java! !(7
+%2boolean"-java.lang.Boolean#equals(Ljava/lang/Object;)Z*
+
+%0java.lang.Boolean*
+
+%1java.lang.Boolean2equals(Ljava/lang/Object;)*
+2
+3*¸
+6s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java" (&¸
+µ
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java ('0
+releaseFile!logic.dataset_manager.ReleaseFile"__id*
+""*
+2*¤
+1s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java& &("©
+s
+i/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/Release.java& &(2
+0
+releaseFile!logic.dataset_manager.ReleaseFile:
+namejava.lang.String:
+filesjava.util.ListB!
+logic.dataset_manager.Release

@@ -1,0 +1,21 @@
+
+9logic.weka.WekaManager#getDatasetName()Ljava/lang/String;l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaN N( "1*«
+1l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaO O(½
+º
+l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaO O(
+%0weka.core.Instances"__id*)*'
+logic.weka.WekaManager"
+	totalDataìé
+l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaO O(,
+%1java.lang.String"4weka.core.Instances#relationName()Ljava/lang/String;*
+
+%0weka.core.Instances2relationName()"ˆ
+l
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.javaO O(-
+
+%1java.lang.StringB
+logic.weka.WekaManager
