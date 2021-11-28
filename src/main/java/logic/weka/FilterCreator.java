@@ -4,6 +4,7 @@ import weka.classifiers.CostMatrix;
 import weka.classifiers.meta.CostSensitiveClassifier;
 import weka.classifiers.meta.FilteredClassifier;
 import weka.filters.supervised.instance.Resample;
+import weka.filters.supervised.instance.SMOTE;
 import weka.filters.supervised.instance.SpreadSubsample;
 
 public class FilterCreator {
@@ -33,6 +34,13 @@ public class FilterCreator {
         ss.setOptions(opts);
         classifier.setFilter(ss);
 
+        return classifier;
+    }
+
+    public FilteredClassifier getSMOTEClassifier() throws Exception {
+        var classifier = new FilteredClassifier();
+        var smote = new SMOTE();
+        classifier.setFilter(smote);
         return classifier;
     }
 

@@ -1,25 +1,12 @@
-
-/*
- *  How to use WEKA API in Java
- *  Copyright (C) 2014
- *  @author Dr Noureddin M. Sadawi (noureddin.sadawi@gmail.com)
- *
- *  This program is free software: you can redistribute it and/or modify
- *  it as you wish ...
- *  I ask you only, as a professional courtesy, to cite my name, web page
- *  and my YouTube Channel!
- *
- */
-
 package logic.controller;
 
 import logic.bean.WekaBean;
 import logic.enums.CostSensitiveClassifierType;
 import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
-import logic.weka.WekaConfigurationOutput;
+import logic.bean.WekaConfigurationOutputBean;
 import logic.weka.WekaManager;
-import logic.weka.WekaStepOutput;
+import logic.bean.WekaStepOutputBean;
 import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Evaluation;
 import java.io.File;
@@ -35,13 +22,9 @@ import java.util.logging.Logger;
 public class WekaController {
 
     public void run(WekaBean bean) throws Exception {
-
-        var wekaManager = new WekaManager(bean.getInput(),
-                bean.getArff(),
-                bean.getTraining(),
-                bean.getTesting() );
-
-        var list = new ArrayList<WekaConfigurationOutput>();
+        var wekaManager = new WekaManager(bean.getInputCSV(),
+                bean.getArff());
+        var list = new ArrayList<WekaConfigurationOutputBean>();
 
         for (FeaturesSelectionType fs : FeaturesSelectionType.values()){
             for (CostSensitiveClassifierType csc : CostSensitiveClassifierType.values()){
@@ -55,7 +38,7 @@ public class WekaController {
     }
 
 
-    private void writeFile(List<WekaConfigurationOutput> list, File outputCSV, String datasetName, int numOfRelease) {
+    private void writeFile(List<WekaConfigurationOutputBean> list, File outputCSV, String datasetName, int numOfRelease) {
         double precision;
         double recall;
         double auc;
@@ -86,10 +69,10 @@ public class WekaController {
 
         try (var fw = new FileWriter(outputCSV)) {
             fw.append(legendLine);
-            for (WekaConfigurationOutput output : list) {
+            for (WekaConfigurationOutputBean output : list) {
                 var currIndexRelease = 0; //should be incremented
 
-                for (WekaStepOutput wekaStepOutput : output.getStepEvaluations()) {
+                for (WekaStepOutputBean wekaStepOutput : output.getStepEvaluations()) {
                     var currNameIndex = 0;
                     for (Evaluation e : wekaStepOutput.getEvaluationsArray()) {
                         var bld = new StringBuilder();

@@ -1,21 +1,0 @@
-
-Elogic.weka.WalkForwardFilesManager#getDatasetName()Ljava/lang/String;z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÙ Ù( "1*ï
-1z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÚ Ú(×
-Ô
-z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÚ Ú(
-%0weka.core.Instances"__id*5*3$
-"logic.weka.WalkForwardFilesManager"
-	totalDataú÷
-z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÚ Ú(,
-%1java.lang.String"4weka.core.Instances#relationName()Ljava/lang/String;*
-
-%0weka.core.Instances2relationName()"–
-z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÚ Ú(-
-
-%1java.lang.StringB&$
-"logic.weka.WalkForwardFilesManager

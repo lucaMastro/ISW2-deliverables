@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
-import logic.boundary.WekaAnalisysBoundary;
+import logic.boundary.WekaAnalysisBoundary;
 
 public class WekaAnalisysFxmlController extends BasicPageFxmlController {
 
@@ -38,7 +38,7 @@ public class WekaAnalisysFxmlController extends BasicPageFxmlController {
     @Override
     protected void submitButtonSelected(ActionEvent actionEvent) {
         this.changeEditability();
-        var boundary = new WekaAnalisysBoundary(this.inputFileLabel.getText(),
+        var boundary = new WekaAnalysisBoundary(this.inputFileLabel.getText(),
                 this.outputFileLabel.getText(),
                 this.arffFileLabel.getText());
 

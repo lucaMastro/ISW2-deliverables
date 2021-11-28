@@ -1,269 +1,0 @@
-
-:logic.weka.WalkStep#<init>(Ljava/io/File;Ljava/io/File;I)Vi
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java ("9*˜
-3i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java9 9(Å
-Â
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java9 9('
-%28weka.core.Instances"__id*3*1
-logic.weka.WalkStep"
-featureSelectedTestingÚ×
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java9 9(J
-%29void"%weka.core.Instances#setClassIndex(I)V*
-
-%28weka.core.Instances*
-""2setClassIndex(I)*
-0*™
-4i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java7 7(OÆ
-Ã
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java8 8((
-%26weka.core.Instances"__id*4*2
-logic.weka.WalkStep"
-featureSelectedTrainingÚ×
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java8 8(K
-%27void"%weka.core.Instances#setClassIndex(I)V*
-
-%26weka.core.Instances*
-""2setClassIndex(I)*
-3*Ö
-5i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java5 5(PÅ
-Â
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java5 5(P1
-logic.weka.WalkStep"
-featureSelectedTesting"__id*
-
-%23weka.core.InstancesÆ
-Ã
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java7" 7(>
-%24weka.core.Instances"__id*4*2
-logic.weka.WalkStep"
-featureSelectedTrainingÏÌ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java7" 7(N
-
-%25int"$weka.core.Instances#numAttributes()I*
-
-%24weka.core.Instances2numAttributes()*
-4*Û
-6i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java4 4(RÆ
-Ã
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java4 4(R2
-logic.weka.WalkStep"
-featureSelectedTraining"__id*
-
-%21weka.core.Instances¶
-³
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java5; 5(G
-%22weka.core.Instances"__id*$*"
-logic.weka.WalkStep"	
-testingã
-à
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java5* 5(P
-%23weka.core.Instances"^weka.filters.Filter#useFilter(Lweka/core/Instances;Lweka/filters/Filter;)Lweka/core/Instances;*"
-weka.filters.Filter*
-
-%22weka.core.Instances*@
->
-filter4weka.filters.supervised.attribute.AttributeSelection*
-5*“
-7i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java4+ 4(1·
-´
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java4< 4(I
-%20weka.core.Instances"__id*%*#
-logic.weka.WalkStep"
-
-trainingã
-à
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java4+ 4(R
-%21weka.core.Instances"^weka.filters.Filter#useFilter(Lweka/core/Instances;Lweka/filters/Filter;)Lweka/core/Instances;*"
-weka.filters.Filter*
-
-%20weka.core.Instances*@
->
-filter4weka.filters.supervised.attribute.AttributeSelection*
-6*ñ
-8i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java2 2(·
-´
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java2" 2(/
-%18weka.core.Instances"__id*%*#
-logic.weka.WalkStep"
-
-trainingÁ¾
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java2 2(0
-%19boolean":weka.filters.Filter#setInputFormat(Lweka/core/Instances;)Z*@
->
-filter4weka.filters.supervised.attribute.AttributeSelection*
-
-%18weka.core.Instances2%setInputFormat(Lweka/core/Instances;)*
-7*ì,
-9i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (%¶³
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (#%
-%0weka.core.converters.ArffLoader"weka.core.converters.ArffLoaderÈ
-Å
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (%
-%1")weka.core.converters.ArffLoader#<init>()V*'
-%
-%0weka.core.converters.ArffLoaderÈ
-Å
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (&)
-loaderweka.core.converters.ArffLoader"__id*'
-%
-%0weka.core.converters.ArffLoaderŸœ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (
-
-%2void"Bweka.core.converters.AbstractFileLoader#setSource(Ljava/io/File;)V*+
-)
-loaderweka.core.converters.ArffLoader*
-
-trainjava.io.File2setSource(Ljava/io/File;)‡„
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (+
-%3weka.core.Instances"Aweka.core.converters.ArffLoader#getDataSet()Lweka/core/Instances;*+
-)
-loaderweka.core.converters.ArffLoader2getDataSet()¶
-³
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (+#
-logic.weka.WalkStep"
-
-training"__id*
-
-%3weka.core.Instancesž›
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (
-
-%4void"Bweka.core.converters.AbstractFileLoader#setSource(Ljava/io/File;)V*+
-)
-loaderweka.core.converters.ArffLoader*
-
-testjava.io.File2setSource(Ljava/io/File;)‡„
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java   (*
-%5weka.core.Instances"Aweka.core.converters.ArffLoader#getDataSet()Lweka/core/Instances;*+
-)
-loaderweka.core.converters.ArffLoader2getDataSet()µ
-²
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java   (*"
-logic.weka.WalkStep"	
-testing"__id*
-
-%5weka.core.Instances¶
-³
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java" "(
-%6weka.core.Instances"__id*%*#
-logic.weka.WalkStep"
-
-trainingØÕ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java" "(0
-
-%7void"%weka.core.Instances#setClassIndex(I)V*
-
-%6weka.core.Instances*
-""2setClassIndex(I)µ
-²
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java# #(
-%8weka.core.Instances"__id*$*"
-logic.weka.WalkStep"	
-testingØÕ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java# #(/
-
-%9void"%weka.core.Instances#setClassIndex(I)V*
-
-%8weka.core.Instances*
-""2setClassIndex(I)áÞ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java' '(+;
-%104weka.filters.supervised.attribute.AttributeSelection"4weka.filters.supervised.attribute.AttributeSelectionô
-ñ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java' '(-
-%11">weka.filters.supervised.attribute.AttributeSelection#<init>()V*=
-;
-%104weka.filters.supervised.attribute.AttributeSelectionó
-ð
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java' '(.>
-filter4weka.filters.supervised.attribute.AttributeSelection"__id*=
-;
-%104weka.filters.supervised.attribute.AttributeSelectionÃÀ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java) )($,
-%12%weka.attributeSelection.CfsSubsetEval"%weka.attributeSelection.CfsSubsetEvalÖ
-Ó
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java) )(&
-%13"/weka.attributeSelection.CfsSubsetEval#<init>()V*.
-,
-%12%weka.attributeSelection.CfsSubsetEvalÓ
-Ð
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java) )('-
-eval%weka.attributeSelection.CfsSubsetEval"__id*.
-,
-%12%weka.attributeSelection.CfsSubsetEval»¸
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java* *("(
-%14!weka.attributeSelection.BestFirst"!weka.attributeSelection.BestFirstÎ
-Ë
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java* *($
-%15"+weka.attributeSelection.BestFirst#<init>()V**
-(
-%14!weka.attributeSelection.BestFirstÍ
-Ê
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java* *(%+
-search!weka.attributeSelection.BestFirst"__id**
-(
-%14!weka.attributeSelection.BestFirst
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java- -(!
-%16void"jweka.filters.supervised.attribute.AttributeSelection#setEvaluator(Lweka/attributeSelection/ASEvaluation;)V*@
->
-filter4weka.filters.supervised.attribute.AttributeSelection*/
--
-eval%weka.attributeSelection.CfsSubsetEval24setEvaluator(Lweka/attributeSelection/ASEvaluation;)€ý
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java. .( 
-%17void"cweka.filters.supervised.attribute.AttributeSelection#setSearch(Lweka/attributeSelection/ASSearch;)V*@
->
-filter4weka.filters.supervised.attribute.AttributeSelection*-
-+
-search!weka.attributeSelection.BestFirst2-setSearch(Lweka/attributeSelection/ASSearch;)*
-8*ˆ
-0 "€
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java> >(
-implicit return:
-trainjava.io.File:
-testjava.io.File:
-""B
-logic.weka.WalkStep

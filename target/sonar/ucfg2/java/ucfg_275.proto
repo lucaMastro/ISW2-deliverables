@@ -1,20 +1,0 @@
-
-;logic.weka.WalkForwardFilesManager#getNumberOfAttributes()Iz
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÕ Õ($"1*Á
-1z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÖ Ö(×
-Ô
-z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÖ Ö(
-%0weka.core.Instances"__id*5*3$
-"logic.weka.WalkForwardFilesManager"
-	totalDataÞÛ
-z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÖ Ö(-	
-%1int"$weka.core.Instances#numAttributes()I*
-
-%0weka.core.Instances2numAttributes()"„
-z
-n/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.javaÖ Ö(.
-""B&$
-"logic.weka.WalkForwardFilesManager

@@ -1,15 +1,20 @@
 package logic.weka;
 
+import logic.bean.WekaConfigurationOutputBean;
+import logic.bean.WekaStepOutputBean;
 import logic.enums.CostSensitiveClassifierType;
 import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
-import logic.exception.WalkStepFilterException;
 import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.lazy.IBk;
 import weka.classifiers.trees.RandomForest;
+import weka.core.Instances;
+import weka.core.converters.ArffLoader;
+import weka.core.converters.ArffSaver;
+import weka.core.converters.CSVLoader;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,28 +23,43 @@ import java.util.ArrayList;
 public class WekaManager {
 
     private ArrayList<WalkStep> steps;
-    private WalkForwardFilesManager filesManager;
-
     private ArrayList<Classifier> classifiers;
     private FilterCreator filterCreator;
+    private int numOfRelease;
+    private Instances totalData;
 
-
-    public WekaManager(File input, File arff, File training, File testing) throws IOException, WalkStepFilterException {
-        this.filesManager = new WalkForwardFilesManager(input, arff, training, testing);
+    public WekaManager(File input, File arff) throws Exception {
         this.steps = new ArrayList<>();
-
         this.filterCreator = new FilterCreator();
 
+        // reading instances
+        var csvInstances = this.readInputCsv(input);
+        // create the arff without replicated data
+        ArffCreator.getInstance().createArff(arff, csvInstances);
+        // writing totalData: we don't want replicated
+        var arffLoader = new ArffLoader();
+        arffLoader.setSource(arff);
+        this.totalData = arffLoader.getDataSet();
+
+        this.numOfRelease = this.totalData.numDistinctValues(0);
         int i;
-        var numRelease = this.filesManager.getNumOfRelease();
+        var numRelease = this.numOfRelease;
         for (i = 1; i < numRelease; i++) {
-            this.filesManager.computeFiles(i);
-            this.steps.add(new WalkStep(training, testing, this.filesManager.getNumberOfAttributes()));
+            this.steps.add(new WalkStep(this.totalData, i));
         }
 
         //classifiers
         this.initializeClassifiers();
 
+    }
+
+    private Instances readInputCsv(File inputCsv) throws IOException {
+        var loader = new CSVLoader();
+        loader.setSource(inputCsv);
+        var csvInstances = loader.getDataSet();//get instances object
+        //removing name's column
+        csvInstances.deleteAttributeAt(1);
+        return csvInstances;
     }
 
     private void initializeClassifiers(){
@@ -49,18 +69,18 @@ public class WekaManager {
         this.classifiers.add(new IBk());
     }
 
+    // *********************************************************************
+
     public int getNumOfRelease() {
-        return this.filesManager.getNumOfRelease();
+        return this.totalData.numDistinctValues(0);
     }
 
     public String getDatasetName() {
-        return this.filesManager.getDatasetName();
+        return this.totalData.relationName();
     }
 
     public void applySampling(SamplingType st, WalkStep currentStep) throws Exception {
         int i;
-        //re-initialize cassifiers
-        this.initializeClassifiers();
         switch (st){
             case UNDERSAMPLING:
                 // just replace the classifiers with a filtered classifier
@@ -78,8 +98,13 @@ public class WekaManager {
                     this.classifiers.set(i, filtered);
                 }
                 break;
-          /*  case SMOTE:
-                break;*/
+            case SMOTE:
+                for (i = 0; i < this.classifiers.size(); i++) {
+                    var filtered = this.filterCreator.getSMOTEClassifier();
+                    filtered.setClassifier(this.classifiers.get(i));
+                    this.classifiers.set(i, filtered);
+                }
+                break;
             default:
                 break;
         }
@@ -111,21 +136,21 @@ public class WekaManager {
     }
 
 
-    public WekaConfigurationOutput computeMetrics(FeaturesSelectionType fs, CostSensitiveClassifierType csc,
-                                            SamplingType st) throws Exception {
+    public WekaConfigurationOutputBean computeMetrics(FeaturesSelectionType fs, CostSensitiveClassifierType csc,
+                                                      SamplingType st) throws Exception {
 
         var totalDataLen = this.getTotalDataLen();
-        var output = new WekaConfigurationOutput(fs, st, csc);
+        var output = new WekaConfigurationOutputBean(fs, st, csc);
 
         /*  feature selection is applied in walkStep: it keeps a train and a test for both cases: none and features
             selection best first.
             To apply sampling, it's needed the training set: in fact, for oversampling and smoote, it needs the
-             percentage that should be used in the filter.  */
+            percentage that shls ould be used in the filter.  */
 
         int i;
         for (i = 0; i < this.getNumOfRelease() - 1; i++) {
 
-            var stepOutput = new WekaStepOutput(this.classifiers.size());
+            var stepOutput = new WekaStepOutputBean(this.classifiers.size());
 
             var step = this.steps.get(i);
             var trainingDataset = step.getTrainingSet(fs);
@@ -143,6 +168,8 @@ public class WekaManager {
             percentage = (double) testDefectNum / (testDefectNum + step.getNegativesTesting());
             stepOutput.setDefectiveInTestingPercentage(DoubleRounder.round(percentage, 3));
 
+            //re-initialize cassifiers
+            this.initializeClassifiers();
             this.applySampling(st, this.steps.get(i));
             this.applyCostSensitive(csc);
 
@@ -153,15 +180,14 @@ public class WekaManager {
                 c.buildClassifier(trainingDataset);
                 var currEvaluation = new Evaluation(testingDataset);
                 currEvaluation.evaluateModel(c, testingDataset);
-
                 stepOutput.setEvaluation(currEvaluation, j);
+                output.appendStepEvaluation(stepOutput);
             }
-            output.appendStepEvaluation(stepOutput);
         }
         return output;
     }
 
     private int getTotalDataLen(){
-        return this.filesManager.getTotalDataLen();
+        return this.totalData.numInstances();
     }
 }

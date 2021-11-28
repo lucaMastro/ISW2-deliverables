@@ -1,5 +1,4 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/controller/ProportionController.java
-/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaConfigurationOutput.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/BasicPageFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/controller/CloneRepositoryController.java
@@ -22,7 +21,7 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/NotAvaiableAlgorithm.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/ProportionAnalisysBoundary.java
-/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaStepOutput.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java
@@ -42,6 +41,7 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/SamplingType.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartAndProportionFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/BugTicket.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaStepOutputBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/Main.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java
