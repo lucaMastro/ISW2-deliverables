@@ -28,7 +28,7 @@ public class WekaManager {
     private int numOfRelease;
     private Instances totalData;
 
-    public WekaManager(File input, File arff) throws IOException, WalkStepFilterException {
+    public WekaManager(File input, File arff) throws Exception {
         this.steps = new ArrayList<>();
         this.filterCreator = new FilterCreator();
 
