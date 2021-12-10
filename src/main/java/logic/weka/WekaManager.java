@@ -5,7 +5,6 @@ import logic.bean.WekaStepOutputBean;
 import logic.enums.CostSensitiveClassifierType;
 import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
-import logic.exception.WalkStepFilterException;
 import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;

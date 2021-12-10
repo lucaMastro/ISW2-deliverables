@@ -2560,9 +2560,8 @@ vcomputeMetrics(Llogic/enums/FeaturesSelectionType;Llogic/enums/CostSensitiveCla
 sensitiveLearningClassifier()elogic.weka.FilterCreator#sensitiveLearningClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;•
 /getOverSaplingClassifier(Llogic/weka/WalkStep;)rlogic.weka.FilterCreator#getOverSaplingClassifier(Llogic/weka/WalkStep;)Lweka/classifiers/meta/FilteredClassifier;}
 getUnderSaplingClassifier()^logic.weka.FilterCreator#getUnderSaplingClassifier()Lweka/classifiers/meta/FilteredClassifier;∞
-2createCostSensitiveClassifier(Ljava/lang/Boolean;)zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;ı
-logic.weka.ArffCreatorjava.lang.ObjectP
-changeLine(Ljava/io/File;)2logic.weka.ArffCreator#changeLine(Ljava/io/File;)V,
+2createCostSensitiveClassifier(Ljava/lang/Boolean;)zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;£
+logic.weka.ArffCreatorjava.lang.Object,
 <init>() logic.weka.ArffCreator#<init>()Vz
 /createArff(Ljava/io/File;Lweka/core/Instances;)Glogic.weka.ArffCreator#createArff(Ljava/io/File;Lweka/core/Instances;)VM
 getInstance()<logic.weka.ArffCreator#getInstance()Llogic/weka/ArffCreator;7
@@ -5084,7 +5083,101 @@ $findFileFromName(Ljava/lang/String;)plogic.dataset_manager.ReleaseFileManager#
 ;<init>(Llogic/dataset_manager/JgitManager;Ljava/util/List;)elogic.dataset_manager.ReleaseFileManager#<init>(Llogic/dataset_manager/JgitManager;Ljava/util/List;)V“
 logic.bean.ProcessChartBeanlogic.abstracts.AbstractBeanO
 getThreshold()=logic.bean.ProcessChartBean#getThreshold()Ljava/lang/Integer;√
-Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)nlogic.bean.ProcessChartBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V_
+Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)nlogic.bean.ProcessChartBean#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V–*
+weka.core.Attributeweka.core.Copyableweka.core.RevisionHandlerjava.lang.Objectjava.io.SerializableM
+equals(Ljava/lang/Object;)/weka.core.Attribute#equals(Ljava/lang/Object;)Z+
+	delete(I)weka.core.Attribute#delete(I)VS
+setValue(ILjava/lang/String;)2weka.core.Attribute#setValue(ILjava/lang/String;)VQ
+addValue(Ljava/lang/String;)1weka.core.Attribute#addValue(Ljava/lang/String;)V]
+"addStringValue(Ljava/lang/String;)7weka.core.Attribute#addStringValue(Ljava/lang/String;)I'
+index()weka.core.Attribute#index()I/
+numValues() weka.core.Attribute#numValues()Iz
+(typeToStringShort(Lweka/core/Attribute;)Nweka.core.Attribute#typeToStringShort(Lweka/core/Attribute;)Ljava/lang/String;H
+typeToString(I)5weka.core.Attribute#typeToString(I)Ljava/lang/String;K
+main([Ljava/lang/String;).weka.core.Attribute#main([Ljava/lang/String;)VS
+parseDate(Ljava/lang/String;)2weka.core.Attribute#parseDate(Ljava/lang/String;)Dµ
+N<init>(Ljava/lang/String;Lweka/core/Instances;Lweka/core/ProtectedProperties;)cweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/Instances;Lweka/core/ProtectedProperties;)VQ
+getMetadata()@weka.core.Attribute#getMetadata()Lweka/core/ProtectedProperties;d
+equalsMsg(Ljava/lang/Object;)Cweka.core.Attribute#equalsMsg(Ljava/lang/Object;)Ljava/lang/String;]
+"setStringValue(Ljava/lang/String;)7weka.core.Attribute#setStringValue(Ljava/lang/String;)VH
+getDateFormat()5weka.core.Attribute#getDateFormat()Ljava/lang/String;A
+
+relation()3weka.core.Attribute#relation()Lweka/core/Instances;/
+isNumeric() weka.core.Attribute#isNumeric()Z[
+!forceAddValue(Ljava/lang/String;)6weka.core.Attribute#forceAddValue(Ljava/lang/String;)VD
+formatDate(D)3weka.core.Attribute#formatDate(D)Ljava/lang/String;>
+
+toString()0weka.core.Attribute#toString()Ljava/lang/String;)
+isDate()weka.core.Attribute#isDate()Zo
++<init>(Ljava/lang/String;Ljava/util/List;I)@weka.core.Attribute#<init>(Ljava/lang/String;Ljava/util/List;I)V-
+
+isString()weka.core.Attribute#isString()ZK
+lowerNumericBoundIsOpen().weka.core.Attribute#lowerNumericBoundIsOpen()ZK
+upperNumericBoundIsOpen().weka.core.Attribute#upperNumericBoundIsOpen()Z5
+isAveragable()#weka.core.Attribute#isAveragable()Zs
+-<init>(Ljava/lang/String;Ljava/lang/String;I)Bweka.core.Attribute#<init>(Ljava/lang/String;Ljava/lang/String;I)VE
+getUpperNumericBound()+weka.core.Attribute#getUpperNumericBound()DO
+<init>(Ljava/lang/String;Z)0weka.core.Attribute#<init>(Ljava/lang/String;Z)VO
+<init>(Ljava/lang/String;I)0weka.core.Attribute#<init>(Ljava/lang/String;I)Vq
+,<init>(Ljava/lang/String;Ljava/lang/String;)Aweka.core.Attribute#<init>(Ljava/lang/String;Ljava/lang/String;)Vã
+9<init>(Ljava/lang/String;Lweka/core/ProtectedProperties;)Nweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/ProtectedProperties;)VY
+ indexOfValue(Ljava/lang/String;)5weka.core.Attribute#indexOfValue(Ljava/lang/String;)I=
+isRelationValued()'weka.core.Attribute#isRelationValued()Z´
+I<init>(Ljava/lang/String;Ljava/util/List;Lweka/core/ProtectedProperties;)^weka.core.Attribute#<init>(Ljava/lang/String;Ljava/util/List;Lweka/core/ProtectedProperties;)V5
+hasZeropoint()#weka.core.Attribute#hasZeropoint()Z]
+"addRelation(Lweka/core/Instances;)7weka.core.Attribute#addRelation(Lweka/core/Instances;)Im
+*<init>(Ljava/lang/String;Ljava/util/List;)?weka.core.Attribute#<init>(Ljava/lang/String;Ljava/util/List;)V-
+
+hashCode()weka.core.Attribute#hashCode()I1
+setWeight(D)!weka.core.Attribute#setWeight(D)VQ
+enumerateValues()<weka.core.Attribute#enumerateValues()Ljava/util/Enumeration;]
+copy(Ljava/lang/String;)Aweka.core.Attribute#copy(Ljava/lang/String;)Lweka/core/Attribute;M
+<init>(Ljava/lang/String;)/weka.core.Attribute#<init>(Ljava/lang/String;)VY
+ setValue(ILweka/core/Instances;)5weka.core.Attribute#setValue(ILweka/core/Instances;)V/
+setIndex(I) weka.core.Attribute#setIndex(I)V1
+isInRange(D)!weka.core.Attribute#isInRange(D)Zç
+:<init>(Ljava/lang/String;ZLweka/core/ProtectedProperties;)Oweka.core.Attribute#<init>(Ljava/lang/String;ZLweka/core/ProtectedProperties;)V/
+isNominal() weka.core.Attribute#isNominal()Z:
+value(I).weka.core.Attribute#value(I)Ljava/lang/String;/
+isRegular() weka.core.Attribute#isRegular()Zw
+/<init>(Ljava/lang/String;Lweka/core/Instances;)Dweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/Instances;)V)
+weight()weka.core.Attribute#weight()D6
+name(),weka.core.Attribute#name()Ljava/lang/String;%
+type()weka.core.Attribute#type()ID
+getRevision()3weka.core.Attribute#getRevision()Ljava/lang/String;-
+
+ordering()weka.core.Attribute#ordering()I6
+copy(),weka.core.Attribute#copy()Ljava/lang/Object;e
+&addStringValue(Lweka/core/Attribute;I);weka.core.Attribute#addStringValue(Lweka/core/Attribute;I)IØ
+K<init>(Ljava/lang/String;Ljava/lang/String;Lweka/core/ProtectedProperties;)`weka.core.Attribute#<init>(Ljava/lang/String;Ljava/lang/String;Lweka/core/ProtectedProperties;)VR
+typeToStringShort(I):weka.core.Attribute#typeToStringShort(I)Ljava/lang/String;y
+0<init>(Ljava/lang/String;Lweka/core/Instances;I)Eweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/Instances;I)VC
+relation(I)4weka.core.Attribute#relation(I)Lweka/core/Instances;E
+getLowerNumericBound()+weka.core.Attribute#getLowerNumericBound()Dp
+#typeToString(Lweka/core/Attribute;)Iweka.core.Attribute#typeToString(Lweka/core/Attribute;)Ljava/lang/String;3
+weka.filters.UnsupervisedFilterjava.lang.Object1
+weka.filters.StreamableFilterjava.lang.Object¸
+.weka.filters.unsupervised.attribute.SwapValuesweka.filters.UnsupervisedFilter#weka.core.WeightedAttributesHandlerweka.core.OptionHandler"weka.core.WeightedInstancesHandlerweka.filters.Filterweka.filters.StreamableFilter^
+getOptions()Nweka.filters.unsupervised.attribute.SwapValues#getOptions()[Ljava/lang/String;w
+secondValueIndexTipText()Zweka.filters.unsupervised.attribute.SwapValues#secondValueIndexTipText()Ljava/lang/String;o
+getSecondValueIndex()Vweka.filters.unsupervised.attribute.SwapValues#getSecondValueIndex()Ljava/lang/String;m
+getCapabilities()Xweka.filters.unsupervised.attribute.SwapValues#getCapabilities()Lweka/core/Capabilities;Ç
+'setSecondValueIndex(Ljava/lang/String;)Wweka.filters.unsupervised.attribute.SwapValues#setSecondValueIndex(Ljava/lang/String;)Vk
+getAttributeIndex()Tweka.filters.unsupervised.attribute.SwapValues#getAttributeIndex()Ljava/lang/String;V
+setOutputFormat()Aweka.filters.unsupervised.attribute.SwapValues#setOutputFormat()Vj
+input(Lweka/core/Instance;)Kweka.filters.unsupervised.attribute.SwapValues#input(Lweka/core/Instance;)Zu
+firstValueIndexTipText()Yweka.filters.unsupervised.attribute.SwapValues#firstValueIndexTipText()Ljava/lang/String;~
+%setAttributeIndex(Ljava/lang/String;)Uweka.filters.unsupervised.attribute.SwapValues#setAttributeIndex(Ljava/lang/String;)V]
+globalInfo()Mweka.filters.unsupervised.attribute.SwapValues#globalInfo()Ljava/lang/String;_
+getRevision()Nweka.filters.unsupervised.attribute.SwapValues#getRevision()Ljava/lang/String;m
+getFirstValueIndex()Uweka.filters.unsupervised.attribute.SwapValues#getFirstValueIndex()Ljava/lang/String;D
+<init>()8weka.filters.unsupervised.attribute.SwapValues#<init>()Vr
+setOptions([Ljava/lang/String;)Oweka.filters.unsupervised.attribute.SwapValues#setOptions([Ljava/lang/String;)VÄ
+&setFirstValueIndex(Ljava/lang/String;)Vweka.filters.unsupervised.attribute.SwapValues#setFirstValueIndex(Ljava/lang/String;)Vf
+main([Ljava/lang/String;)Iweka.filters.unsupervised.attribute.SwapValues#main([Ljava/lang/String;)V~
+%setInputFormat(Lweka/core/Instances;)Uweka.filters.unsupervised.attribute.SwapValues#setInputFormat(Lweka/core/Instances;)Zd
+listOptions()Sweka.filters.unsupervised.attribute.SwapValues#listOptions()Ljava/util/Enumeration;s
+attributeIndexTipText()Xweka.filters.unsupervised.attribute.SwapValues#attributeIndexTipText()Ljava/lang/String;_
 weka.core.converters.Saverweka.core.RevisionHandlerjava.lang.Objectjava.io.Serializableò
 "weka.core.converters.AbstractSaverweka.core.converters.Saverjava.lang.Objectweka.core.CapabilitiesHandlerweka.core.CapabilitiesIgnorerD
 resetOptions()2weka.core.converters.AbstractSaver#resetOptions()VX
@@ -5160,78 +5253,7 @@ $setFileExtension(Ljava/lang/String;)Lweka.core.converters.AbstractFileSaver#se
 listOptions()Cweka.core.converters.ArffSaver#listOptions()Ljava/util/Enumeration;J
 getCompressOutput()3weka.core.converters.ArffSaver#getCompressOutput()Zc
 compressOutputTipText()Hweka.core.converters.ArffSaver#compressOutputTipText()Ljava/lang/String;P
-setMaxDecimalPlaces(I)6weka.core.converters.ArffSaver#setMaxDecimalPlaces(I)V–*
-weka.core.Attributeweka.core.Copyableweka.core.RevisionHandlerjava.lang.Objectjava.io.SerializableM
-equals(Ljava/lang/Object;)/weka.core.Attribute#equals(Ljava/lang/Object;)Z+
-	delete(I)weka.core.Attribute#delete(I)VS
-setValue(ILjava/lang/String;)2weka.core.Attribute#setValue(ILjava/lang/String;)VQ
-addValue(Ljava/lang/String;)1weka.core.Attribute#addValue(Ljava/lang/String;)V]
-"addStringValue(Ljava/lang/String;)7weka.core.Attribute#addStringValue(Ljava/lang/String;)I'
-index()weka.core.Attribute#index()I/
-numValues() weka.core.Attribute#numValues()Iz
-(typeToStringShort(Lweka/core/Attribute;)Nweka.core.Attribute#typeToStringShort(Lweka/core/Attribute;)Ljava/lang/String;H
-typeToString(I)5weka.core.Attribute#typeToString(I)Ljava/lang/String;K
-main([Ljava/lang/String;).weka.core.Attribute#main([Ljava/lang/String;)VS
-parseDate(Ljava/lang/String;)2weka.core.Attribute#parseDate(Ljava/lang/String;)Dµ
-N<init>(Ljava/lang/String;Lweka/core/Instances;Lweka/core/ProtectedProperties;)cweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/Instances;Lweka/core/ProtectedProperties;)VQ
-getMetadata()@weka.core.Attribute#getMetadata()Lweka/core/ProtectedProperties;d
-equalsMsg(Ljava/lang/Object;)Cweka.core.Attribute#equalsMsg(Ljava/lang/Object;)Ljava/lang/String;]
-"setStringValue(Ljava/lang/String;)7weka.core.Attribute#setStringValue(Ljava/lang/String;)VH
-getDateFormat()5weka.core.Attribute#getDateFormat()Ljava/lang/String;A
-
-relation()3weka.core.Attribute#relation()Lweka/core/Instances;/
-isNumeric() weka.core.Attribute#isNumeric()Z[
-!forceAddValue(Ljava/lang/String;)6weka.core.Attribute#forceAddValue(Ljava/lang/String;)VD
-formatDate(D)3weka.core.Attribute#formatDate(D)Ljava/lang/String;>
-
-toString()0weka.core.Attribute#toString()Ljava/lang/String;)
-isDate()weka.core.Attribute#isDate()Zo
-+<init>(Ljava/lang/String;Ljava/util/List;I)@weka.core.Attribute#<init>(Ljava/lang/String;Ljava/util/List;I)V-
-
-isString()weka.core.Attribute#isString()ZK
-lowerNumericBoundIsOpen().weka.core.Attribute#lowerNumericBoundIsOpen()ZK
-upperNumericBoundIsOpen().weka.core.Attribute#upperNumericBoundIsOpen()Z5
-isAveragable()#weka.core.Attribute#isAveragable()Zs
--<init>(Ljava/lang/String;Ljava/lang/String;I)Bweka.core.Attribute#<init>(Ljava/lang/String;Ljava/lang/String;I)VE
-getUpperNumericBound()+weka.core.Attribute#getUpperNumericBound()DO
-<init>(Ljava/lang/String;Z)0weka.core.Attribute#<init>(Ljava/lang/String;Z)VO
-<init>(Ljava/lang/String;I)0weka.core.Attribute#<init>(Ljava/lang/String;I)Vq
-,<init>(Ljava/lang/String;Ljava/lang/String;)Aweka.core.Attribute#<init>(Ljava/lang/String;Ljava/lang/String;)Vã
-9<init>(Ljava/lang/String;Lweka/core/ProtectedProperties;)Nweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/ProtectedProperties;)VY
- indexOfValue(Ljava/lang/String;)5weka.core.Attribute#indexOfValue(Ljava/lang/String;)I=
-isRelationValued()'weka.core.Attribute#isRelationValued()Z´
-I<init>(Ljava/lang/String;Ljava/util/List;Lweka/core/ProtectedProperties;)^weka.core.Attribute#<init>(Ljava/lang/String;Ljava/util/List;Lweka/core/ProtectedProperties;)V5
-hasZeropoint()#weka.core.Attribute#hasZeropoint()Z]
-"addRelation(Lweka/core/Instances;)7weka.core.Attribute#addRelation(Lweka/core/Instances;)Im
-*<init>(Ljava/lang/String;Ljava/util/List;)?weka.core.Attribute#<init>(Ljava/lang/String;Ljava/util/List;)V-
-
-hashCode()weka.core.Attribute#hashCode()I1
-setWeight(D)!weka.core.Attribute#setWeight(D)VQ
-enumerateValues()<weka.core.Attribute#enumerateValues()Ljava/util/Enumeration;]
-copy(Ljava/lang/String;)Aweka.core.Attribute#copy(Ljava/lang/String;)Lweka/core/Attribute;M
-<init>(Ljava/lang/String;)/weka.core.Attribute#<init>(Ljava/lang/String;)VY
- setValue(ILweka/core/Instances;)5weka.core.Attribute#setValue(ILweka/core/Instances;)V/
-setIndex(I) weka.core.Attribute#setIndex(I)V1
-isInRange(D)!weka.core.Attribute#isInRange(D)Zç
-:<init>(Ljava/lang/String;ZLweka/core/ProtectedProperties;)Oweka.core.Attribute#<init>(Ljava/lang/String;ZLweka/core/ProtectedProperties;)V/
-isNominal() weka.core.Attribute#isNominal()Z:
-value(I).weka.core.Attribute#value(I)Ljava/lang/String;/
-isRegular() weka.core.Attribute#isRegular()Zw
-/<init>(Ljava/lang/String;Lweka/core/Instances;)Dweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/Instances;)V)
-weight()weka.core.Attribute#weight()D6
-name(),weka.core.Attribute#name()Ljava/lang/String;%
-type()weka.core.Attribute#type()ID
-getRevision()3weka.core.Attribute#getRevision()Ljava/lang/String;-
-
-ordering()weka.core.Attribute#ordering()I6
-copy(),weka.core.Attribute#copy()Ljava/lang/Object;e
-&addStringValue(Lweka/core/Attribute;I);weka.core.Attribute#addStringValue(Lweka/core/Attribute;I)IØ
-K<init>(Ljava/lang/String;Ljava/lang/String;Lweka/core/ProtectedProperties;)`weka.core.Attribute#<init>(Ljava/lang/String;Ljava/lang/String;Lweka/core/ProtectedProperties;)VR
-typeToStringShort(I):weka.core.Attribute#typeToStringShort(I)Ljava/lang/String;y
-0<init>(Ljava/lang/String;Lweka/core/Instances;I)Eweka.core.Attribute#<init>(Ljava/lang/String;Lweka/core/Instances;I)VC
-relation(I)4weka.core.Attribute#relation(I)Lweka/core/Instances;E
-getLowerNumericBound()+weka.core.Attribute#getLowerNumericBound()Dp
-#typeToString(Lweka/core/Attribute;)Iweka.core.Attribute#typeToString(Lweka/core/Attribute;)Ljava/lang/String;˚
+setMaxDecimalPlaces(I)6weka.core.converters.ArffSaver#setMaxDecimalPlaces(I)V˚
 weka.filters.SimpleFilterweka.filters.Filter-
 reset()"weka.filters.SimpleFilter#reset()V/
 <init>()#weka.filters.SimpleFilter#<init>()Vi
@@ -5252,171 +5274,7 @@ K<init>(Ljava/lang/String;Ljava/lang/String;Lweka/core/ProtectedProperties;)`we
 ,determineOutputFormat(Lweka/core/Instances;)uweka.filters.unsupervised.instance.RemoveDuplicates#determineOutputFormat(Lweka/core/Instances;)Lweka/core/Instances;k
 main([Ljava/lang/String;)Nweka.filters.unsupervised.instance.RemoveDuplicates#main([Ljava/lang/String;)Vr
 getCapabilities()]weka.filters.unsupervised.instance.RemoveDuplicates#getCapabilities()Lweka/core/Capabilities;o
-input(Lweka/core/Instance;)Pweka.filters.unsupervised.instance.RemoveDuplicates#input(Lweka/core/Instance;)Z»
-java.util.Iteratorjava.lang.Objectv
-/forEachRemaining(Ljava/util/function/Consumer;)Cjava.util.Iterator#forEachRemaining(Ljava/util/function/Consumer;)V(
-remove()java.util.Iterator#remove()VäG
-java.util.Scannerjava.util.Iteratorjava.io.Closeablejava.lang.Object-
-saveState()java.util.Scanner#saveState()V)
-	hasNext()java.util.Scanner#hasNext()Z3
-hasNextByte(I)!java.util.Scanner#hasNextByte(I)Z+
-
-throwFor()java.util.Scanner#throwFor()V1
-hasNextLong() java.util.Scanner#hasNextLong()Zg
-skip(Ljava/util/regex/Pattern;)Djava.util.Scanner#skip(Ljava/util/regex/Pattern;)Ljava/util/Scanner;-
-nextFloat()java.util.Scanner#nextFloat()FQ
-<init>(Ljava/io/InputStream;)0java.util.Scanner#<init>(Ljava/io/InputStream;)V1
-hasNextByte() java.util.Scanner#hasNextByte()Z/
-hasNextInt()java.util.Scanner#hasNextInt()ZE
-delimiter()6java.util.Scanner#delimiter()Ljava/util/regex/Pattern;t
-&findWithinHorizon(Ljava/lang/String;I)Jjava.util.Scanner#findWithinHorizon(Ljava/lang/String;I)Ljava/lang/String;u
-/findPatternInBuffer(Ljava/util/regex/Pattern;I)Bjava.util.Scanner#findPatternInBuffer(Ljava/util/regex/Pattern;I)Z3
-useTypeCache()!java.util.Scanner#useTypeCache()VS
-separatorPattern()=java.util.Scanner#separatorPattern()Ljava/util/regex/Pattern;3
-hasNextFloat()!java.util.Scanner#hasNextFloat()Z¢
-<makeReadable(Ljava/nio/file/Path;Ljava/nio/charset/Charset;)bjava.util.Scanner#makeReadable(Ljava/nio/file/Path;Ljava/nio/charset/Charset;)Ljava/lang/Readable;?
-tokens()3java.util.Scanner#tokens()Ljava/util/stream/Stream;1
-hasNextLine() java.util.Scanner#hasNextLine()ZÖ
-7<init>(Ljava/io/File;Ljava/nio/charset/CharsetDecoder;)Jjava.util.Scanner#<init>(Ljava/io/File;Ljava/nio/charset/CharsetDecoder;)V+
-
-nextByte()java.util.Scanner#nextByte()Bj
-toCharset(Ljava/lang/String;)Ijava.util.Scanner#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;r
-%processFloatToken(Ljava/lang/String;)Ijava.util.Scanner#processFloatToken(Ljava/lang/String;)Ljava/lang/String;s
-"findAll(Ljava/util/regex/Pattern;)Mjava.util.Scanner#findAll(Ljava/util/regex/Pattern;)Ljava/util/stream/Stream;+
-
-nextLong()java.util.Scanner#nextLong()JJ
-getCachedResult()5java.util.Scanner#getCachedResult()Ljava/lang/String;q
-toDecoder(Ljava/lang/String;)Pjava.util.Scanner#toDecoder(Ljava/lang/String;)Ljava/nio/charset/CharsetDecoder;E
-ioException()4java.util.Scanner#ioException()Ljava/io/IOException;/
-nextDouble()java.util.Scanner#nextDouble()D4
-next()*java.util.Scanner#next()Ljava/lang/String;C
-<init>(Ljava/io/File;))java.util.Scanner#<init>(Ljava/io/File;)V/
-ensureOpen()java.util.Scanner#ensureOpen()V/
-nextShort(I)java.util.Scanner#nextShort(I)S§
-=makeReadable(Ljava/io/InputStream;Ljava/nio/charset/Charset;)cjava.util.Scanner#makeReadable(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/Readable;O
-decimalPattern();java.util.Scanner#decimalPattern()Ljava/util/regex/Pattern;-
-makeSpace()java.util.Scanner#makeSpace()ZK
-<init>(Ljava/lang/String;)-java.util.Scanner#<init>(Ljava/lang/String;)V7
-hasNextBoolean()#java.util.Scanner#hasNextBoolean()ZÅ
-5<init>(Ljava/lang/Readable;Ljava/util/regex/Pattern;)Hjava.util.Scanner#<init>(Ljava/lang/Readable;Ljava/util/regex/Pattern;)VN
-nextBigInteger(I)9java.util.Scanner#nextBigInteger(I)Ljava/math/BigInteger;%
-close()java.util.Scanner#close()V÷
-VmakeReadable(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/CharsetDecoder;)|java.util.Scanner#makeReadable(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/CharsetDecoder;)Ljava/lang/Readable;Q
-buildFloatAndDecimalPattern()0java.util.Scanner#buildFloatAndDecimalPattern()V-
-nextByte(I)java.util.Scanner#nextByte(I)BX
-next(Ljava/lang/String;)<java.util.Scanner#next(Ljava/lang/String;)Ljava/lang/String;v
-'processIntegerToken(Ljava/lang/String;)Kjava.util.Scanner#processIntegerToken(Ljava/lang/String;)Ljava/lang/String;c
-useLocale(Ljava/util/Locale;)Bjava.util.Scanner#useLocale(Ljava/util/Locale;)Ljava/util/Scanner;1
-clearCaches() java.util.Scanner#clearCaches()V1
-nextBoolean() java.util.Scanner#nextBoolean()Zô
-A<init>(Ljava/nio/channels/ReadableByteChannel;Ljava/lang/String;)Tjava.util.Scanner#<init>(Ljava/nio/channels/ReadableByteChannel;Ljava/lang/String;)V?
-hasNextBigInteger(I)'java.util.Scanner#hasNextBigInteger(I)ZU
-cacheResult(Ljava/lang/String;)2java.util.Scanner#cacheResult(Ljava/lang/String;)VO
-integerPattern();java.util.Scanner#integerPattern()Ljava/util/regex/Pattern;Y
-skip(Ljava/lang/String;)=java.util.Scanner#skip(Ljava/lang/String;)Ljava/util/Scanner;=
-hasNextBigDecimal()&java.util.Scanner#hasNextBigDecimal()Z»
-OmakeReadable(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/Charset;)ujava.util.Scanner#makeReadable(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/Charset;)Ljava/lang/Readable;;
-hasTokenInBuffer()%java.util.Scanner#hasTokenInBuffer()Zé
-3getCompleteTokenInBuffer(Ljava/util/regex/Pattern;)Wjava.util.Scanner#getCompleteTokenInBuffer(Ljava/util/regex/Pattern;)Ljava/lang/String;8
-locale(),java.util.Scanner#locale()Ljava/util/Locale;g
-(<init>(Ljava/io/File;Ljava/lang/String;);java.util.Scanner#<init>(Ljava/io/File;Ljava/lang/String;)V[
-"hasNext(Ljava/util/regex/Pattern;)5java.util.Scanner#hasNext(Ljava/util/regex/Pattern;)ZO
-<init>(Ljava/nio/file/Path;)/java.util.Scanner#<init>(Ljava/nio/file/Path;)VA
-match()6java.util.Scanner#match()Ljava/util/regex/MatchResult;1
-cacheResult() java.util.Scanner#cacheResult()Vr
-%findInLine(Ljava/util/regex/Pattern;)Ijava.util.Scanner#findInLine(Ljava/util/regex/Pattern;)Ljava/lang/String;u
-/<init>(Ljava/io/InputStream;Ljava/lang/String;)Bjava.util.Scanner#<init>(Ljava/io/InputStream;Ljava/lang/String;)V^
-buildIntegerPatternString()?java.util.Scanner#buildIntegerPatternString()Ljava/lang/String;-
-setRadix(I)java.util.Scanner#setRadix(I)Vs
-.<init>(Ljava/nio/file/Path;Ljava/lang/String;)Ajava.util.Scanner#<init>(Ljava/nio/file/Path;Ljava/lang/String;)VÖ
-7<init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Jjava.util.Scanner#<init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Vî
-5makeReadable(Ljava/nio/channels/ReadableByteChannel;)[java.util.Scanner#makeReadable(Ljava/nio/channels/ReadableByteChannel;)Ljava/lang/Readable;-
-readInput()java.util.Scanner#readInput()VL
-nextBigDecimal()8java.util.Scanner#nextBigDecimal()Ljava/math/BigDecimal;<
-
-toString().java.util.Scanner#toString()Ljava/lang/String;f
-next(Ljava/util/regex/Pattern;)Cjava.util.Scanner#next(Ljava/util/regex/Pattern;)Ljava/lang/String;i
- useDelimiter(Ljava/lang/String;)Ejava.util.Scanner#useDelimiter(Ljava/lang/String;)Ljava/util/Scanner;)
-	nextInt()java.util.Scanner#nextInt()Iu
-/matchPatternInBuffer(Ljava/util/regex/Pattern;)Bjava.util.Scanner#matchPatternInBuffer(Ljava/util/regex/Pattern;)ZL
-nextBigInteger()8java.util.Scanner#nextBigInteger()Ljava/math/BigInteger;1
-revertState() java.util.Scanner#revertState()V%
-radix()java.util.Scanner#radix()I5
-hasNextShort(I)"java.util.Scanner#hasNextShort(I)Z1
-hasNextInt(I) java.util.Scanner#hasNextInt(I)Z3
-revertState(Z)!java.util.Scanner#revertState(Z)Ze
-findAll(Ljava/lang/String;)Fjava.util.Scanner#findAll(Ljava/lang/String;)Ljava/util/stream/Stream;-
-nextShort()java.util.Scanner#nextShort()S?
-useRadix(I)0java.util.Scanner#useRadix(I)Ljava/util/Scanner;w
-'useDelimiter(Ljava/util/regex/Pattern;)Ljava.util.Scanner#useDelimiter(Ljava/util/regex/Pattern;)Ljava/util/Scanner;w
-0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Cjava.util.Scanner#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)VK
-floatPattern()9java.util.Scanner#floatPattern()Ljava/util/regex/Pattern;3
-hasNextShort()!java.util.Scanner#hasNextShort()Z<
-
-nextLine().java.util.Scanner#nextLine()Ljava/lang/String;I
-boolPattern()8java.util.Scanner#boolPattern()Ljava/util/regex/Pattern;©
-I<init>(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/Charset;)\java.util.Scanner#<init>(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/Charset;)VG
-translateSavedIndexes(I)+java.util.Scanner#translateSavedIndexes(I)VI
-linePattern()8java.util.Scanner#linePattern()Ljava/util/regex/Pattern;Ç
--findWithinHorizon(Ljava/util/regex/Pattern;I)Qjava.util.Scanner#findWithinHorizon(Ljava/util/regex/Pattern;I)Ljava/lang/String;-
-nextLong(I)java.util.Scanner#nextLong(I)JO
-<init>(Ljava/lang/Readable;)/java.util.Scanner#<init>(Ljava/lang/Readable;)Vu
-/<init>(Ljava/nio/channels/ReadableByteChannel;)Bjava.util.Scanner#<init>(Ljava/nio/channels/ReadableByteChannel;)VÉ
-6<init>(Ljava/nio/file/Path;Ljava/nio/charset/Charset;)Ijava.util.Scanner#<init>(Ljava/nio/file/Path;Ljava/nio/charset/Charset;)Vd
-findInLine(Ljava/lang/String;)Bjava.util.Scanner#findInLine(Ljava/lang/String;)Ljava/lang/String;M
-hasNext(Ljava/lang/String;).java.util.Scanner#hasNext(Ljava/lang/String;)Z'
-remove()java.util.Scanner#remove()V5
-hasNextDouble()"java.util.Scanner#hasNextDouble()Z3
-hasNextLong(I)!java.util.Scanner#hasNextLong(I)Z+
-
-nextInt(I)java.util.Scanner#nextInt(I)I7
-reset(),java.util.Scanner#reset()Ljava/util/Scanner;=
-hasNextBigInteger()&java.util.Scanner#hasNextBigInteger()Zê
-java.lang.Systemjava.lang.Object^
-$identityHashCode(Ljava/lang/Object;)6java.lang.System#identityHashCode(Ljava/lang/Object;)I*
-
-nanoTime()java.lang.System#nanoTime()Jt
-/setSecurityManager(Ljava/lang/SecurityManager;)Ajava.lang.System#setSecurityManager(Ljava/lang/SecurityManager;)Vk
-"mapLibraryName(Ljava/lang/String;)Ejava.lang.System#mapLibraryName(Ljava/lang/String;)Ljava/lang/String;[
-getenv(Ljava/lang/String;)=java.lang.System#getenv(Ljava/lang/String;)Ljava/lang/String;z
-2arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)Djava.lang.System#arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V8
-	console()+java.lang.System#console()Ljava/io/Console;8
-registerNatives()#java.lang.System#registerNatives()VP
-setOut(Ljava/io/PrintStream;)/java.lang.System#setOut(Ljava/io/PrintStream;)VN
-setIn(Ljava/io/InputStream;).java.lang.System#setIn(Ljava/io/InputStream;)Vå
-;logInitException(ZZLjava/lang/String;Ljava/lang/Throwable;)Mjava.lang.System#logInitException(ZZLjava/lang/String;Ljava/lang/Throwable;)VX
-getSecurityManager()@java.lang.System#getSecurityManager()Ljava/lang/SecurityManager;`
-%setProperties(Ljava/util/Properties;)7java.lang.System#setProperties(Ljava/util/Properties;)V<
-setJavaLangAccess()%java.lang.System#setJavaLangAccess()V(
-	checkIO()java.lang.System#checkIO()V&
-<init>()java.lang.System#<init>()VP
-setErr(Ljava/io/PrintStream;)/java.lang.System#setErr(Ljava/io/PrintStream;)Vâ
-1getProperty(Ljava/lang/String;Ljava/lang/String;)Tjava.lang.System#getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;N
-checkKey(Ljava/lang/String;).java.lang.System#checkKey(Ljava/lang/String;)V<
-currentTimeMillis()%java.lang.System#currentTimeMillis()JP
-setIn0(Ljava/io/InputStream;)/java.lang.System#setIn0(Ljava/io/InputStream;)V$
-exit(I)java.lang.System#exit(I)VE
-lineSeparator()2java.lang.System#lineSeparator()Ljava/lang/String;R
-setErr0(Ljava/io/PrintStream;)0java.lang.System#setErr0(Ljava/io/PrintStream;)Ve
-getProperty(Ljava/lang/String;)Bjava.lang.System#getProperty(Ljava/lang/String;)Ljava/lang/String;â
-1setProperty(Ljava/lang/String;Ljava/lang/String;)Tjava.lang.System#setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;2
-initPhase2(ZZ) java.lang.System#initPhase2(ZZ)I8
-runFinalization()#java.lang.System#runFinalization()Vw
-&initProperties(Ljava/util/Properties;)Mjava.lang.System#initProperties(Ljava/util/Properties;)Ljava/util/Properties;T
-inheritedChannel()>java.lang.System#inheritedChannel()Ljava/nio/channels/Channel;ú
-7getLogger(Ljava/lang/String;Ljava/util/ResourceBundle;)ajava.lang.System#getLogger(Ljava/lang/String;Ljava/util/ResourceBundle;)Ljava/lang/System$Logger;
-gc()java.lang.System#gc()V¢
-<newPrintStream(Ljava/io/FileOutputStream;Ljava/lang/String;)bjava.lang.System#newPrintStream(Ljava/io/FileOutputStream;Ljava/lang/String;)Ljava/io/PrintStream;h
-getLogger(Ljava/lang/String;)Gjava.lang.System#getLogger(Ljava/lang/String;)Ljava/lang/System$Logger;v
-0setSecurityManager0(Ljava/lang/SecurityManager;)Bjava.lang.System#setSecurityManager0(Ljava/lang/SecurityManager;)V.
-initPhase1()java.lang.System#initPhase1()Vi
-!clearProperty(Ljava/lang/String;)Djava.lang.System#clearProperty(Ljava/lang/String;)Ljava/lang/String;R
-setOut0(Ljava/io/PrintStream;)0java.lang.System#setOut0(Ljava/io/PrintStream;)V.
-initPhase3()java.lang.System#initPhase3()V4
-getenv()(java.lang.System#getenv()Ljava/util/Map;I
-getProperties()6java.lang.System#getProperties()Ljava/util/Properties;T
-loadLibrary(Ljava/lang/String;)1java.lang.System#loadLibrary(Ljava/lang/String;)VF
-load(Ljava/lang/String;)*java.lang.System#load(Ljava/lang/String;)Vã
+input(Lweka/core/Instance;)Pweka.filters.unsupervised.instance.RemoveDuplicates#input(Lweka/core/Instance;)Zã
 'logic.enums.CostSensitiveClassifierTypejava.lang.Enumã
 valueOf(Ljava/lang/String;)llogic.enums.CostSensitiveClassifierType#valueOf(Ljava/lang/String;)Llogic/enums/CostSensitiveClassifierType;f
 values()Zlogic.enums.CostSensitiveClassifierType#values()[Llogic/enums/CostSensitiveClassifierType;P
