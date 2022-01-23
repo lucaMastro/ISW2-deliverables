@@ -14,7 +14,6 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/FeaturesSelectionType.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/InvalidRangeException.java
-/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/WekaAnalisysBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/InvalidInputException.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/exception/WalkStepFilterException.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProportionFxmlController.java
@@ -24,6 +23,7 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ReleaseFile.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/WekaAnalysisBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/RetrieveInformations.java
@@ -36,7 +36,6 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/SceneSwitcher.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/HomePageFxmlController.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/boundary/CloneRepositoryBoundary.java
-/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkForwardFilesManager.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/CloneRepositoryBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/SamplingType.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartAndProportionFxmlController.java
@@ -44,6 +43,7 @@
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaStepOutputBean.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/Main.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/ProcessControlChartFxmlController.java
+/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/ArffCreator.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/JgitManager.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBoundary.java
 /home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/view/WekaAnalisysFxmlController.java

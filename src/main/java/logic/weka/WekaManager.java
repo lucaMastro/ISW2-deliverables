@@ -71,7 +71,7 @@ public class WekaManager {
     // *********************************************************************
 
     public int getNumOfRelease() {
-        return this.totalData.numDistinctValues(0);
+        return this.numOfRelease;
     }
 
     public String getDatasetName() {
@@ -147,7 +147,9 @@ public class WekaManager {
             percentage that shls ould be used in the filter.  */
 
         int i;
-        for (i = 0; i < this.getNumOfRelease() - 1; i++) {
+
+        // steps cycle
+        for (i = 0; i < this.numOfRelease - 1; i++) {
 
             var stepOutput = new WekaStepOutputBean(this.classifiers.size());
 
@@ -180,8 +182,8 @@ public class WekaManager {
                 var currEvaluation = new Evaluation(testingDataset);
                 currEvaluation.evaluateModel(c, testingDataset);
                 stepOutput.setEvaluation(currEvaluation, j);
-                output.appendStepEvaluation(stepOutput);
             }
+            output.appendStepEvaluation(stepOutput);
         }
         return output;
     }

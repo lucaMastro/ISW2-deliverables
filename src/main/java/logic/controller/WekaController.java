@@ -70,10 +70,10 @@ public class WekaController {
         try (var fw = new FileWriter(outputCSV)) {
             fw.append(legendLine);
             for (WekaConfigurationOutputBean output : list) {
-                var currIndexRelease = 0; //should be incremented
+                var currIndexRelease = 1; //should be incremented: it's the number of releases in training
 
                 for (WekaStepOutputBean wekaStepOutput : output.getStepEvaluations()) {
-                    var currNameIndex = 0;
+                    var currNameIndex = 0; // to parse classifier name
                     for (Evaluation e : wekaStepOutput.getEvaluationsArray()) {
                         var bld = new StringBuilder();
                         precision = DoubleRounder.round(e.precision(0), 3);
@@ -87,7 +87,7 @@ public class WekaController {
                         fn = DoubleRounder.round(e.falseNegativeRate(0), 3);
 
                         bld.append(datasetName).append(",") //Dataset
-                                .append(currIndexRelease + 1).append(",") // #TrainingRelease
+                                .append(currIndexRelease).append(",") // # TrainingRelease
                                 .append(wekaStepOutput.getTrainingPercentage()).append(",") //train %
                                 .append(wekaStepOutput.getDefectiveInTrainingPercentage()).append(",") // defects in train
                                 .append(wekaStepOutput.getDefectiveInTestingPercentage()).append(",") // defects in test
