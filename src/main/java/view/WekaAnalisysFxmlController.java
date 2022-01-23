@@ -6,21 +6,22 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
 import logic.boundary.WekaAnalysisBoundary;
 
 public class WekaAnalisysFxmlController extends BasicPageFxmlController {
 
     @FXML
-    private Label inputFileLabel;
+    private TextField inputFileLabel;
 
     @FXML
     private Label arffDescriptionLabel;
 
     @FXML
-    private Label outputFileLabel;
+    private TextField outputFileLabel;
 
     @FXML
-    private Label arffFileLabel;
+    private TextField arffFileLabel;
 
     @FXML
     private Button browseInputFileButton;

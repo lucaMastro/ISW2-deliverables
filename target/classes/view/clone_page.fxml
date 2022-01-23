@@ -17,7 +17,7 @@
     </stylesheets>
     <children>
         <Label layoutX="26.0" layoutY="150.0" prefHeight="30.0" styleClass="skyBlueText" text="Output folder:" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="150.0" />
-        <Label fx:id="repositoryLabel" layoutX="133.0" layoutY="57.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.topAnchor="150.0" />
+        <TextField editable="false" fx:id="repositoryLabel" layoutX="133.0" layoutY="57.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" AnchorPane.topAnchor="150.0" />
         <Button fx:id="browseRepoPathButton" layoutX="508.0" layoutY="53.0" mnemonicParsing="false" onAction="#browseRepositoryPath" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="150.0" />
         <Label layoutX="39.0" layoutY="250.0" prefHeight="30.0" styleClass="skyBlueText" text="Link Github:" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="250.0" />
         <Button fx:id="submitButton" layoutX="276.0" layoutY="328.0" mnemonicParsing="false" onAction="#submitButtonSelected" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Submit" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="328.0" />
@@ -30,7 +30,7 @@
                 </ImageView>
             </graphic>
         </JFXButton>
-        <TextField fx:id="urlTextField" layoutX="179.0" layoutY="210.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="250.0" />
+        <TextField fx:id="urlTextField" layoutX="179.0" layoutY="210.0" prefHeight="30.0" prefWidth="350.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="250.0" />
         <ImageView fitHeight="130.0" fitWidth="193.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/logo_github.png" />

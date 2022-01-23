@@ -14,7 +14,6 @@
 }
 
 Label{
-
   -fx-font-family: "Arial";
   -fx-text-fill: Black;
 }
@@ -22,14 +21,16 @@ Label{
 TextField{
   -fx-font-family: "Arial";
   -fx-text-fill: Black;
-
 }
 
 
 .button:hover{
--fx-font-weight: bold;
-  -fx-background-radius: 22;
-  -fx-border-radius: 5em;
+ -fx-font-weight: bold;
+  -fx-background-color:
+        #3271a8,
+        linear-gradient(#38424b 0%, #1f2429 20%, #3271a8 100%),
+        linear-gradient(#20262b, #3271a8),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
 }
 
 .bigbutton:hover{
@@ -42,20 +43,6 @@ TextField{
 }
 
 
-#backButton:hover{
-  -fx-border-color: white;
-  -fx-border-width: 2;
-}
-
-#homeBackground{
-  -fx-background-image: url('../images/home_page.jpg');
-  -fx-background-size: cover;
-}
-
-#cloneBackground{
-  -fx-background-image: url('../images/github.jpg');
-  -fx-background-size: cover;
-}
 
 .tooltip{
   -fx-background-color: white;
@@ -67,36 +54,24 @@ TextField{
 
 .skyBlueRadioButton{
   -fx-font-family: "Arial";
-  -fx-text-fill: #D0EFFF;
+  -fx-text-fill: #090a0c;
 }
 
+.edit_label{
+  -fx-background-color: white;
+  -fx-border-color: #090a0c;
+  -fx-border-width: 1;
+}
 
 
 .skyBlueText{
   -fx-font-family: "Arial";
-  -fx-text-fill: #D0EFFF;
+  -fx-text-fill: #090a0c;
 }
 
 #homeLabel{
     -fx-font-family: "Arial";
     -fx-text-fill: white;
-}
-
-#bugginessPane{
-  -fx-background-image: url('../images/bugginess.jpg');
-  -fx-background-size: cover;
-
-}
-
-#processControlChartPane{
-  -fx-background-image: url('../images/data_mining.png');
-  -fx-background-size: cover;
-}
-
-#wekaBackground{
-  -fx-background-image: url('../images/machine_learning.jpg');
-  -fx-background-size: cover;
-
 }
 
 .whiteLabel{

@@ -44,7 +44,6 @@ public class WalkStep {
             //apply
             var totalDataFiltered = Filter.useFilter(totalData, filter);
             var numAttrFiltered = totalDataFiltered.numAttributes();
-
             // removing duplicated lines
             var currDir = Paths.get(".").toAbsolutePath().normalize().toFile();
             var ext = ".arff";

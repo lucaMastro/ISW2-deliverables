@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
 
@@ -23,7 +24,7 @@ public abstract class BasicPageFxmlController {
     protected JFXButton backButton;
 
     @FXML
-    protected Label repositoryLabel;
+    protected TextField repositoryLabel;
 
     @FXML
     protected Button browseRepoPathButton;
@@ -112,7 +113,7 @@ public abstract class BasicPageFxmlController {
 
     @FXML
     void showText(MouseEvent event) {
-        var node = (Label) event.getTarget();
+        var node = (TextField) event.getTarget();
         if (!node.getText().isEmpty()) {
             this.tooltipOpened = new Tooltip();
             SceneSwitcher.getInstance().showTooltip(node, this.tooltipOpened, "tooltip");

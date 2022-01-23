@@ -10,15 +10,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<?import javafx.scene.control.TextField?>
 <AnchorPane fx:id="wekaBackground" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WekaAnalisysFxmlController">
    <stylesheets>
       <URL value="@stylesheet.css" />
    </stylesheets>
    <children>
       <Label layoutX="28.0" layoutY="50.0" prefHeight="30.0" styleClass="skyBlueText" text="Csv Input file:" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="50.0" />
-      <Label fx:id="inputFileLabel" layoutX="133.0" layoutY="57.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.topAnchor="50.0" />
+      <TextField fx:id="inputFileLabel" editable="false" layoutX="133.0" layoutY="57.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" stylesheets="@stylesheet.css" AnchorPane.topAnchor="50.0" />
       <Label layoutX="44.0" layoutY="150.0" prefHeight="30.0" styleClass="skyBlueText" text="Csv output file:" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="120.0" />
-      <Label fx:id="outputFileLabel" layoutX="133.0" layoutY="110.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="120.0" />
+      <TextField fx:id="outputFileLabel" editable="false" layoutX="133.0" layoutY="110.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="120.0" />
       <Button fx:id="browseInputFileButton" layoutX="508.0" layoutY="53.0" mnemonicParsing="false" onAction="#csvInputButtonClicked" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="50.0" />
       <Button fx:id="browseOutputFileButton" layoutX="508.0" layoutY="153.0" mnemonicParsing="false" onAction="#csvOutputButtonClicked" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="120.0" />
 
@@ -39,7 +40,7 @@
       </Button>
       <RadioButton fx:id="saveAsArff" layoutX="28.0" layoutY="97.0" mnemonicParsing="false" onAction="#arffRadioButtonSelected" styleClass="skyBlueText" text="Convert input CSV to ARFF" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="190.0" />
       <Label fx:id="arffDescriptionLabel" layoutX="26.0" layoutY="120.0" prefHeight="30.0" styleClass="skyBlueText" text="Save ARFF as:" visible="false" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="240.0" />
-      <Label fx:id="arffFileLabel" layoutX="143.0" layoutY="120.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" visible="false" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="240.0" />
+      <TextField fx:id="arffFileLabel" editable="false" layoutX="143.0" layoutY="120.0" onMouseEntered="#showText" onMouseExited="#hideText" prefHeight="30.0" prefWidth="350.0" visible="false" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="240.0" />
       <Button fx:id="browseArffFileButton" layoutX="518.0" layoutY="163.0" mnemonicParsing="false" onAction="#arffOutputButtonClicked" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" visible="false" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="240.0" />
    </children>
 </AnchorPane>

@@ -107,7 +107,7 @@ public class SceneSwitcher extends Application {
 		loginAlert.show();
 	}
 
-	public void showTooltip(Label node, Tooltip tooltipOpened, String classStyle){
+	public void showTooltip(TextField node, Tooltip tooltipOpened, String classStyle){
 		tooltipOpened.setShowDelay(Duration.ZERO);
 
 		tooltipOpened.setText(node.getText());

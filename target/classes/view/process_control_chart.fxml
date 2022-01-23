@@ -17,10 +17,10 @@
    </stylesheets>
    <children>
       <Label styleClass="skyBlueText" layoutX="32.0" layoutY="65.0" prefHeight="30.0" text="Repository path:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
-      <Label fx:id="repositoryLabel" layoutX="133.0" layoutY="57.0" prefHeight="30.0" prefWidth="350.0" onMouseEntered="#showText" onMouseExited="#hideText" style="-fx-background-color: #D0EFFF;" AnchorPane.topAnchor="50.0" />
+      <TextField fx:id="repositoryLabel" editable="false" layoutX="133.0" layoutY="57.0" prefHeight="30.0" prefWidth="350.0" onMouseEntered="#showText" onMouseExited="#hideText" AnchorPane.topAnchor="50.0" />
       <Button fx:id="browseRepoPathButton" layoutX="508.0" layoutY="53.0" mnemonicParsing="false" onAction="#browseRepositoryPath" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="50.0" />
       <Label styleClass="skyBlueText" layoutX="44.0" layoutY="150.0" prefHeight="30.0" text="Output file:" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="120.0" />
-      <Label fx:id="outputFileLabel" layoutX="133.0" layoutY="110.0" prefHeight="30.0" prefWidth="350.0" onMouseEntered="#showText" onMouseExited="#hideText" style="-fx-background-color: #D0EFFF;" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="120.0" />
+      <TextField fx:id="outputFileLabel" editable="false" layoutX="133.0" layoutY="110.0" prefHeight="30.0" prefWidth="350.0" onMouseEntered="#showText" onMouseExited="#hideText" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="120.0" />
       <Button fx:id="browseOutputFileButton" layoutX="508.0" layoutY="153.0" mnemonicParsing="false" onAction="#browseOutputFilePath" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Browse" AnchorPane.topAnchor="120.0" />
       <Label styleClass="skyBlueText" layoutX="27.0" layoutY="250.0" prefHeight="30.0" text="Project name:" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="190.0" />
       <Button fx:id="submitButton" layoutX="276.0" layoutY="328.0" mnemonicParsing="false" onAction="#submitButtonSelected" prefHeight="30.0" prefWidth="76.0" styleClass="submitBrowseButton" text="Submit" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="328.0" />
@@ -33,7 +33,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <TextField fx:id="projectName" layoutX="179.0" layoutY="210.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #D0EFFF;" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="190.0" />
+      <TextField fx:id="projectName" layoutX="179.0" layoutY="210.0" prefHeight="30.0" prefWidth="350.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="190.0" />
       <Label styleClass="skyBlueText" layoutX="49.0" layoutY="259.0" prefHeight="30.0" text="Threshold:" AnchorPane.topAnchor="260.0">
          <cursor>
             <Cursor fx:constant="TEXT" />

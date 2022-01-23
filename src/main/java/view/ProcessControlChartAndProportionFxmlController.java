@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 public abstract class ProcessControlChartAndProportionFxmlController extends BasicPageFxmlController {
 
     @FXML
-    protected Label outputFileLabel;
+    protected TextField outputFileLabel;
 
     @FXML
     protected Button browseOutputFileButton;
