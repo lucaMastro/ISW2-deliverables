@@ -34,7 +34,8 @@ public class WekaController {
                 }
             }
         }
-        this.writeFile(list, bean.getOutputCSV(), wekaManager.getDatasetName(), wekaManager.getNumOfRelease());
+        var name = bean.getInputCSV().getName().split("\\.")[0] + "_without_duplicated_lines";
+        this.writeFile(list, bean.getOutputCSV(), name, wekaManager.getNumOfRelease());
     }
 
 

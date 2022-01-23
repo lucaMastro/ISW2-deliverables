@@ -48,7 +48,7 @@ public class WalkStep {
             var currDir = Paths.get(".").toAbsolutePath().normalize().toFile();
             var ext = ".arff";
             var tmpFile = File.createTempFile("tmpArff", ext, currDir);
-            ArffCreator.getInstance().createArff(tmpFile, totalDataFiltered);
+            ArffCreator.createArff(tmpFile, totalDataFiltered);
             // reading filtered instances without replications from tmpFile
             var arffLoader = new ArffLoader();
             arffLoader.setSource(tmpFile);

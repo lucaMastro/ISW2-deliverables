@@ -34,7 +34,7 @@ public class WekaManager {
         // reading instances
         var csvInstances = this.readInputCsv(input);
         // create the arff without replicated data
-        ArffCreator.getInstance().createArff(arff, csvInstances);
+        ArffCreator.createArff(arff, csvInstances);
         // writing totalData: we don't want replicated
         var arffLoader = new ArffLoader();
         arffLoader.setSource(arff);
@@ -74,17 +74,13 @@ public class WekaManager {
         return this.numOfRelease;
     }
 
-    public String getDatasetName() {
-        return this.totalData.relationName();
-    }
-
     public void applySampling(SamplingType st, WalkStep currentStep) throws Exception {
         int i;
         switch (st){
             case UNDERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var filtered = this.filterCreator.getUnderSaplingClassifier();
+                    var filtered = FilterCreator.getUnderSaplingClassifier();
                     filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
                 }
@@ -92,14 +88,14 @@ public class WekaManager {
             case OVERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var filtered = this.filterCreator.getOverSaplingClassifier(currentStep);
+                    var filtered = FilterCreator.getOverSaplingClassifier(currentStep);
                     filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
                 }
                 break;
             case SMOTE:
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var filtered = this.filterCreator.getSMOTEClassifier();
+                    var filtered = FilterCreator.getSMOTEClassifier();
                     filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
                 }

@@ -9,7 +9,7 @@ import weka.filters.supervised.instance.SpreadSubsample;
 
 public class FilterCreator {
 
-    public FilteredClassifier getOverSaplingClassifier(WalkStep currentStep) throws Exception {
+    public static FilteredClassifier getOverSaplingClassifier(WalkStep currentStep) throws Exception {
         var classifier = new FilteredClassifier();
 
         var positive = currentStep.getPositivesTraining();
@@ -26,7 +26,7 @@ public class FilterCreator {
         return classifier;
     }
 
-    public FilteredClassifier getUnderSaplingClassifier() throws Exception {
+    public static FilteredClassifier getUnderSaplingClassifier() throws Exception {
         //initialization of filteredClassifier for undersampling
         var classifier = new FilteredClassifier();
         var ss = new SpreadSubsample();
@@ -37,7 +37,7 @@ public class FilterCreator {
         return classifier;
     }
 
-    public FilteredClassifier getSMOTEClassifier() {
+    public static FilteredClassifier getSMOTEClassifier() {
         var classifier = new FilteredClassifier();
         var smote = new SMOTE();
         classifier.setFilter(smote);
@@ -46,7 +46,7 @@ public class FilterCreator {
 
     /* *********** CSC ************ */
 
-    private CostMatrix createCostMatrix(){
+    private static CostMatrix createCostMatrix(){
         var costMatrix = new CostMatrix(2);
         var cfp = 1.0;
 
@@ -58,9 +58,9 @@ public class FilterCreator {
     }
 
 
-    private CostSensitiveClassifier createCostSensitiveClassifier(Boolean b){
+    private static CostSensitiveClassifier createCostSensitiveClassifier(Boolean b){
         //boolean should be true for sensitive threshold and false for sensitive learning
-        var costMatrix = this.createCostMatrix();
+        var costMatrix = FilterCreator.createCostMatrix();
         var sensitiveClassifier = new CostSensitiveClassifier();
         sensitiveClassifier.setCostMatrix(costMatrix);
 
@@ -69,12 +69,12 @@ public class FilterCreator {
         return sensitiveClassifier;
     }
 
-    public CostSensitiveClassifier sensitiveThresholdClassifier(){
-        return this.createCostSensitiveClassifier(Boolean.TRUE);
+    public static CostSensitiveClassifier sensitiveThresholdClassifier(){
+        return FilterCreator.createCostSensitiveClassifier(Boolean.TRUE);
     }
 
-    public CostSensitiveClassifier sensitiveLearningClassifier(){
-        return this.createCostSensitiveClassifier(Boolean.FALSE);
+    public static CostSensitiveClassifier sensitiveLearningClassifier(){
+        return FilterCreator.createCostSensitiveClassifier(Boolean.FALSE);
     }
 
 

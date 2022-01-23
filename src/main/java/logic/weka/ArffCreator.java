@@ -13,15 +13,9 @@ import java.nio.file.Paths;
 
 public class ArffCreator {
 
-    private static ArffCreator instance = null;
+    private ArffCreator(){}
 
-    public static ArffCreator getInstance(){
-        if (ArffCreator.instance == null)
-            ArffCreator.instance = new ArffCreator();
-        return ArffCreator.instance;
-    }
-
-    public void createArff(File arffOutputFile, Instances instances) throws Exception {
+    public static void createArff(File arffOutputFile, Instances instances) throws Exception {
 
         Attribute a = instances.attribute(instances.numAttributes() - 1);
         var first = a.value(0);
@@ -31,7 +25,6 @@ public class ArffCreator {
             f.setInputFormat(instances);
             instances = Filter.useFilter(instances, f);
         }
-
         var saver = new ArffSaver();
         saver.setInstances(instances);//set the dataset we want to convert
 
