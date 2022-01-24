@@ -43,9 +43,9 @@ public class WekaAnalysisBoundary {
 
     public static void main(String[] args) throws Exception {
 
-        var boundary = new WekaAnalysisBoundary("/home/luca/Scrivania/bookkeeperGUI.csv",
-                "/home/luca/Scrivania/wekaOutput26.csv",
-                "/home/luca/Scrivania/bookkeeperARFF26.arff");
+        var boundary = new WekaAnalysisBoundary("/home/luca/Scrivania/ISW2/da consegnare/deliverable2/milestone1/bookkeeper.csv",
+                "/home/luca/Scrivania/ISW2/da consegnare/deliverable2/milestone2/bookkeeper.csv",
+                "/home/luca/Scrivania/ISW2/da consegnare/deliverable2/milestone1/bookkeeper.arff");
         boundary.runAnalysis();
 
     }

@@ -1,55 +1,22 @@
 
-zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java=$ =(A"1*‡
+flogic.weka.FilterCreator#sensitiveThresholdClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;n
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaH* H(F"1*š
 1n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java? ?(þ
-û
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaI I(š
+—
 n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java? ?(0!
-%0weka.classifiers.CostMatrix"Hlogic.weka.FilterCreator#createCostMatrix()Lweka/classifiers/CostMatrix;*
-logic.weka.FilterCreatorÉ
-Æ
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaI; I(G
+%0java.lang.Boolean"__id*
+""Ý
+Ú
 n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java? ?(1)
-
-costMatrixweka.classifiers.CostMatrix"__id*#
-!
-%0weka.classifiers.CostMatrix×Ô
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaI I(H3
+%1-weka.classifiers.meta.CostSensitiveClassifier"zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;*"
+logic.weka.FilterCreator*
+
+%0java.lang.Boolean"§
 n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java@& @(=3
-%1-weka.classifiers.meta.CostSensitiveClassifier"-weka.classifiers.meta.CostSensitiveClassifieré
-æ
-n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java@" @(?
-%2"7weka.classifiers.meta.CostSensitiveClassifier#<init>()V*5
+d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaI I(I5
 3
-%1-weka.classifiers.meta.CostSensitiveClassifierö
-ó
-n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.java@ @(@D
-sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier"__id*5
-3
-%1-weka.classifiers.meta.CostSensitiveClassifierÿü
-n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaA A(5
-
-%3void"[weka.classifiers.meta.CostSensitiveClassifier#setCostMatrix(Lweka/classifiers/CostMatrix;)V*F
-D
-sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier*+
-)
-
-costMatrixweka.classifiers.CostMatrix2,setCostMatrix(Lweka/classifiers/CostMatrix;)ÈÅ
-n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaC C(6
-
-%4void"Iweka.classifiers.meta.CostSensitiveClassifier#setMinimizeExpectedCost(Z)V*F
-D
-sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier*
-
-bjava.lang.Boolean2setMinimizeExpectedCost(Z)"¸
-n
-d/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/FilterCreator.javaE E(#F
-D
-sensitiveClassifier-weka.classifiers.meta.CostSensitiveClassifier:
-bjava.lang.BooleanB
+%1-weka.classifiers.meta.CostSensitiveClassifierB"
 logic.weka.FilterCreator

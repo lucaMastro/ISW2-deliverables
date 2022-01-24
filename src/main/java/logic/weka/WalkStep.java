@@ -23,11 +23,78 @@ public class WalkStep {
 
     public WalkStep(Instances totalData, int stepIndex) throws WalkStepFilterException {
         /* step index is the index of the last release index in train set for this step. */
-        var sets = this.getInstancesSubsets(totalData, stepIndex);
-        this.training = sets[0];
-        this.testing = sets[1];
+        var counts = this.countTrainAndTestInstances(stepIndex, totalData);
+        var countTrainingInstances = counts[0];
+        var countTestingInstances = counts[1];
+
+        this.training = new Instances(totalData, 0, countTrainingInstances);
+        this.testing = new Instances(totalData, countTrainingInstances, countTestingInstances);
+
         this.training.setClassIndex(totalData.numAttributes() - 1);
         this.testing.setClassIndex(totalData.numAttributes() - 1);
+
+        try {
+            var totalDataFeatured = this.applyFeatureSelection(totalData);
+            var numAttrFiltered = totalDataFeatured.numAttributes();
+
+            // create featured subsets:
+            var featuredTrainWithDup = new Instances(totalDataFeatured, 0, countTrainingInstances);
+            var featuredTestWithDup = new Instances(totalDataFeatured, countTrainingInstances, countTestingInstances);
+
+            this.featureSelectedTraining = this.removeDuplicated(featuredTrainWithDup);
+            this.featureSelectedTesting = this.removeDuplicated(featuredTestWithDup);
+
+            this.featureSelectedTraining.setClassIndex(numAttrFiltered - 1);
+            this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
+        }catch (Exception e){
+            throw new WalkStepFilterException("Error creating features selectioned datasets");
+        }
+    }
+
+    private Instances removeDuplicated(Instances featuredWithDup) throws Exception {
+        // create temp file
+        var currDir = Paths.get(".").toAbsolutePath().normalize().toFile();
+        var ext = ".arff";
+        var tmpFile = File.createTempFile("tmpArff", ext, currDir);
+
+        // write instances on tmpFile
+        ArffCreator.createArffWithoutDuplicated(tmpFile, featuredWithDup);
+
+        // reading instances without duplicated:
+        var arffLoader = new ArffLoader();
+        arffLoader.setSource(tmpFile);
+        var withoutDuplicated = arffLoader.getDataSet();
+
+        // removing temp file
+        Files.delete(tmpFile.toPath());
+
+        return withoutDuplicated;
+    }
+
+    private int[] countTrainAndTestInstances(int stepIndex, Instances totalData){
+        var counts = new int[2];
+        int i;
+        int currIndex;
+        var countTrainingInstances = 0;
+        var countTestingInstances = 0;
+        for (i = 0; i < totalData.numInstances(); i++){
+            currIndex = (int) totalData.instance(i).value(0);
+            if (currIndex <= stepIndex)
+                countTrainingInstances++;
+            else if (currIndex == stepIndex + 1)
+                countTestingInstances++;
+            else
+                break;
+        }
+        // {training, testing}
+        counts[0] = countTrainingInstances;
+        counts[1] = countTestingInstances;
+
+        return counts;
+    }
+
+    private Instances applyFeatureSelection(Instances set) throws Exception {
+        Instances featuredSet;
         //create AttributeSelection object
         var filter = new AttributeSelection();
         //create evaluator and search algorithm objects
@@ -38,54 +105,12 @@ public class WalkStep {
         filter.setEvaluator(eval);
         filter.setSearch(search);
 
-        try {
-            //specify the dataset
-            filter.setInputFormat(this.training);
-            //apply
-            var totalDataFiltered = Filter.useFilter(totalData, filter);
-            var numAttrFiltered = totalDataFiltered.numAttributes();
-            // removing duplicated lines
-            var currDir = Paths.get(".").toAbsolutePath().normalize().toFile();
-            var ext = ".arff";
-            var tmpFile = File.createTempFile("tmpArff", ext, currDir);
-            ArffCreator.createArff(tmpFile, totalDataFiltered);
-            // reading filtered instances without replications from tmpFile
-            var arffLoader = new ArffLoader();
-            arffLoader.setSource(tmpFile);
-            totalDataFiltered = arffLoader.getDataSet();
-            // removing tmpFile
-            Files.delete(tmpFile.toPath());
+        //specify the dataset
+        filter.setInputFormat(set);
+        //apply
+        featuredSet = Filter.useFilter(set, filter);
 
-            // setting filtered sets
-            sets = this.getInstancesSubsets(totalDataFiltered, stepIndex);
-            this.featureSelectedTraining = sets[0];
-            this.featureSelectedTesting = sets[1];
-            this.featureSelectedTraining.setClassIndex(numAttrFiltered - 1);
-            this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
-        }catch (Exception e){
-            throw new WalkStepFilterException("Error creating features selectioned datasets");
-        }
-
-
-
-    }
-    private Instances[] getInstancesSubsets(Instances totalData, int lastTrainReleaseIndex) {
-        var sets = new Instances[2];
-        int i;
-        int currIndex;
-        var countTrainingInstances = 0;
-        var countTestingInstances = 0;
-        for (i = 0; i < totalData.numInstances(); i++){
-            currIndex = (int) totalData.instance(i).value(0);
-            if (currIndex <= lastTrainReleaseIndex)
-                countTrainingInstances++;
-            else if (currIndex == lastTrainReleaseIndex + 1)
-                countTestingInstances++;
-        }
-        // adding testing set
-        sets[0] = new Instances(totalData, 0, countTrainingInstances);
-        sets[1] = new Instances(totalData, countTrainingInstances, countTestingInstances);
-        return sets;
+        return featuredSet;
     }
 
 

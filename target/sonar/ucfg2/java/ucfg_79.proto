@@ -1,16 +1,16 @@
 
-llogic.bean.WekaConfigurationOutputBean#getCostSensitiveClassifier()Llogic/enums/CostSensitiveClassifierType;|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java#' #(A"1*µ
+Klogic.bean.WekaConfigurationOutputBean#getStepEvaluations()Ljava/util/List;|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java'$ '(6"1*û
 1|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java$ $(&ÿ
-ü
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((Þ
+Û
 |
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java$ $(&-
-%0'logic.enums.CostSensitiveClassifierType"__id*G*E(
-&logic.bean.WekaConfigurationOutputBean"
-costSensitiveClassifier"¯
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((#
+%0java.util.List"__id*?*=(
+&logic.bean.WekaConfigurationOutputBean"
+stepEvaluations"–
 |
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java$ $('/
--
-%0'logic.enums.CostSensitiveClassifierTypeB*(
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( (($
+
+%0java.util.ListB*(
 &logic.bean.WekaConfigurationOutputBean

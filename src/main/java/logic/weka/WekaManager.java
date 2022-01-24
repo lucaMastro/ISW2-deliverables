@@ -13,6 +13,7 @@ import weka.classifiers.lazy.IBk;
 import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
+import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 
 import java.io.File;
@@ -23,18 +24,16 @@ public class WekaManager {
 
     private ArrayList<WalkStep> steps;
     private ArrayList<Classifier> classifiers;
-    private FilterCreator filterCreator;
     private int numOfRelease;
     private Instances totalData;
 
     public WekaManager(File input, File arff) throws Exception {
         this.steps = new ArrayList<>();
-        this.filterCreator = new FilterCreator();
 
         // reading instances
         var csvInstances = this.readInputCsv(input);
         // create the arff without replicated data
-        ArffCreator.createArff(arff, csvInstances);
+        ArffCreator.createArffWithoutDuplicated(arff, csvInstances);
         // writing totalData: we don't want replicated
         var arffLoader = new ArffLoader();
         arffLoader.setSource(arff);
@@ -113,14 +112,14 @@ public class WekaManager {
         switch (csc){
             case SENSITIVE_THRESHOLD:
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var costSensitiveClassifier = this.filterCreator.sensitiveThresholdClassifier();
+                    var costSensitiveClassifier = FilterCreator.sensitiveThresholdClassifier();
                     costSensitiveClassifier.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, costSensitiveClassifier);
                 }
                 break;
             case SENSITIVE_LEARNING:
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var costSensitiveClassifier = this.filterCreator.sensitiveLearningClassifier();
+                    var costSensitiveClassifier = FilterCreator.sensitiveLearningClassifier();
                     costSensitiveClassifier.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, costSensitiveClassifier);
                 }
@@ -143,14 +142,14 @@ public class WekaManager {
             percentage that shls ould be used in the filter.  */
 
         int i;
-
+        int j = 0;
+        Instances trainingDataset = null;
         // steps cycle
         for (i = 0; i < this.numOfRelease - 1; i++) {
-
             var stepOutput = new WekaStepOutputBean(this.classifiers.size());
 
             var step = this.steps.get(i);
-            var trainingDataset = step.getTrainingSet(fs);
+            trainingDataset = step.getTrainingSet(fs);
             var testingDataset = step.getTestingSet(fs);
 
             var instancesInTraining = trainingDataset.numInstances();
@@ -171,7 +170,6 @@ public class WekaManager {
             this.applyCostSensitive(csc);
 
             //now i need to train the classifier
-            int j;
             for (j = 0; j < this.classifiers.size(); j++) {
                 var c = this.classifiers.get(j);
                 c.buildClassifier(trainingDataset);

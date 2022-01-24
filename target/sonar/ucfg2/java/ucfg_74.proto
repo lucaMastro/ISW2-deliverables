@@ -1,67 +1,24 @@
 
-*logic.weka.WalkStep#getPositivesTesting()Ii
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javax x(""5*×
-2i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaz z(œ
-™
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaz z(
-instanceweka.core.Instance"__id*
-""¿
-¼
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaz z(
-instanceweka.core.Instance"
-__arrayGet*
-
-%0weka.core.Instances*
-""*
-4
-1*‡	
-4i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java{ {(µ
-²
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java{) {(5
-%1weka.core.Instances"__id*$*"
-logic.weka.WalkStep"	
-testingÍÊ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java{) {(E	
-%2int"$weka.core.Instances#numAttributes()I*
-
-%1weka.core.Instances2numAttributes()ïì
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java{ {(J
-%3java.lang.String"0weka.core.Instance#toString(I)Ljava/lang/String;* 
-
-instanceweka.core.Instance*
-""2toString(I)¨
-¥
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java{ {(K
-currjava.lang.String"__id*
-
-%3java.lang.Stringìé
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java| |("
-%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-currjava.lang.String*
-Yes2equals(Ljava/lang/Object;)*
-2*«
-5i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaz! z(%µ
-²
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaz! z(-
+*logic.weka.WalkStep#getNegativesTesting()Ik
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java‚ ‚(""1*Ë
+1k
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaƒ ƒ(·
+´
+k
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaƒ ƒ(
 %0weka.core.Instances"__id*$*"
 logic.weka.WalkStep"	
-testing*
-2*ã
-1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java ("s
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java (
+testingÍÊ
+k
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaƒ ƒ(*	
+%1int"#weka.core.Instances#numInstances()I*
+
+%0weka.core.Instances2numInstances()×Ô
+k
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaƒ- ƒ(G	
+%2int"*logic.weka.WalkStep#getPositivesTesting()I*
+logic.weka.WalkStep2getPositivesTesting()"u
+k
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaƒ ƒ(H
 ""B
 logic.weka.WalkStep

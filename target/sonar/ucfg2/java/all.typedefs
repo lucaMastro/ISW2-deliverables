@@ -2649,9 +2649,8 @@ NiteratorBinarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)
 <init>(Ljava/lang/String;)Gorg.eclipse.jgit.api.errors.GitAPIException#<init>(Ljava/lang/String;)Vè
 /<init>(Ljava/lang/String;Ljava/lang/Throwable;)\org.eclipse.jgit.api.errors.GitAPIException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)Vù
 %logic.exception.InvalidRangeExceptionjava.lang.Exception_
-<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)V¸
-logic.weka.WekaManagerjava.lang.ObjectM
-getDatasetName()9logic.weka.WekaManager#getDatasetName()Ljava/lang/String;d
+<init>(Ljava/lang/String;)Alogic.exception.InvalidRangeException#<init>(Ljava/lang/String;)V≠
+logic.weka.WekaManagerjava.lang.Objectd
 $<init>(Ljava/io/File;Ljava/io/File;)<logic.weka.WekaManager#<init>(Ljava/io/File;Ljava/io/File;)V∞
 vcomputeMetrics(Llogic/enums/FeaturesSelectionType;Llogic/enums/CostSensitiveClassifierType;Llogic/enums/SamplingType;)µlogic.weka.WekaManager#computeMetrics(Llogic/enums/FeaturesSelectionType;Llogic/enums/CostSensitiveClassifierType;Llogic/enums/SamplingType;)Llogic/bean/WekaConfigurationOutputBean;J
 initializeClassifiers()/logic.weka.WekaManager#initializeClassifiers()Vh
@@ -2668,11 +2667,10 @@ vcomputeMetrics(Llogic/enums/FeaturesSelectionType;Llogic/enums/CostSensitiveCla
 sensitiveLearningClassifier()elogic.weka.FilterCreator#sensitiveLearningClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;•
 /getOverSaplingClassifier(Llogic/weka/WalkStep;)rlogic.weka.FilterCreator#getOverSaplingClassifier(Llogic/weka/WalkStep;)Lweka/classifiers/meta/FilteredClassifier;}
 getUnderSaplingClassifier()^logic.weka.FilterCreator#getUnderSaplingClassifier()Lweka/classifiers/meta/FilteredClassifier;∞
-2createCostSensitiveClassifier(Ljava/lang/Boolean;)zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;£
+2createCostSensitiveClassifier(Ljava/lang/Boolean;)zlogic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;‘
 logic.weka.ArffCreatorjava.lang.Object,
 <init>() logic.weka.ArffCreator#<init>()Vz
-/createArff(Ljava/io/File;Lweka/core/Instances;)Glogic.weka.ArffCreator#createArff(Ljava/io/File;Lweka/core/Instances;)VM
-getInstance()<logic.weka.ArffCreator#getInstance()Llogic/weka/ArffCreator;7
+/createArff(Ljava/io/File;Lweka/core/Instances;)Glogic.weka.ArffCreator#createArff(Ljava/io/File;Lweka/core/Instances;)V7
 #weka.core.converters.BatchConverterjava.lang.Object=
 )weka.core.converters.IncrementalConverterjava.lang.Object9
 %weka.core.converters.URLSourcedLoaderjava.lang.Object=
