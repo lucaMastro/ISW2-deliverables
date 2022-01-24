@@ -1,17 +1,16 @@
 
-/logic.bean.WekaBean#getInputCSV()Ljava/io/File;i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java' '("1*§
-1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java( ((Ø
-¨
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java( ((
-%0java.io.File"__id*%*#
-logic.bean.WekaBean"
-
-inputCSV"Å
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaBean.java( ((
-
-%0java.io.FileB
-logic.bean.WekaBean
+Elogic.bean.JiraBeanInformations#getAffectedVersions()Ljava/util/List;u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaI I(,"1*Í
+1u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaJ J(÷
+”
+u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaJ J($
+%0java.util.ArrayList"__id*9*7!
+logic.bean.JiraBeanInformations"
+affectedVersions"î
+u
+k/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/JiraBeanInformations.javaJ J(%
+
+%0java.util.ArrayListB#!
+logic.bean.JiraBeanInformations

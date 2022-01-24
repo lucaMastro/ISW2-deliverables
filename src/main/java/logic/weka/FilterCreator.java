@@ -9,6 +9,8 @@ import weka.filters.supervised.instance.SpreadSubsample;
 
 public class FilterCreator {
 
+    private FilterCreator(){}
+
     public static FilteredClassifier getOverSaplingClassifier(WalkStep currentStep) throws Exception {
         var classifier = new FilteredClassifier();
 

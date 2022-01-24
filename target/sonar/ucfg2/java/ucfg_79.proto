@@ -1,16 +1,16 @@
 
-Klogic.bean.WekaConfigurationOutputBean#getStepEvaluations()Ljava/util/List;|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java'$ '(6"1*û
+Rlogic.bean.WekaConfigurationOutputBean#getSamplingType()Llogic/enums/SamplingType;|
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java ('"1*Œ
 1|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((Þ
-Û
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java   (å
+â
 |
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((#
-%0java.util.List"__id*?*=(
-&logic.bean.WekaConfigurationOutputBean"
-stepEvaluations"–
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java   (
+%0logic.enums.SamplingType"__id*<*:(
+&logic.bean.WekaConfigurationOutputBean"
+samplingType" 
 |
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( (($
-
-%0java.util.ListB*(
+r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java   ( 
+
+%0logic.enums.SamplingTypeB*(
 &logic.bean.WekaConfigurationOutputBean

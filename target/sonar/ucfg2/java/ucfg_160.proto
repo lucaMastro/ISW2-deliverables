@@ -1,57 +1,25 @@
 
-8__sonar_lambda_5$logic.dataset_manager.ProportionDataset
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaò) ú(	"1*Ω
-1
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaô ô(∏µ
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaô ô(*$
-%23logic.dataset_manager.Release"Plogic.dataset_manager.BugTicket#getFixedVersion()Llogic/dataset_manager/Release;*'
-%
-b1logic.dataset_manager.BugTicket2getFixedVersion()”
-–
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaô ô(/
-%24java.util.Date"__id*0*.
-$
-%23logic.dataset_manager.Release"
-dateπ
-∂
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaô ô(0
-d1java.util.Date"__id*
-
-%24java.util.Date∏µ
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaö ö(*$
-%25logic.dataset_manager.Release"Plogic.dataset_manager.BugTicket#getFixedVersion()Llogic/dataset_manager/Release;*'
-%
-b2logic.dataset_manager.BugTicket2getFixedVersion()”
-–
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaö ö(/
-%26java.util.Date"__id*0*.
-$
-%25logic.dataset_manager.Release"
-dateπ
-∂
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaö ö(0
-d2java.util.Date"__id*
-
-%26java.util.Dateäá
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaõ õ(#
-
-%27int"+java.util.Date#compareTo(Ljava/util/Date;)I*
-
-d1java.util.Date*
-
-d2java.util.Date2compareTo(Ljava/util/Date;)"è
-
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.javaõ õ($
-
-
-%27int:%
-b1logic.dataset_manager.BugTicket:%
-b2logic.dataset_manager.BugTicketB
-java.util.Comparator
+8__sonar_lambda_4$logic.dataset_manager.ProportionDataset}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java^ ^(I"startingBlock*≈
+startingBlock}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java^ ^(IØ
+¨
+
+__unknown_file (A
+ProportionDataset.this'logic.dataset_manager.ProportionDataset"__id*G*E)
+'logic.dataset_manager.ProportionDataset"
+ProportionDataset.this*
+1*ô
+1}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java^$ ^(%äá
+}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java^$ ^(0
+%2java.lang.Integer";logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;*$
+"
+rlogic.dataset_manager.Release2
+getIndex()"á
+}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java^$ ^(I
+"":"
+rlogic.dataset_manager.ReleaseB 
+java.util.function.Predicate

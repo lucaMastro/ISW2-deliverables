@@ -1,16 +1,16 @@
 
-8__sonar_lambda_2$logic.dataset_manager.ProportionDataset}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java( ((B"1*š
+Clogic.enums.CostSensitiveClassifierType#getType()Ljava/lang/String;}
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java ("1*‹
 1}
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java($ ((%‹ˆ
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java$ ((ê
+ç
 }
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java($ ((0
-%13java.lang.Integer";logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;*$
-"
-rlogic.dataset_manager.Release2
-getIndex()"‡
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java$ (@
+%0java.lang.String"__id*H*F)
+'logic.enums.CostSensitiveClassifierType"
+costSensitiveClassifier"™
 }
-s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProportionDataset.java($ ((B
-"":"
-rlogic.dataset_manager.ReleaseB 
-java.util.function.Predicate
+s/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/CostSensitiveClassifierType.java (A
+
+%0java.lang.StringB+)
+'logic.enums.CostSensitiveClassifierType

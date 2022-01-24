@@ -1,25 +1,25 @@
 
 Hlogic.weka.WekaManager#readInputCsv(Ljava/io/File;)Lweka/core/Instances;l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java7 7(""1*®
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java6 6(""1*®
 1l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java8 8($·´
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java7 7($·´
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java8 8("$
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java7 7("$
 %0weka.core.converters.CSVLoader"weka.core.converters.CSVLoaderÉ
 Æ
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java8 8($
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java7 7($
 %1"(weka.core.converters.CSVLoader#<init>()V*&
 $
 %0weka.core.converters.CSVLoaderÉ
 Æ
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java8 8(%(
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java7 7(%(
 loaderweka.core.converters.CSVLoader"__id*&
 $
 %0weka.core.converters.CSVLoader›˜
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java9 9("
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java8 8("
 
 %2void"9weka.core.converters.CSVLoader#setSource(Ljava/io/File;)V**
 (
@@ -27,24 +27,24 @@ b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/we
 
 inputCsvjava.io.File2setSource(Ljava/io/File;)ˆ…
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java: :(.
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java9 9(.
 %3weka.core.Instances"@weka.core.converters.CSVLoader#getDataSet()Lweka/core/Instances;**
 (
 loaderweka.core.converters.CSVLoader2getDataSet()¹
 ¶
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java: :(/#
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java9 9(/#
 csvInstancesweka.core.Instances"__id*
 
 %3weka.core.Instancesëè
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java< <()
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java; ;()
 
 %4void")weka.core.Instances#deleteAttributeAt(I)V*%
 #
 csvInstancesweka.core.Instances*22deleteAttributeAt(I)"•
 l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java= =(%
+b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java< <(%
 #
 csvInstancesweka.core.Instances:
 inputCsvjava.io.FileB

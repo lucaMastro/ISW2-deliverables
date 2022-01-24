@@ -1,16 +1,16 @@
 
-=logic.enums.ProportionAlgoOptions#getAlgo()Ljava/lang/String;w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java ("1*à
-1w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (Ë
-È
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (
-%0java.lang.String"__id*/*-#
-!logic.enums.ProportionAlgoOptions"
-algo"“
-w
-m/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/enums/ProportionAlgoOptions.java (
+;logic.abstracts.AbstractBean#getProject()Ljava/lang/String;r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java ("1*Ï
+1r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (Ä
+Á
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (
+%0java.lang.String"__id*-*+
+logic.abstracts.AbstractBean"	
+project"Ž
+r
+h/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/abstracts/AbstractBean.java (
 
-%0java.lang.StringB%#
-!logic.enums.ProportionAlgoOptions
+%0java.lang.StringB 
+logic.abstracts.AbstractBean

@@ -1,45 +1,99 @@
 
-[logic.weka.WalkStep#getTestingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javac c(""3*À
-2i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javae e(Ä
-Á
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javae e(.
-%2weka.core.Instances"__id*3*1
-logic.weka.WalkStep"
-featureSelectedTesting"ˆ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javae e(/
-
-%2weka.core.Instances*¼
-3i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javad d(¥
-¢
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javad d(6'
-%0!logic.enums.FeaturesSelectionType"__id*
-""›˜
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javad d(7
-%1boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*)
-'
-fs!logic.enums.FeaturesSelectionType*)
-'
-%0!logic.enums.FeaturesSelectionType2equals(Ljava/lang/Object;)*
-2
-1*±
+Ulogic.weka.WalkStep#applyFeatureSelection(Lweka/core/Instances;)Lweka/core/Instances;i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.java` `(+"1*²
 1i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javag g(µ
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaa a( 
+
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaa a("
+featuredSetweka.core.Instances"__id*
+""àÝ
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javac c(+:
+%04weka.filters.supervised.attribute.AttributeSelection"4weka.filters.supervised.attribute.AttributeSelectionò
+ï
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javac c(-
+%1">weka.filters.supervised.attribute.AttributeSelection#<init>()V*<
+:
+%04weka.filters.supervised.attribute.AttributeSelectionò
+ï
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javac c(.>
+filter4weka.filters.supervised.attribute.AttributeSelection"__id*<
+:
+%04weka.filters.supervised.attribute.AttributeSelectionÂ¿
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javae e($+
+%2%weka.attributeSelection.CfsSubsetEval"%weka.attributeSelection.CfsSubsetEvalÔ
+Ñ
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javae e(&
+%3"/weka.attributeSelection.CfsSubsetEval#<init>()V*-
++
+%2%weka.attributeSelection.CfsSubsetEvalÒ
+Ï
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javae e('-
+eval%weka.attributeSelection.CfsSubsetEval"__id*-
++
+%2%weka.attributeSelection.CfsSubsetEvalº·
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaf f("'
+%4!weka.attributeSelection.BestFirst"!weka.attributeSelection.BestFirstÌ
+É
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaf f($
+%5"+weka.attributeSelection.BestFirst#<init>()V*)
+'
+%4!weka.attributeSelection.BestFirstÌ
+É
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaf f(%+
+search!weka.attributeSelection.BestFirst"__id*)
+'
+%4!weka.attributeSelection.BestFirstŒ
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javai i(!
+
+%6void"jweka.filters.supervised.attribute.AttributeSelection#setEvaluator(Lweka/attributeSelection/ASEvaluation;)V*@
+>
+filter4weka.filters.supervised.attribute.AttributeSelection*/
+-
+eval%weka.attributeSelection.CfsSubsetEval24setEvaluator(Lweka/attributeSelection/ASEvaluation;)ÿü
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaj j( 
+
+%7void"cweka.filters.supervised.attribute.AttributeSelection#setSearch(Lweka/attributeSelection/ASSearch;)V*@
+>
+filter4weka.filters.supervised.attribute.AttributeSelection*-
++
+search!weka.attributeSelection.BestFirst2-setSearch(Lweka/attributeSelection/ASSearch;)À½
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javam m("
+%8boolean":weka.filters.Filter#setInputFormat(Lweka/core/Instances;)Z*@
+>
+filter4weka.filters.supervised.attribute.AttributeSelection*
+
+setweka.core.Instances2%setInputFormat(Lweka/core/Instances;)â
+ß
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javao o(3
+%9weka.core.Instances"^weka.filters.Filter#useFilter(Lweka/core/Instances;Lweka/filters/Filter;)Lweka/core/Instances;*"
+weka.filters.Filter*
+
+setweka.core.Instances*@
+>
+filter4weka.filters.supervised.attribute.AttributeSelectionµ
 ²
 i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javag g(
-%3weka.core.Instances"__id*$*"
-logic.weka.WalkStep"	
-testing"ˆ
-i
-_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javag g( 
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javao o(3"
+featuredSetweka.core.Instances"__id*
 
-%3weka.core.Instances:'
-fs!logic.enums.FeaturesSelectionTypeB
+%9weka.core.Instances"‘
+i
+_/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WalkStep.javaq q($
+"
+featuredSetweka.core.Instances:
+setweka.core.InstancesB
 logic.weka.WalkStep
