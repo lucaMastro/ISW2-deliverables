@@ -86,7 +86,7 @@ public class WalkStep {
             else
                 break;
         }
-        // the order is: {training, testing}
+        // the order is: [training-count, testing-count]
         counts[0] = countTrainingInstances;
         counts[1] = countTestingInstances;
 
