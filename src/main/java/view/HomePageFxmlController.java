@@ -21,9 +21,6 @@ public class HomePageFxmlController extends Application {
     private Button classesBugginess;
 
     @FXML
-    private Button wekaButton;
-
-    @FXML
     private void classesBugginessSelected(ActionEvent event) throws IOException {
         SceneSwitcher.getInstance().setBugginessScene(event);
     }
@@ -31,11 +28,6 @@ public class HomePageFxmlController extends Application {
     @FXML
     private void cloneRepositorySelected(ActionEvent event) throws IOException {
         SceneSwitcher.getInstance().setCloneRepositoryScene(event);
-    }
-
-    @FXML
-    private void processControlChartSelected(ActionEvent event) throws IOException {
-        SceneSwitcher.getInstance().setControlChartScene(event);
     }
 
     @FXML
