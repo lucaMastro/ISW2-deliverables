@@ -1,0 +1,3 @@
+view.SceneSwitcher#getInstance()Lview/SceneSwitcher;
+view.SceneSwitcher#instance-init#
+view.SceneSwitcher#<init>()V

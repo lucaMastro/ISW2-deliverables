@@ -1,0 +1,2 @@
+view.BasicPageFxmlController#interruptButtonSelected(Ljavafx/event/ActionEvent;)V
+javafx.concurrent.Task#cancel()Z

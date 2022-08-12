@@ -1,0 +1,7 @@
+logic.controller.ProportionController#run(Llogic/bean/ProportionBean;)V
+logic.dataset_manager.ProportionDataset#<init>(Llogic/bean/ProportionBean;)V
+logic.controller.ProportionController#proportionIncrementMode(Llogic/dataset_manager/ProportionDataset;)V
+logic.dataset_manager.ProportionDataset#instance-init#
+logic.exception.NotAvaiableAlgorithm#<init>(Ljava/lang/String;)V
+logic.controller.ProportionController#writeToFile(Llogic/bean/ProportionBean;Llogic/dataset_manager/ProportionDataset;)V
+logic.exception.NotAvaiableAlgorithm#instance-init#

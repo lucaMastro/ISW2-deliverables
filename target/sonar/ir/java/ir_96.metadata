@@ -1,0 +1,4 @@
+view.SceneSwitcher#setHomeScene(Ljavafx/event/ActionEvent;)V
+javafx.scene.Node#getScene()Ljavafx/scene/Scene;
+javafx.scene.Scene#getWindow()Ljavafx/stage/Window;
+javafx.stage.Stage#setTitle(Ljava/lang/String;)V

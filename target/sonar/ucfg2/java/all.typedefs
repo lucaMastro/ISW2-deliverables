@@ -5314,14 +5314,11 @@ $setFileExtension(Ljava/lang/String;)Lweka.core.converters.AbstractFileSaver#se
 0submitButtonSelected(Ljavafx/event/ActionEvent;)Tview.CloneRepositoryFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V⁄
 $view.CloneRepositoryFxmlController$1javafx.concurrent.TaskE
 call();view.CloneRepositoryFxmlController$1#call()Ljava/lang/Void;“
-T<init>(Lview/CloneRepositoryFxmlController;Llogic/boundary/CloneRepositoryBoundary;)zview.CloneRepositoryFxmlController$1#<init>(Lview/CloneRepositoryFxmlController;Llogic/boundary/CloneRepositoryBoundary;)Vç
-3view.ProcessControlChartAndProportionFxmlControllerview.BasicPageFxmlControllerI
-<init>()=view.ProcessControlChartAndProportionFxmlController#<init>()VQ
-initialize()Aview.ProcessControlChartAndProportionFxmlController#initialize()Vô
-0browseOutputFilePath(Ljavafx/event/ActionEvent;)eview.ProcessControlChartAndProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)VÃ
-view.ProportionFxmlController3view.ProcessControlChartAndProportionFxmlController3
+T<init>(Lview/CloneRepositoryFxmlController;Llogic/boundary/CloneRepositoryBoundary;)zview.CloneRepositoryFxmlController$1#<init>(Lview/CloneRepositoryFxmlController;Llogic/boundary/CloneRepositoryBoundary;)Vª
+view.ProportionFxmlControllerview.BasicPageFxmlController3
 <init>()'view.ProportionFxmlController#<init>()V;
 initialize()+view.ProportionFxmlController#initialize()VÉ
+0browseOutputFilePath(Ljavafx/event/ActionEvent;)Oview.ProportionFxmlController#browseOutputFilePath(Ljavafx/event/ActionEvent;)VÉ
 0submitButtonSelected(Ljavafx/event/ActionEvent;)Oview.ProportionFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V«
 view.ProportionFxmlController$1javafx.concurrent.Task@
 call()6view.ProportionFxmlController$1#call()Ljava/lang/Void;…
@@ -5515,10 +5512,9 @@ Kfetch(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/transport/URIish;)ïo
 #isNonEmptyDirectory(Ljava/io/File;)Forg.eclipse.jgit.api.CloneCommand#isNonEmptyDirectory(Ljava/io/File;)ZS
 init()Iorg.eclipse.jgit.api.CloneCommand#init()Lorg/eclipse/jgit/lib/Repository;s
 setCloneSubmodules(Z)Zorg.eclipse.jgit.api.CloneCommand#setCloneSubmodules(Z)Lorg/eclipse/jgit/api/CloneCommand;Ω
-KaddMergeConfig(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/Ref;)norg.eclipse.jgit.api.CloneCommand#addMergeConfig(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/Ref;)VÄ
+KaddMergeConfig(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/Ref;)norg.eclipse.jgit.api.CloneCommand#addMergeConfig(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/lib/Ref;)VÓ
 view.HomePageFxmlControllerjavafx.application.Applicationá
-3cloneRepositorySelected(Ljavafx/event/ActionEvent;)Pview.HomePageFxmlController#cloneRepositorySelected(Ljavafx/event/ActionEvent;)Vè
-7processControlChartSelected(Ljavafx/event/ActionEvent;)Tview.HomePageFxmlController#processControlChartSelected(Ljavafx/event/ActionEvent;)Vâ
+3cloneRepositorySelected(Ljavafx/event/ActionEvent;)Pview.HomePageFxmlController#cloneRepositorySelected(Ljavafx/event/ActionEvent;)Vâ
 4classesBugginessSelected(Ljavafx/event/ActionEvent;)Qview.HomePageFxmlController#classesBugginessSelected(Ljavafx/event/ActionEvent;)V1
 <init>()%view.HomePageFxmlController#<init>()V9
 initialize())view.HomePageFxmlController#initialize()VS
@@ -6134,7 +6130,7 @@ $getTimeInstance(ILjava/util/Locale;)Ojava.text.DateFormat#getTimeInstance(ILja
 Iget(Lsun/util/locale/provider/LocaleProviderAdapter;IILjava/util/Locale;)tjava.text.DateFormat#get(Lsun/util/locale/provider/LocaleProviderAdapter;IILjava/util/Locale;)Ljava/text/DateFormat;[
 format(Ljava/util/Date;)?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;9
 clone().java.text.DateFormat#clone()Ljava/lang/Object;0
-isLenient()!java.text.DateFormat#isLenient()Zª(
+isLenient()!java.text.DateFormat#isLenient()Z»)
 java.text.SimpleDateFormatjava.text.DateFormatT
 equals(Ljava/lang/Object;)6java.text.SimpleDateFormat#equals(Ljava/lang/Object;)Z\
 initialize(Ljava/util/Locale;):java.text.SimpleDateFormat#initialize(Ljava/util/Locale;)V¨
@@ -6142,7 +6138,8 @@ FsubParseNumericZone(Ljava/lang/String;IIIZLjava/text/CalendarBuilder;)bjava.te
 $applyPatternImpl(Ljava/lang/String;)@java.text.SimpleDateFormat#applyPatternImpl(Ljava/lang/String;)Ví
 9matchDSTString(Ljava/lang/String;III[[Ljava/lang/String;)Ujava.text.SimpleDateFormat#matchDSTString(Ljava/lang/String;III[[Ljava/lang/String;)Zÿ
 Pformat(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/Format$FieldDelegate;)Éjava.text.SimpleDateFormat#format(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/Format$FieldDelegate;)Ljava/lang/StringBuffer;r
-)applyLocalizedPattern(Ljava/lang/String;)Ejava.text.SimpleDateFormat#applyLocalizedPattern(Ljava/lang/String;)V^
+)applyLocalizedPattern(Ljava/lang/String;)Ejava.text.SimpleDateFormat#applyLocalizedPattern(Ljava/lang/String;)Vä
+.getDisplayContextNamesMap(ILjava/util/Locale;)Xjava.text.SimpleDateFormat#getDisplayContextNamesMap(ILjava/util/Locale;)Ljava/util/Map;^
 checkNegativeNumberExpression();java.text.SimpleDateFormat#checkNegativeNumberExpression()VT
 initializeDefaultCentury()6java.text.SimpleDateFormat#initializeDefaultCentury()Vf
 #encode(IILjava/lang/StringBuilder;)?java.text.SimpleDateFormat#encode(IILjava/lang/StringBuilder;)V¡
@@ -6526,17 +6523,7 @@ read([BII)java.io.InputStream#read([BII)I]
 skip(J)java.io.InputStream#skip(J)J9
 readNBytes([BII)%java.io.InputStream#readNBytes([BII)I'
 mark(I)java.io.InputStream#mark(I)V'
-close()java.io.InputStream#close()V
-&view.ProcessControlChartFxmlController3view.ProcessControlChartAndProportionFxmlController<
-<init>()0view.ProcessControlChartFxmlController#<init>()VD
-initialize()4view.ProcessControlChartFxmlController#initialize()Vå
-0submitButtonSelected(Ljavafx/event/ActionEvent;)Xview.ProcessControlChartFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V˜
-(view.ProcessControlChartFxmlController$1javafx.concurrent.TaskI
-call()?view.ProcessControlChartFxmlController$1#call()Ljava/lang/Void;Á
-\<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)Üview.ProcessControlChartFxmlController$1#<init>(Lview/ProcessControlChartFxmlController;Llogic/boundary/ProcessControlChartBoundary;)VÌ
-*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
-runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
-Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)VÇ
+close()java.io.InputStream#close()VÇ
 .logic.controller.ProcessControlChartControllerjava.lang.ObjectD
 <init>()8logic.controller.ProcessControlChartController#<init>()Vx
 "run(Llogic/bean/ProcessChartBean;)Rlogic.controller.ProcessControlChartController#run(Llogic/bean/ProcessChartBean;)VÖ,
@@ -6654,4 +6641,7 @@ OrecomputeCoordinatesToSource(Ljavafx/scene/input/MouseEvent;Ljava/lang/Object;)
 isAltDown()*javafx.scene.input.MouseEvent#isAltDown()ZA
 getClickCount().javafx.scene.input.MouseEvent#getClickCount()I=
 isShiftDown(),javafx.scene.input.MouseEvent#isShiftDown()Z´
-5copyFor(Ljava/lang/Object;Ljavafx/event/EventTarget;)rjavafx.scene.input.MouseEvent#copyFor(Ljava/lang/Object;Ljavafx/event/EventTarget;)Ljavafx/scene/input/MouseEvent;
+5copyFor(Ljava/lang/Object;Ljavafx/event/EventTarget;)rjavafx.scene.input.MouseEvent#copyFor(Ljava/lang/Object;Ljavafx/event/EventTarget;)Ljavafx/scene/input/MouseEvent;Ì
+*logic.boundary.ProcessControlChartBoundary logic.abstracts.AbstractBoundaryH
+runUseCase()8logic.boundary.ProcessControlChartBoundary#runUseCase()V“
+Q<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)}logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V

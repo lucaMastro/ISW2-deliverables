@@ -1,0 +1,3 @@
+logic.weka.WekaManager#applyCostSensitive(Llogic/enums/CostSensitiveClassifierType;)V
+logic.weka.FilterCreator#sensitiveThresholdClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;
+logic.weka.FilterCreator#sensitiveLearningClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;

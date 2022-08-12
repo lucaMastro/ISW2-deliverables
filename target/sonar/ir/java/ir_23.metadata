@@ -1,0 +1,4 @@
+logic.dataset_manager.Dataset#<init>(Llogic/abstracts/AbstractBean;)V
+logic.dataset_manager.JgitManager#instance-init#
+logic.dataset_manager.JgitManager#<init>(Ljava/lang/String;)V
+logic.dataset_manager.Dataset#initializeCommitList(Llogic/dataset_manager/JgitManager;)V

@@ -1,0 +1,3 @@
+logic.dataset_manager.Commit#<init>(Lorg/eclipse/jgit/revwalk/RevCommit;Llogic/dataset_manager/JgitManager;)V
+org.eclipse.jgit.revwalk.RevCommit#getAuthorIdent()Lorg/eclipse/jgit/lib/PersonIdent;
+org.eclipse.jgit.revwalk.RevCommit#getFullMessage()Ljava/lang/String;

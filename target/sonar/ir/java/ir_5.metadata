@@ -1,0 +1,3 @@
+view.WekaAnalisysFxmlController#arffRadioButtonSelected(Ljavafx/event/ActionEvent;)V
+javafx.scene.Node#isVisible()Z
+javafx.scene.Node#setVisible(Z)V

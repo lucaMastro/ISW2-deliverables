@@ -1,0 +1,1 @@
+logic.dataset_manager.JgitManager#getRepository()Lorg/eclipse/jgit/lib/Repository;

@@ -1,0 +1,2 @@
+logic.weka.FilterCreator#sensitiveThresholdClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;
+logic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;

@@ -1,0 +1,3 @@
+logic.dataset_manager.ProcessControlChartDataset#retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)Ljava/util/List;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#

@@ -1,33 +1,33 @@
 
-A__sonar_lambda_8$logic.dataset_manager.ProcessControlChartDatasetÜ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW W(J"startingBlock*Û
-startingBlockÜ
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW W(J”
+A__sonar_lambda_8$logic.dataset_manager.ProcessControlChartDataseté
+É/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW W(J"startingBlock*˚
+startingBlocké
+É/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW W(J”
 –
 
 __unknown_file (S
 ProcessControlChartDataset.this0logic.dataset_manager.ProcessControlChartDataset"__id*Y*W2
 0logic.dataset_manager.ProcessControlChartDataset"!
 ProcessControlChartDataset.this*
-1*Ø
-1Ü
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW  W(&ì
-ê
-Ü
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW3 W(A
+1*œ
+1é
+É/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW  W(&õ
+ò
+é
+É/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW3 W(A
 %1java.util.ArrayList"__id*d*b
 S
 ProcessControlChartDataset.this0logic.dataset_manager.ProcessControlChartDataset"
-	fixedBugsˆÛ
-Ü
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW  W(B%
+	fixedBugs˛˚
+é
+É/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW  W(B%
 %2logic.dataset_manager.BugTicket"[logic.dataset_manager.Commit#isFixCommit(Ljava/util/List;)Llogic/dataset_manager/BugTicket;*(
 &
 commitlogic.dataset_manager.Commit*
 
-%1java.util.ArrayList2isFixCommit(Ljava/util/List;)"ë
-Ü
-|/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW  W(J
+%1java.util.ArrayList2isFixCommit(Ljava/util/List;)"ô
+é
+É/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProcessControlChartDataset.javaW  W(J
 "":&
 commitlogic.dataset_manager.CommitB 
 java.util.function.Predicate

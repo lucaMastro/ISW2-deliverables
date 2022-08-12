@@ -1,0 +1,9 @@
+logic.weka.WekaManager#initializeClassifiers()V
+java.util.ArrayList#<init>()V
+weka.classifiers.bayes.NaiveBayes#<init>()V
+weka.classifiers.trees.RandomForest#instance-init#
+weka.classifiers.trees.RandomForest#<init>()V
+java.util.ArrayList#instance-init#
+weka.classifiers.lazy.IBk#<init>()V
+weka.classifiers.bayes.NaiveBayes#instance-init#
+weka.classifiers.lazy.IBk#instance-init#

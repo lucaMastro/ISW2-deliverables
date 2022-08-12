@@ -1,0 +1,6 @@
+view.WekaAnalisysFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V
+logic.boundary.WekaAnalysisBoundary#instance-init#
+javafx.scene.control.TextInputControl#getText()Ljava/lang/String;
+javafx.scene.Node#setVisible(Z)V
+logic.boundary.WekaAnalysisBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+javafx.scene.Node#setDisable(Z)V

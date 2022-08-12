@@ -1,0 +1,3 @@
+logic.bean.WekaBean#removeTempFiles()V
+java.lang.Boolean#equals(Ljava/lang/Object;)Z
+java.nio.file.Files#delete(Ljava/nio/file/Path;)V

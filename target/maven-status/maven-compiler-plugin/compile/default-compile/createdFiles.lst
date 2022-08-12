@@ -5,7 +5,6 @@ logic/controller/WekaController.class
 logic/boundary/ProcessControlChartBoundary.class
 logic/abstracts/AbstractBoundary.class
 logic/controller/ProportionController$1.class
-view/ProcessControlChartAndProportionFxmlController.class
 logic/weka/WekaManager.class
 view/WekaAnalisysFxmlController.class
 logic/dataset_manager/ProcessControlChartEntry.class
@@ -39,7 +38,6 @@ logic/bean/ProportionBean.class
 logic/enums/CostSensitiveClassifierType.class
 view/SceneSwitcher.class
 logic/exception/NotAvaiableAlgorithm.class
-view/ProcessControlChartFxmlController.class
 logic/exception/WalkStepFilterException.class
 logic/dataset_manager/ProportionDataset.class
 logic/enums/ProportionAlgoOptions.class
@@ -51,5 +49,4 @@ view/WekaAnalisysFxmlController$1.class
 logic/exception/InvalidRangeException.class
 logic/abstracts/AbstractBean.class
 logic/controller/ProportionController.class
-view/ProcessControlChartFxmlController$1.class
 logic/dataset_manager/ReleaseFile.class

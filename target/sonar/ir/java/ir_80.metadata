@@ -1,0 +1,2 @@
+logic.weka.WalkStep#getTestingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;
+java.lang.Enum#equals(Ljava/lang/Object;)Z

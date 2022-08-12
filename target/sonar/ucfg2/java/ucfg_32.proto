@@ -1,50 +1,50 @@
 
-Hlogic.weka.WekaManager#readInputCsv(Ljava/io/File;)Lweka/core/Instances;l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java5 5(""1*Æ
-1l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java6 6($∑¥
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java6 6("$
-%0weka.core.converters.CSVLoader"weka.core.converters.CSVLoader…
-∆
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java6 6($
+Hlogic.weka.WekaManager#readInputCsv(Ljava/io/File;)Lweka/core/Instances;s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java5 5(""1*Ì
+1s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java6 6($æª
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java6 6("$
+%0weka.core.converters.CSVLoader"weka.core.converters.CSVLoader–
+Õ
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java6 6($
 %1"(weka.core.converters.CSVLoader#<init>()V*&
 $
-%0weka.core.converters.CSVLoader…
-∆
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java6 6(%(
+%0weka.core.converters.CSVLoader–
+Õ
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java6 6(%(
 loaderweka.core.converters.CSVLoader"__id*&
 $
-%0weka.core.converters.CSVLoaderõò
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java7 7("
+%0weka.core.converters.CSVLoader¢ü
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java7 7("
 
 %2void"9weka.core.converters.CSVLoader#setSource(Ljava/io/File;)V**
 (
 loaderweka.core.converters.CSVLoader*
 
-inputCsvjava.io.File2setSource(Ljava/io/File;)àÖ
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java8 8(.
+inputCsvjava.io.File2setSource(Ljava/io/File;)èå
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java8 8(.
 %3weka.core.Instances"@weka.core.converters.CSVLoader#getDataSet()Lweka/core/Instances;**
 (
-loaderweka.core.converters.CSVLoader2getDataSet()π
-∂
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java8 8(/#
+loaderweka.core.converters.CSVLoader2getDataSet()¿
+Ω
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java8 8(/#
 csvInstancesweka.core.Instances"__id*
 
-%3weka.core.InstancesÎË
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java: :()
+%3weka.core.InstancesÚÔ
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java: :()
 
 %4void")weka.core.Instances#deleteAttributeAt(I)V*%
 #
-csvInstancesweka.core.Instances*22deleteAttributeAt(I)"ï
-l
-b/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/weka/WekaManager.java; ;(%
+csvInstancesweka.core.Instances*22deleteAttributeAt(I)"ú
+s
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java; ;(%
 #
 csvInstancesweka.core.Instances:
 inputCsvjava.io.FileB

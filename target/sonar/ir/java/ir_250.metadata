@@ -1,0 +1,5 @@
+logic.dataset_manager.RetrieveInformations#getInformations()Ljava/util/List;
+java.util.ArrayList#<init>()V
+logic.bean.JiraBeanInformations#<init>(Lorg/json/JSONObject;)V
+java.util.ArrayList#instance-init#
+logic.bean.JiraBeanInformations#instance-init#

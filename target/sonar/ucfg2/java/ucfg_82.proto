@@ -1,16 +1,16 @@
 
-Klogic.bean.WekaConfigurationOutputBean#getStepEvaluations()Ljava/util/List;|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java'$ '(6"1*û
-1|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((Þ
-Û
-|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((#
+Klogic.bean.WekaConfigurationOutputBean#getStepEvaluations()Ljava/util/List;ƒ
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java'$ '(6"1*“
+1ƒ
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((æ
+ã
+ƒ
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java( ((#
 %0java.util.List"__id*?*=(
 &logic.bean.WekaConfigurationOutputBean"
-stepEvaluations"–
-|
-r/home/luca/Scrivania/ISW2/deliverables/deliverable2/code/src/main/java/logic/bean/WekaConfigurationOutputBean.java( (($
+stepEvaluations"ž
+ƒ
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java( (($
 
 %0java.util.ListB*(
 &logic.bean.WekaConfigurationOutputBean

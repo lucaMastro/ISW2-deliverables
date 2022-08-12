@@ -1,0 +1,2 @@
+logic.dataset_manager.Release#findFromName(Ljava/lang/String;Ljava/util/List;)Llogic/dataset_manager/ReleaseFile;
+java.lang.Boolean#equals(Ljava/lang/Object;)Z

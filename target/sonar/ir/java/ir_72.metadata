@@ -1,0 +1,4 @@
+logic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;
+logic.weka.FilterCreator#createCostMatrix()Lweka/classifiers/CostMatrix;
+weka.classifiers.meta.CostSensitiveClassifier#instance-init#
+weka.classifiers.meta.CostSensitiveClassifier#<init>()V
