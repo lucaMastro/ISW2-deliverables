@@ -16,8 +16,6 @@ public class HomePageFxmlController extends Application {
     @FXML
     private Button cloneRepoButton;
 
-    @FXML
-    private Button processControlChartButton;
 
     @FXML
     private Button classesBugginess;
@@ -48,7 +46,6 @@ public class HomePageFxmlController extends Application {
     @FXML
     private void initialize() {
         assert cloneRepoButton != null : "fx:id=\"cloneRepoButton\" was not injected: check your FXML file 'home.fxml'.";
-        assert processControlChartButton != null : "fx:id=\"processControlChartButton\" was not injected: check your FXML file 'home.fxml'.";
         assert classesBugginess != null : "fx:id=\"classesBugginess\" was not injected: check your FXML file 'home.fxml'.";
     }
 
