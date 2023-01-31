@@ -25,20 +25,8 @@ public class ProportionDataset extends Dataset {
         this.reduceToThisIndex = this.releases.size() / 2;
 
         this.initializeBugsList(bean.getProject());
-
-        this.firstReduction();
+        
         this.files = new ReleaseFileManager(jgitManager, this.releases);
-    }
-
-    private void firstReduction(){
-        /*  trying to redute computation time   */
-        int half = this.releases.size();
-
-        Release lastFixedVersion = this.fixedBugs.get(this.fixedBugs.size() - 1).getFixedVersion();
-        int minReleaseIndex = half < lastFixedVersion.getIndex() ? half : lastFixedVersion.getIndex();
-
-        this.releases.removeIf(r -> r.getIndex() > minReleaseIndex);
-
     }
 
     private void removeRevertCommits() {
