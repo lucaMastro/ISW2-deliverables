@@ -1,16 +1,18 @@
 
-:logic.bean.JiraBeanInformations#getKey()Ljava/lang/String;|
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java+ +("1*Ï
+Tlogic.bean.JiraBeanInformations#getTrulyFixedVersion()Llogic/dataset_manager/Commit;|
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java5 5(&"1*∞
 1|
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java, ,(Õ
- 
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java6 6( Ñ
+Å
 |
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java, ,(
-%0java.lang.String"__id*,**!
-logic.bean.JiraBeanInformations"
-key"ò
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java6 6( #
+%0logic.dataset_manager.Release"__id*V
+
+__unknown_file (:*8!
+logic.bean.JiraBeanInformations"
+trulyFixedVersion"•
 |
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java, ,(
-
-%0java.lang.StringB#!
-logic.bean.JiraBeanInformations
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java6 6(!%
+#
+%0logic.dataset_manager.ReleaseB#!
+logic.bean.JiraBeanInformationsH

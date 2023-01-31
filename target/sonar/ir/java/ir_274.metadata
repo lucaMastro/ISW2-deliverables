@@ -1,3 +1,6 @@
-view.BasicPageFxmlController#changeEditability()V
-javafx.scene.Node#isDisabled()Z
-javafx.scene.Node#setDisable(Z)V
+view.BasicPageFxmlController#showText(Ljavafx/scene/input/MouseEvent;)V
+javafx.scene.control.Tooltip#instance-init#
+javafx.scene.control.Tooltip#<init>()V
+javafx.scene.control.TextInputControl#getText()Ljava/lang/String;
+java.lang.String#isEmpty()Z
+view.SceneSwitcher#getInstance()Lview/SceneSwitcher;

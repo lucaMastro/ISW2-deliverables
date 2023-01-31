@@ -1,5 +1,1 @@
-view.CloneRepositoryFxmlController#submitButtonSelected(Ljavafx/event/ActionEvent;)V
-logic.boundary.CloneRepositoryBoundary#instance-init#
-javafx.scene.control.TextInputControl#getText()Ljava/lang/String;
-javafx.scene.Node#setVisible(Z)V
-logic.boundary.CloneRepositoryBoundary#<init>(Ljava/lang/String;Ljava/lang/String;)V
+view.CloneRepositoryFxmlController#initialize()V

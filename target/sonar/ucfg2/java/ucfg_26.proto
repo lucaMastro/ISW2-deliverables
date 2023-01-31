@@ -1,70 +1,90 @@
 
 ]logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaI I(""6*ê
+p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaI I(""6*‰
 2z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaL L(∞
-≠
+p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaL L(Ã
+…
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaL L(!
-clogic.dataset_manager.Commit"__id*
-""”
-–
+clogic.dataset_manager.Commit"__id*"
+
+__unknown_file (
+""ã
+à
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaL L(!
 clogic.dataset_manager.Commit"
-__arrayGet*
+__arrayGet*7
+
+__unknown_file (
 
-%0java.util.ArrayList*
+%0java.util.ArrayList*"
+
+__unknown_file (
 ""*
 4
-1*Ÿ
+1*ı
 3z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaN N(“
-œ
+p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaN N(Ó
+Î
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaN N(&
-commitlogic.dataset_manager.Commit"__id*#
+commitlogic.dataset_manager.Commit"__id*?
+
+__unknown_file (#
 !
 clogic.dataset_manager.Commit*
-1*ã
+1*˚
 4z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaM M(„
-‡
+p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaM M(ˇ
+¸
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaM M((
-%1"org.eclipse.jgit.revwalk.RevCommit"__id*2*0
+%1"org.eclipse.jgit.revwalk.RevCommit"__id*N
+
+__unknown_file (2*0
 !
 clogic.dataset_manager.Commit"
-	revCommitåâ
+	revCommit®•
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaM M(%
-%2java.lang.String"<org.eclipse.jgit.lib.AnyObjectId#getName()Ljava/lang/String;**
+%2java.lang.String"<org.eclipse.jgit.lib.AnyObjectId#getName()Ljava/lang/String;*F
+
+__unknown_file (*
 (
-%1"org.eclipse.jgit.revwalk.RevCommit2	getName()åâ
+%1"org.eclipse.jgit.revwalk.RevCommit2	getName()ƒ¡
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaM M(0
-%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
 
-%2java.lang.String*
+%2java.lang.String*4
+
+__unknown_file (
 
 idjava.lang.String2equals(Ljava/lang/Object;)*
 2
-3*◊
+3*Û
 5z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaL L(–
-Õ
+p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaL L(Ï
+È
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaL L($
-%0java.util.ArrayList"__id*.*,
+%0java.util.ArrayList"__id*J
+
+__unknown_file (.*,
 logic.dataset_manager.Dataset"	
 commits*
-2*º
+2*ÿ
 6z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaK K(µ
-≤
+p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaK K(—
+Œ
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaK K(&
-commitlogic.dataset_manager.Commit"__id*
+commitlogic.dataset_manager.Commit"__id*"
+
+__unknown_file (
 ""*
 5*®
 1z
@@ -72,6 +92,8 @@ p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 z
 p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaR R((
 &
-commitlogic.dataset_manager.Commit:
+commitlogic.dataset_manager.Commit:î
+z
+p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Dataset.javaI# I(,
 idjava.lang.StringB!
 logic.dataset_manager.Dataset

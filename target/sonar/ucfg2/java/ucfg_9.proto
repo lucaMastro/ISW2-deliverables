@@ -1,55 +1,71 @@
 
 [logic.dataset_manager.Commit#isFixCommit(Ljava/util/List;)Llogic/dataset_manager/BugTicket;y
-o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java) )( "6*ô
+o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java) )( "6*Ì
 2y
-o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java- -(¥
-±
+o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java- -(–
+Õ
 y
 o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java- -(&
-buglogic.dataset_manager.BugTicket"__id*
-""Ÿ
-÷
+buglogic.dataset_manager.BugTicket"__id*"
+
+__unknown_file (
+""ë
+é
 y
 o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java- -(&
 buglogic.dataset_manager.BugTicket"
-__arrayGet*
+__arrayGet*9
+
+__unknown_file (
 
-	fixedBugsjava.util.List*
+	fixedBugsjava.util.List*"
+
+__unknown_file (
 ""*
 4
-1*⁄
+1*ˆ
 3y
-o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java/ /(‘
-—
+o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java/ /(
+Ì
 y
 o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java/ /($
-blogic.dataset_manager.BugTicket"__id*(
+blogic.dataset_manager.BugTicket"__id*D
+
+__unknown_file ((
 &
 buglogic.dataset_manager.BugTicket*
-1*á
+1*€
 4y
-o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java. .(ﬁ
-€
+o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java. .(˙
+˜
 y
 o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java. .(#
-%0java.util.ArrayList"__id*=*;
+%0java.util.ArrayList"__id*Y
+
+__unknown_file (=*;
 &
 buglogic.dataset_manager.BugTicket"
-relativeCommitsùö
+relativeCommits’“
 y
 o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java. .(2
-%1boolean"1java.util.ArrayList#contains(Ljava/lang/Object;)Z*
+%1boolean"1java.util.ArrayList#contains(Ljava/lang/Object;)Z*7
+
+__unknown_file (
 
-%0java.util.ArrayList* 
+%0java.util.ArrayList*<
+
+__unknown_file ( 
 logic.dataset_manager.Commit2contains(Ljava/lang/Object;)*
 2
-3*∏
+3*‘
 6y
-o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java, ,(≤
-Ø
+o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java, ,(Œ
+À
 y
 o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java, ,($
-blogic.dataset_manager.BugTicket"__id*
+blogic.dataset_manager.BugTicket"__id*"
+
+__unknown_file (
 ""*
 2*§
 1y
@@ -57,6 +73,8 @@ o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 y
 o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java3 3(&
 $
-blogic.dataset_manager.BugTicket:
+blogic.dataset_manager.BugTicket:ò
+y
+o/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Commit.java)! )(:
 	fixedBugsjava.util.ListB 
-logic.dataset_manager.Commit
+logic.dataset_manager.CommitH

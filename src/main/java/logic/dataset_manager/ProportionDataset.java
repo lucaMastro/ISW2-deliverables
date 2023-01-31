@@ -12,7 +12,6 @@ import java.util.*;
 public class ProportionDataset extends Dataset {
     private ArrayList<Release> releases;
     private ReleaseFileManager files;
-    private int reduceToThisIndex;
 
     //***********************************************************************************************************
     // Constructor and relative methods
@@ -22,10 +21,9 @@ public class ProportionDataset extends Dataset {
 
         this.removeRevertCommits();
         this.initializeReleaseList(jgitManager);
-        this.reduceToThisIndex = this.releases.size() / 2;
 
         this.initializeBugsList(bean.getProject());
-        
+
         this.files = new ReleaseFileManager(jgitManager, this.releases);
     }
 
@@ -79,7 +77,7 @@ public class ProportionDataset extends Dataset {
     }
 
     public void removeHalfRelease(){
-        this.releases.removeIf(r -> r.getIndex() > this.reduceToThisIndex);
+        this.releases.removeIf(r -> r.getIndex() > this.releases.size() / 2);
     }
 
     private List<Commit> retrieveCommitsBeetwenReleases(Integer endIndexRelease)

@@ -1,73 +1,25 @@
 
-nlogic.dataset_manager.ProportionDataset#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaö ö(&"6*¹
-2†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaù ù(¾
-»
+;logic.dataset_manager.ProportionDataset#getNumOfReleases()I†
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaş ş("1*Ÿ
+1†
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaÿ ÿ(„
+
 †
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaù ù("
-rlogic.dataset_manager.Release"__id*
-""á
-Ş
-†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaù ù("
-rlogic.dataset_manager.Release"
-__arrayGet*
-
-%0java.util.ArrayList*
-""*
-4
-1*ò
-3†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaû û(Ş
-Û
-†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaû û($
-retlogic.dataset_manager.Release"__id*$
-"
-rlogic.dataset_manager.Release*
-1*£
-4†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaú ú(á
-Ş
-†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaú ú(
-%1java.lang.String"__id*5*3
-"
-rlogic.dataset_manager.Release"
-versionName¨¥
-†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaú ú()
-%2boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
-
-%1java.lang.String*
-
-sjava.lang.String2"contains(Ljava/lang/CharSequence;)*
-2
-3*ü
-5†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaù ù(è
-å
-†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaù ù(&
-%0java.util.ArrayList"__id*9*7)
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaÿ ÿ(
+%0java.util.ArrayList"__id*U
+
+__unknown_file (9*7)
 'logic.dataset_manager.ProportionDataset"
 
-releases*
-2*Ô
-6†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaø ø(À
-½
+releasesõò
 †
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaø ø($
-retlogic.dataset_manager.Release"__id*
-""*
-5*À
-1†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaÿ ÿ("±
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaÿ ÿ(#	
+%1int"java.util.ArrayList#size()I*7
+
+__unknown_file (
+
+%0java.util.ArrayList2size()"‘
 †
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaÿ ÿ(&
-$
-retlogic.dataset_manager.Release:
-sjava.lang.StringB+)
-'logic.dataset_manager.ProportionDataset
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaÿ ÿ($
+""B+)
+'logic.dataset_manager.ProportionDatasetHP

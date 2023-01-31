@@ -1,27 +1,19 @@
 
-flogic.dataset_manager.ProportionDataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;Ü
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaÁ Á("1*•
+Elogic.dataset_manager.ProportionDataset#getReleases()Ljava/util/List;Ü
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java„ „($"1*º
 1Ü
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaË Ë(Ë
-Â
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java‰ ‰(Ñ
+Å
 Ü
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaË Ë(
-%0java.util.ArrayList"__id*9*7)
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java‰ ‰(
+%0java.util.ArrayList"__id*U
+
+__unknown_file (9*7)
 'logic.dataset_manager.ProportionDataset"
 
-releases¯
-ı
+releases"¶
 Ü
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaË Ë('#
-%1logic.dataset_manager.Release"
-__arrayGet*
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java‰ ‰(
 
-%0java.util.ArrayList*
-
-indexjava.lang.Integer"∞
-Ü
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaË Ë((%
-#
-%1logic.dataset_manager.Release:
-indexjava.lang.IntegerB+)
-'logic.dataset_manager.ProportionDataset
+%0java.util.ArrayListB+)
+'logic.dataset_manager.ProportionDatasetH

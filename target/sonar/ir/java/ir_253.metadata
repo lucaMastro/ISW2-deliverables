@@ -1,1 +1,1 @@
-logic.bean.JiraBeanInformations#getKey()Ljava/lang/String;
+logic.bean.JiraBeanInformations#getAffectedVersionsName()Ljava/util/List;

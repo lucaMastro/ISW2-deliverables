@@ -1,20 +1,24 @@
 
 )logic.weka.WekaManager#getTotalDataLen()Iu
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java¸ ¸("1*ž
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java¸ ¸("1*Ö
 1u
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java¹ ¹(Æ
-Ã
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java¹ ¹(â
+ß
 u
 i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java¹ ¹(
-%0weka.core.Instances"__id*)*'
+%0weka.core.Instances"__id*E
+
+__unknown_file ()*'
 logic.weka.WekaManager"
-	totalData×Ô
+	totalDataóð
 u
 i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java¹ ¹(,	
-%1int"#weka.core.Instances#numInstances()I*
+%1int"#weka.core.Instances#numInstances()I*7
+
+__unknown_file (
 
 %0weka.core.Instances2numInstances()"
 u
 i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java¹ ¹(-
 ""B
-logic.weka.WekaManager
+logic.weka.WekaManagerP

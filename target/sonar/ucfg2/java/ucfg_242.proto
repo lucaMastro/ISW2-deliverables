@@ -1,16 +1,18 @@
 
-Rlogic.bean.JiraBeanInformations#getOpeningVersion()Llogic/dataset_manager/Release;|
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java= =($"1*‘
+@logic.bean.JiraBeanInformations#getOpeningDate()Ljava/util/Date;|
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.javaE E("1*Œ
 1|
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java> >(å
-â
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.javaF F(ï
+ì
 |
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java> >(#
-%0logic.dataset_manager.Release"__id*7*5!
-logic.bean.JiraBeanInformations"
-openingVersion"¥
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.javaF F(
+%0java.util.Date"__id*P
+
+__unknown_file (4*2!
+logic.bean.JiraBeanInformations"
+openingDate"–
 |
-r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.java> >(%
-#
-%0logic.dataset_manager.ReleaseB#!
-logic.bean.JiraBeanInformations
+r/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/JiraBeanInformations.javaF F(
+
+%0java.util.DateB#!
+logic.bean.JiraBeanInformationsH

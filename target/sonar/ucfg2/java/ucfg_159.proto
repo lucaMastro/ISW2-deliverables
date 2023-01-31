@@ -1,48 +1,31 @@
 
 8__sonar_lambda_3$logic.dataset_manager.ProportionDatasetÑ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaQ( U(	"1*Ì
-
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR R(I"startingBlock*È
+startingBlockÑ
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR R(IÀ
+»
+
+__unknown_file (A
+ProportionDataset.this'logic.dataset_manager.ProportionDataset"__id*c
+
+__unknown_file (G*E)
+'logic.dataset_manager.ProportionDataset"
+ProportionDataset.this*
+1*Õ
 1Ñ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR R(◊
-‘
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR$ R(%Æ´
 Ñ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR R(
-%15java.util.Date"__id*.*,
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR$ R(0
+%2java.lang.Integer";logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;*@
+
+__unknown_file ($
 "
-o1logic.dataset_manager.Commit"
-dateø
-º
+rlogic.dataset_manager.Release2
+getIndex()"è
 Ñ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR R(
-d1java.util.Date"__id*
-
-%15java.util.Date◊
-‘
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR$ R(I
+"":´
 Ñ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaS S(
-%16java.util.Date"__id*.*,
-"
-o2logic.dataset_manager.Commit"
-dateø
-º
-Ñ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaS S(
-d2java.util.Date"__id*
-
-%16java.util.Dateêç
-Ñ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaT T(#
-
-%17int"+java.util.Date#compareTo(Ljava/util/Date;)I*
-
-d1java.util.Date*
-
-d2java.util.Date2compareTo(Ljava/util/Date;)"ï
-Ñ
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaT T($
-
-
-%17int:"
-o1logic.dataset_manager.Commit:"
-o2logic.dataset_manager.CommitB
-java.util.Comparator
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaR R( "
+rlogic.dataset_manager.ReleaseB 
+java.util.function.Predicate

@@ -1,25 +1,31 @@
 
 +logic.weka.WalkStep#getNegativesTraining()Ir
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaç ç(#"1*Ò
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaç ç(#"1*≈
 1r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaé é(ø
-º
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaé é(€
+ÿ
 r
 f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaé é(
-%0weka.core.Instances"__id*%*#
+%0weka.core.Instances"__id*A
+
+__unknown_file (%*#
 logic.weka.WalkStep"
 
-training‘—
+trainingÌ
 r
 f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaé é(+	
-%1int"#weka.core.Instances#numInstances()I*
+%1int"#weka.core.Instances#numInstances()I*7
+
+__unknown_file (
 
-%0weka.core.Instances2numInstances()‡›
+%0weka.core.Instances2numInstances()¸˘
 r
 f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaé. é(I	
-%2int"+logic.weka.WalkStep#getPositivesTraining()I*
+%2int"+logic.weka.WalkStep#getPositivesTraining()I*3
+
+__unknown_file (
 logic.weka.WalkStep2getPositivesTraining()"|
 r
 f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaé é(J
 ""B
-logic.weka.WalkStep
+logic.weka.WalkStepHP

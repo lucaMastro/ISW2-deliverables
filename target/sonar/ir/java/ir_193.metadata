@@ -1,1 +1,3 @@
-logic.proportion_algo.ProportionIncrement#updateBugsAV(Ljava/util/List;)V
+logic.proportion_algo.ProportionIncrement#computeProportionIncrement()V
+logic.proportion_algo.ProportionIncrement#setDatasetBugginess()V
+logic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)V
