@@ -39,7 +39,6 @@ public class ProportionIncrement {
         /*  this method compute the P value of the first i releases: as proportion increment wants,
         *   if i want to predict buggines of index-th release's class, i should use a P value computed
         *   for fixed bugs in releases in [1, index].   */
-
         List<BugTicket> bugs = this.dataset.getFixedBugs();
 
         /* creating a list which contain only the bugs index whose FixedVersion is less than or equal to index  */
@@ -53,24 +52,25 @@ public class ProportionIncrement {
         this.computeInitialPvalue(onlyRelativeBugs);
 
         /*  updating all bugs AV    */
-        this.updateBugsAV(bugs);
+        this.updateBugsAV(index);
 
     }
 
-    private void updateBugsAV(List<BugTicket> bugs) {
+    private void updateBugsAV(int index) {
         int injectedVersionIndex;
         int fixedVersionIndex;
         int openingVersionIndex;
         int i;
         List<Release> affectedVersions;
+        List<BugTicket> bugs = this.dataset.getFixedBugs();
         for (BugTicket bug : bugs){
-            if (bug.getAffectedVersions().isEmpty()){
+            if (bug.getFixedVersion().getIndex() <= index && bug.getAffectedVersions().isEmpty()){
                 fixedVersionIndex = bug.getFixedVersion().getIndex();
                 openingVersionIndex = bug.getOpeningVersion().getIndex();
                 injectedVersionIndex = fixedVersionIndex - this.proportionP * (fixedVersionIndex - openingVersionIndex);
                 if (injectedVersionIndex <= 0) //proportion computation returns an older realease than the firstone: impossible
                     injectedVersionIndex = 1;
-                for (i = injectedVersionIndex; i < fixedVersionIndex; i++) {
+                for (i = injectedVersionIndex; i <     fixedVersionIndex; i++) {
                     affectedVersions = bug.getAffectedVersions();
                     affectedVersions.add(this.dataset.getReleaseFromItsIndex(i));
                     bug.setAffectedVersions(affectedVersions);

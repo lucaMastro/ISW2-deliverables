@@ -1,11 +1,11 @@
 
 8__sonar_lambda_2$logic.dataset_manager.ProportionDataset„
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaE( I(	"1*•
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaC( G(	"1*•
 1„
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaF F(ó
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaD D(ó
 ð
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaF F(
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaD D(
 %15java.util.Date"__id*J
 
 __unknown_file (.*,
@@ -14,7 +14,7 @@ z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 dateÛ
 Ø
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaF F(
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaD D(
 d1java.util.Date"__id*3
 
 __unknown_file (
@@ -22,7 +22,7 @@ z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %15java.util.Dateó
 ð
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaG G(
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaE E(
 %16java.util.Date"__id*J
 
 __unknown_file (.*,
@@ -31,14 +31,14 @@ z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 dateÛ
 Ø
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaG G(
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaE E(
 d2java.util.Date"__id*3
 
 __unknown_file (
 
 %16java.util.DateÈÅ
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaH H(#
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaF F(#
 
 %17int"+java.util.Date#compareTo(Ljava/util/Date;)I*2
 
@@ -50,14 +50,14 @@ z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 
 d2java.util.Date2compareTo(Ljava/util/Date;)"•
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaH H($
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaF F($
 
 
 %17int:«
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaE) E(3"
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaC) C(3"
 o1logic.dataset_manager.Commit:«
 „
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaE4 E(="
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaC4 C(="
 o2logic.dataset_manager.CommitB
 java.util.Comparator
