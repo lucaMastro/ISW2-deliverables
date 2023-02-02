@@ -2046,14 +2046,14 @@ getFiles()Blogic.dataset_manager.ProportionDataset#getFiles()Ljava/util/List;s
 'findReleaseFromName(Ljava/lang/String;)nlogic.dataset_manager.ProportionDataset#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;Æ
 EfindAffectedVersions(Ljava/util/List;Llogic/dataset_manager/Release;)}logic.dataset_manager.ProportionDataset#findAffectedVersions(Ljava/util/List;Llogic/dataset_manager/Release;)Ljava/util/List;›
 $logic.exception.NotAvaiableAlgorithmjava.lang.Exception^
-<init>(Ljava/lang/String;)@logic.exception.NotAvaiableAlgorithm#<init>(Ljava/lang/String;)Vü
-)logic.proportion_algo.ProportionIncrementjava.lang.Objectk
-updateBugsAV(Ljava/util/List;)Ilogic.proportion_algo.ProportionIncrement#updateBugsAV(Ljava/util/List;)V{
+<init>(Ljava/lang/String;)@logic.exception.NotAvaiableAlgorithm#<init>(Ljava/lang/String;)VÞ
+)logic.proportion_algo.ProportionIncrementjava.lang.Object{
 &computeProportion(Ljava/lang/Integer;)Qlogic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)V‘
 1<init>(Llogic/dataset_manager/ProportionDataset;)\logic.proportion_algo.ProportionIncrement#<init>(Llogic/dataset_manager/ProportionDataset;)Vg
 computeProportionIncrement()Glogic.proportion_algo.ProportionIncrement#computeProportionIncrement()V{
 &computeInitialPvalue(Ljava/util/List;)Qlogic.proportion_algo.ProportionIncrement#computeInitialPvalue(Ljava/util/List;)VY
-setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()V(
+setDatasetBugginess()@logic.proportion_algo.ProportionIncrement#setDatasetBugginess()VM
+updateBugsAV(I):logic.proportion_algo.ProportionIncrement#updateBugsAV(I)V(
 java.lang.Appendablejava.lang.Object>
 java.io.Closeablejava.lang.Objectjava.lang.AutoCloseable%
 java.io.Flushablejava.lang.Objectò

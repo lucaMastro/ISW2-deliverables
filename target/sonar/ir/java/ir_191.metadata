@@ -1,6 +1,6 @@
 logic.proportion_algo.ProportionIncrement#computeProportion(Ljava/lang/Integer;)V
 java.util.ArrayList#<init>()V
 java.util.ArrayList#instance-init#
+logic.proportion_algo.ProportionIncrement#updateBugsAV(I)V
 java.lang.Integer#equals(Ljava/lang/Object;)Z
 logic.proportion_algo.ProportionIncrement#computeInitialPvalue(Ljava/util/List;)V
-logic.proportion_algo.ProportionIncrement#updateBugsAV(Ljava/util/List;)V
