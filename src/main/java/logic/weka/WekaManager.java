@@ -5,6 +5,7 @@ import logic.bean.WekaStepOutputBean;
 import logic.enums.CostSensitiveClassifierType;
 import logic.enums.FeaturesSelectionType;
 import logic.enums.SamplingType;
+import logic.proportion_algo.ProportionIncrement;
 import org.decimal4j.util.DoubleRounder;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
@@ -18,6 +19,8 @@ import weka.core.converters.CSVLoader;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class WekaManager {
 
@@ -132,53 +135,61 @@ public class WekaManager {
     public WekaConfigurationOutputBean computeMetrics(FeaturesSelectionType fs, CostSensitiveClassifierType csc,
                                                       SamplingType st) throws Exception {
 
-        var totalDataLen = this.getTotalDataLen();
-        var output = new WekaConfigurationOutputBean(fs, st, csc);
+
+            var totalDataLen = this.getTotalDataLen();
+            var output = new WekaConfigurationOutputBean(fs, st, csc);
 
         /*  feature selection is applied in walkStep: it keeps a train and a test for both cases: none and features
             selection best first.
             To apply sampling, it's needed the training set: in fact, for oversampling and smoote, it needs the
             percentage that shls ould be used in the filter.  */
 
-        int i;
-        int j = 0;
-        Instances trainingDataset = null;
-        // steps cycle
-        for (i = 0; i < this.numOfRelease - 1; i++) {
-            var stepOutput = new WekaStepOutputBean(this.classifiers.size());
+            int i;
+            int j = 0;
+            Instances trainingDataset = null;
+            // steps cycle
+            for (i = 0; i < this.numOfRelease - 1; i++) {
+                var stepOutput = new WekaStepOutputBean(this.classifiers.size());
 
-            var step = this.steps.get(i);
-            trainingDataset = step.getTrainingSet(fs);
-            var testingDataset = step.getTestingSet(fs);
+                var step = this.steps.get(i);
+                trainingDataset = step.getTrainingSet(fs);
+                var testingDataset = step.getTestingSet(fs);
 
-            var instancesInTraining = trainingDataset.numInstances();
-            var percentage = (double) instancesInTraining / totalDataLen;
-            stepOutput.setTrainingPercentage(DoubleRounder.round(percentage, 3));
+                var instancesInTraining = trainingDataset.numInstances();
+                var percentage = (double) instancesInTraining / totalDataLen;
+                stepOutput.setTrainingPercentage(DoubleRounder.round(percentage, 3));
 
-            var trainDefectNum = step.getPositivesTraining();
-            percentage = (double) trainDefectNum / (trainDefectNum + step.getNegativesTraining());
-            stepOutput.setDefectiveInTrainingPercentage(DoubleRounder.round(percentage, 3));
+                var trainDefectNum = step.getPositivesTraining();
+                percentage = (double) trainDefectNum / (trainDefectNum + step.getNegativesTraining());
+                stepOutput.setDefectiveInTrainingPercentage(DoubleRounder.round(percentage, 3));
 
-            var testDefectNum = step.getPositivesTesting();
-            percentage = (double) testDefectNum / (testDefectNum + step.getNegativesTesting());
-            stepOutput.setDefectiveInTestingPercentage(DoubleRounder.round(percentage, 3));
+                var testDefectNum = step.getPositivesTesting();
+                percentage = (double) testDefectNum / (testDefectNum + step.getNegativesTesting());
+                stepOutput.setDefectiveInTestingPercentage(DoubleRounder.round(percentage, 3));
 
-            //re-initialize cassifiers
-            this.initializeClassifiers();
-            this.applySampling(st, this.steps.get(i));
-            this.applyCostSensitive(csc);
+                //re-initialize cassifiers
+                this.initializeClassifiers();
+                this.applySampling(st, this.steps.get(i));
+                this.applyCostSensitive(csc);
 
-            //now i need to train the classifier
-            for (j = 0; j < this.classifiers.size(); j++) {
-                var c = this.classifiers.get(j);
-                c.buildClassifier(trainingDataset);
-                var currEvaluation = new Evaluation(testingDataset);
-                currEvaluation.evaluateModel(c, testingDataset);
-                stepOutput.setEvaluation(currEvaluation, j);
+                try {
+                    //now i need to train the classifier
+                    for (j = 0; j < this.classifiers.size(); j++) {
+                        var c = this.classifiers.get(j);
+                        c.buildClassifier(trainingDataset);
+                        var currEvaluation = new Evaluation(testingDataset);
+                        currEvaluation.evaluateModel(c, testingDataset);
+                        stepOutput.setEvaluation(currEvaluation, j);
+                    }
+                    output.appendStepEvaluation(stepOutput);
+                }catch (Exception e){
+                    /* added to manage the SMOTE errors */
+                    var logger = Logger.getLogger(ProportionIncrement.class.getName());
+                    logger.log(Level.OFF, e.toString());
+                }
             }
-            output.appendStepEvaluation(stepOutput);
-        }
-        return output;
+            return output;
+
     }
 
     private int getTotalDataLen(){

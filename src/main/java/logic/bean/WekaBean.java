@@ -27,8 +27,8 @@ public class WekaBean {
 
         /*  arfOutputFile may be null. in this case, i need to create a temporary file  */
         var ext = ".arff";
-        if (arfOutputFile == null) {
-            this.arff = File.createTempFile("", ext, currDir);
+        if (arfOutputFile == null || arfOutputFile.equals("")) {
+            this.arff = File.createTempFile("tmpARFF", ext, currDir);
             this.arffIsTemp = Boolean.TRUE;
         }
         else

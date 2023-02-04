@@ -24,15 +24,15 @@ public class WekaAnalysisBoundary {
         this.csvOutputFile = csvOut;
     }
 
-    public void runAnalysis() throws IOException {
+    public void runAnalysis() throws Exception {
         WekaBean bean = null;
         try {
             bean = new WekaBean(this.csvInputFile, this.csvOutputFile, this.arfOutputFile);
             var controller = new WekaController();
             controller.run(bean);
         }catch (Exception e){
-            var logger = Logger.getLogger(WekaAnalysisBoundary.class.getName());
-            logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            throw e;
         }
         finally {
             if (bean != null)
@@ -42,9 +42,9 @@ public class WekaAnalysisBoundary {
 
     public static void main(String[] args) throws Exception {
 
-        var boundary = new WekaAnalysisBoundary("/home/luca/Scrivania/ISW2/da consegnare/deliverable2/milestone1/bookkeeper.csv",
-                "/home/luca/Scrivania/ISW2/da consegnare/deliverable2/milestone2/bookkeeper.csv",
-                "/home/luca/Scrivania/ISW2/da consegnare/deliverable2/milestone1/bookkeeper.arff");
+        var boundary = new WekaAnalysisBoundary("/home/luca/Scrivania/ISW2/secondo_tentativo/file_output_falessi/bookkeeperProportion.csv",
+                "/home/luca/Scrivania/ISW2/secondo_tentativo/file_output_falessi/bookkeeperWeka.csv",
+                "");
         boundary.runAnalysis();
 
     }
