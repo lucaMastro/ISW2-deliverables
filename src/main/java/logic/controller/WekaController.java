@@ -82,10 +82,10 @@ public class WekaController {
                         auc = DoubleRounder.round(e.areaUnderROC(0), 3);
                         kappa = DoubleRounder.round(e.kappa(), 3);
 
-                        tp = DoubleRounder.round(e.truePositiveRate(0), 3);
-                        fp = DoubleRounder.round(e.falsePositiveRate(0), 3);
-                        tn = DoubleRounder.round(e.trueNegativeRate(0), 3);
-                        fn = DoubleRounder.round(e.falseNegativeRate(0), 3);
+                        tp = DoubleRounder.round(e.numTruePositives(0), 3);
+                        fp = DoubleRounder.round(e.numFalsePositives(0), 3);
+                        tn = DoubleRounder.round(e.numTrueNegatives(0), 3);
+                        fn = DoubleRounder.round(e.numFalseNegatives(0), 3);
 
                         bld.append(datasetName).append(",") //Dataset
                                 .append(currIndexRelease).append(",") // # TrainingRelease

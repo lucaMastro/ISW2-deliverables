@@ -75,7 +75,7 @@ public class WekaManager {
         return this.numOfRelease;
     }
 
-    public void applySampling(SamplingType st, WalkStep currentStep) throws Exception {
+    public void applySampling(SamplingType st, FeaturesSelectionType fs, WalkStep currentStep) throws Exception {
         int i;
         switch (st){
             case UNDERSAMPLING:
@@ -89,7 +89,7 @@ public class WekaManager {
             case OVERSAMPLING:
                 // just replace the classifiers with a filtered classifier
                 for (i = 0; i < this.classifiers.size(); i++) {
-                    var filtered = FilterCreator.getOverSaplingClassifier(currentStep);
+                    var filtered = FilterCreator.getOverSaplingClassifier(currentStep, fs);
                     filtered.setClassifier(this.classifiers.get(i));
                     this.classifiers.set(i, filtered);
                 }
@@ -159,17 +159,17 @@ public class WekaManager {
                 var percentage = (double) instancesInTraining / totalDataLen;
                 stepOutput.setTrainingPercentage(DoubleRounder.round(percentage, 3));
 
-                var trainDefectNum = step.getPositivesTraining();
-                percentage = (double) trainDefectNum / (trainDefectNum + step.getNegativesTraining());
+                var trainDefectNum = step.getPositivesTraining(fs);
+                percentage = (double) trainDefectNum / (trainDefectNum + step.getNegativesTraining(fs));
                 stepOutput.setDefectiveInTrainingPercentage(DoubleRounder.round(percentage, 3));
 
-                var testDefectNum = step.getPositivesTesting();
-                percentage = (double) testDefectNum / (testDefectNum + step.getNegativesTesting());
+                var testDefectNum = step.getPositivesTesting(fs);
+                percentage = (double) testDefectNum / (testDefectNum + step.getNegativesTesting(fs));
                 stepOutput.setDefectiveInTestingPercentage(DoubleRounder.round(percentage, 3));
 
                 //re-initialize cassifiers
                 this.initializeClassifiers();
-                this.applySampling(st, this.steps.get(i));
+                this.applySampling(st, fs, this.steps.get(i));
                 this.applyCostSensitive(csc);
 
                 try {

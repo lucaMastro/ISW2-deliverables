@@ -18,8 +18,21 @@ public class WalkStep {
     private Instances training;
     private Instances testing;
 
+    private int yesTrainInstance = 0;
+    private int noTrainInstance = 0;
+
+    private int yesTestInstance = 0;
+    private int noTestInstance = 0;
+
     private Instances featureSelectedTraining;
     private Instances featureSelectedTesting;
+
+    private int yesFeaturedTrainInstance = 0;
+    private int noFeaturedTrainInstance = 0;
+
+    private int yesFeaturedTestInstance = 0;
+    private int noFeaturedTestInstance = 0;
+
 
     public WalkStep(Instances totalData, int stepIndex) throws WalkStepFilterException {
         /* step index is the index of the last release index in train set for this step. */
@@ -32,6 +45,24 @@ public class WalkStep {
 
         this.training.setClassIndex(totalData.numAttributes() - 1);
         this.testing.setClassIndex(totalData.numAttributes() - 1);
+
+        // computing Yes number in training:
+        for (Instance instance : this.training){
+            var curr = instance.toString(this.testing.numAttributes() - 1);
+            if (curr.equals("Yes"))
+                this.yesTrainInstance++;
+            else
+                this.noTrainInstance++;
+        }
+
+        // computing Yes number in testing:
+        for (Instance instance : this.testing){
+            var curr = instance.toString(this.testing.numAttributes() - 1);
+            if (curr.equals("Yes"))
+                this.yesTestInstance++;
+            else
+                this.noTestInstance++;
+        }
 
         try {
             var totalDataFeatured = this.applyFeatureSelection(totalData);
@@ -46,6 +77,25 @@ public class WalkStep {
 
             this.featureSelectedTraining.setClassIndex(numAttrFiltered - 1);
             this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
+
+            // computing No number in featured training:
+            for (Instance instance : this.featureSelectedTraining){
+                var curr = instance.toString(this.featureSelectedTraining.numAttributes() - 1);
+                if (curr.equals("Yes"))
+                    this.yesFeaturedTrainInstance++;
+                else
+                    this.noFeaturedTrainInstance++;
+            }
+
+            // computing No number in featured testing:
+            for (Instance instance : this.featureSelectedTesting){
+                var curr = instance.toString(this.featureSelectedTesting.numAttributes() - 1);
+                if (curr.equals("Yes"))
+                    this.yesFeaturedTestInstance++;
+                else
+                    this.noFeaturedTestInstance++;
+            }
+
         }catch (Exception e){
             throw new WalkStepFilterException("Error creating features selectioned datasets");
         }
@@ -128,31 +178,31 @@ public class WalkStep {
             return this.testing;
     }
 
-    public int getPositivesTraining() {
-        var count = 0;
-        for (Instance instance : this.training){
-            var curr = instance.toString(this.training.numAttributes() - 1);
-            if (curr.equals("Yes"))
-                count++;
-        }
-        return count;
+    public int getPositivesTraining(FeaturesSelectionType fs) {
+        if (fs.equals(FeaturesSelectionType.BEST_FIRST))
+            return this.yesFeaturedTrainInstance;
+        else
+            return this.yesTrainInstance;
     }
 
-    public int getNegativesTraining() {
-        return this.training.numInstances() - this.getPositivesTraining();
+    public int getNegativesTraining(FeaturesSelectionType fs) {
+        if (fs.equals(FeaturesSelectionType.BEST_FIRST))
+            return this.noFeaturedTrainInstance;
+        else
+            return this.noTrainInstance;
     }
 
-    public int getPositivesTesting() {
-        var count = 0;
-        for (Instance instance : this.testing){
-            var curr = instance.toString(this.testing.numAttributes() - 1);
-            if (curr.equals("Yes"))
-                count++;
-        }
-        return count;
+    public int getPositivesTesting(FeaturesSelectionType fs) {
+        if (fs.equals(FeaturesSelectionType.BEST_FIRST))
+            return this.yesFeaturedTestInstance;
+        else
+            return this.yesTestInstance;
     }
 
-    public int getNegativesTesting() {
-        return this.testing.numInstances() - this.getPositivesTesting();
+    public int getNegativesTesting(FeaturesSelectionType fs) {
+        if (fs.equals(FeaturesSelectionType.BEST_FIRST))
+            return this.noFeaturedTestInstance;
+        else
+            return this.noTestInstance;
     }
 }

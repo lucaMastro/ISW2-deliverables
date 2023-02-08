@@ -1,5 +1,6 @@
 package logic.weka;
 
+import logic.enums.FeaturesSelectionType;
 import weka.classifiers.CostMatrix;
 import weka.classifiers.meta.CostSensitiveClassifier;
 import weka.classifiers.meta.FilteredClassifier;
@@ -11,11 +12,11 @@ public class FilterCreator {
 
     private FilterCreator(){}
 
-    public static FilteredClassifier getOverSaplingClassifier(WalkStep currentStep) throws Exception {
+    public static FilteredClassifier getOverSaplingClassifier(WalkStep currentStep, FeaturesSelectionType fs) throws Exception {
         var classifier = new FilteredClassifier();
 
-        var positive = currentStep.getPositivesTraining();
-        var negative = currentStep.getNegativesTraining();
+        var positive = currentStep.getPositivesTraining(fs);
+        var negative = currentStep.getNegativesTraining(fs);
         var minor = Math.min(positive, negative);
         var p = Math.abs(positive - negative) * 100 / minor;
 
