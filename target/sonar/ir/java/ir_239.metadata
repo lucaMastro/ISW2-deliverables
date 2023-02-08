@@ -1,2 +1,11 @@
-logic.dataset_manager.ProcessControlChartDataset#computeLowerControlLimit()V
-org.decimal4j.util.DoubleRounder#round(DI)D
+logic.dataset_manager.ProcessControlChartDataset#toString()Ljava/lang/String;
+java.lang.StringBuilder#instance-init#
+java.lang.StringBuilder#<init>(Ljava/lang/String;)V
+java.lang.Integer#toString()Ljava/lang/String;
+java.text.SimpleDateFormat#<init>(Ljava/lang/String;)V
+java.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+java.text.SimpleDateFormat#instance-init#
+java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;
+java.lang.Double#toString()Ljava/lang/String;
+java.lang.StringBuilder#append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+java.lang.StringBuilder#toString()Ljava/lang/String;

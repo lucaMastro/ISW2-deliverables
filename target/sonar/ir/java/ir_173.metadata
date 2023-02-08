@@ -1,1 +1,1 @@
-logic.exception.InvalidInputException#<init>(Ljava/lang/String;)V
+logic.dataset_manager.ProportionDataset#instance-init#

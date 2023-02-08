@@ -1,1 +1,1 @@
-logic.bean.WekaConfigurationOutputBean#getCostSensitiveClassifier()Llogic/enums/CostSensitiveClassifierType;
+logic.bean.WekaConfigurationOutputBean#getStepEvaluations()Ljava/util/List;

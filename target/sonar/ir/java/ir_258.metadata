@@ -1,1 +1,1 @@
-logic.bean.JiraBeanInformations#getOpeningDate()Ljava/util/Date;
+logic.bean.JiraBeanInformations#getAffectedVersions()Ljava/util/List;

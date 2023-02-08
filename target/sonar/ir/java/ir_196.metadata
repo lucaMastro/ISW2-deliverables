@@ -1,1 +1,1 @@
-logic.enums.SamplingType#<init>(Ljava/lang/String;ILjava/lang/String;)V
+logic.enums.SamplingType#getType()Ljava/lang/String;

@@ -1,5 +1,3 @@
-logic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;
-logic.exception.InvalidRangeException#instance-init#
+logic.dataset_manager.ProportionDataset#findAffectedVersions(Ljava/util/List;Llogic/dataset_manager/Release;)Ljava/util/List;
 java.util.ArrayList#<init>()V
 java.util.ArrayList#instance-init#
-logic.exception.InvalidRangeException#<init>(Ljava/lang/String;)V

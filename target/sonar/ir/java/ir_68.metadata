@@ -1,9 +1,5 @@
-logic.weka.FilterCreator#getOverSaplingClassifier(Llogic/weka/WalkStep;)Lweka/classifiers/meta/FilteredClassifier;
-weka.filters.supervised.instance.Resample#instance-init#
-weka.filters.supervised.instance.Resample#<init>()V
-java.lang.String#valueOf(Ljava/lang/Object;)Ljava/lang/String;
+logic.weka.FilterCreator#getUnderSaplingClassifier()Lweka/classifiers/meta/FilteredClassifier;
 weka.classifiers.meta.FilteredClassifier#instance-init#
-java.lang.Integer#valueOf(I)Ljava/lang/Integer;
+weka.filters.supervised.instance.SpreadSubsample#instance-init#
+weka.filters.supervised.instance.SpreadSubsample#<init>()V
 weka.classifiers.meta.FilteredClassifier#<init>()V
-java.lang.Math#min(II)I
-java.lang.Math#abs(I)I

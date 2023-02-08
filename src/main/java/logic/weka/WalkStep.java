@@ -7,6 +7,7 @@ import weka.attributeSelection.CfsSubsetEval;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
+import weka.core.pmml.jaxbbindings.True;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AttributeSelection;
 import java.io.File;
@@ -39,6 +40,7 @@ public class WalkStep {
         var counts = this.countTrainAndTestInstances(stepIndex, totalData);
         var countTrainingInstances = counts[0];
         var countTestingInstances = counts[1];
+        int[] yes_no;
 
         this.training = new Instances(totalData, 0, countTrainingInstances);
         this.testing = new Instances(totalData, countTrainingInstances, countTestingInstances);
@@ -47,6 +49,10 @@ public class WalkStep {
         this.testing.setClassIndex(totalData.numAttributes() - 1);
 
         // computing Yes number in training:
+        yes_no = this.getYesNoNumbers(true, false);
+        this.yesTrainInstance = yes_no[0];
+        this.noTrainInstance = yes_no[1];
+        /*
         for (Instance instance : this.training){
             var curr = instance.toString(this.testing.numAttributes() - 1);
             if (curr.equals("Yes"))
@@ -54,8 +60,12 @@ public class WalkStep {
             else
                 this.noTrainInstance++;
         }
-
+         */
         // computing Yes number in testing:
+        yes_no = this.getYesNoNumbers(false, false);
+        this.yesTestInstance = yes_no[0];
+        this.noTestInstance = yes_no[1];
+        /*
         for (Instance instance : this.testing){
             var curr = instance.toString(this.testing.numAttributes() - 1);
             if (curr.equals("Yes"))
@@ -63,7 +73,7 @@ public class WalkStep {
             else
                 this.noTestInstance++;
         }
-
+        */
         try {
             var totalDataFeatured = this.applyFeatureSelection(totalData);
             var numAttrFiltered = totalDataFeatured.numAttributes();
@@ -79,6 +89,10 @@ public class WalkStep {
             this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
 
             // computing No number in featured training:
+            yes_no = this.getYesNoNumbers(true, true);
+            this.yesFeaturedTrainInstance = yes_no[0];
+            this.noFeaturedTrainInstance = yes_no[1];
+        /*
             for (Instance instance : this.featureSelectedTraining){
                 var curr = instance.toString(this.featureSelectedTraining.numAttributes() - 1);
                 if (curr.equals("Yes"))
@@ -86,20 +100,54 @@ public class WalkStep {
                 else
                     this.noFeaturedTrainInstance++;
             }
-
+         */
             // computing No number in featured testing:
+            yes_no = this.getYesNoNumbers(false, true);
+            this.yesFeaturedTestInstance = yes_no[0];
+            this.noFeaturedTestInstance = yes_no[1];
+        /*
             for (Instance instance : this.featureSelectedTesting){
                 var curr = instance.toString(this.featureSelectedTesting.numAttributes() - 1);
                 if (curr.equals("Yes"))
                     this.yesFeaturedTestInstance++;
                 else
                     this.noFeaturedTestInstance++;
-            }
+            }*/
 
         }catch (Exception e){
             throw new WalkStepFilterException("Error creating features selectioned datasets");
         }
     }
+
+    private int[] getYesNoNumbers(boolean training, boolean featured){
+        Instances dataset;
+        int[] yes_no = new int[2];
+        var yes = 0;
+        var no = 0;
+        if (training) {
+            if (featured)
+                dataset = this.featureSelectedTraining;
+            else
+                dataset = this.training;
+        }
+        else {
+            if (featured)
+                dataset = this.featureSelectedTesting;
+            else
+                dataset = this.testing;
+        }
+        for (Instance instance : dataset){
+            var curr = instance.toString(dataset.numAttributes() - 1);
+            if (curr.equals("Yes"))
+                yes++;
+            else
+                no++;
+        }
+        yes_no[0] = yes;
+        yes_no[1] = no;
+        return yes_no;
+    }
+
 
     private Instances removeDuplicated(Instances featuredWithDup) throws Exception {
         // create temp file

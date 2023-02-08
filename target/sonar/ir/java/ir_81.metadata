@@ -1,2 +1,2 @@
-logic.weka.WalkStep#getPositivesTraining()I
-java.lang.String#equals(Ljava/lang/Object;)Z
+logic.weka.WalkStep#getNegativesTraining(Llogic/enums/FeaturesSelectionType;)I
+java.lang.Enum#equals(Ljava/lang/Object;)Z

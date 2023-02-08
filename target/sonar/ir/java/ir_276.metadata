@@ -1,1 +1,1 @@
-logic.boundary.ProcessControlChartBoundary#instance-init#
+logic.boundary.ProcessControlChartBoundary#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V

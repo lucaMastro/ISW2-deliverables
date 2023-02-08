@@ -1,2 +1,1 @@
-logic.dataset_manager.Release#setAllFileBuggines(Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;)V
-logic.dataset_manager.Release#findFromName(Ljava/lang/String;Ljava/util/List;)Llogic/dataset_manager/ReleaseFile;
+logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;

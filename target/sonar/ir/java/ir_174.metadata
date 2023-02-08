@@ -1,1 +1,7 @@
-logic.dataset_manager.ProportionDataset#instance-init#
+logic.dataset_manager.ProportionDataset#<init>(Llogic/bean/ProportionBean;)V
+logic.dataset_manager.JgitManager#instance-init#
+logic.dataset_manager.JgitManager#<init>(Ljava/lang/String;)V
+logic.dataset_manager.ReleaseFileManager#<init>(Llogic/dataset_manager/JgitManager;Ljava/util/List;)V
+logic.dataset_manager.ReleaseFileManager#instance-init#
+logic.dataset_manager.ProportionDataset#initializeReleaseList(Llogic/dataset_manager/JgitManager;)V
+logic.dataset_manager.ProportionDataset#removeRevertCommits()V

@@ -1,2 +1,1 @@
-logic.weka.FilterCreator#sensitiveLearningClassifier()Lweka/classifiers/meta/CostSensitiveClassifier;
-logic.weka.FilterCreator#createCostSensitiveClassifier(Ljava/lang/Boolean;)Lweka/classifiers/meta/CostSensitiveClassifier;
+logic.weka.WalkStep#instance-init#

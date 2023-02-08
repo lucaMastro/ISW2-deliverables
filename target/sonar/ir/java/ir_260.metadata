@@ -1,1 +1,1 @@
-logic.bean.JiraBeanInformations#setAffectedVersions(Ljava/util/List;)V
+logic.bean.WekaBean#instance-init#

@@ -1,1 +1,1 @@
-logic.abstracts.AbstractBean#getOutputFile()Ljava/io/File;
+logic.abstracts.AbstractBean#getProject()Ljava/lang/String;

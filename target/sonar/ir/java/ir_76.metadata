@@ -1,7 +1,1 @@
-logic.weka.WalkStep#removeDuplicated(Lweka/core/Instances;)Lweka/core/Instances;
-java.io.File#createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
-java.nio.file.Paths#get(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
-weka.core.converters.ArffLoader#instance-init#
-weka.core.converters.ArffLoader#<init>()V
-java.nio.file.Files#delete(Ljava/nio/file/Path;)V
-logic.weka.ArffCreator#createArffWithoutDuplicated(Ljava/io/File;Lweka/core/Instances;)V
+logic.weka.WalkStep#countTrainAndTestInstances(ILweka/core/Instances;)[I
