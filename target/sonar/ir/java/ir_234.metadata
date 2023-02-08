@@ -1,8 +1,1 @@
-logic.dataset_manager.ProcessControlChartDataset#computeFeatures()V
-java.util.Date#<init>(J)V
-logic.dataset_manager.ProcessControlChartDataset#computeUpperControlLimit()V
-logic.dataset_manager.ProcessControlChartDataset#computeMean()V
-logic.dataset_manager.ProcessControlChartDataset#computeVariance()V
-java.util.Date#instance-init#
 logic.dataset_manager.ProcessControlChartDataset#updateFixBugNum(Llogic/dataset_manager/ProcessControlChartEntry;Ljava/util/List;)V
-logic.dataset_manager.ProcessControlChartDataset#computeLowerControlLimit()V

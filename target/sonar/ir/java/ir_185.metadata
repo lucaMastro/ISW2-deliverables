@@ -1,1 +1,2 @@
-logic.dataset_manager.ProportionDataset#computeFeatures()V
+logic.dataset_manager.ProportionDataset#findReleaseFromName(Ljava/lang/String;)Llogic/dataset_manager/Release;
+java.lang.String#contains(Ljava/lang/CharSequence;)Z

@@ -1,1 +1,2 @@
-logic.dataset_manager.ReleaseFile#addName(Ljava/lang/String;I)V
+logic.dataset_manager.ReleaseFile#isThisFile(Ljava/lang/String;)Ljava/lang/Boolean;
+java.lang.String#equals(Ljava/lang/Object;)Z

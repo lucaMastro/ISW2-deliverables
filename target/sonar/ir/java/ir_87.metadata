@@ -1,1 +1,1 @@
-logic.bean.WekaConfigurationOutputBean#getSamplingType()Llogic/enums/SamplingType;
+logic.bean.WekaConfigurationOutputBean#getFeaturesSelection()Llogic/enums/FeaturesSelectionType;

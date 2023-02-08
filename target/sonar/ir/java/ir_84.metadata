@@ -1,1 +1,2 @@
-logic.bean.WekaConfigurationOutputBean#instance-init#
+logic.weka.WalkStep#getNegativesTesting(Llogic/enums/FeaturesSelectionType;)I
+java.lang.Enum#equals(Ljava/lang/Object;)Z

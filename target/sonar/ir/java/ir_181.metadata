@@ -1,1 +1,3 @@
-logic.dataset_manager.ProportionDataset#getRelease(Ljava/lang/Integer;)Llogic/dataset_manager/Release;
+logic.dataset_manager.ProportionDataset#findOpeningVersion(Ljava/util/Date;)Llogic/dataset_manager/Release;
+java.util.Date#<init>(J)V
+java.util.Date#instance-init#

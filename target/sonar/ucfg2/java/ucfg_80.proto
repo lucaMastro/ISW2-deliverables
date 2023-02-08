@@ -1,18 +1,18 @@
 
-Rlogic.bean.WekaConfigurationOutputBean#getSamplingType()Llogic/enums/SamplingType;ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java ('"1*À
+`logic.bean.WekaConfigurationOutputBean#getFeaturesSelection()Llogic/enums/FeaturesSelectionType;ƒ
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java! (5"1*×
 1ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java   (‰
-†
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java ( —
+”
 ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java   (
-%0logic.enums.SamplingType"__id*X
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java ( '
+%0!logic.enums.FeaturesSelectionType"__id*]
 
-__unknown_file (<*:(
-&logic.bean.WekaConfigurationOutputBean"
-samplingType"¨
+__unknown_file (A*?(
+&logic.bean.WekaConfigurationOutputBean"
+featuresSelection"±
 ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java   ( 
-
-%0logic.enums.SamplingTypeB*(
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java (!)
+'
+%0!logic.enums.FeaturesSelectionTypeB*(
 &logic.bean.WekaConfigurationOutputBeanH

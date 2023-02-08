@@ -1,1 +1,1 @@
-logic.bean.ProcessChartBean#instance-init#
+logic.dataset_manager.Release#getIndex()Ljava/lang/Integer;

@@ -1,1 +1,1 @@
-logic.dataset_manager.Release#setIndex(Ljava/lang/Integer;)V
+logic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)V

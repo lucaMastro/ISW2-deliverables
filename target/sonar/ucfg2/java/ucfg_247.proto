@@ -1,18 +1,19 @@
 
-0logic.bean.WekaBean#getOutputCSV()Ljava/io/File;p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java+ +("1*Ö
+/logic.bean.WekaBean#getInputCSV()Ljava/io/File;p
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java' '("1*Õ
 1p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java, ,(Ó
-Ð
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java( ((Ò
+Ï
 p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java, ,(
-%0java.io.File"__id*B
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java( ((
+%0java.io.File"__id*A
 
-__unknown_file (&*$
-logic.bean.WekaBean"
-	outputCSV"ˆ
+__unknown_file (%*#
+logic.bean.WekaBean"
+
+inputCSV"ˆ
 p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java, ,(
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaBean.java( ((
 
 %0java.io.FileB
 logic.bean.WekaBeanH

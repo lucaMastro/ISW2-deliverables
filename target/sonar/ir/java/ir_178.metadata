@@ -1,5 +1,1 @@
-logic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;
-logic.exception.InvalidRangeException#instance-init#
-java.util.ArrayList#<init>()V
-java.util.ArrayList#instance-init#
-logic.exception.InvalidRangeException#<init>(Ljava/lang/String;)V
+logic.dataset_manager.ProportionDataset#removeHalfRelease()V

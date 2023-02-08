@@ -1,2 +1,1 @@
-view.Main#main([Ljava/lang/String;)V
-view.SceneSwitcher#main([Ljava/lang/String;)V
+view.Main#instance-init#

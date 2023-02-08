@@ -1,1 +1,9 @@
-logic.dataset_manager.ProportionDataset#removeHalfRelease()V
+logic.dataset_manager.ProportionDataset#initializeReleaseList(Llogic/dataset_manager/JgitManager;)V
+java.util.ArrayList#<init>()V
+java.util.Collections#sort(Ljava/util/List;Ljava/util/Comparator;)V
+logic.dataset_manager.ProportionDataset#retrieveCommitsBeetwenReleases(Ljava/lang/Integer;)Ljava/util/List;
+java.util.ArrayList#instance-init#
+logic.dataset_manager.Release#<init>(Lorg/eclipse/jgit/lib/Ref;Llogic/dataset_manager/JgitManager;)V
+org.eclipse.jgit.api.Git#<init>(Lorg/eclipse/jgit/lib/Repository;)V
+logic.dataset_manager.Release#instance-init#
+org.eclipse.jgit.api.Git#instance-init#

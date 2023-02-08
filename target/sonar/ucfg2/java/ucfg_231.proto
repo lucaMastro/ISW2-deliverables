@@ -1,108 +1,241 @@
 
-tlogic.dataset_manager.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java2 2(!"9*¿
+Elogic.dataset_manager.RetrieveInformations#retrieveFixedBugTickets()Vá
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java (("3*°>
+2á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java   (œ
+Ã
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java   (
+jjava.lang.Integer"__id*"
+
+__unknown_file (
+""à
+Ö
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java" "(&
+%0java.lang.String"__id*[
+
+__unknown_file (?*=,
+*logic.dataset_manager.RetrieveInformations"
+projectName©
+¶
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! "(&
+%1java.lang.String"__concat*–
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! !([DB
+@https://issues.apache.org/jira/rest/api/2/search?jql=project=%22*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java" "(&
+
+%0java.lang.Stringß
+§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! "(i
+%2java.lang.String"__concat*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! "(&
+
+%1java.lang.String*Œ
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java") "(iB@
+>%22AND%22issueType%22=%22Bug%22AND(%22status%22=%22closed%22OR…
+∆
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! #(x
+%3java.lang.String"__concat*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! "(i
+
+%2java.lang.String*
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java# #(xdb
+`%22status%22=%22resolved%22)AND%22resolution%22=%22fixed%22&fields=key,versions,created&startAt=óî
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java$ $("
+%4java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*4
+
+__unknown_file (
+
+ijava.lang.Integer2
+toString()˝
+˙
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! $("
+%5java.lang.String"__concat*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! #(x
+
+%3java.lang.String*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java$ $("
+
+%4java.lang.Stringı
+Ú
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! $(3
+%6java.lang.String"__concat*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! $("
+
+%5java.lang.String*ú
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java$% $(3
+&maxResults=óî
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java$6 $(B
+%7java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*4
+
+__unknown_file (
+
+jjava.lang.Integer2
+toString()˝
+˙
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! $(B
+%8java.lang.String"__concat*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! $(3
+
+%6java.lang.String*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java$6 $(B
+
+%7java.lang.String‚
+ﬂ
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java! $(C
+urljava.lang.String"__id*4
+
+__unknown_file (
+
+%8java.lang.Stringê
+ç
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java& &(2
+%9org.json.JSONObject"clogic.dataset_manager.RetrieveInformations#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;*J
+
+__unknown_file (.",
+*logic.dataset_manager.RetrieveInformations*5
+
+__unknown_file (
+
+urljava.lang.StringÈ
+Ê
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java& &(3
+jsonorg.json.JSONObject"__id*7
+
+__unknown_file (
+
+%9org.json.JSONObjectâ
+Ü
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java() ((7
+%10org.json.JSONArray"__id*Y
+
+__unknown_file (=*;,
+*logic.dataset_manager.RetrieveInformations"
+	fixedBugs˜Ù
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java(9 ((T
+%11org.json.JSONArray"Horg.json.JSONObject#getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;*9
+
+__unknown_file (
+
+jsonorg.json.JSONObject*&
+
+__unknown_file (
+
+issues2 getJSONArray(Ljava/lang/String;)‹
+Ÿ
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java( ((U
+%12org.json.JSONArray"tlogic.dataset_manager.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;*J
+
+__unknown_file (.,
+*logic.dataset_manager.RetrieveInformations*7
+
+__unknown_file (
+
+%10org.json.JSONArray*7
+
+__unknown_file (
+
+%11org.json.JSONArrayâ
+Ü
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java( ((U;,
+*logic.dataset_manager.RetrieveInformations"
+	fixedBugs"__id*7
+
+__unknown_file (
+
+%12org.json.JSONArray»≈
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java*$ *(8
+
+%13int"/org.json.JSONObject#getInt(Ljava/lang/String;)I*9
+
+__unknown_file (
+
+jsonorg.json.JSONObject*%
+
+__unknown_file (	
+total2getInt(Ljava/lang/String;)È
+Ê
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java* *(8*
+fixedBugTicketsNumberjava.lang.Integer"__id*(
+
+__unknown_file (
+
+
+%13intÏ
+È
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java, ,(
+%14java.lang.Integer"__concat*§
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java, ,(
+
+ijava.lang.Integer*ë
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java, ,(2Ë„
+‡
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java, ,(
+ijava.lang.Integer"__id*6
+
+__unknown_file (
+
+%14java.lang.Integer*
+2
+0*î
 3á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java9 9(∂≥
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java (À
+»
 á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java9 9( 
-%6java.lang.Object"+org.json.JSONArray#get(I)Ljava/lang/Object;*6
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java (
+jjava.lang.Integer"__id*
 
-__unknown_file (
+__unknown_file (2 À
+»
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java (
+ijava.lang.Integer"__id*
 
-a2org.json.JSONArray*"
+__unknown_file (2 „
+‡
+á
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java (&*
+fixedBugTicketsNumberjava.lang.Integer"__id*"
 
 __unknown_file (
-""2get(I)ÚÔ
+""*
+2*ß
+0 "ü
 á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java9 9(!
-%7org.json.JSONArray">org.json.JSONArray#put(Ljava/lang/Object;)Lorg/json/JSONArray;*:
-
-__unknown_file (
-
-resultorg.json.JSONArray*4
-
-__unknown_file (
-
-%6java.lang.Object2put(Ljava/lang/Object;)*
-4*ê
-4á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java8 8(¯ı
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java8 8(#	
-%5int"org.json.JSONArray#length()I*6
-
-__unknown_file (
-
-a2org.json.JSONArray2length()*
-3
-1*¿
-7á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java6 6(∂≥
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java6 6( 
-%3java.lang.Object"+org.json.JSONArray#get(I)Ljava/lang/Object;*6
-
-__unknown_file (
-
-a1org.json.JSONArray*"
-
-__unknown_file (
-""2get(I)ÚÔ
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java6 6(!
-%4org.json.JSONArray">org.json.JSONArray#put(Ljava/lang/Object;)Lorg/json/JSONArray;*:
-
-__unknown_file (
-
-resultorg.json.JSONArray*4
-
-__unknown_file (
-
-%3java.lang.Object2put(Ljava/lang/Object;)*
-8*ê
-8á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java5 5(¯ı
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java5 5(#	
-%2int"org.json.JSONArray#length()I*6
-
-__unknown_file (
-
-a1org.json.JSONArray2length()*
-4
-7*®
-9á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java3 3(ª∏
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java4 4("
-%0org.json.JSONArray"org.json.JSONArrayÈ
-Ê
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java4 4($
-%1"org.json.JSONArray#<init>()V*6
-
-__unknown_file (
-
-%0org.json.JSONArrayÈ
-Ê
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java4 4(%
-resultorg.json.JSONArray"__id*6
-
-__unknown_file (
-
-%0org.json.JSONArray*
-8*∫
-1á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java; ;("™
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java; ;(
-
-resultorg.json.JSONArray:§
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java2" 2(/
-a1org.json.JSONArray:§
-á
-}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java20 2(<
-a2org.json.JSONArrayB.,
+}/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/RetrieveInformations.java0 0(
+implicit returnB.,
 *logic.dataset_manager.RetrieveInformations

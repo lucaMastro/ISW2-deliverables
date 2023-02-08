@@ -1,2 +1,2 @@
-view.HomePageFxmlController#main([Ljava/lang/String;)V
-javafx.application.Application#launch([Ljava/lang/String;)V
+view.HomePageFxmlController#wekaButtonSelected(Ljavafx/event/ActionEvent;)V
+view.SceneSwitcher#getInstance()Lview/SceneSwitcher;

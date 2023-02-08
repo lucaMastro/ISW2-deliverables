@@ -1,2 +1,8 @@
-logic.weka.WalkStep#getTrainingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;
-java.lang.Enum#equals(Ljava/lang/Object;)Z
+logic.weka.WalkStep#applyFeatureSelection(Lweka/core/Instances;)Lweka/core/Instances;
+weka.filters.supervised.attribute.AttributeSelection#instance-init#
+weka.filters.supervised.attribute.AttributeSelection#<init>()V
+weka.attributeSelection.CfsSubsetEval#instance-init#
+weka.filters.Filter#useFilter(Lweka/core/Instances;Lweka/filters/Filter;)Lweka/core/Instances;
+weka.attributeSelection.CfsSubsetEval#<init>()V
+weka.attributeSelection.BestFirst#instance-init#
+weka.attributeSelection.BestFirst#<init>()V

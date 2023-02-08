@@ -1,18 +1,18 @@
 
-Clogic.abstracts.AbstractBoundary#getProjectName()Ljava/lang/String;}
-s/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/abstracts/AbstractBoundary.java ( "1*î
-1}
-s/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/abstracts/AbstractBoundary.java (Û
-
-}
-s/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/abstracts/AbstractBoundary.java (
-%0java.lang.String"__id*Q
+Plogic.bean.ProportionBean#getProportionAlgo()Llogic/enums/ProportionAlgoOptions;v
+l/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/ProportionBean.java! (2"1*ù
+1v
+l/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/ProportionBean.java (˘
+ˆ
+v
+l/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/ProportionBean.java ('
+%0!logic.enums.ProportionAlgoOptions"__id*M
 
-__unknown_file (5*3"
- logic.abstracts.AbstractBoundary"
-projectName"ô
-}
-s/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/abstracts/AbstractBoundary.java (
-
-%0java.lang.StringB$"
- logic.abstracts.AbstractBoundaryH
+__unknown_file (1*/
+logic.bean.ProportionBean"
+proportionAlgo"£
+v
+l/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/ProportionBean.java ()
+'
+%0!logic.enums.ProportionAlgoOptionsB
+logic.bean.ProportionBeanH

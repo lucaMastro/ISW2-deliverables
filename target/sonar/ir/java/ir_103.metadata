@@ -1,2 +1,11 @@
-view.SceneSwitcher#setWorkingCursor()V
-javafx.scene.Scene#setCursor(Ljavafx/scene/Cursor;)V
+view.SceneSwitcher#showTooltip(Ljavafx/scene/control/TextField;Ljavafx/scene/control/Tooltip;Ljava/lang/String;)V
+javafx.scene.control.Tooltip#setText(Ljava/lang/String;)V
+javafx.scene.control.TextInputControl#getText()Ljava/lang/String;
+javafx.scene.control.PopupControl#getStyleClass()Ljavafx/collections/ObservableList;
+javafx.scene.layout.Region#getHeight()D
+javafx.geometry.Bounds#getMinY()D
+javafx.scene.Node#getBoundsInLocal()Ljavafx/geometry/Bounds;
+javafx.geometry.Bounds#getMinX()D
+javafx.stage.Window#setY(D)V
+javafx.scene.control.Tooltip#setShowDelay(Ljavafx/util/Duration;)V
+javafx.stage.Window#setX(D)V

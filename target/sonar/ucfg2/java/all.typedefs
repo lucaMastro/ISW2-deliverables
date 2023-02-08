@@ -2811,10 +2811,10 @@ toString()0weka.core.Instances#toString()Ljava/lang/String;A
 8renameAttribute(Lweka/core/Attribute;Ljava/lang/String;)Mweka.core.Instances#renameAttribute(Lweka/core/Attribute;Ljava/lang/String;)V_
 #setRelationName(Ljava/lang/String;)8weka.core.Instances#setRelationName(Ljava/lang/String;)Ve
 &copyInstances(ILweka/core/Instances;I);weka.core.Instances#copyInstances(ILweka/core/Instances;I)V%
-size()weka.core.Instances#size()Iá
-
+size()weka.core.Instances#size()I£
 logic.weka.WalkStepjava.lang.Object‹
-9getPositivesTraining(Llogic/enums/FeaturesSelectionType;)Nlogic.weka.WalkStep#getPositivesTraining(Llogic/enums/FeaturesSelectionType;)I…
+9getPositivesTraining(Llogic/enums/FeaturesSelectionType;)Nlogic.weka.WalkStep#getPositivesTraining(Llogic/enums/FeaturesSelectionType;)I@
+getYesNoNumbers(ZZ))logic.weka.WalkStep#getYesNoNumbers(ZZ)[I…
 ,applyFeatureSelection(Lweka/core/Instances;)Ulogic.weka.WalkStep#applyFeatureSelection(Lweka/core/Instances;)Lweka/core/Instances;“
 3getTrainingSet(Llogic/enums/FeaturesSelectionType;)\logic.weka.WalkStep#getTrainingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;‰
 8getNegativesTesting(Llogic/enums/FeaturesSelectionType;)Mlogic.weka.WalkStep#getNegativesTesting(Llogic/enums/FeaturesSelectionType;)I‹
@@ -3667,11 +3667,11 @@ toMatlab()8weka.classifiers.CostMatrix#toMatlab()Ljava/lang/String;_
 8applyCostMatrix(Lweka/core/Instances;Ljava/util/Random;)iweka.classifiers.CostMatrix#applyCostMatrix(Lweka/core/Instances;Ljava/util/Random;)Lweka/core/Instances;{
 parseMatlab(Ljava/lang/String;)Xweka.classifiers.CostMatrix#parseMatlab(Ljava/lang/String;)Lweka/classifiers/CostMatrix;-
 size()#weka.classifiers.CostMatrix#size()I9
-numColumns())weka.classifiers.CostMatrix#numColumns()I&
-weka.core.Copyablejava.lang.Object:
-weka.core.Instanceweka.core.Copyablejava.lang.Object¡
+numColumns())weka.classifiers.CostMatrix#numColumns()I¡
 'logic.exception.WalkStepFilterExceptionjava.lang.Exceptiona
-<init>(Ljava/lang/String;)Clogic.exception.WalkStepFilterException#<init>(Ljava/lang/String;)V©
+<init>(Ljava/lang/String;)Clogic.exception.WalkStepFilterException#<init>(Ljava/lang/String;)V&
+weka.core.Copyablejava.lang.Object:
+weka.core.Instanceweka.core.Copyablejava.lang.Object©
 java.nio.file.Pathsjava.lang.Object)
 <init>()java.nio.file.Paths#<init>()VR
 get(Ljava/net/URI;);java.nio.file.Paths#get(Ljava/net/URI;)Ljava/nio/file/Path;€

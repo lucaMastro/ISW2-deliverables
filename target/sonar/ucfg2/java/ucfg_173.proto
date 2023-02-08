@@ -1,25 +1,25 @@
 
-Blogic.dataset_manager.ProportionDataset#getFiles()Ljava/util/List;†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java€ €(%"1*“
+;logic.dataset_manager.ProportionDataset#getNumOfReleases()I†
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaü ü("1*Ÿ
 1†
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java (–
-“
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaı ı(„
+
 †
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java (.
-%0(logic.dataset_manager.ReleaseFileManager"__id*R
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaı ı(
+%0java.util.ArrayList"__id*U
 
-__unknown_file (6*4)
-'logic.dataset_manager.ProportionDataset"
-filesÇÄ
+__unknown_file (9*7)
+'logic.dataset_manager.ProportionDataset"
+
+releasesõò
 †
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java ('
-%1java.util.List"Flogic.dataset_manager.ReleaseFileManager#getFileList()Ljava/util/List;*L
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaı ı(#	
+%1int"java.util.ArrayList#size()I*7
 
-__unknown_file (0
-.
-%0(logic.dataset_manager.ReleaseFileManager2getFileList()"¡
+__unknown_file (
+
+%0java.util.ArrayList2size()"‘
 †
-z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.java ((
-
-%1java.util.ListB+)
-'logic.dataset_manager.ProportionDatasetH
+z/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/ProportionDataset.javaı ı($
+""B+)
+'logic.dataset_manager.ProportionDatasetHP

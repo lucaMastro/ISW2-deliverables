@@ -1,18 +1,18 @@
 
-llogic.bean.WekaConfigurationOutputBean#getCostSensitiveClassifier()Llogic/enums/CostSensitiveClassifierType;ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java#' #(A"1*é
+Rlogic.bean.WekaConfigurationOutputBean#getSamplingType()Llogic/enums/SamplingType;ƒ
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java ('"1*À
 1ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java$ $(&£
- 
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java   (‰
+†
 ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java$ $(&-
-%0'logic.enums.CostSensitiveClassifierType"__id*c
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java   (
+%0logic.enums.SamplingType"__id*X
 
-__unknown_file (G*E(
-&logic.bean.WekaConfigurationOutputBean"
-costSensitiveClassifier"·
+__unknown_file (<*:(
+&logic.bean.WekaConfigurationOutputBean"
+samplingType"¨
 ƒ
-y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java$ $('/
--
-%0'logic.enums.CostSensitiveClassifierTypeB*(
+y/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/bean/WekaConfigurationOutputBean.java   ( 
+
+%0logic.enums.SamplingTypeB*(
 &logic.bean.WekaConfigurationOutputBeanH

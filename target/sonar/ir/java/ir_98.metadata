@@ -1,4 +1,4 @@
-view.SceneSwitcher#setBugginessScene(Ljavafx/event/ActionEvent;)V
+view.SceneSwitcher#setWekaScene(Ljavafx/event/ActionEvent;)V
 java.lang.Object#getClass()Ljava/lang/Class;
 java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
 javafx.stage.Stage#show()V

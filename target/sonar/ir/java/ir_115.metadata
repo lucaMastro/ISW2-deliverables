@@ -1,1 +1,1 @@
-logic.dataset_manager.ProcessControlChartEntry#getCommitsNum()I
+logic.dataset_manager.ProcessControlChartEntry#setNumberOfFixCommits(I)V

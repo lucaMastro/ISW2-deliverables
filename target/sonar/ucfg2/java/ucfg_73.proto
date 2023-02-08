@@ -1,31 +1,31 @@
 
-[logic.weka.WalkStep#getTestingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÆ Æ(""3*˜
+\logic.weka.WalkStep#getTrainingSet(Llogic/enums/FeaturesSelectionType;)Lweka/core/Instances;r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java◊ ◊(#"3*¯
 2r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java∞ ∞(È
-Ê
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaŸ Ÿ(Í
+Á
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java∞ ∞(.
-%2weka.core.Instances"__id*O
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaŸ Ÿ(/
+%2weka.core.Instances"__id*P
 
-__unknown_file (3*1
-logic.weka.WalkStep"
-featureSelectedTesting"ë
+__unknown_file (4*2
+logic.weka.WalkStep"
+featureSelectedTraining"ë
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java∞ ∞(/
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaŸ Ÿ(0
 
 %2weka.core.Instances*´
 3r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaØ Ø( 
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÿ ÿ( 
 «
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaØ Ø(6'
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÿ ÿ(6'
 %0!logic.enums.FeaturesSelectionType"__id*"
 
 __unknown_file (
 ""‹Ÿ
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaØ Ø(7
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÿ ÿ(7
 %1boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*E
 
 __unknown_file ()
@@ -36,22 +36,23 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 '
 %0!logic.enums.FeaturesSelectionType2equals(Ljava/lang/Object;)*
 2
-1*Ë
+1*È
 1r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java≤ ≤(⁄
-◊
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java€ €(€
+ÿ
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java≤ ≤(
-%3weka.core.Instances"__id*@
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java€ €( 
+%3weka.core.Instances"__id*A
 
-__unknown_file ($*"
-logic.weka.WalkStep"	
-testing"ë
+__unknown_file (%*#
+logic.weka.WalkStep"
+
+training"ë
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java≤ ≤( 
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java€ €(!
 
 %3weka.core.Instances:ù
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÆ# Æ(;'
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java◊$ ◊(<'
 fs!logic.enums.FeaturesSelectionTypeB
 logic.weka.WalkStepH

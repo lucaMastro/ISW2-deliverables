@@ -1,168 +1,166 @@
 
-Plogic.weka.WalkStep#removeDuplicated(Lweka/core/Instances;)Lweka/core/Instances;p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javah h(&"1*æ&
-1p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaj j(ª
-∏
+)logic.weka.WalkStep#getYesNoNumbers(ZZ)[Ip
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaz z(!"13*»
+13p
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java{ {(ø
+º
 p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaj j($
-%0java.nio.file.Path"Rjava.nio.file.Paths#get(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;*3
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java{ {(
+datasetweka.core.Instances"__id*"
 
-__unknown_file ("
-java.nio.file.Paths*!
+__unknown_file (
+""*
+7
+8
+10
+11*À
+2r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaã ã(¡
+æ
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaã ã(
+instanceweka.core.Instance"__id*"
 
-__unknown_file (
-.íè
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaj j(5
-%1java.nio.file.Path"7java.nio.file.Path#toAbsolutePath()Ljava/nio/file/Path;*6
+__unknown_file (
+""Ö
+Ç
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaã ã(
+instanceweka.core.Instance"
+__arrayGet*<
+
+__unknown_file ( 
+
+datasetweka.core.Instances*"
+
+__unknown_file (
+""*
+5
+1*©	
+5r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaå å(˜Ù
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaå) å(@	
+%4int"$weka.core.Instances#numAttributes()I*<
+
+__unknown_file ( 
+
+datasetweka.core.Instances2numAttributes()∞≠
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaå å(E
+%5java.lang.String"0weka.core.Instance#toString(I)Ljava/lang/String;*<
+
+__unknown_file ( 
+
+instanceweka.core.Instance*"
+
+__unknown_file (
+""2toString(I)Õ
+ 
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaå å(F
+currjava.lang.String"__id*4
+
+__unknown_file (
+
+%5java.lang.String≠™
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaç ç("
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*6
 
 __unknown_file (
 
-%0java.nio.file.Path2toAbsolutePath()àÖ
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaj j(A
-%2java.nio.file.Path"2java.nio.file.Path#normalize()Ljava/nio/file/Path;*6
+currjava.lang.String*#
 
-__unknown_file (
+__unknown_file (
+Yes2equals(Ljava/lang/Object;)*
+2*≤
+7r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaâ â(⁄
+◊
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaâ â(&
+%3weka.core.Instances"__id*@
 
-%1java.nio.file.Path2normalize()ˆÛ
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaj j(J
-%3java.io.File")java.nio.file.Path#toFile()Ljava/io/File;*6
-
-__unknown_file (
-
-%2java.nio.file.Path2toFile()∆
-√
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaj j(K
-currDirjava.io.File"__id*0
-
-__unknown_file (
-
-%3java.io.Fileª
-∏
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javak k(
-extjava.lang.String"__id*%
-
-__unknown_file (	
-.arff≠
-™
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javal l(B
-%4java.io.File"]java.io.File#createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;*,
-
-__unknown_file ("
-java.io.File*'
-
-__unknown_file (	
-tmpArff*5
-
-__unknown_file (
-
-extjava.lang.String*5
-
-__unknown_file (
-
-currDirjava.io.File∆
-√
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javal l(C
-tmpFilejava.io.File"__id*0
-
-__unknown_file (
-
-%4java.io.Fileê
-ç
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javao o(I
-
-%5void"Xlogic.weka.ArffCreator#createArffWithoutDuplicated(Ljava/io/File;Lweka/core/Instances;)V*6
-
-__unknown_file ("
-logic.weka.ArffCreator*5
-
-__unknown_file (
-
-tmpFilejava.io.File*D
-
-__unknown_file ((
-&
-featuredWithDupweka.core.InstancesΩ∫
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javar r('%
-%6weka.core.converters.ArffLoader"weka.core.converters.ArffLoaderÎ
-Ë
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javar r()
-%7")weka.core.converters.ArffLoader#<init>()V*C
-
-__unknown_file ('
-%
-%6weka.core.converters.ArffLoaderÔ
-Ï
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javar r(*-
-
-arffLoaderweka.core.converters.ArffLoader"__id*C
-
-__unknown_file ('
-%
-%6weka.core.converters.ArffLoader‰·
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javas s(%
-
-%8void"Bweka.core.converters.AbstractFileLoader#setSource(Ljava/io/File;)V*K
-
-__unknown_file (/
--
-
-arffLoaderweka.core.converters.ArffLoader*5
-
-__unknown_file (
-
-tmpFilejava.io.File2setSource(Ljava/io/File;)Æ´
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javat  t(7
-%9weka.core.Instances"Aweka.core.converters.ArffLoader#getDataSet()Lweka/core/Instances;*K
-
-__unknown_file (/
--
-
-arffLoaderweka.core.converters.ArffLoader2getDataSet()ﬁ
-€
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javat t(8(
-withoutDuplicatedweka.core.Instances"__id*7
+__unknown_file ($*"
+logic.weka.WalkStep"	
+testing÷
+”
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaâ â(&
+datasetweka.core.Instances"__id*7
 
 __unknown_file (
 
-%9weka.core.Instances¸˘
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaw w(%
-%10java.nio.file.Path")java.io.File#toPath()Ljava/nio/file/Path;*5
+%3weka.core.Instances*
+2*¡
+8r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaá á(È
+Ê
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaá á(5
+%2weka.core.Instances"__id*O
 
-__unknown_file (
-
-tmpFilejava.io.File2toPath()£
-†
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaw w(&
-%11void"1java.nio.file.Files#delete(Ljava/nio/file/Path;)V*3
-
-__unknown_file ("
-java.nio.file.Files*7
+__unknown_file (3*1
+logic.weka.WalkStep"
+featureSelectedTesting÷
+”
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaá á(5
+datasetweka.core.Instances"__id*7
 
 __unknown_file (
 
-%10java.nio.file.Path"û
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javay y(!*
-(
-withoutDuplicatedweka.core.Instances:ö
-p
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javah' h(@&
-featuredWithDupweka.core.InstancesB
+%2weka.core.Instances*
+2*¥
+10r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÉ É(€
+ÿ
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÉ É('
+%1weka.core.Instances"__id*A
+
+__unknown_file (%*#
+logic.weka.WalkStep"
+
+training÷
+”
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÉ É('
+datasetweka.core.Instances"__id*7
+
+__unknown_file (
+
+%1weka.core.Instances*
+2*√
+11r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÅ Å(Í
+Á
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÅ Å(6
+%0weka.core.Instances"__id*P
+
+__unknown_file (4*2
+logic.weka.WalkStep"
+featureSelectedTraining÷
+”
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÅ Å(6
+datasetweka.core.Instances"__id*7
+
+__unknown_file (
+
+%0weka.core.Instances*
+2*ı
+1r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaí í("|
+r
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaî î(
+"": 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B
 logic.weka.WalkStep

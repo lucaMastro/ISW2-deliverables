@@ -1,7 +1,1 @@
-logic.dataset_manager.JgitManager#countLinesAddedAndDeleted(Lorg/eclipse/jgit/diff/DiffEntry;)[Ljava/lang/Integer;
-org.eclipse.jgit.diff.DiffFormatter#<init>(Ljava/io/OutputStream;)V
-org.eclipse.jgit.diff.Edit#getBeginA()I
-org.eclipse.jgit.diff.DiffFormatter#instance-init#
-org.eclipse.jgit.diff.Edit#getBeginB()I
-org.eclipse.jgit.diff.Edit#getEndA()I
-org.eclipse.jgit.diff.Edit#getEndB()I
+logic.dataset_manager.JgitManager#getRepository()Lorg/eclipse/jgit/lib/Repository;
