@@ -1,21 +1,21 @@
 
 Ulogic.weka.WalkStep#applyFeatureSelection(Lweka/core/Instances;)Lweka/core/Instances;r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java¬ ¬(+"1*ß$
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaü ü(+"1*ß$
 1r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java√ √(≈
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java† †(≈
 ¬
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java√ √("
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java† †("
 featuredSetweka.core.Instances"__id*"
 
 __unknown_file (
 ""ÈÊ
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java≈ ≈(+:
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java¢ ¢(+:
 %04weka.filters.supervised.attribute.AttributeSelection"4weka.filters.supervised.attribute.AttributeSelectionó
 î
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java≈ ≈(-
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java¢ ¢(-
 %1">weka.filters.supervised.attribute.AttributeSelection#<init>()V*X
 
 __unknown_file (<
@@ -23,18 +23,18 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %04weka.filters.supervised.attribute.AttributeSelectionó
 î
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java≈ ≈(.>
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java¢ ¢(.>
 filter4weka.filters.supervised.attribute.AttributeSelection"__id*X
 
 __unknown_file (<
 :
 %04weka.filters.supervised.attribute.AttributeSelectionÀ»
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java« «($+
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java§ §($+
 %2%weka.attributeSelection.CfsSubsetEval"%weka.attributeSelection.CfsSubsetEval˘
 ˆ
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java« «(&
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java§ §(&
 %3"/weka.attributeSelection.CfsSubsetEval#<init>()V*I
 
 __unknown_file (-
@@ -42,18 +42,18 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %2%weka.attributeSelection.CfsSubsetEval˜
 Ù
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java« «('-
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java§ §('-
 eval%weka.attributeSelection.CfsSubsetEval"__id*I
 
 __unknown_file (-
 +
 %2%weka.attributeSelection.CfsSubsetEval√¿
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java» »("'
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java• •("'
 %4!weka.attributeSelection.BestFirst"!weka.attributeSelection.BestFirstÒ
 Ó
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java» »($
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java• •($
 %5"+weka.attributeSelection.BestFirst#<init>()V*E
 
 __unknown_file ()
@@ -61,14 +61,14 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %4!weka.attributeSelection.BestFirstÒ
 Ó
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java» »(%+
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java• •(%+
 search!weka.attributeSelection.BestFirst"__id*E
 
 __unknown_file ()
 '
 %4!weka.attributeSelection.BestFirst–Õ
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÀ À(!
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java® ®(!
 
 %6void"jweka.filters.supervised.attribute.AttributeSelection#setEvaluator(Lweka/attributeSelection/ASEvaluation;)V*\
 
@@ -80,7 +80,7 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 -
 eval%weka.attributeSelection.CfsSubsetEval24setEvaluator(Lweka/attributeSelection/ASEvaluation;)¿Ω
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÃ Ã( 
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java© ©( 
 
 %7void"cweka.filters.supervised.attribute.AttributeSelection#setSearch(Lweka/attributeSelection/ASSearch;)V*\
 
@@ -92,7 +92,7 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 +
 search!weka.attributeSelection.BestFirst2-setSearch(Lweka/attributeSelection/ASSearch;)Å˛
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaœ œ("
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java¨ ¨("
 %8boolean":weka.filters.Filter#setInputFormat(Lweka/core/Instances;)Z*\
 
 __unknown_file (@
@@ -104,7 +104,7 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 setweka.core.Instances2%setInputFormat(Lweka/core/Instances;)ø
 º
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java— —(3
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÆ Æ(3
 %9weka.core.Instances"^weka.filters.Filter#useFilter(Lweka/core/Instances;Lweka/filters/Filter;)Lweka/core/Instances;*3
 
 __unknown_file ("
@@ -119,17 +119,17 @@ f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 filter4weka.filters.supervised.attribute.AttributeSelection⁄
 ◊
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java— —(3"
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaÆ Æ(3"
 featuredSetweka.core.Instances"__id*7
 
 __unknown_file (
 
 %9weka.core.Instances"ö
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java” ”($
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java∞ ∞($
 "
 featuredSetweka.core.Instances:ê
 r
-f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.java¬, ¬(9
+f/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WalkStep.javaü, ü(9
 setweka.core.InstancesB
 logic.weka.WalkStep
