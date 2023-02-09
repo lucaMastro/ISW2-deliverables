@@ -3,10 +3,6 @@ package logic.boundary;
 import logic.bean.WekaBean;
 import logic.controller.WekaController;
 
-import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class WekaAnalysisBoundary {
 
     String csvInputFile;
@@ -30,8 +26,7 @@ public class WekaAnalysisBoundary {
             var controller = new WekaController();
             controller.run(bean);
         }catch (Exception e){
-            var logger = Logger.getLogger(WekaController.class.getName());
-            logger.log(Level.OFF, Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
             throw e;
         }
         finally {
