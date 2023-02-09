@@ -1,1 +1,3 @@
-logic.dataset_manager.ProcessControlChartDataset#updateFixBugNum(Llogic/dataset_manager/ProcessControlChartEntry;Ljava/util/List;)V
+logic.dataset_manager.ProcessControlChartDataset#retrieveCommitsBetweenDates(Ljava/util/Date;Ljava/util/Date;)Ljava/util/List;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#

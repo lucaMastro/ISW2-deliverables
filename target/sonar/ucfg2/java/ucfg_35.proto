@@ -1,18 +1,18 @@
 
-ylogic.weka.WekaManager#applySampling(Llogic/enums/SamplingType;Llogic/enums/FeaturesSelectionType;Llogic/weka/WalkStep;)Vs
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaN N("1*ô
+Vlogic.weka.WekaManager#applySampling(Llogic/enums/SamplingType;Llogic/weka/WalkStep;)Vs
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaK K("1*ô
 15s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaT# T(0¬
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaQ# Q(0¬
 ø
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaT# T(L.
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaQ# Q(L.
 %5(weka.classifiers.meta.FilteredClassifier"^logic.weka.FilterCreator#getUnderSaplingClassifier()Lweka/classifiers/meta/FilteredClassifier;*8
 
 __unknown_file ("
 logic.weka.FilterCreatorÇ
 ˇ
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaT T(M4
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaQ Q(M4
 filtered(weka.classifiers.meta.FilteredClassifier"__id*L
 
 __unknown_file (0
@@ -20,7 +20,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %5(weka.classifiers.meta.FilteredClassifier‚
 ﬂ
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaU+ U(;
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaR+ R(;
 %6java.util.ArrayList"__id*G
 
 __unknown_file (+*)
@@ -28,7 +28,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 classifiersÑ
 Å
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaU+ U(B!
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaR+ R(B!
 %7weka.classifiers.Classifier"
 __arrayGet*7
 
@@ -39,7 +39,7 @@ __arrayGet*7
 __unknown_file (
 ""†ù
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaU U(C
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaR R(C
 
 %8void"Wweka.classifiers.SingleClassifierEnhancer#setClassifier(Lweka/classifiers/Classifier;)V*R
 
@@ -52,7 +52,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %7weka.classifiers.Classifier2,setClassifier(Lweka/classifiers/Classifier;)‚
 ﬂ
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaV V($
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaS S($
 %9java.util.ArrayList"__id*G
 
 __unknown_file (+*)
@@ -60,7 +60,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 classifiersŸ
 ÷
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaV V(5"
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaS S(5"
 %10weka.classifiers.Classifier"
 __arraySet*7
 
@@ -76,17 +76,17 @@ __arraySet*7
 filtered(weka.classifiers.meta.FilteredClassifier*
 16*À
 16s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaS S(‚
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaP P(‚
 ﬂ
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaS  S(0
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaP  P(0
 %3java.util.ArrayList"__id*G
 
 __unknown_file (+*)
 logic.weka.WekaManager"
 classifiers·ﬁ
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaS  S(7	
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaP  P(7	
 %4int"java.util.ArrayList#size()I*7
 
 __unknown_file (
@@ -95,17 +95,17 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 15
 0*ô
 5s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javac# c(0º
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java`# `(0º
 π
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javac# c(E/
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java`# `(E/
 %21(weka.classifiers.meta.FilteredClassifier"Wlogic.weka.FilterCreator#getSMOTEClassifier()Lweka/classifiers/meta/FilteredClassifier;*8
 
 __unknown_file ("
 logic.weka.FilterCreatorÉ
 Ä
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javac c(F4
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java` `(F4
 filtered(weka.classifiers.meta.FilteredClassifier"__id*M
 
 __unknown_file (1
@@ -113,7 +113,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %21(weka.classifiers.meta.FilteredClassifier„
 ‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javad+ d(;
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaa+ a(;
 %22java.util.ArrayList"__id*G
 
 __unknown_file (+*)
@@ -121,7 +121,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 classifiersÜ
 É
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javad+ d(B"
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaa+ a(B"
 %23weka.classifiers.Classifier"
 __arrayGet*8
 
@@ -132,7 +132,7 @@ __arrayGet*8
 __unknown_file (
 ""¢ü
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javad d(C
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaa a(C
 %24void"Wweka.classifiers.SingleClassifierEnhancer#setClassifier(Lweka/classifiers/Classifier;)V*R
 
 __unknown_file (6
@@ -144,7 +144,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %23weka.classifiers.Classifier2,setClassifier(Lweka/classifiers/Classifier;)„
 ‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javae e($
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javab b($
 %25java.util.ArrayList"__id*G
 
 __unknown_file (+*)
@@ -152,7 +152,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 classifiers⁄
 ◊
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javae e(5"
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javab b(5"
 %26weka.classifiers.Classifier"
 __arraySet*8
 
@@ -168,17 +168,17 @@ __arraySet*8
 filtered(weka.classifiers.meta.FilteredClassifier*
 6*Ã
 6s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javab b(„
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java_ _(„
 ‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javab  b(0
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java_  _(0
 %19java.util.ArrayList"__id*G
 
 __unknown_file (+*)
 logic.weka.WekaManager"
 classifiers„‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javab  b(7
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java_  _(7
 
 %20int"java.util.ArrayList#size()I*8
 
@@ -186,27 +186,23 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 
 %19java.util.ArrayList2size()*
 5
-0*„
+0*¯
 10s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java\# \(0Ñ
-Å
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaY# Y(0ô
+ñ
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java\# \(Z/
-%13(weka.classifiers.meta.FilteredClassifier"ïlogic.weka.FilterCreator#getOverSaplingClassifier(Llogic/weka/WalkStep;Llogic/enums/FeaturesSelectionType;)Lweka/classifiers/meta/FilteredClassifier;*8
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaY# Y(V/
+%13(weka.classifiers.meta.FilteredClassifier"rlogic.weka.FilterCreator#getOverSaplingClassifier(Llogic/weka/WalkStep;)Lweka/classifiers/meta/FilteredClassifier;*8
 
 __unknown_file ("
 logic.weka.FilterCreator*@
 
 __unknown_file ($
 "
-currentSteplogic.weka.WalkStep*E
-
-__unknown_file ()
-'
-fs!logic.enums.FeaturesSelectionTypeÉ
+currentSteplogic.weka.WalkStepÉ
 Ä
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java\ \([4
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaY Y(W4
 filtered(weka.classifiers.meta.FilteredClassifier"__id*M
 
 __unknown_file (1
@@ -214,7 +210,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %13(weka.classifiers.meta.FilteredClassifier„
 ‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java]+ ](;
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaZ+ Z(;
 %14java.util.ArrayList"__id*G
 
 __unknown_file (+*)
@@ -222,7 +218,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 classifiersÜ
 É
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java]+ ](B"
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaZ+ Z(B"
 %15weka.classifiers.Classifier"
 __arrayGet*8
 
@@ -233,7 +229,7 @@ __arrayGet*8
 __unknown_file (
 ""¢ü
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java] ](C
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaZ Z(C
 %16void"Wweka.classifiers.SingleClassifierEnhancer#setClassifier(Lweka/classifiers/Classifier;)V*R
 
 __unknown_file (6
@@ -245,7 +241,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 %15weka.classifiers.Classifier2,setClassifier(Lweka/classifiers/Classifier;)„
 ‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java^ ^($
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java[ [($
 %17java.util.ArrayList"__id*G
 
 __unknown_file (+*)
@@ -253,7 +249,7 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 classifiers⁄
 ◊
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java^ ^(5"
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java[ [(5"
 %18weka.classifiers.Classifier"
 __arraySet*8
 
@@ -270,20 +266,20 @@ __arraySet*8
 11*í
 0 "ä
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javak k(
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javah h(
 implicit return*Œ
 11s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java[ [(„
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaX X(„
 ‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java[  [(0
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaX  X(0
 %11java.util.ArrayList"__id*G
 
 __unknown_file (+*)
 logic.weka.WekaManager"
 classifiers„‡
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java[  [(7
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaX  X(7
 
 %12int"java.util.ArrayList#size()I*8
 
@@ -293,24 +289,24 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 10
 0*◊
 1s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaO O(¬
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaL L(¬
 ø
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaQ Q(
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaN N(
 %0logic.enums.SamplingType"__id*"
 
 __unknown_file (
 ""¬
 ø
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaY Y(
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaV V(
 %1logic.enums.SamplingType"__id*"
 
 __unknown_file (
 ""¬
 ø
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaa a(
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.java^ ^(
 %2logic.enums.SamplingType"__id*"
 
 __unknown_file (
@@ -320,12 +316,9 @@ i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/l
 0
 11:ï
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaN N(.
-stlogic.enums.SamplingType:û
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaK K(.
+stlogic.enums.SamplingType:ô
 s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaN/ N(H'
-fs!logic.enums.FeaturesSelectionType:ô
-s
-i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaNI N(]"
+i/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/weka/WekaManager.javaK/ K(C"
 currentSteplogic.weka.WalkStepB
 logic.weka.WekaManagerH

@@ -1,1 +1,1 @@
-logic.enums.ProportionAlgoOptions#instance-init#
+logic.abstracts.AbstractBean#getProject()Ljava/lang/String;

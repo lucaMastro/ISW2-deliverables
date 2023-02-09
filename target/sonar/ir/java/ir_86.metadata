@@ -1,1 +1,3 @@
-logic.bean.WekaConfigurationOutputBean#getFeaturesSelection()Llogic/enums/FeaturesSelectionType;
+logic.bean.WekaConfigurationOutputBean#<init>(Llogic/enums/FeaturesSelectionType;Llogic/enums/SamplingType;Llogic/enums/CostSensitiveClassifierType;)V
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#

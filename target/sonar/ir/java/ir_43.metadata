@@ -1,1 +1,3 @@
-logic.dataset_manager.BugTicket#setRelativeCommits(Ljava/util/List;)V
+logic.dataset_manager.BugTicket#<init>(Llogic/bean/JiraBeanInformations;)V
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#

@@ -1,4 +1,5 @@
-logic.weka.FilterCreator#createCostMatrix()Lweka/classifiers/CostMatrix;
-weka.classifiers.CostMatrix#<init>(I)V
-weka.classifiers.CostMatrix#instance-init#
-weka.classifiers.CostMatrix#setCell(IILjava/lang/Object;)V
+logic.weka.FilterCreator#getSMOTEClassifier()Lweka/classifiers/meta/FilteredClassifier;
+weka.classifiers.meta.FilteredClassifier#instance-init#
+weka.filters.supervised.instance.SMOTE#<init>()V
+weka.filters.supervised.instance.SMOTE#instance-init#
+weka.classifiers.meta.FilteredClassifier#<init>()V

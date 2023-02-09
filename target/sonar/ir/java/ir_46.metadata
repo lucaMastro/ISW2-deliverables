@@ -1,1 +1,1 @@
-logic.dataset_manager.BugTicket#getFixedVersion()Llogic/dataset_manager/Release;
+logic.dataset_manager.BugTicket#getInjectedVersion()Llogic/dataset_manager/Release;

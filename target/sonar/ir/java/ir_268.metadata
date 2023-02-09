@@ -1,2 +1,1 @@
-view.BasicPageFxmlController#backButtonSelected(Ljavafx/event/ActionEvent;)V
-view.SceneSwitcher#getInstance()Lview/SceneSwitcher;
+view.BasicPageFxmlController#instance-init#

@@ -1,1 +1,1 @@
-logic.bean.WekaStepOutputBean#setEvaluation(Lweka/classifiers/Evaluation;I)V
+logic.bean.WekaStepOutputBean#setDefectiveInTestingPercentage(D)V

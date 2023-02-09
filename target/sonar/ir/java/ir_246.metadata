@@ -1,3 +1,4 @@
-logic.dataset_manager.RetrieveInformations#concatenate(Lorg/json/JSONArray;Lorg/json/JSONArray;)Lorg/json/JSONArray;
+logic.dataset_manager.RetrieveInformations#<init>(Ljava/lang/String;)V
 org.json.JSONArray#instance-init#
+logic.dataset_manager.RetrieveInformations#retrieveFixedBugTickets()V
 org.json.JSONArray#<init>()V

@@ -3,6 +3,11 @@ package logic.boundary;
 import logic.bean.WekaBean;
 import logic.controller.WekaController;
 
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class WekaAnalysisBoundary {
 
     String csvInputFile;

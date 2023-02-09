@@ -1,1 +1,1 @@
-logic.dataset_manager.BugTicket#getTouchedFiles()Ljava/util/List;
+logic.dataset_manager.BugTicket#getOpeningVersion()Llogic/dataset_manager/Release;

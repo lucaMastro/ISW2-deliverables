@@ -1,2 +1,2 @@
-view.HomePageFxmlController#wekaButtonSelected(Ljavafx/event/ActionEvent;)V
+view.HomePageFxmlController#cloneRepositorySelected(Ljavafx/event/ActionEvent;)V
 view.SceneSwitcher#getInstance()Lview/SceneSwitcher;

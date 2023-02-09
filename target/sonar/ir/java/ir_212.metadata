@@ -1,2 +1,1 @@
-view.HomePageFxmlController#classesBugginessSelected(Ljavafx/event/ActionEvent;)V
-view.SceneSwitcher#getInstance()Lview/SceneSwitcher;
+view.HomePageFxmlController#instance-init#

@@ -1,1 +1,1 @@
-logic.bean.JiraBeanInformations#setAffectedVersions(Ljava/util/List;)V
+logic.bean.JiraBeanInformations#getAffectedVersions()Ljava/util/List;

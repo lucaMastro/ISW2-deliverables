@@ -1,9 +1,2 @@
-view.HomePageFxmlController#start(Ljavafx/stage/Stage;)V
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
-javafx.stage.Stage#show()V
-javafx.fxml.FXMLLoader#<init>()V
-javafx.fxml.FXMLLoader#instance-init#
-javafx.scene.Scene#instance-init#
-javafx.scene.Scene#<init>(Ljavafx/scene/Parent;)V
-javafx.stage.Stage#setScene(Ljavafx/scene/Scene;)V
+view.HomePageFxmlController#main([Ljava/lang/String;)V
+javafx.application.Application#launch([Ljava/lang/String;)V

@@ -1,1 +1,2 @@
-logic.dataset_manager.ProcessControlChartEntry#instance-init#
+view.SceneSwitcher#main([Ljava/lang/String;)V
+javafx.application.Application#launch([Ljava/lang/String;)V

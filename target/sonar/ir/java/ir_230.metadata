@@ -1,9 +1,1 @@
-logic.dataset_manager.ProcessControlChartDataset#<init>(Llogic/bean/ProcessChartBean;)V
-java.util.ArrayList#<init>()V
-java.util.Calendar#getInstance()Ljava/util/Calendar;
-java.util.Calendar#setTime(Ljava/util/Date;)V
-java.util.ArrayList#instance-init#
-org.apache.commons.lang3.time.DateUtils#round(Ljava/util/Date;I)Ljava/util/Date;
-logic.dataset_manager.ProcessControlChartEntry#<init>(Ljava/util/Date;)V
-logic.dataset_manager.ProcessControlChartEntry#instance-init#
-java.util.Calendar#getTime()Ljava/util/Date;
+logic.dataset_manager.ProcessControlChartDataset#instance-init#

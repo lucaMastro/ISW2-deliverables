@@ -1,2 +1,2 @@
-view.SceneSwitcher#setDefautlCursor()V
+view.SceneSwitcher#setWorkingCursor()V
 javafx.scene.Scene#setCursor(Ljavafx/scene/Cursor;)V

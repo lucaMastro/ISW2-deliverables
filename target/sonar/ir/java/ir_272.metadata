@@ -1,3 +1,7 @@
-view.BasicPageFxmlController#changeEditability()V
-javafx.scene.Node#isDisabled()Z
-javafx.scene.Node#setDisable(Z)V
+view.BasicPageFxmlController#runTask()V
+javafx.concurrent.Task#setOnFailed(Ljavafx/event/EventHandler;)V
+javafx.concurrent.Task#setOnSucceeded(Ljavafx/event/EventHandler;)V
+java.lang.Thread#<init>(Ljava/lang/Runnable;)V
+view.SceneSwitcher#getInstance()Lview/SceneSwitcher;
+java.lang.Thread#instance-init#
+javafx.concurrent.Task#setOnCancelled(Ljavafx/event/EventHandler;)V

@@ -1,7 +1,9 @@
-logic.dataset_manager.ProcessControlChartDataset#initializeBugsList(Ljava/lang/String;)V
+logic.dataset_manager.ProcessControlChartDataset#<init>(Llogic/bean/ProcessChartBean;)V
 java.util.ArrayList#<init>()V
-logic.dataset_manager.BugTicket#<init>(Llogic/bean/JiraBeanInformations;)V
-logic.dataset_manager.RetrieveInformations#<init>(Ljava/lang/String;)V
+java.util.Calendar#getInstance()Ljava/util/Calendar;
+java.util.Calendar#setTime(Ljava/util/Date;)V
 java.util.ArrayList#instance-init#
-logic.dataset_manager.BugTicket#instance-init#
-logic.dataset_manager.RetrieveInformations#instance-init#
+org.apache.commons.lang3.time.DateUtils#round(Ljava/util/Date;I)Ljava/util/Date;
+logic.dataset_manager.ProcessControlChartEntry#<init>(Ljava/util/Date;)V
+logic.dataset_manager.ProcessControlChartEntry#instance-init#
+java.util.Calendar#getTime()Ljava/util/Date;
