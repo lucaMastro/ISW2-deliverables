@@ -39,6 +39,7 @@ public class WalkStep {
         var counts = this.countTrainAndTestInstances(stepIndex, totalData);
         var countTrainingInstances = counts[0];
         var countTestingInstances = counts[1];
+        int[] yesNoNumber;
 
         this.training = new Instances(totalData, 0, countTrainingInstances);
         this.testing = new Instances(totalData, countTrainingInstances, countTestingInstances);
@@ -47,22 +48,13 @@ public class WalkStep {
         this.testing.setClassIndex(totalData.numAttributes() - 1);
 
         // computing Yes number in training:
-        for (Instance instance : this.training){
-            var curr = instance.toString(this.testing.numAttributes() - 1);
-            if (curr.equals("Yes"))
-                this.yesTrainInstance++;
-            else
-                this.noTrainInstance++;
-        }
-
+        yesNoNumber = this.getYesNoNumbers(true, false);
+        this.yesTrainInstance = yesNoNumber[0];
+        this.noTrainInstance = yesNoNumber[1];
         // computing Yes number in testing:
-        for (Instance instance : this.testing){
-            var curr = instance.toString(this.testing.numAttributes() - 1);
-            if (curr.equals("Yes"))
-                this.yesTestInstance++;
-            else
-                this.noTestInstance++;
-        }
+        yesNoNumber = this.getYesNoNumbers(false, false);
+        this.yesTestInstance = yesNoNumber[0];
+        this.noTestInstance = yesNoNumber[1];
 
         try {
             var totalDataFeatured = this.applyFeatureSelection(totalData);
@@ -79,27 +71,50 @@ public class WalkStep {
             this.featureSelectedTesting.setClassIndex(numAttrFiltered - 1);
 
             // computing No number in featured training:
-            for (Instance instance : this.featureSelectedTraining){
-                var curr = instance.toString(this.featureSelectedTraining.numAttributes() - 1);
-                if (curr.equals("Yes"))
-                    this.yesFeaturedTrainInstance++;
-                else
-                    this.noFeaturedTrainInstance++;
-            }
+            yesNoNumber = this.getYesNoNumbers(true, true);
+            this.yesFeaturedTrainInstance = yesNoNumber[0];
+            this.noFeaturedTrainInstance = yesNoNumber[1];
 
             // computing No number in featured testing:
-            for (Instance instance : this.featureSelectedTesting){
-                var curr = instance.toString(this.featureSelectedTesting.numAttributes() - 1);
-                if (curr.equals("Yes"))
-                    this.yesFeaturedTestInstance++;
-                else
-                    this.noFeaturedTestInstance++;
-            }
+            yesNoNumber = this.getYesNoNumbers(false, true);
+            this.yesFeaturedTestInstance = yesNoNumber[0];
+            this.noFeaturedTestInstance = yesNoNumber[1];
 
         }catch (Exception e){
             throw new WalkStepFilterException("Error creating features selectioned datasets");
         }
     }
+
+    private int[] getYesNoNumbers(boolean training, boolean featured){
+        Instances dataset;
+        int[] yesNoNumber = new int[2];
+        var yes = 0;
+        var no = 0;
+        if (training) {
+            if (featured)
+                dataset = this.featureSelectedTraining;
+            else
+                dataset = this.training;
+        }
+        else {
+            if (featured)
+                dataset = this.featureSelectedTesting;
+            else
+                dataset = this.testing;
+        }
+        for (Instance instance : dataset){
+            var curr = instance.toString(dataset.numAttributes() - 1);
+            if (curr.equals("Yes"))
+                yes++;
+            else
+                no++;
+        }
+        yesNoNumber[0] = yes;
+        yesNoNumber[1] = no;
+        return yesNoNumber;
+    }
+
+
 
     private Instances removeDuplicated(Instances featuredWithDup) throws Exception {
         // create temp file

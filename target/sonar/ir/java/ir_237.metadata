@@ -1,3 +1,2 @@
-logic.dataset_manager.ProcessControlChartDataset#computeVariance()V
-java.lang.Math#pow(DD)D
+logic.dataset_manager.ProcessControlChartDataset#computeUpperControlLimit()V
 org.decimal4j.util.DoubleRounder#round(DI)D

@@ -1,1 +1,1 @@
-logic.bean.JiraBeanInformations#getTrulyFixedVersion()Llogic/dataset_manager/Commit;
+logic.bean.JiraBeanInformations#setTrulyFixedVersion(Llogic/dataset_manager/Release;)V

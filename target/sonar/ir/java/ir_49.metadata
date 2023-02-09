@@ -1,1 +1,1 @@
-logic.dataset_manager.BugTicket#setAffectedVersions(Ljava/util/List;)V
+logic.dataset_manager.BugTicket#getOpeningVersion()Llogic/dataset_manager/Release;

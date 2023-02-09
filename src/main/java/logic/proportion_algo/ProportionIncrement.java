@@ -27,8 +27,12 @@ public class ProportionIncrement {
             numerator = (double) b.getFixedVersion().getIndex() - b.getInjectedVersion().getIndex();
             denominator = (double) b.getFixedVersion().getIndex() - b.getOpeningVersion().getIndex();
             assert denominator != 0;
-            fract = numerator / denominator;
-            sum += fract;
+            try {
+                fract = numerator / denominator;
+                sum += fract;
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
         assert !bugs.isEmpty();
         sum /= bugs.size();

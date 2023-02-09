@@ -1,1 +1,2 @@
-logic.dataset_manager.ReleaseFile#addName(Ljava/lang/String;I)V
+logic.dataset_manager.ReleaseFile#computeLoc(Lorg/eclipse/jgit/revwalk/RevCommit;Ljava/lang/Integer;)V
+java.lang.String#isEmpty()Z

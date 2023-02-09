@@ -1,4 +1,4 @@
-logic.weka.WekaManager#applySampling(Llogic/enums/SamplingType;Llogic/weka/WalkStep;)V
+logic.weka.WekaManager#applySampling(Llogic/enums/SamplingType;Llogic/enums/FeaturesSelectionType;Llogic/weka/WalkStep;)V
 logic.weka.FilterCreator#getUnderSaplingClassifier()Lweka/classifiers/meta/FilteredClassifier;
-logic.weka.FilterCreator#getOverSaplingClassifier(Llogic/weka/WalkStep;)Lweka/classifiers/meta/FilteredClassifier;
+logic.weka.FilterCreator#getOverSaplingClassifier(Llogic/weka/WalkStep;Llogic/enums/FeaturesSelectionType;)Lweka/classifiers/meta/FilteredClassifier;
 logic.weka.FilterCreator#getSMOTEClassifier()Lweka/classifiers/meta/FilteredClassifier;

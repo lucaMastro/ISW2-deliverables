@@ -1,1 +1,1 @@
-logic.bean.ProportionBean#getProportionAlgo()Llogic/enums/ProportionAlgoOptions;
+logic.abstracts.AbstractBoundary#instance-init#

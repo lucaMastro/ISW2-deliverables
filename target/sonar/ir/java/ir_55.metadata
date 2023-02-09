@@ -1,1 +1,1 @@
-logic.bean.WekaStepOutputBean#setTrainingPercentage(D)V
+logic.bean.WekaStepOutputBean#getDefectiveInTrainingPercentage()D

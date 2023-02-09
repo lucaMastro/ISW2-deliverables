@@ -1,1 +1,1 @@
-logic.bean.WekaConfigurationOutputBean#getStepEvaluations()Ljava/util/List;
+logic.bean.WekaConfigurationOutputBean#appendStepEvaluation(Llogic/bean/WekaStepOutputBean;)V
