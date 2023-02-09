@@ -1,6 +1,0 @@
-view.BasicPageFxmlController#browseRepositoryPath(Ljavafx/event/ActionEvent;)V
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getName()Ljava/lang/String;
-java.lang.String#contains(Ljava/lang/CharSequence;)Z
-javafx.scene.control.TextInputControl#setText(Ljava/lang/String;)V
-view.SceneSwitcher#getInstance()Lview/SceneSwitcher;

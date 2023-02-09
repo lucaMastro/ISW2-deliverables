@@ -1,7 +1,0 @@
-logic.dataset_manager.ProportionDataset#removeRevertCommits()V
-java.util.ArrayList#<init>()V
-java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;
-java.lang.String#length()I
-java.util.ArrayList#instance-init#
-java.lang.String#contains(Ljava/lang/CharSequence;)Z
-java.lang.String#substring(II)Ljava/lang/String;

@@ -1,3 +1,0 @@
-logic.dataset_manager.Release#findOlderAndNewerCommits(Llogic/dataset_manager/Release;Ljava/lang/Integer;)Ljava/util/List;
-java.util.ArrayList#<init>()V
-java.util.ArrayList#instance-init#

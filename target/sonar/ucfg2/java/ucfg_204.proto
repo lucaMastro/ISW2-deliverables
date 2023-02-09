@@ -1,29 +1,0 @@
-
-2__sonar_lambda_6$logic.dataset_manager.JgitManager~
-t/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/JgitManager.java8 8(S"1*„
-1~
-t/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/JgitManager.java80 8(4±®
-~
-t/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/JgitManager.java80 8(A
-%20java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*E
-
-__unknown_file ()
-'
-difforg.eclipse.jgit.diff.DiffEntry2getNewPath()¿¼
-~
-t/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/JgitManager.java80 8(S
-%21boolean".java.lang.String#endsWith(Ljava/lang/String;)Z*5
-
-__unknown_file (
-
-%20java.lang.String*%
-
-__unknown_file (	
-.java2endsWith(Ljava/lang/String;)"ˆ
-~
-t/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/JgitManager.java8/ 8(S
-"":©
-~
-t/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/JgitManager.java8 8(*'
-difforg.eclipse.jgit.diff.DiffEntryB 
-java.util.function.Predicate

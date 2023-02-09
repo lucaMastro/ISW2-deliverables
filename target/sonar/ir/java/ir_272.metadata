@@ -1,3 +1,0 @@
-view.BasicPageFxmlController#changeEditability()V
-javafx.scene.Node#isDisabled()Z
-javafx.scene.Node#setDisable(Z)V

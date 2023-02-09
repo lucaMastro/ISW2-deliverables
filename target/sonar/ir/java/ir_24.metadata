@@ -1,4 +1,0 @@
-logic.dataset_manager.Dataset#findCommitsFromTicketId(Ljava/lang/String;)Ljava/util/List;
-java.util.ArrayList#<init>()V
-java.util.ArrayList#instance-init#
-java.lang.String#contains(Ljava/lang/CharSequence;)Z

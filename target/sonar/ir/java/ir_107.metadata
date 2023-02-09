@@ -1,9 +1,0 @@
-view.SceneSwitcher#fileBrowser(Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/String;
-javafx.stage.FileChooser#showOpenDialog(Ljavafx/stage/Window;)Ljava/io/File;
-javafx.stage.Stage#instance-init#
-javafx.stage.Stage#<init>()V
-javafx.stage.FileChooser#instance-init#
-javafx.stage.FileChooser#<init>()V
-javafx.stage.FileChooser#showSaveDialog(Ljavafx/stage/Window;)Ljava/io/File;
-java.lang.Boolean#equals(Ljava/lang/Object;)Z
-javafx.stage.FileChooser#setTitle(Ljava/lang/String;)V

@@ -1,2 +1,0 @@
-logic.controller.CloneRepositoryController#clone(Llogic/bean/CloneRepositoryBean;)V
-org.eclipse.jgit.api.Git#cloneRepository()Lorg/eclipse/jgit/api/CloneCommand;

@@ -1,3 +1,0 @@
-logic.dataset_manager.Dataset#findGitCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;
-java.lang.String#equals(Ljava/lang/Object;)Z
-org.eclipse.jgit.lib.AnyObjectId#getName()Ljava/lang/String;

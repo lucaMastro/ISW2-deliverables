@@ -1,93 +1,0 @@
-
-qlogic.dataset_manager.Release#findFromName(Ljava/lang/String;Ljava/util/List;)Llogic/dataset_manager/ReleaseFile;z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java ($"6*ì
-2z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java   (Ñ
-Î
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java   (&
-r!logic.dataset_manager.ReleaseFile"__id*"
-
-__unknown_file (
-""Ž
-‹
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java   (&
-r!logic.dataset_manager.ReleaseFile"
-__arrayGet*5
-
-__unknown_file (
-
-filesjava.util.List*"
-
-__unknown_file (
-""*
-4
-1*„
-3z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java" "(ý
-ú
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java" "(0
-releaseFile!logic.dataset_manager.ReleaseFile"__id*D
-
-__unknown_file ((
-&
-r!logic.dataset_manager.ReleaseFile*
-1*¤
-4z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java! !(‹ˆ
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java! !("
-%0java.lang.Boolean"Slogic.dataset_manager.ReleaseFile#isThisFile(Ljava/lang/String;)Ljava/lang/Boolean;*D
-
-__unknown_file ((
-&
-r!logic.dataset_manager.ReleaseFile*6
-
-__unknown_file (
-
-namejava.lang.String2isThisFile(Ljava/lang/String;)Â
-¿
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java!* !(6
-%1java.lang.Boolean"__id*"
-
-__unknown_file (
-""ÇÄ
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java! !(7
-%2boolean"-java.lang.Boolean#equals(Ljava/lang/Object;)Z*5
-
-__unknown_file (
-
-%0java.lang.Boolean*5
-
-__unknown_file (
-
-%1java.lang.Boolean2equals(Ljava/lang/Object;)*
-2
-3*â
-6z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java" (&Û
-Ø
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java ('0
-releaseFile!logic.dataset_manager.ReleaseFile"__id*"
-
-__unknown_file (
-""*
-2*²
-1z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java& &("°
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java& &(2
-0
-releaseFile!logic.dataset_manager.ReleaseFile:–
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java% (1
-namejava.lang.String:•
-z
-p/home/luca/Scrivania/ISW2/secondo_tentativo/deliverable_falessi/src/main/java/logic/dataset_manager/Release.java2 (I
-filesjava.util.ListB!
-logic.dataset_manager.Release

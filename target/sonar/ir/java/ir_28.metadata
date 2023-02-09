@@ -1,2 +1,0 @@
-logic.dataset_manager.Dataset#findSvnCommit(Ljava/lang/String;)Llogic/dataset_manager/Commit;
-java.lang.String#contains(Ljava/lang/CharSequence;)Z

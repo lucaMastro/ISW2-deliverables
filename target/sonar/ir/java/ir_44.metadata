@@ -1,2 +1,0 @@
-logic.dataset_manager.BugTicket#addFileTouched(Lorg/eclipse/jgit/diff/DiffEntry;)V
-java.lang.Enum#equals(Ljava/lang/Object;)Z

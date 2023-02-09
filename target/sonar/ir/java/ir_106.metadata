@@ -1,7 +1,0 @@
-view.SceneSwitcher#repositoryBrowser(Ljava/lang/String;)Ljava/lang/String;
-javafx.stage.DirectoryChooser#setTitle(Ljava/lang/String;)V
-javafx.stage.DirectoryChooser#showDialog(Ljavafx/stage/Window;)Ljava/io/File;
-javafx.stage.Stage#instance-init#
-javafx.stage.DirectoryChooser#instance-init#
-javafx.stage.Stage#<init>()V
-javafx.stage.DirectoryChooser#<init>()V

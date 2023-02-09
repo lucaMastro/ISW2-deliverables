@@ -1,3 +1,0 @@
-view.WekaAnalisysFxmlController#csvInputButtonClicked(Ljavafx/event/ActionEvent;)V
-javafx.scene.control.TextInputControl#setText(Ljava/lang/String;)V
-view.SceneSwitcher#getInstance()Lview/SceneSwitcher;
