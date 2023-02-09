@@ -1,1 +1,1 @@
-logic.exception.WalkStepFilterException#instance-init#
+logic.exception.WalkStepFilterException#<init>(Ljava/lang/String;)V

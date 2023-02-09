@@ -1,2 +1,2 @@
-logic.dataset_manager.Release#updateFileMetrics(Llogic/dataset_manager/ReleaseFile;Llogic/dataset_manager/Commit;Lorg/eclipse/jgit/diff/DiffEntry;Ljava/util/List;)V
-org.eclipse.jgit.revwalk.RevCommit#getAuthorIdent()Lorg/eclipse/jgit/lib/PersonIdent;
+logic.dataset_manager.Release#setAllFileBuggines(Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;)V
+logic.dataset_manager.Release#findFromName(Ljava/lang/String;Ljava/util/List;)Llogic/dataset_manager/ReleaseFile;

@@ -1,2 +1,11 @@
-view.SceneSwitcher#setDefautlCursor()V
-javafx.scene.Scene#setCursor(Ljavafx/scene/Cursor;)V
+view.SceneSwitcher#initializeIntegerSpinner(Ljavafx/scene/control/Spinner;)V
+javafx.util.converter.IntegerStringConverter#<init>()V
+javafx.scene.control.Spinner#setValueFactory(Ljavafx/scene/control/SpinnerValueFactory;)V
+javafx.scene.control.TextInputControl#setTextFormatter(Ljavafx/scene/control/TextFormatter;)V
+javafx.util.converter.IntegerStringConverter#instance-init#
+javafx.scene.control.TextFormatter#<init>(Ljavafx/util/StringConverter;Ljava/lang/Object;Ljava/util/function/UnaryOperator;)V
+javafx.scene.control.TextFormatter#instance-init#
+javafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#<init>(II)V
+java.text.NumberFormat#getIntegerInstance()Ljava/text/NumberFormat;
+javafx.scene.control.SpinnerValueFactory$IntegerSpinnerValueFactory#instance-init#
+javafx.scene.control.Spinner#getEditor()Ljavafx/scene/control/TextField;

@@ -1,6 +1,8 @@
-logic.weka.ArffCreator#createArffWithoutDuplicated(Ljava/io/File;Lweka/core/Instances;)V
-java.io.File#createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
-java.nio.file.Paths#get(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
-weka.filters.unsupervised.instance.RemoveDuplicates#main([Ljava/lang/String;)V
 logic.weka.ArffCreator#createArffWithDuplicated(Ljava/io/File;Lweka/core/Instances;)V
-java.nio.file.Files#delete(Ljava/nio/file/Path;)V
+weka.filters.Filter#useFilter(Lweka/core/Instances;Lweka/filters/Filter;)Lweka/core/Instances;
+weka.filters.unsupervised.attribute.SwapValues#instance-init#
+java.lang.String#equals(Ljava/lang/Object;)Z
+weka.core.converters.ArffSaver#<init>()V
+weka.filters.unsupervised.attribute.SwapValues#<init>()V
+weka.core.converters.ArffSaver#instance-init#
+weka.core.Attribute#value(I)Ljava/lang/String;

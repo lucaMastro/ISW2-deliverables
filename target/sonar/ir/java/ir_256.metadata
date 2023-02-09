@@ -1,1 +1,1 @@
-logic.bean.JiraBeanInformations#getOpeningVersion()Llogic/dataset_manager/Release;
+logic.bean.JiraBeanInformations#setOpeningVersion(Llogic/dataset_manager/Release;)V

@@ -1,1 +1,1 @@
-logic.dataset_manager.ProcessControlChartEntry#getDate()Ljava/util/Date;
+logic.dataset_manager.ProcessControlChartEntry#setNumberOfCommits(I)V

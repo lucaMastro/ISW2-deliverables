@@ -1,1 +1,5 @@
+logic.dataset_manager.JgitManager#isLineValid(Ljava/lang/String;Ljava/lang/Boolean;)[Ljava/lang/Boolean;
 logic.dataset_manager.JgitManager#updateQuote(CLjava/lang/Boolean;)Ljava/lang/Boolean;
+java.lang.Boolean#equals(Ljava/lang/Object;)Z
+java.lang.String#toCharArray()[C
+java.lang.String#trim()Ljava/lang/String;

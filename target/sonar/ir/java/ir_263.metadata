@@ -1,1 +1,1 @@
-logic.bean.WekaBean#getInputCSV()Ljava/io/File;
+logic.bean.WekaBean#getOutputCSV()Ljava/io/File;

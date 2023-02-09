@@ -1,7 +1,7 @@
-view.SceneSwitcher#informationAlertShow(Ljava/lang/String;)V
+view.SceneSwitcher#errorAlertShow(Ljava/lang/String;)V
 javafx.scene.control.Dialog#setTitle(Ljava/lang/String;)V
 javafx.scene.control.Dialog#setHeaderText(Ljava/lang/String;)V
 javafx.scene.control.Dialog#setContentText(Ljava/lang/String;)V
-javafx.scene.control.Dialog#showAndWait()Ljava/util/Optional;
 javafx.scene.control.Alert#<init>(Ljavafx/scene/control/Alert$AlertType;)V
+javafx.scene.control.Dialog#show()V
 javafx.scene.control.Alert#instance-init#

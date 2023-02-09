@@ -1,2 +1,1 @@
-logic.dataset_manager.ReleaseFile#updateBugginess(Ljava/lang/Integer;)V
-java.lang.String#isEmpty()Z
+logic.dataset_manager.ReleaseFile#getNames()[Ljava/lang/String;
