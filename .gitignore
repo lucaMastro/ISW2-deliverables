@@ -1,3 +1,7 @@
 git_commit
 .*.swp
 target
+tmp*
+.idea
+.scannerwork
+*.iml
