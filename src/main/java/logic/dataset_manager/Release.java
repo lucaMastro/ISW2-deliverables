@@ -53,6 +53,7 @@ public class Release extends Commit {
         older = index < 0 ? previousRelease : this.commits.get(index);
         newer = index < this.commits.size() - 1 ? this.commits.get(index + 1) : this;
 
+        // older is null only for the first absolute commit
         if (older != null){
             olderAndNewer.add(older);
             olderAndNewer.add(newer);
@@ -65,7 +66,10 @@ public class Release extends Commit {
                                    List<BugTicket> fixedBugs) throws IOException {
         if (rf != null) {
             /*  it can be null if a file is added in a revision commit and deleted in another
-             *  revision commit before release commit. That's why this kind of file is not stored
+             *  revision commit before release commit:
+             *  R.i     add     del     R.2  |
+             *   -   -   -   -   -   -   -   |
+             *  That's why this kind of file is not stored
              *  in the list of files, which store the files tracked by git when the new release is out.  */
             var i = this.index;
 
@@ -90,6 +94,16 @@ public class Release extends Commit {
         }
     }
 
+    /* this method works in this way:
+    * 1) retrieve all commits between for each couple of release i, i+1
+    * 2) retrieve all differences between commits j, j+1 obtained in the (1)
+    *       -note: if j+1 == 0 => j is the commit release
+    * 3) for each difference update metrics of the newest file
+    *
+    *          R.1               R.2   | <-- releases
+    *  -  -  -  -  -  -  -  -  -  -    | <-- commits
+    *
+    * in the updateMetrics method, it's checked if the given commit refers a bugTicket of "fix" type. */
     public ReleaseFileManager computeMetrics(Release previousRelease, List<BugTicket> fixedBugs,
                                              ReleaseFileManager files) throws IOException {
         Commit older;
@@ -102,9 +116,8 @@ public class Release extends Commit {
         this.setEachFileLoc(files);
         for (i = -1; i < this.commits.size(); i++) {
             /*  index starts from -1 because this.commits.get(i) is assigned to the olderCommit.
-             *   Starting from 0, i only can get the first commit of each new release as an older commit and i will
-             *   lose the changes between previousReleaseCommit and the first commit of the newer release.
-             *   When index is -1, i can understand that the older commit i should use is the previous release */
+             *   Starting from 0, i would miss differences between oldRelease commit and the first commit of the
+             *   newer release */
 
             List<Commit> olderAndNewer = this.findOlderAndNewerCommits(previousRelease, i);
             if (olderAndNewer.isEmpty())
@@ -117,6 +130,7 @@ public class Release extends Commit {
                     newer.revCommit);
             for (DiffEntry diff : differences) {
                 ReleaseFile rf;
+                // get the path file. If the file is added, get the newer path because the older doesn't exist
                 fileNameToSearch = diff.getChangeType().equals(DiffEntry.ChangeType.ADD) ?
                         diff.getNewPath() : diff.getOldPath();
 

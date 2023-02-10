@@ -28,7 +28,7 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import java.io.IOException;
 import java.util.*;
 
-
+/* Trace file evolution across releases */
 public class ReleaseFile {
 
     private Date additionDate;

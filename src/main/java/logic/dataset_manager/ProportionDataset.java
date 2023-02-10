@@ -72,7 +72,7 @@ public class ProportionDataset extends Dataset {
         for (i = 0; i < len; i++) {
             Release cur = this.releases.get(i);
             cur.setIndex(i + 1);
-            cur.commits = (ArrayList<Commit>) this.retrieveCommitsBeetwenReleases(i + 1);
+            cur.commits = (ArrayList<Commit>) this.retrieveCommitsBetweenReleases(i + 1);
         }
     }
 
@@ -80,11 +80,11 @@ public class ProportionDataset extends Dataset {
         this.releases.removeIf(r -> r.getIndex() > this.releases.size() / 2);
     }
 
-    private List<Commit> retrieveCommitsBeetwenReleases(Integer endIndexRelease)
+    private List<Commit> retrieveCommitsBetweenReleases(Integer endIndexRelease)
             throws InvalidRangeException {
 
         /* this.retrieveCommits(2) should return a list of all commits performed between release1 and release 2
-         * That's why, if startIndexRelease is less than 1 an exception is thrown */
+         * That's why, if endIndexRelease is less than 1 an exception is thrown */
 
         if (endIndexRelease < 1)
             throw new InvalidRangeException("endIndexRelease should be greater than 0");
